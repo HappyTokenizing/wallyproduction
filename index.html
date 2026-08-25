@@ -1631,6 +1631,7 @@ html{ scrollbar-color:var(--line2) transparent }
         <span>RWA Foundation</span>
       </button>
       <div class="nav-cta">
+        <button class="fdn-link" onclick="showPage('news')">News</button>
         <button class="fdn-link" id="fdnLink" onclick="showPage('foundation')">Our Members</button>
         <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="mmenu" onclick="toggleMenu()">
           <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
@@ -1639,7 +1640,7 @@ html{ scrollbar-color:var(--line2) transparent }
     </div>
   </nav>
   <div class="mobile-menu" id="mmenu">
-    <button onclick="mm();comingSoon('The ecosystem map')">Ecosystem <span class="soon-chip">Soon</span></button>
+    <button onclick="mm();showPage('news')">News</button>
     <button class="fdn-link" onclick="showPage('foundation')">Our Members</button>
   </div>
 
@@ -1700,8 +1701,8 @@ html{ scrollbar-color:var(--line2) transparent }
       <div class="wrap">
         <div class="wbar rv">
           <span class="bico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.4"/><circle cx="5" cy="17" r="2.4"/><circle cx="19" cy="17" r="2.4"/><circle cx="12" cy="13" r="1.6"/><path d="M12 7.4v4M10.8 14.2L6.6 15.6M13.2 14.2l4.2 1.4"/></svg></span>
-          <span><b>The RWA ecosystem map.</b> Over 100 projects, six sectors, and a live map of who builds with whom.</span>
-          <span class="x"><button class="btn btn-ghost btn-sm" onclick="comingSoon('The ecosystem map')">Coming soon</button></span>
+          <span><b>The RWA news feed.</b> Everything moving in tokenization, refreshed hourly and tagged when it involves our members.</span>
+          <span class="x"><button class="btn btn-ghost btn-sm" onclick="showPage('news')">Read the news <span class="arr">→</span></button></span>
         </div>
       </div>
     </section>
@@ -2280,7 +2281,7 @@ html{ scrollbar-color:var(--line2) transparent }
           <div>
             <span class="eyebrow">Live industry feed</span>
             <h1>RWA News</h1>
-            <p class="nw-sub">Everything moving in tokenization, pulled from ~31 sources and refreshed hourly. RWA Foundation members are flagged in orange.</p>
+            <p class="nw-sub">Everything moving in tokenization, pulled from rwanews.today and refreshed hourly. RWA Foundation members are flagged in orange.</p>
           </div>
           <span class="nw-status" id="nwStatus">connecting…</span>
         </div>
@@ -2293,7 +2294,7 @@ html{ scrollbar-color:var(--line2) transparent }
     <section class="section" style="padding-top:6px;padding-bottom:90px">
       <div class="wrap">
         <div class="nw-list" id="nwList"><div class="nw-empty">Loading the feed…</div></div>
-        <div class="nw-foot">Powered by the RWA News engine · deduped, classified and member-tagged automatically · headlines link to the original source.</div>
+        <div class="nw-foot">Powered by rwanews.today · refreshed hourly · headlines link to the original source.</div>
       </div>
     </section>
   </main>
@@ -2302,35 +2303,43 @@ html{ scrollbar-color:var(--line2) transparent }
     "use strict";
     var NW_URL="https://qrmbiestcjbedavsorrj.supabase.co";
     var NW_KEY="sb_publishable_CVXI0w69QnHwJSJYtbiJdg_dtXg6ot_"; /* publishable key — read-only */
-    var NW={items:[],cat:"All",q:"",loadedAt:0,err:null};
+    var NW={items:[],hidden:[],cat:"All",q:"",loadedAt:0,err:null};
     var NW_TTL=10*60*1000;
     function nq(s){return document.querySelector(s)}
     function nesc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
     function nfmt(v){var d=new Date(v);if(isNaN(d))return String(v).slice(0,10);return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()]+" "+d.getDate()}
     function nwFetch(){
-      var cols="headline,url,source_name,source_domain,published_at,section,members,summary";
-      return fetch(NW_URL+"/rest/v1/items?select="+cols+"&order=published_at.desc&limit=100",
-        {headers:{apikey:NW_KEY,Authorization:"Bearer "+NW_KEY}})
-        .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
-        .then(function(rows){
-          NW.items=(rows||[]).filter(function(x){return x.headline&&x.url}).map(function(x){
-            return {t:x.headline,u:x.url,s:x.source_name||x.source_domain||"",d:x.published_at?nfmt(x.published_at):"",c:x.section||"News",m:Array.isArray(x.members)&&x.members.length?x.members.join(", "):null,b:x.summary||""};
-          });
-          NW.loadedAt=Date.now(); NW.err=null;
-        })
-        .catch(function(e){ NW.err=e.message||"network error"; });
+      /* /api/news proxies rwanews.today (the key stays server-side) and is
+         edge-cached for an hour — that's the hourly pull. The console's deleted
+         ids come from the uncached ?hidden=1 variant, so a deletion vanishes
+         for every visitor immediately instead of waiting out the cache. */
+      var feed=fetch("/api/news").then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); });
+      var hid=fetch("/api/news?hidden=1")
+        .then(function(r){ return r.ok?r.json():{ids:[]}; })
+        .then(function(d){ return d.ids||[]; })
+        .catch(function(){ return []; });
+      return Promise.all([feed,hid]).then(function(res){
+        NW.hidden=res[1];
+        NW.items=(res[0].items||[]).filter(function(x){return x.headline&&x.url}).map(function(x){
+          return {id:x.id||x.url,t:x.headline,u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:x.section||"News",m:Array.isArray(x.members)&&x.members.length?x.members.join(", "):null,b:x.summary||""};
+        });
+        NW.loadedAt=Date.now(); NW.err=null;
+      }).catch(function(e){ NW.err=e.message||"network error"; });
+    }
+    function nwLive(){
+      return NW.items.filter(function(x){ return NW.hidden.indexOf(x.id)<0; });
     }
     function nwCats(){
       var counts={};
-      NW.items.forEach(function(x){counts[x.c]=(counts[x.c]||0)+1});
+      nwLive().forEach(function(x){counts[x.c]=(counts[x.c]||0)+1});
       var top=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).slice(0,7);
       var cats=["All"].concat(top);
-      if(NW.items.some(function(x){return x.m})) cats.push("Members");
+      if(nwLive().some(function(x){return x.m})) cats.push("Members");
       return cats;
     }
     function nwVisible(){
       var q=NW.q.toLowerCase();
-      return NW.items.filter(function(x){
+      return nwLive().filter(function(x){
         if(NW.cat==="Members"&&!x.m)return false;
         if(NW.cat!=="All"&&NW.cat!=="Members"&&x.c!==NW.cat)return false;
         if(q&&(x.t+" "+x.s+" "+(x.m||"")+" "+x.b).toLowerCase().indexOf(q)<0)return false;
@@ -2346,7 +2355,7 @@ html{ scrollbar-color:var(--line2) transparent }
         chips.innerHTML=""; return;
       }
       if(!NW.items.length){ st.textContent="connecting…"; list.innerHTML='<div class="nw-empty">Loading the feed…</div>'; chips.innerHTML=""; return; }
-      st.innerHTML='<span class="dot">●</span> live · '+NW.items.length+' items';
+      st.innerHTML='<span class="dot">●</span> live · '+nwLive().length+' items';
       chips.innerHTML=nwCats().map(function(c){
         return '<button type="button" class="nw-chip'+(c===NW.cat?" on":"")+'" onclick="nwSetCat(\''+nesc(c).replace(/'/g,"\\'")+'\')">'+nesc(c)+'</button>';
       }).join("");
@@ -2368,6 +2377,8 @@ html{ scrollbar-color:var(--line2) transparent }
       nwDraw();
       if(Date.now()-NW.loadedAt>NW_TTL){ nwFetch().then(nwDraw); }
     };
+    /* console hook: fresh items + hidden ids for the admin News tab */
+    window.nwAdminLoad=function(){ return nwFetch().then(function(){ if(NW.err) throw new Error(NW.err); nwDraw(); return {items:NW.items, hidden:NW.hidden}; }); };
   })();
   </script>
   <!-- ================= PAGE: RWA JOB BOARD ================= -->
@@ -4328,6 +4339,8 @@ function subOkPanel(mode, d){
 
 /* ---------- admin console ---------- */
 const ADM_HASH='c544ce7c40eab55c481233a301356ecd1f7a7c5adce93d1aa4906f7886482ce9';
+const ADM_TABS=[['logos','Member logos'],['news','News feed']];
+let admTabNow='logos';
 
 /* ---------- member logo manager: the console's only job ---------- */
 const LOGO_LS='wally_logos_v1';
@@ -4354,6 +4367,30 @@ function renderLogoWall(){
   if(window.buildLogoMarquee) buildLogoMarquee();
 }
 if(lgCustomized()) renderLogoWall();
+/* Server copy: the console saves logo state through /api/logos so it applies to
+   EVERY visitor. localStorage above is only a fast-paint cache; whatever the
+   server holds wins as soon as this fetch lands. */
+function lgFetchRemote(){
+  fetch('/api/logos')
+    .then(function(r){ return r.ok?r.json():{}; })
+    .then(function(d){
+      var v=d&&d.store;
+      if(!v) return;
+      lsSet(LOGO_LS,{order:v.order||[],del:v.del||[],add:v.add||[]});
+      renderLogoWall();
+      if(window.__page==='admin'&&admTabNow==='logos') admPaintLogos();
+    }).catch(function(){});
+}
+lgFetchRemote();
+function admPw(){ try{ return sessionStorage.getItem('wally_adm_pw')||''; }catch(e){ return ''; } }
+function lgPush(){
+  fetch('/api/logos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pw:admPw(),store:lgStore()})})
+    .then(function(r){ return r.json().then(function(d){ return {ok:r.ok&&d&&d.ok,msg:d&&d.error}; }); })
+    .catch(function(){ return {ok:false,msg:'network error'}; })
+    .then(function(res){
+      if(!res.ok) toast('Saved in this browser only','Server sync failed'+(res.msg?' — '+res.msg:'')+'. Other visitors will not see this change yet.');
+    });
+}
 function admOk(){ try{ return sessionStorage.getItem('wally_adm_ok')==='1'; }catch(e){ return false; } }
 async function admSha(s){
   const b=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
@@ -4367,7 +4404,7 @@ async function admLogin(){
   let h=''; try{ h=await admSha(v); }catch(e){ $('#admErr').textContent='This browser blocks crypto here. Open the site over https.'; return; }
   if(h===ADM_HASH){
     lsSet('wally_adm_lock',{n:0,until:0});
-    try{ sessionStorage.setItem('wally_adm_ok','1'); }catch(e){}
+    try{ sessionStorage.setItem('wally_adm_ok','1'); sessionStorage.setItem('wally_adm_pw', v); }catch(e){}
     renderAdmin();
   } else {
     lock.n=(lock.n||0)+1;
@@ -4377,7 +4414,7 @@ async function admLogin(){
     $('#admPw').value='';
   }
 }
-function admLogout(){ try{ sessionStorage.removeItem('wally_adm_ok'); }catch(e){} renderAdmin(); }
+function admLogout(){ try{ sessionStorage.removeItem('wally_adm_ok'); sessionStorage.removeItem('wally_adm_pw'); }catch(e){} renderAdmin(); }
 function renderAdmin(){
   const M=$('#admMount'); if(!M) return;
   if(!admOk()){
@@ -4388,12 +4425,16 @@ function renderAdmin(){
     setTimeout(()=>{ const p=$('#admPw'); p&&p.focus(); },60);
     return;
   }
-  M.innerHTML='<div class="adm-head"><div class="adm-tabs"><span class="adm-tab on" style="cursor:default">Member logos</span></div>'
-    +'<div class="adm-tools"><button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button><button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
-    +'<p class="adm-note">This console manages one thing: the RWA Foundation member logos. Reorder, upload or delete below; the foundation logo wall and the homepage banner update together. Changes persist in this browser.</p>'
-    +'<div id="admBody"></div>';
-  admPaintLogos();
+  const tabs=ADM_TABS.map(t=>'<button class="adm-tab'+(admTabNow===t[0]?' on':'')+'" onclick="admGoTab(\''+t[0]+'\')">'+t[1]+'</button>').join('');
+  M.innerHTML='<div class="adm-head"><div class="adm-tabs">'+tabs+'</div>'
+    +'<div class="adm-tools">'+(admTabNow==='logos'?'<button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button>':'')+'<button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
+    +'<p class="adm-note">'+(admTabNow==='logos'
+      ?'Member logos: reorder, upload or delete below. The foundation logo wall and the homepage banner update together, and every change is saved to the server so it applies for all visitors.'
+      :'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
+    +'</p><div id="admBody"></div>';
+  if(admTabNow==='logos') admPaintLogos(); else admPaintNews();
 }
+function admGoTab(t){ admTabNow=t; renderAdmin(); }
 function admPaintLogos(){
   const B=$('#admBody'); if(!B) return;
   const list=logoAll();
@@ -4419,7 +4460,7 @@ function admLogoMove(id,dir){
   if(i<0||j<0||j>=ids.length) return;
   ids.splice(i,1); ids.splice(j,0,id);
   const s=lgStore(); s.order=ids; lgSave(s);
-  renderLogoWall(); admPaintLogos();
+  renderLogoWall(); admPaintLogos(); lgPush();
 }
 function admLogoDel(id){
   if(!confirm('Remove this logo from the member wall?')) return;
@@ -4429,14 +4470,14 @@ function admLogoDel(id){
   else if(s.del.indexOf(id)<0) s.del.push(id);
   s.order=s.order.filter(x=>x!==id);
   lgSave(s);
-  renderLogoWall(); admPaintLogos();
-  toast('Logo removed','The wall and the homepage banner are updated.');
+  renderLogoWall(); admPaintLogos(); lgPush();
+  toast('Logo removed','Gone from the wall and the homepage banner, for every visitor.');
 }
 function admLogoReset(){
   if(!confirm('Discard every logo change made in this browser and restore the defaults?')) return;
   try{ localStorage.removeItem(LOGO_LS); }catch(e){}
-  renderLogoWall(); admPaintLogos();
-  toast('Logos reset','The default member wall is back.');
+  renderLogoWall(); admPaintLogos(); lgPush();
+  toast('Logos reset','The default member wall is back, for every visitor.');
 }
 function admLogoUpload(){
   const name=($('#lgName').value||'').trim();
@@ -4446,8 +4487,8 @@ function admLogoUpload(){
   const fin=src=>{
     if(src.length>400000){ toast('Image too large','Could not shrink this file enough for browser storage. Try a simpler PNG or an SVG.'); return; }
     const s=lgStore(); s.add.push({id:'u'+Date.now(), name:name, src:src}); lgSave(s);
-    renderLogoWall(); admPaintLogos();
-    toast('Logo added', name+' is on the wall and in the homepage banner.');
+    renderLogoWall(); admPaintLogos(); lgPush();
+    toast('Logo added', name+' is on the wall and in the homepage banner, for every visitor.');
   };
   const rd=new FileReader();
   rd.onload=()=>{
@@ -4467,6 +4508,45 @@ function admLogoUpload(){
     img.src=raw;
   };
   rd.readAsDataURL(f);
+}
+
+/* ---------- news moderation (admin) ---------- */
+let ADM_NEWS=[];
+function admPaintNews(){
+  const B=$('#admBody'); if(!B) return;
+  B.innerHTML='<div class="adm-empty">Loading the live feed…</div>';
+  if(!window.nwAdminLoad){ B.innerHTML='<div class="adm-empty">News engine not loaded.</div>'; return; }
+  nwAdminLoad().then(function(d){
+    if(admTabNow!=='news') return;
+    ADM_NEWS=d.items;
+    const hid={}; d.hidden.forEach(function(id){ hid[id]=1; });
+    const row=function(x,i){ return '<div class="adm-row'+(hid[x.id]?' dim':'')+'">'
+      +'<div class="who"><b>'+escHtml(x.t)+' '+(hid[x.id]?'<span class="adm-st">Deleted</span>':'<span class="adm-st live">Live</span>')+'</b>'
+      +'<span>'+escHtml(x.s)+' &middot; '+escHtml(x.d)+' &middot; '+escHtml(x.c)+(x.m?' &middot; Member: '+escHtml(x.m):'')+'</span>'
+      +(x.b?'<span>'+escHtml(x.b.length>150?x.b.slice(0,150)+'…':x.b)+'</span>':'')+'</div>'
+      +'<div class="adm-acts"><a class="adm-btn" href="'+escHtml(x.u)+'" target="_blank" rel="noopener" style="text-decoration:none">Open</a>'
+      +(hid[x.id]?'<button class="adm-btn" onclick="admNewsAct('+i+',\'unhide\')">Restore</button>'
+                 :'<button class="adm-btn danger" onclick="admNewsAct('+i+',\'hide\')">Delete</button>')
+      +'</div></div>'; };
+    const live=[], gone=[];
+    d.items.forEach(function(x,i){ (hid[x.id]?gone:live).push(row(x,i)); });
+    B.innerHTML='<div class="adm-sec"><h6>Live on the site ('+live.length+')</h6>'
+      +(live.join('')||'<div class="adm-empty">The feed is empty right now.</div>')
+      +(gone.length?'<h6>Deleted from the site ('+gone.length+')</h6>'+gone.join(''):'')+'</div>';
+  }).catch(function(e){
+    if(admTabNow==='news') B.innerHTML='<div class="adm-empty">Couldn&rsquo;t reach the news feed ('+escHtml(e&&e.message||'error')+'). Try again in a minute.</div>';
+  });
+}
+function admNewsAct(i,act){
+  const x=ADM_NEWS[i]; if(!x) return;
+  fetch('/api/news',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pw:admPw(),action:act,id:x.id})})
+    .then(function(r){ return r.json().then(function(d){ return {ok:r.ok&&d&&d.ok,msg:d&&d.error}; }); })
+    .catch(function(){ return {ok:false,msg:'network error'}; })
+    .then(function(res){
+      if(!res.ok){ toast('Not saved', res.msg||'The server rejected the change.'); return; }
+      toast(act==='hide'?'Story removed':'Story restored', act==='hide'?'Gone from the feed for every visitor.':'Back on the feed for every visitor.');
+      admPaintNews();
+    });
 }
 
 
