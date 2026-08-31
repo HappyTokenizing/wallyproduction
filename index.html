@@ -1788,7 +1788,7 @@ html{ scrollbar-color:var(--line2) transparent }
           </div>
         </div>
         <div class="rv" style="margin-top:28px;display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap">
-          <button class="btn btn-dark btn-lg" onclick="comingSoon('The whitepaper')">Whitepaper coming soon</button>
+          <a class="btn btn-dark btn-lg" href="https://www.wallynft.xyz/" target="_blank" rel="noopener">Learn more</a>
           <button class="btn btn-orange btn-lg" onclick="showPage('meet')"><svg class="play-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Meet WALLY</button>
         </div>
       </div>
@@ -2924,7 +2924,7 @@ function renderOverview(){
   $('#v-overview').innerHTML = `
   <div class="vw-head"><h2>GM, ${S.name.split(' ')[0]}. Happy Tokenizing!</h2><p>Your home and guide to the world of Real-World Assets.</p></div>
   <div class="kpis">
-    <button class="kpi cta" onclick="comingSoon('The whitepaper')"><div class="k">The thesis</div><div class="v">Whitepaper<br>coming soon</div><div class="d">WALLY NFT · 2026</div></button>
+    <a class="kpi cta" href="https://www.wallynft.xyz/" target="_blank" rel="noopener"><div class="k">The thesis</div><div class="v">Learn more</div><div class="d">WALLY NFT · 2026</div></a>
     <div class="kpi"><div class="k">Quizzes passed</div><div class="v">${S.quizDone.size}<span style="font-size:.55em;color:var(--text3)">/${quizzesTotal}</span></div><div class="d">EDUCATION CENTER</div></div>
     <button class="kpi cta" onclick="showView('learnApp')"><div class="k">Keep learning</div><div class="v">Open the<br>courses</div><div class="d">LEARN <span class="arr">→</span></div></button>
   </div>`;
