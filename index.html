@@ -1631,7 +1631,7 @@ html{ scrollbar-color:var(--line2) transparent }
         <span>RWA Foundation</span>
       </button>
       <div class="nav-cta">
-        <button class="fdn-link" onclick="showPage('news')">News</button>
+        
         <button class="fdn-link" id="fdnLink" onclick="showPage('foundation')">Our Members</button>
         <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="mmenu" onclick="toggleMenu()">
           <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
@@ -1640,7 +1640,7 @@ html{ scrollbar-color:var(--line2) transparent }
     </div>
   </nav>
   <div class="mobile-menu" id="mmenu">
-    <button onclick="mm();showPage('news')">News</button>
+    
     <button class="fdn-link" onclick="showPage('foundation')">Our Members</button>
   </div>
 
@@ -1696,16 +1696,7 @@ html{ scrollbar-color:var(--line2) transparent }
     </section>
 
     <!-- PRIMER · CHAPTERS -->
-    <!-- ECOSYSTEM CTA -->
-    <section class="section" style="padding:0 0 6px">
-      <div class="wrap">
-        <div class="wbar rv">
-          <span class="bico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.4"/><circle cx="5" cy="17" r="2.4"/><circle cx="19" cy="17" r="2.4"/><circle cx="12" cy="13" r="1.6"/><path d="M12 7.4v4M10.8 14.2L6.6 15.6M13.2 14.2l4.2 1.4"/></svg></span>
-          <span><b>The RWA news feed.</b> Everything moving in tokenization, refreshed hourly and tagged when it involves our members.</span>
-          <span class="x"><button class="btn btn-ghost btn-sm" onclick="showPage('news')">Read the news <span class="arr">→</span></button></span>
-        </div>
-      </div>
-    </section>
+    
 
 
     <section class="section" id="primer" style="padding-top:44px">
@@ -1754,13 +1745,13 @@ html{ scrollbar-color:var(--line2) transparent }
       </div>
     </section>
 
-    <!-- JOB BOARD CTA -->
+    <!-- RESEARCH REPORTS CTA -->
     <section class="section" style="padding:0 0 6px">
       <div class="wrap">
         <div class="wbar dark rv">
-          <span class="bico"><svg viewBox="0 0 24 24"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M9 7.5V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1.5M3 12.5h18"/></svg></span>
-          <span><b>The RWA Job Board.</b> Open roles from RWA Foundation members and the wider tokenization industry.</span>
-          <span class="x"><button class="btn btn-orange btn-sm" onclick="comingSoon('The RWA Job Board')">Coming soon</button></span>
+          <span class="bico"><svg viewBox="0 0 24 24"><path d="M4 19V5a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 20 5v14a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19z"/><path d="M8 15.5v-4M12 15.5v-7M16 15.5v-2.5"/></svg></span>
+          <span><b>Research Reports.</b> Data-driven views of the tokenization market, produced with our data partners.</span>
+          <span class="x"><a class="btn btn-orange btn-sm" style="text-decoration:none" href="/research/">Read the research <span class="arr">&rarr;</span></a></span>
         </div>
       </div>
     </section>
@@ -2248,56 +2239,7 @@ html{ scrollbar-color:var(--line2) transparent }
   <!-- ================= PAGE: RWA NEWS (live · RWA News engine) ================= -->
   <style>
     #page-news{padding-top:96px}
-    .nw-pagehead{border-bottom:1px solid var(--line);padding:26px 0 18px;background:var(--bg2)}
-    .nw-ph-row{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap}
-    .nw-sub{color:var(--text2);max-width:640px;margin-top:8px}
-    .nw-status{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--text3);white-space:nowrap}
-    .nw-status .dot{color:var(--green)}
-    .nw-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
-    .nw-search{flex:1;min-width:220px;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
-    .nw-search svg{width:15px;height:15px;stroke:var(--text3);fill:none;stroke-width:2}
-    .nw-search input{border:none;outline:none;background:transparent;font:inherit;font-size:14px;color:var(--text);width:100%}
-    .nw-chips{display:flex;gap:8px;flex-wrap:wrap}
-    .nw-chip{font:inherit;font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text2);cursor:pointer;transition:all .15s var(--ease)}
-    .nw-chip:hover{color:var(--text);border-color:var(--text3)}
-    .nw-chip.on{background:var(--orange);border-color:var(--orange);color:#fff}
-    .nw-list{display:flex;flex-direction:column;gap:12px;margin-top:22px}
-    .nw-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);padding:18px 20px;text-decoration:none;color:inherit;box-shadow:var(--shadow-sm);transition:transform .15s var(--ease),border-color .15s var(--ease)}
-    .nw-card:hover{transform:translateY(-2px);border-color:var(--orange)}
-    .nw-card h3{font-family:'Poppins',sans-serif;font-size:16.5px;font-weight:600;line-height:1.35;margin:0 0 7px}
-    .nw-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--text3);margin-bottom:8px}
-    .nw-tag{border:1px solid var(--line2);border-radius:6px;padding:2px 8px;letter-spacing:.04em;text-transform:uppercase;font-size:10px}
-    .nw-tag.mem{border-color:var(--orange);color:var(--orange2)}
-    .nw-blurb{font-size:13.5px;color:var(--text2);line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0}
-    .nw-empty,.nw-err{color:var(--text2);padding:34px 0;font-size:14px}
-    .nw-err b{color:var(--red)}
-    .nw-foot{margin-top:26px;border-top:1px dashed var(--line);padding-top:12px;font-family:var(--mono);font-size:11px;color:var(--text3)}
-    @media (max-width:640px){ #page-news{padding-top:86px} .nw-ph-row{align-items:flex-start;flex-direction:column} }
-  </style>
-  <main id="page-news" hidden>
-    <div class="nw-pagehead">
-      <div class="wrap">
-        <div class="nw-ph-row">
-          <div>
-            <span class="eyebrow">Live industry feed</span>
-            <h1>RWA News</h1>
-            <p class="nw-sub">Everything moving in tokenization, pulled from rwanews.today and refreshed hourly. RWA Foundation members are flagged in orange.</p>
-          </div>
-          <span class="nw-status" id="nwStatus">connecting…</span>
-        </div>
-        <div class="nw-controls">
-          <label class="nw-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="nwQ" type="search" placeholder="Search headlines, sources, members" oninput="nwSetQ(this.value)"></label>
-          <div class="nw-chips" id="nwChips"></div>
-        </div>
-      </div>
-    </div>
-    <section class="section" style="padding-top:6px;padding-bottom:90px">
-      <div class="wrap">
-        <div class="nw-list" id="nwList"><div class="nw-empty">Loading the feed…</div></div>
-        <div class="nw-foot">Powered by rwanews.today · refreshed hourly · headlines link to the original source.</div>
-      </div>
-    </section>
-  </main>
+      </style>
   <script>
   (function(){
     "use strict";
@@ -2347,6 +2289,7 @@ html{ scrollbar-color:var(--line2) transparent }
       });
     }
     function nwDraw(){
+      if(!document.getElementById("nwList")) return;
       var chips=nq("#nwChips"), list=nq("#nwList"), st=nq("#nwStatus");
       if(!chips||!list)return;
       if(NW.err){
@@ -2435,7 +2378,7 @@ html{ scrollbar-color:var(--line2) transparent }
             <button class="btn btn-ghost btn-sm mk-btn" onclick="showPage('brandkit')">Media kit</button>
           </div>
         </div>
-        <div class="ft-col"><h6>RWA Foundation</h6><button onclick="showPage('foundation')">About RWA Foundation</button><button onclick="nav('#wallynft')">About WALLY NFT</button><button onclick="nav('#news')">Newsletter</button><button onclick="showPage('foundation','#fdn-members')">Our members</button><button onclick="showPage('foundation','#fdn-principles')">Principles</button></div>
+        <div class="ft-col"><h6>RWA Foundation</h6><button onclick="showPage('foundation')">About RWA Foundation</button><button onclick="nav('#wallynft')">About WALLY NFT</button><button onclick="nav('#news')">Newsletter</button><button onclick="location.href='/research/'">Research Reports</button><button onclick="comingSoon('The RWA Job Board')">Job Board <span class="soon-chip">Soon</span></button><button onclick="showPage('foundation','#fdn-members')">Our members</button><button onclick="showPage('foundation','#fdn-principles')">Principles</button></div>
       </div>
       <div class="ft-base">
         <p>© 2026 RWA Foundation · WALLY NFT. Nothing here is investment advice. Digital assets involve risk. Herd responsibly. Industry figures sourced from RWA.xyz, DefiLlama and Token Terminal; member count synced from @RWAFoundation_ on X.</p>
@@ -3788,6 +3731,7 @@ addEventListener('keydown',e=>{
 
 /* ---------- page router (home / foundation) ---------- */
 function showPage(p, anchor, fromRoute){
+  if(p==='news') p='home'; // news feed page removed on production
   ['home','foundation','eco','articles','brandkit','meet','jobs','news','admin'].forEach(k=>{ const el=$('#page-'+k); if(el) el.hidden = k!==p; });
   if(p==='jobs' && window.renderJobs) renderJobs();
   if(p==='jobs' && window.jbSync) jbSync();
