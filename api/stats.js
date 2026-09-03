@@ -52,16 +52,38 @@ async function statRwaTvl() {
 
 // X followers for @RWAFoundation_. X blocks anonymous scraping, so this only
 // works when an API bearer token is configured; without it the card keeps its
-// baked count.
+// baked count. X rate limits are tight even on paid tiers, so the count is
+// cached in the wally_site table and X itself is called at most twice a day.
+const SB = 'https://qrmbiestcjbedavsorrj.supabase.co/rest/v1/wally_site';
+const sbHeaders = k => ({ apikey: k, Authorization: 'Bearer ' + k, 'Content-Type': 'application/json' });
 async function statHerd() {
   const tok = process.env.X_BEARER_TOKEN;
   if (!tok) return null;
+  const sk = process.env.SUPABASE_JOBS_SECRET;
+  let cached = null;
+  if (sk) {
+    try {
+      const r = await fetch(SB + '?k=eq.herd_cache&select=v', { headers: sbHeaders(sk) });
+      cached = r.ok ? (((await r.json())[0] || {}).v || null) : null;
+      if (cached && cached.value && Date.now() - (cached.at || 0) < 12 * 3600 * 1000) return { value: cached.value };
+    } catch (e) {}
+  }
   const r = await fetch('https://api.x.com/2/users/by/username/RWAFoundation_?user.fields=public_metrics',
     { headers: { Authorization: 'Bearer ' + tok } });
-  if (!r.ok) return null;
+  if (!r.ok) return (cached && cached.value) ? { value: cached.value } : null; // stale beats nothing
   const d = await r.json();
   const n = d && d.data && d.data.public_metrics && d.data.public_metrics.followers_count;
-  return n ? { value: n } : null;
+  if (!n) return (cached && cached.value) ? { value: cached.value } : null;
+  if (sk) {
+    try {
+      await fetch(SB + '?on_conflict=k', {
+        method: 'POST',
+        headers: { ...sbHeaders(sk), Prefer: 'resolution=merge-duplicates' },
+        body: JSON.stringify({ k: 'herd_cache', v: { value: n, at: Date.now() }, updated_at: new Date().toISOString() })
+      });
+    } catch (e) {}
+  }
+  return { value: n };
 }
 
 const soft = p => p.then(v => v).catch(() => null);
