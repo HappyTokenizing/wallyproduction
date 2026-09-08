@@ -2804,14 +2804,17 @@ buildLogoMarquee();
 })();
 
 function countUp(el){
-  const raw = el.dataset.count, target = parseFloat(raw);
-  const dec = el.dataset.int ? 0 : (raw.split('.')[1]||'').length;
+  // Re-read data-count every frame: /api/stats may land mid-animation and
+  // retarget a card that was already counting up (stat cards above the fold).
   const pre = el.dataset.prefix||'', suf = el.dataset.suffix||'';
   const t0 = performance.now(), dur = 1500;
+  el.dataset.counting = '1';
   (function step(t){
+    const raw = el.dataset.count, target = parseFloat(raw);
+    const dec = el.dataset.int ? 0 : (raw.split('.')[1]||'').length;
     const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3), v = target*e;
     el.textContent = pre + (el.dataset.int ? Math.round(v).toLocaleString('en-US') : v.toFixed(dec)) + suf;
-    if(k<1) requestAnimationFrame(step);
+    if(k<1) requestAnimationFrame(step); else delete el.dataset.counting;
   })(t0);
 }
 const cio = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ countUp(en.target); if(en.target.id==='herdLive') setTimeout(startHerdLive,1900); cio.unobserve(en.target); } }),{threshold:.5});
@@ -2826,8 +2829,9 @@ $$('[data-count]').forEach(el=>cio.observe(el));
     var el=document.getElementById(id); if(!el||billions==null) return;
     var v=(+billions).toFixed(1);
     el.dataset.count=v;
-    // if the count-up already ran, snap straight to the fresh value
-    if(el.textContent!=='$0'&&el.textContent!=='0') el.textContent=(el.dataset.prefix||'')+v;
+    // count-up still running: it re-reads data-count each frame and lands on v.
+    // count-up finished: snap straight to the fresh value.
+    if(!el.dataset.counting&&el.textContent!=='$0'&&el.textContent!=='0') el.textContent=(el.dataset.prefix||'')+v;
   }
   function chip(p,label){ if(p==null) return ''; var up=p>=0; return '<span class="'+(up?'up':'dn')+'">'+(up?'▲':'▼')+' '+Math.abs(p).toFixed(1)+'% <em>'+label+'</em></span>'; }
   function asofLive(key){ var el=document.querySelector('[data-stat-asof="'+key+'"]'); if(el) el.textContent='Live · hourly'; }
@@ -2846,7 +2850,7 @@ $$('[data-count]').forEach(el=>cio.observe(el));
     }
     if(d.herd&&d.herd.value){
       var hv=document.getElementById('herdLive');
-      if(hv){ hv.dataset.count=Math.round(d.herd.value); if(hv.textContent!=='0') hv.textContent=Math.round(d.herd.value).toLocaleString('en-US'); }
+      if(hv){ hv.dataset.count=Math.round(d.herd.value); if(!hv.dataset.counting&&hv.textContent!=='0') hv.textContent=Math.round(d.herd.value).toLocaleString('en-US'); }
     }
   }).catch(function(){});
 })();
