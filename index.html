@@ -134,6 +134,7 @@ img{display:block;max-width:100%}
 .stat .s-chg i{width:1px;height:11px;background:var(--line2);flex:none}
 .stat .s-grow{margin-top:8px;font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--text3)}
 .stat .s-grow span.up{color:var(--green);font-weight:600}
+.stat .s-grow span.dn{color:var(--red);font-weight:600}
 .stat.herd{border-color:rgba(255,98,0,.45);background:linear-gradient(180deg,#FFF6EF, var(--card))}
 
 /* ---------- primer (4 explainers) ---------- */
@@ -1679,10 +1680,10 @@ html{ scrollbar-color:var(--line2) transparent }
             <div class="s-chg" id="stMcapChg"><span class="up">▲ 2.0% <em>30D</em></span></div>
           </div>
           <div class="stat herd rv d2">
-            <span class="s-src live-dot">LIVE</span>
-            <div class="s-n"><span id="herdLive" data-count="22800" data-int="1">0</span></div>
+            <span class="s-src live-dot" id="herdSrc" title="Follower count from the X API, refreshed twice a day">SYNCED FROM X</span>
+            <div class="s-n"><span id="herdLive" data-count="23430" data-int="1">0</span></div>
             <div class="s-l">Members of the Herd</div>
-            <div class="s-grow"><span class="up">+2,200</span> NEW FOLLOWERS · 30D</div>
+            <div class="s-grow" id="herdGrow">@RWAFOUNDATION_ · FOLLOWERS</div>
             <a class="btn btn-orange btn-sm s-follow" href="https://x.com/RWAFoundation_" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4 4l7.2 9.3L4.4 20h2.6l5.4-5.4L16.8 20H20l-7.5-9.7L18.9 4h-2.6l-4.8 4.9L7.2 4z"/></svg>Follow @RWAFoundation_</a>
           </div>
           <div class="stat rv d3">
@@ -2817,7 +2818,7 @@ function countUp(el){
     if(k<1) requestAnimationFrame(step); else delete el.dataset.counting;
   })(t0);
 }
-const cio = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ countUp(en.target); if(en.target.id==='herdLive') setTimeout(startHerdLive,1900); cio.unobserve(en.target); } }),{threshold:.5});
+const cio = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ countUp(en.target); cio.unobserve(en.target); } }),{threshold:.5});
 $$('[data-count]').forEach(el=>cio.observe(el));
 
 /* ---------- live stat cards ----------
@@ -2851,6 +2852,8 @@ $$('[data-count]').forEach(el=>cio.observe(el));
     if(d.herd&&d.herd.value){
       var hv=document.getElementById('herdLive');
       if(hv){ hv.dataset.count=Math.round(d.herd.value); if(!hv.dataset.counting&&hv.textContent!=='0') hv.textContent=Math.round(d.herd.value).toLocaleString('en-US'); }
+      var g=document.getElementById('herdGrow');
+      if(g&&d.herd.delta30d!=null){ var dd=Math.round(d.herd.delta30d); g.innerHTML='<span class="'+(dd>=0?'up':'dn')+'">'+(dd>=0?'+':'\u2212')+Math.abs(dd).toLocaleString('en-US')+'</span> NEW FOLLOWERS \u00b7 30D'; }
     }
   }).catch(function(){});
 })();
@@ -3931,16 +3934,7 @@ bkInit();
 
 
 /* ---------- foundation: see-all members ---------- */
-/* ---------- live herd counter (synced to @RWAFoundation_ followers) ---------- */
-let herdTimer=null;
-function startHerdLive(){
-  const el=$('#herdLive'); if(!el || herdTimer) return;
-  let n=parseInt(el.dataset.count,10);
-  herdTimer=setInterval(()=>{
-    n += Math.random()<.7 ? 1 : 2;
-    el.textContent = n.toLocaleString('en-US');
-  }, 8000 + Math.random()*5000);
-}
+/* herd count comes from /api/stats (X API, cached twice daily) — no synthetic ticking */
 
 /* ============================================================
    ARTICLE HUB · "The Reading Room" — public, guest-friendly

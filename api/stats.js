@@ -56,34 +56,59 @@ async function statRwaTvl() {
 // cached in the wally_site table and X itself is called at most twice a day.
 const SB = 'https://qrmbiestcjbedavsorrj.supabase.co/rest/v1/wally_site';
 const sbHeaders = k => ({ apikey: k, Authorization: 'Bearer ' + k, 'Content-Type': 'application/json' });
+// Newest history point that is at least 30 days old, or null until the
+// cache has accumulated a month of daily points.
+export function herdBase30d(history, now = Date.now()) {
+  const cutoff = now - 30 * 86400e3;
+  let base = null;
+  for (const p of history || []) {
+    if (p && p.d && Date.parse(p.d + 'T00:00:00Z') <= cutoff) base = p; else break;
+  }
+  return base ? base.n : null;
+}
+
 async function statHerd() {
   const tok = process.env.X_BEARER_TOKEN;
   if (!tok) return null;
   const sk = process.env.SUPABASE_JOBS_SECRET;
+  const today = new Date().toISOString().slice(0, 10);
   let cached = null;
   if (sk) {
     try {
       const r = await fetch(SB + '?k=eq.herd_cache&select=v', { headers: sbHeaders(sk) });
       cached = r.ok ? (((await r.json())[0] || {}).v || null) : null;
-      if (cached && cached.value && Date.now() - (cached.at || 0) < 12 * 3600 * 1000) return { value: cached.value };
     } catch (e) {}
   }
-  const r = await fetch('https://api.x.com/2/users/by/username/RWAFoundation_?user.fields=public_metrics',
-    { headers: { Authorization: 'Bearer ' + tok } });
-  if (!r.ok) return (cached && cached.value) ? { value: cached.value } : null; // stale beats nothing
-  const d = await r.json();
-  const n = d && d.data && d.data.public_metrics && d.data.public_metrics.followers_count;
-  if (!n) return (cached && cached.value) ? { value: cached.value } : null;
-  if (sk) {
+  let history = (cached && Array.isArray(cached.history)) ? cached.history.slice() : [];
+  const save = async (n) => {
+    // one point per day (newest wins), keep ~45 days
+    const last = history[history.length - 1];
+    if (last && last.d === today) last.n = n; else history.push({ d: today, n });
+    history = history.slice(-45);
+    if (!sk) return;
     try {
       await fetch(SB + '?on_conflict=k', {
         method: 'POST',
         headers: { ...sbHeaders(sk), Prefer: 'resolution=merge-duplicates' },
-        body: JSON.stringify({ k: 'herd_cache', v: { value: n, at: Date.now() }, updated_at: new Date().toISOString() })
+        body: JSON.stringify({ k: 'herd_cache', v: { value: n, at: Date.now(), history }, updated_at: new Date().toISOString() })
       });
     } catch (e) {}
+  };
+  const result = (n) => { const base = herdBase30d(history); return { value: n, delta30d: base == null ? null : n - base }; };
+
+  if (cached && cached.value && Date.now() - (cached.at || 0) < 12 * 3600 * 1000) {
+    const last = history[history.length - 1];
+    if (!last || last.d !== today) await save(cached.value); // build the daily series even between X calls
+    return result(cached.value);
   }
-  return { value: n };
+  const r = await fetch('https://api.x.com/2/users/by/username/RWAFoundation_?user.fields=public_metrics',
+    { headers: { Authorization: 'Bearer ' + tok } });
+  if (!r.ok) return (cached && cached.value) ? result(cached.value) : null; // stale beats nothing
+  const d = await r.json();
+  const n = d && d.data && d.data.public_metrics && d.data.public_metrics.followers_count;
+  if (!n) return (cached && cached.value) ? result(cached.value) : null;
+  await save(n);
+  return result(n);
 }
 
 const soft = p => p.then(v => v).catch(() => null);
