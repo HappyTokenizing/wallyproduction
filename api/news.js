@@ -1,3 +1,4 @@
+import { mirrorPublicData } from '../lib/public-data.js';
 // RWA news for the site — Vercel serverless function.
 //   GET  /api/news           → the rwanews.today feed, edge-cached for an hour
 //                              (this is the "pull hourly": the key never reaches
@@ -23,6 +24,7 @@ async function readHidden(key) {
 }
 
 export default async function handler(req, res) {
+  if (await mirrorPublicData(req, res, '/api/news')) return;
   const sk = process.env.SUPABASE_JOBS_SECRET;
 
   if (req.method === 'GET') {

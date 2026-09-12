@@ -282,7 +282,7 @@ img{display:block;max-width:100%}
 .lw-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .lw-tile{background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);height:96px;display:flex;align-items:center;justify-content:center;padding:0 24px;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
 .lw-tile:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);border-color:var(--line2)}
-.lw-tile img{height:32px;width:auto;max-width:92%;object-fit:contain;opacity:.92;transition:opacity .2s}
+.lw-tile img{height:32px;width:auto;max-width:min(92%,200px);object-fit:contain;opacity:.92;transition:opacity .2s}
 .lw-tile:hover img{opacity:1}
 .lw-tile img.tall{max-height:40px}
 .lw-tile.word{font-family:var(--display);font-weight:760;font-stretch:112%;font-size:17px;letter-spacing:-.01em;color:var(--text2);opacity:.78;transition:opacity .2s,color .2s}
@@ -1055,7 +1055,7 @@ input.err,.nf-row.err{animation:shake .4s}
 .logomarq:hover .lm-track{animation-play-state:paused}
 .lm-group{display:flex;flex:none;align-items:center}
 .lm-item{flex:none;display:flex;align-items:center;justify-content:center;padding:0 30px}
-.lm-item img{height:28px;width:auto;max-width:none;opacity:.88;transition:opacity .2s}
+.lm-item img{height:28px;width:auto;max-width:175px;object-fit:contain;opacity:.88;transition:opacity .2s}
 .lm-item:hover img{opacity:1}
 .lm-word{font-family:var(--display);font-weight:760;font-stretch:112%;font-size:17px;letter-spacing:-.01em;color:var(--text2);opacity:.6;white-space:nowrap}
 @keyframes lmscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -4382,8 +4382,19 @@ const LOGO_DEFAULTS=[...document.querySelectorAll('#page-foundation .logowall .l
   return im ? {id:'d'+i, name:(im.getAttribute('alt')||'').trim()||('Member logo '+(i+1)), src:im.getAttribute('src')}
             : {id:'d'+i, name:el.textContent.trim()||('Member logo '+(i+1)), word:1};
 });
-function lgStore(){ const s=lsGet(LOGO_LS,{})||{}; return {order:s.order||[], del:s.del||[], add:s.add||[]}; }
-function lgSave(s){ lsSet(LOGO_LS,s); }
+const LOGO_DRAFT='wally_logos_draft_v2';
+let lgState=lsGet(LOGO_LS,{order:[],del:[],add:[]});
+let lgRevision=null, lgReady=false, lgSaving=false, lgConflict=false, lgError='';
+let lgEdit=0, lgSaved=0;
+let lgRecovery=lsGet(LOGO_DRAFT,null);
+function lgStore(){ return JSON.parse(JSON.stringify(lgState)); }
+function lgCache(s){ try{ localStorage.setItem(LOGO_LS,JSON.stringify(s)); }catch(e){} }
+function lgSave(s){
+  lgState=s; lgEdit++; lgError=''; lgCache(s);
+  lgRecovery={store:s,revision:lgRevision};
+  try{ localStorage.setItem(LOGO_DRAFT,JSON.stringify(lgRecovery)); }
+  catch(e){ lgError='Browser backup is full. Keep this page open until the server confirms the save.'; }
+}
 function lgCustomized(){ const s=lgStore(); return !!(s.order.length||s.del.length||s.add.length); }
 function logoAll(){
   const s=lgStore();
@@ -4395,34 +4406,73 @@ function renderLogoWall(){
   const grid=document.querySelector('#page-foundation .logowall .lw-grid');
   if(grid) grid.innerHTML=logoAll().map(l=> l.word
     ? '<div class="lw-tile word">'+escHtml(l.name)+'</div>'
-    : '<div class="lw-tile"><img src="'+l.src+'" alt="'+escHtml(l.name)+'"></div>').join('');
+    : '<div class="lw-tile"><img src="'+escHtml(l.src)+'" alt="'+escHtml(l.name)+'"></div>').join('');
   if(window.buildLogoMarquee) buildLogoMarquee();
 }
 if(lgCustomized()) renderLogoWall();
-/* Server copy: the console saves logo state through /api/logos so it applies to
-   EVERY visitor. localStorage above is only a fast-paint cache; whatever the
-   server holds wins as soon as this fetch lands. */
-function lgFetchRemote(){
-  fetch('/api/logos')
-    .then(function(r){ return r.ok?r.json():{}; })
-    .then(function(d){
-      var v=d&&d.store;
-      if(!v) return;
-      lsSet(LOGO_LS,{order:v.order||[],del:v.del||[],add:v.add||[]});
-      renderLogoWall();
-      if(window.__page==='admin'&&admTabNow==='logos') admPaintLogos();
-    }).catch(function(){});
+function lgStatus(){
+  const el=$('#lgStatus'); if(!el) return;
+  el.textContent=lgSaving?'Saving changes…':lgError||(lgReady?(lgEdit>lgSaved?'Changes have not been saved yet.':'All changes saved to the server.'):'Loading saved logos…');
+  const retry=$('#lgRetry'); if(retry) retry.hidden=lgSaving||(!lgError&&lgEdit===lgSaved);
+  const load=$('#lgLoad'); if(load) load.hidden=!lgConflict;
+  const recovery=$('#lgRecoveryNotice'); if(recovery) recovery.hidden=!lgRecovery||lgSaving||lgEdit>lgSaved;
+}
+async function lgFetchRemote(){
+  if(lgSaving||lgEdit>lgSaved) return;
+  const edit=lgEdit;
+  try{
+    const r=await fetch('/api/logos',{cache:'no-store'});
+    const d=await r.json();
+    if(!r.ok) throw new Error(d.error||'Could not load saved logos.');
+    if(!d.store||!Array.isArray(d.store.add)||!Array.isArray(d.store.order)||!Array.isArray(d.store.del)||!('revision' in d)) throw new Error('Please refresh the page to load the updated logo manager.');
+    if(edit!==lgEdit) return;
+    // Preserve older browser-only uploads for explicit recovery, never publish them silently.
+    if(!lgRecovery&&d.revision===null&&lgCustomized()){
+      lgRecovery={store:lgStore(),revision:null};
+      try{ localStorage.setItem(LOGO_DRAFT,JSON.stringify(lgRecovery)); }catch(e){}
+    }
+    lgState=d.store; lgRevision=d.revision; lgReady=true; lgConflict=false; lgError=''; lgCache(lgState);
+    renderLogoWall();
+    if(window.__page==='admin'&&admTabNow==='logos') admPaintLogos();
+  }catch(e){ lgError=e.message+' Your browser copy is kept; editing is paused until storage is available.'; }
+  lgStatus();
 }
 lgFetchRemote();
 function admPw(){ try{ return sessionStorage.getItem('wally_adm_pw')||''; }catch(e){ return ''; } }
-function lgPush(){
-  fetch('/api/logos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pw:admPw(),store:lgStore()})})
-    .then(function(r){ return r.json().then(function(d){ return {ok:r.ok&&d&&d.ok,msg:d&&d.error}; }); })
-    .catch(function(){ return {ok:false,msg:'network error'}; })
-    .then(function(res){
-      if(!res.ok) toast('Saved in this browser only','Server sync failed'+(res.msg?' — '+res.msg:'')+'. Other visitors will not see this change yet.');
-    });
+async function lgPush(){
+  if(!lgReady||lgSaving||lgConflict) return;
+  lgSaving=true; lgStatus();
+  try{
+    // One request at a time. Rapid reorders are coalesced behind the current save.
+    while(lgSaved<lgEdit){
+      const edit=lgEdit, store=lgStore();
+      const r=await fetch('/api/logos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pw:admPw(),store:store,revision:lgRevision})});
+      let d; try{ d=await r.json(); }catch(e){ throw new Error('Server did not confirm the save. Keep this page open and retry.'); }
+      if(!r.ok||!d.ok){ lgConflict=r.status===409; throw new Error(d.error||'Save failed. Please retry.'); }
+      lgRevision=d.revision; lgSaved=edit; lgError='';
+    }
+    lgRecovery=null;
+    try{ localStorage.removeItem(LOGO_DRAFT); }catch(e){}
+  }catch(e){ lgError=e.message; toast('Changes not saved',lgError); }
+  finally{ lgSaving=false; lgStatus(); }
 }
+function lgCanEdit(){
+  if(lgReady&&!lgConflict) return true;
+  toast('Logos not ready',lgError||'Wait for saved logos to load.'); return false;
+}
+function lgRetry(){ if(lgConflict) return lgLoadLatest(); if(!lgReady) return lgFetchRemote(); return lgPush(); }
+async function lgLoadLatest(){
+  if(lgSaving) return;
+  if(lgEdit>lgSaved&&!confirm('Load the current server version? Your unsaved browser copy will remain available to restore.')) return;
+  lgEdit=lgSaved; lgReady=false; await lgFetchRemote();
+}
+function lgRestoreDraft(){
+  if(!lgCanEdit()||!lgRecovery) return;
+  if(!confirm('Replace the current logo list with the saved browser copy and publish it?')) return;
+  lgSave(JSON.parse(JSON.stringify(lgRecovery.store)));
+  renderLogoWall(); admPaintLogos(); lgPush();
+}
+window.addEventListener('beforeunload',function(e){ if(lgSaving||lgEdit>lgSaved){ e.preventDefault(); e.returnValue=''; } });
 function admOk(){ try{ return sessionStorage.getItem('wally_adm_ok')==='1'; }catch(e){ return false; } }
 async function admSha(s){
   const b=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
@@ -4461,7 +4511,7 @@ function renderAdmin(){
   M.innerHTML='<div class="adm-head"><div class="adm-tabs">'+tabs+'</div>'
     +'<div class="adm-tools">'+(admTabNow==='logos'?'<button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button>':'')+'<button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
     +'<p class="adm-note">'+(admTabNow==='logos'
-      ?'Member logos: reorder, upload or delete below. The foundation logo wall and the homepage banner update together, and every change is saved to the server so it applies for all visitors.'
+      ?'Member logos: reorder, upload or delete below. The foundation logo wall and the homepage banner update together. Check the save status below to confirm your changes are published for all visitors.'
       :'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
     +'</p><div id="admBody"></div>';
   if(admTabNow==='logos') admPaintLogos(); else admPaintNews();
@@ -4477,16 +4527,20 @@ function admPaintLogos(){
     +(i===0?'<button class="adm-btn" disabled style="opacity:.35">&uarr; Up</button>':'<button class="adm-btn" onclick="admLogoMove(\''+l.id+'\',-1)">&uarr; Up</button>')
     +(i===list.length-1?'<button class="adm-btn" disabled style="opacity:.35">&darr; Down</button>':'<button class="adm-btn" onclick="admLogoMove(\''+l.id+'\',1)">&darr; Down</button>')
     +'<button class="adm-btn danger" onclick="admLogoDel(\''+l.id+'\')">Delete</button></div></div>';
-  B.innerHTML='<div class="adm-sec"><h6>Logos on the wall ('+list.length+')</h6>'
+  B.innerHTML='<div class="adm-sec"><p id="lgStatus" role="status" aria-live="polite"></p><button id="lgRetry" class="adm-btn" onclick="lgRetry()" hidden>Retry</button><button id="lgLoad" class="adm-btn" onclick="lgLoadLatest()" hidden>Load latest logos</button>'
+    +(lgRecovery?'<p id="lgRecoveryNotice">A browser copy is available. <button class="adm-btn" onclick="lgRestoreDraft()">Restore browser copy</button></p>':'')
+    +'<h6>Logos on the wall ('+list.length+')</h6>'
     +(list.map(row).join('')||'<div class="adm-empty">No logos on the wall. Upload one below, or reset to the defaults.</div>')
     +'<h6>Upload a logo</h6>'
     +'<div class="adm-form">'
     +'<div class="field"><label>Company name</label><input id="lgName" maxlength="48" placeholder="Company name"></div>'
-    +'<div class="field"><label>Logo image &middot; PNG, JPG, WebP or SVG</label><input id="lgFile" type="file" accept="image/*"></div>'
-    +'<button class="btn btn-orange btn-sm" onclick="admLogoUpload()">Add to the wall</button>'
+    +'<div class="field"><label>Logo image &middot; PNG, JPG, WebP or SVG</label><input id="lgFile" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml"></div>'
+    +'<button id="lgUpload" class="btn btn-orange btn-sm" onclick="admLogoUpload()">Add to the wall</button>'
     +'</div></div>';
+  lgStatus();
 }
 function admLogoMove(id,dir){
+  if(!lgCanEdit()) return;
   const ids=logoAll().map(l=>l.id);
   const i=ids.indexOf(id), j=i+dir;
   if(i<0||j<0||j>=ids.length) return;
@@ -4495,6 +4549,7 @@ function admLogoMove(id,dir){
   renderLogoWall(); admPaintLogos(); lgPush();
 }
 function admLogoDel(id){
+  if(!lgCanEdit()) return;
   if(!confirm('Remove this logo from the member wall?')) return;
   const s=lgStore();
   const k=s.add.findIndex(l=>l.id===id);
@@ -4503,43 +4558,61 @@ function admLogoDel(id){
   s.order=s.order.filter(x=>x!==id);
   lgSave(s);
   renderLogoWall(); admPaintLogos(); lgPush();
-  toast('Logo removed','Gone from the wall and the homepage banner, for every visitor.');
 }
 function admLogoReset(){
-  if(!confirm('Discard every logo change made in this browser and restore the defaults?')) return;
-  try{ localStorage.removeItem(LOGO_LS); }catch(e){}
+  if(!lgCanEdit()) return;
+  if(!confirm('Restore the default logos for all visitors?')) return;
+  lgSave({order:[],del:[],add:[]});
   renderLogoWall(); admPaintLogos(); lgPush();
-  toast('Logos reset','The default member wall is back, for every visitor.');
 }
-function admLogoUpload(){
+// Find visible bounds, removing transparent padding and opaque white margins.
+function lgBounds(data,w,h){
+  const corners=[0,(w-1)*4,(h-1)*w*4,(w*h-1)*4];
+  const white=i=>data[i+3]>250&&data[i]>245&&data[i+1]>245&&data[i+2]>245;
+  const trimWhite=corners.every(white);
+  let left=w, top=h, right=-1, bottom=-1;
+  for(let y=0;y<h;y++) for(let x=0;x<w;x++){
+    const i=(y*w+x)*4;
+    if(data[i+3]<=8||(trimWhite&&white(i))) continue;
+    left=Math.min(left,x); right=Math.max(right,x); top=Math.min(top,y); bottom=Math.max(bottom,y);
+  }
+  if(right<left) throw new Error('The image has no visible artwork.');
+  return {x:left,y:top,width:right-left+1,height:bottom-top+1};
+}
+function lgNormalize(img){
+  const nw=img.naturalWidth,nh=img.naturalHeight;
+  if(!nw||!nh) throw new Error('That image has no dimensions.');
+  const scale=Math.min(1,2048/Math.max(nw,nh));
+  const scan=document.createElement('canvas'); scan.width=Math.max(1,Math.round(nw*scale)); scan.height=Math.max(1,Math.round(nh*scale));
+  const ctx=scan.getContext('2d',{willReadFrequently:true}); ctx.drawImage(img,0,0,scan.width,scan.height);
+  const b=lgBounds(ctx.getImageData(0,0,scan.width,scan.height).data,scan.width,scan.height);
+  // Two-times display resolution, bounded width, original aspect ratio.
+  const sc=Math.min(64/b.height,400/b.width);
+  const c=document.createElement('canvas'); c.width=Math.max(1,Math.round(b.width*sc)); c.height=Math.max(1,Math.round(b.height*sc));
+  c.getContext('2d').drawImage(scan,b.x,b.y,b.width,b.height,0,0,c.width,c.height);
+  return c.toDataURL('image/png');
+}
+async function admLogoUpload(){
+  if(!lgCanEdit()) return;
   const name=($('#lgName').value||'').trim();
   const f=($('#lgFile').files||[])[0];
   if(!name){ toast('Name needed','Give the logo a company name first.'); return; }
   if(!f){ toast('File needed','Choose an image file to upload.'); return; }
-  const fin=src=>{
-    if(src.length>400000){ toast('Image too large','Could not shrink this file enough for browser storage. Try a simpler PNG or an SVG.'); return; }
-    const s=lgStore(); s.add.push({id:'u'+Date.now(), name:name, src:src}); lgSave(s);
-    renderLogoWall(); admPaintLogos(); lgPush();
-    toast('Logo added', name+' is on the wall and in the homepage banner, for every visitor.');
-  };
-  const rd=new FileReader();
-  rd.onload=()=>{
-    const raw=String(rd.result||'');
-    if(f.type==='image/svg+xml'){ fin(raw); return; } /* vectors stay vectors */
-    const img=new Image();
-    img.onload=()=>{
-      /* downscale to display size (wall shows 32px, marquee 28px; keep 2x for retina) */
-      const nw=img.naturalWidth||64, nh=img.naturalHeight||64;
-      const sc=Math.min(64/nh, 800/nw, 1);
-      const c=document.createElement('canvas');
-      c.width=Math.max(1,Math.round(nw*sc)); c.height=Math.max(1,Math.round(nh*sc));
-      c.getContext('2d').drawImage(img,0,0,c.width,c.height);
-      fin(c.toDataURL('image/png'));
-    };
-    img.onerror=()=>toast('Not an image','That file could not be read as an image.');
-    img.src=raw;
-  };
-  rd.readAsDataURL(f);
+  if(!/^image\/(png|jpeg|webp|svg\+xml)$/.test(f.type)){ toast('Unsupported image','Choose a PNG, JPG, WebP or SVG.'); return; }
+  if(f.size>10000000){ toast('Image too large','Choose an image smaller than 10 MB.'); return; }
+  const button=$('#lgUpload'); if(button){button.disabled=true;button.textContent='Preparing logo…';}
+  try{
+    const raw=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=()=>reject(new Error('The file could not be read.'));r.readAsDataURL(f);});
+    const img=await new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(new Error('That file could not be decoded as an image.'));im.src=raw;});
+    const src=lgNormalize(img);
+    if(src.length>400000) throw new Error('Please choose a simpler logo image.');
+    if(!lgCanEdit()) return;
+    const s=lgStore();
+    if(s.add.length>=100) throw new Error('The wall supports up to 100 uploaded logos.');
+    s.add.push({id:'u'+crypto.randomUUID(),name:name,src:src});
+    lgSave(s); renderLogoWall(); admPaintLogos(); await lgPush();
+  }catch(e){toast('Logo not added',e.message);}
+  finally{if(button){button.disabled=false;button.textContent='Add to the wall';}}
 }
 
 /* ---------- news moderation (admin) ---------- */

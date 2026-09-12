@@ -1,3 +1,4 @@
+import { mirrorPublicData } from '../lib/public-data.js';
 // Live homepage stat cards — Vercel serverless function.
 // GET /api/stats → { stable, rwaMcap, rwaTvl, herd } — each {value,...} or null.
 // The response is edge-cached for an hour (s-maxage), so the sources are
@@ -114,6 +115,7 @@ async function statHerd() {
 const soft = p => p.then(v => v).catch(() => null);
 
 export default async function handler(req, res) {
+  if (await mirrorPublicData(req, res, '/api/stats')) return;
   if (req.method !== 'GET') { res.status(405).json({ error: 'GET only' }); return; }
   const [stable, rwaMcap, rwaTvl, herd] = await Promise.all([
     soft(statStableTT()), soft(statRwaXyz()), soft(statRwaTvl()), soft(statHerd())
