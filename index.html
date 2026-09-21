@@ -2268,7 +2268,15 @@ html{ scrollbar-color:var(--line2) transparent }
     .nw-card h3{font-family:'Poppins',sans-serif;font-size:16.5px;font-weight:600;line-height:1.35;margin:0 0 7px}
     .nw-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--text3);margin-bottom:8px}
     .nw-tag{border:1px solid var(--line2);border-radius:6px;padding:2px 8px;letter-spacing:.04em;text-transform:uppercase;font-size:10px}
-    .nw-tag.mem{border-color:var(--orange);color:var(--orange2)}
+    .nw-card.member{border-color:#c59a46;border-left:4px solid #b48835;background:linear-gradient(115deg,rgba(197,154,70,.12),transparent 68%),var(--card)}
+    .nw-card.member:hover{border-color:#927023;box-shadow:0 5px 20px rgba(142,105,36,.14)}
+    .nw-member-line{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:12px}
+    .nw-member-badge{display:inline-flex;align-items:center;gap:6px;background:#342912;color:#ffe1a0;border:1px solid #9c7b3f;border-radius:999px;padding:5px 10px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .nw-member-names{font-size:12px;font-weight:600;color:var(--text2)}
+    .nw-chip.members{border-color:#b48835;color:var(--text)}
+    .nw-chip.members.on{background:#342912;border-color:#342912;color:#ffe1a0}
+    .nw-chip-count{margin-left:5px;opacity:.8;font-variant-numeric:tabular-nums}
+    .nw-card:focus-visible,.nw-chip:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
     .nw-blurb{font-size:13.5px;color:var(--text2);line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0}
     .nw-empty,.nw-err{color:var(--text2);padding:34px 0;font-size:14px}
     .nw-err b{color:var(--red)}
@@ -2282,7 +2290,7 @@ html{ scrollbar-color:var(--line2) transparent }
           <div>
             <span class="eyebrow">Live industry feed</span>
             <h1>RWA News</h1>
-            <p class="nw-sub">Everything moving in tokenization, pulled from rwanews.today and refreshed hourly. RWA Foundation members are flagged in orange.</p>
+            <p class="nw-sub">Everything moving in tokenization, pulled from rwanews.today and refreshed hourly. News featuring RWA Foundation members carries our gold RWAF Members badge.</p>
           </div>
           <span class="nw-status" id="nwStatus">connecting…</span>
         </div>
@@ -2305,6 +2313,37 @@ html{ scrollbar-color:var(--line2) transparent }
     var NW_URL="https://qrmbiestcjbedavsorrj.supabase.co";
     var NW_KEY="sb_publishable_CVXI0w69QnHwJSJYtbiJdg_dtXg6ot_"; /* publishable key — read-only */
     var NW={items:[],hidden:[],cat:"All",q:"",loadedAt:0,err:null};
+    var NW_MEMBERS=[];
+    // The logo manager supplies the roster. Feed hints can identify a member,
+    // but cannot grant membership to an organization absent from the logo wall.
+    function nwWords(value){return String(value||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().match(/[\p{L}\p{N}]+/gu)||[];}
+    function nwKey(value){return nwWords(value).join("");}
+    function nwMentions(words,key){
+      for(var i=0;i<words.length;i++){
+        var joined="";
+        for(var j=i;j<words.length&&joined.length<key.length;j++){
+          joined+=words[j];
+          if(joined===key)return true;
+        }
+      }
+      return false;
+    }
+    function nwMatchMembers(item){
+      var headline=nwWords(item.t), summary=nwWords(item.b);
+      var hints=item.memberHints.map(nwKey);
+      return NW_MEMBERS.filter(function(member){
+        return hints.indexOf(member.key)>=0||nwMentions(headline,member.key)||nwMentions(summary,member.key);
+      }).map(function(member){return member.name;}).join(", ")||null;
+    }
+    window.nwSyncMembers=function(logos){
+      var seen=new Set();
+      NW_MEMBERS=logos.map(function(logo){return {name:logo.name,key:nwKey(logo.name)};}).filter(function(member){
+        if(!member.key||seen.has(member.key))return false;
+        seen.add(member.key);return true;
+      });
+      NW.items.forEach(function(item){item.m=nwMatchMembers(item);});
+      if(NW.loadedAt)nwDraw();
+    };
     var NW_TTL=10*60*1000;
     function nq(s){return document.querySelector(s)}
     function nesc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
@@ -2322,8 +2361,9 @@ html{ scrollbar-color:var(--line2) transparent }
       return Promise.all([feed,hid]).then(function(res){
         NW.hidden=res[1];
         NW.items=(res[0].items||[]).filter(function(x){return x.headline&&x.url}).map(function(x){
-          return {id:x.id||x.url,t:x.headline,u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:x.section||"News",m:Array.isArray(x.members)&&x.members.length?x.members.join(", "):null,b:x.summary||""};
+          return {id:x.id||x.url,t:x.headline,u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:x.section||"News",memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:x.summary||""};
         });
+        NW.items.forEach(function(item){item.m=nwMatchMembers(item);});
         NW.loadedAt=Date.now(); NW.err=null;
       }).catch(function(e){ NW.err=e.message||"network error"; });
     }
@@ -2333,16 +2373,14 @@ html{ scrollbar-color:var(--line2) transparent }
     function nwCats(){
       var counts={};
       nwLive().forEach(function(x){counts[x.c]=(counts[x.c]||0)+1});
-      var top=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).slice(0,7);
-      var cats=["All"].concat(top);
-      if(nwLive().some(function(x){return x.m})) cats.push("Members");
-      return cats;
+      var top=Object.keys(counts).filter(function(c){return c!=="All"&&c!=="RWAF Members";}).sort(function(a,b){return counts[b]-counts[a]}).slice(0,7);
+      return ["All","RWAF Members"].concat(top);
     }
     function nwVisible(){
       var q=NW.q.toLowerCase();
       return nwLive().filter(function(x){
-        if(NW.cat==="Members"&&!x.m)return false;
-        if(NW.cat!=="All"&&NW.cat!=="Members"&&x.c!==NW.cat)return false;
+        if(NW.cat==="RWAF Members"&&!x.m)return false;
+        if(NW.cat!=="All"&&NW.cat!=="RWAF Members"&&x.c!==NW.cat)return false;
         if(q&&(x.t+" "+x.s+" "+(x.m||"")+" "+x.b).toLowerCase().indexOf(q)<0)return false;
         return true;
       });
@@ -2355,26 +2393,33 @@ html{ scrollbar-color:var(--line2) transparent }
         list.innerHTML='<div class="nw-err"><b>Couldn\'t reach the news engine</b> ('+nesc(NW.err)+'). <button class="btn btn-ghost btn-sm" onclick="nwReload()">Try again</button></div>';
         chips.innerHTML=""; return;
       }
-      if(!NW.items.length){ st.textContent="connecting…"; list.innerHTML='<div class="nw-empty">Loading the feed…</div>'; chips.innerHTML=""; return; }
+      if(!NW.loadedAt){ st.textContent="connecting…"; list.innerHTML='<div class="nw-empty">Loading the feed…</div>'; chips.innerHTML=""; return; }
       st.innerHTML='<span class="dot">●</span> live · '+nwLive().length+' items';
-      chips.innerHTML=nwCats().map(function(c){
-        return '<button type="button" class="nw-chip'+(c===NW.cat?" on":"")+'" onclick="nwSetCat(\''+nesc(c).replace(/'/g,"\\'")+'\')">'+nesc(c)+'</button>';
+      chips.innerHTML=nwCats().map(function(c,i){
+        var member=c==="RWAF Members", count=nwLive().filter(function(x){return !!x.m;}).length;
+        return '<button type="button" class="nw-chip'+(member?' members':'')+(c===NW.cat?" on":"")+'" aria-pressed="'+(c===NW.cat)+'" data-news-category="'+i+'">'+nesc(c)+(member?'<span class="nw-chip-count">'+count+'</span>':'')+'</button>';
       }).join("");
+      chips.onclick=function(event){
+        var button=event.target.closest('[data-news-category]');
+        if(button)window.nwSetCat(nwCats()[Number(button.dataset.newsCategory)]);
+      };
       var vis=nwVisible();
       list.innerHTML=vis.length?vis.map(function(x){
-        return '<a class="nw-card" href="'+nesc(x.u)+'" target="_blank" rel="noopener">'+
+        return '<a class="nw-card'+(x.m?' member':'')+'" href="'+nesc(x.u)+'" target="_blank" rel="noopener">'+
+          (x.m?'<div class="nw-member-line"><span class="nw-member-badge"><span aria-hidden="true">✦</span> RWAF Members</span><span class="nw-member-names">'+nesc(x.m)+'</span></div>':"")+
           '<div class="nw-meta"><span>'+nesc(x.s)+'</span><span>·</span><span>'+nesc(x.d)+'</span>'+
-          '<span class="nw-tag">'+nesc(x.c)+'</span>'+
-          (x.m?'<span class="nw-tag mem">Member · '+nesc(x.m)+'</span>':"")+'</div>'+
+          '<span class="nw-tag">'+nesc(x.c)+'</span></div>'+
           '<h3>'+nesc(x.t)+'</h3>'+
           (x.b?'<p class="nw-blurb">'+nesc(x.b)+'</p>':"")+
         '</a>';
-      }).join(""):'<div class="nw-empty">Nothing matches that filter this week.</div>';
+      }).join(""):'<div class="nw-empty">'+(NW.cat==="RWAF Members"?'No RWAF member stories match the current feed and search.':'Nothing matches that filter this week.')+'</div>';
     }
     window.nwSetCat=function(c){NW.cat=c;nwDraw()};
     window.nwSetQ=function(v){NW.q=v||"";nwDraw()};
     window.nwReload=function(){NW.err=null;NW.loadedAt=0;nwDraw();nwFetch().then(nwDraw)};
     window.renderNewsPage=function(){
+      // Recheck the roster when returning to news, including edits from other sessions.
+      if(window.nwRefreshMembers)window.nwRefreshMembers();
       nwDraw();
       if(Date.now()-NW.loadedAt>NW_TTL){ nwFetch().then(nwDraw); }
     };
@@ -4408,8 +4453,9 @@ function renderLogoWall(){
     ? '<div class="lw-tile word">'+escHtml(l.name)+'</div>'
     : '<div class="lw-tile"><img src="'+escHtml(l.src)+'" alt="'+escHtml(l.name)+'"></div>').join('');
   if(window.buildLogoMarquee) buildLogoMarquee();
+  if(window.nwSyncMembers) nwSyncMembers(logoAll());
 }
-if(lgCustomized()) renderLogoWall();
+renderLogoWall();
 function lgStatus(){
   const el=$('#lgStatus'); if(!el) return;
   el.textContent=lgSaving?'Saving changes…':lgError||(lgReady?(lgEdit>lgSaved?'Changes have not been saved yet.':'All changes saved to the server.'):'Loading saved logos…');
@@ -4438,6 +4484,7 @@ async function lgFetchRemote(){
   lgStatus();
 }
 lgFetchRemote();
+window.nwRefreshMembers=lgFetchRemote;
 function admPw(){ try{ return sessionStorage.getItem('wally_adm_pw')||''; }catch(e){ return ''; } }
 async function lgPush(){
   if(!lgReady||lgSaving||lgConflict) return;
@@ -4511,7 +4558,7 @@ function renderAdmin(){
   M.innerHTML='<div class="adm-head"><div class="adm-tabs">'+tabs+'</div>'
     +'<div class="adm-tools">'+(admTabNow==='logos'?'<button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button>':'')+'<button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
     +'<p class="adm-note">'+(admTabNow==='logos'
-      ?'Member logos: reorder, upload or delete below. The foundation logo wall and the homepage banner update together. Check the save status below to confirm your changes are published for all visitors.'
+      ?'Member logos: reorder, upload or delete below. The foundation logo wall, homepage banner and RWAF Members news tags update together. Use the organization’s name for each logo so its stories can be matched. Check the save status below to confirm your changes are published for all visitors.'
       :'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
     +'</p><div id="admBody"></div>';
   if(admTabNow==='logos') admPaintLogos(); else admPaintNews();
