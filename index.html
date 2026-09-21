@@ -2290,7 +2290,7 @@ html{ scrollbar-color:var(--line2) transparent }
           <div>
             <span class="eyebrow">Live industry feed</span>
             <h1>RWA News</h1>
-            <p class="nw-sub">Everything moving in tokenization, pulled from rwanews.today and refreshed hourly. News featuring RWA Foundation members carries our gold RWAF Members badge.</p>
+            <p class="nw-sub">Everything moving in tokenization, pulled from rwanews.today and refreshed hourly. News featuring RWA Foundation members carries our gold RWAF Member badge.</p>
           </div>
           <span class="nw-status" id="nwStatus">connecting…</span>
         </div>
@@ -2406,7 +2406,7 @@ html{ scrollbar-color:var(--line2) transparent }
       var vis=nwVisible();
       list.innerHTML=vis.length?vis.map(function(x){
         return '<a class="nw-card'+(x.m?' member':'')+'" href="'+nesc(x.u)+'" target="_blank" rel="noopener">'+
-          (x.m?'<div class="nw-member-line"><span class="nw-member-badge"><span aria-hidden="true">✦</span> RWAF Members</span><span class="nw-member-names">'+nesc(x.m)+'</span></div>':"")+
+          (x.m?'<div class="nw-member-line"><span class="nw-member-badge"><span aria-hidden="true">✦</span> RWAF Member</span><span class="nw-member-names">'+nesc(x.m)+'</span></div>':"")+
           '<div class="nw-meta"><span>'+nesc(x.s)+'</span><span>·</span><span>'+nesc(x.d)+'</span>'+
           '<span class="nw-tag">'+nesc(x.c)+'</span></div>'+
           '<h3>'+nesc(x.t)+'</h3>'+
