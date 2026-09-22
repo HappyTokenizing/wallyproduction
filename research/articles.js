@@ -6,7 +6,7 @@
   const states = {}, $ = id => document.getElementById(id);
   let active = 'reports';
   const tabs = [...document.querySelectorAll('[data-tab]')];
-  function node(tag, cls, text) { const el = document.createElement(tag); if (cls) el.className = cls; if (text) el.textContent = text; return el; }
+  function node(tag, cls, text) { const el = document.createElement(tag); if (cls) el.className = cls; if (text) el.textContent = RwafCopy.text(text); return el; }
   function draw() {
     if (active === 'reports') return;
     const source = sources[active], state = states[active] || { items: [] };

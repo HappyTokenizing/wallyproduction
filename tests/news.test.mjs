@@ -10,6 +10,7 @@ function client(items,hidden=[]){
   const elements=Object.fromEntries(['#nwList','#nwChips','#nwStatus'].map(id=>[id,{innerHTML:''}]));
   const c=vm.createContext({document:{querySelector:id=>elements[id]},fetch:async url=>({ok:true,json:async()=>url.includes('hidden')?{ids:hidden}:{items}})});
   c.window=c;
+  vm.runInContext(readFileSync(new URL('../assets/terminology.js',import.meta.url),'utf8'),c);
   vm.runInContext(script,c);
   return {c,elements,load:()=>c.nwAdminLoad(),roster:names=>c.nwSyncMembers(names.map(name=>({name})))};
 }

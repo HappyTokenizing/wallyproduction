@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script src="/assets/terminology.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RWA Foundation · The world has a right to financial services</title>
@@ -2361,7 +2362,7 @@ html{ scrollbar-color:var(--line2) transparent }
       return Promise.all([feed,hid]).then(function(res){
         NW.hidden=res[1];
         NW.items=(res[0].items||[]).filter(function(x){return x.headline&&x.url}).map(function(x){
-          return {id:x.id||x.url,t:x.headline,u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:x.section||"News",memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:x.summary||""};
+          return {id:x.id||x.url,t:RwafCopy.text(x.headline),u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:RwafCopy.newsSection(x.section||"News"),memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:RwafCopy.text(x.summary||"")};
         });
         NW.items.forEach(function(item){item.m=nwMatchMembers(item);});
         NW.loadedAt=Date.now(); NW.err=null;
