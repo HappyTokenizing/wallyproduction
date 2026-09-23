@@ -53,6 +53,7 @@
     for (const tab of tabs) { const on = tab.dataset.tab === active; tab.setAttribute('aria-selected', String(on)); tab.tabIndex = on ? 0 : -1; }
     $('panel-reports').hidden = active !== 'reports'; $('panel-articles').hidden = active === 'reports';
     if (active !== 'reports') { $('panel-articles').setAttribute('aria-labelledby', 'tab-' + active); draw(); if (!states[active]?.loaded) load(active); }
+    dispatchEvent(new Event('rwaf:pageview'));
   }
   for (const [i, tab] of tabs.entries()) {
     tab.addEventListener('click', () => { history.replaceState(null, '', '#' + tab.dataset.tab); select(tab.dataset.tab); });

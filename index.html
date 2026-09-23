@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <script src="/assets/terminology.js"></script>
+<script defer src="/assets/analytics.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RWA Foundation · The world has a right to financial services</title>
@@ -3913,6 +3914,7 @@ function showPage(p, anchor, fromRoute){
     if(slug){ const want = '#/'+slug; if(location.hash !== want){ SUPPRESS_ROUTE = true; location.hash = want; } }
     else if(location.hash){ history.pushState(null, '', location.pathname + location.search); }
   }
+  dispatchEvent(new Event('rwaf:pageview'));
 }
 function nav(anchor){ showPage('home', anchor); }
 
@@ -3939,7 +3941,7 @@ function routeFromLocation(initial){
     const seg = location.pathname.replace(/\/+$/,'').split('/').pop().toLowerCase();
     if(seg && PAGE_FOR[seg]) key = seg;
   }
-  const p = key !== null ? PAGE_FOR[key] : (initial ? 'home' : null);
+  const p = key !== null ? PAGE_FOR[key] : (initial || !location.hash ? 'home' : null);
   if(!p) return;
   if(!initial && p === window.__page) return;
   if(initial && p === 'home'){ window.__page = 'home'; document.title = PAGE_TITLES.home; return; }

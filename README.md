@@ -37,3 +37,11 @@ Initial accounts are `@WALLY_DAO` and `@ZeusRWA`. On first connection, permanent
 ## Editorial terminology
 
 Use **onchain** without a dash throughout website copy (capitalized **Onchain** at the start of a sentence). The shared `assets/terminology.js` display rule also normalizes incoming text from news and X articles, including Unicode dash variants, without changing source URLs or stored originals. The news category **On-Chain & Protocol** is displayed and filtered as **Protocol**. Load this shared script on any new HTML page.
+
+## Visitor analytics
+
+Vercel Web Analytics is enabled separately on the production and staging projects. Every HTML page loads `assets/analytics.js`; it loads Vercel's same-origin collector only on the canonical live domains and each project's main alias. Local development and branch previews are excluded. No additional analytics service or Analytics Plus add-on is required.
+
+Pageviews are explicit: the main router dispatches `rwaf:pageview` after navigation, and Research does the same after tab selection. This distinguishes `/news`, `/meet`, `/research/wally` and `/research/zeus` in the dashboard even though navigation uses hashes. Repeated selection of the same page and in-page anchors do not generate extra views. Research reports retain their actual paths. New routers must dispatch the event after updating their route state.
+
+Admin views are excluded. Query strings and arbitrary hashes are removed from tracked page URLs, and the integration does not send form values, identify visitors, or enable cookies. Analytics begin at installation; this does not backfill past visits or create a permanent archive of analytics data. View traffic in the Vercel dashboard under Analytics for the relevant project.
