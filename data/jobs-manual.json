@@ -1,0 +1,136 @@
+[
+  {
+    "sourceId": "dinari",
+    "id": "import-dinari-devops",
+    "role": "DevOps Engineer",
+    "apply": "https://wellfound.com/jobs/4290051-devops-engineer",
+    "desc": "Own cloud infrastructure, automation, observability and security for tokenized securities.",
+    "location": "San Mateo / Remote worldwide",
+    "work": "Remote",
+    "type": "Full time",
+    "tags": [
+      "Engineering",
+      "DevOps"
+    ],
+    "comp": "$140k\u2013$220k",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "sourceId": "dinari",
+    "id": "import-dinari-backend",
+    "role": "Senior Backend Engineer",
+    "apply": "https://wellfound.com/jobs/3211878-senior-backend-engineer",
+    "desc": "Develop backend systems and SDKs connecting blockchain infrastructure to financial applications.",
+    "location": "San Mateo / Remote worldwide",
+    "work": "Remote",
+    "type": "Full time",
+    "tags": [
+      "Engineering",
+      "Python",
+      "Java"
+    ],
+    "comp": "$120k\u2013$200k",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "sourceId": "dinari",
+    "id": "import-dinari-solana",
+    "role": "Solana Smart Contract Engineer",
+    "apply": "https://wellfound.com/jobs/4554781-solana-smart-contract-engineer",
+    "desc": "Short-term contract building permissioned securities tokens and corporate-action support on Solana.",
+    "location": "San Mateo / Remote worldwide",
+    "work": "Remote",
+    "type": "Contract",
+    "tags": [
+      "Engineering",
+      "Solana"
+    ],
+    "comp": "$120k\u2013$200k (listed range)",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "sourceId": "brickken",
+    "id": "import-brickken-backend-developer",
+    "role": "Backend Developer",
+    "apply": "https://www.brickken.com/es/job-offer/backend-developer",
+    "desc": "Develop APIs and backend infrastructure using Node.js, TypeScript and AWS.",
+    "location": "Location not specified",
+    "work": "Not specified",
+    "type": "Not specified",
+    "tags": [],
+    "comp": "",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "sourceId": "brickken",
+    "id": "import-brickken-junior-blockchain-developer",
+    "role": "Junior Blockchain Developer",
+    "apply": "https://www.brickken.com/es/job-offer/junior-blockchain-developer",
+    "desc": "Build, test and integrate Ethereum smart contracts and blockchain services.",
+    "location": "Barcelona",
+    "work": "Hybrid / Remote",
+    "type": "Full time",
+    "tags": [],
+    "comp": "",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "sourceId": "brickken",
+    "id": "import-brickken-junior-financial-controller",
+    "role": "Junior Financial Controller",
+    "apply": "https://www.brickken.com/es/job-offer/junior-financial-controller",
+    "desc": "Support accounting, reconciliations, financial reporting and cash-flow forecasting.",
+    "location": "Barcelona",
+    "work": "Hybrid",
+    "type": "Full time",
+    "tags": [],
+    "comp": "",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "sourceId": "brickken",
+    "id": "import-brickken-marketing-operations-revops-specialist",
+    "role": "Marketing Operations & RevOps Specialist",
+    "apply": "https://www.brickken.com/es/job-offer/marketing-operations-revops-specialist",
+    "desc": "Manage HubSpot, marketing automation, CRM operations and revenue reporting.",
+    "location": "Location not specified",
+    "work": "Not specified",
+    "type": "Not specified",
+    "tags": [],
+    "comp": "",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "sourceId": "ixswap",
+    "id": "import-ixswap-cmo",
+    "role": "Chief Marketing Officer",
+    "apply": "https://www.ixs.finance/job-position/chief-marketing-officer",
+    "desc": "Lead marketing strategy, brand, community and adoption for the IXS token and ecosystem.",
+    "location": "Remote",
+    "work": "Remote",
+    "type": "Not specified",
+    "tags": [
+      "Marketing",
+      "Leadership"
+    ],
+    "comp": "",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "sourceId": "token-terminal",
+    "id": "import-token-terminal-analytics",
+    "role": "Onchain Analytics Engineer",
+    "apply": "https://tokenterminal.com/careers/onchain-analytics-engineer",
+    "desc": "Build dbt and SQL models that convert blockchain activity into comparable financial and usage metrics.",
+    "location": "Remote (EU timezone)",
+    "work": "Remote",
+    "type": "Full time",
+    "tags": [
+      "Data",
+      "SQL",
+      "dbt"
+    ],
+    "comp": "",
+    "checkedAt": "2026-09-24T17:36:13.912966+00:00"
+  }
+]

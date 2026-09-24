@@ -45,3 +45,13 @@ Vercel Web Analytics is enabled separately on the production and staging project
 Pageviews are explicit: the main router dispatches `rwaf:pageview` after navigation, and Research does the same after tab selection. This distinguishes `/news`, `/meet`, `/research/wally` and `/research/zeus` in the dashboard even though navigation uses hashes. Repeated selection of the same page and in-page anchors do not generate extra views. Research reports retain their actual paths. New routers must dispatch the event after updating their route state.
 
 Admin views are excluded. Query strings and arbitrary hashes are removed from tracked page URLs, and the integration does not send form values, identify visitors, or enable cookies. Analytics begin at installation; this does not backfill past visits or create a permanent archive of analytics data. View traffic in the Vercel dashboard under Analytics for the relevant project.
+
+## Staging RWA Job Board
+
+The restored `/#/jobs` board uses the original design, with direct employer application links, search, employment/remote/member filters, member spotlights and a company-coverage panel. Membership is recalculated from `logoAll()` (the same roster as the member logo wall), including employer aliases such as Ava Labs → Avalanche and IXS → IXSwap.
+
+`GET /api/job-feed` reads the allowlisted public Ashby, Greenhouse, Lever and Rippling sources in `data/job-sources.json`. Responses are cached for 30 minutes. A successful empty feed removes that source’s roles; a failed feed uses the dated committed snapshot for at most seven days. No new paid service, credentials or cron are required. `node scripts/refresh-jobs.mjs` refreshes the deployment fallback.
+
+The September 24, 2026 review covers 19 logo members and Ondo Finance, Superstate and Centrifuge. `data/jobs-manual.json` contains employer postings verified through careers pages that do not have an integrated public API (Dinari, Brickken, IXS and Token Terminal). These are explicitly labeled as manually reviewed in company coverage and expire seven days after `checkedAt`. Recheck each employer’s current board before updating that date; do not automatically roll it forward. New roles at those sources require a manual review. Companies without confirmed public openings are listed as such, not described as “not hiring.” General/open applications and talent pools are excluded.
+
+The existing Supabase submission/admin flow remains separate from imported employer jobs. This restoration is staged for review; it has not been applied to the production repository.

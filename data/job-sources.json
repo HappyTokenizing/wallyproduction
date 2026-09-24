@@ -1,0 +1,222 @@
+[
+  {
+    "id": "securitize",
+    "company": "Securitize",
+    "memberName": "Securitize",
+    "kind": "greenhouse",
+    "url": "https://job-boards.greenhouse.io/securitize",
+    "slug": "securitize",
+    "website": "https://securitize.io/about-us/careers",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "maple",
+    "company": "Maple Finance",
+    "memberName": "Maple",
+    "kind": "review",
+    "url": "https://maple.finance",
+    "slug": null,
+    "website": "https://maple.finance",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "solana",
+    "company": "Solana Foundation",
+    "memberName": "Solana",
+    "kind": "ashby",
+    "url": "https://jobs.ashbyhq.com/Solana%20Foundation",
+    "slug": "Solana Foundation",
+    "website": "https://solana.org",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "stellar",
+    "company": "Stellar Development Foundation",
+    "memberName": "Stellar",
+    "kind": "ashby",
+    "url": "https://jobs.ashbyhq.com/stellar",
+    "slug": "stellar",
+    "website": "https://stellar.org/foundation/careers",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "avalanche",
+    "company": "Ava Labs",
+    "memberName": "Avalanche",
+    "kind": "ashby",
+    "url": "https://jobs.ashbyhq.com/ava-labs",
+    "slug": "ava-labs",
+    "website": "https://www.avalabs.org/careers",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "plume",
+    "company": "Plume",
+    "memberName": "Plume",
+    "kind": "rippling",
+    "url": "https://ats.rippling.com/plume-network/jobs",
+    "slug": null,
+    "website": "https://plume.org",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "prestocks",
+    "company": "Prestocks",
+    "memberName": "Prestocks",
+    "kind": "review",
+    "url": "https://prestocks.com",
+    "slug": null,
+    "website": "https://prestocks.com",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "dinari",
+    "company": "Dinari",
+    "memberName": "Dinari",
+    "kind": "manual",
+    "url": "https://wellfound.com/company/dinari/jobs",
+    "slug": null,
+    "website": "https://dinari.com/careers",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "brickken",
+    "company": "Brickken",
+    "memberName": "Brickken",
+    "kind": "manual",
+    "url": "https://www.brickken.com/es/people",
+    "slug": null,
+    "website": "https://www.brickken.com/es/people",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "onre",
+    "company": "OnRe",
+    "memberName": "OnRe",
+    "kind": "review",
+    "url": "https://www.onre.finance",
+    "slug": null,
+    "website": "https://www.onre.finance",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "etherfuse",
+    "company": "Etherfuse",
+    "memberName": "Etherfuse",
+    "kind": "review",
+    "url": "https://etherfuse.com",
+    "slug": null,
+    "website": "https://etherfuse.com",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "ixswap",
+    "company": "IXS",
+    "memberName": "IXSwap",
+    "kind": "manual",
+    "url": "https://www.ixs.finance/careers",
+    "slug": null,
+    "website": "https://www.ixs.finance/careers",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "real-finance",
+    "company": "Real Finance",
+    "memberName": "Real Finance",
+    "kind": "review",
+    "url": "https://www.real.finance",
+    "slug": null,
+    "website": "https://www.real.finance",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "mu-digital",
+    "company": "Mu Digital",
+    "memberName": "Mu Digital",
+    "kind": "review",
+    "url": "https://mudigital.net",
+    "slug": null,
+    "website": "https://mudigital.net",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "credefi",
+    "company": "Credefi",
+    "memberName": "Credefi",
+    "kind": "review",
+    "url": "https://www.credefi.io",
+    "slug": null,
+    "website": "https://www.credefi.io",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "orca",
+    "company": "Orca",
+    "memberName": "Orca",
+    "kind": "ashby",
+    "url": "https://jobs.ashbyhq.com/orca",
+    "slug": "orca",
+    "website": "https://jobs.ashbyhq.com/orca",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "drvnlab",
+    "company": "DRVNLab",
+    "memberName": "DRVNLab",
+    "kind": "review",
+    "url": "https://drvnlabo.xyz",
+    "slug": null,
+    "website": "https://drvnlabo.xyz",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "investready",
+    "company": "InvestReady",
+    "memberName": "InvestReady",
+    "kind": "review",
+    "url": "https://investready.com",
+    "slug": null,
+    "website": "https://investready.com",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "token-terminal",
+    "company": "Token Terminal",
+    "memberName": "Token Terminal",
+    "kind": "manual",
+    "url": "https://tokenterminal.com/careers",
+    "slug": null,
+    "website": "https://tokenterminal.com/careers",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "ondo",
+    "company": "Ondo Finance",
+    "memberName": null,
+    "kind": "greenhouse",
+    "url": "https://job-boards.greenhouse.io/ondofinance",
+    "slug": "ondofinance",
+    "website": "https://ondo.finance",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "superstate",
+    "company": "Superstate",
+    "memberName": null,
+    "kind": "lever",
+    "url": "https://jobs.lever.co/superstate",
+    "slug": "superstate",
+    "website": "https://superstate.com",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "centrifuge",
+    "company": "Centrifuge",
+    "memberName": null,
+    "kind": "lever",
+    "url": "https://jobs.lever.co/centrifuge",
+    "slug": "centrifuge",
+    "website": "https://centrifuge.io/about",
+    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  }
+]

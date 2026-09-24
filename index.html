@@ -1519,6 +1519,16 @@ html{ scrollbar-color:var(--line2) transparent }
 
 .eco-ph-actions{margin-top:14px}
 
+
+.jb-feed-status,.jb-source-note{font-size:12px;color:var(--text2);line-height:1.6;margin:20px 0 8px}
+.jb-coverage{margin-top:30px;border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--card)}
+.jb-coverage summary{font-weight:650;cursor:pointer}.jb-coverage p{font-size:13px;line-height:1.6;color:var(--text2);max-width:80ch;margin:12px 0}
+#jbCoverageGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:18px}
+.jb-company{border-top:1px solid var(--line);padding:12px 0;font-size:13px;overflow-wrap:anywhere}.jb-company small{display:block;color:var(--text2);font-size:11px;margin-top:5px;line-height:1.6}
+.jb-company a,.jb-source-note a{text-decoration:underline;text-underline-offset:3px}.jb-more{display:block;margin:22px auto}
+.jb-spot-dots{max-width:150px;flex-wrap:wrap}.jb-spot-desc{max-width:78ch}
+@media(max-width:600px){.jb-spot-eyebrow{font-size:9px;letter-spacing:.05em}.jb-spot-dots{position:static;margin-bottom:16px}.jb-row{overflow-wrap:anywhere}.jb-badge{white-space:normal}}
+
 /* ---------- jobs pagehead ---------- */
 .jb-pagehead{padding:118px 0 26px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--bg2),var(--bg))}
 .jb-ph-row{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;flex-wrap:wrap}
@@ -1645,6 +1655,7 @@ html{ scrollbar-color:var(--line2) transparent }
       </button>
       <div class="nav-cta">
         <button class="fdn-link" onclick="showPage('news')">News</button>
+        <button class="fdn-link" onclick="showPage('jobs')">Jobs</button>
         <button class="fdn-link" id="fdnLink" onclick="showPage('foundation')">Our Members</button>
         <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="mmenu" onclick="toggleMenu()">
           <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
@@ -1654,6 +1665,7 @@ html{ scrollbar-color:var(--line2) transparent }
   </nav>
   <div class="mobile-menu" id="mmenu">
     <button onclick="mm();showPage('news')">News</button>
+    <button onclick="mm();showPage('jobs')">Jobs</button>
     <button class="fdn-link" onclick="showPage('foundation')">Our Members</button>
   </div>
 
@@ -2461,9 +2473,11 @@ html{ scrollbar-color:var(--line2) transparent }
     </div>
     <section class="section" style="padding-top:10px;padding-bottom:90px">
       <div class="wrap">
+        <p id="jbFeedStatus" class="jb-feed-status" aria-live="polite">Checking employer listings…</p>
         <div id="jbSpotMount"></div>
         <div class="jb-count" id="jbCount"></div>
         <div class="jb-list" id="jbList"></div>
+        <details class="jb-coverage"><summary id="jbCoverageTitle">Company coverage</summary><p>We check member careers pages and selected RWA employers. No verified vacancy means we could not confirm a specific public opening; it does not mean the company is not hiring. General talent pools are excluded.</p><div id="jbCoverageGrid"></div></details>
         <div class="jb-postcta">
           <div>
             <h4>Hiring in the RWA economy?</h4>
@@ -2495,7 +2509,7 @@ html{ scrollbar-color:var(--line2) transparent }
             <button class="btn btn-ghost btn-sm mk-btn" onclick="showPage('brandkit')">Media kit</button>
           </div>
         </div>
-        <div class="ft-col"><h6>RWA Foundation</h6><button onclick="showPage('foundation')">About RWA Foundation</button><button onclick="nav('#wallynft')">About WALLY NFT</button><button onclick="nav('#news')">Newsletter</button><button onclick="location.href='/research/'">Research Reports</button><button onclick="comingSoon('The RWA Job Board')">Job Board <span class="soon-chip">Soon</span></button><button onclick="showPage('foundation','#fdn-members')">Our members</button><button onclick="showPage('foundation','#fdn-principles')">Principles</button></div>
+        <div class="ft-col"><h6>RWA Foundation</h6><button onclick="showPage('foundation')">About RWA Foundation</button><button onclick="nav('#wallynft')">About WALLY NFT</button><button onclick="nav('#news')">Newsletter</button><button onclick="location.href='/research/'">Research Reports</button><button onclick="showPage('jobs')">Job Board</button><button onclick="showPage('foundation','#fdn-members')">Our members</button><button onclick="showPage('foundation','#fdn-principles')">Principles</button></div>
       </div>
       <div class="ft-base">
         <p>© 2026 RWA Foundation · WALLY NFT. Nothing here is investment advice. Digital assets involve risk. Herd responsibly. Industry figures sourced from RWA.xyz, DefiLlama and Token Terminal; member count synced from @RWAFoundation_ on X.</p>
@@ -3571,7 +3585,7 @@ function renderEco(){
   <section class="ed2-mapsec">
     <div class="mh">
       <div><h3>The map, at a glance</h3><p class="ms">Every project, grouped by what it does. WALLY NFT sits in the middle of it all. Tap any dot to open its card above.</p></div>
-      <span class="ed2-legend"><i></i>RWA Foundation member</span>
+      <span class="ed2-legend"><i></i>RWAF Member</span>
     </div>
     <div class="ed2-hub"><span class="hw">W</span><div><b>WALLY NFT</b><span>The community hub, coordinating across every sector of the RWA economy.</span></div></div>
     <div class="ed2-map" id="ed2Map"></div>
@@ -4059,20 +4073,17 @@ function jbStore(){ return lsGet(JB_LS, {items:[], ovr:{}}); }
 function jbSaveStore(s){ lsSet(JB_LS, s); }
 
 /* ---------- job data ---------- */
-const JB_SEED=[
- {id:'rwaf-intern-2026', company:'The RWA Foundation', role:'Ecosystem & Research Intern', type:'Internship', work:'Remote',
-  location:'Remote, US or International', comp:'Paid internship', tags:['Research','Ecosystem','Media'],
-  desc:'The RWA Foundation is looking for another intern to help map the tokenization industry. You will track new projects for the ecosystem directory, research market data for reports and media, and support community programming across X Spaces, newsletters and events. You will work directly with the RWA Foundation team and touch every corner of the RWA economy. Curiosity about tokenized Real-World Assets matters more than years of experience.',
-  apply:'happy@rwaf.xyz', member:1, featured:1, status:'live', ts:Date.parse('2026-07-18T12:00:00Z')}
-];
+const JB_SEED=[]; // Only verified employer feeds and reviewed submissions are listed.
 /* Remote board — the shared source of truth in the Wagecuck Supabase.
    Public read via the read-only publishable key; writes go through /api/jobs. */
-let JB_REMOTE=[], JB_SYNCED=0;
+let JB_REMOTE=[], JB_SYNCED=0, JB_IMPORTED=[], JB_COVERAGE=[], JB_FEED_STATE='loading';
+const JB_MAX_AGE=7*86400000;
 const JB_SB='https://qrmbiestcjbedavsorrj.supabase.co';
 const JB_ANON='sb_publishable_CVXI0w69QnHwJSJYtbiJdg_dtXg6ot_';
 function jbSync(force){
   if(!force && Date.now()-JB_SYNCED<5*60*1000) return;
   JB_SYNCED=Date.now();
+  jbSyncFeed();
   fetch(JB_SB+'/rest/v1/wally_jobs?select=*&status=eq.live&hidden=is.false&order=ts.desc',
     {headers:{apikey:JB_ANON,Authorization:'Bearer '+JB_ANON}})
     .then(r=>r.ok?r.json():[])
@@ -4090,9 +4101,13 @@ function jbAll(){
   const remoteIds=new Set(JB_REMOTE.map(j=>j.id));
   return JB_SEED.filter(j=>!remoteIds.has(j.id)).map(merge)
     .concat(JB_REMOTE.map(merge))
-    .concat(s.items.filter(j=>!remoteIds.has(j.id)).map(merge));
+    .concat(JB_IMPORTED.filter(j=>Date.now()-Date.parse(j.checkedAt)<JB_MAX_AGE).map(merge))
+    .concat(s.items.filter(j=>!remoteIds.has(j.id)).map(merge)).map(j=>{
+      const member=jbIsMember(j.memberName || j.company);
+      return {...j,member:member?1:0,featured:member?1:0};
+    });
 }
-function jbLive(){ return jbAll().filter(j=>j.status==='live' && !j.hidden); }
+function jbLive(){ return jbAll().filter(j=>j.status==='live' && !j.hidden && !(j.id==='rwaf-intern-2026' && j.ts<=Date.parse('2026-07-18T12:00:00Z'))); }
 function jbApplyHref(v){
   v=String(v||'').trim();
   if(!v) return '#';
@@ -4101,16 +4116,61 @@ function jbApplyHref(v){
   return 'https://'+v;
 }
 
+function jbIsMember(name){
+  const key=v=>String(v||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  const aliases={maplefinance:'maple',solanafoundation:'solana',stellardevelopmentfoundation:'stellar',avalabs:'avalanche',ixs:'ixswap',drvnlabo:'drvnlab'};
+  const wanted=aliases[key(name)]||key(name);
+  return logoAll().some(l=>(aliases[key(l.name)]||key(l.name))===wanted);
+}
+function jbWhen(j){
+  if(!j.imported) return jbAgo(j.ts);
+  return 'Checked '+new Date(j.checkedAt).toLocaleDateString('en-US',{month:'short',day:'numeric'});
+}
+function jbToggleMember(){jbState.member=!jbState.member;jbState.limit=30;renderJobs(true);}
+function jbRows(jobs){
+  return jobs.slice(0,jbState.limit).map(jbRowHtml).join('')+(jobs.length>jbState.limit?'<button class="btn btn-ghost jb-more" onclick="jbState.limit+=30;renderJobs(true)">Show more roles ('+(jobs.length-jbState.limit)+' remaining)</button>':'');
+}
+async function jbSyncFeed(){
+  try{
+    let data;
+    try{const r=await fetch('/api/job-feed',{signal:AbortSignal.timeout(12000)});if(!r.ok)throw Error();data=await r.json();JB_FEED_STATE='ready';}
+    catch{const r=await fetch('/data/jobs-snapshot.json');if(!r.ok)throw Error();data=await r.json();JB_FEED_STATE='cached';}
+    if(!Array.isArray(data.jobs)||!Array.isArray(data.coverage))throw Error();
+    JB_IMPORTED=data.jobs.filter(j=>/^import-[a-z0-9-]+$/.test(j.id)&&/^https:\/\//.test(j.apply)&&Date.now()-Date.parse(j.checkedAt)<JB_MAX_AGE);
+    JB_COVERAGE=data.coverage;
+  }catch{JB_FEED_STATE='unavailable';}
+  if(window.__page==='jobs')renderJobs(true);
+}
+function jbRenderCoverage(){
+  const members=logoAll();
+  const sources=JB_COVERAGE.slice();
+  const known=new Set(sources.map(s=>String(s.memberName||'').toLowerCase().replace(/[^a-z0-9]/g,'')));
+  members.forEach(m=>{if(!known.has(m.name.toLowerCase().replace(/[^a-z0-9]/g,'')))sources.push({company:m.name,memberName:m.name,status:'needs-review'});});
+  sources.sort((a,b)=>Number(jbIsMember(b.memberName||b.company))-Number(jbIsMember(a.memberName||a.company))||a.company.localeCompare(b.company));
+  const active=JB_IMPORTED.filter(j=>Date.now()-Date.parse(j.checkedAt)<JB_MAX_AGE);
+  const companies=new Set(active.map(j=>j.company)).size;
+  $('#jbFeedStatus').textContent=JB_FEED_STATE==='loading'?'Checking employer listings…':JB_FEED_STATE==='unavailable'?'Employer feeds are unavailable. Please try again later.':companies+' employers with verified listings · Member roles featured first · '+(JB_FEED_STATE==='cached'?'Saved listings shown; live refresh unavailable.':'Application details and eligibility are set by each employer.');
+  $('#jbCoverageTitle').textContent='Company coverage · '+members.length+' RWAF members + '+sources.filter(s=>!jbIsMember(s.memberName||s.company)).length+' other RWA employers';
+  $('#jbCoverageGrid').innerHTML=sources.map(s=>{
+    const count=active.filter(j=>j.sourceId===s.id).length;
+    const day=s.checkedAt?new Date(s.checkedAt).toLocaleDateString('en-US',{month:'short',day:'numeric'}):'';
+    const status=count?count+' listed '+(count===1?'role':'roles'):(s.status==='unavailable'?'Feed unavailable':s.status==='needs-review'?'Awaiting review':'No verified public vacancy');
+    const label=s.url&&/^https:\/\//.test(s.url)?'<a href="'+escHtml(s.url)+'" target="_blank" rel="noopener noreferrer">'+escHtml(s.company)+'</a>':escHtml(s.company);
+    return '<div class="jb-company">'+label+(jbIsMember(s.memberName||s.company)?' · <b>RWAF Member</b>':'')+'<small>'+status+(day?' · Checked '+day:'')+(s.status==='cached'?' · Saved results; refresh unavailable':s.status==='manual'?' · Manually reviewed':'')+'</small></div>';
+  }).join('');
+}
+
 /* ---------- job board rendering ---------- */
 const JB_TYPES=['All','Full time','Part time','Contract','Internship'];
-const jbState={q:'', type:'All', remote:false};
+const jbState={q:'', type:'All', remote:false, member:false, limit:30};
 const jbRot={i:0, timer:null};
-function jbSetQ(v){ jbState.q=v.trim().toLowerCase(); renderJobs(true); }
-function jbSetType(t){ jbState.type=t; renderJobs(true); }
-function jbToggleRemote(){ jbState.remote=!jbState.remote; renderJobs(true); }
+function jbSetQ(v){ jbState.q=v.trim().toLowerCase(); jbState.limit=30; renderJobs(true); }
+function jbSetType(t){ jbState.type=t; jbState.limit=30; renderJobs(true); }
+function jbToggleRemote(){ jbState.remote=!jbState.remote; jbState.limit=30; renderJobs(true); }
 function jbMatch(j){
   if(jbState.type!=='All' && j.type!==jbState.type) return false;
-  if(jbState.remote && j.work!=='Remote') return false;
+  if(jbState.remote && !/remote/i.test(j.work)) return false;
+  if(jbState.member && !j.member) return false;
   if(jbState.q){
     const h=(j.role+' '+j.company+' '+j.location+' '+(j.tags||[]).join(' ')).toLowerCase();
     if(h.indexOf(jbState.q)<0) return false;
@@ -4119,71 +4179,75 @@ function jbMatch(j){
 }
 function jbChipsHtml(){
   const c=JB_TYPES.map(t=>'<button class="jb-chip'+(jbState.type===t?' on':'')+'" onclick="jbSetType(\''+t+'\')">'+t+'</button>').join('');
-  return c+'<button class="jb-chip'+(jbState.remote?' on':'')+'" onclick="jbToggleRemote()">Remote</button>';
+  return c+'<button class="jb-chip'+(jbState.remote?' on':'')+'" onclick="jbToggleRemote()">Remote</button>'
+    +'<button class="jb-chip'+(jbState.member?' on':'')+'" onclick="jbToggleMember()">RWAF Member</button>';
 }
 function jbBadges(j){
   let b='';
-  if(j.featured) b+='<span class="jb-badge">RWA Foundation member &middot; Featured</span>';
-  else if(j.member) b+='<span class="jb-badge mem">RWA Foundation member</span>';
+  if(j.featured) b+='<span class="jb-badge">RWAF Member &middot; Featured</span>';
+  else if(j.member) b+='<span class="jb-badge mem">RWAF Member</span>';
   return b;
 }
 function jbRowHtml(j){
   const tags=(j.tags||[]).slice(0,4).map(t=>'<span class="jb-tag">'+escHtml(t)+'</span>').join('');
-  return '<button class="jb-row'+(j.featured?' feat':'')+'" onclick="jbOpenJob(\''+escHtml(j.id)+'\')">'
-    +'<span class="jb-logo">'+jbMonoLetter(j.company)+'</span>'
+  return '<button class="jb-row'+(j.featured?' feat':'')+'" onclick="jbOpenJob(\''+escHtml(encodeURIComponent(j.id).replace(/'/g,'%27'))+'\')">'
+    +'<span class="jb-logo">'+escHtml(jbMonoLetter(j.company))+'</span>'
     +'<span class="jb-main"><span class="jb-role">'+escHtml(j.role)+' '+jbBadges(j)+'</span>'
     +'<span class="jb-meta">'+escHtml(j.company)+'<span class="sep">&middot;</span>'+escHtml(j.type)+'<span class="sep">&middot;</span>'+escHtml(j.work)+'<span class="sep">&middot;</span>'+escHtml(j.location)+'</span>'
     +(tags?'<span class="jb-tags">'+tags+'</span>':'')+'</span>'
-    +'<span class="jb-side">'+(j.comp?'<span class="jb-comp">'+escHtml(j.comp)+'</span>':'')+'<span class="jb-ago">'+jbAgo(j.ts)+'</span></span></button>';
+    +'<span class="jb-side">'+(j.comp?'<span class="jb-comp">'+escHtml(j.comp)+'</span>':'')+'<span class="jb-ago">'+jbWhen(j)+'</span></span></button>';
 }
 function jbSpotHtml(j, n){
   const dots=n>1?'<div class="jb-spot-dots">'+Array.from({length:n},(_,k)=>'<button'+(k===jbRot.i?' class="on"':'')+' aria-label="Featured '+(k+1)+'" onclick="jbGo('+k+')"></button>').join('')+'</div>':'';
   return '<div class="jb-spot jb-fade" onmouseenter="jbHold=true" onmouseleave="jbHold=false">'+dots
-    +'<span class="jb-spot-eyebrow"><span class="dot"></span>RWA Foundation member &middot; Featured role</span>'
+    +'<span class="jb-spot-eyebrow"><span class="dot"></span>RWAF Member &middot; Featured role</span>'
     +'<h3>'+escHtml(j.role)+'</h3><div class="jb-spot-co">'+escHtml(j.company)+' &middot; '+escHtml(j.type)+' &middot; '+escHtml(j.work)+' &middot; '+escHtml(j.location)+'</div>'
     +'<p class="jb-spot-desc">'+escHtml(j.desc)+'</p>'
-    +'<div class="jb-spot-foot"><button class="btn btn-orange btn-sm" onclick="jbOpenJob(\''+escHtml(j.id)+'\')">View role</button>'
-    +(j.comp?'<span class="jb-comp">'+escHtml(j.comp)+'</span>':'')+'<span class="jb-ago">'+jbAgo(j.ts)+'</span></div></div>';
+    +'<div class="jb-spot-foot"><button class="btn btn-orange btn-sm" onclick="jbOpenJob(\''+escHtml(encodeURIComponent(j.id).replace(/'/g,'%27'))+'\')">View role</button>'
+    +(j.comp?'<span class="jb-comp">'+escHtml(j.comp)+'</span>':'')+'<span class="jb-ago">'+jbWhen(j)+'</span></div></div>';
 }
 let jbHold=false;
 function renderJobs(keepRot){
   const chips=$('#jbChips'); if(!chips) return;
   chips.innerHTML=jbChipsHtml();
-  const live=jbLive().slice().sort((a,b)=>(b.member||0)-(a.member||0) || b.ts-a.ts);
-  const filtering=!!jbState.q || jbState.type!=='All' || jbState.remote;
+  jbRenderCoverage();
+  const live=jbLive().slice().sort((a,b)=>(b.member||0)-(a.member||0) || a.company.localeCompare(b.company) || a.role.localeCompare(b.role));
+  const filtering=!!jbState.q || jbState.type!=='All' || jbState.remote || jbState.member;
   const spotM=$('#jbSpotMount'), listM=$('#jbList'), cnt=$('#jbCount');
   if(filtering){
     jbPause();
     const hits=live.filter(jbMatch).sort((a,b)=>(b.featured||0)-(a.featured||0) || (b.member||0)-(a.member||0) || b.ts-a.ts);
     spotM.innerHTML='';
     cnt.textContent=hits.length+(hits.length===1?' role':' roles')+' found';
-    listM.innerHTML=hits.length?hits.map(jbRowHtml).join(''):'<div class="jb-empty"><b>No roles match.</b><p>Try clearing the filters, or list the role you are hiring for.</p><button class="btn btn-ghost btn-sm" onclick="jbReset()">Clear filters</button></div>';
+    listM.innerHTML=hits.length?jbRows(hits):'<div class="jb-empty"><b>No roles match.</b><p>Try clearing the filters, or list the role you are hiring for.</p><button class="btn btn-ghost btn-sm" onclick="jbReset()">Clear filters</button></div>';
     return;
   }
-  const feat=live.filter(j=>j.featured);
+  const seenCompanies=new Set();
+  const feat=live.filter(j=>j.featured && !seenCompanies.has(j.company) && seenCompanies.add(j.company));
   if(!keepRot) jbRot.i=0;
   if(jbRot.i>=feat.length) jbRot.i=0;
   spotM.innerHTML=feat.length?jbSpotHtml(feat[jbRot.i], feat.length):'';
-  const pinned=feat;
+  const pinned=live.filter(j=>j.featured);
   const rest=live.filter(j=>!j.featured);
   cnt.textContent=live.length+(live.length===1?' open role':' open roles')+' across the RWA economy';
-  listM.innerHTML=(pinned.concat(rest)).map(jbRowHtml).join('')||(live.length?'':'<div class="jb-empty"><b>The board is warming up.</b><p>Be the first to list a role for the RWA economy.</p><button class="btn btn-orange btn-sm" onclick="openPostJob()">Post a job</button></div>');
+  listM.innerHTML=jbRows(pinned.concat(rest))||(live.length?'':'<div class="jb-empty"><b>The board is warming up.</b><p>Be the first to list a role for the RWA economy.</p><button class="btn btn-orange btn-sm" onclick="openPostJob()">Post a job</button></div>');
   jbPause();
   if(feat.length>1){ jbRot.timer=setInterval(()=>{ if(!jbHold && !document.hidden){ jbRot.i=(jbRot.i+1)%feat.length; renderJobs(true); } }, 6500); }
 }
 function jbGo(k){ jbRot.i=k; renderJobs(true); }
-function jbReset(){ jbState.q=''; jbState.type='All'; jbState.remote=false; const q=$('#jbQ'); if(q) q.value=''; renderJobs(); }
+function jbReset(){ jbState.q=''; jbState.type='All'; jbState.remote=false; jbState.member=false; jbState.limit=30; const q=$('#jbQ'); if(q) q.value=''; renderJobs(); }
 function jbPause(){ if(jbRot.timer){ clearInterval(jbRot.timer); jbRot.timer=null; } }
 
 /* ---------- job detail ---------- */
 function jbOpenJob(id){
-  const j=jbAll().find(x=>x.id===id); if(!j) return;
+  const j=jbLive().find(x=>x.id===decodeURIComponent(id)); if(!j) return;
   $('#jvTitle').textContent=j.role;
   $('#jvBody').innerHTML='<div class="jb-meta" style="margin-bottom:12px">'+escHtml(j.company)+'<span class="sep">&middot;</span>'+escHtml(j.type)+'<span class="sep">&middot;</span>'+escHtml(j.work)+'<span class="sep">&middot;</span>'+escHtml(j.location)+'</div>'
     +(j.featured||j.member?'<div style="margin-bottom:12px">'+jbBadges(j)+'</div>':'')
     +'<p style="font-size:14.5px;line-height:1.7;color:var(--text2);white-space:pre-line">'+escHtml(j.desc)+'</p>'
     +((j.tags||[]).length?'<div class="jb-tags" style="margin-top:14px">'+j.tags.map(t=>'<span class="jb-tag">'+escHtml(t)+'</span>').join('')+'</div>':'');
-  $('#jvMeta').textContent=(j.comp?j.comp+' · ':'')+jbAgo(j.ts);
+  $('#jvMeta').textContent=(j.comp?j.comp+' · ':'')+jbWhen(j);
+  if(j.imported) $('#jvBody').insertAdjacentHTML('beforeend','<p class="jb-source-note">Listed on <a target="_blank" rel="noopener noreferrer" href="'+escHtml(j.sourceUrl)+'">'+escHtml(j.company)+' careers</a>. Confirm availability and full details with the employer.</p>');
   $('#jvApply').href=jbApplyHref(j.apply);
   openModal('mJobView');
 }
@@ -4315,6 +4379,7 @@ function renderLogoWall(){
     : '<div class="lw-tile"><img src="'+escHtml(l.src)+'" alt="'+escHtml(l.name)+'"></div>').join('');
   if(window.buildLogoMarquee) buildLogoMarquee();
   if(window.nwSyncMembers) nwSyncMembers(logoAll());
+  if(window.__page==='jobs' && window.renderJobs) renderJobs(true);
 }
 renderLogoWall();
 function lgStatus(){
@@ -4564,7 +4629,7 @@ function admNewsAct(i,act){
 
 
 /* ---------- boot: render if a deep link landed here before this block loaded ---------- */
-if(window.__page==='jobs') renderJobs();
+if(window.__page==='jobs'){ renderJobs(); jbSync(); }
 if(window.__page==='admin') renderAdmin();
 
 /* ---------- esc closes the new modals ---------- */
