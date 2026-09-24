@@ -1526,6 +1526,13 @@ html{ scrollbar-color:var(--line2) transparent }
 .lg-icon-control{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.lg-icon-preview{display:flex;width:44px;height:44px;align-items:center;justify-content:center;padding:6px;border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden}.lg-icon-preview img{width:100%;height:100%;object-fit:contain}.lg-icon-preview span{font-size:9px;text-align:center;color:var(--text3)}
 .lg-icon-upload{position:relative;cursor:pointer}.lg-icon-upload input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.lg-icon-upload:focus-within{outline:2px solid var(--orange);outline-offset:2px}
 
+
+.jb-recency{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--text2);margin:6px 0}
+.jb-recency select{font:12px var(--mono);padding:9px 32px 9px 13px;border:1px solid var(--line2);border-radius:100px;background:var(--card);color:var(--text);cursor:pointer}
+.jb-spot-nav{display:flex;align-items:center;justify-content:flex-end;gap:12px;position:relative;z-index:1;margin-bottom:14px;font:11px var(--mono);color:var(--text2)}
+.jb-spot-nav button{width:36px;height:36px;border:1px solid var(--line2);border-radius:50%;background:var(--card);font-size:20px;cursor:pointer;color:var(--text)}
+.jb-spot-nav button:hover{border-color:var(--orange);color:var(--orange2)}.jb-spot-nav button:disabled{opacity:.35;cursor:default}.jb-spot-nav button:focus-visible,.jb-recency select:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+
 .jb-feed-status,.jb-source-note{font-size:12px;color:var(--text2);line-height:1.6;margin:20px 0 8px}
 .jb-coverage{margin-top:30px;border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--card)}
 .jb-coverage summary{font-weight:650;cursor:pointer}.jb-coverage p{font-size:13px;line-height:1.6;color:var(--text2);max-width:80ch;margin:12px 0}
@@ -1650,6 +1657,7 @@ html{ scrollbar-color:var(--line2) transparent }
 </head>
 <body>
 <script src="/assets/member-icons.js"></script>
+<script src="/assets/job-recency.js"></script>
 
 <!-- ====================================================== LANDING -->
 <div id="landing">
@@ -2468,13 +2476,14 @@ html{ scrollbar-color:var(--line2) transparent }
           <div>
             <span class="eyebrow">RWA careers</span>
             <h1>The RWA Job Board</h1>
-            <p class="jb-sub">Open roles across the tokenization industry, from issuers to infrastructure. RWA Foundation members get featured placement at the top of the board.</p>
+            <p class="jb-sub">Open roles across the tokenization industry, from issuers to infrastructure. Recent RWA Foundation member roles are featured. Browse openings by the date they were posted.</p>
           </div>
           <button class="btn btn-orange" onclick="openPostJob()">Post a job</button>
         </div>
         <div class="jb-controls">
           <label class="jb-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="jbQ" type="search" placeholder="Search roles, companies, tags" oninput="jbSetQ(this.value)"></label>
           <div class="jb-chips" id="jbChips"></div>
+          <label class="jb-recency">Posted within <select id="jbRecency" onchange="jbSetDays(this.value)"><option value="7">7 days</option><option value="30" selected>30 days</option><option value="60">60 days</option><option value="90">90 days</option></select></label>
         </div>
       </div>
     </div>
@@ -4111,7 +4120,7 @@ function jbAll(){
     .concat(JB_IMPORTED.filter(j=>Date.now()-Date.parse(j.checkedAt)<JB_MAX_AGE).map(merge))
     .concat(s.items.filter(j=>!remoteIds.has(j.id)).map(merge)).map(j=>{
       const member=jbIsMember(j.memberName || j.company);
-      return {...j,member:member?1:0,featured:member?1:0};
+      return {...j,member:member?1:0,featured:member&&RWAFJobRecency.withinDays(j,30)?1:0};
     });
 }
 function jbLive(){ return jbAll().filter(j=>j.status==='live' && !j.hidden && !(j.id==='rwaf-intern-2026' && j.ts<=Date.parse('2026-07-18T12:00:00Z'))); }
@@ -4136,8 +4145,12 @@ function jbLogoHtml(j){
   return src ? '<span class="jb-logo company-icon"><img src="'+escHtml(src)+'" alt="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>'+escHtml(jbMonoLetter(j.company))+'</span></span>' : '<span class="jb-logo">'+escHtml(jbMonoLetter(j.company))+'</span>';
 }
 function jbWhen(j){
-  if(!j.imported) return jbAgo(j.ts);
-  return 'Checked '+new Date(j.checkedAt).toLocaleDateString('en-US',{month:'short',day:'numeric'});
+  const time=RWAFJobRecency.postedTime(j);
+  return time?'Posted '+new Date(time).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}):'Posting date unavailable';
+}
+function jbSetDays(value){
+  const days=Number(value);if(!RWAFJobRecency.WINDOWS.includes(days))return;
+  jbState.days=days;jbState.limit=30;renderJobs();
 }
 function jbToggleMember(){jbState.member=!jbState.member;jbState.limit=30;renderJobs(true);}
 function jbRows(jobs){
@@ -4146,7 +4159,7 @@ function jbRows(jobs){
 async function jbSyncFeed(){
   try{
     let data;
-    try{const r=await fetch('/api/job-feed',{signal:AbortSignal.timeout(12000)});if(!r.ok)throw Error();data=await r.json();JB_FEED_STATE='ready';}
+    try{const r=await fetch('/api/job-feed',{signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error();data=await r.json();JB_FEED_STATE='ready';}
     catch{const r=await fetch('/data/jobs-snapshot.json');if(!r.ok)throw Error();data=await r.json();JB_FEED_STATE='cached';}
     if(!Array.isArray(data.jobs)||!Array.isArray(data.coverage))throw Error();
     JB_IMPORTED=data.jobs.filter(j=>/^import-[a-z0-9-]+$/.test(j.id)&&/^https:\/\//.test(j.apply)&&Date.now()-Date.parse(j.checkedAt)<JB_MAX_AGE);
@@ -4161,26 +4174,31 @@ function jbRenderCoverage(){
   members.forEach(m=>{if(!known.has(m.name.toLowerCase().replace(/[^a-z0-9]/g,'')))sources.push({company:m.name,memberName:m.name,status:'needs-review'});});
   sources.sort((a,b)=>Number(jbIsMember(b.memberName||b.company))-Number(jbIsMember(a.memberName||a.company))||a.company.localeCompare(b.company));
   const active=JB_IMPORTED.filter(j=>Date.now()-Date.parse(j.checkedAt)<JB_MAX_AGE);
-  const companies=new Set(active.map(j=>j.company)).size;
-  $('#jbFeedStatus').textContent=JB_FEED_STATE==='loading'?'Checking employer listings…':JB_FEED_STATE==='unavailable'?'Employer feeds are unavailable. Please try again later.':companies+' employers with verified listings · Member roles featured first · '+(JB_FEED_STATE==='cached'?'Saved listings shown; live refresh unavailable.':'Application details and eligibility are set by each employer.');
+  const visible=active.filter(j=>RWAFJobRecency.withinDays(j,jbState.days));
+  const companies=new Set(visible.map(j=>j.company)).size;
+  const undated=active.filter(j=>!RWAFJobRecency.postedTime(j)).length;
+  $('#jbFeedStatus').textContent=JB_FEED_STATE==='loading'?'Checking employer listings…':JB_FEED_STATE==='unavailable'?'Employer feeds are unavailable. Please try again later.':companies+' employers with roles in this window · '+undated+' undated roles excluded · '+(JB_FEED_STATE==='cached'?'Saved listings shown; live refresh unavailable.':'Application details and eligibility are set by each employer.');
   $('#jbCoverageTitle').textContent='Company coverage · '+members.length+' RWAF members + '+sources.filter(s=>!jbIsMember(s.memberName||s.company)).length+' other RWA employers';
   $('#jbCoverageGrid').innerHTML=sources.map(s=>{
-    const count=active.filter(j=>j.sourceId===s.id).length;
+    const companyJobs=active.filter(j=>j.sourceId===s.id);
+    const count=companyJobs.filter(j=>RWAFJobRecency.withinDays(j,jbState.days)).length;
+    const unknown=companyJobs.filter(j=>!RWAFJobRecency.postedTime(j)).length;
     const day=s.checkedAt?new Date(s.checkedAt).toLocaleDateString('en-US',{month:'short',day:'numeric'}):'';
-    const status=count?count+' listed '+(count===1?'role':'roles'):(s.status==='unavailable'?'Feed unavailable':s.status==='needs-review'?'Awaiting review':'No verified public vacancy');
+    const status=count?count+' '+(count===1?'role':'roles')+' within '+jbState.days+' days':companyJobs.length?'No dated roles within '+jbState.days+' days':(s.status==='unavailable'?'Feed unavailable':s.status==='needs-review'?'Awaiting review':'No verified public vacancy');
     const label=s.url&&/^https:\/\//.test(s.url)?'<a href="'+escHtml(s.url)+'" target="_blank" rel="noopener noreferrer">'+escHtml(s.company)+'</a>':escHtml(s.company);
-    return '<div class="jb-company">'+label+(jbIsMember(s.memberName||s.company)?' · <b>RWAF Member</b>':'')+'<small>'+status+(day?' · Checked '+day:'')+(s.status==='cached'?' · Saved results; refresh unavailable':s.status==='manual'?' · Manually reviewed':'')+'</small></div>';
+    return '<div class="jb-company">'+label+(jbIsMember(s.memberName||s.company)?' · <b>RWAF Member</b>':'')+'<small>'+status+(unknown?' · '+unknown+' undated excluded':'')+(day?' · Checked '+day:'')+(s.status==='cached'?' · Saved results; refresh unavailable':s.status==='manual'?' · Manually reviewed':'')+'</small></div>';
   }).join('');
 }
 
 /* ---------- job board rendering ---------- */
 const JB_TYPES=['All','Full time','Part time','Contract','Internship'];
-const jbState={q:'', type:'All', remote:false, member:false, limit:30};
-const jbRot={i:0, timer:null};
+const jbState={q:'', type:'All', remote:false, member:false, limit:30, days:30};
+const jbRot={i:0, timer:null, items:[]};
 function jbSetQ(v){ jbState.q=v.trim().toLowerCase(); jbState.limit=30; renderJobs(true); }
 function jbSetType(t){ jbState.type=t; jbState.limit=30; renderJobs(true); }
 function jbToggleRemote(){ jbState.remote=!jbState.remote; jbState.limit=30; renderJobs(true); }
 function jbMatch(j){
+  if(!RWAFJobRecency.withinDays(j,jbState.days))return false;
   if(jbState.type!=='All' && j.type!==jbState.type) return false;
   if(jbState.remote && !/remote/i.test(j.work)) return false;
   if(jbState.member && !j.member) return false;
@@ -4211,8 +4229,8 @@ function jbRowHtml(j){
     +'<span class="jb-side">'+(j.comp?'<span class="jb-comp">'+escHtml(j.comp)+'</span>':'')+'<span class="jb-ago">'+jbWhen(j)+'</span></span></button>';
 }
 function jbSpotHtml(j, n){
-  const dots=n>1?'<div class="jb-spot-dots">'+Array.from({length:n},(_,k)=>'<button'+(k===jbRot.i?' class="on"':'')+' aria-label="Featured '+(k+1)+'" onclick="jbGo('+k+')"></button>').join('')+'</div>':'';
-  return '<div class="jb-spot jb-fade" onmouseenter="jbHold=true" onmouseleave="jbHold=false">'+dots
+  const controls='<div class="jb-spot-nav"><button type="button" aria-label="Previous featured role" onclick="jbStep(-1)"'+(n<2?' disabled':'')+'>&larr;</button><span aria-live="polite">'+(jbRot.i+1)+' / '+n+'</span><button type="button" aria-label="Next featured role" onclick="jbStep(1)"'+(n<2?' disabled':'')+'>&rarr;</button></div>';
+  return '<div class="jb-spot jb-fade" onmouseenter="jbHold=true" onmouseleave="jbHold=false" onfocusin="jbHold=true" onfocusout="jbHold=false">'+controls
     +'<span class="jb-spot-eyebrow"><span class="dot"></span>RWAF Member &middot; Featured role</span>'
     +'<h3>'+escHtml(j.role)+'</h3><div class="jb-spot-co">'+jbLogoHtml(j)+escHtml(j.company)+' &middot; '+escHtml(j.type)+' &middot; '+escHtml(j.work)+' &middot; '+escHtml(j.location)+'</div>'
     +'<p class="jb-spot-desc">'+escHtml(j.desc)+'</p>'
@@ -4220,35 +4238,39 @@ function jbSpotHtml(j, n){
     +(j.comp?'<span class="jb-comp">'+escHtml(j.comp)+'</span>':'')+'<span class="jb-ago">'+jbWhen(j)+'</span></div></div>';
 }
 let jbHold=false;
+function jbRenderSpot(){
+  const items=jbRot.items;
+  $('#jbSpotMount').innerHTML=items.length?jbSpotHtml(items[jbRot.i],items.length):'';
+}
 function renderJobs(keepRot){
   const chips=$('#jbChips'); if(!chips) return;
   chips.innerHTML=jbChipsHtml();
+  $('#jbRecency').value=String(jbState.days);
   jbRenderCoverage();
-  const live=jbLive().slice().sort((a,b)=>(b.member||0)-(a.member||0) || a.company.localeCompare(b.company) || a.role.localeCompare(b.role));
-  const filtering=!!jbState.q || jbState.type!=='All' || jbState.remote || jbState.member;
-  const spotM=$('#jbSpotMount'), listM=$('#jbList'), cnt=$('#jbCount');
-  if(filtering){
-    jbPause();
-    const hits=live.filter(jbMatch).sort((a,b)=>(b.featured||0)-(a.featured||0) || (b.member||0)-(a.member||0) || b.ts-a.ts);
-    spotM.innerHTML='';
-    cnt.textContent=hits.length+(hits.length===1?' role':' roles')+' found';
-    listM.innerHTML=hits.length?jbRows(hits):'<div class="jb-empty"><b>No roles match.</b><p>Try clearing the filters, or list the role you are hiring for.</p><button class="btn btn-ghost btn-sm" onclick="jbReset()">Clear filters</button></div>';
-    return;
-  }
-  const seenCompanies=new Set();
-  const feat=live.filter(j=>j.featured && !seenCompanies.has(j.company) && seenCompanies.add(j.company));
-  if(!keepRot) jbRot.i=0;
-  if(jbRot.i>=feat.length) jbRot.i=0;
-  spotM.innerHTML=feat.length?jbSpotHtml(feat[jbRot.i], feat.length):'';
-  const pinned=live.filter(j=>j.featured);
-  const rest=live.filter(j=>!j.featured);
-  cnt.textContent=live.length+(live.length===1?' open role':' open roles')+' across the RWA economy';
-  listM.innerHTML=jbRows(pinned.concat(rest))||(live.length?'':'<div class="jb-empty"><b>The board is warming up.</b><p>Be the first to list a role for the RWA economy.</p><button class="btn btn-orange btn-sm" onclick="openPostJob()">Post a job</button></div>');
-  jbPause();
-  if(feat.length>1){ jbRot.timer=setInterval(()=>{ if(!jbHold && !document.hidden){ jbRot.i=(jbRot.i+1)%feat.length; renderJobs(true); } }, 6500); }
+  const hits=jbLive().filter(jbMatch).sort(RWAFJobRecency.newest);
+  const previous=keepRot?jbRot.items[jbRot.i]?.id:null;
+  jbRot.items=RWAFJobRecency.featured(hits);
+  const index=jbRot.items.findIndex(j=>j.id===previous);jbRot.i=index<0?0:index;
+  jbRenderSpot();
+  $('#jbCount').textContent=hits.length+(hits.length===1?' open role':' open roles')+' · Posted within '+jbState.days+' days · Newest first';
+  $('#jbList').innerHTML=hits.length?jbRows(hits):'<div class="jb-empty"><b>No recent roles match.</b><p>Try a wider posting window or clear the filters. Jobs without a verified posting date are excluded.</p><button class="btn btn-ghost btn-sm" onclick="jbReset()">Clear filters</button></div>';
+  jbStartRotation();
 }
-function jbGo(k){ jbRot.i=k; renderJobs(true); }
-function jbReset(){ jbState.q=''; jbState.type='All'; jbState.remote=false; jbState.member=false; jbState.limit=30; const q=$('#jbQ'); if(q) q.value=''; renderJobs(); }
+function jbStartRotation(){
+  jbPause();
+  if(jbRot.items.length>1&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    jbRot.timer=setInterval(()=>{if(!jbHold&&!document.hidden)jbStep(1,false);},6500);
+  }
+}
+function jbStep(direction,manual=true){
+  if(jbRot.items.some(j=>!RWAFJobRecency.withinDays(j,30))){renderJobs(true);return;}
+  if(jbRot.items.length<2)return;
+  jbRot.i=(jbRot.i+direction+jbRot.items.length)%jbRot.items.length;
+  jbRenderSpot();
+  if(manual){jbStartRotation();$('#jbSpotMount button[aria-label="'+(direction<0?'Previous':'Next')+' featured role"]')?.focus();}
+}
+function jbGo(k){if(k>=0&&k<jbRot.items.length){jbRot.i=k;jbRenderSpot();jbStartRotation();}}
+function jbReset(){ jbState.q=''; jbState.type='All'; jbState.remote=false; jbState.member=false; jbState.limit=30; jbState.days=30; const q=$('#jbQ'); if(q) q.value=''; renderJobs(); }
 function jbPause(){ if(jbRot.timer){ clearInterval(jbRot.timer); jbRot.timer=null; } }
 
 /* ---------- job detail ---------- */

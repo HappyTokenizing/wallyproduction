@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T17:43:43.519Z",
+  "generatedAt": "2026-09-24T19:05:07.588Z",
   "jobs": [
     {
       "id": "import-securitize-b10a8551b4424906",
@@ -15,7 +15,9 @@
       "comp": "",
       "tags": [],
       "desc": "Associate, Fund Operations at Securitize. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-18T19:59:04.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -34,7 +36,9 @@
       "comp": "",
       "tags": [],
       "desc": "Legal Counsel at Securitize. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-02-13T17:50:16.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -53,7 +57,9 @@
       "comp": "",
       "tags": [],
       "desc": "Product Manager at Securitize. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-23T17:12:25.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -74,7 +80,9 @@
         "Technology"
       ],
       "desc": "Solana Program Engineer at Solana Foundation · Technology. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2025-11-05T14:41:10.541Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -95,7 +103,9 @@
         "Business Development"
       ],
       "desc": "Institutional Growth Lead- Greater China at Solana Foundation · Business Development. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2025-11-21T23:32:14.891Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -116,7 +126,9 @@
         "Business Development"
       ],
       "desc": "Institutional Growth Lead- Japan at Solana Foundation · Business Development. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2025-11-23T22:29:25.724Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -137,7 +149,9 @@
         "Strategy"
       ],
       "desc": "GM, AI Ecosystem at Solana Foundation · Strategy. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-07-06T19:34:05.935Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -158,7 +172,9 @@
         "Finance"
       ],
       "desc": "Senior Accountant, Financial Operations at Solana Foundation · Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-13T12:12:37.806Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -179,7 +195,9 @@
         "Marketing"
       ],
       "desc": "New Media Manager, Social and Community Growth at Solana Foundation · Marketing. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-16T16:22:11.801Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -200,7 +218,9 @@
         "Marketing"
       ],
       "desc": "Institutional Growth Marketing Lead at Solana Foundation · Marketing. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-16T16:57:51.382Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -221,7 +241,9 @@
         "Product"
       ],
       "desc": "Lead Engineer, Frontier Traders at Solana Foundation · Product. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-22T15:15:09.809Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -243,7 +265,9 @@
         "Core"
       ],
       "desc": "Staff Software Engineer, C++/Rust at Stellar Development Foundation · Engineering / Core. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-18T19:11:43.686Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -265,7 +289,9 @@
         "Core"
       ],
       "desc": "Staff Software Engineer, C++/Rust at Stellar Development Foundation · Engineering / Core. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-18T19:11:36.656Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -286,7 +312,9 @@
         "Partnerships"
       ],
       "desc": "Head of Payments, Business Development at Stellar Development Foundation · Partnerships. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-29T18:35:30.080Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -307,7 +335,9 @@
         "Partnerships"
       ],
       "desc": "Head of Payments, Business Development at Stellar Development Foundation · Partnerships. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-29T18:35:39.939Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -329,7 +359,9 @@
         "Core"
       ],
       "desc": "Senior Software Engineer, C++/Rust at Stellar Development Foundation · Engineering / Core. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2025-03-03T19:10:21.721Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -351,7 +383,9 @@
         "Core"
       ],
       "desc": "Senior Software Engineer, C++/Rust at Stellar Development Foundation · Engineering / Core. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2025-03-03T19:10:22.458Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -372,7 +406,9 @@
         "Engineering"
       ],
       "desc": "Director, Research at Stellar Development Foundation · Engineering. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-17T19:13:33.035Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -394,7 +430,9 @@
         "Core"
       ],
       "desc": "Senior Software Engineer, C++/Rust at Stellar Development Foundation · Engineering / Core. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2025-06-12T22:36:41.036Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -416,7 +454,9 @@
         "Core"
       ],
       "desc": "Senior Software Engineer, C++/Rust at Stellar Development Foundation · Engineering / Core. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2025-06-12T22:36:42.131Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -437,7 +477,9 @@
         "Partnerships"
       ],
       "desc": "Senior Program Manager, Partner Programs at Stellar Development Foundation · Partnerships. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-25T18:27:55.371Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -459,7 +501,9 @@
         "Security"
       ],
       "desc": "Director, Ecosystem Product Security at Stellar Development Foundation · Engineering / Security. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-04-06T22:42:37.014Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -481,7 +525,9 @@
         "Security"
       ],
       "desc": "Director, Ecosystem Product Security at Stellar Development Foundation · Engineering / Security. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-04-06T22:43:16.324Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -503,7 +549,9 @@
         "Stellar Labs"
       ],
       "desc": "Backend Engineer, Integrations & APIs at Stellar Development Foundation · Engineering / Stellar Labs. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-04-29T23:23:17.750Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -525,7 +573,9 @@
         "Stellar Labs"
       ],
       "desc": "Backend Engineer, Integrations & APIs at Stellar Development Foundation · Engineering / Stellar Labs. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-04-29T23:23:19.517Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -547,7 +597,9 @@
         "Finance/Investments"
       ],
       "desc": "Capital Markets Lead at Stellar Development Foundation · Finance and Operations / Finance/Investments. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-05-26T21:33:08.824Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -569,7 +621,9 @@
         "Finance/Investments"
       ],
       "desc": "Capital Markets Lead at Stellar Development Foundation · Finance and Operations / Finance/Investments. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-05-26T21:33:10.872Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -591,7 +645,9 @@
         "Site Reliability"
       ],
       "desc": "Director, Site Reliability Engineering at Stellar Development Foundation · Engineering / Site Reliability. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-04T18:33:14.912Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -613,7 +669,9 @@
         "Site Reliability"
       ],
       "desc": "Director, Site Reliability Engineering at Stellar Development Foundation · Engineering / Site Reliability. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-04T18:33:12.952Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -634,7 +692,9 @@
         "Product"
       ],
       "desc": "Product Manager at Stellar Development Foundation · Product. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-29T22:16:13.921Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -655,7 +715,9 @@
         "Product"
       ],
       "desc": "Product Manager at Stellar Development Foundation · Product. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-29T22:16:17.060Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -676,7 +738,9 @@
         "Product"
       ],
       "desc": "Product Operations Lead at Stellar Development Foundation · Product. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-30T20:58:40.889Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -697,7 +761,9 @@
         "Product"
       ],
       "desc": "Product Operations Lead at Stellar Development Foundation · Product. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-30T20:58:42.979Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -718,7 +784,9 @@
         "Product"
       ],
       "desc": "Lead Product Designer at Stellar Development Foundation · Product. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-30T21:35:45.465Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -739,7 +807,9 @@
         "Product"
       ],
       "desc": "Lead Product Designer at Stellar Development Foundation · Product. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-30T21:35:47.707Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -760,7 +830,9 @@
         "Legal and Policy"
       ],
       "desc": "Marketing Counsel at Stellar Development Foundation · Legal and Policy. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-07-17T17:54:32.779Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -781,7 +853,9 @@
         "Legal and Policy"
       ],
       "desc": "Marketing Counsel at Stellar Development Foundation · Legal and Policy. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-07-17T17:54:34.311Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -803,7 +877,9 @@
         "Wallets"
       ],
       "desc": "Full-Stack Engineer, Wallets at Stellar Development Foundation · Engineering / Wallets. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-03T21:27:04.046Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -825,7 +901,9 @@
         "Wallets"
       ],
       "desc": "Full-Stack Engineer, Wallets at Stellar Development Foundation · Engineering / Wallets. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-03T21:27:06.851Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -846,7 +924,9 @@
         "Partnerships"
       ],
       "desc": "Business Development, APAC at Stellar Development Foundation · Partnerships. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-07-31T20:53:10.836Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -868,7 +948,9 @@
         "Design"
       ],
       "desc": "Brand Designer at Stellar Development Foundation · Marketing / Design. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-06T19:19:36.784Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -890,7 +972,9 @@
         "Design"
       ],
       "desc": "Brand Designer at Stellar Development Foundation · Marketing / Design. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-06T19:19:38.581Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -911,7 +995,9 @@
         "Partnerships"
       ],
       "desc": "Senior Manager, Enterprise Payments at Stellar Development Foundation · Partnerships. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-10T19:44:58.383Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -932,7 +1018,9 @@
         "Partnerships"
       ],
       "desc": "Senior Manager, Enterprise Payments at Stellar Development Foundation · Partnerships. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-10T19:45:01.136Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -953,7 +1041,9 @@
         "Partnerships"
       ],
       "desc": "Senior Program Manager, Partner Programs at Stellar Development Foundation · Partnerships. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-25T18:27:53.428Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -975,7 +1065,9 @@
         "Product - Custody"
       ],
       "desc": "Senior Product Manager, Fortary at Ava Labs · Product / Product - Custody. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-03-31T22:03:36.288Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -996,7 +1088,9 @@
         "Developer Relations"
       ],
       "desc": "Senior Forward Deployed Engineer at Ava Labs · Developer Relations. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-10T11:18:31.546Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1017,7 +1111,9 @@
         "Legal"
       ],
       "desc": "Legal Operations Analyst at Ava Labs · Legal. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-11T17:33:09.226Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1039,7 +1135,9 @@
         "Engineering - Platform (PEG) - AvalancheGo"
       ],
       "desc": "Staff Engineer, AvalancheGo at Ava Labs · Engineering / Engineering - Platform (PEG) - AvalancheGo. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-05T14:13:18.751Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1061,7 +1159,9 @@
         "Engineering - Custody"
       ],
       "desc": "Senior Engineering Manager, Fortary Platform at Ava Labs · Engineering / Engineering - Custody. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-07-17T22:23:38.118Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1082,7 +1182,9 @@
         "Recruiting"
       ],
       "desc": "Talent Application — Join our Community at Ava Labs · Recruiting. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-11T21:43:02.739Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1104,7 +1206,9 @@
         "Engineering - Core"
       ],
       "desc": "Senior Software Engineer, Core at Ava Labs · Engineering / Engineering - Core. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-22T15:32:56.942Z",
+      "dateSource": "Ashby · publishedAt",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1125,7 +1229,9 @@
         "GTM"
       ],
       "desc": "Business Development Director at Plume · GTM. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1146,7 +1252,9 @@
         "GTM"
       ],
       "desc": "Business Development Manager at Plume · GTM. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1167,7 +1275,9 @@
         "GTM"
       ],
       "desc": "Regional Lead - APAC at Plume · GTM. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1188,7 +1298,9 @@
         "GTM"
       ],
       "desc": "Regional Lead - LATAM at Plume · GTM. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1209,7 +1321,9 @@
         "GTM"
       ],
       "desc": "Regional Lead - MENA at Plume · GTM. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1230,7 +1344,9 @@
         "General & Administrative"
       ],
       "desc": "Compliance Director at Plume · General & Administrative. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1251,7 +1367,9 @@
         "General & Administrative"
       ],
       "desc": "Finance & Accounting Manager at Plume · General & Administrative. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1272,7 +1390,9 @@
         "General & Administrative"
       ],
       "desc": "Strategic Finance & Operations Associate at Plume · General & Administrative. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1293,7 +1413,9 @@
         "Marketing"
       ],
       "desc": "Marketing Analyst at Plume · Marketing. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1314,7 +1436,9 @@
         "Marketing"
       ],
       "desc": "Marketing Manager at Plume · Marketing. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1335,7 +1459,9 @@
         "Research & Development"
       ],
       "desc": "Full-Stack Product Engineer at Plume · Research & Development. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1356,7 +1482,9 @@
         "Research & Development"
       ],
       "desc": "Product Designer at Plume · Research & Development. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1377,7 +1505,9 @@
         "Research & Development"
       ],
       "desc": "Product Manager at Plume · Research & Development. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1398,7 +1528,9 @@
         "Research & Development"
       ],
       "desc": "Protocol Engineer at Plume · Research & Development. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1419,7 +1551,9 @@
         "Research & Development"
       ],
       "desc": "Smart Contract Engineer at Plume · Research & Development. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1442,6 +1576,8 @@
       ],
       "desc": "Own cloud infrastructure, automation, observability and security for tokenized securities.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": "2026-09-11T18:02:58.000Z",
+      "dateSource": "Employer listing · datePosted",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1465,6 +1601,8 @@
       ],
       "desc": "Develop backend systems and SDKs connecting blockchain infrastructure to financial applications.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": "2026-08-21T21:21:57.000Z",
+      "dateSource": "Employer listing · datePosted",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1487,6 +1625,8 @@
       ],
       "desc": "Short-term contract building permissioned securities tokens and corporate-action support on Solana.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": "2026-08-06T00:17:29.000Z",
+      "dateSource": "Employer listing · datePosted",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1506,6 +1646,8 @@
       "tags": [],
       "desc": "Develop APIs and backend infrastructure using Node.js, TypeScript and AWS.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1525,6 +1667,8 @@
       "tags": [],
       "desc": "Build, test and integrate Ethereum smart contracts and blockchain services.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1544,6 +1688,8 @@
       "tags": [],
       "desc": "Support accounting, reconciliations, financial reporting and cash-flow forecasting.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1563,6 +1709,8 @@
       "tags": [],
       "desc": "Manage HubSpot, marketing automation, CRM operations and revenue reporting.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1585,6 +1733,8 @@
       ],
       "desc": "Lead marketing strategy, brand, community and adoption for the IXS token and ecosystem.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1608,6 +1758,8 @@
       ],
       "desc": "Build dbt and SQL models that convert blockchain activity into comparable financial and usage metrics.",
       "checkedAt": "2026-09-24T17:36:13.912966+00:00",
+      "postedAt": null,
+      "dateSource": null,
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1626,7 +1778,9 @@
       "comp": "",
       "tags": [],
       "desc": "Blockchain Engineer at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-10T08:14:12.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1645,26 +1799,9 @@
       "comp": "",
       "tags": [],
       "desc": "Business Development Manager, APAC at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
-      "ts": 0,
-      "status": "live",
-      "imported": true
-    },
-    {
-      "id": "import-ondo-151beebc24fbe798",
-      "sourceId": "ondo",
-      "company": "Ondo Finance",
-      "memberName": null,
-      "role": "Compliance KYC Manager",
-      "apply": "https://job-boards.greenhouse.io/ondofinance/jobs/4364084009",
-      "sourceUrl": "https://job-boards.greenhouse.io/ondofinance",
-      "type": "Not specified",
-      "work": "Remote",
-      "location": "Remote",
-      "comp": "",
-      "tags": [],
-      "desc": "Compliance KYC Manager at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-15T12:24:59.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1683,7 +1820,9 @@
       "comp": "",
       "tags": [],
       "desc": "Full-Stack Software Engineer - Compliance at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-13T12:15:00.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1702,7 +1841,9 @@
       "comp": "",
       "tags": [],
       "desc": "Full-Stack Software Engineer - Growth at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-13T12:17:29.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1721,7 +1862,9 @@
       "comp": "",
       "tags": [],
       "desc": "Infrastructure Engineer (DevOps) at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-22T10:38:18.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1740,7 +1883,9 @@
       "comp": "",
       "tags": [],
       "desc": "IT Engineer at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-17T20:42:06.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1759,7 +1904,9 @@
       "comp": "",
       "tags": [],
       "desc": "Lead Technical Recruiter at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-07-02T04:12:18.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1778,7 +1925,9 @@
       "comp": "",
       "tags": [],
       "desc": "Product Designer at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-07-17T20:51:19.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1797,7 +1946,9 @@
       "comp": "",
       "tags": [],
       "desc": "Product Manager, Stocks at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-12T05:13:20.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1816,7 +1967,9 @@
       "comp": "",
       "tags": [],
       "desc": "Risk & Governance Manager at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-25T21:44:12.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1835,7 +1988,9 @@
       "comp": "",
       "tags": [],
       "desc": "Senior Backend Engineer (Trading Infrastructure) at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-01T10:35:24.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1854,7 +2009,9 @@
       "comp": "",
       "tags": [],
       "desc": "Senior Blockchain Engineer at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-29T18:51:45.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1873,7 +2030,9 @@
       "comp": "",
       "tags": [],
       "desc": "Senior Commercial Counsel at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-18T11:00:40.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1892,7 +2051,9 @@
       "comp": "",
       "tags": [],
       "desc": "Senior Data Engineer at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-20T01:53:32.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1911,7 +2072,9 @@
       "comp": "",
       "tags": [],
       "desc": "Senior Full-Stack Engineer (Web3) at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-29T18:51:58.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1930,7 +2093,9 @@
       "comp": "",
       "tags": [],
       "desc": "Senior Product Manager at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-29T18:52:03.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1949,7 +2114,9 @@
       "comp": "",
       "tags": [],
       "desc": "Senior Product Manager, Growth at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-20T23:24:56.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1968,7 +2135,9 @@
       "comp": "",
       "tags": [],
       "desc": "Senior Security Engineer - Product Security at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-08-06T13:58:39.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -1987,7 +2156,9 @@
       "comp": "",
       "tags": [],
       "desc": "Site Reliability Engineer - Low-Latency Trading Systems at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-09-18T16:24:04.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -2006,7 +2177,9 @@
       "comp": "",
       "tags": [],
       "desc": "Solutions Engineer, APAC at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-07-15T07:11:50.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -2025,7 +2198,9 @@
       "comp": "",
       "tags": [],
       "desc": "Solutions Engineer (United States) at Ondo Finance. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2026-06-29T18:52:23.000Z",
+      "dateSource": "Greenhouse · first_published",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -2046,7 +2221,9 @@
         "Engineering"
       ],
       "desc": "Staff Backend Engineer at Superstate · Engineering. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2024-11-12T00:00:00.000Z",
+      "dateSource": "Employer listing · datePosted",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -2067,7 +2244,9 @@
         "Engineering"
       ],
       "desc": "Staff Full-Stack Engineer at Superstate · Engineering. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2024-01-26T00:00:00.000Z",
+      "dateSource": "Employer listing · datePosted",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -2088,7 +2267,9 @@
         "Engineering"
       ],
       "desc": "Staff Infrastructure/DevOps Engineer at Superstate · Engineering. Visit the employer’s listing for responsibilities, requirements and application details.",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "postedAt": "2025-04-29T00:00:00.000Z",
+      "dateSource": "Employer listing · datePosted",
       "ts": 0,
       "status": "live",
       "imported": true
@@ -2102,7 +2283,7 @@
       "url": "https://job-boards.greenhouse.io/securitize",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
       "count": 3
     },
     {
@@ -2122,7 +2303,7 @@
       "url": "https://jobs.ashbyhq.com/Solana%20Foundation",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
       "count": 8
     },
     {
@@ -2132,7 +2313,7 @@
       "url": "https://jobs.ashbyhq.com/stellar",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
       "count": 34
     },
     {
@@ -2142,7 +2323,7 @@
       "url": "https://jobs.ashbyhq.com/ava-labs",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
       "count": 7
     },
     {
@@ -2152,7 +2333,7 @@
       "url": "https://ats.rippling.com/plume-network/jobs",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
       "count": 15
     },
     {
@@ -2252,7 +2433,7 @@
       "url": "https://jobs.ashbyhq.com/orca",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
       "count": 0
     },
     {
@@ -2292,8 +2473,8 @@
       "url": "https://job-boards.greenhouse.io/ondofinance",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
-      "count": 22
+      "checkedAt": "2026-09-24T19:05:07.588Z",
+      "count": 21
     },
     {
       "id": "superstate",
@@ -2302,7 +2483,7 @@
       "url": "https://jobs.lever.co/superstate",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
       "count": 3
     },
     {
@@ -2312,7 +2493,7 @@
       "url": "https://jobs.lever.co/centrifuge",
       "reviewedAt": "2026-09-24T17:36:13.912966+00:00",
       "status": "live",
-      "checkedAt": "2026-09-24T17:43:43.519Z",
+      "checkedAt": "2026-09-24T19:05:07.588Z",
       "count": 0
     }
   ]
