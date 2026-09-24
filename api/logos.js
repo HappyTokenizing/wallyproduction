@@ -11,6 +11,9 @@ function validateStore(s) {
   if (s.order.length > 200 || s.del.length > 200 || s.add.length > 100) return false;
   if (![s.order, s.del].every(a => a.every(id) && new Set(a).size === a.length)) return false;
   if (new Set(s.add.map(l => l && l.id)).size !== s.add.length) return false;
+  if (s.icons !== undefined && (!s.icons || Array.isArray(s.icons) || typeof s.icons !== 'object' || Object.keys(s.icons).length > 200
+    || !Object.entries(s.icons).every(([key, src]) => /^(d[0-9]+|u[a-zA-Z0-9_-]{1,39})$/.test(key) && typeof src === 'string' && src.length <= 500000
+      && /^data:image\/(png|jpeg|webp|svg\+xml);base64,[A-Za-z0-9+/]+={0,2}$/.test(src)))) return false;
   return s.add.every(l => l && id(l.id) && l.id.startsWith('u') && typeof l.name === 'string' && l.name.trim().length > 0 && l.name.length <= 60
     && typeof l.src === 'string' && l.src.length <= 500000
     && /^data:image\/(png|jpeg|webp|svg\+xml);base64,[A-Za-z0-9+/]+={0,2}$/.test(l.src));
@@ -46,6 +49,16 @@ export function createLogoHandler(storage = { get, put }) {
         return res.status(409).json({ error: 'Refresh the logo manager before saving.' });
       }
       const store = { order: b.store.order, del: b.store.del, add: b.store.add.map(({ id, name, src }) => ({ id, name, src })) };
+      if (b.store.icons !== undefined) store.icons = { ...b.store.icons };
+      else {
+        // Older admin tabs do not know about icons; preserve the current icons on their saves.
+        const current = await storage.get(PATH, { access: 'private', token, useCache: false });
+        if (current) {
+          const previous = await new Response(current.stream).json();
+          if (previous.icons) store.icons = previous.icons;
+        }
+      }
+      if (JSON.stringify(store).length > 3500000) return res.status(413).json({ error: 'The logo collection is too large. Use smaller images. No changes were saved.' });
       // Atomic ETag check prevents older tabs or simultaneous admins overwriting newer edits.
       const saved = await storage.put(PATH, JSON.stringify(store), {
         access: 'private', token, contentType: 'application/json', addRandomSuffix: false,

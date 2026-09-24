@@ -114,3 +114,23 @@ test('normalization crops transparent and white padding but preserves a white ma
 test('all inline JavaScript parses',()=>{
   for(const m of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) new vm.Script(m[1]);
 });
+
+test('member icons persist for default and uploaded members; legacy saves preserve icons',async()=>{
+  const h=backend();const icons={d0:logo.src,utest:logo.src};
+  let r=await post(h,{...empty(),add:[logo],icons},null);assert.equal(r.code,200);
+  assert.deepEqual((await call(h,'GET')).body.store.icons,icons);
+  // A still-open older admin page can reorder without silently deleting the icon map.
+  r=await post(h,{...empty(),add:[logo],order:['utest','d0']},r.body.revision);assert.equal(r.code,200);
+  assert.deepEqual((await call(h,'GET')).body.store.icons,icons);
+  assert.equal((await post(h,{...empty(),icons:{}},'v1')).code,409);
+  r=await post(h,{...empty(),add:[logo],icons:{}},r.body.revision);assert.equal(r.code,200);
+  assert.deepEqual((await call(h,'GET')).body.store.icons,{});
+  assert.deepEqual((await call(h,'GET')).body.store.add,[logo]);
+});
+test('invalid icon uploads are rejected without replacing saved logos',async()=>{
+ const h=backend();await post(h,{...empty(),add:[logo]},null);
+ for(const icons of [{d0:'https://example.com/track.png'},{d0:'javascript:alert(1)'},{d0:'data:image/png;base64,'+'a'.repeat(500001)},{constructor:logo.src},[],null]){
+   assert.equal((await post(h,{...empty(),icons},'v1')).code,400);
+ }
+ assert.deepEqual((await call(h,'GET')).body.store.add,[logo]);
+});

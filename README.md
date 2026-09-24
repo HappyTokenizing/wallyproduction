@@ -55,3 +55,9 @@ The restored `/#/jobs` board uses the original design, with direct employer appl
 The September 24, 2026 review covers 19 logo members and Ondo Finance, Superstate and Centrifuge. `data/jobs-manual.json` contains employer postings verified through careers pages that do not have an integrated public API (Dinari, Brickken, IXS and Token Terminal). These are explicitly labeled as manually reviewed in company coverage and expire seven days after `checkedAt`. Recheck each employer’s current board before updating that date; do not automatically roll it forward. New roles at those sources require a manual review. Companies without confirmed public openings are listed as such, not described as “not hiring.” General/open applications and talent pools are excluded.
 
 The existing Supabase submission/admin flow remains separate from imported employer jobs. This restoration is staged for review; it has not been applied to the production repository.
+
+### Member icons
+
+The job board resolves each employer to the logo roster and uses the member’s icon in job rows and featured cards. `assets/member-icons.js` supplies official defaults for all 19 current members; source links are recorded in `assets/member-icons/SOURCES.md`. Custom icons live in the existing private logo store under `icons[memberId]`, so they survive deployments and remain attached when members are reordered. The main member-wall logo is independent.
+
+In **Admin → Member logos**, each row has an icon preview and **Upload icon / Replace icon** control. **Reset icon** restores the official default (or the member’s main logo when there is no default). New member uploads also accept an optional icon. Uploaded images are fitted proportionally to a transparent 128×128 PNG. Existing authentication, size limits, save recovery and revision-conflict protection apply. Older admin tabs preserve saved icons when posting the older store shape.

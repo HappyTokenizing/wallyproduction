@@ -1520,6 +1520,12 @@ html{ scrollbar-color:var(--line2) transparent }
 .eco-ph-actions{margin-top:14px}
 
 
+.jb-logo.company-icon{background:#fff!important;border:1px solid var(--line);padding:8px;color:var(--text);overflow:hidden}
+.jb-logo.company-icon img{width:100%;height:100%;object-fit:contain}
+.jb-spot-co .jb-logo{display:inline-flex;width:32px;height:32px;min-width:32px;vertical-align:middle;margin-right:9px;padding:5px;border-radius:9px}
+.lg-icon-control{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.lg-icon-preview{display:flex;width:44px;height:44px;align-items:center;justify-content:center;padding:6px;border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden}.lg-icon-preview img{width:100%;height:100%;object-fit:contain}.lg-icon-preview span{font-size:9px;text-align:center;color:var(--text3)}
+.lg-icon-upload{position:relative;cursor:pointer}.lg-icon-upload input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.lg-icon-upload:focus-within{outline:2px solid var(--orange);outline-offset:2px}
+
 .jb-feed-status,.jb-source-note{font-size:12px;color:var(--text2);line-height:1.6;margin:20px 0 8px}
 .jb-coverage{margin-top:30px;border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--card)}
 .jb-coverage summary{font-weight:650;cursor:pointer}.jb-coverage p{font-size:13px;line-height:1.6;color:var(--text2);max-width:80ch;margin:12px 0}
@@ -1643,6 +1649,7 @@ html{ scrollbar-color:var(--line2) transparent }
 </style>
 </head>
 <body>
+<script src="/assets/member-icons.js"></script>
 
 <!-- ====================================================== LANDING -->
 <div id="landing">
@@ -4116,11 +4123,17 @@ function jbApplyHref(v){
   return 'https://'+v;
 }
 
-function jbIsMember(name){
+function jbMember(name){
   const key=v=>String(v||'').toLowerCase().replace(/[^a-z0-9]/g,'');
   const aliases={maplefinance:'maple',solanafoundation:'solana',stellardevelopmentfoundation:'stellar',avalabs:'avalanche',ixs:'ixswap',drvnlabo:'drvnlab'};
   const wanted=aliases[key(name)]||key(name);
-  return logoAll().some(l=>(aliases[key(l.name)]||key(l.name))===wanted);
+  return logoAll().find(l=>(aliases[key(l.name)]||key(l.name))===wanted);
+}
+function jbIsMember(name){ return !!jbMember(name); }
+function jbLogoHtml(j){
+  const member=jbMember(j.memberName || j.company);
+  const src=member && (member.icon || member.src);
+  return src ? '<span class="jb-logo company-icon"><img src="'+escHtml(src)+'" alt="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>'+escHtml(jbMonoLetter(j.company))+'</span></span>' : '<span class="jb-logo">'+escHtml(jbMonoLetter(j.company))+'</span>';
 }
 function jbWhen(j){
   if(!j.imported) return jbAgo(j.ts);
@@ -4191,7 +4204,7 @@ function jbBadges(j){
 function jbRowHtml(j){
   const tags=(j.tags||[]).slice(0,4).map(t=>'<span class="jb-tag">'+escHtml(t)+'</span>').join('');
   return '<button class="jb-row'+(j.featured?' feat':'')+'" onclick="jbOpenJob(\''+escHtml(encodeURIComponent(j.id).replace(/'/g,'%27'))+'\')">'
-    +'<span class="jb-logo">'+escHtml(jbMonoLetter(j.company))+'</span>'
+    +jbLogoHtml(j)
     +'<span class="jb-main"><span class="jb-role">'+escHtml(j.role)+' '+jbBadges(j)+'</span>'
     +'<span class="jb-meta">'+escHtml(j.company)+'<span class="sep">&middot;</span>'+escHtml(j.type)+'<span class="sep">&middot;</span>'+escHtml(j.work)+'<span class="sep">&middot;</span>'+escHtml(j.location)+'</span>'
     +(tags?'<span class="jb-tags">'+tags+'</span>':'')+'</span>'
@@ -4201,7 +4214,7 @@ function jbSpotHtml(j, n){
   const dots=n>1?'<div class="jb-spot-dots">'+Array.from({length:n},(_,k)=>'<button'+(k===jbRot.i?' class="on"':'')+' aria-label="Featured '+(k+1)+'" onclick="jbGo('+k+')"></button>').join('')+'</div>':'';
   return '<div class="jb-spot jb-fade" onmouseenter="jbHold=true" onmouseleave="jbHold=false">'+dots
     +'<span class="jb-spot-eyebrow"><span class="dot"></span>RWAF Member &middot; Featured role</span>'
-    +'<h3>'+escHtml(j.role)+'</h3><div class="jb-spot-co">'+escHtml(j.company)+' &middot; '+escHtml(j.type)+' &middot; '+escHtml(j.work)+' &middot; '+escHtml(j.location)+'</div>'
+    +'<h3>'+escHtml(j.role)+'</h3><div class="jb-spot-co">'+jbLogoHtml(j)+escHtml(j.company)+' &middot; '+escHtml(j.type)+' &middot; '+escHtml(j.work)+' &middot; '+escHtml(j.location)+'</div>'
     +'<p class="jb-spot-desc">'+escHtml(j.desc)+'</p>'
     +'<div class="jb-spot-foot"><button class="btn btn-orange btn-sm" onclick="jbOpenJob(\''+escHtml(encodeURIComponent(j.id).replace(/'/g,'%27'))+'\')">View role</button>'
     +(j.comp?'<span class="jb-comp">'+escHtml(j.comp)+'</span>':'')+'<span class="jb-ago">'+jbWhen(j)+'</span></div></div>';
@@ -4365,12 +4378,12 @@ function lgSave(s){
   try{ localStorage.setItem(LOGO_DRAFT,JSON.stringify(lgRecovery)); }
   catch(e){ lgError='Browser backup is full. Keep this page open until the server confirms the save.'; }
 }
-function lgCustomized(){ const s=lgStore(); return !!(s.order.length||s.del.length||s.add.length); }
+function lgCustomized(){ const s=lgStore(); return !!(s.order.length||s.del.length||s.add.length||Object.keys(s.icons||{}).length); }
 function logoAll(){
   const s=lgStore();
   const base=LOGO_DEFAULTS.filter(l=>s.del.indexOf(l.id)<0).concat(s.add);
   const pos=id=>{ const i=s.order.indexOf(id); return i<0?1e9:i; };
-  return base.slice().sort((a,b)=>pos(a.id)-pos(b.id));
+  return base.map(l=>({...l,icon:(s.icons||{})[l.id] || (window.MEMBER_ICONS||{})[l.name.toLowerCase().replace(/[^a-z0-9]/g,'')] || ''})).sort((a,b)=>pos(a.id)-pos(b.id));
 }
 function renderLogoWall(){
   const grid=document.querySelector('#page-foundation .logowall .lw-grid');
@@ -4496,18 +4509,21 @@ function admPaintLogos(){
   const row=(l,i)=>'<div class="adm-row"><span style="flex:none;width:110px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:4px 10px;overflow:hidden">'
     +(l.word?'<b style="font-size:13px;white-space:nowrap">'+escHtml(l.name)+'</b>':'<img src="'+l.src+'" alt="" style="max-height:26px;max-width:100%;width:auto">')
     +'</span><div class="who"><b>'+escHtml(l.name)+'</b><span>Position '+(i+1)+' of '+list.length+(l.id.charAt(0)==='u'?' &middot; uploaded here':'')+'</span></div>'
+    +'<div class="lg-icon-control"><span class="lg-icon-preview">'+(l.icon?'<img src="'+escHtml(l.icon)+'" alt="'+escHtml(l.name)+' icon">':'<span>No icon</span>')+'</span><label class="adm-btn lg-icon-upload">'+((lgState.icons||{})[l.id]?'Replace icon':'Upload icon')+'<input type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" aria-label="Upload icon for '+escHtml(l.name)+'" onchange="admLogoIconUpload(\''+l.id+'\',this)"></label>'+((lgState.icons||{})[l.id]?'<button class="adm-btn" onclick="admLogoIconReset(\''+l.id+'\')">Reset icon</button>':'')+'</div>'
     +'<div class="adm-acts">'
     +(i===0?'<button class="adm-btn" disabled style="opacity:.35">&uarr; Up</button>':'<button class="adm-btn" onclick="admLogoMove(\''+l.id+'\',-1)">&uarr; Up</button>')
     +(i===list.length-1?'<button class="adm-btn" disabled style="opacity:.35">&darr; Down</button>':'<button class="adm-btn" onclick="admLogoMove(\''+l.id+'\',1)">&darr; Down</button>')
     +'<button class="adm-btn danger" onclick="admLogoDel(\''+l.id+'\')">Delete</button></div></div>';
   B.innerHTML='<div class="adm-sec"><p id="lgStatus" role="status" aria-live="polite"></p><button id="lgRetry" class="adm-btn" onclick="lgRetry()" hidden>Retry</button><button id="lgLoad" class="adm-btn" onclick="lgLoadLatest()" hidden>Load latest logos</button>'
     +(lgRecovery?'<p id="lgRecoveryNotice">A browser copy is available. <button class="adm-btn" onclick="lgRestoreDraft()">Restore browser copy</button></p>':'')
+    +'<p class="adm-note">The wide logo is used on the member wall. Upload a square company symbol for the job board. Icon changes save automatically and follow this member everywhere on the board.</p>'
     +'<h6>Logos on the wall ('+list.length+')</h6>'
     +(list.map(row).join('')||'<div class="adm-empty">No logos on the wall. Upload one below, or reset to the defaults.</div>')
     +'<h6>Upload a logo</h6>'
     +'<div class="adm-form">'
     +'<div class="field"><label>Company name</label><input id="lgName" maxlength="48" placeholder="Company name"></div>'
     +'<div class="field"><label>Logo image &middot; PNG, JPG, WebP or SVG</label><input id="lgFile" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml"></div>'
+    +'<div class="field"><label>Job board icon &middot; optional</label><input id="lgIconFile" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml"><span class="fhint">A square symbol works best. PNG, JPG, WebP or SVG.</span></div>'
     +'<button id="lgUpload" class="btn btn-orange btn-sm" onclick="admLogoUpload()">Add to the wall</button>'
     +'</div></div>';
   lgStatus();
@@ -4529,13 +4545,14 @@ function admLogoDel(id){
   if(k>-1) s.add.splice(k,1);
   else if(s.del.indexOf(id)<0) s.del.push(id);
   s.order=s.order.filter(x=>x!==id);
+  if(s.icons) delete s.icons[id];
   lgSave(s);
   renderLogoWall(); admPaintLogos(); lgPush();
 }
 function admLogoReset(){
   if(!lgCanEdit()) return;
   if(!confirm('Restore the default logos for all visitors?')) return;
-  lgSave({order:[],del:[],add:[]});
+  lgSave({order:[],del:[],add:[],icons:{}});
   renderLogoWall(); admPaintLogos(); lgPush();
 }
 // Find visible bounds, removing transparent padding and opaque white margins.
@@ -4552,19 +4569,52 @@ function lgBounds(data,w,h){
   if(right<left) throw new Error('The image has no visible artwork.');
   return {x:left,y:top,width:right-left+1,height:bottom-top+1};
 }
-function lgNormalize(img){
+function lgNormalize(img,icon=false){
   const nw=img.naturalWidth,nh=img.naturalHeight;
   if(!nw||!nh) throw new Error('That image has no dimensions.');
   const scale=Math.min(1,2048/Math.max(nw,nh));
   const scan=document.createElement('canvas'); scan.width=Math.max(1,Math.round(nw*scale)); scan.height=Math.max(1,Math.round(nh*scale));
   const ctx=scan.getContext('2d',{willReadFrequently:true}); ctx.drawImage(img,0,0,scan.width,scan.height);
   const b=lgBounds(ctx.getImageData(0,0,scan.width,scan.height).data,scan.width,scan.height);
+  if(icon){
+    const c=document.createElement('canvas'); c.width=128; c.height=128;
+    const sc=104/Math.max(b.width,b.height), w=b.width*sc, h=b.height*sc;
+    c.getContext('2d').drawImage(scan,b.x,b.y,b.width,b.height,(128-w)/2,(128-h)/2,w,h);
+    return c.toDataURL('image/png');
+  }
   // Two-times display resolution, bounded width, original aspect ratio.
   const sc=Math.min(64/b.height,400/b.width);
   const c=document.createElement('canvas'); c.width=Math.max(1,Math.round(b.width*sc)); c.height=Math.max(1,Math.round(b.height*sc));
   c.getContext('2d').drawImage(scan,b.x,b.y,b.width,b.height,0,0,c.width,c.height);
   return c.toDataURL('image/png');
 }
+async function lgPrepareIcon(file){
+  if(!/^image\/(png|jpeg|webp|svg\+xml)$/.test(file.type)) throw new Error('Choose a PNG, JPG, WebP or SVG.');
+  if(file.size>10000000) throw new Error('Choose an image smaller than 10 MB.');
+  const raw=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=()=>reject(new Error('The file could not be read.'));r.readAsDataURL(file);});
+  const img=await new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(new Error('That file could not be decoded as an image.'));im.src=raw;});
+  const src=lgNormalize(img,true);
+  if(src.length>400000) throw new Error('Please choose a simpler icon image.');
+  return src;
+}
+async function admLogoIconUpload(id,input){
+  if(!lgCanEdit()) return;
+  const file=(input.files||[])[0]; if(!file) return;
+  input.disabled=true;
+  try{
+    const src=await lgPrepareIcon(file);
+    if(!lgCanEdit()||!logoAll().some(l=>l.id===id)) return;
+    const s=lgStore();s.icons=s.icons||{};s.icons[id]=src;
+    lgSave(s);renderLogoWall();admPaintLogos();await lgPush();
+  }catch(e){toast('Icon not saved',e.message);}
+  finally{input.disabled=false;input.value='';}
+}
+function admLogoIconReset(id){
+  if(!lgCanEdit()) return;
+  const s=lgStore();if(s.icons)delete s.icons[id];
+  lgSave(s);renderLogoWall();admPaintLogos();lgPush();
+}
+
 async function admLogoUpload(){
   if(!lgCanEdit()) return;
   const name=($('#lgName').value||'').trim();
@@ -4579,10 +4629,14 @@ async function admLogoUpload(){
     const img=await new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(new Error('That file could not be decoded as an image.'));im.src=raw;});
     const src=lgNormalize(img);
     if(src.length>400000) throw new Error('Please choose a simpler logo image.');
+    const iconFile=($('#lgIconFile').files||[])[0];
+    const icon=iconFile?await lgPrepareIcon(iconFile):'';
     if(!lgCanEdit()) return;
     const s=lgStore();
     if(s.add.length>=100) throw new Error('The wall supports up to 100 uploaded logos.');
-    s.add.push({id:'u'+crypto.randomUUID(),name:name,src:src});
+    const id='u'+crypto.randomUUID();
+    s.add.push({id:id,name:name,src:src});
+    if(icon){s.icons=s.icons||{};s.icons[id]=icon;}
     lgSave(s); renderLogoWall(); admPaintLogos(); await lgPush();
   }catch(e){toast('Logo not added',e.message);}
   finally{if(button){button.disabled=false;button.textContent='Add to the wall';}}
