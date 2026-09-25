@@ -2640,6 +2640,7 @@ html{ scrollbar-color:var(--line2) transparent }
     <div class="modal-h"><h4>Post a job</h4><button class="icon-btn x" onclick="closeModal('mPostJob')" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
     <div class="modal-b">
       <div id="postJobForm">
+        <div aria-hidden="true" style="position:absolute;left:-10000px"><label for="pjWebsite">Leave this field empty</label><input id="pjWebsite" tabindex="-1" autocomplete="off"></div>
         <div class="field"><label>Company</label><input id="pjCo" maxlength="60" placeholder="Company name"></div>
         <div class="field"><label>Role title</label><input id="pjRole" maxlength="80" placeholder="e.g. Head of Tokenization"></div>
         <div class="field"><label>Employment type</label><select id="pjType"><option>Full time</option><option>Part time</option><option>Contract</option><option>Internship</option></select></div>
@@ -4090,21 +4091,17 @@ function jbSaveStore(s){ lsSet(JB_LS, s); }
 
 /* ---------- job data ---------- */
 const JB_SEED=[]; // Only verified employer feeds and reviewed submissions are listed.
-/* Remote board — the shared source of truth in the Wagecuck Supabase.
-   Public read via the read-only publishable key; writes go through /api/jobs. */
+/* Reviewed submissions use the project's private store; public reads exclude contact details. */
 let JB_REMOTE=[], JB_SYNCED=0, JB_IMPORTED=[], JB_COVERAGE=[], JB_FEED_STATE='loading';
 const JB_MAX_AGE=7*86400000;
-const JB_SB='https://qrmbiestcjbedavsorrj.supabase.co';
-const JB_ANON='sb_publishable_CVXI0w69QnHwJSJYtbiJdg_dtXg6ot_';
 function jbSync(force){
   if(!force && Date.now()-JB_SYNCED<5*60*1000) return;
   JB_SYNCED=Date.now();
   jbSyncFeed();
-  fetch(JB_SB+'/rest/v1/wally_jobs?select=*&status=eq.live&hidden=is.false&order=ts.desc',
-    {headers:{apikey:JB_ANON,Authorization:'Bearer '+JB_ANON}})
+  fetch('/api/jobs')
     .then(r=>r.ok?r.json():[])
-    .then(rows=>{
-      JB_REMOTE=(rows||[]).map(r=>({id:r.id,company:r.company,role:r.role,type:r.type||'Full time',
+    .then(data=>{
+      JB_REMOTE=(data.jobs||[]).map(r=>({id:r.id,company:r.company,role:r.role,type:r.type||'Full time',
         work:r.work||'Remote',location:r.location||'',comp:r.comp||'',tags:r.tags||[],
         desc:r.description||'',apply:r.apply_to||'',member:r.member?1:0,featured:r.featured?1:0,
         status:'live',ts:Date.parse(r.ts)||Date.now()}));
@@ -4291,7 +4288,9 @@ function jbOpenJob(id){
 function openPostJob(){ $('#postJobForm').hidden=false; $('#postJobOk').hidden=true; $('#postJobFoot').lastElementChild.hidden=false; openModal('mPostJob'); }
 function pjVal(id){ return ($('#'+id).value||'').trim(); }
 function pjMark(id, bad){ $('#'+id).closest('.field').classList.toggle('f-err', !!bad); return !bad; }
-function submitJob(){
+let pjSending=false;
+async function submitJob(){
+  if(pjSending)return;
   const co=pjVal('pjCo'), role=pjVal('pjRole'), loc=pjVal('pjLoc'), desc=pjVal('pjDesc'), apply=pjVal('pjApply'), email=pjVal('pjEmail');
   let ok=true;
   ok=pjMark('pjCo',!co)&&ok; ok=pjMark('pjRole',!role)&&ok; ok=pjMark('pjLoc',!loc)&&ok;
@@ -4300,21 +4299,19 @@ function submitJob(){
   const item={ id:'u-'+Date.now(), company:co, role:role, type:pjVal('pjType')||'Full time', work:pjVal('pjWork')||'Remote',
     location:loc, comp:pjVal('pjComp'), tags:pjVal('pjTags').split(',').map(t=>t.trim()).filter(Boolean).slice(0,4),
     desc:desc, apply:apply, email:email, member:$('#pjMember').checked?1:0, featured:0, status:'pending', src:'site', ts:Date.now() };
-  const s=jbStore(); s.items.push(item); jbSaveStore(s);
-  try{ fetch('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({action:'submit',job:{company:co,role:role,type:item.type,work:item.work,
-      location:loc,comp:item.comp,tags:item.tags,description:desc,apply_to:apply,email:email,member:item.member}})
-  }).catch(function(){}); }catch(e){}
-  const body='New job listing for the RWA Job Board\n\nCompany: '+co+'\nRole: '+role+'\nType: '+item.type+' · '+item.work+'\nLocation: '+loc+'\nCompensation: '+(item.comp||'Not shared')+'\nTags: '+(item.tags.join(', ')||'None')+'\nApply: '+apply+'\nContact: '+email+'\nRWA Foundation member: '+(item.member?'Yes':'No')+'\n\nAbout the role:\n'+desc;
-  const mail='mailto:happy@rwaf.xyz?subject='+encodeURIComponent('Job listing: '+role+' at '+co)+'&body='+encodeURIComponent(body);
-  $('#postJobForm').hidden=true;
-  $('#postJobOk').hidden=false;
-  $('#postJobOk').innerHTML='<div class="sub-ok"><div class="ok-ic"><svg viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7"/></svg></div>'
-    +'<h5>Listing queued for review</h5><p>One more tap: send the prefilled email so the listing reaches the RWA Foundation review desk from any device.</p>'
-    +'<a class="btn btn-orange" href="'+mail+'">Email the listing</a>'
-    +'<p style="margin-top:14px">Approved roles go live on the board. RWA Foundation members are featured at the top.</p></div>';
-  $('#postJobFoot').lastElementChild.hidden=true;
-  toast('Listing queued','Sent to the RWA Foundation review desk.');
+  pjSending=true;
+  const button=$('#postJobFoot').lastElementChild;button.disabled=true;button.textContent='Submitting…';
+  try{
+    const r=await fetch('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({action:'submit',job:{company:co,role:role,type:item.type,work:item.work,
+        location:loc,comp:item.comp,tags:item.tags,description:desc,apply_to:apply,email:email,member:item.member,website:pjVal('pjWebsite')}})});
+    const data=await r.json().catch(()=>({}));
+    if(!r.ok||!data.ok)throw Error(r.status===429?'Too many attempts. Please wait a minute and retry.':data.error||'Could not submit. Please retry.');
+    $('#postJobForm').hidden=true;$('#postJobOk').hidden=false;
+    $('#postJobOk').innerHTML='<div class="sub-ok"><h5>Listing queued for review</h5><p>Your listing was received. The RWA Foundation team will review it before publication and may contact you by email.</p></div>';
+    button.hidden=true;toast('Listing received','Queued for review.');
+  }catch(e){toast('Listing not submitted',e.message);}
+  finally{pjSending=false;button.disabled=false;button.textContent='Submit listing';}
 }
 
 /* ---------- ecosystem submission + Google Form handoff ---------- */
@@ -4376,7 +4373,7 @@ function subOkPanel(mode, d){
 
 /* ---------- admin console ---------- */
 const ADM_HASH='c544ce7c40eab55c481233a301356ecd1f7a7c5adce93d1aa4906f7886482ce9';
-const ADM_TABS=[['logos','Member logos'],['news','News feed']];
+const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions']];
 let admTabNow='logos';
 
 /* ---------- member logo manager: the console's only job ---------- */
@@ -4520,9 +4517,28 @@ function renderAdmin(){
     +'<div class="adm-tools">'+(admTabNow==='logos'?'<button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button>':'')+'<button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
     +'<p class="adm-note">'+(admTabNow==='logos'
       ?'Member logos: reorder, upload or delete below. The foundation logo wall, homepage banner and RWAF Members news tags update together. Use the organization’s name for each logo so its stories can be matched. Check the save status below to confirm your changes are published for all visitors.'
-      :'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
+      :admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
     +'</p><div id="admBody"></div>';
-  if(admTabNow==='logos') admPaintLogos(); else admPaintNews();
+  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else admPaintNews();
+}
+let admJobsRevision=null;
+async function admPaintJobs(){
+  const B=$('#admBody');B.textContent='Loading submissions…';
+  try{
+    const r=await fetch('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'list_all',pw:admPw()})});
+    const data=await r.json();if(!r.ok)throw Error(data.error||'Could not load submissions.');
+    if(admTabNow!=='jobs')return;admJobsRevision=data.revision;
+    B.innerHTML='<button class="adm-btn" onclick="admPaintJobs()">Refresh submissions</button>'+data.jobs.slice().reverse().map(j=>
+      '<div class="adm-empty" style="text-align:left;margin-top:16px"><b>'+escHtml(j.role)+' · '+escHtml(j.company)+'</b><p>'+escHtml(j.status)+' · '+escHtml(j.email)+' · '+escHtml(j.location)+'</p><p style="white-space:pre-wrap">'+escHtml(j.description)+'</p><p>Apply: '+escHtml(j.apply_to)+'</p><button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'live\')">Approve</button> <button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'closed\')">Close / reject</button></div>'
+    ).join('')+(data.jobs.length?'':'<p>No submissions yet.</p>');
+  }catch(e){if(admTabNow==='jobs')B.textContent=e.message;}
+}
+async function admModerateJob(id,status){
+  try{
+    const r=await fetch('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'moderate',id,status,revision:admJobsRevision,pw:admPw()})});
+    const data=await r.json();if(!r.ok)throw Error(data.error||'Could not save.');
+    toast('Listing updated',status==='live'?'Approved for publication.':'Removed from the public board.');await admPaintJobs();jbSync(true);
+  }catch(e){toast('Not saved',e.message);}
 }
 function admGoTab(t){ admTabNow=t; renderAdmin(); }
 function admPaintLogos(){

@@ -46,7 +46,7 @@ Pageviews are explicit: the main router dispatches `rwaf:pageview` after navigat
 
 Admin views are excluded. Query strings and arbitrary hashes are removed from tracked page URLs, and the integration does not send form values, identify visitors, or enable cookies. Analytics begin at installation; this does not backfill past visits or create a permanent archive of analytics data. View traffic in the Vercel dashboard under Analytics for the relevant project.
 
-## Staging RWA Job Board
+## RWA Job Board
 
 The restored `/#/jobs` board uses the original design, with direct employer application links, search, employment/remote/member filters, member spotlights and a company-coverage panel. Membership is recalculated from `logoAll()` (the same roster as the member logo wall), including employer aliases such as Ava Labs → Avalanche and IXS → IXSwap.
 
@@ -58,7 +58,15 @@ The featured member carousel has previous/next arrows and always excludes roles 
 
 The September 24, 2026 review covers 19 logo members and Ondo Finance, Superstate and Centrifuge. `data/jobs-manual.json` contains employer postings verified through careers pages that do not have an integrated public API (Dinari, Brickken, IXS and Token Terminal). These are explicitly labeled as manually reviewed in company coverage and expire seven days after `checkedAt`. Recheck each employer’s current board before updating that date; do not automatically roll it forward. New roles at those sources require a manual review. Companies without confirmed public openings are listed as such, not described as “not hiring.” General/open applications and talent pools are excluded.
 
-The existing Supabase submission/admin flow remains separate from imported employer jobs. This restoration is staged for review; it has not been applied to the production repository.
+### Submitted jobs and abuse controls
+
+`/api/jobs` stores submissions in the existing project-specific private Blob object `job-submissions.json`. No Supabase write credential or new service is required. Public GET responses contain only approved jobs and an explicit allowlist of display fields; contact emails are never returned. The legacy Supabase job write/read path is no longer used. Staging and production submissions remain separate.
+
+Submissions require same-origin JSON, bounded and typed fields, an HTTPS application URL or email, and a valid contact address. A hidden honeypot catches simple autofill bots. New jobs always start pending regardless of client-supplied flags. Duplicate submissions within a day are idempotent, concurrent saves use ETags, and the private collection is capped at 1,000 records to bound storage. The form waits for confirmed storage and preserves input after a failure.
+
+**Admin → Job submissions** lists private submissions and supports approval or closing/rejection with the existing server-verified console password. Closed jobs remain available to the admin; public results can take up to 60 seconds to refresh. Submitted jobs retain their original submission date for recency filtering.
+
+On each Vercel project, the published firewall rule **Limit job submission and admin requests** limits `POST /api/jobs` to 10 requests per 60 seconds per IP. This is an edge rule, independent of deployments; retain it when recreating projects. CAPTCHA is not currently required: moderation prevents automatic publication, while validation, the honeypot and rate limiting reduce abuse. Distributed bots can still submit for review; add an adaptive challenge if actual spam warrants it.
 
 ### Member icons
 

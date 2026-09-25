@@ -1,64 +1,74 @@
-// WALLY Job Board write path — Vercel serverless function.
-// Public reads never touch this file (the site reads Supabase directly with the
-// read-only publishable key). This function handles writes using two env vars
-// set in the Vercel project:
-//   SUPABASE_JOBS_SECRET — a Supabase secret API key (server-side only)
-//   JOBS_ADMIN_PW        — the console password for admin actions
-const SB = 'https://qrmbiestcjbedavsorrj.supabase.co/rest/v1/wally_jobs';
-const ALLOWED = ['company','role','type','work','location','comp','tags','description','apply_to','email','member'];
-
-export default async function handler(req, res) {
-  res.setHeader('Cache-Control', 'no-store');
-  if (req.method !== 'POST') { res.status(405).json({ error: 'POST only' }); return; }
-  const key = process.env.SUPABASE_JOBS_SECRET;
-  const adminPw = process.env.JOBS_ADMIN_PW;
-  if (!key) { res.status(500).json({ error: 'server not configured' }); return; }
-  const b = req.body || {};
-  const H = { apikey: key, Authorization: 'Bearer ' + key, 'Content-Type': 'application/json' };
-  const authed = !!adminPw && b.pw === adminPw;
-  try {
-    if (b.action === 'submit') {
-      // Public "Post a job" — always lands as status 'pending' for review.
-      const j = b.job || {};
-      if (j.website) { res.status(200).json({ ok: true }); return; } // honeypot field
-      const row = {};
-      for (const k of ALLOWED) { if (j[k] != null) row[k] = j[k]; }
-      if (!row.company || !row.role) { res.status(400).json({ error: 'company and role required' }); return; }
-      for (const k of Object.keys(row)) { if (typeof row[k] === 'string') row[k] = row[k].slice(0, 2000); }
-      if (Array.isArray(row.tags)) { row.tags = row.tags.slice(0, 4).map(t => String(t).slice(0, 40)); } else { delete row.tags; }
-      row.member = row.member ? 1 : 0;
-      row.status = 'pending';
-      row.src = 'site';
-      const r = await fetch(SB, { method: 'POST', headers: H, body: JSON.stringify(row) });
-      res.status(r.ok ? 200 : 502).json(r.ok ? { ok: true } : { error: 'db write failed' });
-      return;
-    }
-    if (!authed) { res.status(401).json({ error: 'bad password' }); return; }
-    if (b.action === 'list_all') {
-      const r = await fetch(SB + '?select=*&order=ts.desc', { headers: H });
-      res.status(200).json(await r.json());
-      return;
-    }
-    if (b.action === 'save') {
-      // Upsert a full row (approve, edit, feature, hide, close, renew).
-      const j = b.job || {};
-      if (!j.id) { res.status(400).json({ error: 'id required' }); return; }
-      j.updated_at = new Date().toISOString();
-      const r = await fetch(SB + '?on_conflict=id', {
-        method: 'POST',
-        headers: { ...H, Prefer: 'resolution=merge-duplicates' },
-        body: JSON.stringify(j)
-      });
-      res.status(r.ok ? 200 : 502).json(r.ok ? { ok: true } : { error: 'db write failed' });
-      return;
-    }
-    if (b.action === 'delete') {
-      const r = await fetch(SB + '?id=eq.' + encodeURIComponent(b.id || ''), { method: 'DELETE', headers: H });
-      res.status(r.ok ? 200 : 502).json(r.ok ? { ok: true } : { error: 'db delete failed' });
-      return;
-    }
-    res.status(400).json({ error: 'unknown action' });
-  } catch (e) {
-    res.status(500).json({ error: 'server error' });
+// Private, project-specific Vercel Blob storage. Public readers receive approved fields only.
+import { createHash, timingSafeEqual, randomUUID } from 'node:crypto';
+import { get, put, BlobError, BlobPreconditionFailedError } from '@vercel/blob';
+const PATH='job-submissions.json';
+const email=v=>/^[^\s@:/<>]+@[^\s@:/<>]+\.[^\s@:/<>]+$/.test(v);
+export function validateJob(j){
+  if(!j||typeof j!=='object'||Array.isArray(j))return null;
+  const row={};
+  for(const [k,max,min] of [['company',60,1],['role',80,1],['location',70,1],['comp',50,0],['description',900,40],['apply_to',200,1],['email',254,1]]){
+    const v=j[k]??'';if(typeof v!=='string'||v.trim().length<min||v.length>max)return null;row[k]=v.trim();
   }
+  if(!email(row.email))return null;
+  if(!email(row.apply_to)){
+    try{const u=new URL(row.apply_to);if(u.protocol!=='https:'||u.username||u.password)return null;}catch{return null;}
+  }
+  if(!['Full time','Part time','Contract','Internship'].includes(j.type)||!['Remote','Hybrid','On site'].includes(j.work))return null;
+  if(!Array.isArray(j.tags)||j.tags.length>4||!j.tags.every(t=>typeof t==='string'&&t.length<=40))return null;
+  return {...row,type:j.type,work:j.work,tags:j.tags.map(t=>t.trim()).filter(Boolean),member:j.member===1?1:0};
 }
+function authenticated(pw){
+  const secret=process.env.JOBS_ADMIN_PW;
+  const hash=secret?createHash('sha256').update(secret).digest('hex'):process.env.JOBS_ADMIN_PW_SHA256;
+  return !!hash&&/^[a-f0-9]{64}$/.test(hash)&&timingSafeEqual(createHash('sha256').update(typeof pw==='string'?pw:'').digest(),Buffer.from(hash,'hex'));
+}
+function conflict(e){return e instanceof BlobPreconditionFailedError||(e instanceof BlobError&&/already exists/i.test(e.message));}
+export function createJobsHandler(storage={get,put}){
+ return async(req,res)=>{
+  res.setHeader('Cache-Control','no-store');
+  if(!['GET','POST'].includes(req.method))return res.status(405).json({error:'GET or POST only'});
+  if(req.method==='POST'){
+   if(!/^application\/json(?:;|$)/i.test(req.headers?.['content-type']||''))return res.status(415).json({error:'JSON required'});
+   const origin=req.headers?.origin;
+   // Reject cross-site browser requests. This complements, rather than replaces, the edge rate limit.
+   if(!origin||origin!==`https://${req.headers.host}`){
+    if(!(process.env.NODE_ENV!=='production'&&origin===`http://${req.headers.host}`))return res.status(403).json({error:'Submit from this website.'});
+   }
+   if(Buffer.byteLength(JSON.stringify(req.body||{}))>12000)return res.status(413).json({error:'Submission too large.'});
+  }
+  const b=req.body||{},token=process.env.BLOB_READ_WRITE_TOKEN;
+  if(req.method==='POST'&&b.action!=='submit'&&!authenticated(b.pw))return res.status(401).json({error:'Session expired. Sign in again.'});
+  if(b.action==='submit'&&b.job?.website)return res.status(200).json({ok:true});
+  const input=b.action==='submit'?validateJob(b.job):null;
+  if(b.action==='submit'&&!input)return res.status(400).json({error:'Check all fields. Use an HTTPS application link or email and a description of at least 40 characters.'});
+  if(!token)return res.status(503).json({error:'Submissions are temporarily unavailable. Please try again later.'});
+  try{
+   for(let attempt=0;attempt<3;attempt++){
+    const result=await storage.get(PATH,{access:'private',token,useCache:false});
+    const rows=result?await new Response(result.stream).json():[];
+    const revision=result?.blob.etag||null;
+    if(req.method==='GET'){
+     res.setHeader('Cache-Control','public, s-maxage=60');
+     return res.status(200).json({jobs:rows.filter(j=>j.status==='live').map(({id,company,role,type,work,location,comp,tags,description,apply_to,ts})=>({id,company,role,type,work,location,comp,tags,description,apply_to,ts}))});
+    }
+    if(b.action==='list_all')return res.status(200).json({jobs:rows,revision});
+    if(b.action==='submit'){
+     if(rows.some(j=>j.email.toLowerCase()===input.email.toLowerCase()&&j.company===input.company&&j.role===input.role&&Date.now()-Date.parse(j.ts)<86400000))return res.status(200).json({ok:true});
+     if(rows.length>=1000)return res.status(503).json({error:'The review queue is full. Please contact happy@rwaf.xyz.'});
+     rows.push({...input,id:'u-'+randomUUID(),status:'pending',src:'site',ts:new Date().toISOString()});
+    }else if(b.action==='moderate'){
+     if(b.revision!==revision)return res.status(409).json({error:'Listings changed. Refresh the review queue.'});
+     const job=rows.find(j=>j.id===b.id);
+     if(!job||!['live','closed','pending'].includes(b.status))return res.status(400).json({error:'Invalid listing or status.'});
+     job.status=b.status;job.updated_at=new Date().toISOString();
+    }else return res.status(400).json({error:'Unknown action'});
+    try{
+     const saved=await storage.put(PATH,JSON.stringify(rows),{access:'private',token,contentType:'application/json',addRandomSuffix:false,allowOverwrite:revision!==null,...(revision?{ifMatch:revision}:{})});
+     return res.status(200).json({ok:true,revision:saved.etag});
+    }catch(e){if(conflict(e)){if(b.action==='submit')continue;return res.status(409).json({error:'Listings changed. Refresh the review queue.'});}throw e;}
+   }
+   return res.status(409).json({error:'Another submission arrived at the same time. Please retry.'});
+  }catch(e){console.error('Job storage request failed:',e.name);return res.status(502).json({error:'Could not save the listing. Keep this form open and retry.'});}
+ };
+}
+export default createJobsHandler();
