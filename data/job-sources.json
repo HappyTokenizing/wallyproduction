@@ -207,7 +207,7 @@
     "url": "https://jobs.lever.co/superstate",
     "slug": "superstate",
     "website": "https://superstate.com",
-    "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
   },
   {
     "id": "centrifuge",
@@ -218,5 +218,145 @@
     "slug": "centrifuge",
     "website": "https://centrifuge.io/about",
     "reviewedAt": "2026-09-24T17:36:13.912966+00:00"
+  },
+  {
+    "id": "robinhood",
+    "company": "Robinhood",
+    "memberName": null,
+    "kind": "greenhouse",
+    "slug": "robinhood",
+    "url": "https://careers.robinhood.com/",
+    "website": "https://careers.robinhood.com/",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00",
+    "applicationHosts": [
+      "boards.greenhouse.io",
+      "job-boards.greenhouse.io"
+    ]
+  },
+  {
+    "id": "aave",
+    "company": "Aave Labs",
+    "memberName": null,
+    "kind": "lever",
+    "slug": "aavelabs",
+    "url": "https://jobs.eu.lever.co/aavelabs",
+    "website": "https://aave.com/careers",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00",
+    "region": "eu"
+  },
+  {
+    "id": "morpho",
+    "company": "Morpho",
+    "memberName": null,
+    "kind": "ashby",
+    "slug": "morpho",
+    "url": "https://jobs.ashbyhq.com/morpho",
+    "website": "https://morpho.org/jobs/",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
+  },
+  {
+    "id": "coinbase",
+    "company": "Coinbase",
+    "memberName": null,
+    "kind": "greenhouse",
+    "slug": "coinbase",
+    "url": "https://www.coinbase.com/careers/positions",
+    "website": "https://www.coinbase.com/careers/positions",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
+  },
+  {
+    "id": "redstone",
+    "company": "RedStone",
+    "memberName": null,
+    "kind": "traffit",
+    "slug": null,
+    "url": "https://www.redstone.finance/careers",
+    "website": "https://www.redstone.finance/careers",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00",
+    "endpoint": "https://redstone.traffit.com/public/job_posts/published",
+    "applicationHosts": [
+      "redstone.traffit.com"
+    ]
+  },
+  {
+    "id": "chainlink",
+    "company": "Chainlink Labs",
+    "memberName": null,
+    "kind": "ashby-page",
+    "slug": "chainlink-labs",
+    "url": "https://jobs.ashbyhq.com/chainlink-labs",
+    "website": "https://chainlinklabs.com/open-roles",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
+  },
+  {
+    "id": "pyth",
+    "company": "Pyth Network (Pyth Data Association)",
+    "memberName": null,
+    "kind": "ashby",
+    "slug": "pythnetwork",
+    "url": "https://jobs.ashbyhq.com/pythnetwork",
+    "website": "https://www.pyth.network",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
+  },
+  {
+    "id": "bnb",
+    "company": "BNB Chain",
+    "memberName": null,
+    "kind": "lever",
+    "slug": "pioneer-services",
+    "url": "https://jobs.lever.co/pioneer-services",
+    "website": "https://jobs.bnbchain.org/companies/bnb-chain",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
+  },
+  {
+    "id": "ripple",
+    "company": "Ripple",
+    "memberName": null,
+    "kind": "greenhouse",
+    "slug": "ripple",
+    "url": "https://ripple.com/careers/all-jobs/",
+    "website": "https://ripple.com/careers/all-jobs/",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
+  },
+  {
+    "id": "ethena",
+    "company": "Ethena Labs",
+    "memberName": null,
+    "kind": "teamtailor-rss",
+    "slug": null,
+    "url": "https://careers.ethena.fi/jobs",
+    "website": "https://careers.ethena.fi/",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00",
+    "endpoint": "https://careers.ethena.fi/jobs.rss"
+  },
+  {
+    "id": "arbitrum",
+    "company": "Arbitrum Foundation",
+    "memberName": null,
+    "kind": "lever",
+    "slug": "arbitrumfoundation",
+    "url": "https://jobs.lever.co/arbitrumfoundation",
+    "website": "https://arbitrum.foundation/careers",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
+  },
+  {
+    "id": "sky",
+    "company": "Sky Protocol (Sky Frontier Foundation)",
+    "memberName": null,
+    "kind": "ashby",
+    "slug": "skyecosystem",
+    "url": "https://jobs.ashbyhq.com/skyecosystem",
+    "website": "https://sky.money",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
+  },
+  {
+    "id": "rwa-xyz",
+    "company": "RWA.xyz",
+    "memberName": null,
+    "kind": "ashby",
+    "slug": "RWA.xyz",
+    "url": "https://jobs.ashbyhq.com/RWA.xyz",
+    "website": "https://app.rwa.xyz/",
+    "reviewedAt": "2026-09-26T20:17:39.639000+00:00"
   }
 ]
