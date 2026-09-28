@@ -3939,6 +3939,7 @@ function showPage(p, anchor, fromRoute){
   if(anchor) setTimeout(()=>{ const el=$(anchor); el && el.scrollIntoView({behavior:'smooth'}); }, 60);
   else scrollTo(0,0);
   window.__page = p;
+  if(['home','foundation','jobs'].includes(p) && window.refreshMembers) refreshMembers();
   document.title = PAGE_TITLES[p] || PAGE_TITLES.home;
   if(!fromRoute){
     const slug = PAGE_ROUTES[p];
@@ -4387,7 +4388,7 @@ const LOGO_DEFAULTS=[...document.querySelectorAll('#page-foundation .logowall .l
 const LOGO_DRAFT='wally_logos_draft_v2';
 let lgState=lsGet(LOGO_LS,{order:[],del:[],add:[]});
 let lgRevision=null, lgReady=false, lgSaving=false, lgConflict=false, lgError='';
-let lgEdit=0, lgSaved=0;
+let lgEdit=0, lgSaved=0, lgLoading=null;
 let lgRecovery=lsGet(LOGO_DRAFT,null);
 function lgStore(){ return JSON.parse(JSON.stringify(lgState)); }
 function lgCache(s){ try{ localStorage.setItem(LOGO_LS,JSON.stringify(s)); }catch(e){} }
@@ -4421,7 +4422,12 @@ function lgStatus(){
   const load=$('#lgLoad'); if(load) load.hidden=!lgConflict;
   const recovery=$('#lgRecoveryNotice'); if(recovery) recovery.hidden=!lgRecovery||lgSaving||lgEdit>lgSaved;
 }
-async function lgFetchRemote(){
+function lgFetchRemote(){
+  if(lgLoading) return lgLoading;
+  lgLoading=lgReadRemote().finally(()=>{lgLoading=null;});
+  return lgLoading;
+}
+async function lgReadRemote(){
   if(lgSaving||lgEdit>lgSaved) return;
   const edit=lgEdit;
   try{
@@ -4443,6 +4449,10 @@ async function lgFetchRemote(){
 }
 lgFetchRemote();
 window.nwRefreshMembers=lgFetchRemote;
+window.refreshMembers=lgFetchRemote;
+// Refresh after another tab saves or the visitor returns to an already-open page.
+window.addEventListener('storage',function(e){if(e.key===LOGO_LS)lgFetchRemote();});
+window.addEventListener('focus',function(){if(['home','foundation','jobs','news','admin'].includes(window.__page))lgFetchRemote();});
 function admPw(){ try{ return sessionStorage.getItem('wally_adm_pw')||''; }catch(e){ return ''; } }
 async function lgPush(){
   if(!lgReady||lgSaving||lgConflict) return;
@@ -4554,7 +4564,7 @@ function admPaintLogos(){
     +'<button class="adm-btn danger" onclick="admLogoDel(\''+l.id+'\')">Delete</button></div></div>';
   B.innerHTML='<div class="adm-sec"><p id="lgStatus" role="status" aria-live="polite"></p><button id="lgRetry" class="adm-btn" onclick="lgRetry()" hidden>Retry</button><button id="lgLoad" class="adm-btn" onclick="lgLoadLatest()" hidden>Load latest logos</button>'
     +(lgRecovery?'<p id="lgRecoveryNotice">A browser copy is available. <button class="adm-btn" onclick="lgRestoreDraft()">Restore browser copy</button></p>':'')
-    +'<p class="adm-note">The wide logo is used on the member wall. Upload a square company symbol for the job board. Icon changes save automatically and follow this member everywhere on the board.</p>'
+    +'<p class="adm-note">The wide logo is used on the member wall. Upload a square company symbol for the job board. Icon changes save automatically and follow this member everywhere on the board. Deleting a member removes their logos and member badges throughout the site; their jobs remain as regular listings.</p>'
     +'<h6>Logos on the wall ('+list.length+')</h6>'
     +(list.map(row).join('')||'<div class="adm-empty">No logos on the wall. Upload one below, or reset to the defaults.</div>')
     +'<h6>Upload a logo</h6>'
@@ -4577,7 +4587,7 @@ function admLogoMove(id,dir){
 }
 function admLogoDel(id){
   if(!lgCanEdit()) return;
-  if(!confirm('Remove this logo from the member wall?')) return;
+  if(!confirm('Remove this member from all member logos and badges? Their jobs will remain listed without member or featured status.')) return;
   const s=lgStore();
   const k=s.add.findIndex(l=>l.id===id);
   if(k>-1) s.add.splice(k,1);

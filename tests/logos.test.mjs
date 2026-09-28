@@ -11,7 +11,7 @@ process.env.BLOB_READ_WRITE_TOKEN='test-token';process.env.JOBS_ADMIN_PW='test-p
 function backend(){
   let state=null,rev=0;
   const storage={
-    async get(path,options){assert.equal(options.useCache,false);return state?{stream:new Response(JSON.stringify(state)).body,blob:{etag:'v'+rev}}:null;},
+    async get(path,options){assert.equal(options.useCache,false);assert.equal(options.headers?.["Accept-Encoding"],"identity");return state?{stream:new Response(JSON.stringify(state)).body,blob:{etag:'v'+rev}}:null;},
     async put(path,body,options){
       if(state&&!options.allowOverwrite) throw new BlobError("This blob already exists");
       if(options.ifMatch&&options.ifMatch!=='v'+rev) throw new BlobPreconditionFailedError();
@@ -57,16 +57,18 @@ const bounds=html.slice(html.indexOf('function lgBounds('),html.indexOf('functio
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 function client(fetch,options={}){
   const cache=new Map(Object.entries(options.cache||{}));
+  const events={};
   const c=vm.createContext({
     fetch, Response, console, JSON, Promise,
-    document:{querySelectorAll:()=>[],querySelector:()=>null},
-    window:{addEventListener:()=>{}}, $:()=>null,
+    document:options.document||{querySelectorAll:()=>[],querySelector:()=>null},
+    window:{addEventListener:(name,fn)=>{events[name]=fn;}}, $:()=>null,
+    escHtml:v=>String(v),
     lsGet:(k,f)=>cache.has(k)?JSON.parse(cache.get(k)):f,
     localStorage:{setItem(k,v){if(options.full)throw Error('quota');cache.set(k,v);},removeItem(k){cache.delete(k);}},
     sessionStorage:{getItem:()=> 'test-password'},toast:()=>{},confirm:()=>true,
   });
   vm.runInContext("let admTabNow='logos'; function admPaintLogos(){};"+sync+bounds,c);
-  return {run:code=>vm.runInContext(code,c),cache};
+  return {run:code=>vm.runInContext(code,c),cache,events};
 }
 const json=(body,status=200)=>new Response(JSON.stringify(body),{status});
 test('rapid edits use a single in-flight save and preserve the final order',async()=>{
@@ -133,4 +135,55 @@ test('invalid icon uploads are rejected without replacing saved logos',async()=>
    assert.equal((await post(h,{...empty(),icons},'v1')).code,400);
  }
  assert.deepEqual((await call(h,'GET')).body.store.add,[logo]);
+});
+
+test('deleting built-in and uploaded members persists and removes member job priority',async()=>{
+  const h=backend(),wall={innerHTML:''};
+  const document={querySelectorAll:()=>['Maple','Solana'].map(name=>({querySelector:()=>({getAttribute:k=>k==='alt'?name:logo.src})})),querySelector:()=>wall};
+  const fetch=async(url,opts)=>{
+    const r=await call(h,opts.method||'GET',opts.body?JSON.parse(opts.body):undefined);
+    return json(r.body,r.code);
+  };
+  const c=client(fetch,{document});await tick();
+  c.run(readFileSync(new URL('../assets/job-recency.js',import.meta.url),'utf8'));
+  c.run(html.slice(html.indexOf('function jbAll(){'),html.indexOf('function jbApplyHref(')));
+  c.run(html.slice(html.indexOf('function jbMember('),html.indexOf('function jbLogoHtml(')));
+  c.run(html.slice(html.indexOf('function jbBadges('),html.indexOf('function jbRowHtml(')));
+  c.run(html.slice(html.indexOf('function admLogoDel('),html.indexOf('function admLogoReset(')));
+  c.run(`
+    const JB_SEED=[],JB_REMOTE=[],JB_MAX_AGE=7*86400000;
+    const JB_IMPORTED=[{id:'maple-role',company:'Maple Finance',memberName:'Maple',role:'Engineer',status:'live',checkedAt:new Date().toISOString(),postedAt:new Date().toISOString(),member:1,featured:1},
+      {id:'upload-role',company:'Test',status:'live',checkedAt:new Date().toISOString(),postedAt:new Date().toISOString(),member:1,featured:1}];
+    function jbStore(){return {items:[],ovr:{}};}
+    let marqueeUpdates=0,memberNames=[],visibleJobs=[];
+    function buildLogoMarquee(){marqueeUpdates++;}
+    function nwSyncMembers(logos){memberNames=logos.map(l=>l.name);}
+    function renderJobs(){visibleJobs=jbAll();}
+    window.buildLogoMarquee=buildLogoMarquee;window.nwSyncMembers=nwSyncMembers;window.renderJobs=renderJobs;window.__page='jobs';
+  `);
+  await c.run(`lgSave({order:[],del:[],add:[${JSON.stringify(logo)}]});lgPush()`);
+  assert.equal(c.run("jbAll().every(j=>j.member&&j.featured)"),true);
+  c.run("admLogoDel('d0')");await tick();
+  assert.doesNotMatch(wall.innerHTML,/Maple/);assert.match(wall.innerHTML,/Solana/);
+  assert.equal(c.run("memberNames.includes('Maple')"),false);
+  assert.equal(c.run("visibleJobs.find(j=>j.id==='maple-role').member"),0);
+  assert.equal(c.run("visibleJobs.find(j=>j.id==='maple-role').featured"),0);
+  assert.equal(c.run("jbBadges(jbAll().find(j=>j.id==='maple-role'))"),'');
+  assert.equal(c.run("RWAFJobRecency.featured(jbAll()).some(j=>j.id==='maple-role')"),false);
+  c.run("admLogoDel('utest')");await tick();
+  assert.doesNotMatch(wall.innerHTML,/Test/);assert.equal(c.run('jbAll().every(j=>!j.member&&!j.featured)'),true);
+  assert.equal(c.run('jbLive().length'),2);assert.equal(c.run('marqueeUpdates'),2);
+  const fresh=client(fetch,{document});await tick();
+  assert.equal(fresh.run("JSON.stringify(logoAll().map(l=>l.name))"),'["Solana"]');
+  assert.deepEqual((await call(h,'GET')).body.store.del,['d0']);
+  assert.deepEqual((await call(h,'GET')).body.store.add,[]);
+});
+
+test('open tabs refresh membership on focus/storage and coalesce overlapping reads',async()=>{
+  let reads=0,finish;
+  const c=client(async()=>{reads++;if(reads===1)return json({store:empty(),revision:'v1'});return new Promise(resolve=>{finish=resolve;});});await tick();
+  c.run("window.__page='jobs'");c.events.focus();c.events.storage({key:'wally_logos_v1'});
+  assert.equal(reads,2);finish(json({store:{...empty(),del:['d0']},revision:'v2'}));await tick();
+  assert.equal(c.run("lgStore().del[0]"),'d0');
+  assert.match(html,/\['home','foundation','jobs'\]\.includes\(p\).*refreshMembers\(\)/);
 });

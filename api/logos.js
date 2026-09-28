@@ -32,8 +32,10 @@ export function createLogoHandler(storage = { get, put }) {
     if (!token) return res.status(503).json({ error: 'Logo storage is not configured. Contact the site administrator.' });
     try {
       if (req.method === 'GET') {
-        // Bypass blob/CDN caches so refreshes and other visitors see the last confirmed save.
-        const result = await storage.get(PATH, { access: 'private', token, useCache: false });
+        // Identity encoding preserves the strong ETag needed by conditional saves.
+        // Compressed reads return weak ETags, which Blob rejects in ifMatch.
+        // Bypass blob/CDN caches so visitors see the last confirmed save.
+        const result = await storage.get(PATH, { access: 'private', token, useCache: false, headers: { 'Accept-Encoding': 'identity' } });
         const store = result ? await new Response(result.stream).json() : EMPTY;
         return res.status(200).json({ store, revision: result?.blob.etag || null });
       }
@@ -52,7 +54,7 @@ export function createLogoHandler(storage = { get, put }) {
       if (b.store.icons !== undefined) store.icons = { ...b.store.icons };
       else {
         // Older admin tabs do not know about icons; preserve the current icons on their saves.
-        const current = await storage.get(PATH, { access: 'private', token, useCache: false });
+        const current = await storage.get(PATH, { access: 'private', token, useCache: false, headers: { 'Accept-Encoding': 'identity' } });
         if (current) {
           const previous = await new Response(current.stream).json();
           if (previous.icons) store.icons = previous.icons;
