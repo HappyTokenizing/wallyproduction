@@ -61,7 +61,7 @@ function client(fetch,options={}){
   const c=vm.createContext({
     fetch, Response, console, JSON, Promise,
     document:options.document||{querySelectorAll:()=>[],querySelector:()=>null},
-    window:{addEventListener:(name,fn)=>{events[name]=fn;}}, $:()=>null,
+    window:{addEventListener:(name,fn)=>{events[name]=fn;}}, $:id=>options.elements?.[id]||null,
     escHtml:v=>String(v),
     lsGet:(k,f)=>cache.has(k)?JSON.parse(cache.get(k)):f,
     localStorage:{setItem(k,v){if(options.full)throw Error('quota');cache.set(k,v);},removeItem(k){cache.delete(k);}},
@@ -164,6 +164,8 @@ test('deleting built-in and uploaded members persists and removes member job pri
   await c.run(`lgSave({order:[],del:[],add:[${JSON.stringify(logo)}]});lgPush()`);
   assert.equal(c.run("jbAll().every(j=>j.member&&j.featured)"),true);
   c.run("admLogoDel('d0')");await tick();
+  assert.deepEqual((await call(h,'GET')).body.store.del,[]);
+  await c.run('lgPush()');
   assert.doesNotMatch(wall.innerHTML,/Maple/);assert.match(wall.innerHTML,/Solana/);
   assert.equal(c.run("memberNames.includes('Maple')"),false);
   assert.equal(c.run("visibleJobs.find(j=>j.id==='maple-role').member"),0);
@@ -171,6 +173,8 @@ test('deleting built-in and uploaded members persists and removes member job pri
   assert.equal(c.run("jbBadges(jbAll().find(j=>j.id==='maple-role'))"),'');
   assert.equal(c.run("RWAFJobRecency.featured(jbAll()).some(j=>j.id==='maple-role')"),false);
   c.run("admLogoDel('utest')");await tick();
+  assert.equal((await call(h,'GET')).body.store.add.length,1);
+  await c.run('lgPush()');
   assert.doesNotMatch(wall.innerHTML,/Test/);assert.equal(c.run('jbAll().every(j=>!j.member&&!j.featured)'),true);
   assert.equal(c.run('jbLive().length'),2);assert.equal(c.run('marqueeUpdates'),2);
   const fresh=client(fetch,{document});await tick();
@@ -186,4 +190,22 @@ test('open tabs refresh membership on focus/storage and coalesce overlapping rea
   assert.equal(reads,2);finish(json({store:{...empty(),del:['d0']},revision:'v2'}));await tick();
   assert.equal(c.run("lgStore().del[0]"),'d0');
   assert.match(html,/\['home','foundation','jobs'\]\.includes\(p\).*refreshMembers\(\)/);
+});
+
+test('Save changes stays visible and confirms only successful server writes',async()=>{
+  const elements=Object.fromEntries(['#lgStatus','#lgSaveChanges','#lgRetry','#lgLoad','#lgRecoveryNotice'].map(k=>[k,{}]));
+  let fail=true,writes=0;
+  const c=client(async(url,opts)=>{
+    if(!opts.method)return json({store:empty(),revision:null});
+    writes++;return fail?json({error:'Save failed. Please retry.'},502):json({ok:true,revision:'v1'});
+  },{elements});await tick();
+  assert.equal(elements['#lgSaveChanges'].disabled,true);
+  c.run("lgSave({order:[],del:['d0'],add:[]});lgStatus()");
+  assert.equal(writes,0);assert.equal(elements['#lgSaveChanges'].disabled,false);
+  assert.match(elements['#lgStatus'].textContent,/Unsaved changes/);
+  await c.run('lgPush()');assert.equal(writes,1);assert.equal(elements['#lgSaveChanges'].disabled,false);
+  assert.match(elements['#lgStatus'].textContent,/Save failed/);
+  fail=false;await c.run('lgPush()');assert.equal(elements['#lgSaveChanges'].disabled,true);
+  assert.match(elements['#lgStatus'].textContent,/Changes saved/);
+  assert.match(html,/id="lgSaveChanges"[^>]+onclick="lgPush\(\)"/);
 });

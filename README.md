@@ -8,7 +8,7 @@ Static HTML and Vercel Node functions. `npm ci` installs the server storage SDK;
 
 Configure `JOBS_ADMIN_PW` with the current console password, or `JOBS_ADMIN_PW_SHA256` with its SHA-256 hex digest. The client console uses its existing password digest. The API validates the password server-side before writing. Never commit environment files or tokens.
 
-Reads bypass CDN/blob caches. Writes require the last read ETag, reject conflicts with HTTP 409, and reject invalid/oversized collections as a whole. The client serializes saves and retains unsaved drafts. A visible status confirms publication; **Retry** resends failed saves. **Load latest logos** resolves concurrent-session conflicts, keeping the browser draft available for explicit restoration.
+Reads bypass CDN/blob caches. Writes require the last read ETag, reject conflicts with HTTP 409, and reject invalid/oversized collections as a whole. The member admin has a sticky **Save changes** button. Deletions, reorders, uploads, icon edits and resets remain a local preview until explicitly saved. The client serializes saves and retains unsaved drafts. A visible status confirms publication; **Retry** resends failed saves. **Load latest logos** resolves concurrent-session conflicts, keeping the browser draft available for explicit restoration.
 
 Old browser-only uploads can be recovered using **Restore browser copy** in the original browser. They cannot be recovered from the server if the previous Supabase connection never saved them.
 

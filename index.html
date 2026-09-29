@@ -1649,6 +1649,8 @@ html{ scrollbar-color:var(--line2) transparent }
 .adm-btn.danger:hover{border-color:#C0442A;color:#C0442A}
 .adm-empty{font-size:13px;color:var(--text3);padding:18px;border:1px dashed var(--line2);border-radius:14px;text-align:center}
 .adm-form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;max-width:560px}
+.lg-save-bar{position:sticky;top:78px;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line2);border-radius:12px;padding:14px 16px;margin-bottom:18px;box-shadow:0 4px 18px rgba(0,0,0,.06)}
+.lg-save-bar p{flex:1;min-width:180px;margin:0;font-size:14px}.lg-save-bar button{flex:none}
 .ft-adm{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--text3);background:none;border:0;cursor:pointer;padding:0;transition:.15s}
 .ft-adm:hover{color:var(--orange2)}
 .soon-chip{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;padding:2px 6px;border:1px solid var(--line2);border-radius:6px;color:var(--text3);margin-left:6px;vertical-align:1px;white-space:nowrap}
@@ -4417,8 +4419,10 @@ function renderLogoWall(){
 renderLogoWall();
 function lgStatus(){
   const el=$('#lgStatus'); if(!el) return;
-  el.textContent=lgSaving?'Saving changes…':lgError||(lgReady?(lgEdit>lgSaved?'Changes have not been saved yet.':'All changes saved to the server.'):'Loading saved logos…');
-  const retry=$('#lgRetry'); if(retry) retry.hidden=lgSaving||(!lgError&&lgEdit===lgSaved);
+  el.textContent=lgSaving?'Saving changes…':lgError||(lgReady?(lgEdit>lgSaved?'Unsaved changes — click Save changes to publish.':(lgSaved?'Changes saved. The member list is live.':'No unsaved changes.')):'Loading saved logos…');
+  const save=$('#lgSaveChanges');
+  if(save){save.disabled=!lgReady||lgSaving||lgConflict||lgEdit===lgSaved;save.textContent=lgSaving?'Saving…':'Save changes';}
+  const retry=$('#lgRetry'); if(retry) retry.hidden=lgSaving||!lgError;
   const load=$('#lgLoad'); if(load) load.hidden=!lgConflict;
   const recovery=$('#lgRecoveryNotice'); if(recovery) recovery.hidden=!lgRecovery||lgSaving||lgEdit>lgSaved;
 }
@@ -4472,7 +4476,8 @@ async function lgPush(){
   finally{ lgSaving=false; lgStatus(); }
 }
 function lgCanEdit(){
-  if(lgReady&&!lgConflict) return true;
+  if(lgReady&&!lgConflict&&!lgSaving) return true;
+  if(lgSaving){toast('Saving changes','Wait for the current save to finish.');return false;}
   toast('Logos not ready',lgError||'Wait for saved logos to load.'); return false;
 }
 function lgRetry(){ if(lgConflict) return lgLoadLatest(); if(!lgReady) return lgFetchRemote(); return lgPush(); }
@@ -4483,9 +4488,9 @@ async function lgLoadLatest(){
 }
 function lgRestoreDraft(){
   if(!lgCanEdit()||!lgRecovery) return;
-  if(!confirm('Replace the current logo list with the saved browser copy and publish it?')) return;
+  if(!confirm('Restore the saved browser copy for review? Click Save changes to publish it.')) return;
   lgSave(JSON.parse(JSON.stringify(lgRecovery.store)));
-  renderLogoWall(); admPaintLogos(); lgPush();
+  renderLogoWall(); admPaintLogos();
 }
 window.addEventListener('beforeunload',function(e){ if(lgSaving||lgEdit>lgSaved){ e.preventDefault(); e.returnValue=''; } });
 function admOk(){ try{ return sessionStorage.getItem('wally_adm_ok')==='1'; }catch(e){ return false; } }
@@ -4562,9 +4567,9 @@ function admPaintLogos(){
     +(i===0?'<button class="adm-btn" disabled style="opacity:.35">&uarr; Up</button>':'<button class="adm-btn" onclick="admLogoMove(\''+l.id+'\',-1)">&uarr; Up</button>')
     +(i===list.length-1?'<button class="adm-btn" disabled style="opacity:.35">&darr; Down</button>':'<button class="adm-btn" onclick="admLogoMove(\''+l.id+'\',1)">&darr; Down</button>')
     +'<button class="adm-btn danger" onclick="admLogoDel(\''+l.id+'\')">Delete</button></div></div>';
-  B.innerHTML='<div class="adm-sec"><p id="lgStatus" role="status" aria-live="polite"></p><button id="lgRetry" class="adm-btn" onclick="lgRetry()" hidden>Retry</button><button id="lgLoad" class="adm-btn" onclick="lgLoadLatest()" hidden>Load latest logos</button>'
+  B.innerHTML='<div class="adm-sec"><div class="lg-save-bar"><p id="lgStatus" role="status" aria-live="polite"></p><button id="lgSaveChanges" class="btn btn-orange btn-sm" onclick="lgPush()" disabled>Save changes</button></div><button id="lgRetry" class="adm-btn" onclick="lgRetry()" hidden>Retry</button><button id="lgLoad" class="adm-btn" onclick="lgLoadLatest()" hidden>Load latest logos</button>'
     +(lgRecovery?'<p id="lgRecoveryNotice">A browser copy is available. <button class="adm-btn" onclick="lgRestoreDraft()">Restore browser copy</button></p>':'')
-    +'<p class="adm-note">The wide logo is used on the member wall. Upload a square company symbol for the job board. Icon changes save automatically and follow this member everywhere on the board. Deleting a member removes their logos and member badges throughout the site; their jobs remain as regular listings.</p>'
+    +'<p class="adm-note">The wide logo is used on the member wall. Upload a square company symbol for the job board. Changes preview here until you click Save changes. Saved icons follow this member everywhere on the board. Deleting a member removes their logos and member badges throughout the site; their jobs remain as regular listings.</p>'
     +'<h6>Logos on the wall ('+list.length+')</h6>'
     +(list.map(row).join('')||'<div class="adm-empty">No logos on the wall. Upload one below, or reset to the defaults.</div>')
     +'<h6>Upload a logo</h6>'
@@ -4583,11 +4588,11 @@ function admLogoMove(id,dir){
   if(i<0||j<0||j>=ids.length) return;
   ids.splice(i,1); ids.splice(j,0,id);
   const s=lgStore(); s.order=ids; lgSave(s);
-  renderLogoWall(); admPaintLogos(); lgPush();
+  renderLogoWall(); admPaintLogos();
 }
 function admLogoDel(id){
   if(!lgCanEdit()) return;
-  if(!confirm('Remove this member from all member logos and badges? Their jobs will remain listed without member or featured status.')) return;
+  if(!confirm('Remove this member? Click Save changes to remove their logos and badges. Their jobs will remain as regular listings.')) return;
   const s=lgStore();
   const k=s.add.findIndex(l=>l.id===id);
   if(k>-1) s.add.splice(k,1);
@@ -4595,13 +4600,13 @@ function admLogoDel(id){
   s.order=s.order.filter(x=>x!==id);
   if(s.icons) delete s.icons[id];
   lgSave(s);
-  renderLogoWall(); admPaintLogos(); lgPush();
+  renderLogoWall(); admPaintLogos();
 }
 function admLogoReset(){
   if(!lgCanEdit()) return;
-  if(!confirm('Restore the default logos for all visitors?')) return;
+  if(!confirm('Restore the default logos in your draft? Click Save changes to publish them.')) return;
   lgSave({order:[],del:[],add:[],icons:{}});
-  renderLogoWall(); admPaintLogos(); lgPush();
+  renderLogoWall(); admPaintLogos();
 }
 // Find visible bounds, removing transparent padding and opaque white margins.
 function lgBounds(data,w,h){
@@ -4653,14 +4658,14 @@ async function admLogoIconUpload(id,input){
     const src=await lgPrepareIcon(file);
     if(!lgCanEdit()||!logoAll().some(l=>l.id===id)) return;
     const s=lgStore();s.icons=s.icons||{};s.icons[id]=src;
-    lgSave(s);renderLogoWall();admPaintLogos();await lgPush();
+    lgSave(s);renderLogoWall();admPaintLogos();
   }catch(e){toast('Icon not saved',e.message);}
   finally{input.disabled=false;input.value='';}
 }
 function admLogoIconReset(id){
   if(!lgCanEdit()) return;
   const s=lgStore();if(s.icons)delete s.icons[id];
-  lgSave(s);renderLogoWall();admPaintLogos();lgPush();
+  lgSave(s);renderLogoWall();admPaintLogos();
 }
 
 async function admLogoUpload(){
@@ -4685,7 +4690,7 @@ async function admLogoUpload(){
     const id='u'+crypto.randomUUID();
     s.add.push({id:id,name:name,src:src});
     if(icon){s.icons=s.icons||{};s.icons[id]=icon;}
-    lgSave(s); renderLogoWall(); admPaintLogos(); await lgPush();
+    lgSave(s); renderLogoWall(); admPaintLogos();
   }catch(e){toast('Logo not added',e.message);}
   finally{if(button){button.disabled=false;button.textContent='Add to the wall';}}
 }
