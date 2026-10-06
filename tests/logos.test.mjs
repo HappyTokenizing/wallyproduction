@@ -189,7 +189,7 @@ test('open tabs refresh membership on focus/storage and coalesce overlapping rea
   c.run("window.__page='jobs'");c.events.focus();c.events.storage({key:'wally_logos_v1'});
   assert.equal(reads,2);finish(json({store:{...empty(),del:['d0']},revision:'v2'}));await tick();
   assert.equal(c.run("lgStore().del[0]"),'d0');
-  assert.match(html,/\['home','foundation','jobs'\]\.includes\(p\).*refreshMembers\(\)/);
+  assert.match(html,/\['home','foundation','jobs','eco'\]\.includes\(p\).*refreshMembers\(\)/);
 });
 
 test('Save changes stays visible and confirms only successful server writes',async()=>{

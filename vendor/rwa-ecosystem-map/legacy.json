@@ -1,0 +1,1673 @@
+[
+  {
+    "id": "wally",
+    "name": "WALLY NFT",
+    "type": "hub",
+    "region": "INTL",
+    "assets": [],
+    "map": 1,
+    "links": [
+      "real",
+      "credefi",
+      "raze",
+      "mu",
+      "jade",
+      "land",
+      "drvn",
+      "bigfoot",
+      "investready"
+    ],
+    "blurb": "The community hub coordinating the RWA economy."
+  },
+  {
+    "id": "ondo",
+    "name": "Ondo Finance",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "chainlink",
+      "pendle",
+      "fireblocks",
+      "morpho",
+      "plume"
+    ],
+    "blurb": "Tokenized treasuries & yield funds (OUSG, USDY)."
+  },
+  {
+    "id": "franklin",
+    "name": "Franklin Templeton",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "treasuries"
+    ],
+    "map": 1,
+    "links": [
+      "citi",
+      "chainlink"
+    ],
+    "blurb": "BENJI: a pioneering tokenized money-market fund."
+  },
+  {
+    "id": "superstate",
+    "name": "Superstate",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "chainlink",
+      "sky"
+    ],
+    "blurb": "Short-duration treasury & crypto carry funds."
+  },
+  {
+    "id": "wisdomtree",
+    "name": "WisdomTree",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "treasuries"
+    ],
+    "map": 1,
+    "links": [
+      "chainlink"
+    ],
+    "blurb": "WisdomTree Prime: tokenized funds for retail."
+  },
+  {
+    "id": "openeden",
+    "name": "OpenEden",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "treasuries"
+    ],
+    "links": [
+      "fireblocks",
+      "chainlink"
+    ],
+    "blurb": "TBILL vault: tokenized T-bills, regulated."
+  },
+  {
+    "id": "backed",
+    "name": "Backed",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "equities",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "chainlink",
+      "mu",
+      "swarm"
+    ],
+    "blurb": "bTokens: tokenized stocks & ETFs onchain."
+  },
+  {
+    "id": "matrixdock",
+    "name": "Matrixdock",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "commodities"
+    ],
+    "links": [
+      "chainlink"
+    ],
+    "blurb": "STBT treasuries and XAUm tokenized gold."
+  },
+  {
+    "id": "paxos",
+    "name": "Paxos",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "commodities",
+      "stablecoins"
+    ],
+    "links": [
+      "fireblocks",
+      "anchorage"
+    ],
+    "blurb": "PAXG gold + regulated stablecoin rails."
+  },
+  {
+    "id": "realt",
+    "name": "RealT",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "realestate"
+    ],
+    "links": [
+      "provenance"
+    ],
+    "blurb": "Fractional US rentals, rent paid onchain."
+  },
+  {
+    "id": "tangible",
+    "name": "Tangible",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "realestate",
+      "commodities"
+    ],
+    "links": [
+      "pendle"
+    ],
+    "blurb": "Real-asset tokens: property, gold, collectibles."
+  },
+  {
+    "id": "dinari",
+    "name": "Dinari",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "equities"
+    ],
+    "member": 1,
+    "links": [
+      "securitize",
+      "chainlink"
+    ],
+    "blurb": "dShares: tokenized US equities for global access. RWA Foundation member."
+  },
+  {
+    "id": "redswan",
+    "name": "RedSwan CRE",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "realestate"
+    ],
+    "links": [
+      "inveniam"
+    ],
+    "blurb": "Tokenized commercial real-estate offerings."
+  },
+  {
+    "id": "sqft",
+    "name": "SQFT",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "realestate"
+    ],
+    "links": [
+      "tzero"
+    ],
+    "blurb": "Tokenized real-estate equity platform."
+  },
+  {
+    "id": "ctrlalt",
+    "name": "Ctrl Alt",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "realestate",
+      "funds"
+    ],
+    "links": [
+      "tokeny"
+    ],
+    "blurb": "Tokenization infrastructure for alternative assets."
+  },
+  {
+    "id": "steelwave",
+    "name": "SteelWave Digital",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "realestate"
+    ],
+    "links": [
+      "inveniam"
+    ],
+    "blurb": "Institutional real-estate tokenization."
+  },
+  {
+    "id": "diamondlake",
+    "name": "DiamondLake",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "realestate"
+    ],
+    "links": [
+      "redswan"
+    ],
+    "blurb": "Real-asset & property tokenization issuer."
+  },
+  {
+    "id": "brickken",
+    "name": "Brickken",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "equities",
+      "funds"
+    ],
+    "member": 1,
+    "links": [
+      "tokeny",
+      "polymesh"
+    ],
+    "blurb": "Token issuance platform for businesses. RWA Foundation member."
+  },
+  {
+    "id": "onre",
+    "name": "OnRe",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "funds"
+    ],
+    "member": 1,
+    "links": [
+      "hamiltonlane"
+    ],
+    "blurb": "Tokenized reinsurance yield. RWA Foundation member."
+  },
+  {
+    "id": "galaxytok",
+    "name": "Galaxy",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "equities",
+      "funds"
+    ],
+    "links": [
+      "securitize"
+    ],
+    "blurb": "Digital-asset financial services & tokenization."
+  },
+  {
+    "id": "hashnote",
+    "name": "Hashnote",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "chainlink",
+      "sky",
+      "redstone"
+    ],
+    "blurb": "USYC: institutional tokenized money market."
+  },
+  {
+    "id": "mountain",
+    "name": "Mountain Protocol",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "stablecoins"
+    ],
+    "links": [
+      "chainlink"
+    ],
+    "blurb": "USDM: yield-bearing stablecoin."
+  },
+  {
+    "id": "midas",
+    "name": "Midas",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "links": [
+      "redstone",
+      "morpho"
+    ],
+    "blurb": "Permissionless tokenized yield instruments."
+  },
+  {
+    "id": "libre",
+    "name": "Libre",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "funds",
+      "credit"
+    ],
+    "links": [
+      "polymesh"
+    ],
+    "blurb": "Tokenized hedge-fund & credit access."
+  },
+  {
+    "id": "real",
+    "name": "Real Finance",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "treasuries"
+    ],
+    "member": 1,
+    "map": 1,
+    "links": [
+      "fireblocks",
+      "wally",
+      "chainlink"
+    ],
+    "blurb": "Tokenized treasury products. RWA Foundation member."
+  },
+  {
+    "id": "jade",
+    "name": "Jade City",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "commodities"
+    ],
+    "links": [
+      "mu",
+      "wally"
+    ],
+    "blurb": "Tokenized jade & commodity vaults."
+  },
+  {
+    "id": "securitize",
+    "name": "Securitize",
+    "type": "market",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "treasuries",
+      "equities"
+    ],
+    "member": 1,
+    "map": 1,
+    "links": [
+      "investready",
+      "chainalysis",
+      "fireblocks",
+      "apollo",
+      "blackrock",
+      "redstone"
+    ],
+    "blurb": "Issuance, transfer agency & a regulated ATS. RWA Foundation member."
+  },
+  {
+    "id": "inx",
+    "name": "INX",
+    "type": "market",
+    "region": "USA",
+    "assets": [
+      "equities"
+    ],
+    "links": [
+      "chainalysis"
+    ],
+    "blurb": "Regulated trading venue for digital securities."
+  },
+  {
+    "id": "tzero",
+    "name": "tZERO",
+    "type": "market",
+    "region": "USA",
+    "assets": [
+      "equities"
+    ],
+    "map": 1,
+    "links": [
+      "anchorage"
+    ],
+    "blurb": "SEC-regulated ATS for tokenized securities."
+  },
+  {
+    "id": "swarm",
+    "name": "Swarm Markets",
+    "type": "market",
+    "region": "INTL",
+    "assets": [
+      "equities",
+      "treasuries"
+    ],
+    "links": [
+      "backed"
+    ],
+    "blurb": "BaFin-licensed DeFi marketplace."
+  },
+  {
+    "id": "rwaio",
+    "name": "RWA.io",
+    "type": "market",
+    "region": "INTL",
+    "assets": [
+      "funds"
+    ],
+    "links": [
+      "rwaworld"
+    ],
+    "blurb": "Data, directory & launchpad for the RWA market."
+  },
+  {
+    "id": "prometheum",
+    "name": "Prometheum",
+    "type": "market",
+    "region": "USA",
+    "assets": [
+      "equities"
+    ],
+    "map": 1,
+    "links": [
+      "dtcc"
+    ],
+    "blurb": "Special-purpose broker-dealer for digital securities."
+  },
+  {
+    "id": "rialto",
+    "name": "Rialto Markets",
+    "type": "market",
+    "region": "USA",
+    "assets": [
+      "equities",
+      "funds"
+    ],
+    "links": [
+      "fairmint"
+    ],
+    "blurb": "Primary issuance & secondary ATS."
+  },
+  {
+    "id": "apexinvest",
+    "name": "ApexInvest",
+    "type": "market",
+    "region": "INTL",
+    "assets": [
+      "funds"
+    ],
+    "links": [
+      "dtcc"
+    ],
+    "blurb": "Marketplace connecting issuers and investors."
+  },
+  {
+    "id": "fairmint",
+    "name": "Fairmint",
+    "type": "market",
+    "region": "USA",
+    "assets": [
+      "equities"
+    ],
+    "links": [
+      "rialto"
+    ],
+    "blurb": "Onchain cap-table & private securities."
+  },
+  {
+    "id": "obligate",
+    "name": "Obligate",
+    "type": "market",
+    "region": "INTL",
+    "assets": [
+      "credit"
+    ],
+    "links": [
+      "polymesh"
+    ],
+    "blurb": "Onchain bonds & regulated debt issuance."
+  },
+  {
+    "id": "land",
+    "name": "landinvest.io",
+    "type": "market",
+    "region": "INTL",
+    "assets": [
+      "realestate"
+    ],
+    "map": 1,
+    "links": [
+      "investready",
+      "wally"
+    ],
+    "blurb": "Marketplace for fractional land & property."
+  },
+  {
+    "id": "centrifuge",
+    "name": "Centrifuge",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "credit",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "morpho",
+      "chainlink",
+      "sky",
+      "untangled"
+    ],
+    "blurb": "Onchain securitization: real world credit pools."
+  },
+  {
+    "id": "maple",
+    "name": "Maple Finance",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "credit",
+      "treasuries"
+    ],
+    "member": 1,
+    "map": 1,
+    "links": [
+      "spark",
+      "apollo",
+      "redstone"
+    ],
+    "blurb": "Institutional credit & cash-management pools. RWA Foundation member."
+  },
+  {
+    "id": "goldfinch",
+    "name": "Goldfinch",
+    "type": "defi",
+    "region": "USA",
+    "assets": [
+      "credit"
+    ],
+    "links": [
+      "chainlink"
+    ],
+    "blurb": "Private-credit lending to real businesses."
+  },
+  {
+    "id": "clearpool",
+    "name": "Clearpool",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "credit"
+    ],
+    "links": [
+      "redstone"
+    ],
+    "blurb": "Permissionless institutional credit markets."
+  },
+  {
+    "id": "morpho",
+    "name": "Morpho",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "credit",
+      "treasuries"
+    ],
+    "map": 1,
+    "links": [
+      "centrifuge",
+      "ondo",
+      "midas",
+      "gauntlet"
+    ],
+    "blurb": "Lending infrastructure where RWA collateral plugs in."
+  },
+  {
+    "id": "pendle",
+    "name": "Pendle",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "ondo",
+      "usual",
+      "redstone"
+    ],
+    "blurb": "Trade & fix RWA yields: PT/YT splitting."
+  },
+  {
+    "id": "spark",
+    "name": "Spark",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "credit"
+    ],
+    "links": [
+      "maple",
+      "sky"
+    ],
+    "blurb": "Routes stablecoin liquidity into treasuries & credit."
+  },
+  {
+    "id": "gauntlet",
+    "name": "Gauntlet",
+    "type": "defi",
+    "region": "USA",
+    "assets": [
+      "credit",
+      "treasuries"
+    ],
+    "links": [
+      "morpho",
+      "aave"
+    ],
+    "blurb": "Risk curation & vault management for DeFi."
+  },
+  {
+    "id": "axis",
+    "name": "Axis",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "stablecoins",
+      "credit"
+    ],
+    "links": [
+      "chainlink"
+    ],
+    "blurb": "Stablecoin & DeFi yield infrastructure."
+  },
+  {
+    "id": "sky",
+    "name": "Sky (Maker)",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "stablecoins"
+    ],
+    "map": 1,
+    "links": [
+      "spark",
+      "superstate",
+      "centrifuge",
+      "hashnote"
+    ],
+    "blurb": "Stablecoin protocol with large RWA collateral."
+  },
+  {
+    "id": "aave",
+    "name": "Aave Horizon",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "credit"
+    ],
+    "links": [
+      "gauntlet",
+      "chainlink"
+    ],
+    "blurb": "RWA-focused institutional lending markets."
+  },
+  {
+    "id": "usual",
+    "name": "Usual",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "stablecoins"
+    ],
+    "links": [
+      "pendle",
+      "hashnote"
+    ],
+    "blurb": "RWA-backed stablecoin protocol."
+  },
+  {
+    "id": "untangled",
+    "name": "Untangled",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "credit"
+    ],
+    "links": [
+      "centrifuge"
+    ],
+    "blurb": "Tokenized trade-finance & credit pools."
+  },
+  {
+    "id": "credefi",
+    "name": "Credefi",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "credit"
+    ],
+    "member": 1,
+    "map": 1,
+    "links": [
+      "chainlink",
+      "wally"
+    ],
+    "blurb": "EU SME credit pools, onchain. RWA Foundation member."
+  },
+  {
+    "id": "raze",
+    "name": "Raze",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "links": [
+      "ondo",
+      "wally"
+    ],
+    "blurb": "RWA index & yield strategies."
+  },
+  {
+    "id": "mu",
+    "name": "Mu Digital",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "equities",
+      "commodities"
+    ],
+    "member": 1,
+    "links": [
+      "backed",
+      "jade",
+      "wally"
+    ],
+    "blurb": "DEX liquidity for RWA pairs. RWA Foundation member."
+  },
+  {
+    "id": "chainlink",
+    "name": "Chainlink",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [],
+    "map": 1,
+    "links": [
+      "ondo",
+      "backed",
+      "superstate",
+      "credefi",
+      "centrifuge",
+      "franklin",
+      "wisdomtree"
+    ],
+    "blurb": "Oracles, proof-of-reserve & CCIP: the data layer for RWAs."
+  },
+  {
+    "id": "redstone",
+    "name": "RedStone",
+    "type": "protocol",
+    "region": "INTL",
+    "assets": [],
+    "map": 1,
+    "links": [
+      "morpho",
+      "maple",
+      "pendle",
+      "blackrock",
+      "apollo",
+      "securitize",
+      "hashnote"
+    ],
+    "blurb": "Modular oracles & price feeds for RWAs, powering tokenized products from BlackRock, Apollo & Securitize."
+  },
+  {
+    "id": "pyth",
+    "name": "Pyth",
+    "type": "protocol",
+    "region": "INTL",
+    "assets": [],
+    "links": [
+      "aave"
+    ],
+    "blurb": "Low-latency market data for tokenized assets."
+  },
+  {
+    "id": "canton",
+    "name": "Canton Network",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [],
+    "map": 1,
+    "links": [
+      "dtcc",
+      "goldman",
+      "digitalasset"
+    ],
+    "blurb": "Privacy-enabled chain for institutional assets."
+  },
+  {
+    "id": "plume",
+    "name": "Plume",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [],
+    "member": 1,
+    "map": 1,
+    "links": [
+      "ondo",
+      "nest"
+    ],
+    "blurb": "A chain purpose-built for RWA issuance & compliance. RWA Foundation member."
+  },
+  {
+    "id": "polymesh",
+    "name": "Polymesh",
+    "type": "protocol",
+    "region": "INTL",
+    "assets": [
+      "equities"
+    ],
+    "links": [
+      "brickken",
+      "libre",
+      "obligate"
+    ],
+    "blurb": "Institutional chain for regulated securities."
+  },
+  {
+    "id": "provenance",
+    "name": "Provenance",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [
+      "credit",
+      "funds"
+    ],
+    "links": [
+      "figure",
+      "realt"
+    ],
+    "blurb": "Chain powering HELOCs, funds & loan markets."
+  },
+  {
+    "id": "mantra",
+    "name": "MANTRA",
+    "type": "protocol",
+    "region": "INTL",
+    "assets": [],
+    "links": [
+      "google"
+    ],
+    "blurb": "RWA-focused L1 with compliance tooling."
+  },
+  {
+    "id": "matterlabs",
+    "name": "Matter Labs (zkSync)",
+    "type": "protocol",
+    "region": "INTL",
+    "assets": [],
+    "links": [
+      "tradable"
+    ],
+    "blurb": "ZK rollup powering institutional privacy."
+  },
+  {
+    "id": "aleo",
+    "name": "Aleo",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "canton"
+    ],
+    "blurb": "Zero-knowledge L1 for private compliance."
+  },
+  {
+    "id": "digitalasset",
+    "name": "Digital Asset",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "canton",
+      "goldman"
+    ],
+    "blurb": "Builders of Canton & Daml smart contracts."
+  },
+  {
+    "id": "noble",
+    "name": "Noble",
+    "type": "protocol",
+    "region": "INTL",
+    "assets": [
+      "stablecoins",
+      "treasuries"
+    ],
+    "links": [
+      "ondo"
+    ],
+    "blurb": "Native asset issuance chain (Cosmos)."
+  },
+  {
+    "id": "redbelly",
+    "name": "Redbelly",
+    "type": "protocol",
+    "region": "INTL",
+    "assets": [],
+    "links": [
+      "zoniqx"
+    ],
+    "blurb": "Compliance-native chain for RWAs."
+  },
+  {
+    "id": "nest",
+    "name": "Nest (Plume)",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [
+      "treasuries",
+      "credit"
+    ],
+    "links": [
+      "plume"
+    ],
+    "blurb": "Yield vaults native to the Plume RWA chain."
+  },
+  {
+    "id": "fireblocks",
+    "name": "Fireblocks",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "map": 1,
+    "links": [
+      "ondo",
+      "paxos",
+      "openeden",
+      "securitize",
+      "real",
+      "taurus"
+    ],
+    "blurb": "Custody & wallet infrastructure for institutions."
+  },
+  {
+    "id": "anchorage",
+    "name": "Anchorage Digital",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "map": 1,
+    "links": [
+      "paxos",
+      "tzero"
+    ],
+    "blurb": "Federally chartered crypto bank & custodian."
+  },
+  {
+    "id": "chainalysis",
+    "name": "Chainalysis",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "securitize",
+      "inx"
+    ],
+    "blurb": "Compliance & onchain intelligence."
+  },
+  {
+    "id": "investready",
+    "name": "InvestReady",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "member": 1,
+    "map": 1,
+    "links": [
+      "securitize",
+      "land",
+      "wally"
+    ],
+    "blurb": "Accredited-investor verification: the AccrediToken. RWA Foundation member."
+  },
+  {
+    "id": "tokeny",
+    "name": "Tokeny",
+    "type": "service",
+    "region": "INTL",
+    "assets": [
+      "equities",
+      "funds"
+    ],
+    "links": [
+      "ctrlalt",
+      "brickken"
+    ],
+    "blurb": "ERC-3643 compliant tokenization suite."
+  },
+  {
+    "id": "rwaworld",
+    "name": "RWA.World",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "rwaio"
+    ],
+    "blurb": "Research, media & data hub for the RWA industry."
+  },
+  {
+    "id": "dtcc",
+    "name": "DTCC",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "map": 1,
+    "links": [
+      "prometheum",
+      "canton",
+      "apexinvest"
+    ],
+    "blurb": "Post-trade market infrastructure going onchain."
+  },
+  {
+    "id": "broadridge",
+    "name": "Broadridge",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "falconx"
+    ],
+    "blurb": "Tokenized repo & collateral infrastructure."
+  },
+  {
+    "id": "ownera",
+    "name": "Ownera",
+    "type": "service",
+    "region": "INTL",
+    "assets": [],
+    "links": [
+      "dtcc"
+    ],
+    "blurb": "FinP2P: interoperability routing for RWAs."
+  },
+  {
+    "id": "blockaid",
+    "name": "Blockaid",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "fireblocks"
+    ],
+    "blurb": "Onchain security & transaction screening."
+  },
+  {
+    "id": "inveniam",
+    "name": "Inveniam",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "redswan",
+      "steelwave"
+    ],
+    "blurb": "Data & valuation infrastructure for private assets."
+  },
+  {
+    "id": "bloomberg",
+    "name": "Bloomberg",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "inveniam"
+    ],
+    "blurb": "Market data & pricing for tokenized assets."
+  },
+  {
+    "id": "opacity",
+    "name": "Opacity",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "aleo"
+    ],
+    "blurb": "Privacy & verifiable-compute infrastructure."
+  },
+  {
+    "id": "parc",
+    "name": "PARC-3643",
+    "type": "service",
+    "region": "INTL",
+    "assets": [],
+    "links": [
+      "tokeny"
+    ],
+    "blurb": "Compliance tooling for permissioned tokens."
+  },
+  {
+    "id": "taurus",
+    "name": "Taurus",
+    "type": "service",
+    "region": "INTL",
+    "assets": [],
+    "links": [
+      "fireblocks"
+    ],
+    "blurb": "Custody & tokenization for banks."
+  },
+  {
+    "id": "zoniqx",
+    "name": "Zoniqx",
+    "type": "service",
+    "region": "USA",
+    "assets": [
+      "equities",
+      "funds"
+    ],
+    "links": [
+      "redbelly"
+    ],
+    "blurb": "Tokenization middleware & standards."
+  },
+  {
+    "id": "tradable",
+    "name": "Tradable",
+    "type": "service",
+    "region": "INTL",
+    "assets": [
+      "credit"
+    ],
+    "links": [
+      "matterlabs"
+    ],
+    "blurb": "Private-credit tokenization on zkSync."
+  },
+  {
+    "id": "google",
+    "name": "Google Cloud",
+    "type": "service",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "mantra"
+    ],
+    "blurb": "Cloud & node infrastructure for RWA chains."
+  },
+  {
+    "id": "drvn",
+    "name": "DRVN Labo",
+    "type": "service",
+    "region": "INTL",
+    "assets": [],
+    "member": 1,
+    "links": [
+      "wally",
+      "bigfoot"
+    ],
+    "blurb": "Product & venture studio for RWA builders. RWA Foundation member."
+  },
+  {
+    "id": "bigfoot",
+    "name": "Bigfoot 404",
+    "type": "service",
+    "region": "INTL",
+    "assets": [],
+    "links": [
+      "wally",
+      "drvn"
+    ],
+    "blurb": "Smart-contract engineering for RWAs."
+  },
+  {
+    "id": "blackrock",
+    "name": "BlackRock",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "treasuries"
+    ],
+    "map": 1,
+    "links": [
+      "securitize",
+      "redstone"
+    ],
+    "blurb": "BUIDL: the largest tokenized treasury fund."
+  },
+  {
+    "id": "apollo",
+    "name": "Apollo Global",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "credit",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "securitize",
+      "maple",
+      "redstone"
+    ],
+    "blurb": "ACRED: tokenized private credit at scale."
+  },
+  {
+    "id": "franklintf",
+    "name": "Franklin (TradFi)",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds"
+    ],
+    "links": [
+      "franklin"
+    ],
+    "blurb": "Asset-management parent behind BENJI."
+  },
+  {
+    "id": "citi",
+    "name": "Citi",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "franklin"
+    ],
+    "blurb": "Citi Token Services: digital cash & trade."
+  },
+  {
+    "id": "jpmorgan",
+    "name": "J.P. Morgan (Kinexys)",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "map": 1,
+    "links": [
+      "canton"
+    ],
+    "blurb": "Onchain deposits & collateral settlement."
+  },
+  {
+    "id": "goldman",
+    "name": "Goldman Sachs",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "treasuries"
+    ],
+    "map": 1,
+    "links": [
+      "canton",
+      "digitalasset"
+    ],
+    "blurb": "GS DAP digital-asset issuance platform."
+  },
+  {
+    "id": "hamiltonlane",
+    "name": "Hamilton Lane",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "credit"
+    ],
+    "map": 1,
+    "links": [
+      "securitize",
+      "onre"
+    ],
+    "blurb": "Tokenized private-markets fund access."
+  },
+  {
+    "id": "invesco",
+    "name": "Invesco",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds"
+    ],
+    "links": [
+      "securitize"
+    ],
+    "blurb": "Exploring onchain asset management."
+  },
+  {
+    "id": "fidelity",
+    "name": "Fidelity Digital Assets",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "treasuries"
+    ],
+    "links": [
+      "chainlink"
+    ],
+    "blurb": "Institutional custody & tokenized funds."
+  },
+  {
+    "id": "northerntrust",
+    "name": "Northern Trust",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds"
+    ],
+    "links": [
+      "ownera"
+    ],
+    "blurb": "Institutional infrastructure & advocacy."
+  },
+  {
+    "id": "ripple",
+    "name": "Ripple",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "stablecoins",
+      "treasuries"
+    ],
+    "links": [
+      "openeden"
+    ],
+    "blurb": "RLUSD stablecoin & institutional payments."
+  },
+  {
+    "id": "tassat",
+    "name": "Tassat",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "stablecoins"
+    ],
+    "links": [
+      "broadridge"
+    ],
+    "blurb": "B2B onchain settlement networks for banks."
+  },
+  {
+    "id": "eyparthenon",
+    "name": "EY-Parthenon",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "securitize"
+    ],
+    "blurb": "Advisory for institutional tokenization strategy."
+  },
+  {
+    "id": "falconx",
+    "name": "FalconX",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "credit"
+    ],
+    "links": [
+      "broadridge"
+    ],
+    "blurb": "Prime brokerage & tokenized repo trading."
+  },
+  {
+    "id": "newton",
+    "name": "Newton",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [],
+    "links": [
+      "gauntlet"
+    ],
+    "blurb": "Institutional digital-asset infrastructure."
+  },
+  {
+    "id": "tether",
+    "name": "Tether",
+    "type": "tradfi",
+    "region": "INTL",
+    "assets": [
+      "stablecoins",
+      "commodities"
+    ],
+    "links": [
+      "paxos"
+    ],
+    "blurb": "USDT issuer; XAUT tokenized gold."
+  },
+  {
+    "id": "circle",
+    "name": "Circle",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "stablecoins"
+    ],
+    "map": 1,
+    "links": [
+      "fireblocks",
+      "noble"
+    ],
+    "blurb": "USDC issuer & onchain settlement."
+  },
+  {
+    "id": "visa",
+    "name": "Visa",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "stablecoins"
+    ],
+    "links": [
+      "circle"
+    ],
+    "blurb": "Stablecoin settlement pilots at scale."
+  },
+  {
+    "id": "janus",
+    "name": "Janus Henderson",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "treasuries"
+    ],
+    "links": [
+      "anemoy"
+    ],
+    "blurb": "Manager behind tokenized treasury fund (Anemoy)."
+  },
+  {
+    "id": "vaneck",
+    "name": "VanEck",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "treasuries"
+    ],
+    "links": [
+      "securitize"
+    ],
+    "blurb": "Tokenized treasury fund (VBILL)."
+  },
+  {
+    "id": "kkr",
+    "name": "KKR",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds",
+      "credit"
+    ],
+    "links": [
+      "securitize"
+    ],
+    "blurb": "Tokenized private-equity fund access."
+  },
+  {
+    "id": "wellington",
+    "name": "Wellington",
+    "type": "tradfi",
+    "region": "USA",
+    "assets": [
+      "funds"
+    ],
+    "links": [
+      "securitize"
+    ],
+    "blurb": "Tokenized fund collaborations."
+  },
+  {
+    "id": "anemoy",
+    "name": "Anemoy",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "treasuries",
+      "funds"
+    ],
+    "links": [
+      "centrifuge",
+      "janus"
+    ],
+    "blurb": "Onchain treasury fund built on Centrifuge."
+  },
+  {
+    "id": "figure",
+    "name": "Figure",
+    "type": "issuer",
+    "region": "USA",
+    "assets": [
+      "credit",
+      "realestate"
+    ],
+    "map": 1,
+    "links": [
+      "provenance"
+    ],
+    "blurb": "Onchain HELOCs & private credit at scale."
+  },
+  {
+    "id": "solana",
+    "name": "Solana",
+    "type": "protocol",
+    "region": "INTL",
+    "assets": [],
+    "member": 1,
+    "links": [
+      "wally",
+      "orca",
+      "etherfuse"
+    ],
+    "blurb": "High-throughput L1 for tokenized assets. RWA Foundation member."
+  },
+  {
+    "id": "stellar",
+    "name": "Stellar",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [],
+    "member": 1,
+    "links": [
+      "wally",
+      "circle"
+    ],
+    "blurb": "Payments-focused L1 for stablecoins & funds. RWA Foundation member."
+  },
+  {
+    "id": "avalanche",
+    "name": "Avalanche",
+    "type": "protocol",
+    "region": "USA",
+    "assets": [],
+    "member": 1,
+    "links": [
+      "wally",
+      "kkr"
+    ],
+    "blurb": "L1 with custom subnets for institutional RWAs. RWA Foundation member."
+  },
+  {
+    "id": "prestocks",
+    "name": "Prestocks",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "equities"
+    ],
+    "member": 1,
+    "links": [
+      "wally",
+      "dinari"
+    ],
+    "blurb": "Tokenized pre-IPO & public equities. RWA Foundation member."
+  },
+  {
+    "id": "etherfuse",
+    "name": "Etherfuse",
+    "type": "issuer",
+    "region": "INTL",
+    "assets": [
+      "treasuries"
+    ],
+    "member": 1,
+    "links": [
+      "wally",
+      "solana"
+    ],
+    "blurb": "Tokenized government bonds (Stablebonds). RWA Foundation member."
+  },
+  {
+    "id": "ixswap",
+    "name": "IX Swap",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [
+      "equities",
+      "funds"
+    ],
+    "member": 1,
+    "links": [
+      "wally",
+      "tzero"
+    ],
+    "blurb": "AMM & liquidity for tokenized securities. RWA Foundation member."
+  },
+  {
+    "id": "orca",
+    "name": "Orca",
+    "type": "defi",
+    "region": "INTL",
+    "assets": [],
+    "member": 1,
+    "links": [
+      "wally",
+      "solana"
+    ],
+    "blurb": "Onchain DEX & liquidity on Solana. RWA Foundation member."
+  }
+]

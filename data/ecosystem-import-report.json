@@ -1,0 +1,501 @@
+{
+  "sourceProfiles": 831,
+  "sourcePlacements": 844,
+  "mergedLegacy": 83,
+  "retainedLegacy": 35,
+  "totalProfiles": 866,
+  "current": 692,
+  "historical": 139,
+  "review": 35,
+  "merged": [
+    {
+      "legacyId": "ondo",
+      "profileId": "ondo-finance"
+    },
+    {
+      "legacyId": "franklin",
+      "profileId": "franklin-templeton"
+    },
+    {
+      "legacyId": "superstate",
+      "profileId": "superstate"
+    },
+    {
+      "legacyId": "wisdomtree",
+      "profileId": "wisdomtree"
+    },
+    {
+      "legacyId": "openeden",
+      "profileId": "openeden"
+    },
+    {
+      "legacyId": "backed",
+      "profileId": "backed"
+    },
+    {
+      "legacyId": "matrixdock",
+      "profileId": "matrixdock"
+    },
+    {
+      "legacyId": "paxos",
+      "profileId": "paxos"
+    },
+    {
+      "legacyId": "realt",
+      "profileId": "realt"
+    },
+    {
+      "legacyId": "tangible",
+      "profileId": "tangible"
+    },
+    {
+      "legacyId": "dinari",
+      "profileId": "dinari"
+    },
+    {
+      "legacyId": "brickken",
+      "profileId": "brickken"
+    },
+    {
+      "legacyId": "onre",
+      "profileId": "onre"
+    },
+    {
+      "legacyId": "galaxytok",
+      "profileId": "galaxy-digital"
+    },
+    {
+      "legacyId": "hashnote",
+      "profileId": "hashnote-usyc"
+    },
+    {
+      "legacyId": "mountain",
+      "profileId": "mountain-protocol"
+    },
+    {
+      "legacyId": "midas",
+      "profileId": "midas"
+    },
+    {
+      "legacyId": "jade",
+      "profileId": "jadecity"
+    },
+    {
+      "legacyId": "securitize",
+      "profileId": "securitize"
+    },
+    {
+      "legacyId": "inx",
+      "profileId": "inx"
+    },
+    {
+      "legacyId": "tzero",
+      "profileId": "tzero"
+    },
+    {
+      "legacyId": "swarm",
+      "profileId": "swarm"
+    },
+    {
+      "legacyId": "fairmint",
+      "profileId": "fairmint"
+    },
+    {
+      "legacyId": "obligate",
+      "profileId": "obligate"
+    },
+    {
+      "legacyId": "land",
+      "profileId": "land-invest-corp"
+    },
+    {
+      "legacyId": "centrifuge",
+      "profileId": "centrifuge"
+    },
+    {
+      "legacyId": "maple",
+      "profileId": "maple-finance"
+    },
+    {
+      "legacyId": "goldfinch",
+      "profileId": "goldfinch"
+    },
+    {
+      "legacyId": "clearpool",
+      "profileId": "clearpool"
+    },
+    {
+      "legacyId": "morpho",
+      "profileId": "morpho"
+    },
+    {
+      "legacyId": "pendle",
+      "profileId": "pendle"
+    },
+    {
+      "legacyId": "spark",
+      "profileId": "spark"
+    },
+    {
+      "legacyId": "sky",
+      "profileId": "sky"
+    },
+    {
+      "legacyId": "aave",
+      "profileId": "aave"
+    },
+    {
+      "legacyId": "usual",
+      "profileId": "usual"
+    },
+    {
+      "legacyId": "untangled",
+      "profileId": "untangled"
+    },
+    {
+      "legacyId": "credefi",
+      "profileId": "credefi"
+    },
+    {
+      "legacyId": "raze",
+      "profileId": "raze"
+    },
+    {
+      "legacyId": "mu",
+      "profileId": "mu-digital"
+    },
+    {
+      "legacyId": "chainlink",
+      "profileId": "chainlink"
+    },
+    {
+      "legacyId": "redstone",
+      "profileId": "redstone"
+    },
+    {
+      "legacyId": "pyth",
+      "profileId": "pyth"
+    },
+    {
+      "legacyId": "canton",
+      "profileId": "canton-network"
+    },
+    {
+      "legacyId": "plume",
+      "profileId": "plume"
+    },
+    {
+      "legacyId": "polymesh",
+      "profileId": "polymesh"
+    },
+    {
+      "legacyId": "provenance",
+      "profileId": "provenance"
+    },
+    {
+      "legacyId": "mantra",
+      "profileId": "mantra"
+    },
+    {
+      "legacyId": "noble",
+      "profileId": "noble"
+    },
+    {
+      "legacyId": "redbelly",
+      "profileId": "redbelly-network"
+    },
+    {
+      "legacyId": "nest",
+      "profileId": "nest"
+    },
+    {
+      "legacyId": "fireblocks",
+      "profileId": "fireblocks"
+    },
+    {
+      "legacyId": "anchorage",
+      "profileId": "anchorage"
+    },
+    {
+      "legacyId": "tokeny",
+      "profileId": "tokeny"
+    },
+    {
+      "legacyId": "dtcc",
+      "profileId": "dtcc"
+    },
+    {
+      "legacyId": "broadridge",
+      "profileId": "broadridge"
+    },
+    {
+      "legacyId": "ownera",
+      "profileId": "ownera"
+    },
+    {
+      "legacyId": "inveniam",
+      "profileId": "inveniam"
+    },
+    {
+      "legacyId": "taurus",
+      "profileId": "taurus"
+    },
+    {
+      "legacyId": "drvn",
+      "profileId": "drvn-labo"
+    },
+    {
+      "legacyId": "bigfoot",
+      "profileId": "bigfoot404"
+    },
+    {
+      "legacyId": "blackrock",
+      "profileId": "blackrock"
+    },
+    {
+      "legacyId": "apollo",
+      "profileId": "apollo-global"
+    },
+    {
+      "legacyId": "franklintf",
+      "profileId": "franklin-templeton"
+    },
+    {
+      "legacyId": "jpmorgan",
+      "profileId": "jpmorgan"
+    },
+    {
+      "legacyId": "goldman",
+      "profileId": "goldman-sachs"
+    },
+    {
+      "legacyId": "invesco",
+      "profileId": "invesco"
+    },
+    {
+      "legacyId": "fidelity",
+      "profileId": "fidelity-digital-assets"
+    },
+    {
+      "legacyId": "ripple",
+      "profileId": "ripple"
+    },
+    {
+      "legacyId": "tassat",
+      "profileId": "tassat"
+    },
+    {
+      "legacyId": "tether",
+      "profileId": "tether"
+    },
+    {
+      "legacyId": "circle",
+      "profileId": "circle"
+    },
+    {
+      "legacyId": "visa",
+      "profileId": "visa"
+    },
+    {
+      "legacyId": "janus",
+      "profileId": "janus-henderson"
+    },
+    {
+      "legacyId": "vaneck",
+      "profileId": "vaneck"
+    },
+    {
+      "legacyId": "wellington",
+      "profileId": "wellingtonmanagement"
+    },
+    {
+      "legacyId": "anemoy",
+      "profileId": "anemoy"
+    },
+    {
+      "legacyId": "figure",
+      "profileId": "figure"
+    },
+    {
+      "legacyId": "solana",
+      "profileId": "solana"
+    },
+    {
+      "legacyId": "stellar",
+      "profileId": "stellar"
+    },
+    {
+      "legacyId": "avalanche",
+      "profileId": "avalanche"
+    },
+    {
+      "legacyId": "prestocks",
+      "profileId": "prestocks"
+    },
+    {
+      "legacyId": "etherfuse",
+      "profileId": "etherfuse"
+    },
+    {
+      "legacyId": "ixswap",
+      "profileId": "ixs"
+    }
+  ],
+  "added": [
+    "rwaf-wally",
+    "rwaf-redswan",
+    "rwaf-sqft",
+    "rwaf-ctrlalt",
+    "rwaf-steelwave",
+    "rwaf-diamondlake",
+    "rwaf-libre",
+    "rwaf-real",
+    "rwaf-rwaio",
+    "rwaf-prometheum",
+    "rwaf-rialto",
+    "rwaf-apexinvest",
+    "rwaf-gauntlet",
+    "rwaf-axis",
+    "rwaf-matterlabs",
+    "rwaf-aleo",
+    "rwaf-digitalasset",
+    "rwaf-chainalysis",
+    "rwaf-investready",
+    "rwaf-rwaworld",
+    "rwaf-blockaid",
+    "rwaf-bloomberg",
+    "rwaf-opacity",
+    "rwaf-parc",
+    "rwaf-zoniqx",
+    "rwaf-tradable",
+    "rwaf-google",
+    "rwaf-citi",
+    "rwaf-hamiltonlane",
+    "rwaf-northerntrust",
+    "rwaf-eyparthenon",
+    "rwaf-falconx",
+    "rwaf-newton",
+    "rwaf-kkr",
+    "rwaf-orca"
+  ],
+  "crosswalk": {
+    "wally": "rwaf-wally",
+    "ondo": "ondo-finance",
+    "franklin": "franklin-templeton",
+    "superstate": "superstate",
+    "wisdomtree": "wisdomtree",
+    "openeden": "openeden",
+    "backed": "backed",
+    "matrixdock": "matrixdock",
+    "paxos": "paxos",
+    "realt": "realt",
+    "tangible": "tangible",
+    "dinari": "dinari",
+    "redswan": "rwaf-redswan",
+    "sqft": "rwaf-sqft",
+    "ctrlalt": "rwaf-ctrlalt",
+    "steelwave": "rwaf-steelwave",
+    "diamondlake": "rwaf-diamondlake",
+    "brickken": "brickken",
+    "onre": "onre",
+    "galaxytok": "galaxy-digital",
+    "hashnote": "hashnote-usyc",
+    "mountain": "mountain-protocol",
+    "midas": "midas",
+    "libre": "rwaf-libre",
+    "real": "rwaf-real",
+    "jade": "jadecity",
+    "securitize": "securitize",
+    "inx": "inx",
+    "tzero": "tzero",
+    "swarm": "swarm",
+    "rwaio": "rwaf-rwaio",
+    "prometheum": "rwaf-prometheum",
+    "rialto": "rwaf-rialto",
+    "apexinvest": "rwaf-apexinvest",
+    "fairmint": "fairmint",
+    "obligate": "obligate",
+    "land": "land-invest-corp",
+    "centrifuge": "centrifuge",
+    "maple": "maple-finance",
+    "goldfinch": "goldfinch",
+    "clearpool": "clearpool",
+    "morpho": "morpho",
+    "pendle": "pendle",
+    "spark": "spark",
+    "gauntlet": "rwaf-gauntlet",
+    "axis": "rwaf-axis",
+    "sky": "sky",
+    "aave": "aave",
+    "usual": "usual",
+    "untangled": "untangled",
+    "credefi": "credefi",
+    "raze": "raze",
+    "mu": "mu-digital",
+    "chainlink": "chainlink",
+    "redstone": "redstone",
+    "pyth": "pyth",
+    "canton": "canton-network",
+    "plume": "plume",
+    "polymesh": "polymesh",
+    "provenance": "provenance",
+    "mantra": "mantra",
+    "matterlabs": "rwaf-matterlabs",
+    "aleo": "rwaf-aleo",
+    "digitalasset": "rwaf-digitalasset",
+    "noble": "noble",
+    "redbelly": "redbelly-network",
+    "nest": "nest",
+    "fireblocks": "fireblocks",
+    "anchorage": "anchorage",
+    "chainalysis": "rwaf-chainalysis",
+    "investready": "rwaf-investready",
+    "tokeny": "tokeny",
+    "rwaworld": "rwaf-rwaworld",
+    "dtcc": "dtcc",
+    "broadridge": "broadridge",
+    "ownera": "ownera",
+    "blockaid": "rwaf-blockaid",
+    "inveniam": "inveniam",
+    "bloomberg": "rwaf-bloomberg",
+    "opacity": "rwaf-opacity",
+    "parc": "rwaf-parc",
+    "taurus": "taurus",
+    "zoniqx": "rwaf-zoniqx",
+    "tradable": "rwaf-tradable",
+    "google": "rwaf-google",
+    "drvn": "drvn-labo",
+    "bigfoot": "bigfoot404",
+    "blackrock": "blackrock",
+    "apollo": "apollo-global",
+    "franklintf": "franklin-templeton",
+    "citi": "rwaf-citi",
+    "jpmorgan": "jpmorgan",
+    "goldman": "goldman-sachs",
+    "hamiltonlane": "rwaf-hamiltonlane",
+    "invesco": "invesco",
+    "fidelity": "fidelity-digital-assets",
+    "northerntrust": "rwaf-northerntrust",
+    "ripple": "ripple",
+    "tassat": "tassat",
+    "eyparthenon": "rwaf-eyparthenon",
+    "falconx": "rwaf-falconx",
+    "newton": "rwaf-newton",
+    "tether": "tether",
+    "circle": "circle",
+    "visa": "visa",
+    "janus": "janus-henderson",
+    "vaneck": "vaneck",
+    "kkr": "rwaf-kkr",
+    "wellington": "wellingtonmanagement",
+    "anemoy": "anemoy",
+    "figure": "figure",
+    "solana": "solana",
+    "stellar": "stellar",
+    "avalanche": "avalanche",
+    "prestocks": "prestocks",
+    "etherfuse": "etherfuse",
+    "ixswap": "ixs",
+    "orca": "rwaf-orca"
+  }
+}

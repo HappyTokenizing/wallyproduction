@@ -1656,6 +1656,7 @@ html{ scrollbar-color:var(--line2) transparent }
 .soon-chip{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;padding:2px 6px;border:1px solid var(--line2);border-radius:6px;color:var(--text3);margin-left:6px;vertical-align:1px;white-space:nowrap}
 
 </style>
+<link rel="stylesheet" href="/assets/ecosystem-directory.css">
 </head>
 <body>
 <script src="/assets/member-icons.js"></script>
@@ -1986,7 +1987,7 @@ html{ scrollbar-color:var(--line2) transparent }
           <div>
             <span class="eyebrow">Public directory</span>
             <h1>The RWA Ecosystem</h1>
-            <p class="eco-sub">Over 100 projects, from issuers to infrastructure, and who builds with whom. Search, filter, favorite. Grounded in the RWA.io &amp; RWA.World databases.</p>
+            <p class="eco-sub">Explore 866 unique companies and initiatives across the RWA economy. Search the directory or browse the ecosystem map, with current and historical profiles kept distinct.</p>
             <div class="eco-ph-actions"><button class="btn btn-orange btn-sm" onclick="openSubmitEco()">Submit your project</button></div>
           </div>
           <span class="eco-ctx" id="ecoCtx"></span>
@@ -3564,7 +3565,20 @@ function ecoBack(){
 }
 function renderEcoPage(){
   $('#ecoBackLbl').textContent = (E.back==='app'&&S.connected) ? 'Back to dashboard' : 'Back to home';
-  renderEcoCtx(); renderEco();
+  renderEcoCtx();
+  const mount=$('#ecoMount');
+  if(!mount.__ecosystem) mount.innerHTML='<p role="status">Loading the ecosystem directory…</p>';
+  import('/assets/ecosystem-directory.js').then(({mountEcosystem})=>mountEcosystem(mount,{
+    getMembers:()=>logoAll(),
+    isFavorite:(id,legacyIds)=>S.favs.has(id)||(legacyIds||[]).some(old=>S.favs.has(old)),
+    onFavorite:(id,legacyIds)=>{
+      if(!S.connected){ mount.querySelector('dialog')?.close(); ecoLoginNudge(); return; }
+      const oldIds=legacyIds||[];
+      const on=S.favs.has(id)||oldIds.some(old=>S.favs.has(old));
+      oldIds.forEach(old=>S.favs.delete(old));
+      on?S.favs.delete(id):S.favs.add(id);renderEcoCtx();
+    }
+  })).catch(()=>{mount.innerHTML='<p role="alert">The ecosystem directory could not load. <button class="btn btn-ghost btn-sm" onclick="renderEcoPage()">Try again</button></p>';});
 }
 function renderEcoCtx(){
   const t=$('#ecoCtx'); if(!t) return;
@@ -3941,7 +3955,7 @@ function showPage(p, anchor, fromRoute){
   if(anchor) setTimeout(()=>{ const el=$(anchor); el && el.scrollIntoView({behavior:'smooth'}); }, 60);
   else scrollTo(0,0);
   window.__page = p;
-  if(['home','foundation','jobs'].includes(p) && window.refreshMembers) refreshMembers();
+  if(['home','foundation','jobs','eco'].includes(p) && window.refreshMembers) refreshMembers();
   document.title = PAGE_TITLES[p] || PAGE_TITLES.home;
   if(!fromRoute){
     const slug = PAGE_ROUTES[p];
@@ -4415,6 +4429,7 @@ function renderLogoWall(){
   if(window.buildLogoMarquee) buildLogoMarquee();
   if(window.nwSyncMembers) nwSyncMembers(logoAll());
   if(window.__page==='jobs' && window.renderJobs) renderJobs(true);
+  document.querySelector('#ecoMount')?.__ecosystem?.refresh();
 }
 renderLogoWall();
 function lgStatus(){

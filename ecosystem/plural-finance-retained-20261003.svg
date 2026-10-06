@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#09133a" />
+  <g transform="translate(28.4375 20) scale(1.875)"><circle opacity="0.5" cx="6.58592" cy="1.88084" r="0.940408" fill="white" />
+<circle opacity="0.5" cx="11.2949" cy="1.88082" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="16.0001" cy="1.88082" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="20.7052" cy="1.88084" r="0.940408" fill="white" />
+<circle cx="6.58602" cy="6.58931" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="20.705" cy="6.58931" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="6.58602" cy="11.2949" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="20.705" cy="11.2949" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="6.58602" cy="16" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="20.705" cy="16" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="6.58602" cy="20.705" r="1.88082" fill="white" />
+<circle cx="16.0001" cy="20.705" r="1.88082" fill="white" />
+<circle opacity="0.5" cx="20.7052" cy="20.7055" r="0.940408" fill="white" />
+<circle cx="6.58602" cy="25.4106" r="1.88082" fill="white" />
+<circle cx="11.2948" cy="25.4106" r="0.940408" fill="white" />
+<circle cx="1.88072" cy="6.58592" r="0.940408" fill="white" />
+<circle cx="11.2949" cy="6.58589" r="1.88082" fill="white" />
+<circle cx="6.58602" cy="6.58589" r="1.88082" fill="white" />
+<circle cx="16" cy="6.58592" r="0.940408" fill="white" />
+<circle cx="1.88082" cy="11.2949" r="1.88082" fill="white" />
+<circle cx="16.0001" cy="11.2949" r="1.88082" fill="white" />
+<circle cx="1.88082" cy="16" r="1.88082" fill="white" />
+<circle cx="16.0001" cy="16" r="1.88082" fill="white" />
+<circle cx="1.88082" cy="20.705" r="1.88082" fill="white" />
+<circle cx="16.0001" cy="20.705" r="1.88082" fill="white" />
+<circle cx="1.88082" cy="25.4106" r="1.88082" fill="white" />
+<circle cx="11.2949" cy="25.4106" r="1.88082" fill="white" />
+<circle cx="16" cy="25.4106" r="0.940408" fill="white" />
+<circle cx="1.88082" cy="30.1157" r="1.88082" fill="white" />
+<circle cx="6.58592" cy="30.1162" r="0.940408" fill="white" /></g>
+</svg>
