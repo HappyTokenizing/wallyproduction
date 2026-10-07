@@ -1,0 +1,1715 @@
+[
+  {
+    "id": "siemens",
+    "name": "Siemens",
+    "kind": "Company",
+    "description": "Industrial issuer of a €300 million blockchain bond settled in central bank money in September 2024.",
+    "website": "https://siemens.com",
+    "domain": "siemens.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-remains-pioneer-another-digital-bond-successfully-issued-blockchain",
+        "title": "Siemens digital bond announcement"
+      }
+    ],
+    "evidenceNote": "Issuer; transaction dated September 2024."
+  },
+  {
+    "id": "dekabank",
+    "name": "DekaBank",
+    "kind": "Company",
+    "description": "Served as registrar and investor in Siemens’ September 2024 blockchain bond.",
+    "website": "https://deka.de",
+    "domain": "deka.de",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-remains-pioneer-another-digital-bond-successfully-issued-blockchain",
+        "title": "Siemens bond participants"
+      }
+    ],
+    "evidenceNote": "Named transaction participant."
+  },
+  {
+    "id": "dz-bank",
+    "name": "DZ BANK",
+    "kind": "Company",
+    "description": "Served as investor in Siemens’ September 2024 blockchain bond.",
+    "website": "https://dzbank.com",
+    "domain": "dzbank.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-remains-pioneer-another-digital-bond-successfully-issued-blockchain",
+        "title": "Siemens bond participants"
+      }
+    ],
+    "evidenceNote": "Named transaction participant."
+  },
+  {
+    "id": "bayernlb",
+    "name": "BayernLB",
+    "kind": "Company",
+    "description": "Served as investor in Siemens’ September 2024 blockchain bond.",
+    "website": "https://bayernlb.com",
+    "domain": "bayernlb.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-remains-pioneer-another-digital-bond-successfully-issued-blockchain",
+        "title": "Siemens bond participants"
+      }
+    ],
+    "evidenceNote": "Named transaction participant."
+  },
+  {
+    "id": "landesbank-baden-wurttemberg",
+    "name": "Landesbank Baden-Württemberg",
+    "kind": "Company",
+    "description": "Served as investor in Siemens’ September 2024 blockchain bond.",
+    "website": "https://lbbw.de",
+    "domain": "lbbw.de",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-remains-pioneer-another-digital-bond-successfully-issued-blockchain",
+        "title": "Siemens bond participants"
+      }
+    ],
+    "evidenceNote": "Named transaction participant."
+  },
+  {
+    "id": "helaba",
+    "name": "Helaba",
+    "kind": "Company",
+    "description": "Served as investor in Siemens’ September 2024 blockchain bond.",
+    "website": "https://helaba.com",
+    "domain": "helaba.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-remains-pioneer-another-digital-bond-successfully-issued-blockchain",
+        "title": "Siemens bond participants"
+      }
+    ],
+    "evidenceNote": "Named transaction participant."
+  },
+  {
+    "id": "deutsche-bank",
+    "name": "Deutsche Bank",
+    "kind": "Company",
+    "description": "Served as settlement bank in Siemens’ September 2024 blockchain bond.",
+    "website": "https://db.com",
+    "domain": "db.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-remains-pioneer-another-digital-bond-successfully-issued-blockchain",
+        "title": "Siemens bond participants"
+      }
+    ],
+    "evidenceNote": "Named transaction participant."
+  },
+  {
+    "id": "kfw",
+    "name": "KfW",
+    "kind": "Public institution",
+    "description": "German development bank issuing blockchain securities; tested changing a live bond’s register and blockchain in September 2026.",
+    "website": "https://kfw.de",
+    "domain": "kfw.de",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.kfw.de/About-KfW/Newsroom/Latest-News/Pressemitteilungen-Details_907648.html",
+        "title": "KfW third blockchain bond stress test"
+      }
+    ],
+    "evidenceNote": "German development bank issuing blockchain securities; tested changing a live bond’s register and blockchain in September 2026."
+  },
+  {
+    "id": "world-bank",
+    "name": "World Bank",
+    "kind": "Public institution",
+    "description": "Supranational issuer whose €100 million digitally native notes inaugurated Euroclear’s DLT securities platform in 2023.",
+    "website": "https://worldbank.org",
+    "domain": "worldbank.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.worldbank.org/en/news/press-release/2023/10/24/world-bank-is-the-first-issuer-on-euroclear-s-new-digital-securities-platform",
+        "title": "World Bank digitally native notes"
+      }
+    ],
+    "evidenceNote": "IBRD issued digital securities on Euroclear D-FMI."
+  },
+  {
+    "id": "euroclear",
+    "name": "Euroclear",
+    "kind": "Company",
+    "description": "Securities infrastructure operator whose D-FMI platform supports creation, issuance and settlement of digitally native securities.",
+    "website": "https://euroclear.com",
+    "domain": "euroclear.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.worldbank.org/en/news/press-release/2023/10/24/world-bank-is-the-first-issuer-on-euroclear-s-new-digital-securities-platform",
+        "title": "World Bank Euroclear issuance"
+      }
+    ],
+    "evidenceNote": "Operated DLT infrastructure for World Bank notes."
+  },
+  {
+    "id": "td-securities",
+    "name": "TD Securities",
+    "kind": "Company",
+    "description": "Capital markets firm participating in the World Bank’s 2023 digitally native notes issuance on Euroclear.",
+    "website": "https://tdsecurities.com",
+    "domain": "tdsecurities.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.worldbank.org/en/news/press-release/2023/10/24/world-bank-is-the-first-issuer-on-euroclear-s-new-digital-securities-platform",
+        "title": "World Bank digital bond partners"
+      }
+    ],
+    "evidenceNote": "Named issuance partner."
+  },
+  {
+    "id": "european-investment-bank",
+    "name": "European Investment Bank",
+    "kind": "Public institution",
+    "description": "Supranational bank issuing digitally native bonds, including a €100 million public blockchain issue in 2021.",
+    "website": "https://eib.org",
+    "domain": "eib.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.eib.org/en/press/all/2021-141-european-investment-bank-eib-issues-its-first-ever-digital-bond-on-a-public-blockchain",
+        "title": "EIB public blockchain bond"
+      }
+    ],
+    "evidenceNote": "Supranational bank issuing digitally native bonds, including a €100 million public blockchain issue in 2021."
+  },
+  {
+    "id": "union-investment",
+    "name": "Union Investment",
+    "kind": "Company",
+    "description": "Asset manager that invested in Siemens’ first blockchain bond in 2023.",
+    "website": "https://union-investment.com",
+    "domain": "union-investment.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://press.siemens.com/global/en/pressrelease/siemens-issues-first-digital-bond-blockchain",
+        "title": "Siemens first digital bond investors"
+      }
+    ],
+    "evidenceNote": "Asset manager that invested in Siemens’ first blockchain bond in 2023."
+  },
+  {
+    "id": "hsbc",
+    "name": "HSBC",
+    "kind": "Company",
+    "description": "Bank providing tokenised physical gold, digital bonds through HSBC Orion and tokenised deposit services.",
+    "website": "https://hsbc.com",
+    "domain": "hsbc.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.hsbc.com/who-we-are/hsbc-and-digital/hsbc-and-digital-assets-and-currencies",
+        "title": "HSBC digital assets and currencies"
+      }
+    ],
+    "evidenceNote": "Bank providing tokenised physical gold, digital bonds through HSBC Orion and tokenised deposit services."
+  },
+  {
+    "id": "dbs",
+    "name": "DBS",
+    "kind": "Company",
+    "description": "Bank tokenising structured notes on Ethereum for distribution to eligible investors through digital investment platforms.",
+    "website": "https://dbs.com",
+    "domain": "dbs.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.dbs.com/newsroom/DBS_expands_blockchain_capabilities_by_tokenising_and_distributing_structured_notes",
+        "title": "DBS tokenised structured notes"
+      }
+    ],
+    "evidenceNote": "Bank tokenising structured notes on Ethereum for distribution to eligible investors through digital investment platforms."
+  },
+  {
+    "id": "standard-chartered",
+    "name": "Standard Chartered",
+    "kind": "Company",
+    "description": "Bank offering tokenised SGD and USD account balances for corporate treasury and liquidity transfers.",
+    "website": "https://sc.com",
+    "domain": "sc.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.sc.com/en/press-release/standard-chartered-launches-blockchain-based-tokenised-deposits-solution-in-sgd-and-usd/",
+        "title": "Standard Chartered tokenised deposits"
+      }
+    ],
+    "evidenceNote": "December 2025 launch for Ant International."
+  },
+  {
+    "id": "ant-international",
+    "name": "Ant International",
+    "kind": "Company",
+    "description": "Payments company using tokenised bank balances on its Whale treasury platform for intragroup liquidity transfers.",
+    "website": "https://ant-intl.com",
+    "domain": "ant-intl.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.sc.com/en/press-release/standard-chartered-launches-blockchain-based-tokenised-deposits-solution-in-sgd-and-usd/",
+        "title": "Standard Chartered and Ant International"
+      }
+    ],
+    "evidenceNote": "First client using the December 2025 solution."
+  },
+  {
+    "id": "bnp-paribas",
+    "name": "BNP Paribas",
+    "kind": "Company",
+    "description": "Banking group that tested a permissioned Ethereum share class of a French money market fund in 2026.",
+    "website": "https://group.bnpparibas",
+    "domain": "group.bnpparibas",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://group.bnpparibas/en/press-release/bnp-paribas-explores-public-blockchain-infrastructure-for-money-market-fund-tokenisation",
+        "title": "BNP Paribas fund tokenisation experiment"
+      }
+    ],
+    "evidenceNote": "One-off intragroup experiment; not described as a general commercial launch."
+  },
+  {
+    "id": "abn-amro",
+    "name": "ABN AMRO",
+    "kind": "Company",
+    "description": "Bank arranging and custodying digital bonds, including Vesteda’s tokenised green bond on a public blockchain.",
+    "website": "https://abnamro.com",
+    "domain": "abnamro.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.abnamro.com/en/news/abn-amro-registers-first-digital-green-bond-on-the-public-blockchain",
+        "title": "ABN AMRO digital green bond"
+      }
+    ],
+    "evidenceNote": "Arranged and custodied the September 2023 issuance."
+  },
+  {
+    "id": "vesteda",
+    "name": "Vesteda",
+    "kind": "Company",
+    "description": "Residential property investor that raised €5 million through a tokenised green bond arranged by ABN AMRO.",
+    "website": "https://vesteda.com",
+    "domain": "vesteda.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.abnamro.com/en/news/abn-amro-registers-first-digital-green-bond-on-the-public-blockchain",
+        "title": "Vesteda tokenised green bond"
+      }
+    ],
+    "evidenceNote": "Issued in September 2023."
+  },
+  {
+    "id": "apoc-aviation",
+    "name": "APOC Aviation",
+    "kind": "Company",
+    "description": "Aircraft leasing business for which ABN AMRO placed a digital bond before its 2023 Vesteda issuance.",
+    "website": "https://apocaviation.com",
+    "domain": "apocaviation.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.abnamro.com/en/news/abn-amro-registers-first-digital-green-bond-on-the-public-blockchain",
+        "title": "ABN AMRO digital bond experience"
+      }
+    ],
+    "evidenceNote": "Named prior digital-bond client."
+  },
+  {
+    "id": "santander",
+    "name": "Santander",
+    "kind": "Company",
+    "description": "Bank that issued a $20 million Ethereum bond with tokenised settlement cash in 2019.",
+    "website": "https://santander.com",
+    "domain": "santander.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.santander.com/en/press-room/press-releases/santander-launches-the-first-end-to-end-blockchain-bond",
+        "title": "Santander blockchain bond"
+      }
+    ],
+    "evidenceNote": "Historic pilot by an operating bank; bond is not represented as currently outstanding."
+  },
+  {
+    "id": "credit-agricole-cib",
+    "name": "Crédit Agricole CIB",
+    "kind": "Company",
+    "description": "Bank testing tokenised correspondent-bank deposits and wholesale central bank money through the so|cash protocol.",
+    "website": "https://ca-cib.com",
+    "domain": "ca-cib.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ca-cib.com/en/news/tokenized-correspondent-banking-experiment-key-step-towards-open-and-interoperable-standard",
+        "title": "Tokenised correspondent banking experiment"
+      }
+    ],
+    "evidenceNote": "Bank testing tokenised correspondent-bank deposits and wholesale central bank money through the so|cash protocol."
+  },
+  {
+    "id": "caceis",
+    "name": "Crédit Agricole CACEIS",
+    "kind": "Company",
+    "description": "Asset servicer providing tokenised fund infrastructure and participating in tokenised correspondent banking experiments.",
+    "website": "https://caceis.com",
+    "domain": "caceis.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ca-cib.com/en/news/tokenized-correspondent-banking-experiment-key-step-towards-open-and-interoperable-standard",
+        "title": "CACEIS tokenised banking experiment"
+      },
+      {
+        "url": "https://www.caceis.com/fr/communiques-de-presse/caceis-devient-credit-agricole-caceis",
+        "title": "CACEIS becomes Crédit Agricole CACEIS from October 1, 2026"
+      },
+      {
+        "url": "https://www.caceis.com/fr/communiques-de-presse/amundi-tokenises-its-first-fund-in-collaboration-with-caceis",
+        "title": "Amundi tokenises its first fund with CACEIS"
+      }
+    ],
+    "evidenceNote": "Fund tokenisation infrastructure, wallets and subscription platform; brand changed October 1, 2026 while legal entity remains CACEIS.",
+    "aliases": [
+      "CACEIS"
+    ]
+  },
+  {
+    "id": "seb",
+    "name": "SEB",
+    "kind": "Company",
+    "description": "Bank that co-developed so|bond, used for the EIB’s 2023 digital Climate Awareness Bond.",
+    "website": "https://sebgroup.com",
+    "domain": "sebgroup.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://sebgroup.com/press/news/2023/eib-premieres-bond-on-blockchain-based-platform",
+        "title": "SEB blockchain bond platform"
+      }
+    ],
+    "evidenceNote": "Bank that co-developed so|bond, used for the EIB’s 2023 digital Climate Awareness Bond."
+  },
+  {
+    "id": "commerzbank",
+    "name": "Commerzbank",
+    "kind": "Company",
+    "description": "Bank that tested blockchain settlement of Continental money-market securities using tokenised euros in 2019.",
+    "website": "https://commerzbank.com",
+    "domain": "commerzbank.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.commerzbank.de/konzern/newsroom/pressemitteilungen/2019/20190220-pr-continental-commerzbank-siemens-ecp-blockchain-en.pdf",
+        "title": "Continental money-market blockchain trial"
+      }
+    ],
+    "evidenceNote": "Bank that tested blockchain settlement of Continental money-market securities using tokenised euros in 2019."
+  },
+  {
+    "id": "continental",
+    "name": "Continental",
+    "kind": "Company",
+    "description": "Industrial company that issued digital money-market securities in a 2019 blockchain trial with Commerzbank and Siemens.",
+    "website": "https://continental.com",
+    "domain": "continental.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.commerzbank.de/konzern/newsroom/pressemitteilungen/2019/20190220-pr-continental-commerzbank-siemens-ecp-blockchain-en.pdf",
+        "title": "Continental blockchain securities trial"
+      }
+    ],
+    "evidenceNote": "Industrial company that issued digital money-market securities in a 2019 blockchain trial with Commerzbank and Siemens."
+  },
+  {
+    "id": "republic-of-slovenia",
+    "name": "Republic of Slovenia",
+    "kind": "Public institution",
+    "description": "Sovereign issuer of a €30 million digital bond settled using tokenised central bank money in July 2024.",
+    "website": "https://gov.si",
+    "domain": "gov.si",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.gov.si/en/news/2024-07-26-the-republic-of-slovenia-issues-its-inaugural-digital-bond/",
+        "title": "Slovenia inaugural digital bond"
+      }
+    ],
+    "evidenceNote": "Sovereign issuer of a €30 million digital bond settled using tokenised central bank money in July 2024."
+  },
+  {
+    "id": "bny",
+    "name": "BNY",
+    "kind": "Company",
+    "description": "Bank offering a tokenised money market fund record solution through LiquidityDirect and Goldman Sachs’ GS DAP.",
+    "website": "https://bny.com",
+    "domain": "bny.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bny.com/corporate/global/en/about-us/newsroom/company-news/bny-and-goldman-sachs-launch-tokenized-money-market-funds-solution.html",
+        "title": "BNY tokenised money market funds"
+      }
+    ],
+    "evidenceNote": "Mirror token records; BNY retains official books and settlement records."
+  },
+  {
+    "id": "lloyds-banking-group",
+    "name": "Lloyds Banking Group",
+    "kind": "Company",
+    "description": "Banking group that used tokenised deposits on Canton to purchase a tokenised UK government bond.",
+    "website": "https://lloydsbankinggroup.com",
+    "domain": "lloydsbankinggroup.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds/lloyds-tokenisation.html",
+        "title": "Lloyds tokenised deposit transaction"
+      }
+    ],
+    "evidenceNote": "Banking group that used tokenised deposits on Canton to purchase a tokenised UK government bond."
+  },
+  {
+    "id": "natwest-group",
+    "name": "NatWest Group",
+    "kind": "Company",
+    "description": "Banking group whose markets business completed tokenised transactions during the ECB’s 2024 settlement trials.",
+    "website": "https://natwestgroup.com",
+    "domain": "natwestgroup.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.natwestgroup.com/news-and-insights/latest-stories/ai-and-data/2026/apr/the-future-of-digital-assets-why-customer-led-innovation-and-col.html",
+        "title": "NatWest digital asset work"
+      }
+    ],
+    "evidenceNote": "Banking group whose markets business completed tokenised transactions during the ECB’s 2024 settlement trials."
+  },
+  {
+    "id": "aberdeen-investments",
+    "name": "Aberdeen Investments",
+    "kind": "Company",
+    "description": "Asset manager whose tokenised money market fund units were used as collateral for FX trades with Lloyds.",
+    "website": "https://aberdeeninvestments.com",
+    "domain": "aberdeeninvestments.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.lloydsbankinggroup.com/media/press-releases/2025/lloyds-banking-group-2025/digital-assets-breakthrough.html",
+        "title": "Aberdeen tokenised collateral transaction"
+      }
+    ],
+    "evidenceNote": "Asset manager whose tokenised money market fund units were used as collateral for FX trades with Lloyds."
+  },
+  {
+    "id": "amundi",
+    "name": "Amundi",
+    "kind": "Company",
+    "description": "Asset manager with a tokenised share class of AMUNDI FUNDS CASH EUR, developed with CACEIS.",
+    "website": "https://amundi.com",
+    "domain": "amundi.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.amundi.com/institutional/tokenised-assets",
+        "title": "Amundi tokenised assets"
+      }
+    ],
+    "evidenceNote": "Source distinguishes proof-of-concept access from prospective wider distribution."
+  },
+  {
+    "id": "cassa-depositi-e-prestiti",
+    "name": "Cassa Depositi e Prestiti",
+    "kind": "Public institution",
+    "description": "Italian development institution that issued a €25 million Polygon digital bond in July 2024.",
+    "website": "https://cdp.it",
+    "domain": "cdp.it",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://group.intesasanpaolo.com/en/newsroom/press-releases/2024/07/cdp-successfully-issues-its-first-digital-bond-on-blockchain-int",
+        "title": "CDP digital bond issuance"
+      }
+    ],
+    "evidenceNote": "Italian development institution that issued a €25 million Polygon digital bond in July 2024."
+  },
+  {
+    "id": "intesa-sanpaolo",
+    "name": "Intesa Sanpaolo",
+    "kind": "Company",
+    "description": "Bank that fully subscribed CDP’s 2024 Polygon digital bond as its sole institutional investor.",
+    "website": "https://intesasanpaolo.com",
+    "domain": "intesasanpaolo.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://group.intesasanpaolo.com/en/newsroom/press-releases/2024/07/cdp-successfully-issues-its-first-digital-bond-on-blockchain-int",
+        "title": "Intesa Sanpaolo digital bond investment"
+      }
+    ],
+    "evidenceNote": "Bank that fully subscribed CDP’s 2024 Polygon digital bond as its sole institutional investor."
+  },
+  {
+    "id": "hitachi",
+    "name": "Hitachi",
+    "kind": "Company",
+    "description": "Industrial issuer of a ¥10 billion digitally tracked green bond registered on the ibet for Fin blockchain.",
+    "website": "https://hitachi.com",
+    "domain": "hitachi.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.hitachi.com/en/press/articles/2023/12/1207a/",
+        "title": "Hitachi digital green bond terms"
+      }
+    ],
+    "evidenceNote": "Five-year bond issued in December 2023."
+  },
+  {
+    "id": "mizuho-bank",
+    "name": "Mizuho Bank",
+    "kind": "Company",
+    "description": "Bank acting as fiscal agent and blockchain bond-register administrator for Hitachi’s digital green bond.",
+    "website": "https://mizuhogroup.com",
+    "domain": "mizuhogroup.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.hitachi.com/en/press/articles/2023/12/1207a/",
+        "title": "Hitachi bond registry participants"
+      }
+    ],
+    "evidenceNote": "Registry administrator for the December 2023 bond."
+  },
+  {
+    "id": "nomura",
+    "name": "Nomura",
+    "kind": "Company",
+    "description": "Financial services group whose securities business underwrote and structured Hitachi’s digital green bond.",
+    "website": "https://nomura.com",
+    "domain": "nomura.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.hitachi.com/en/press/articles/2023/12/1207a/",
+        "title": "Hitachi digital structuring agent"
+      }
+    ],
+    "evidenceNote": "Nomura Securities named underwriter and digital structuring agent."
+  },
+  {
+    "id": "mufg",
+    "name": "MUFG",
+    "kind": "Company",
+    "description": "Financial group whose joint-venture securities business acted as green structuring agent for Hitachi’s blockchain bond.",
+    "website": "https://mufg.jp",
+    "domain": "mufg.jp",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.hitachi.com/en/press/articles/2023/12/1207a/",
+        "title": "Hitachi green structuring participants"
+      }
+    ],
+    "evidenceNote": "Mitsubishi UFJ Morgan Stanley Securities named in bond terms."
+  },
+  {
+    "id": "vonovia",
+    "name": "Vonovia",
+    "kind": "Company",
+    "description": "Residential property group that issued a €20 million security-token bond on Stellar in 2021.",
+    "website": "https://vonovia.com",
+    "domain": "vonovia.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.vonovia.com/presse/pressemitteilungen/2021/vonovia-emittiert-erstmals-vollstaendig-digitale-schuldverschreibung-ueber-online-marktplatz-firstwire",
+        "title": "Vonovia digital bond"
+      }
+    ],
+    "evidenceNote": "Past issuance by an operating company; not an outstanding-bond claim."
+  },
+  {
+    "id": "m-m-warburg-co",
+    "name": "M.M.Warburg & CO",
+    "kind": "Company",
+    "description": "Private bank that invested in Vonovia’s 2021 security-token bond on Stellar.",
+    "website": "https://mmwarburg.de",
+    "domain": "mmwarburg.de",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.vonovia.com/presse/pressemitteilungen/2021/vonovia-emittiert-erstmals-vollstaendig-digitale-schuldverschreibung-ueber-online-marktplatz-firstwire",
+        "title": "Vonovia digital bond investor"
+      }
+    ],
+    "evidenceNote": "Private bank that invested in Vonovia’s 2021 security-token bond on Stellar."
+  },
+  {
+    "id": "ocbc",
+    "name": "OCBC",
+    "kind": "Company",
+    "description": "Listed in Project Guardian’s 2024 pilots for testing cross-border FX settlement.",
+    "website": "https://ocbc.com",
+    "domain": "ocbc.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/-/media/mas/news/media-releases/2024/annex-a--list-of-participants-in-project-guardian-industry-group.pdf",
+        "title": "MAS Guardian participants"
+      }
+    ],
+    "evidenceNote": "Listed by MAS in 2024."
+  },
+  {
+    "id": "phillip-securities",
+    "name": "Phillip Securities",
+    "kind": "Company",
+    "description": "Listed in Project Guardian’s 2024 pilots for tokenising a private credit fund.",
+    "website": "https://phillip.com.sg",
+    "domain": "phillip.com.sg",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/-/media/mas/news/media-releases/2024/annex-a--list-of-participants-in-project-guardian-industry-group.pdf",
+        "title": "MAS Guardian participants"
+      }
+    ],
+    "evidenceNote": "Listed by MAS in 2024."
+  },
+  {
+    "id": "sbi-digital-asset-holdings",
+    "name": "SBI Digital Asset Holdings",
+    "kind": "Company",
+    "description": "Listed in Project Guardian’s 2024 pilots for tokenised bonds, deposits and repo.",
+    "website": "https://sbidah.com",
+    "domain": "sbidah.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/-/media/mas/news/media-releases/2024/annex-a--list-of-participants-in-project-guardian-industry-group.pdf",
+        "title": "MAS Guardian participants"
+      }
+    ],
+    "evidenceNote": "Listed by MAS in 2024."
+  },
+  {
+    "id": "schroders",
+    "name": "Schroders",
+    "kind": "Company",
+    "description": "Listed in Project Guardian’s 2024 pilots for digital issuance of variable capital company funds.",
+    "website": "https://schroders.com",
+    "domain": "schroders.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/-/media/mas/news/media-releases/2024/annex-a--list-of-participants-in-project-guardian-industry-group.pdf",
+        "title": "MAS Guardian participants"
+      }
+    ],
+    "evidenceNote": "Listed by MAS in 2024."
+  },
+  {
+    "id": "sgx-group",
+    "name": "SGX Group",
+    "kind": "Company",
+    "description": "Listed in Project Guardian’s 2024 pilots for a digital debt securities listing framework.",
+    "website": "https://sgx.com",
+    "domain": "sgx.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/-/media/mas/news/media-releases/2024/annex-a--list-of-participants-in-project-guardian-industry-group.pdf",
+        "title": "MAS Guardian participants"
+      }
+    ],
+    "evidenceNote": "Listed by MAS in 2024."
+  },
+  {
+    "id": "united-overseas-bank",
+    "name": "United Overseas Bank",
+    "kind": "Company",
+    "description": "Listed in Project Guardian’s 2024 pilots for native digital structured-product issuance.",
+    "website": "https://uobgroup.com",
+    "domain": "uobgroup.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/-/media/mas/news/media-releases/2024/annex-a--list-of-participants-in-project-guardian-industry-group.pdf",
+        "title": "MAS Guardian participants"
+      }
+    ],
+    "evidenceNote": "Listed by MAS in 2024."
+  },
+  {
+    "id": "t-rowe-price",
+    "name": "T. Rowe Price",
+    "kind": "Company",
+    "description": "Listed in Project Guardian’s 2024 pilots for onchain pricing and trading.",
+    "website": "https://troweprice.com",
+    "domain": "troweprice.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/-/media/mas/news/media-releases/2024/annex-a--list-of-participants-in-project-guardian-industry-group.pdf",
+        "title": "MAS Guardian participants"
+      }
+    ],
+    "evidenceNote": "Listed by MAS in 2024."
+  },
+  {
+    "id": "swiss-national-bank",
+    "name": "Swiss National Bank",
+    "kind": "Public institution",
+    "description": "Central bank piloting settlement of tokenised assets in central bank money through Project Helvetia.",
+    "website": "https://snb.ch",
+    "domain": "snb.ch",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.snb.ch/en/services-events/digital-services/faq-overview/qas_helvetia",
+        "title": "SNB Project Helvetia questions and answers"
+      }
+    ],
+    "evidenceNote": "Central bank piloting settlement of tokenised assets in central bank money through Project Helvetia."
+  },
+  {
+    "id": "bank-of-england",
+    "name": "Bank of England",
+    "kind": "Public institution",
+    "description": "Central bank testing synchronised settlement and other wholesale-money approaches for tokenised assets.",
+    "website": "https://bankofengland.co.uk",
+    "domain": "bankofengland.co.uk",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bankofengland.co.uk/payment-and-settlement/payments-innovation/wholesale-experiments-programme",
+        "title": "Bank of England wholesale experiments"
+      }
+    ],
+    "evidenceNote": "Central bank testing synchronised settlement and other wholesale-money approaches for tokenised assets."
+  },
+  {
+    "id": "monetary-authority-of-singapore",
+    "name": "Monetary Authority of Singapore",
+    "kind": "Public institution",
+    "description": "Central bank convening Project Guardian pilots for tokenised financial assets and institutional DeFi.",
+    "website": "https://mas.gov.sg",
+    "domain": "mas.gov.sg",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/project-guardian",
+        "title": "MAS Project Guardian"
+      }
+    ],
+    "evidenceNote": "Central bank convening Project Guardian pilots for tokenised financial assets and institutional DeFi."
+  },
+  {
+    "id": "hong-kong-monetary-authority",
+    "name": "Hong Kong Monetary Authority",
+    "kind": "Public institution",
+    "description": "Monetary authority supporting Hong Kong government tokenised green-bond issuance and digital-bond market development.",
+    "website": "https://hkma.gov.hk",
+    "domain": "hkma.gov.hk",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.hkma.gov.hk/media/eng/publication-and-research/annual-report/2025/16_International_Financial_Centre.pdf",
+        "title": "HKMA 2025 annual report"
+      }
+    ],
+    "evidenceNote": "Monetary authority supporting Hong Kong government tokenised green-bond issuance and digital-bond market development."
+  },
+  {
+    "id": "bank-for-international-settlements",
+    "name": "Bank for International Settlements",
+    "kind": "Public institution",
+    "description": "International institution convening Project Agorá research and testing of tokenised deposits and central bank reserves.",
+    "website": "https://bis.org",
+    "domain": "bis.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Project Agorá"
+      }
+    ],
+    "evidenceNote": "Public-private tokenisation experiment."
+  },
+  {
+    "id": "european-central-bank",
+    "name": "European Central Bank",
+    "kind": "Public institution",
+    "description": "Central bank that coordinated 2024 trials settling DLT financial transactions in central bank money.",
+    "website": "https://ecb.europa.eu",
+    "domain": "ecb.europa.eu",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/pub/pdf/other/ecb.exploratoryworknewtechnologies202506.en.pdf",
+        "title": "ECB exploratory settlement report"
+      }
+    ],
+    "evidenceNote": "Central bank that coordinated 2024 trials settling DLT financial transactions in central bank money."
+  },
+  {
+    "id": "deutsche-bundesbank",
+    "name": "Deutsche Bundesbank",
+    "kind": "Public institution",
+    "description": "Central bank whose Trigger Solution settled blockchain bond trials in central bank money.",
+    "website": "https://bundesbank.de",
+    "domain": "bundesbank.de",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bundesbank.de/en/tasks/payment-systems/trigger-solution/conducted-trials-and-experiments-with-the-trigger-solution-918546",
+        "title": "Bundesbank completed DLT trials"
+      }
+    ],
+    "evidenceNote": "Central bank whose Trigger Solution settled blockchain bond trials in central bank money."
+  },
+  {
+    "id": "banque-de-france",
+    "name": "Banque de France",
+    "kind": "Public institution",
+    "description": "Central bank whose DL3S tokenised cash solution settled Slovenia’s 2024 digital sovereign bond.",
+    "website": "https://banque-france.fr",
+    "domain": "banque-france.fr",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.gov.si/en/news/2024-07-26-the-republic-of-slovenia-issues-its-inaugural-digital-bond/",
+        "title": "Slovenia settlement using DL3S"
+      }
+    ],
+    "evidenceNote": "Central bank whose DL3S tokenised cash solution settled Slovenia’s 2024 digital sovereign bond."
+  },
+  {
+    "id": "banca-ditalia",
+    "name": "Banca d’Italia",
+    "kind": "Public institution",
+    "description": "Central bank whose TIPS Hash-Link solution settled CDP’s 2024 Polygon digital bond.",
+    "website": "https://bancaditalia.it",
+    "domain": "bancaditalia.it",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Public institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.cdp.it/sitointernet/it/digital_bond.page",
+        "title": "CDP digital bond settlement"
+      }
+    ],
+    "evidenceNote": "Central bank whose TIPS Hash-Link solution settled CDP’s 2024 Polygon digital bond."
+  },
+  {
+    "id": "bankhaus-metzler",
+    "name": "Bankhaus Metzler",
+    "kind": "Company",
+    "description": "Approved participant in the Eurosystem’s 2024 DLT settlement experiments.",
+    "website": "https://metzler.com",
+    "domain": "metzler.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/paym/pdf/participants_eurosystem_exploratory_work.pdf",
+        "title": "ECB participants"
+      }
+    ],
+    "evidenceNote": "Approved market participant."
+  },
+  {
+    "id": "rabobank",
+    "name": "Rabobank",
+    "kind": "Company",
+    "description": "Approved participant in the Eurosystem’s 2024 DLT settlement experiments.",
+    "website": "https://rabobank.com",
+    "domain": "rabobank.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/paym/pdf/participants_eurosystem_exploratory_work.pdf",
+        "title": "ECB participants"
+      }
+    ],
+    "evidenceNote": "Approved market participant."
+  },
+  {
+    "id": "caixabank",
+    "name": "CaixaBank",
+    "kind": "Company",
+    "description": "Approved participant in the Eurosystem’s 2024 DLT settlement experiments.",
+    "website": "https://caixabank.com",
+    "domain": "caixabank.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/paym/pdf/participants_eurosystem_exploratory_work.pdf",
+        "title": "ECB participants"
+      }
+    ],
+    "evidenceNote": "Approved market participant."
+  },
+  {
+    "id": "bper-banca",
+    "name": "BPER Banca",
+    "kind": "Company",
+    "description": "Approved participant in the Eurosystem’s 2024 DLT settlement experiments.",
+    "website": "https://bper.it",
+    "domain": "bper.it",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/paym/pdf/participants_eurosystem_exploratory_work.pdf",
+        "title": "ECB participants"
+      }
+    ],
+    "evidenceNote": "Approved market participant."
+  },
+  {
+    "id": "banco-bpm",
+    "name": "Banco BPM",
+    "kind": "Company",
+    "description": "Approved participant in the Eurosystem’s 2024 DLT settlement experiments.",
+    "website": "https://bancobpm.it",
+    "domain": "bancobpm.it",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/paym/pdf/participants_eurosystem_exploratory_work.pdf",
+        "title": "ECB participants"
+      }
+    ],
+    "evidenceNote": "Approved market participant."
+  },
+  {
+    "id": "unicredit",
+    "name": "UniCredit",
+    "kind": "Company",
+    "description": "Approved participant in the Eurosystem’s 2024 DLT settlement experiments.",
+    "website": "https://unicreditgroup.eu",
+    "domain": "unicreditgroup.eu",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/paym/pdf/participants_eurosystem_exploratory_work.pdf",
+        "title": "ECB participants"
+      }
+    ],
+    "evidenceNote": "Approved market participant."
+  },
+  {
+    "id": "spuerkeess",
+    "name": "Spuerkeess",
+    "kind": "Company",
+    "description": "Approved participant in the Eurosystem’s 2024 DLT settlement experiments.",
+    "website": "https://spuerkeess.lu",
+    "domain": "spuerkeess.lu",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/paym/pdf/participants_eurosystem_exploratory_work.pdf",
+        "title": "ECB participants"
+      }
+    ],
+    "evidenceNote": "Approved market participant."
+  },
+  {
+    "id": "l-bank",
+    "name": "L-Bank",
+    "kind": "Company",
+    "description": "Approved participant in the Eurosystem’s 2024 DLT settlement experiments.",
+    "website": "https://l-bank.de",
+    "domain": "l-bank.de",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/paym/pdf/participants_eurosystem_exploratory_work.pdf",
+        "title": "ECB participants"
+      }
+    ],
+    "evidenceNote": "Approved market participant."
+  },
+  {
+    "id": "basler-kantonalbank",
+    "name": "Basler Kantonalbank",
+    "kind": "Company",
+    "description": "Bank that tested tokenised deposit settlement through Project Agorá.",
+    "website": "https://bkb.ch",
+    "domain": "bkb.ch",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Agorá testing"
+      }
+    ],
+    "evidenceNote": "Listed July 2026 tester."
+  },
+  {
+    "id": "hana-bank",
+    "name": "Hana Bank",
+    "kind": "Company",
+    "description": "Bank that tested tokenised deposit settlement through Project Agorá.",
+    "website": "https://kebhana.com",
+    "domain": "kebhana.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Agorá testing"
+      }
+    ],
+    "evidenceNote": "Listed July 2026 tester."
+  },
+  {
+    "id": "kb-kookmin-bank",
+    "name": "KB Kookmin Bank",
+    "kind": "Company",
+    "description": "Bank that tested tokenised deposit settlement through Project Agorá.",
+    "website": "https://kbstar.com",
+    "domain": "kbstar.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Agorá testing"
+      }
+    ],
+    "evidenceNote": "Listed July 2026 tester."
+  },
+  {
+    "id": "shinhan-bank",
+    "name": "Shinhan Bank",
+    "kind": "Company",
+    "description": "Bank that tested tokenised deposit settlement through Project Agorá.",
+    "website": "https://shinhan.com",
+    "domain": "shinhan.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Agorá testing"
+      }
+    ],
+    "evidenceNote": "Listed July 2026 tester."
+  },
+  {
+    "id": "woori-bank",
+    "name": "Woori Bank",
+    "kind": "Company",
+    "description": "Bank that tested tokenised deposit settlement through Project Agorá.",
+    "website": "https://wooribank.com",
+    "domain": "wooribank.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Agorá testing"
+      }
+    ],
+    "evidenceNote": "Listed July 2026 tester."
+  },
+  {
+    "id": "nonghyup-bank",
+    "name": "NongHyup Bank",
+    "kind": "Company",
+    "description": "Bank that tested tokenised deposit settlement through Project Agorá.",
+    "website": "https://nhbank.com",
+    "domain": "nhbank.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Agorá testing"
+      }
+    ],
+    "evidenceNote": "Listed July 2026 tester."
+  },
+  {
+    "id": "sumitomo-mitsui-banking-corporation",
+    "name": "Sumitomo Mitsui Banking Corporation",
+    "kind": "Company",
+    "description": "Bank that tested tokenised deposit settlement through Project Agorá.",
+    "website": "https://smbc.co.jp",
+    "domain": "smbc.co.jp",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Agorá testing"
+      }
+    ],
+    "evidenceNote": "Listed July 2026 tester."
+  },
+  {
+    "id": "postfinance",
+    "name": "PostFinance",
+    "kind": "Company",
+    "description": "Bank that tested tokenised deposit settlement through Project Agorá.",
+    "website": "https://postfinance.ch",
+    "domain": "postfinance.ch",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/agora",
+        "title": "BIS Agorá testing"
+      }
+    ],
+    "evidenceNote": "Listed July 2026 tester."
+  },
+  {
+    "id": "federated-hermes",
+    "name": "Federated Hermes",
+    "kind": "Company",
+    "description": "Asset manager participating in BNY and Goldman Sachs’ 2025 tokenised money market fund solution.",
+    "website": "https://www.federatedhermes.com",
+    "domain": "federatedhermes.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Asset managers and issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bny.com/corporate/global/en/about-us/newsroom/company-news/bny-and-goldman-sachs-launch-tokenized-money-market-funds-solution.html",
+        "title": "BNY tokenised money market fund launch"
+      }
+    ],
+    "evidenceNote": "Named initial fund-manager participant; mirror records, not native issuance."
+  }
+]

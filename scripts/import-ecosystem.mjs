@@ -27,8 +27,36 @@ for(const l of legacy){
 const extra={name:'RWAF directory',categories:[]};
 for(const id of added){const p=byId.get(id),name=p.categories[0].name;let cat=extra.categories.find(c=>c.name===name);if(!cat)extra.categories.push(cat={name,ids:[]});cat.ids.push(id);}
 sections.splice(sections.findIndex(s=>s.name==='Historical'),0,extra);
-const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,crosswalk};
-const output={snapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk};
+// Dated, primary-source research is kept separate from the immutable upstream snapshot.
+const researchRead = name => JSON.parse(fs.readFileSync(new URL('../data/research/'+name, import.meta.url)));
+const researched=[];
+for(const name of ['institutions.json','services.json','networks.json']){
+ for(const entry of researchRead(name)){
+  if(byId.has(entry.id)||profiles.some(p=>norm(p.name)===norm(entry.name)))throw Error('Duplicate research identity: '+entry.name);
+  if(!entry.sources?.length||!entry.checkedOn||!entry.categories?.length)throw Error('Incomplete research: '+entry.name);
+  const p={newsRules:[],newsTags:[],relatedEntities:[],logo:null,officialUpdates:[],legacyIds:[],...entry,aliases:[...new Set([entry.name,...(entry.aliases||[])])],provenance:'RWA Foundation / official-source research'};
+  profiles.push(p);byId.set(p.id,p);researched.push(p.id);
+  for(const category of p.categories){
+   let section=sections.find(s=>s.name===category.section);
+   if(!section){section={name:category.section,categories:[]};sections.splice(sections.findIndex(s=>s.name==='Historical'),0,section);}
+   let cat=section.categories.find(c=>c.name===category.name);
+   if(!cat)section.categories.push(cat={name:category.name,ids:[]});
+   if(!cat.ids.includes(p.id))cat.ids.push(p.id);
+  }
+ }
+}
+const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json')};
+// Phantom already has a Stablecoin Builders placement; expose the same identity under Wallets.
+const phantom=byId.get('phantom');
+if(!phantom.categories.some(c=>c.section==='Wallets'&&c.name==='Wallets'))phantom.categories.push({section:'Wallets',name:'Wallets'});
+const wallets=sections.find(s=>s.name==='Wallets').categories.find(c=>c.name==='Wallets');
+if(!wallets.ids.includes(phantom.id))wallets.ids.push(phantom.id);
+for(const [id,logo] of Object.entries(logoOverrides)){
+ if(!byId.has(id)||!logo.src||!logo.sourceUrl||!logo.sourcePage)throw Error('Incomplete logo override: '+id);
+ byId.get(id).logo=logo;
+}
+const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,updatedLogos:Object.keys(logoOverrides).length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
+const output={snapshotDate:'2026-10-07',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
-console.log({...report,merged:undefined,added:undefined,crosswalk:undefined});
+console.log({...report,merged:undefined,added:undefined,researched:undefined,crosswalk:undefined});

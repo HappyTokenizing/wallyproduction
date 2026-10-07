@@ -1,0 +1,201 @@
+{
+  "state-of-wyoming": {
+    "src": "/ecosystem/state-of-wyoming-official-20261007.png",
+    "shape": "icon",
+    "background": "light",
+    "treatment": "original",
+    "sourceUrl": "https://content.govdelivery.com/attachments/fancy_images/WYGOVSTC/2025/11/12690088/wyst_original.png",
+    "sourcePage": "https://content.govdelivery.com/accounts/WYGOVSTC/bulletins/416f9d3",
+    "checkedOn": "2026-10-07"
+  },
+  "noble": {
+    "sourceUrl": "https://framerusercontent.com/images/XdcD0abLVZF0aVw8YeT8rU7N9TE.png",
+    "sourcePage": "https://noble.xyz/",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/noble-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "exa": {
+    "sourceUrl": "https://framerusercontent.com/images/FK5v5T1AfE7QoC5pDOMiRPog.png",
+    "sourcePage": "https://www.exactly.app/",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/exa-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "privy": {
+    "sourceUrl": "https://framerusercontent.com/images/oPqxoNxeHrQ9qgbjTUGuANdXdQ.png",
+    "sourcePage": "https://www.privy.io",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/privy-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "rabby": {
+    "sourceUrl": "https://rabby.io/assets/logos/symbol-new.svg",
+    "sourcePage": "https://rabby.io",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/rabby-official-20261007.svg",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "avici": {
+    "sourceUrl": "https://framerusercontent.com/images/o9DDrCSbqnw1TwXNrR8xT9Im4H0.png",
+    "sourcePage": "https://avici.money/",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/avici-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "hifi": {
+    "sourceUrl": "https://www.hifi.com/favicon.ico?favicon.6a9ea605.ico",
+    "sourcePage": "https://www.hifi.com",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/hifi-official-20261007.ico",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "mystic-finance": {
+    "sourceUrl": "https://app.mysticfinance.xyz/favicon.ico",
+    "sourcePage": "https://app.mysticfinance.xyz/",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/mystic-finance-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "own-network": {
+    "sourceUrl": "https://framerusercontent.com/images/2MSpwWh2SG0IqPRt42abPCYyh8.png",
+    "sourcePage": "https://ownnetwork.xyz/",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/own-network-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "bnb-chain": {
+    "sourceUrl": "https://static.bnbchain.org/home-ui/static/images/favicon.ico",
+    "sourcePage": "https://www.bnbchain.org/en",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/bnb-chain-official-20261007.ico",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "chainlink": {
+    "sourceUrl": "https://cdn.prod.website-files.com/5f6b7190899f41fb70882d08/6aa7fef7f56d1f1d953c589d_Chainlink-Symbol-Blue.svg",
+    "sourcePage": "https://chain.link/brand-assets",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/chainlink-official-20261007.svg",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "ethereum": {
+    "sourceUrl": "https://ethereum.org/images/homepage/eth.svg",
+    "sourcePage": "https://ethereum.org",
+    "shape": "icon",
+    "background": "dark",
+    "src": "/ecosystem/ethereum-official-20261007.svg",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "ondo-network": {
+    "sourceUrl": "https://ondo.finance/icon.svg?8db0fc230e9baadd",
+    "sourcePage": "https://ondo.finance/blog/introducing-the-ondo-network",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/ondo-network-official-20261007.svg",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "vaulta": {
+    "sourceUrl": "https://www.vaulta.com/_astro/logomark.Dwg88LIA_zoW1a.svg",
+    "sourcePage": "https://www.vaulta.com",
+    "shape": "wordmark",
+    "background": "dark",
+    "src": "/ecosystem/vaulta-official-20261007.svg",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "consolfreight": {
+    "sourceUrl": "https://static.wixstatic.com/media/27d7a4_1394cdf2eb854a7f817473b5277878a5~mv2.png",
+    "sourcePage": "https://www.consolfreight.io/",
+    "shape": "wordmark",
+    "background": "dark",
+    "src": "/ecosystem/consolfreight-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "pendle": {
+    "sourceUrl": "https://www.pendle.finance/logo.png",
+    "sourcePage": "https://www.pendle.finance",
+    "shape": "wordmark",
+    "background": "dark",
+    "src": "/ecosystem/pendle-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "realio-network": {
+    "sourceUrl": "https://realio.network/favicon-light.svg",
+    "sourcePage": "https://realio.network/",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/realio-network-official-20261007.svg",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "zerohash": {
+    "sourceUrl": "https://cdn.prod.website-files.com/68c59605946d2fed8ac8bcbd/6a8742f849050bb16e5e00af_zerohash_favicon.png",
+    "sourcePage": "https://zerohash.com",
+    "shape": "icon",
+    "background": "dark",
+    "src": "/ecosystem/zerohash-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "opentrade": {
+    "sourceUrl": "https://cdn.prod.website-files.com/6ab0e8f19536b26dff9993a2/6ab240d8b8fb151f71347027_opentrade-emblem.png",
+    "sourcePage": "https://www.opentrade.io/",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/opentrade-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "ur-app": {
+    "sourceUrl": "https://ur.app/_next/static/media/logo-gradient.23fvwsn_4c353.png",
+    "sourcePage": "https://ur.app",
+    "shape": "wordmark",
+    "background": "light",
+    "src": "/ecosystem/ur-app-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "agora": {
+    "sourceUrl": "https://www.agora.finance/icon",
+    "sourcePage": "https://www.agora.finance",
+    "shape": "icon",
+    "background": "light",
+    "src": "/ecosystem/agora-official-20261007.png",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "xdc-network": {
+    "src": "/ecosystem/xdc-network-official-20261007.svg",
+    "shape": "wordmark",
+    "background": "dark",
+    "treatment": "original",
+    "sourceUrl": "https://xdc.org/brand-assets/XDC_Primary_Logotype.zip",
+    "sourcePage": "https://xdc.org/resources/brand-assets",
+    "archivePath": "XDC Primary Color Logo.svg",
+    "checkedOn": "2026-10-07"
+  }
+}

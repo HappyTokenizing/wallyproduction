@@ -1,0 +1,29 @@
+{
+  "agora": {
+    "src": "/ecosystem/agora-official-hd-20261007.svg",
+    "shape": "symbol",
+    "background": "light",
+    "treatment": "original",
+    "sourceUrl": "https://www.agora.finance",
+    "sourcePage": "https://www.agora.finance",
+    "checkedOn": "2026-10-07"
+  },
+  "bnb-chain": {
+    "src": "/ecosystem/bnb-chain-official-hd-20261007.svg",
+    "shape": "symbol",
+    "background": "dark",
+    "treatment": "original",
+    "sourceUrl": "https://www.bnbchain.org/en",
+    "sourcePage": "https://www.bnbchain.org/en",
+    "checkedOn": "2026-10-07"
+  },
+  "hifi": {
+    "src": "/ecosystem/hifi-official-hd-20261007.svg",
+    "shape": "wordmark",
+    "background": "dark",
+    "treatment": "original",
+    "sourceUrl": "https://www.hifi.com",
+    "sourcePage": "https://www.hifi.com",
+    "checkedOn": "2026-10-07"
+  }
+}

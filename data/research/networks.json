@@ -1,0 +1,1306 @@
+[
+  {
+    "id": "solflare",
+    "name": "Solflare",
+    "kind": "Wallet",
+    "description": "Self-custody Solana wallet for holding, transferring and spending USDC.",
+    "website": "https://www.solflare.com/",
+    "domain": "solflare.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Wallets",
+        "name": "Wallets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.solflare.com/essentials/",
+        "title": "Solflare essentials"
+      }
+    ],
+    "evidenceNote": "Official wallet overview lists USDC payments and wallet features."
+  },
+  {
+    "id": "hedera",
+    "name": "Hedera",
+    "kind": "Blockchain",
+    "description": "Public ledger with native token issuance and tools for tokenized bonds, equities and real assets.",
+    "website": "https://hedera.com",
+    "domain": "hedera.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://hedera.com/use-cases/asset-tokenization/",
+        "title": "Asset tokenization on Hedera"
+      }
+    ],
+    "evidenceNote": "Official use case page describes native issuance and regulated asset deployments."
+  },
+  {
+    "id": "algorand",
+    "name": "Algorand",
+    "kind": "Blockchain",
+    "description": "Layer 1 with protocol-native asset issuance for funds, real estate, commodities and other financial assets.",
+    "website": "https://algorand.co",
+    "domain": "algorand.co",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://algorand.co/solutions/tokenization",
+        "title": "Asset tokenization on Algorand"
+      }
+    ],
+    "evidenceNote": "Official solution page names Lofty real estate and Meld Gold deployments."
+  },
+  {
+    "id": "cardano",
+    "name": "Cardano",
+    "kind": "Blockchain",
+    "description": "Layer 1 supporting native tokens and smart contracts for representing real-world assets.",
+    "website": "https://cardano.org",
+    "domain": "cardano.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://cardano.org/docs/use-cases/tokenized-assets/",
+        "title": "Cardano tokenized assets"
+      }
+    ],
+    "evidenceNote": "Official documentation describes tokenization and programmable transfer restrictions; proposed standards are not presented as final."
+  },
+  {
+    "id": "tezos",
+    "name": "Tezos",
+    "kind": "Blockchain",
+    "description": "Blockchain ecosystem supporting tokenized commodities and fund shares through Tezos and Etherlink.",
+    "website": "https://tezos.com",
+    "domain": "tezos.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://tezos.com/media-center/2025/spiko-etherlink/",
+        "title": "Spiko expands tokenized funds to Etherlink"
+      }
+    ],
+    "evidenceNote": "Official announcement describes Spiko fund shares; Tezos and its Etherlink rollup are represented together."
+  },
+  {
+    "id": "injective",
+    "name": "Injective",
+    "kind": "Blockchain",
+    "description": "Financial Layer 1 with native modules for issuing, trading and managing permissioned tokenized assets.",
+    "website": "https://injective.com",
+    "domain": "injective.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://injective.com/solutions/tokenization",
+        "title": "Tokenization on Injective"
+      }
+    ],
+    "evidenceNote": "Official solution page details token issuance, transfer permissioning and market infrastructure."
+  },
+  {
+    "id": "sei",
+    "name": "Sei",
+    "kind": "Blockchain",
+    "description": "Layer 1 supporting institutional tokenization, stablecoin payments and onchain settlement.",
+    "website": "https://www.sei.io",
+    "domain": "sei.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.sei.io/institutions",
+        "title": "Sei institutional infrastructure"
+      }
+    ],
+    "evidenceNote": "Official institutional page identifies tokenization, stablecoins and real-time settlement."
+  },
+  {
+    "id": "sonic",
+    "name": "Sonic",
+    "kind": "Blockchain",
+    "description": "EVM network developing settlement infrastructure for tokenized assets and stablecoins.",
+    "website": "https://www.soniclabs.com",
+    "domain": "soniclabs.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.soniclabs.com/blog/ussd-sonics-native-permissionless-usd-stablecoin-built-with-frax/",
+        "title": "Sonic USSD stablecoin and tokenized Treasury infrastructure"
+      }
+    ],
+    "evidenceNote": "Official March 2026 announcement describes live USSD and settlement infrastructure using tokenized Treasury assets on Sonic.",
+    "aliases": [
+      "Fantom"
+    ]
+  },
+  {
+    "id": "sui",
+    "name": "Sui",
+    "kind": "Blockchain",
+    "description": "Move-based Layer 1 supporting stablecoins and tokenized Treasury exposure including Ondo USDY.",
+    "website": "https://www.sui.io",
+    "domain": "sui.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.sui.io/blog/ondo-stablecoin-alternative-usdy",
+        "title": "USDY lands on Sui"
+      }
+    ],
+    "evidenceNote": "Official launch announcement confirms Ondo Treasury-backed USDY on Sui."
+  },
+  {
+    "id": "mantle",
+    "name": "Mantle",
+    "kind": "Blockchain",
+    "description": "Ethereum Layer 2 supporting tokenized financial assets, including Ondo USDY.",
+    "website": "https://www.mantle.xyz",
+    "domain": "mantle.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ondo.finance/usdy",
+        "title": "Ondo USDY supported networks"
+      }
+    ],
+    "evidenceNote": "Issuer's current product page lists Mantle as a supported deployment."
+  },
+  {
+    "id": "linea",
+    "name": "Linea",
+    "kind": "Blockchain",
+    "description": "Ethereum Layer 2 providing infrastructure for tokenization, payments and onchain settlement.",
+    "website": "https://linea.build",
+    "domain": "linea.build",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://linea.build/",
+        "title": "Linea enterprise infrastructure"
+      }
+    ],
+    "evidenceNote": "Official homepage specifies tokenization and payments; this is the network, not a duplicate Consensys company profile."
+  },
+  {
+    "id": "iota",
+    "name": "IOTA",
+    "kind": "Blockchain",
+    "description": "Move-based distributed ledger with configurable token issuance and controls for real-world assets.",
+    "website": "https://www.iota.org",
+    "domain": "iota.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.iota.org/products/tokenization",
+        "title": "IOTA Tokenization"
+      }
+    ],
+    "evidenceNote": "Official product documentation describes regulated coin and closed-loop token controls."
+  },
+  {
+    "id": "kaia",
+    "name": "Kaia",
+    "kind": "Blockchain",
+    "description": "Layer 1 with native stablecoins and infrastructure for tokenized assets and Asian payment applications.",
+    "website": "https://www.kaia.io",
+    "domain": "kaia.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://blog.kaia.io/usd-on-kaia/",
+        "title": "USDT on Kaia"
+      }
+    ],
+    "evidenceNote": "Official announcement confirms native USDT and explicitly identifies RWA applications.",
+    "aliases": [
+      "Klaytn",
+      "Finschia"
+    ]
+  },
+  {
+    "id": "vechain",
+    "name": "VeChain",
+    "kind": "Blockchain",
+    "description": "Enterprise blockchain developing asset attestation and infrastructure for verified real-world asset tokens.",
+    "website": "https://vechain.org",
+    "domain": "vechain.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://vechain.org/vechain-roadmap-2026-agentic-foundations-for-tomorrow-beyond",
+        "title": "VeChain 2026 roadmap"
+      }
+    ],
+    "evidenceNote": "Official roadmap describes planned RWA attestation and asset platform; description does not imply every roadmap feature is launched."
+  },
+  {
+    "id": "multiversx",
+    "name": "MultiversX",
+    "kind": "Blockchain",
+    "description": "Layer 1 supporting an ecosystem of real-world asset tokenization applications.",
+    "website": "https://multiversx.com",
+    "domain": "multiversx.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://multiversx.com/blog/rwa-highlights-xday-munich",
+        "title": "RWA highlights from xDay Munich"
+      }
+    ],
+    "evidenceNote": "Official ecosystem article documents RWA projects and tokenization activity."
+  },
+  {
+    "id": "liquid-network",
+    "name": "Liquid Network",
+    "kind": "Blockchain",
+    "description": "Bitcoin sidechain supporting issued stablecoins and transfer-restricted tokenized securities.",
+    "website": "https://liquid.net",
+    "domain": "liquid.net",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://blockstream.com/liquid/security-tokens/",
+        "title": "Liquid Network security tokens"
+      }
+    ],
+    "evidenceNote": "Official network developer page lists tokenized Treasury and equity assets on Liquid."
+  },
+  {
+    "id": "near",
+    "name": "NEAR",
+    "kind": "Blockchain",
+    "description": "Blockchain and intent infrastructure supporting cross-chain settlement into stablecoins.",
+    "website": "https://near.org",
+    "domain": "near.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://intents.near.org/use-cases/cross-pay",
+        "title": "NEAR Intents Cross-Pay"
+      }
+    ],
+    "evidenceNote": "Official product page describes exact stablecoin delivery and merchant payment integration."
+  },
+  {
+    "id": "kava",
+    "name": "Kava",
+    "kind": "Blockchain",
+    "description": "Layer 1 building financial infrastructure around native stablecoins and tokenized assets.",
+    "website": "https://www.kava.io",
+    "domain": "kava.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.kava.io/news/the-next-decade-of-finance-is-tokenized-where-kava-fits",
+        "title": "Where Kava fits in tokenized finance"
+      }
+    ],
+    "evidenceNote": "Official current strategy identifies stablecoin liquidity and tokenized financial products."
+  },
+  {
+    "id": "rootstock",
+    "name": "Rootstock",
+    "kind": "Blockchain",
+    "description": "Bitcoin sidechain hosting collateralized dollar stablecoins and related payment applications.",
+    "website": "https://rootstock.io",
+    "domain": "rootstock.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://rootstock.io/ecosystem/",
+        "title": "Rootstock ecosystem"
+      }
+    ],
+    "evidenceNote": "Official ecosystem page lists Money on Chain and stablecoin applications."
+  },
+  {
+    "id": "fuse",
+    "name": "Fuse",
+    "kind": "Blockchain",
+    "description": "Blockchain and wallet infrastructure for stablecoin payments and branded digital money.",
+    "website": "https://www.fuse.io",
+    "domain": "fuse.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.fuse.io/fusebox",
+        "title": "FuseBox"
+      }
+    ],
+    "evidenceNote": "Official product page offers branded stablecoin issuance and payment app infrastructure."
+  },
+  {
+    "id": "coti",
+    "name": "COTI",
+    "kind": "Blockchain",
+    "description": "Confidential blockchain infrastructure enabling private token transfers and asset settlement.",
+    "website": "https://coti.io",
+    "domain": "coti.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.coti.io/coti-documentation/how-coti-works/introduction/use-cases",
+        "title": "COTI use cases"
+      }
+    ],
+    "evidenceNote": "Official documentation identifies confidential tokenization and compliant private settlement."
+  },
+  {
+    "id": "concordium",
+    "name": "Concordium",
+    "kind": "Blockchain",
+    "description": "Layer 1 offering protocol-level stablecoins with identity verification and programmable controls.",
+    "website": "https://www.concordium.com",
+    "domain": "concordium.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.concordium.com/solution/stablecoin-issuer",
+        "title": "Concordium stablecoin issuance"
+      }
+    ],
+    "evidenceNote": "Official solution page describes native issuance, identity and settlement."
+  },
+  {
+    "id": "anchorx",
+    "name": "AnchorX",
+    "kind": "Company",
+    "description": "Issuer of AxCNH, a reserve-backed stablecoin referenced to offshore Chinese renminbi.",
+    "website": "https://www.anchorx.org",
+    "domain": "anchorx.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.anchorx.org/",
+        "title": "AnchorX AxCNH"
+      }
+    ],
+    "evidenceNote": "Official issuer page documents CNH peg, reserve backing and redemption."
+  },
+  {
+    "id": "stablecorp",
+    "name": "Stablecorp",
+    "kind": "Company",
+    "description": "Canadian digital-currency provider behind the reserve-backed QCAD stablecoin.",
+    "website": "https://stablecorp.ca",
+    "domain": "stablecorp.ca",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://stablecorp.ca/",
+        "title": "Stablecorp QCAD"
+      }
+    ],
+    "evidenceNote": "Official issuer page identifies current QCAD Digital Trust structure and separates legacy tokens."
+  },
+  {
+    "id": "idrx",
+    "name": "IDRX",
+    "kind": "Company",
+    "description": "Provider of a reserve-backed stablecoin referenced to the Indonesian rupiah.",
+    "website": "https://idrx.co",
+    "domain": "idrx.co",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://idrx.co/en/articles/introducing-idrx-rupiah-pegged-stablecoin/",
+        "title": "Introducing IDRX"
+      }
+    ],
+    "evidenceNote": "Official issuer article explains rupiah peg and direct minting; distinct from existing Rupiah Token IDRT."
+  },
+  {
+    "id": "jpyc",
+    "name": "JPYC",
+    "kind": "Company",
+    "description": "Japanese issuer providing yen-denominated stablecoin issuance and redemption.",
+    "website": "https://jpyc.co.jp",
+    "domain": "jpyc.co.jp",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://corporate.jpyc.co.jp/news/posts/first-yen-stablecoin-jpyc",
+        "title": "JPYC registration and yen stablecoin"
+      }
+    ],
+    "evidenceNote": "Official company announcement describes registered issuance and redemption service."
+  },
+  {
+    "id": "moneygram",
+    "name": "MoneyGram",
+    "kind": "Company",
+    "description": "Global payments network connecting USDC wallets with cash deposits, withdrawals and cross-border transfers.",
+    "website": "https://www.moneygram.com",
+    "domain": "moneygram.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.moneygram.com/us/en/services/crypto/moneygram-wallet",
+        "title": "MoneyGram Wallet"
+      }
+    ],
+    "evidenceNote": "Official service page confirms USDC holding, transfers and cash access."
+  },
+  {
+    "id": "bitso",
+    "name": "Bitso",
+    "kind": "Company",
+    "description": "Digital-asset and payments provider offering stablecoin orchestration and Latin American payment rails.",
+    "website": "https://bitso.com",
+    "domain": "bitso.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://bitso.com/mx/business/products/stablecoin-orchestration",
+        "title": "Bitso Business Stablecoin Orchestration"
+      }
+    ],
+    "evidenceNote": "Official product page describes stablecoin routing and transfers; Juno products not added as a duplicate profile."
+  },
+  {
+    "id": "yellow-card",
+    "name": "Yellow Card",
+    "kind": "Company",
+    "description": "Stablecoin payment infrastructure connecting treasury balances with local bank and mobile-money rails.",
+    "website": "https://yellowcard.io",
+    "domain": "yellowcard.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://yellowcard.io/products",
+        "title": "Yellow Card payments and treasury"
+      }
+    ],
+    "evidenceNote": "Official product page documents APIs for fiat and stablecoin settlement."
+  },
+  {
+    "id": "transak",
+    "name": "Transak",
+    "kind": "Company",
+    "description": "Fiat onramp and off-ramp APIs for stablecoin deposits, payouts and remittances.",
+    "website": "https://transak.com",
+    "domain": "transak.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://transak.com/",
+        "title": "Transak crypto payment rails"
+      }
+    ],
+    "evidenceNote": "Official product page details virtual bank accounts and stablecoin payouts."
+  },
+  {
+    "id": "banxa",
+    "name": "Banxa",
+    "kind": "Company",
+    "description": "Fiat-to-crypto payment infrastructure supporting stablecoin purchases and withdrawals.",
+    "website": "https://www.banxa.com",
+    "domain": "banxa.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.banxa.com/products/hosted-checkout/docs/reference/supported-cryptocurrencies-and-blockchains",
+        "title": "Banxa supported assets and networks"
+      }
+    ],
+    "evidenceNote": "Official API documentation lists USDC onramp and off-ramp support."
+  },
+  {
+    "id": "ramp-network",
+    "name": "Ramp Network",
+    "kind": "Company",
+    "description": "Non-custodial wallet and payment infrastructure for buying, selling and transferring stablecoins.",
+    "website": "https://rampnetwork.com",
+    "domain": "rampnetwork.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://rampnetwork.com/",
+        "title": "Ramp Network"
+      }
+    ],
+    "evidenceNote": "Official site confirms USDC transfers and fiat conversion; distinct from corporate spend platform Ramp."
+  },
+  {
+    "id": "ramp",
+    "name": "Ramp",
+    "kind": "Company",
+    "description": "Business finance platform with stablecoin accounts and international vendor payments.",
+    "website": "https://ramp.com",
+    "domain": "ramp.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ramp.com/blog/introducing-stablecoins",
+        "title": "Introducing Ramp Stablecoin Accounts"
+      }
+    ],
+    "evidenceNote": "Official product announcement confirms holding funds and international stablecoin payments."
+  },
+  {
+    "id": "mural-pay",
+    "name": "Mural Pay",
+    "kind": "Company",
+    "description": "Stablecoin accounts and APIs for business payments, payroll and cross-border transfers.",
+    "website": "https://muralpay.com",
+    "domain": "muralpay.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://muralpay.com/",
+        "title": "Mural Pay global accounts and payments"
+      }
+    ],
+    "evidenceNote": "Official platform page documents stablecoin accounts, wallets and payment APIs."
+  },
+  {
+    "id": "due",
+    "name": "Due",
+    "kind": "Company",
+    "description": "Global payment platform connecting multi-currency accounts, stablecoins and local payment rails.",
+    "website": "https://www.opendue.com",
+    "domain": "opendue.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.opendue.com/",
+        "title": "Due money beyond borders"
+      }
+    ],
+    "evidenceNote": "Official homepage identifies multi-currency accounts, stablecoins and payment coverage."
+  },
+  {
+    "id": "copperx",
+    "name": "Copperx",
+    "kind": "Company",
+    "description": "Stablecoin checkout, invoicing, business accounts and cross-border payout infrastructure.",
+    "website": "https://copperx.io",
+    "domain": "copperx.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://copperx.io/",
+        "title": "Copperx stablecoin payments"
+      }
+    ],
+    "evidenceNote": "Official product page lists stablecoin gateway, invoices and payouts; distinct from Copper custody."
+  },
+  {
+    "id": "transfi",
+    "name": "TransFi",
+    "kind": "Company",
+    "description": "Cross-border payment APIs connecting local currencies and payment methods with stablecoin rails.",
+    "website": "https://www.transfi.com",
+    "domain": "transfi.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.transfi.com/",
+        "title": "TransFi stablecoin payment infrastructure"
+      }
+    ],
+    "evidenceNote": "Official product page documents collections, payouts and fiat-to-stablecoin conversion."
+  },
+  {
+    "id": "dakota",
+    "name": "Dakota",
+    "kind": "Company",
+    "description": "Stablecoin infrastructure for accounts, custody, treasury operations and global business payouts.",
+    "website": "https://dakota.xyz",
+    "domain": "dakota.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://dakota.xyz/",
+        "title": "Dakota stablecoin infrastructure"
+      }
+    ],
+    "evidenceNote": "Official platform page lists stablecoin settlement, contractor payouts and treasury; card product is marked coming soon and is not claimed as live."
+  },
+  {
+    "id": "coinflow",
+    "name": "Coinflow",
+    "kind": "Company",
+    "description": "Payment infrastructure supporting stablecoin acceptance, settlement and local-currency payouts.",
+    "website": "https://coinflow.cash",
+    "domain": "coinflow.cash",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.coinflow.cash/",
+        "title": "Coinflow payment infrastructure"
+      }
+    ],
+    "evidenceNote": "Official documentation identifies stablecoin pay-ins and settlement options."
+  },
+  {
+    "id": "noah",
+    "name": "Noah",
+    "kind": "Company",
+    "description": "Payments platform supporting USDC, USDT and EURC stablecoin balances and transfers.",
+    "website": "https://noah.com",
+    "domain": "noah.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://faq.noah.com/en/articles/12495911-what-are-stablecoins-and-which-ones-do-you-support",
+        "title": "Noah supported stablecoins"
+      }
+    ],
+    "evidenceNote": "Official help center identifies supported stablecoins."
+  },
+  {
+    "id": "stables",
+    "name": "Stables",
+    "kind": "Company",
+    "description": "Stablecoin payment infrastructure connecting digital dollar balances to local payments and transfers.",
+    "website": "https://www.stables.money",
+    "domain": "stables.money",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.stables.money/",
+        "title": "Stables payments infrastructure"
+      }
+    ],
+    "evidenceNote": "Official homepage documents virtual accounts and fiat/stablecoin transfers."
+  },
+  {
+    "id": "mercuryo",
+    "name": "Mercuryo",
+    "kind": "Company",
+    "description": "Payment infrastructure offering fiat-to-stablecoin conversion and card payouts funded with stablecoins.",
+    "website": "https://www.mercuryo.io",
+    "domain": "mercuryo.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mercuryo.io/pay-out",
+        "title": "Mercuryo Pay-Out"
+      }
+    ],
+    "evidenceNote": "Official product page documents stablecoin-funded Visa and Mastercard payouts."
+  },
+  {
+    "id": "mesh",
+    "name": "Mesh",
+    "kind": "Company",
+    "description": "Payment network connecting crypto wallets and exchanges to stablecoin or local-currency settlement.",
+    "website": "https://www.meshpay.com",
+    "domain": "meshpay.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.meshpay.com/",
+        "title": "Mesh crypto payments network"
+      }
+    ],
+    "evidenceNote": "Official homepage specifies stablecoin settlement; meshconnect.com redirects to meshpay.com."
+  },
+  {
+    "id": "oobit",
+    "name": "Oobit",
+    "kind": "Company",
+    "description": "Payments app and business tools for spending stablecoins and sending funds to bank accounts.",
+    "website": "https://www.oobit.com",
+    "domain": "oobit.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.oobit.com/",
+        "title": "Oobit payments"
+      }
+    ],
+    "evidenceNote": "Official product page lists USDT spending, digital dollars and stablecoin expense management."
+  },
+  {
+    "id": "fipto",
+    "name": "Fipto",
+    "kind": "Company",
+    "description": "Business payment and treasury infrastructure connecting fiat accounts with stablecoin settlement.",
+    "website": "https://www.fipto.com",
+    "domain": "fipto.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.fipto.com/docs/what-is-fipto-api",
+        "title": "Fipto API"
+      }
+    ],
+    "evidenceNote": "Official documentation describes sending, receiving, holding and converting fiat and stablecoins."
+  },
+  {
+    "id": "request-finance",
+    "name": "Request Finance",
+    "kind": "Company",
+    "description": "Business finance platform for stablecoin invoicing, payments and treasury workflows.",
+    "website": "https://www.requestfinance.com",
+    "domain": "requestfinance.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.requestfinance.com/products/stablecoin-payments",
+        "title": "Request Finance stablecoin payments"
+      }
+    ],
+    "evidenceNote": "Official product page documents USDC and USDT business payments."
+  },
+  {
+    "id": "minipay",
+    "name": "MiniPay",
+    "kind": "Wallet",
+    "description": "Self-custody Celo wallet for stablecoin transfers, local payments and fiat conversion through partners.",
+    "website": "https://minipay.to",
+    "domain": "minipay.to",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Wallets",
+        "name": "Wallets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://minipay.to/",
+        "title": "MiniPay dollar stablecoin wallet"
+      }
+    ],
+    "evidenceNote": "Official wallet page identifies Celo, USDC, USDT and cUSD support; minipay.xyz redirects here."
+  },
+  {
+    "id": "band-protocol",
+    "name": "Band Protocol",
+    "kind": "Protocol",
+    "description": "Oracle network supplying tokenized asset price feeds to onchain applications.",
+    "website": "https://www.bandprotocol.com",
+    "domain": "bandprotocol.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Oracles",
+        "name": "Oracles"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bandprotocol.com/learning-labs/the-mechanics-of-24-7-tokenized-asset-feeds",
+        "title": "Band tokenized asset feeds"
+      }
+    ],
+    "evidenceNote": "Official article describes its data engine for traditional asset prices and tokenized asset feeds."
+  },
+  {
+    "id": "supra",
+    "name": "Supra",
+    "kind": "Protocol",
+    "description": "Oracle and blockchain infrastructure providing external market data for tokenized asset applications.",
+    "website": "https://supra.com",
+    "domain": "supra.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Oracles",
+        "name": "Oracles"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://supra.com/news/supra-partners-with-srwa-to-revolutionize-defi-and-tradfi-integration/",
+        "title": "Supra and SRWA integration"
+      }
+    ],
+    "evidenceNote": "Official announcement identifies oracle services for a real-world asset tokenization platform."
+  },
+  {
+    "id": "switchboard",
+    "name": "Switchboard",
+    "kind": "Protocol",
+    "description": "Customizable oracle network delivering external data to blockchain applications.",
+    "website": "https://switchboard.xyz",
+    "domain": "switchboard.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Oracles",
+        "name": "Oracles"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.switchboard.foundation/",
+        "title": "Switchboard Foundation documentation"
+      }
+    ],
+    "evidenceNote": "Official documentation describes customizable external data feeds; listed as general oracle infrastructure rather than an asset issuer."
+  },
+  {
+    "id": "zengo",
+    "name": "Zengo",
+    "kind": "Wallet",
+    "description": "MPC wallet supporting storage, transfers and purchases of USDC and other digital assets.",
+    "website": "https://zengo.com",
+    "domain": "zengo.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Wallets",
+        "name": "Wallets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://zengo.com/assets/usdc/",
+        "title": "Zengo USDC wallet"
+      }
+    ],
+    "evidenceNote": "Official product page confirms USDC wallet functionality; no claim made about discontinued network versions."
+  },
+  {
+    "id": "lobstr",
+    "name": "LOBSTR",
+    "kind": "Wallet",
+    "description": "Stellar wallet supporting USDC purchases, transfers and access to issued assets.",
+    "website": "https://lobstr.co",
+    "domain": "lobstr.co",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Wallets",
+        "name": "Wallets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://lobstr.freshdesk.com/support/solutions/articles/151000043494-how-can-i-deposit-usd-with-lobstr-",
+        "title": "Depositing USD with LOBSTR"
+      }
+    ],
+    "evidenceNote": "Official help center confirms USDC purchases on Stellar through its onramp integration."
+  },
+  {
+    "id": "bitget-wallet",
+    "name": "Bitget Wallet",
+    "kind": "Wallet",
+    "description": "Self-custody wallet offering stablecoin transfers, swaps and USDC earning products.",
+    "website": "https://web3.bitget.com",
+    "domain": "web3.bitget.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Wallets",
+        "name": "Wallets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://web3.bitget.com/es-AR/helpCenter/299",
+        "title": "Bitget Wallet stablecoin Earn"
+      }
+    ],
+    "evidenceNote": "Official help center documents supported stablecoin wallet products; formerly BitKeep.",
+    "aliases": [
+      "BitKeep"
+    ]
+  },
+  {
+    "id": "mento",
+    "name": "Mento",
+    "kind": "Protocol",
+    "description": "Multi-currency stablecoin protocol providing onchain foreign-exchange and payment infrastructure.",
+    "website": "https://www.mento.org",
+    "domain": "mento.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mento.org/",
+        "title": "Mento onchain FX"
+      }
+    ],
+    "evidenceNote": "Official site lists its live currency stablecoins, reserves and exchange infrastructure."
+  },
+  {
+    "id": "qivalis",
+    "name": "Qivalis",
+    "kind": "Company",
+    "description": "European bank consortium developing a euro stablecoin for payments and tokenized-asset settlement.",
+    "website": "https://qivalis.eu",
+    "domain": "qivalis.eu",
+    "directoryStatus": "current",
+    "lifecycle": "Prelaunch — authorization pending",
+    "statusNote": "As of October 5, 2026, Qivalis is not yet authorized as an electronic money institution and does not issue electronic money or provide payment services to the public.",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Builders"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://qivalis.eu/",
+        "title": "Qivalis euro stablecoin initiative"
+      }
+    ],
+    "evidenceNote": "Official site updated October 5, 2026 states authorization is pending and it does not yet issue electronic money; described as developing, not live."
+  },
+  {
+    "id": "morse",
+    "name": "Morse (formerly Sling Money)",
+    "kind": "Company",
+    "description": "Payments app using onchain USDC balances for transfers, spending and currency conversion.",
+    "website": "https://morsemoney.com",
+    "domain": "morsemoney.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Payments Infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://morsemoney.com/crypto",
+        "title": "Morse crypto and USDC payments"
+      }
+    ],
+    "evidenceNote": "Official current product page confirms balances remain onchain in USDC; sling.money redirects to Morse, so there is one profile.",
+    "aliases": [
+      "Sling Money",
+      "Avian Labs"
+    ]
+  }
+]

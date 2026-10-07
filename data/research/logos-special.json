@@ -1,0 +1,110 @@
+{
+  "chronicle": {
+    "src": "/ecosystem/chronicle-official-20261007.png",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://raw.githubusercontent.com/chronicleprotocol/documentation/main/static/img/logo.png",
+    "sourcePage": "https://github.com/chronicleprotocol/documentation",
+    "checkedOn": "2026-10-07"
+  },
+  "ether-fi": {
+    "src": "/ecosystem/ether-fi-official-20261007.png",
+    "background": "light",
+    "treatment": "original",
+    "shape": "wordmark",
+    "sourceUrl": "https://3280764507-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/organizations%2FNqb5aBhJRAeufIcJncEa%2Fsites%2Fsite_cZdFs%2Flogo%2FlT1W4oIEn2cTXNKZFsKW%2Ftransparent-light-bg-etherfi_logo-black-landscape-1.png?alt=media&token=36160dd4-d7c2-459d-9229-a23978ac33f3",
+    "sourcePage": "https://etherfi.gitbook.io/etherfi",
+    "checkedOn": "2026-10-07"
+  },
+  "galaxy-digital": {
+    "src": "/ecosystem/galaxy-digital-official-20261007.svg",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://www.galaxy.com/",
+    "sourcePage": "https://www.galaxy.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "galaxyone": {
+    "src": "/ecosystem/galaxyone-official-20261007.png",
+    "background": "dark",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://framerusercontent.com/images/y3W4rAs35zlgsKT3iuA606nOs.png",
+    "sourcePage": "https://www.galaxy.app/",
+    "checkedOn": "2026-10-07"
+  },
+  "aptos": {
+    "src": "/ecosystem/aptos-official-20261007.svg",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://drive.google.com/uc?export=download&id=1KDUI4fRbs4WYn1D6x6OejYTmr56XBIsc",
+    "sourcePage": "https://aptosnetwork.com/media-kit",
+    "checkedOn": "2026-10-07"
+  },
+  "arbitrum": {
+    "src": "/ecosystem/arbitrum-official-20261007.svg",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://arbitrum.io/arb_logo_color.svg",
+    "sourcePage": "https://arbitrum.io/brand-kit",
+    "checkedOn": "2026-10-07"
+  },
+  "frax": {
+    "src": "/ecosystem/frax-official-20261007.png",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://static.frax.com/images/tokens/frax-256x256.png",
+    "sourcePage": "https://frax.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "tether": {
+    "src": "/ecosystem/tether-official-20261007.svg",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://tether.to/images/logoMarkGreen.svg",
+    "sourcePage": "https://tether.to/en/media/",
+    "checkedOn": "2026-10-07"
+  },
+  "midas": {
+    "src": "/ecosystem/midas-official-20261007.png",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://avatars.githubusercontent.com/u/179050567?s=200&v=4",
+    "sourcePage": "https://github.com/midas-apps",
+    "checkedOn": "2026-10-07"
+  },
+  "relay": {
+    "src": "/ecosystem/relay-official-20261007.svg",
+    "background": "light",
+    "treatment": "original",
+    "shape": "wordmark",
+    "sourceUrl": "https://mintcdn.com/unevenlabs/Gbv82V37Oid9F6eG/logo/relay-black.svg?fit=max&auto=format&n=Gbv82V37Oid9F6eG&q=85&s=7983e6e441ff77eeac7e17c03c2d0e8c",
+    "sourcePage": "https://docs.relay.link",
+    "checkedOn": "2026-10-07"
+  },
+  "mastercard": {
+    "src": "/ecosystem/mastercard-official-20261007.svg",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f6b7190899f41fb70882d08/685be8317500b2327c507e22_mastercard.svg",
+    "sourcePage": "https://chain.link/",
+    "checkedOn": "2026-10-07"
+  },
+  "solflare": {
+    "src": "/ecosystem/solflare-official-20261007.svg",
+    "background": "light",
+    "treatment": "original",
+    "shape": "icon",
+    "sourceUrl": "https://www.solflare.com/wp-content/uploads/2024/11/App-Icon.svg",
+    "sourcePage": "https://www.solflare.com/",
+    "checkedOn": "2026-10-07"
+  }
+}

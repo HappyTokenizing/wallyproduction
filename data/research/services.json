@@ -1,0 +1,1449 @@
+[
+  {
+    "id": "trm-labs",
+    "name": "TRM Labs",
+    "kind": "Company",
+    "description": "Blockchain intelligence, wallet screening and transaction monitoring for digital asset compliance and investigations.",
+    "website": "https://trmlabs.com",
+    "domain": "trmlabs.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.trmlabs.com/",
+        "title": "TRM Labs — blockchain intelligence"
+      }
+    ],
+    "evidenceNote": "The official platform describes crypto investigations, sanctions screening and transaction monitoring."
+  },
+  {
+    "id": "elliptic",
+    "name": "Elliptic",
+    "kind": "Company",
+    "description": "Screens tokenized assets and RWA transfers for sanctions, AML and fraud risk across blockchains.",
+    "website": "https://elliptic.co",
+    "domain": "elliptic.co",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.elliptic.co/tokenization-rwa-compliance/",
+        "title": "Tokenization and RWA Compliance — Elliptic"
+      }
+    ],
+    "evidenceNote": "Dedicated product page explicitly covers tokenized real-world asset screening and cross-chain risk."
+  },
+  {
+    "id": "notabene",
+    "name": "Notabene",
+    "kind": "Company",
+    "description": "Travel Rule and transaction authorization infrastructure for stablecoin payments and digital asset transfers.",
+    "website": "https://notabene.id",
+    "domain": "notabene.id",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://notabene.id/",
+        "title": "Notabene — trust layer for global payments"
+      }
+    ],
+    "evidenceNote": "Official site describes Notabene Transact, Travel Rule workflows and stablecoin payments."
+  },
+  {
+    "id": "sumsub",
+    "name": "Sumsub",
+    "kind": "Company",
+    "description": "Identity verification, business verification and transaction monitoring for crypto platforms and token issuers.",
+    "website": "https://sumsub.com",
+    "domain": "sumsub.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://sumsub.com/crypto/",
+        "title": "Crypto KYC and Identity Verification — Sumsub"
+      }
+    ],
+    "evidenceNote": "Official crypto industry page offers KYC, AML, KYB and Travel Rule services."
+  },
+  {
+    "id": "merkle-science",
+    "name": "Merkle Science",
+    "kind": "Company",
+    "description": "Blockchain transaction risk scoring and forensic investigation tools for digital asset businesses.",
+    "website": "https://merklescience.com",
+    "domain": "merklescience.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merklescience.com/",
+        "title": "Merkle Science — predictive crypto risk and intelligence"
+      }
+    ],
+    "evidenceNote": "Compass flags suspicious transactions; Tracker supports cryptocurrency investigations."
+  },
+  {
+    "id": "scorechain",
+    "name": "Scorechain",
+    "kind": "Company",
+    "description": "Blockchain analytics and crypto AML software for wallet screening, transaction monitoring and investigations.",
+    "website": "https://scorechain.com",
+    "domain": "scorechain.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.scorechain.com/",
+        "title": "Crypto AML Compliance and Blockchain Analytics — Scorechain"
+      }
+    ],
+    "evidenceNote": "Official site offers crypto AML compliance and blockchain analytics products."
+  },
+  {
+    "id": "crystal-intelligence",
+    "name": "Crystal Intelligence",
+    "kind": "Company",
+    "description": "Digital asset intelligence and blockchain analytics for financial crime investigations and compliance.",
+    "website": "https://crystalintelligence.com",
+    "domain": "crystalintelligence.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://crystalintelligence.com/",
+        "title": "Decision Intelligence for Digital Assets — Crystal Intelligence"
+      }
+    ],
+    "evidenceNote": "Official product site identifies digital asset intelligence and investigative compliance services."
+  },
+  {
+    "id": "blockpass",
+    "name": "Blockpass",
+    "kind": "Company",
+    "description": "Reusable KYC and KYB onboarding with crypto AML, Travel Rule and onchain identity tools.",
+    "website": "https://blockpass.org",
+    "domain": "blockpass.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.blockpass.org/",
+        "title": "Blockpass — KYC as a service for regulated industries"
+      }
+    ],
+    "evidenceNote": "Official site lists onchain KYC, unhosted wallet verification and crypto compliance tools."
+  },
+  {
+    "id": "quadrata",
+    "name": "Quadrata",
+    "kind": "Company",
+    "description": "Privacy-preserving identity passports attach verified country and AML attributes to blockchain wallets.",
+    "website": "https://quadrata.com",
+    "domain": "quadrata.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://quadrata.com/",
+        "title": "Quadrata Passport"
+      }
+    ],
+    "evidenceNote": "Official passport page describes a non-transferable wallet identity token with country and AML attributes."
+  },
+  {
+    "id": "icomply",
+    "name": "iComply",
+    "kind": "Company",
+    "description": "KYC, KYB, transaction monitoring and AML infrastructure for digital asset businesses and regulated financial services.",
+    "website": "https://icomplyis.com",
+    "domain": "icomplyis.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://icomplyis.com/",
+        "title": "iComply ComplianceOS"
+      }
+    ],
+    "evidenceNote": "Official site lists virtual asset service providers, crypto and Prefacto for Tokens among its services."
+  },
+  {
+    "id": "netki",
+    "name": "Netki",
+    "kind": "Company",
+    "description": "Identity verification, Travel Rule messaging and DeFi compliance tools for digital asset transactions.",
+    "website": "https://netki.com",
+    "domain": "netki.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.netki.com/",
+        "title": "Netki — identity and Travel Rule compliance"
+      }
+    ],
+    "evidenceNote": "Official site describes OnboardID, TransactID and DeFi Sentinel for crypto exchanges and institutions."
+  },
+  {
+    "id": "21-analytics",
+    "name": "21 Analytics",
+    "kind": "Company",
+    "description": "Travel Rule software and self-hosted wallet verification for virtual asset service providers.",
+    "website": "https://21analytics.co",
+    "domain": "21analytics.co",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.21analytics.co/",
+        "title": "FATF Travel Rule Solution for Crypto Compliance — 21 Analytics"
+      }
+    ],
+    "evidenceNote": "Official site offers crypto Travel Rule and wallet verification solutions; old .ch domain redirects here."
+  },
+  {
+    "id": "verifyvasp",
+    "name": "VerifyVASP",
+    "kind": "Company",
+    "description": "Travel Rule network for exchanging and verifying originator and beneficiary information on digital asset transfers.",
+    "website": "https://verifyvasp.com",
+    "domain": "verifyvasp.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.verifyvasp.com/en/",
+        "title": "VerifyVASP — Travel Rule solution for digital assets"
+      }
+    ],
+    "evidenceNote": "Official site describes encrypted Travel Rule data sharing, VASP checks and wallet verification."
+  },
+  {
+    "id": "sygna",
+    "name": "Sygna",
+    "kind": "Company",
+    "description": "CoolBitX compliance platform providing Travel Rule messaging and integrated AML checks for VASPs.",
+    "website": "https://sygna.io",
+    "domain": "sygna.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.sygna.io/",
+        "title": "Sygna — Travel Rule solution for VASPs"
+      }
+    ],
+    "evidenceNote": "Official site describes Sygna Bridge, Hub and Gate crypto AML products.",
+    "aliases": [
+      "CoolBitX Sygna"
+    ]
+  },
+  {
+    "id": "shyft-network",
+    "name": "Shyft Network",
+    "kind": "Company",
+    "description": "Blockchain compliance network providing Veriscope for Travel Rule information exchange and identity attestations.",
+    "website": "https://shyft.network",
+    "domain": "shyft.network",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.shyft.network/",
+        "title": "Shyft Network — trusted blockchain compliance"
+      }
+    ],
+    "evidenceNote": "Official site describes KYC/AML smart contracts and Veriscope integrations with exchanges and VASPs."
+  },
+  {
+    "id": "kaleido",
+    "name": "Kaleido",
+    "kind": "Company",
+    "description": "Enterprise platform for tokenizing funds, securities, deposits and real assets, with custody and settlement orchestration.",
+    "website": "https://kaleido.io",
+    "domain": "kaleido.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.kaleido.io/",
+        "title": "Kaleido — enterprise blockchain and tokenization platform"
+      }
+    ],
+    "evidenceNote": "Official platform covers tokenized securities, RWAs, stablecoins, deposits and asset lifecycle tooling."
+  },
+  {
+    "id": "settlemint",
+    "name": "SettleMint",
+    "kind": "Company",
+    "description": "Digital asset lifecycle software for regulated issuance, investor eligibility, custody integration, settlement and servicing.",
+    "website": "https://settlemint.com",
+    "domain": "settlemint.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.settlemint.com/",
+        "title": "SettleMint — Digital Asset Lifecycle Management"
+      }
+    ],
+    "evidenceNote": "Official platform supports tokenized fixed income, funds, equity, cash, real assets and structured products."
+  },
+  {
+    "id": "tokenovate",
+    "name": "Tokenovate",
+    "kind": "Company",
+    "description": "Automates post-trade workflows, collateral lifecycles and tokenized settlement using the Common Domain Model.",
+    "website": "https://tokenovate.com",
+    "domain": "tokenovate.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.tokenovate.com/",
+        "title": "Tokenovate — automating post-trade"
+      }
+    ],
+    "evidenceNote": "Official site lists tokenized settlement, repo automation and a CDM-native repo transaction on Canton."
+  },
+  {
+    "id": "lukka",
+    "name": "Lukka",
+    "kind": "Company",
+    "description": "Institutional digital asset data, RWA valuations, accounting information and blockchain compliance analytics.",
+    "website": "https://lukka.tech",
+    "domain": "lukka.tech",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://lukka.tech/",
+        "title": "Lukka — digital asset data operating system"
+      }
+    ],
+    "evidenceNote": "Official platform explicitly supports tokenization and RWA valuation, pricing, reporting and risk."
+  },
+  {
+    "id": "taxbit",
+    "name": "Taxbit",
+    "kind": "Company",
+    "description": "Digital asset tax reporting infrastructure for exchanges, brokers and financial institutions, including cost basis and CARF workflows.",
+    "website": "https://taxbit.com",
+    "domain": "taxbit.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.taxbit.com/",
+        "title": "Taxbit — global regulatory reporting"
+      }
+    ],
+    "evidenceNote": "Official platform lists digital asset providers, cost basis, information reporting, CARF and DAC8."
+  },
+  {
+    "id": "cryptio",
+    "name": "Cryptio",
+    "kind": "Company",
+    "description": "Digital asset accounting and data transformation software connecting blockchain activity with institutional finance systems.",
+    "website": "https://cryptio.co",
+    "domain": "cryptio.co",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://cryptio.co/",
+        "title": "Cryptio — data transformation and ERP for digital assets"
+      }
+    ],
+    "evidenceNote": "Official product site offers institutional digital asset data transformation and accounting."
+  },
+  {
+    "id": "bitwave",
+    "name": "Bitwave",
+    "kind": "Company",
+    "description": "Enterprise crypto accounting, stablecoin payments and financial reporting software.",
+    "website": "https://bitwave.io",
+    "domain": "bitwave.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bitwave.io/",
+        "title": "Bitwave — enterprise crypto accounting, payments and reporting"
+      }
+    ],
+    "evidenceNote": "Official platform provides digital asset accounting, payment and reporting workflows."
+  },
+  {
+    "id": "ledgible",
+    "name": "Ledgible",
+    "kind": "Company",
+    "description": "Digital asset tax, accounting and data normalization software with integrations for tokenization systems.",
+    "website": "https://ledgible.io",
+    "domain": "ledgible.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ledgible.io/",
+        "title": "Ledgible — digital asset tax information platform"
+      }
+    ],
+    "evidenceNote": "Official site lists tokenization, institutional digital asset accounting and tax information reporting."
+  },
+  {
+    "id": "solidus-labs",
+    "name": "Solidus Labs",
+    "kind": "Company",
+    "description": "Market surveillance and transaction monitoring for digital assets, stablecoins and tokenized asset issuers.",
+    "website": "https://soliduslabs.com",
+    "domain": "soliduslabs.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.soliduslabs.com/",
+        "title": "Solidus Labs — multidimensional market integrity"
+      }
+    ],
+    "evidenceNote": "Official site explicitly serves stablecoin and tokenized asset issuers with surveillance and monitoring."
+  },
+  {
+    "id": "eventus",
+    "name": "Eventus",
+    "kind": "Company",
+    "description": "Trade surveillance, market risk and transaction monitoring software for digital asset trading venues.",
+    "website": "https://eventus.com",
+    "domain": "eventus.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.eventus.com/",
+        "title": "Eventus — trade surveillance and regulatory solutions"
+      }
+    ],
+    "evidenceNote": "Official site identifies digital asset venues among Validus customers and offers surveillance and risk controls."
+  },
+  {
+    "id": "anchain-ai",
+    "name": "AnChain.AI",
+    "kind": "Company",
+    "description": "Crypto investigations, blockchain AML and payment risk screening tools for digital asset activity.",
+    "website": "https://anchain.ai",
+    "domain": "anchain.ai",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.anchain.ai/",
+        "title": "AnChain.AI — crypto investigations and AML"
+      }
+    ],
+    "evidenceNote": "Official product site describes crypto investigations, AML and payment risk screening APIs."
+  },
+  {
+    "id": "chainargos",
+    "name": "ChainArgos",
+    "kind": "Company",
+    "description": "Blockchain intelligence for stablecoin supervision, wallet screening and transaction tracing.",
+    "website": "https://chainargos.com",
+    "domain": "chainargos.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.chainargos.com/",
+        "title": "ChainArgos — better blockchain intelligence"
+      }
+    ],
+    "evidenceNote": "Official product menu includes stablecoin supervision, wallet screening, monitoring and investigations."
+  },
+  {
+    "id": "veriff",
+    "name": "Veriff",
+    "kind": "Company",
+    "description": "Identity and document verification with AML screening for cryptocurrency platforms and wallets.",
+    "website": "https://veriff.com",
+    "domain": "veriff.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.veriff.com/industry/cryptocurrency",
+        "title": "Cryptocurrency Identity Verification — Veriff"
+      }
+    ],
+    "evidenceNote": "Dedicated crypto industry page offers identity verification and AML screening for exchanges and wallets."
+  },
+  {
+    "id": "jumio",
+    "name": "Jumio",
+    "kind": "Company",
+    "description": "Identity, biometric and AML checks for onboarding and protecting digital asset customers.",
+    "website": "https://jumio.com",
+    "domain": "jumio.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.jumio.com/industries/crypto/",
+        "title": "Identity Intelligence for the Crypto Industry — Jumio"
+      }
+    ],
+    "evidenceNote": "Official crypto page covers exchanges, wallets, trading platforms and ongoing customer verification."
+  },
+  {
+    "id": "trulioo",
+    "name": "Trulioo",
+    "kind": "Company",
+    "description": "Identity verification and customer onboarding services for cryptocurrency exchanges and digital finance platforms.",
+    "website": "https://trulioo.com",
+    "domain": "trulioo.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.trulioo.com/lp/industry-sheet/securing-the-future-of-cryptocurrencies-with-trulioo",
+        "title": "Securing the Future of Cryptocurrency Exchanges — Trulioo"
+      }
+    ],
+    "evidenceNote": "Official crypto industry sheet describes exchange onboarding and identity verification services."
+  },
+  {
+    "id": "idenfy",
+    "name": "iDenfy",
+    "kind": "Company",
+    "description": "KYC, KYB and AML verification for token launches, crypto wallets and DeFi platforms.",
+    "website": "https://idenfy.com",
+    "domain": "idenfy.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://idenfy.com/identity-verification-crypto/",
+        "title": "Identity Verification for Crypto, Blockchain and NFT Compliance — iDenfy"
+      }
+    ],
+    "evidenceNote": "Official page explicitly serves token launches, exchanges, DeFi and crypto wallets."
+  },
+  {
+    "id": "complyadvantage",
+    "name": "ComplyAdvantage",
+    "kind": "Company",
+    "description": "Customer screening and transaction risk monitoring for crypto businesses and financial institutions.",
+    "website": "https://complyadvantage.com",
+    "domain": "complyadvantage.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://complyadvantage.com/industries/kyc-crypto/",
+        "title": "AML Solutions for Crypto Companies — ComplyAdvantage"
+      }
+    ],
+    "evidenceNote": "Dedicated crypto page describes real-time screening, monitoring and compliance investigations."
+  },
+  {
+    "id": "ondato",
+    "name": "Ondato",
+    "kind": "Company",
+    "description": "Identity verification and KYC/AML onboarding platform serving regulated crypto businesses.",
+    "website": "https://ondato.com",
+    "domain": "ondato.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ondato.com/switch/",
+        "title": "Ondato — identity verification for regulated industries"
+      }
+    ],
+    "evidenceNote": "Official page explicitly lists crypto platforms among the regulated industries it serves."
+  },
+  {
+    "id": "zodia-custody",
+    "name": "Zodia Custody",
+    "kind": "Company",
+    "description": "Institutional digital asset custody and off-venue settlement services with tokenized asset connectivity.",
+    "website": "https://zodia-custody.com",
+    "domain": "zodia-custody.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Custody and asset servicing"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://zodia-custody.com/",
+        "title": "Zodia Custody — digital asset infrastructure"
+      },
+      {
+        "url": "https://www.sc.com/en/press-release/standard-chartered-to-acquire-zodia-custodys-custody-business/",
+        "title": "Standard Chartered to acquire Zodia Custody’s custody business — 18 May 2026"
+      }
+    ],
+    "evidenceNote": "Official site offers institutional custody, Interchange settlement and tokenized asset services. Standard Chartered announced a proposed custody-business acquisition in May 2026, subject to approvals and closing; completion is not asserted."
+  },
+  {
+    "id": "komainu",
+    "name": "Komainu",
+    "kind": "Company",
+    "description": "Institutional custody, collateral controls and connectivity for digital assets and tokenized funds.",
+    "website": "https://komainu.com",
+    "domain": "komainu.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Custody and asset servicing"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://komainu.com/",
+        "title": "Komainu — institutional gateway for digital assets"
+      }
+    ],
+    "evidenceNote": "Official tokenization service offers custody and governance for institutional issuers and tokenized markets."
+  },
+  {
+    "id": "dfns",
+    "name": "DFNS",
+    "kind": "Company",
+    "description": "Wallet and key management infrastructure for stablecoins, tokenized funds, bonds, equities and deposits.",
+    "website": "https://dfns.co",
+    "domain": "dfns.co",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://dfns.co/",
+        "title": "DFNS — core banking platform for digital assets"
+      }
+    ],
+    "evidenceNote": "Official tokenization section covers issuance and lifecycle management of funds, bonds, deposits and equities."
+  },
+  {
+    "id": "utila",
+    "name": "Utila",
+    "kind": "Company",
+    "description": "Institutional wallet and digital asset operations infrastructure for stablecoins and blockchain assets.",
+    "website": "https://utila.io",
+    "domain": "utila.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Custody and asset servicing"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://utila.io/",
+        "title": "Utila — stablecoin and digital asset infrastructure"
+      }
+    ],
+    "evidenceNote": "Official site describes institutional stablecoin and digital asset infrastructure."
+  },
+  {
+    "id": "liminal",
+    "name": "Liminal",
+    "kind": "Company",
+    "description": "Digital asset custody and wallet infrastructure with policy controls, transaction automation and compliance tools.",
+    "website": "https://liminalcustody.com",
+    "domain": "liminalcustody.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Custody and asset servicing"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.liminalcustody.com/",
+        "title": "Liminal — institutional crypto custody and wallet infrastructure"
+      }
+    ],
+    "evidenceNote": "Official platform lists institutional custody, wallet APIs, HSM vaults and transaction compliance."
+  },
+  {
+    "id": "cobo",
+    "name": "Cobo",
+    "kind": "Company",
+    "description": "Custodial and MPC wallet infrastructure with transaction policies, stablecoin settlement and integrated AML screening.",
+    "website": "https://cobo.com",
+    "domain": "cobo.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Custody and asset servicing"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.cobo.com/",
+        "title": "Cobo — digital asset custody and wallet infrastructure"
+      }
+    ],
+    "evidenceNote": "Official site offers multiple wallet types and stablecoin payment settlement with AML/KYT controls."
+  },
+  {
+    "id": "finoa",
+    "name": "Finoa",
+    "kind": "Company",
+    "description": "Technology infrastructure helping businesses move capital onchain; regulated custody is provided by separately licensed entities.",
+    "website": "https://finoa.io",
+    "domain": "finoa.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.finoa.io/",
+        "title": "Finoa — bringing businesses onchain"
+      }
+    ],
+    "evidenceNote": "Current site explicitly says Finoa is a technology provider, not a MiCAR CASP or custodian; description follows this scope."
+  },
+  {
+    "id": "ledger",
+    "name": "Ledger",
+    "kind": "Company",
+    "description": "Hardware-backed digital asset and wallet infrastructure for institutions, including token issuance, lifecycle controls and stablecoin operations.",
+    "website": "https://ledger.com",
+    "domain": "ledger.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Custody and asset servicing"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://enterprise.ledger.com/",
+        "title": "Ledger Enterprise — digital asset platform for institutions"
+      }
+    ],
+    "evidenceNote": "Official Enterprise page covers tokenized equities, funds, bonds, deposits and hardware-enforced governance.",
+    "aliases": [
+      "Ledger Enterprise"
+    ]
+  },
+  {
+    "id": "kaiko",
+    "name": "Kaiko",
+    "kind": "Company",
+    "description": "Digital asset market data, indices and onchain data services for tokenized finance and institutional risk management.",
+    "website": "https://kaiko.com",
+    "domain": "kaiko.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.kaiko.com/",
+        "title": "Kaiko — data, analytics and indices"
+      },
+      {
+        "url": "https://www.amberdata.io/",
+        "title": "Amberdata — Kaiko acquisition announcement"
+      }
+    ],
+    "evidenceNote": "Official site describes tokenized indices, onchain data infrastructure and institutional market data. Amberdata is acquired by Kaiko and consolidated into this profile rather than counted again.",
+    "aliases": [
+      "Amberdata"
+    ]
+  },
+  {
+    "id": "talos",
+    "name": "Talos",
+    "kind": "Company",
+    "description": "Institutional digital asset data and intelligence integrated with trading and portfolio infrastructure.",
+    "website": "https://talos.com",
+    "domain": "talos.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.talos.com/our-solutions/data/overview",
+        "title": "Talos — digital asset data and intelligence for institutions"
+      },
+      {
+        "url": "https://coinmetrics.io/",
+        "title": "Coin Metrics official site — redirects to Talos data"
+      }
+    ],
+    "evidenceNote": "Coin Metrics official domain redirects to Talos data offering; represented once under Talos.",
+    "aliases": [
+      "Coin Metrics"
+    ]
+  },
+  {
+    "id": "nansen",
+    "name": "Nansen",
+    "kind": "Company",
+    "description": "Onchain analytics and wallet intelligence for researching digital assets and blockchain activity.",
+    "website": "https://nansen.ai",
+    "domain": "nansen.ai",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://nansen.ai/",
+        "title": "Nansen — onchain analytics and intelligence"
+      }
+    ],
+    "evidenceNote": "Official platform supplies onchain market and wallet intelligence for digital assets."
+  },
+  {
+    "id": "the-tie",
+    "name": "The Tie",
+    "kind": "Company",
+    "description": "Institutional digital asset data, analytics and research delivered through a terminal and APIs.",
+    "website": "https://thetie.io",
+    "domain": "thetie.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.thetie.io/",
+        "title": "The Tie — where institutions connect with digital assets"
+      }
+    ],
+    "evidenceNote": "Official site describes market, derivatives, news, onchain and sentiment data for institutions."
+  },
+  {
+    "id": "openzeppelin",
+    "name": "OpenZeppelin",
+    "kind": "Company",
+    "description": "Smart contract libraries, security reviews and monitoring for stablecoins, tokenized securities and RWA platforms.",
+    "website": "https://openzeppelin.com",
+    "domain": "openzeppelin.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.openzeppelin.com/",
+        "title": "OpenZeppelin — security standard for onchain finance"
+      }
+    ],
+    "evidenceNote": "Official site explicitly serves tokenization platforms, stablecoins, tokenized funds and asset issuance."
+  },
+  {
+    "id": "chainsecurity",
+    "name": "ChainSecurity",
+    "kind": "Company",
+    "description": "Smart contract security audits for DeFi protocols, stablecoins and institutional blockchain projects.",
+    "website": "https://chainsecurity.com",
+    "domain": "chainsecurity.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.chainsecurity.com/",
+        "title": "ChainSecurity — smart contract audits"
+      },
+      {
+        "url": "https://www.chainsecurity.com/institutional/",
+        "title": "ChainSecurity — Institutional clients and enterprise"
+      }
+    ],
+    "evidenceNote": "Official site publishes Circle Gateway, Sky and other digital asset audit reports and serves central banks. The institutional page identifies ChainSecurity as a PwC Switzerland spin-off and describes Circle security audits; it is not a second PwC brand listing."
+  },
+  {
+    "id": "certora",
+    "name": "Certora",
+    "kind": "Company",
+    "description": "Formal verification and security audits of smart contracts, including tokenized fund distribution infrastructure.",
+    "website": "https://certora.com",
+    "domain": "certora.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.certora.com/reports",
+        "title": "Certora — security audit reports"
+      }
+    ],
+    "evidenceNote": "Official reports list the March 2026 Calastone Tokenised Distribution smart contract review and tokenization audits."
+  },
+  {
+    "id": "halborn",
+    "name": "Halborn",
+    "kind": "Company",
+    "description": "Digital asset and blockchain security services, including smart contract audits and security assessments.",
+    "website": "https://halborn.com",
+    "domain": "halborn.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.halborn.com/",
+        "title": "Halborn — digital asset and blockchain security solutions"
+      }
+    ],
+    "evidenceNote": "Official site offers digital asset and blockchain security services."
+  },
+  {
+    "id": "dla-piper",
+    "name": "DLA Piper",
+    "kind": "Company",
+    "description": "Legal and regulatory advice for digital assets, token issuance and blockchain-based financial products.",
+    "website": "https://dlapiper.com",
+    "domain": "dlapiper.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.dlapiper.com/en/capabilities/industry/financial-services/fintech",
+        "title": "DLA Piper — fintech legal services"
+      }
+    ],
+    "evidenceNote": "Official fintech practice describes digital asset creation, distributed-ledger work and legal services across finance."
+  },
+  {
+    "id": "ogier",
+    "name": "Ogier",
+    "kind": "Company",
+    "description": "Cross-border legal structuring, token offering and regulatory advice for digital assets and tokenized real estate.",
+    "website": "https://ogier.com",
+    "domain": "ogier.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ogier.com/expertise/sectors/technology-and-web3/",
+        "title": "Ogier — Technology and Web3"
+      }
+    ],
+    "evidenceNote": "Official practice explicitly advises on real estate tokenization, token offerings, VASP licensing and structuring."
+  },
+  {
+    "id": "dentons",
+    "name": "Dentons",
+    "kind": "Company",
+    "description": "Legal advice across blockchain, digital assets and cryptocurrency transactions and regulation.",
+    "website": "https://dentons.com",
+    "domain": "dentons.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.dentons.com/en/services-and-solutions/blockchain-and-distributed-ledger-technology",
+        "title": "Dentons — Blockchain, Digital Assets and Cryptocurrency"
+      }
+    ],
+    "evidenceNote": "Official practice page identifies a dedicated blockchain, digital asset and cryptocurrency legal team."
+  },
+  {
+    "id": "walkers",
+    "name": "Walkers",
+    "kind": "Company",
+    "description": "Legal and regulatory services for digital asset businesses, financial institutions and fund managers.",
+    "website": "https://walkersglobal.com",
+    "domain": "walkersglobal.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.walkersglobal.com/en/Fintech",
+        "title": "Walkers — fintech legal services and digital asset solutions"
+      }
+    ],
+    "evidenceNote": "Official fintech practice describes advising global digital asset businesses and asset managers developing products."
+  },
+  {
+    "id": "pwc",
+    "name": "PwC",
+    "kind": "Company",
+    "description": "Advisory, tax and assurance services for tokenized funds and real-world assets, including issuance controls and reserve attestations.",
+    "website": "https://pwc.com",
+    "domain": "pwc.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pwc.com/jg/en/services/advisory/tokenisation.html",
+        "title": "PwC — tokenisation and digital asset services"
+      }
+    ],
+    "evidenceNote": "Official service page covers tokenized funds/RWAs, audits, underlying-asset attestations and regulatory implementation."
+  },
+  {
+    "id": "deloitte",
+    "name": "Deloitte",
+    "kind": "Company",
+    "description": "Blockchain and digital asset advisory, tokenization implementation, custody systems and assurance services.",
+    "website": "https://deloitte.com",
+    "domain": "deloitte.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.deloitte.com/us/en/what-we-do/capabilities/blockchain-digital-assets/services/blockchain-and-digital-assets.html",
+        "title": "Deloitte — Blockchain and Digital Assets"
+      }
+    ],
+    "evidenceNote": "Official service catalog lists asset tokenization, custody systems, payment solutions and assurance."
+  },
+  {
+    "id": "kpmg",
+    "name": "KPMG",
+    "kind": "Company",
+    "description": "Digital asset advisory services for stablecoins, tokenization, securities trading and regulated financial institutions.",
+    "website": "https://kpmg.com",
+    "domain": "kpmg.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://kpmg.com/ca/en/services/digital/cryptoasset-and-enterprise-blockchain-services.html",
+        "title": "KPMG — digital asset, stablecoin and tokenization services"
+      }
+    ],
+    "evidenceNote": "Official KPMG offering explicitly identifies digital asset, stablecoin and tokenization services."
+  },
+  {
+    "id": "bdo",
+    "name": "BDO",
+    "kind": "Company",
+    "description": "Blockchain and digital asset assurance and advisory services for stablecoin issuers, custodians and infrastructure providers.",
+    "website": "https://bdo.com",
+    "domain": "bdo.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bdo.com/services/industry-specialty-consulting/blockchain-and-digital-assets-services",
+        "title": "BDO — Blockchain and Digital Assets Services"
+      }
+    ],
+    "evidenceNote": "Official practice serves stablecoin issuers and custodians and offers SOC reporting and assurance."
+  },
+  {
+    "id": "tokenbridge",
+    "name": "Tokenbridge",
+    "kind": "Company",
+    "description": "Software connecting fund issuers, distributors and wealth managers with blockchain-based fund tokenization and investor preferences.",
+    "website": "https://tokenbridge.co.uk",
+    "domain": "tokenbridge.co.uk",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://tokenbridge.co.uk/",
+        "title": "Tokenbridge — asset tokenization"
+      }
+    ],
+    "evidenceNote": "Official site describes blockchain and smart contract solutions for token issuers, fund managers and distributors."
+  },
+  {
+    "id": "koreinside",
+    "name": "KoreInside",
+    "kind": "Company",
+    "description": "Private-market infrastructure for securities tokenization, investor identity, transfer restrictions and lifecycle management on KoreChain.",
+    "website": "https://kore.inc",
+    "domain": "kore.inc",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://kore.inc/the-solutions/",
+        "title": "KoreInside — tokenization solutions"
+      }
+    ],
+    "evidenceNote": "Official solution creates tokenized equity, debt and funds with investor verification and transfer restrictions.",
+    "aliases": [
+      "KoreConX",
+      "KoreChain"
+    ]
+  },
+  {
+    "id": "rakkar",
+    "name": "Rakkar",
+    "kind": "Company",
+    "description": "Institutional digital asset custody using MPC technology and segregated asset infrastructure.",
+    "website": "https://rakkardigital.com",
+    "domain": "rakkardigital.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Custody and asset servicing"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.rakkardigital.com/",
+        "title": "Rakkar — institutional digital asset custody"
+      }
+    ],
+    "evidenceNote": "Official site describes custody services and continuation of operations from April 2026."
+  },
+  {
+    "id": "the-network-firm",
+    "name": "The Network Firm",
+    "kind": "Company",
+    "description": "Provides digital asset audits and reserve attestations for stablecoin and RWA issuers, with LedgerLens reserve-data infrastructure.",
+    "website": "https://www.thenetworkfirm.com",
+    "domain": "thenetworkfirm.com",
+    "aliases": [
+      "The Network Firm LLP",
+      "LedgerLens"
+    ],
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      },
+      {
+        "section": "Services and infrastructure",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://content.govdelivery.com/accounts/WYGOVSTC/bulletins/416f9d3",
+        "title": "Wyoming Stable Token Commission launches daily attestation dashboard with The Network Firm LLP"
+      },
+      {
+        "url": "https://www.thenetworkfirm.com/oracle-services-faq",
+        "title": "The Network Firm — LedgerLens Oracle Services FAQ"
+      }
+    ],
+    "evidenceNote": "Wyoming identifies the firm as FRNT reserve attestor and an RWA issuer assurance provider. Its own documentation separately describes LedgerLens RWA reserve-data APIs; those oracle APIs themselves are non-attest services."
+  }
+]
