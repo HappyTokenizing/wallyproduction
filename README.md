@@ -34,6 +34,10 @@ Production uses the existing `X_BEARER_TOKEN` and private `BLOB_READ_WRITE_TOKEN
 
 Initial accounts are `@WALLY_DAO` and `@ZeusRWA`. On first connection, permanent X user IDs are saved under `x-articles/v1/accounts/`. Later lookups use these IDs, so renaming WALLY to `@HerdCollection` keeps the same feed. The displayed handle refreshes within about seven hours of a rename, on the next visit. Optional `X_WALLY_USERNAME` / `X_ZEUS_USERNAME` configure initial discovery only; changing a stored account identity requires a deliberate migration. Cached article data lives in the same private Blob store, under `x-articles/v1/`, independently of deployments.
 
+## Wally's RWA Textbook (/guide)
+
+`/guide/` is a static, self-contained build of *Wally's RWA Textbook* in three forms. The film plays live in a canvas with its soundtrack. *Tokens, Please* is a customs-desk game: 11 shifts and 48 cases, each checked against the book. The reader has the full 48 lessons, search and a ▶ watch link per page. `guide/` is build output from the source project `~/Desktop/Claude files/wally-rwa-guide` (`python3 tools/build_site.py --sync`), so edit the source and rebuild rather than editing these files by hand. Like every page, it loads `assets/terminology.js` and `assets/analytics.js`. The homepage links it from a CTA bar under Research Reports and from the footer. The film's MP4 masters are not in the repo (they exceed GitHub's 100 MB limit, and the page doesn't need them).
+
 ## Editorial terminology
 
 Use **onchain** without a dash throughout website copy (capitalized **Onchain** at the start of a sentence). The shared `assets/terminology.js` display rule also normalizes incoming text from news and X articles, including Unicode dash variants, without changing source URLs or stored originals. The news category **On-Chain & Protocol** is displayed and filtered as **Protocol**. Load this shared script on any new HTML page.

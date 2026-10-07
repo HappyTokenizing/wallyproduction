@@ -1,0 +1,2 @@
+// GENERATED list of raster assets the film preloads (paths relative to K.ASSET_BASE)
+window.FILM_ASSETS = {"logos": ["apollo", "balcony", "blackrock", "blocksquare", "centrifuge", "centrifuge2", "figure", "franklin", "libeara", "lofty", "maple", "matrixdock", "ondo", "paxg", "propy", "securitize", "spiko", "superstate", "xaut"], "herd": ["_incept1on", "diegoxyz", "happytokenizing", "harrytran_rwa", "pavelyurichrwa", "raybuckton", "rwafoundation_", "rwallama", "scofieldonchain", "steinrwa", "zeusrwa", "zinnresearch"]};

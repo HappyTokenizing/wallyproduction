@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>/* relative asset paths need the trailing slash: /guide -> /guide/ */ if (location.pathname === '/guide') location.replace('/guide/' + location.search + location.hash);</script>
+<script src="/assets/terminology.js"></script>
+<script defer src="/assets/analytics.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Wally's RWA Textbook · RWA Foundation</title>
+<meta name="description" content="The whole 49-page Wally's RWA Textbook as a nine-minute film, a customs-desk game (Tokens, Please) and a book you can actually finish. Tokenized real-world assets, explained. No price calls. No hopium.">
+<link rel="canonical" href="https://rwaf.xyz/guide/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wally's RWA Textbook: watch it, play it, read it">
+<meta property="og:description" content="49 pages on tokenized real-world assets. A 4-minute film, a game called Tokens, Please, and the full book. No price calls. No hopium.">
+<meta property="og:image" content="https://rwaf.xyz/guide/assets/og.jpg">
+<meta property="og:url" content="https://rwaf.xyz/guide/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@RWAFoundation_">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" href="fonts/Lora-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Archivo-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="guide.css">
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<a class="skip" href="#watch">Skip to the film</a>
+
+<nav class="nav" aria-label="Guide">
+  <div class="nav-in">
+    <a class="nav-brand" href="/"><img src="assets/rwaf-mark.png" alt="" width="40" height="30"><span>RWA&nbsp;Foundation</span></a>
+    <div class="nav-links">
+      <a href="#watch" data-spy="watch">Watch</a>
+      <a href="#play" data-spy="play">Play</a>
+      <a href="#read" data-spy="read">Read</a>
+      <a href="#herd" data-spy="herd">The Herd</a>
+    </div>
+    <a class="pill" href="/">MAIN SITE</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-art" aria-hidden="true">
+    <div class="book-cover"><div class="bc-series">AN ONCHAIN EDUCATION SERIES</div><div class="bc-t1">WALLY'S</div><div class="bc-t2">RWA TEXTBOOK</div><div class="bc-wally" id="bc-wally"></div><div class="bc-foot"><span>SPONSORED BY RWA FOUNDATION</span><span>@WALLY_DAO</span></div></div>
+    <canvas class="hero-wally" id="hero-wally" width="380" height="460"></canvas>
+  </div>
+  <div class="wrap hero-in">
+    <div class="eyebrow">AN ONCHAIN EDUCATION SERIES · RWA FOUNDATION</div>
+    <h1 class="cover-title"><span class="ct1">WALLY'S</span><span class="ct2">RWA TEXTBOOK</span></h1>
+    <p class="lede">All 49 pages on tokenized real-world assets, as a <b>nine-minute film</b>, a customs-desk game called <b>Tokens, Please</b>, and <b>a book you can actually finish</b>. No price calls. No hopium.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#watch" data-act="play-film"><span class="btn-ico">▶</span> Watch the film <span class="btn-sub" id="dur-label">4:17</span></a>
+      <a class="btn" href="#play">Play Tokens, Please</a>
+      <a class="btn" href="#read">Read the book</a>
+    </div>
+    <ul class="stats" aria-label="The book in numbers">
+      <li><b>49</b><span>pages</span></li><li><b>11</b><span>chapters</span></li><li><b>48</b><span>lessons</span></li><li><b>1</b><span>elephant</span></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section id="watch" class="sec sec-film" aria-label="The film">
+    <div class="wrap">
+      <div class="player" id="player" tabindex="0" aria-label="Wally's RWA Textbook, the film. Press space to play or pause.">
+        <canvas id="film" width="1920" height="1080" aria-hidden="true"></canvas>
+        <button class="big-play" id="big-play" aria-label="Play the film"><span class="bp-ring"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="bp-text">Watch the whole book <em id="dur-label2">4:17</em></span></button>
+        <div class="p-loading" id="p-loading">Loading the book…</div>
+        <div class="controls" id="controls">
+          <button class="c-btn" id="c-play" aria-label="Play"><svg viewBox="0 0 24 24"><path class="i-play" d="M8 5.5v13l11-6.5z"/><path class="i-pause" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
+          <span class="c-time"><span id="c-cur">0:00</span> / <span id="c-dur">4:17</span></span>
+          <div class="c-scrub" id="c-scrub"><div class="c-ticks" id="c-ticks"></div><div class="c-fill" id="c-fill"></div><input id="c-range" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek"></div>
+          <button class="c-btn" id="c-mute" aria-label="Mute"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="i-on" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="i-off" d="M16 9l6 6M22 9l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+          <button class="c-btn" id="c-full" aria-label="Full screen"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+        </div>
+      </div>
+      <div class="film-under">
+        <div class="now" id="now" aria-live="polite"></div>
+        <div class="chapters" id="chapters" role="list" aria-label="Jump to a chapter"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="play" class="sec sec-game" aria-label="Tokens, Please">
+    <div class="wrap">
+      <div class="sec-head on-dark">
+        <div class="eyebrow">THE GAME</div>
+        <h2>Tokens, Please.</h2>
+        <p>You're the new inspector at <b>Onchain Customs</b>. Tokens queue up to get into the Herd's wallet. Read their paperwork, check it against the rulebook (the textbook), and stamp it. Wally is your supervisor. He has notes.</p>
+      </div>
+      <div id="tp" class="tp" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="read" class="sec sec-read" aria-label="The textbook">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">THE BOOK</div>
+        <h2>Read the whole thing.</h2>
+        <p>All 48 lessons, word for word, plus Wally's margin notes at no extra charge. Every page has a <b>▶ watch</b> button that jumps the film to that lesson.</p>
+      </div>
+      <div class="reader">
+        <aside class="toc" id="toc" aria-label="Chapters"></aside>
+        <div class="read-main">
+          <div class="read-tools">
+            <div class="seg" role="tablist" aria-label="View">
+              <button role="tab" aria-selected="true" data-view="pages">Pages</button>
+              <button role="tab" aria-selected="false" data-view="points">The 48 Points</button>
+            </div>
+            <label class="search"><span class="sr">Search the book</span><input id="q" type="search" placeholder="Search the book: tranche, custody, oracle…" autocomplete="off"></label>
+          </div>
+          <div id="pages" class="pages"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="herd" class="sec sec-herd" aria-label="The Herd">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">THE HERD · PAGE 49</div>
+        <h2>RWA Bulls.</h2>
+        <p>Forty-eight pages of reading done. Now go follow these twelve.</p>
+      </div>
+      <div class="herd" id="herd-grid"></div>
+      <p class="herd-close">The book stops at page 49. <em>The herd keeps moving.</em></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap f-in">
+    <div class="f-brand"><img src="assets/rwaf-mark-white.png" alt="" width="53" height="40"><div><div class="t1">WALLY'S RWA TEXTBOOK</div><div class="t2">SPONSORED BY RWA FOUNDATION · @WALLY_DAO</div></div></div>
+    <div class="f-right"><a href="/">RWAF.XYZ</a><a href="/research/">RESEARCH</a><a href="https://x.com/WALLY_DAO" target="_blank" rel="noopener">@WALLY_DAO</a><a href="https://x.com/RWAFoundation_" target="_blank" rel="noopener">@RWAFOUNDATION_</a></div>
+  </div>
+  <div class="wrap f-note">Educational content only. Not financial, legal or investment advice. Tokens, issuers and numbers in the film and the game are fictional and illustrative unless named in the book. Company names appear as examples from the textbook, not endorsements.</div>
+</footer>
+
+<script src="film/wally-rig.js"></script>
+<script src="film/headmark.js"></script>
+<script src="film/assets.js"></script>
+<script src="film/timeline.js"></script>
+<script src="film/kit.js"></script>
+<script>K.ASSET_BASE = 'assets/';</script>
+<script src="film/icons.js"></script>
+<script src="film/scenes/intro.js"></script>
+<script src="film/scenes/ch01.js"></script>
+<script src="film/scenes/ch02.js"></script>
+<script src="film/scenes/ch03.js"></script>
+<script src="film/scenes/ch04.js"></script>
+<script src="film/scenes/ch05.js"></script>
+<script src="film/scenes/ch06.js"></script>
+<script src="film/scenes/ch07.js"></script>
+<script src="film/scenes/ch08.js"></script>
+<script src="film/scenes/ch09.js"></script>
+<script src="film/scenes/ch10.js"></script>
+<script src="film/scenes/ch11.js"></script>
+<script src="film/scenes/outro.js"></script>
+<script src="film/ads.js"></script>
+<script src="film/engine.js"></script>
+<script src="data/book.js"></script>
+<script src="data/cases.js"></script>
+<script src="game.js"></script>
+<script src="guide.js"></script>
+</body>
+</html>
