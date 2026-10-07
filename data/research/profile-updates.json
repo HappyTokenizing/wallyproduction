@@ -1,0 +1,144 @@
+{
+  "rwaf-orca": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.orca.so/",
+        "title": "Orca: Solana liquidity infrastructure"
+      }
+    ],
+    "evidenceNote": "Reviewed the official source and updated the existing canonical profile; no duplicate company entry was created.",
+    "aliases": [],
+    "addCategories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "website": "https://www.orca.so/",
+    "domain": "orca.so",
+    "kind": "Exchange protocol",
+    "description": "Solana exchange and liquidity infrastructure with token swaps, liquidity pools and vaults.",
+    "directoryStatus": "current",
+    "statusNote": null
+  },
+  "jpmorgan": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.jpmorgan.com/kinexys/index",
+        "title": "J.P. Morgan: Kinexys"
+      }
+    ],
+    "evidenceNote": "Reviewed the official source and updated the existing canonical profile; no duplicate company entry was created.",
+    "aliases": [
+      "JPMorgan",
+      "JP Morgan",
+      "Kinexys"
+    ],
+    "addCategories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ]
+  },
+  "reserve-rights": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://reserve.org/",
+        "title": "Reserve: Protocol and decentralized token funds"
+      }
+    ],
+    "evidenceNote": "Reviewed the official source and updated the existing canonical profile; no duplicate company entry was created.",
+    "aliases": [
+      "Reserve Protocol"
+    ],
+    "addCategories": [],
+    "description": "Protocol for asset-backed token baskets called decentralized token funds, with index and yield strategies and RSR-based governance."
+  },
+  "chainlink": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://chain.link/cross-chain",
+        "title": "Chainlink: Cross-Chain Interoperability Protocol"
+      }
+    ],
+    "evidenceNote": "Reviewed the official source and updated the existing canonical profile; no duplicate company entry was created.",
+    "aliases": [
+      "Chainlink CCIP",
+      "CCIP"
+    ],
+    "addCategories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Interoperability"
+      }
+    ],
+    "description": "Decentralized oracle infrastructure connecting smart contracts with external data, plus the CCIP protocol for cross-chain messaging and token transfers."
+  },
+  "xrp-ledger": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://xrpl.org/",
+        "title": "XRP Ledger: Blockchain"
+      }
+    ],
+    "evidenceNote": "Reviewed the official source and updated the existing canonical profile; no duplicate company entry was created.",
+    "aliases": [
+      "XRPL"
+    ],
+    "addCategories": []
+  },
+  "ondo-finance": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://ondo.finance/blog/introducing-the-ondo-network",
+        "title": "Ondo: Network and live Perps products"
+      }
+    ],
+    "evidenceNote": "Reviewed the official source and updated the existing canonical profile; no duplicate company entry was created.",
+    "aliases": [
+      "Ondo Perps"
+    ],
+    "addCategories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "description": "Provider of tokenized Treasury and stock products, alongside Ondo Perps for derivatives exposure. Perpetual contracts are distinct from ownership of tokenized securities."
+  },
+  "cap": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.cap.app/",
+        "title": "Cap: Credit and stablecoin platform"
+      }
+    ],
+    "evidenceNote": "Reviewed the official source and updated the existing canonical profile; no duplicate company entry was created.",
+    "aliases": [
+      "Cap Protocol"
+    ],
+    "addCategories": [],
+    "description": "Platform connecting dollar-denominated yield, private credit and financial guarantees through its stablecoin and lending infrastructure."
+  },
+  "archblock": {
+    "checkedOn": "2026-10-07",
+    "failedInitiative": true,
+    "sources": [
+      {
+        "url": "https://cases.stretto.com/public/x514/14527/PLEADINGS/1452703122680000000212.pdf",
+        "title": "Archblock: Chapter 11 creditor notice"
+      }
+    ],
+    "evidenceNote": "Archblock\u2019s official website reports ceased operations and Chapter 11 bankruptcy; the court notice confirms the proceeding. This explicitly documented failure is distinct from unverified historical records.",
+    "aliases": [],
+    "addCategories": []
+  }
+}

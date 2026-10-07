@@ -1,4 +1,4 @@
-import {filterProfiles,memberFor,safeURL,websiteFor} from './ecosystem-model.js';
+import {filterProfiles,memberFor,safeURL,websiteFor,memberCount} from './ecosystem-model.js';
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const label={current:'Current',historical:'Historical',review:'Review pending'};
 let pending;
@@ -13,17 +13,17 @@ export async function mountEcosystem(mount, options) {
   const members=()=>options.getMembers?.()||[];
   const counts=Object.fromEntries(['current','historical','review'].map(s=>[s,data.profiles.filter(p=>p.directoryStatus===s).length]));
   mount.innerHTML=`<div class="ec-directory">
-    <div class="ec-summary"><div><strong>${data.profiles.length}</strong><span>unique profiles</span></div><div><strong>${counts.current}</strong><span>current profiles</span></div><div><strong>${counts.historical}</strong><span>historical initiatives</span></div><div><strong>${counts.review}</strong><span>existing entries for review</span></div></div>
+    <div class="ec-summary"><div><strong>${data.profiles.length}</strong><span>Total Companies</span></div><div><strong>${counts.current}</strong><span>Active Companies</span></div><div title="Only explicitly documented failures are counted; historical or retired products are not automatically failures."><strong>${data.profiles.filter(p=>p.failedInitiative===true).length}</strong><span>Failed Initiatives</span></div><div><strong data-member-count>${memberCount(members())}</strong><span>RWAF Members</span></div></div>
     <div class="ec-toolbar"><div class="ec-views" role="group" aria-label="Directory view"><button data-view="directory" aria-pressed="true">Directory</button><button data-view="map" aria-pressed="false">Ecosystem map</button></div><label class="ec-search">Search<input type="search" placeholder="Search all companies and initiatives" aria-label="Search ecosystem"></label></div>
     <div class="ec-filters"><label>Status<select aria-label="Profile status"><option value="current">Current (${counts.current})</option><option value="all">All profiles (${data.profiles.length})</option><option value="historical">Historical (${counts.historical})</option><option value="review">Review pending (${counts.review})</option></select></label><label>Sector<select aria-label="Ecosystem sector"><option value="all">All sectors</option>${data.sections.filter(s=>s.name!=='Historical').map(s=>`<option value="${escape(s.name)}">${escape(s.name)}</option>`).join('')}</select></label><label class="ec-members"><input type="checkbox">RWAF Members</label><button class="ec-clear" data-clear>Clear filters</button></div>
     <p class="ec-result" role="status" aria-live="polite"></p><div class="ec-results"></div>
-    <footer class="ec-attribution">Expanded: ${escape(data.snapshotDate)}. Current status reflects the dated source review, not continuous monitoring. Historical records preserve individual initiatives and do not necessarily indicate company closure. Institutional profiles include documented pilots and past issuances; inclusion does not imply a currently available product.<br>Original directory curated by Ray Buckton / RWA News Today, drawing on RWA World, RWA.io and company references (snapshot ${escape(data.upstreamSnapshotDate)}). Expanded by RWA Foundation with official references linked in each new profile. Company names and logos belong to their respective owners. <a href="${escape(data.source)}" target="_blank" rel="noopener noreferrer">Source repository ↗</a></footer>
+    <footer class="ec-attribution">Expanded: ${escape(data.snapshotDate)}. Current status reflects the dated source review, not continuous monitoring. The Failed Initiatives total counts explicitly documented failures only. Historical records also include retired or unverified initiatives and do not necessarily indicate company closure. Institutional profiles include documented pilots and past issuances; inclusion does not imply a currently available product.<br>Original directory curated by Ray Buckton / RWA News Today, drawing on RWA World, RWA.io and company references (snapshot ${escape(data.upstreamSnapshotDate)}). Expanded by RWA Foundation with official references linked in each new profile. Company names and logos belong to their respective owners. <a href="${escape(data.source)}" target="_blank" rel="noopener noreferrer">Source repository ↗</a></footer>
     <dialog class="ec-dialog" aria-labelledby="ec-profile-title"><div class="ec-dialog-bar"><span>Company profile</span><button data-close aria-label="Close company profile">×</button></div><div class="ec-profile"></div></dialog>
   </div>`;
   const root=mount.querySelector('.ec-directory'), results=root.querySelector('.ec-results'), dialog=root.querySelector('dialog');
   function logo(p){
     const member=memberFor(p,members());
-    const custom=member?.icon||member?.src;
+    const custom=p.logo?.useForMembers?'':member?.icon||member?.src;
     const bundled=p.logo?.src?.startsWith('/ecosystem/')&&!p.logo.src.includes('..')?p.logo.src:'';
     const src=custom||bundled;
     const treatment=!custom?p.logo?.treatment:'';
@@ -32,6 +32,8 @@ export async function mountEcosystem(mount, options) {
   function badges(p){return `${memberFor(p,members())?'<span class="ec-member-badge">★ RWAF Member</span>':''}${p.directoryStatus!=='current'?`<span class="ec-status-badge">${label[p.directoryStatus]}</span>`:''}`;}
   function paint(){
     const roster=members(), hits=filterProfiles(data.profiles,state,roster), ids=new Set(hits.map(p=>p.id));
+    const order=new Map(hits.map((p,i)=>[p.id,i]));
+    root.querySelector('[data-member-count]').textContent=memberCount(roster);
     root.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===state.view)));
     root.querySelector('.ec-result').textContent=`${hits.length} unique ${hits.length===1?'profile':'profiles'}${state.view==='directory'?` · Showing ${Math.min(state.limit,hits.length)}`:' · Category placements link to the same company profile'}`;
     if(!hits.length){results.innerHTML='<div class="ec-empty">No matching profiles. Try All profiles or clear your filters.</div>';return;}
@@ -39,7 +41,7 @@ export async function mountEcosystem(mount, options) {
       results.innerHTML=`<div class="ec-list">${hits.slice(0,state.limit).map(p=>`<button class="ec-row ${memberFor(p,roster)?'is-member':''}" data-profile="${escape(p.id)}">${logo(p)}<span class="ec-row-main"><span class="ec-row-name">${escape(p.name)} ${badges(p)}</span><span class="ec-description">${escape(p.description)}</span><span class="ec-category">${escape(p.categories.map(c=>c.name).join(' · '))}</span></span><span class="ec-arrow" aria-hidden="true">↗</span></button>`).join('')}</div>${hits.length>state.limit?`<button class="ec-more" data-more>Show ${Math.min(50,hits.length-state.limit)} more profiles</button>`:''}`;
     }else{
       results.innerHTML=`<div class="ec-map">${data.sections.filter(s=>state.section==='all'||s.name===state.section).map(s=>{
-        const cats=s.categories.map(c=>({...c,ids:[...new Set(c.ids)].filter(id=>ids.has(id))})).filter(c=>c.ids.length);
+        const cats=s.categories.map(c=>({...c,ids:[...new Set(c.ids)].filter(id=>ids.has(id)).sort((a,b)=>order.get(a)-order.get(b))})).filter(c=>c.ids.length);
         if(!cats.length)return '';
         return `<section class="ec-map-section ${s.name==='Tokenization'?'ec-map-wide':''}"><h2>${escape(s.name)}</h2>${cats.map(c=>`<div class="ec-map-category"><h3>${escape(c.name)} <span>${c.ids.length}</span></h3><div class="ec-map-tiles">${c.ids.map(id=>{const p=byId.get(id);return `<button class="ec-tile ${memberFor(p,roster)?'is-member':''}" data-profile="${escape(id)}" aria-label="${escape(p.name)}"><span>${logo(p)}${memberFor(p,roster)?'<span class="ec-map-star" title="RWAF Member">★</span>':''}</span><span>${escape(p.name)}</span></button>`;}).join('')}</div></div>`).join('')}</section>`;
       }).join('')}</div>`;

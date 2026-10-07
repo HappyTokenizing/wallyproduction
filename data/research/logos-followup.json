@@ -1,0 +1,287 @@
+{
+  "sky": {
+    "src": "/ecosystem/sky-official-followup-20261007.svg",
+    "background": "dark",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/69a087b704bd54891a523a0f/69a9fb4af4882ca5ddc2cdfd_Sky-Logo-Monochrome.svg",
+    "sourcePage": "https://sky.money/",
+    "checkedOn": "2026-10-07",
+    "useForMembers": true
+  },
+  "aave": {
+    "src": "/ecosystem/aave-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://aave.com/favicon.png",
+    "sourcePage": "https://aave.com/",
+    "checkedOn": "2026-10-07",
+    "useForMembers": true
+  },
+  "securitize": {
+    "src": "/ecosystem/securitize-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://securitize.io/favicon.svg",
+    "sourcePage": "https://securitize.io/",
+    "checkedOn": "2026-10-07",
+    "useForMembers": true
+  },
+  "franklin-templeton": {
+    "src": "/ecosystem/franklin-templeton-official-followup-20261007.webp",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://franklintempletonprod.widen.net/content/hrxzxi4q8b/webp/ft-global-logo-header.png",
+    "sourcePage": "https://www.franklintempleton.com/",
+    "checkedOn": "2026-10-07",
+    "useForMembers": true
+  },
+  "xstocks": {
+    "src": "/ecosystem/xstocks-official-followup-20261007.svg",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://xstocks.com/favicon.svg",
+    "sourcePage": "https://xstocks.com/us",
+    "checkedOn": "2026-10-07",
+    "useForMembers": true
+  },
+  "rwa-nova": {
+    "src": "/ecosystem/rwa-nova-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://rwanova.io/images/common/header-logo.svg",
+    "sourcePage": "https://rwanova.io/",
+    "checkedOn": "2026-10-07",
+    "useForMembers": true
+  },
+  "rwaf-orca": {
+    "src": "/ecosystem/rwaf-orca-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.orca.so/images/favicon.png",
+    "sourcePage": "https://www.orca.so/",
+    "checkedOn": "2026-10-07"
+  },
+  "aerodrome": {
+    "src": "/ecosystem/aerodrome-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://aerodrome.finance/svg/AERO/favicon.svg",
+    "sourcePage": "https://aerodrome.finance/",
+    "checkedOn": "2026-10-07"
+  },
+  "meteora": {
+    "src": "/ecosystem/meteora-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.meteora.ag/icons/v2.svg",
+    "sourcePage": "https://www.meteora.ag/",
+    "checkedOn": "2026-10-07"
+  },
+  "bondi-finance": {
+    "src": "/ecosystem/bondi-finance-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bondifinance.io/favicon.svg",
+    "sourcePage": "https://www.bondifinance.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "hastra": {
+    "src": "/ecosystem/hastra-official-followup-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://hastra.io/favicon.ico",
+    "sourcePage": "https://hastra.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "1inch": {
+    "src": "/ecosystem/1inch-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://1inch.com/favicon/favicon.svg",
+    "sourcePage": "https://1inch.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "3jane": {
+    "src": "/ecosystem/3jane-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.3jane.xyz/logo.png",
+    "sourcePage": "https://www.3jane.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "solstice": {
+    "src": "/ecosystem/solstice-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://solstice.finance/icon.svg?icon.0ghr~r-m87_jm.svg",
+    "sourcePage": "https://solstice.finance/",
+    "checkedOn": "2026-10-07"
+  },
+  "strata-markets": {
+    "src": "/ecosystem/strata-markets-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://strata.markets/favicon.svg",
+    "sourcePage": "https://strata.markets/",
+    "checkedOn": "2026-10-07"
+  },
+  "uniswap": {
+    "src": "/ecosystem/uniswap-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.app.uniswap.org/images/192x192_App_Icon.png",
+    "sourcePage": "https://app.uniswap.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "pact-protocol": {
+    "src": "/ecosystem/pact-protocol-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/8BDW6RdjXRwMDsOSEUpZpdGdCQ4.png",
+    "sourcePage": "https://pactfoundation.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "streamex": {
+    "src": "/ecosystem/streamex-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.streamex.com/favicon.svg",
+    "sourcePage": "https://www.streamex.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "oro-finance": {
+    "src": "/ecosystem/oro-finance-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/mpWRjGImlnPXeYqOXU31Yp1BDo.png",
+    "sourcePage": "https://www.oro.finance/",
+    "checkedOn": "2026-10-07"
+  },
+  "pharos": {
+    "src": "/ecosystem/pharos-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67dbfb55a03319f79c3c7c12/68c299b617eb7d3b69938de3_Favicon%20_symbol%20icon_color.png",
+    "sourcePage": "https://www.pharos.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "multipli": {
+    "src": "/ecosystem/multipli-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/S0AuX6KtcK8D1TLLCl2og0uhUY8.png",
+    "sourcePage": "https://multipli.fi/",
+    "checkedOn": "2026-10-07"
+  },
+  "pleasing-gold": {
+    "src": "/ecosystem/pleasing-gold-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.pleasingmarket.com/images/logo/logo_fav.svg",
+    "sourcePage": "https://www.pleasingmarket.com/tokens/pgold",
+    "checkedOn": "2026-10-07"
+  },
+  "trade-xyz": {
+    "src": "/ecosystem/trade-xyz-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://trade.xyz/icons/favicon.png",
+    "sourcePage": "https://trade.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "variational": {
+    "src": "/ecosystem/variational-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.variational.io/apple-icon.png?apple-icon.0j9kp04i.4uni.png",
+    "sourcePage": "https://www.variational.io/en",
+    "checkedOn": "2026-10-07"
+  },
+  "qfex": {
+    "src": "/ecosystem/qfex-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.qfex.io/favicon2.svg",
+    "sourcePage": "https://www.qfex.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "gmtrade": {
+    "src": "/ecosystem/gmtrade-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://gmtrade.xyz/favicon/favicon-32x32.svg",
+    "sourcePage": "https://gmtrade.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "lighter": {
+    "src": "/ecosystem/lighter-official-followup-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://app.lighter.xyz/apple-touch-icon.png",
+    "sourcePage": "https://app.lighter.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "extended": {
+    "src": "/ecosystem/extended-official-followup-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/VgSPD6KMlQwC4OFot36eciJWM.svg",
+    "sourcePage": "https://extended.exchange/",
+    "checkedOn": "2026-10-07"
+  },
+  "entropy": {
+    "src": "/ecosystem/entropy-official-followup-20261007.svg",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://entropy.io/favicon.svg?v=entropy-9",
+    "sourcePage": "https://entropy.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "paragon": {
+    "src": "/ecosystem/paragon-official-followup-20261007.png",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://paragon.trade/apple-touch-icon.png",
+    "sourcePage": "https://paragon.trade/",
+    "checkedOn": "2026-10-07"
+  },
+  "edgex": {
+    "src": "/ecosystem/edgex-official-followup-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://pro.edgex.exchange/favicon.ico",
+    "sourcePage": "https://pro.edgex.exchange/",
+    "checkedOn": "2026-10-07"
+  }
+}

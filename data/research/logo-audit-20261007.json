@@ -1,0 +1,92 @@
+{
+  "checkedOn": "2026-10-07",
+  "totalProfiles": 1084,
+  "profilesWithLogo": 1070,
+  "activeProfilesWithoutLogo": 0,
+  "unresolved": [
+    {
+      "id": "daylight-energy-by-anode-labs",
+      "name": "Daylight Energy (by Anode Labs)",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "frictionless-markets",
+      "name": "Frictionless Markets",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "harbor-trade",
+      "name": "Harbor Trade",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "mohash",
+      "name": "Mohash",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "purplefi",
+      "name": "PurpleFi",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "alta-finance",
+      "name": "Alta Finance",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "horly-app",
+      "name": "Horly.app",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "lopo-finance",
+      "name": "LoPo Finance",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "ubuntu-glamping-ugst",
+      "name": "Ubuntu Glamping $UGST",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "vanbex",
+      "name": "Vanbex",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "remora-markets",
+      "name": "Remora Markets",
+      "status": "historical",
+      "reason": "Historical record without a verified archived logo; former domains remain blocked."
+    },
+    {
+      "id": "rwaf-sqft",
+      "name": "SQFT",
+      "status": "review",
+      "reason": "Identity or logo source not sufficiently verified; retain initials rather than substitute another organization."
+    },
+    {
+      "id": "rwaf-steelwave",
+      "name": "SteelWave Digital",
+      "status": "review",
+      "reason": "Identity or logo source not sufficiently verified; retain initials rather than substitute another organization."
+    },
+    {
+      "id": "rwaf-parc",
+      "name": "PARC-3643",
+      "status": "review",
+      "reason": "Identity or logo source not sufficiently verified; retain initials rather than substitute another organization."
+    }
+  ]
+}

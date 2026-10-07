@@ -1,0 +1,696 @@
+[
+  {
+    "id": "aerodrome",
+    "name": "Aerodrome",
+    "kind": "Exchange protocol",
+    "description": "Trading and liquidity protocol on Base, with token swaps, liquidity pools and AERO-based incentives.",
+    "website": "https://aerodrome.finance/",
+    "domain": "aerodrome.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://aerodrome.finance/docs",
+        "title": "Aerodrome: About the protocol"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "Aero",
+      "Aerodrome Finance"
+    ]
+  },
+  {
+    "id": "meteora",
+    "name": "Meteora",
+    "kind": "Liquidity infrastructure",
+    "description": "Solana liquidity infrastructure providing dynamic liquidity market makers, automated market makers and token-launch liquidity tools.",
+    "website": "https://www.meteora.ag/",
+    "domain": "meteora.ag",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.meteora.ag/get-started",
+        "title": "Meteora: Getting started"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "base-chain",
+    "name": "Base Chain",
+    "kind": "Blockchain",
+    "description": "Coinbase-built Ethereum layer 2 supporting payments, stablecoins, tokenized assets and onchain applications. Separate from the Base App wallet.",
+    "website": "https://www.base.org/",
+    "domain": "base.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.base.org/",
+        "title": "Base: Blockchain for the global economy"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "Base Chain by Coinbase",
+      "Base blockchain"
+    ],
+    "relatedEntities": [
+      {
+        "id": "base",
+        "name": "Base App / Coinbase Wallet"
+      }
+    ]
+  },
+  {
+    "id": "bondi-finance",
+    "name": "Bondi Finance",
+    "kind": "Tokenization platform",
+    "description": "Platform for tokenized corporate bonds, connecting bond issuance and redemption with onchain secondary-market trading.",
+    "website": "https://www.bondifinance.io/",
+    "domain": "bondifinance.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://app.bondifinance.io/",
+        "title": "Bondi Finance: Tokenized bond platform"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "hastra",
+    "name": "Hastra",
+    "kind": "Credit platform",
+    "description": "DeFi platform connecting tokenized yield products to Figure\u2019s lending infrastructure, including home-equity and consumer-loan exposure.",
+    "website": "https://hastra.io/",
+    "domain": "hastra.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Lending"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://hastra.io/",
+        "title": "Hastra: Credit and yield products"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "HastraFi"
+    ]
+  },
+  {
+    "id": "1inch",
+    "name": "1inch",
+    "kind": "Exchange aggregator",
+    "description": "Decentralized exchange aggregation and cross-chain swap infrastructure, with routing and developer tools for onchain liquidity.",
+    "website": "https://1inch.com/",
+    "domain": "1inch.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://1inch.com/",
+        "title": "1inch: Swap and developer infrastructure"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "3jane",
+    "name": "3Jane",
+    "kind": "Credit protocol",
+    "description": "Credit platform connecting lending facilities and credit lines to USD3, a credit-backed dollar, and its yield products.",
+    "website": "https://www.3jane.xyz/",
+    "domain": "3jane.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Lending"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.3jane.xyz/",
+        "title": "3Jane: Credit-backed dollars and lending"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "solstice",
+    "name": "Solstice",
+    "kind": "Stablecoin and yield protocol",
+    "description": "Solana-based protocol with the USX settlement asset and yield vaults providing access to hedged and structured-credit strategies. Strategies have different eligibility and redemption terms.",
+    "website": "https://solstice.finance/",
+    "domain": "solstice.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Builders"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://website.prod.solsticelabs.io/",
+        "title": "Solstice: USX and yield infrastructure"
+      }
+    ],
+    "evidenceNote": "Reviewed the Solstice Labs product site and its linked Solstice application; distinguishes live vaults from products described as coming soon.",
+    "aliases": [
+      "Solstice Finance"
+    ]
+  },
+  {
+    "id": "strata-markets",
+    "name": "Strata Markets",
+    "kind": "Structured yield protocol",
+    "description": "Risk-tranching protocol separating yield-bearing assets into senior and junior positions, with initial products built around Ethena\u2019s USDe.",
+    "website": "https://strata.markets/",
+    "domain": "strata.markets",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Lending"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.strata.markets/",
+        "title": "Strata: Protocol documentation"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "Strata"
+    ]
+  },
+  {
+    "id": "uniswap",
+    "name": "Uniswap",
+    "kind": "Exchange protocol",
+    "description": "Automated-market-maker protocols for token swaps and liquidity provision, with programmable pools and routing infrastructure.",
+    "website": "https://uniswap.org/",
+    "domain": "uniswap.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://developers.uniswap.org/docs/protocols/overview",
+        "title": "Uniswap: Protocols overview"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "pact-protocol",
+    "name": "Pact",
+    "kind": "Credit tokenization protocol",
+    "description": "Protocol for originating, financing and managing credit onchain, including tokenized loan books, facilities and funds.",
+    "website": "https://pactfoundation.com/",
+    "domain": "pactfoundation.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pactfoundation.com/protocol",
+        "title": "Pact Foundation: Credit protocol"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "Pact Protocol",
+      "Pact Foundation"
+    ]
+  },
+  {
+    "id": "bstocks",
+    "name": "bStocks",
+    "kind": "Tokenized securities product",
+    "description": "Binance-distributed tokenized securities issued by BTECH Holdings, backed by underlying US stocks. The certificates provide an interest in issuer-held securities rather than direct share ownership.",
+    "website": "https://www.binance.com/en/square/post/332985203672465",
+    "domain": "binance.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.binance.com/en/square/post/332985203672465",
+        "title": "Binance: bStocks launch announcement"
+      }
+    ],
+    "evidenceNote": "Distinct tokenized-securities product of the Binance group; retained separately from Binance\u2019s company profile, with a documented parent relationship.",
+    "aliases": [],
+    "parentProfileId": "binance",
+    "relatedEntities": [
+      {
+        "id": "binance",
+        "name": "Binance"
+      }
+    ]
+  },
+  {
+    "id": "streamex",
+    "name": "Streamex",
+    "kind": "Commodity tokenization platform",
+    "description": "Commodity tokenization company developing onchain access to real-world assets, including the GLDY gold-backed security.",
+    "website": "https://www.streamex.com/",
+    "domain": "streamex.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ir.streamex.com/news-releases/news-release-details/streamex-corp-announces-gldy-now-live-and-available-purchase",
+        "title": "Streamex: GLDY launch"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "StreamEx",
+      "Streamex Corp"
+    ]
+  },
+  {
+    "id": "oro-finance",
+    "name": "Oro Finance",
+    "kind": "Gold tokenization platform",
+    "description": "Platform for acquiring and using GOLD tokens backed by vaulted physical gold, with product terms governing holding and redemption.",
+    "website": "https://www.oro.finance/",
+    "domain": "oro.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://app.oro.finance/",
+        "title": "Oro: Gold platform"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "Oro Finance (Gold)",
+      "Oro Gold"
+    ]
+  },
+  {
+    "id": "pharos",
+    "name": "Pharos",
+    "kind": "Blockchain",
+    "description": "Layer 1 blockchain infrastructure designed for real-world assets, financial applications and stablecoin settlement.",
+    "website": "https://www.pharos.xyz/",
+    "domain": "pharos.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pharos.xyz/",
+        "title": "Pharos: Real-world asset infrastructure"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "Pharos Network"
+    ]
+  },
+  {
+    "id": "multipli",
+    "name": "Multipli",
+    "kind": "Collateral and yield infrastructure",
+    "description": "Protocol connecting tokenized real-world assets to collateralization and yield strategies, including its rwaUSD collateral infrastructure.",
+    "website": "https://multipli.fi/",
+    "domain": "multipli.fi",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Lending"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://multipli.fi/",
+        "title": "Multipli: RWA collateral and yield infrastructure"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "pleasing-gold",
+    "name": "Pleasing Gold",
+    "kind": "Gold tokenization platform",
+    "description": "PGOLD token offers exposure to vaulted gold, with physical redemption subject to the issuer\u2019s eligibility, fees and service terms.",
+    "website": "https://www.pleasingmarket.com/tokens/pgold",
+    "domain": "pleasingmarket.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.pleasingmarket.com/tokens/pgold",
+        "title": "Pleasing Market: PGOLD"
+      }
+    ],
+    "evidenceNote": "Reviewed the official PGOLD product and Pleasing documentation; does not imply guaranteed returns or unrestricted redemption.",
+    "aliases": [
+      "Pleasing Golden",
+      "PGOLD"
+    ]
+  },
+  {
+    "id": "trade-xyz",
+    "name": "Trade.xyz",
+    "kind": "Perpetuals platform",
+    "description": "Hyperliquid-based perpetual markets covering stocks, equity indices, commodities, currencies and pre-IPO exposure. These are derivatives, not ownership of the underlying assets.",
+    "website": "https://trade.xyz/",
+    "domain": "trade.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.trade.xyz/",
+        "title": "trade[XYZ]: Products and perpetual markets"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "trade[XYZ]"
+    ]
+  },
+  {
+    "id": "variational",
+    "name": "Variational",
+    "kind": "Derivatives protocol",
+    "description": "Peer-to-peer derivatives infrastructure powering Omni perpetuals across crypto, stocks, commodities and indices, with onchain settlement.",
+    "website": "https://www.variational.io/en",
+    "domain": "variational.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://help.variational.io/en/articles/16038203-funding-rates-for-rwa-tradfi-markets",
+        "title": "Variational: RWA and TradFi perpetual markets"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": [
+      "Variational Omni"
+    ]
+  },
+  {
+    "id": "qfex",
+    "name": "QFEX",
+    "kind": "Perpetuals exchange",
+    "description": "Exchange offering around-the-clock derivatives exposure to US equities, commodities and foreign exchange.",
+    "website": "https://www.qfex.io/",
+    "domain": "qfex.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.qfex.io/",
+        "title": "QFEX: 24/7 markets"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "gmtrade",
+    "name": "GMTrade",
+    "kind": "Perpetuals platform",
+    "description": "Solana-based perpetuals venue focused on real-world-asset markets, providing derivatives exposure rather than underlying asset ownership.",
+    "website": "https://gmtrade.xyz/",
+    "domain": "gmtrade.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://gmtrade.xyz/",
+        "title": "GMTrade: RWA perpetuals on Solana"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "lighter",
+    "name": "Lighter",
+    "kind": "Perpetuals exchange",
+    "description": "Decentralized trading platform with verifiable order matching and liquidations, including perpetual markets for traditional financial assets.",
+    "website": "https://app.lighter.xyz/",
+    "domain": "app.lighter.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.lighter.xyz/trading/real-world-assets-rwas",
+        "title": "Lighter: Real-world asset perpetuals"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "extended",
+    "name": "Extended",
+    "kind": "Perpetuals exchange",
+    "description": "Perpetuals exchange offering crypto and traditional-finance markets, including equity and commodity exposure, within a unified margin system.",
+    "website": "https://extended.exchange/",
+    "domain": "extended.exchange",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.extended.exchange/",
+        "title": "Extended: Exchange and TradFi markets"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "entropy",
+    "name": "Entropy",
+    "kind": "Perpetuals platform",
+    "description": "Hyperliquid-based markets for pre-IPO and other real-world-asset derivatives, using oracle pricing for synthetic market exposure.",
+    "website": "https://entropy.io/",
+    "domain": "entropy.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://blog.redstone.finance/2026/08/24/redstone-live-powers-entropy-pre-ipo-and-rwa-markets-on-hyperliquid/",
+        "title": "RedStone: Entropy pre-IPO and RWA market integration"
+      }
+    ],
+    "evidenceNote": "Primary integration announcement from Entropy\u2019s oracle provider verifies the market offering; the profile links to Entropy\u2019s official interface.",
+    "aliases": []
+  },
+  {
+    "id": "paragon",
+    "name": "Paragon",
+    "kind": "Perpetuals platform",
+    "description": "Hyperliquid-based derivative markets spanning individual equities, pre-IPO exposure, rates and thematic markets.",
+    "website": "https://paragon.trade/",
+    "domain": "paragon.trade",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://paragon.trade/products/",
+        "title": "Paragon: Market products"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "edgex",
+    "name": "edgeX",
+    "kind": "Perpetuals exchange",
+    "description": "Perpetuals trading platform with stock and commodity-linked markets alongside crypto derivatives. Stock perpetuals provide price exposure rather than shareholder rights.",
+    "website": "https://pro.edgex.exchange/",
+    "domain": "pro.edgex.exchange",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://edgexhelp.zendesk.com/hc/en-001/articles/14933736732943-Stock-Perpetual",
+        "title": "edgeX: Stock perpetual markets"
+      }
+    ],
+    "evidenceNote": "Reviewed the project\u2019s official product or technical documentation. Product access and eligibility depend on the offering.",
+    "aliases": []
+  },
+  {
+    "id": "seda-protocol",
+    "name": "SEDA Protocol",
+    "kind": "Oracle infrastructure",
+    "description": "Oracle infrastructure providing customizable data feeds for equities, indices, commodities, pre-IPO assets and market outcomes, including continuous pricing for onchain markets.",
+    "website": "https://www.seda.xyz/",
+    "domain": "seda.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Oracles",
+        "name": "Oracles"
+      }
+    ],
+    "aliases": [
+      "SEDA",
+      "Seda protocol project"
+    ],
+    "sources": [
+      {
+        "url": "https://www.seda.xyz/",
+        "title": "SEDA: Oracle infrastructure for 24/7 markets"
+      }
+    ],
+    "evidenceNote": "Reviewed SEDA\u2019s official Signal, Bundles, Outcomes and Pre-IPO product descriptions."
+  }
+]

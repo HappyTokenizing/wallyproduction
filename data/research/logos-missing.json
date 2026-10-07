@@ -1,0 +1,2141 @@
+{
+  "superstate": {
+    "src": "/ecosystem/superstate-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://superstate.com/favicon.svg",
+    "sourcePage": "https://superstate.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "vaneck": {
+    "src": "/ecosystem/vaneck-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.vaneck.com/favicon.ico",
+    "sourcePage": "https://www.vaneck.com/us/en/",
+    "checkedOn": "2026-10-07"
+  },
+  "bigfoot404": {
+    "src": "/ecosystem/bigfoot404-official-audit-20261007.webp",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://bigfoot404.biz/assets/logo-bw.png",
+    "sourcePage": "https://bigfoot404.biz/",
+    "checkedOn": "2026-10-07"
+  },
+  "dtravel": {
+    "src": "/ecosystem/dtravel-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/CJlC3Ni0tmiBykdkCtLXjdsOXA8.svg",
+    "sourcePage": "https://www.dtravel.com",
+    "checkedOn": "2026-10-07"
+  },
+  "evolve-pro": {
+    "src": "/ecosystem/evolve-pro-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://evolvetoken.io/favicon.ico",
+    "sourcePage": "https://evolvetoken.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "moonwhale": {
+    "src": "/ecosystem/moonwhale-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://moonwhale.ai/favicon.png?v=2",
+    "sourcePage": "https://moonwhale.ai/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-wally": {
+    "src": "/ecosystem/rwaf-wally-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.wallynft.xyz/wally-logo-mark.png",
+    "sourcePage": "https://www.wallynft.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-redswan": {
+    "src": "/ecosystem/rwaf-redswan-official-audit-20261007.webp",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://redswan.io/wp-content/uploads/cropped-favicon-192x192.webp",
+    "sourcePage": "https://redswan.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-ctrlalt": {
+    "src": "/ecosystem/rwaf-ctrlalt-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/6864df64d1f5a690c14427f5/69ef42654144e282e8361c8e_Ctrl%20Alt%20Logo%20Webclip.png",
+    "sourcePage": "https://www.ctrl-alt.co/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-libre": {
+    "src": "/ecosystem/rwaf-libre-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67ea875e6d5ae597a69440a1/680245ff19415e85b71300ea_favicon-32x32.png",
+    "sourcePage": "https://kaio.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-real": {
+    "src": "/ecosystem/rwaf-real-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/69f893854fb639b15910c5a1/6a0476e478a768c4daf5a695_Components.png",
+    "sourcePage": "https://www.real.finance/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-rwaio": {
+    "src": "/ecosystem/rwaf-rwaio-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/65f8931edf7a02378b32b6df/6904db7751a96c33f11e0b9c_rwa-io-favicon-256x256.png",
+    "sourcePage": "https://www.rwa.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-prometheum": {
+    "src": "/ecosystem/rwaf-prometheum-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67495bbca8963c90829d2a73/67742261d047606716ce7aa5_Prometheum_Favicon.png",
+    "sourcePage": "https://www.prometheum.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-rialto": {
+    "src": "/ecosystem/rwaf-rialto-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_192,h_192/https://rialtomarkets.com/wp-content/uploads/2021/06/cropped-favicon_2.png",
+    "sourcePage": "https://rialtomarkets.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-gauntlet": {
+    "src": "/ecosystem/rwaf-gauntlet-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/648bdc0d4b8ce322f27da0af/64c2e32a358eb442acb30a1c_bg-light.png",
+    "sourcePage": "https://www.gauntlet.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-matterlabs": {
+    "src": "/ecosystem/rwaf-matterlabs-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://matterlabs.com/icon.svg?877e9e7ef891b670",
+    "sourcePage": "https://matterlabs.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-aleo": {
+    "src": "/ecosystem/rwaf-aleo-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://aleo.org/public/images/logos/aleo-wordmark.svg",
+    "sourcePage": "https://aleo.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-digitalasset": {
+    "src": "/ecosystem/rwaf-digitalasset-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.digitalasset.com/hubfs/favicon-1.png",
+    "sourcePage": "https://www.digitalasset.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-chainalysis": {
+    "src": "/ecosystem/rwaf-chainalysis-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.chainalysis.com/wp-content/themes/chainalysis/static/safari-pinned-tab.svg",
+    "sourcePage": "https://www.chainalysis.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-investready": {
+    "src": "/ecosystem/rwaf-investready-official-audit-20261007.svg",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://investready.com/assets/images/logo/investready_logo-white.svg",
+    "sourcePage": "https://www.investready.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-rwaworld": {
+    "src": "/ecosystem/rwaf-rwaworld-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.rwa.world/favicon.svg",
+    "sourcePage": "https://www.rwa.world/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-blockaid": {
+    "src": "/ecosystem/rwaf-blockaid-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://blockaid.io/favicon.svg",
+    "sourcePage": "https://blockaid.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-bloomberg": {
+    "src": "/ecosystem/rwaf-bloomberg-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bloomberg.com/favicon.ico",
+    "sourcePage": "https://www.bloomberg.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-opacity": {
+    "src": "/ecosystem/rwaf-opacity-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/d9XqnrzDzwj5iPnVhNI9cqo5U.png",
+    "sourcePage": "https://www.opacity.network/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-zoniqx": {
+    "src": "/ecosystem/rwaf-zoniqx-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/65b3d8a400f523def75c196f/65b6f1001c3ea747222b39f8_256.png",
+    "sourcePage": "https://www.zoniqx.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-tradable": {
+    "src": "/ecosystem/rwaf-tradable-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/641b3b781fe1af48c46c4516/64370c5af88f0ecb1948e41e_Safeimagekit-resized-img.png",
+    "sourcePage": "https://www.tradable.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-google": {
+    "src": "/ecosystem/rwaf-google-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.gstatic.com/cgc/supercloud_favicon.ico",
+    "sourcePage": "https://cloud.google.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-citi": {
+    "src": "/ecosystem/rwaf-citi-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.citigroup.com/global/citigroup-ui/akpublic/images/gpa_favicon.ico",
+    "sourcePage": "https://www.citigroup.com/global",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-hamiltonlane": {
+    "src": "/ecosystem/rwaf-hamiltonlane-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.hamiltonlane.com/favicon.ico",
+    "sourcePage": "https://www.hamiltonlane.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-northerntrust": {
+    "src": "/ecosystem/rwaf-northerntrust-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.northerntrust.com/assets/safari-pinned-tab.svg",
+    "sourcePage": "https://www.northerntrust.com/united-states/home",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-eyparthenon": {
+    "src": "/ecosystem/rwaf-eyparthenon-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.ey.com/content/dam/ey-unified-site/icon/ey-favicon.jpg",
+    "sourcePage": "https://www.ey.com/en_gl/services/strategy",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-falconx": {
+    "src": "/ecosystem/rwaf-falconx-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67cf8df6829ec3cb958afd57/67eedf55ddcb4163ffb1aec5_falconX_favicon_32px.png",
+    "sourcePage": "https://www.falconx.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-kkr": {
+    "src": "/ecosystem/rwaf-kkr-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.kkr.com/etc.clientlibs/kkr/clientlibs/clientlib-site/resources/favicon.ico",
+    "sourcePage": "https://www.kkr.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "siemens": {
+    "src": "/ecosystem/siemens-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://siemens.com/img/favicon.svg",
+    "sourcePage": "https://siemens.com",
+    "checkedOn": "2026-10-07"
+  },
+  "dekabank": {
+    "src": "/ecosystem/dekabank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://deka.de/apple-touch-icon.png",
+    "sourcePage": "https://deka.de",
+    "checkedOn": "2026-10-07"
+  },
+  "dz-bank": {
+    "src": "/ecosystem/dz-bank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.dzbank.com:443/content/dam/dzbank/bilder/Homepage/rahmenelemente/dzbank_fav_icon.png",
+    "sourcePage": "https://www.dzbank.com:443/",
+    "checkedOn": "2026-10-07"
+  },
+  "bayernlb": {
+    "src": "/ecosystem/bayernlb-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bayernlb.com/internet/media/ir/technik_2/images_6/images_mdg/apple_touch_icon.png",
+    "sourcePage": "https://www.bayernlb.com/internet/en/blb/resp/index.jsp",
+    "checkedOn": "2026-10-07"
+  },
+  "landesbank-baden-wurttemberg": {
+    "src": "/ecosystem/landesbank-baden-wurttemberg-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://www.lbbw.de/res/images/logos/lbbw-logo-darkblue_4118557_m.svg",
+    "sourcePage": "https://www.lbbw.de/",
+    "checkedOn": "2026-10-07"
+  },
+  "helaba": {
+    "src": "/ecosystem/helaba-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://www.helaba.com/wLayout/wGlobal/layout/images/helaba-logo.svg",
+    "sourcePage": "https://www.helaba.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "deutsche-bank": {
+    "src": "/ecosystem/deutsche-bank-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://prod2.master.dwebcms.db.com/application/themes/default/favicon/safari-pinned-tab.svg",
+    "sourcePage": "https://www.db.com:443/",
+    "checkedOn": "2026-10-07"
+  },
+  "kfw": {
+    "src": "/ecosystem/kfw-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.kfw.de/Techn-Medien/favicons/KfW_Logo_180x180px.png",
+    "sourcePage": "https://www.kfw.de/kfw.de.html",
+    "checkedOn": "2026-10-07"
+  },
+  "world-bank": {
+    "src": "/ecosystem/world-bank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.worldbank.org/content/dam/wbr-redesign/logos/wbg-favicon.png",
+    "sourcePage": "https://www.worldbank.org/ext/en/home",
+    "checkedOn": "2026-10-07"
+  },
+  "td-securities": {
+    "src": "/ecosystem/td-securities-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.tdsecurities.com/assets/img/favicon/safari-pinned-tab.svg",
+    "sourcePage": "https://www.tdsecurities.com/ca/en",
+    "checkedOn": "2026-10-07"
+  },
+  "european-investment-bank": {
+    "src": "/ecosystem/european-investment-bank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.eib.org/img/icons/favicons/android-chrome-192x192.png?v=0.1",
+    "sourcePage": "https://www.eib.org/en/index",
+    "checkedOn": "2026-10-07"
+  },
+  "union-investment": {
+    "src": "/ecosystem/union-investment-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.union-investment.com/dam/jcr:2cf06d84-0753-4b12-bcae-eaf2c6d0e588/favicon-192x192.2021-06-25-21-47-37.png",
+    "sourcePage": "https://www.union-investment.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "hsbc": {
+    "src": "/ecosystem/hsbc-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.hsbc.com/assets/basekit.features/favicon/images/favicon.ico",
+    "sourcePage": "https://www.hsbc.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "dbs": {
+    "src": "/ecosystem/dbs-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.dbs.com/group/_next/public/favicon.ico",
+    "sourcePage": "https://www.dbs.com/default.page",
+    "checkedOn": "2026-10-07"
+  },
+  "standard-chartered": {
+    "src": "/ecosystem/standard-chartered-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "http://www.standardchartered.com/favicon.ico",
+    "sourcePage": "https://www.sc.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "ant-international": {
+    "src": "/ecosystem/ant-international-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.ant-intl.com/favicon.ico?c0eeba8a04f4683a",
+    "sourcePage": "https://www.ant-intl.com/inclusive-growth/",
+    "checkedOn": "2026-10-07"
+  },
+  "bnp-paribas": {
+    "src": "/ecosystem/bnp-paribas-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://group.bnpparibas/favicon.ico",
+    "sourcePage": "https://group.bnpparibas",
+    "checkedOn": "2026-10-07"
+  },
+  "abn-amro": {
+    "src": "/ecosystem/abn-amro-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.abnamro.com/favicon.ico",
+    "sourcePage": "https://www.abnamro.com/nl/home",
+    "checkedOn": "2026-10-07"
+  },
+  "vesteda": {
+    "src": "/ecosystem/vesteda-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.vesteda.com/static/manifest/icons/icon-180x180.png",
+    "sourcePage": "https://www.vesteda.com/nl",
+    "checkedOn": "2026-10-07"
+  },
+  "apoc-aviation": {
+    "src": "/ecosystem/apoc-aviation-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.apocaviation.com/wp-content/uploads/2021/05/cropped-favicon-apoc-192x192.png",
+    "sourcePage": "https://www.apocaviation.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "santander": {
+    "src": "/ecosystem/santander-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://santander.com/content/dam/santander-com/resources/favicon/apple-touch-icon.png",
+    "sourcePage": "https://santander.com",
+    "checkedOn": "2026-10-07"
+  },
+  "caceis": {
+    "src": "/ecosystem/caceis-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.caceis.com/favicon.ico",
+    "sourcePage": "https://www.caceis.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "seb": {
+    "src": "/ecosystem/seb-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://sebgroup.com/icon-light-mode.svg",
+    "sourcePage": "https://sebgroup.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "commerzbank": {
+    "src": "/ecosystem/commerzbank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.commerzbank.de/konzern/tech/icons/favicon.png",
+    "sourcePage": "https://www.commerzbank.de/group/",
+    "checkedOn": "2026-10-07"
+  },
+  "continental": {
+    "src": "/ecosystem/continental-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/Icons/Favicons/favicon-32.png",
+    "sourcePage": "https://www.continental.com/en/",
+    "checkedOn": "2026-10-07"
+  },
+  "republic-of-slovenia": {
+    "src": "/ecosystem/republic-of-slovenia-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.gov.si/favicon.svg",
+    "sourcePage": "https://www.gov.si/",
+    "checkedOn": "2026-10-07"
+  },
+  "bny": {
+    "src": "/ecosystem/bny-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bny.com/content/dam/bnymellon/web/favicons/favicon-76.png",
+    "sourcePage": "https://www.bny.com/corporate/global/en.html",
+    "checkedOn": "2026-10-07"
+  },
+  "natwest-group": {
+    "src": "/ecosystem/natwest-group-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.natwestgroup.com/apps/settings/wcm/designs/responsive_champion/clientlibs/resources/responsive_natwest_group_favicon.ico",
+    "sourcePage": "https://www.natwestgroup.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "aberdeen-investments": {
+    "src": "/ecosystem/aberdeen-investments-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.aberdeeninvestments.com/icons/icon.svg",
+    "sourcePage": "https://www.aberdeeninvestments.com/en-us",
+    "checkedOn": "2026-10-07"
+  },
+  "amundi": {
+    "src": "/ecosystem/amundi-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://static.amundi.com/web-assets/awf-assets/corporate/Favicon.ico",
+    "sourcePage": "https://about.amundi.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "intesa-sanpaolo": {
+    "src": "/ecosystem/intesa-sanpaolo-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://intesasanpaolo.com/etc/designs/vetrina/favicon.ico",
+    "sourcePage": "https://intesasanpaolo.com",
+    "checkedOn": "2026-10-07"
+  },
+  "hitachi": {
+    "src": "/ecosystem/hitachi-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.hitachi.com/content/dam/hitachi/common/image/hitachi-logo.png",
+    "sourcePage": "https://www.hitachi.com/en/",
+    "checkedOn": "2026-10-07"
+  },
+  "mizuho-bank": {
+    "src": "/ecosystem/mizuho-bank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67cb23eaf0c6c4d4080e059a/67d44c60dad67ac7df0426e1_Mizuho-favicon-32x32.png",
+    "sourcePage": "https://www.mizuhogroup.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "nomura": {
+    "src": "/ecosystem/nomura-reference-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Nomura_Holdings_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Nomura_Holdings_logo.svg",
+    "assetProvider": "Wikimedia Commons",
+    "checkedOn": "2026-10-07"
+  },
+  "mufg": {
+    "src": "/ecosystem/mufg-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.mufg.jp/favicon_ja.ico",
+    "sourcePage": "https://www.mufg.jp/",
+    "checkedOn": "2026-10-07"
+  },
+  "vonovia": {
+    "src": "/ecosystem/vonovia-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://vonovia.com/build/icons/vonovia_relaunch/favicon-konzern.ico",
+    "sourcePage": "https://vonovia.com",
+    "checkedOn": "2026-10-07"
+  },
+  "m-m-warburg-co": {
+    "src": "/ecosystem/m-m-warburg-co-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.mmwarburg.de/favicon.ico?v=7f66ba0142e6f3ee3ed237d9b396d308",
+    "sourcePage": "https://www.mmwarburg.de/de/",
+    "checkedOn": "2026-10-07"
+  },
+  "ocbc": {
+    "src": "/ecosystem/ocbc-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://ocbc.com/iwov-resources/sg/ocbc/gbc/img/logo_ocbc.png",
+    "sourcePage": "https://ocbc.com",
+    "checkedOn": "2026-10-07"
+  },
+  "phillip-securities": {
+    "src": "/ecosystem/phillip-securities-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.phillip.com.sg/wp-content/uploads/2026/04/cropped-PhillipCapital-Flaxicon-5-150x150.png",
+    "sourcePage": "https://www.phillip.com.sg/",
+    "checkedOn": "2026-10-07"
+  },
+  "schroders": {
+    "src": "/ecosystem/schroders-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.schroders.com/icons/180.png",
+    "sourcePage": "https://www.schroders.com/en/global/individual/",
+    "checkedOn": "2026-10-07"
+  },
+  "sgx-group": {
+    "src": "/ecosystem/sgx-group-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.sgx.com/images/e7c44d57656a8d05e8c9.png",
+    "sourcePage": "https://www.sgx.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "united-overseas-bank": {
+    "src": "/ecosystem/united-overseas-bank-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://uobgroup.com/favicon.ico",
+    "sourcePage": "https://uobgroup.com",
+    "checkedOn": "2026-10-07"
+  },
+  "t-rowe-price": {
+    "src": "/ecosystem/t-rowe-price-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.troweprice.com/content/dam/public/enterprise/apple-touch-icon.png",
+    "sourcePage": "https://www.troweprice.com/en/us",
+    "checkedOn": "2026-10-07"
+  },
+  "swiss-national-bank": {
+    "src": "/ecosystem/swiss-national-bank-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.snb.ch/.resources/frontend/assets/default/img/icon/safari-pinned-tab~ec9c6888~2026-08-31-12-49-04-000~cache.svg",
+    "sourcePage": "https://www.snb.ch/en/",
+    "checkedOn": "2026-10-07"
+  },
+  "bank-of-england": {
+    "src": "/ecosystem/bank-of-england-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bankofengland.co.uk/favicon-16x16.png?ver=98f91",
+    "sourcePage": "https://www.bankofengland.co.uk/",
+    "checkedOn": "2026-10-07"
+  },
+  "monetary-authority-of-singapore": {
+    "src": "/ecosystem/monetary-authority-of-singapore-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.mas.gov.sg/favicon.ico",
+    "sourcePage": "https://www.mas.gov.sg/",
+    "checkedOn": "2026-10-07"
+  },
+  "hong-kong-monetary-authority": {
+    "src": "/ecosystem/hong-kong-monetary-authority-official-audit-20261007.jpg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.hkma.gov.hk/favicon.jpg",
+    "sourcePage": "https://www.hkma.gov.hk/eng",
+    "checkedOn": "2026-10-07"
+  },
+  "bank-for-international-settlements": {
+    "src": "/ecosystem/bank-for-international-settlements-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bis.org/themes/custom/bis/favicon.ico",
+    "sourcePage": "https://www.bis.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "european-central-bank": {
+    "src": "/ecosystem/european-central-bank-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://ecb.europa.eu/fav.ico",
+    "sourcePage": "https://ecb.europa.eu",
+    "checkedOn": "2026-10-07"
+  },
+  "deutsche-bundesbank": {
+    "src": "/ecosystem/deutsche-bundesbank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://bundesbank.de/resource/crblob/765438/079a879b3c0da01c185a1effdfe20cdc/472B63F073F071307366337C94F8C870/bbk-icon-120-data.png",
+    "sourcePage": "https://bundesbank.de",
+    "checkedOn": "2026-10-07"
+  },
+  "banca-ditalia": {
+    "src": "/ecosystem/banca-ditalia-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bancaditalia.it/application/themes/bdi2/img/favicon.png",
+    "sourcePage": "https://www.bancaditalia.it/",
+    "checkedOn": "2026-10-07"
+  },
+  "bankhaus-metzler": {
+    "src": "/ecosystem/bankhaus-metzler-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://metzler.com/favicon.ico",
+    "sourcePage": "https://metzler.com",
+    "checkedOn": "2026-10-07"
+  },
+  "caixabank": {
+    "src": "/ecosystem/caixabank-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.caixabank.com/favicon.ico",
+    "sourcePage": "https://www.caixabank.com/home_es.html",
+    "checkedOn": "2026-10-07"
+  },
+  "bper-banca": {
+    "src": "/ecosystem/bper-banca-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bper.it/o/bper-2026-theme/images/apple-touch-icon.png",
+    "sourcePage": "https://bper.it",
+    "checkedOn": "2026-10-07"
+  },
+  "banco-bpm": {
+    "src": "/ecosystem/banco-bpm-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://bancobpm.it/static/images/apple-touch-icon-57x57.png",
+    "sourcePage": "https://bancobpm.it",
+    "checkedOn": "2026-10-07"
+  },
+  "unicredit": {
+    "src": "/ecosystem/unicredit-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.unicreditgroup.eu/etc/designs/unicreditgroupn/favicon/apple-touch-icon-60x60.png",
+    "sourcePage": "https://www.unicreditgroup.eu/en.html",
+    "checkedOn": "2026-10-07"
+  },
+  "spuerkeess": {
+    "src": "/ecosystem/spuerkeess-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.spuerkeess.lu/static/favicons/apple-icon-57x57.png",
+    "sourcePage": "https://www.spuerkeess.lu/fr/particuliers/",
+    "checkedOn": "2026-10-07"
+  },
+  "l-bank": {
+    "src": "/ecosystem/l-bank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.l-bank.de/b/common/graphics/favicons/apple-touch-icon.png",
+    "sourcePage": "https://www.l-bank.de/",
+    "checkedOn": "2026-10-07"
+  },
+  "basler-kantonalbank": {
+    "src": "/ecosystem/basler-kantonalbank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bkb.ch/assets/media/img/favicon.png",
+    "sourcePage": "https://www.bkb.ch/de/privatkunden",
+    "checkedOn": "2026-10-07"
+  },
+  "hana-bank": {
+    "src": "/ecosystem/hana-bank-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://image.kebhana.com/cont/common/img/newmain2021/logo.png",
+    "sourcePage": "https://kebhana.com",
+    "checkedOn": "2026-10-07"
+  },
+  "kb-kookmin-bank": {
+    "src": "/ecosystem/kb-kookmin-bank-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://kbstar.com/favicon.ico",
+    "sourcePage": "https://kbstar.com",
+    "checkedOn": "2026-10-07"
+  },
+  "shinhan-bank": {
+    "src": "/ecosystem/shinhan-bank-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://image.shinhan.com/favicon.ico",
+    "sourcePage": "https://shinhan.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "sumitomo-mitsui-banking-corporation": {
+    "src": "/ecosystem/sumitomo-mitsui-banking-corporation-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.smbc.co.jp/favicon.ico",
+    "sourcePage": "https://www.smbc.co.jp/",
+    "checkedOn": "2026-10-07"
+  },
+  "postfinance": {
+    "src": "/ecosystem/postfinance-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://postfinance.ch/etc.clientlibs/pfch/clientlibs/publish/resources/images/app-icons/apple-icon-180x180.png",
+    "sourcePage": "https://postfinance.ch",
+    "checkedOn": "2026-10-07"
+  },
+  "federated-hermes": {
+    "src": "/ecosystem/federated-hermes-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.federatedhermes.com/favicon.ico",
+    "sourcePage": "https://www.federatedhermes.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "trm-labs": {
+    "src": "/ecosystem/trm-labs-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/6082dc5b67056233213587a4/6082dc5b6705628416358814_favicon.png",
+    "sourcePage": "https://www.trmlabs.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "elliptic": {
+    "src": "/ecosystem/elliptic-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.elliptic.co/favicon.svg",
+    "sourcePage": "https://www.elliptic.co/",
+    "checkedOn": "2026-10-07"
+  },
+  "notabene": {
+    "src": "/ecosystem/notabene-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/63e601645c92302d9c7f88fc/63e601645c923017657f894a_Short_white_sq_256x256.png",
+    "sourcePage": "https://notabene.id/",
+    "checkedOn": "2026-10-07"
+  },
+  "sumsub": {
+    "src": "/ecosystem/sumsub-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://sumsub.com/apple-touch-icon.png",
+    "sourcePage": "https://sumsub.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "merkle-science": {
+    "src": "/ecosystem/merkle-science-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/6058883b1b6e85eceae76f61/605ef5c025146eda9fceb4d8_favicon.png",
+    "sourcePage": "https://www.merklescience.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "scorechain": {
+    "src": "/ecosystem/scorechain-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/654506076ba62ddb88e1876a/6548f5af5019cc575a51893a_Scorechain%20-%20Favicon.png",
+    "sourcePage": "https://www.scorechain.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "crystal-intelligence": {
+    "src": "/ecosystem/crystal-intelligence-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://crystalintelligence.com/rohirov/2026/06/round.svg",
+    "sourcePage": "https://crystalintelligence.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "blockpass": {
+    "src": "/ecosystem/blockpass-official-audit-20261007.png",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://www.blockpass.org/static/Blockpass-main-logo-e7b8c5586c9913f4d4a0dafb4bd1110b.png",
+    "sourcePage": "https://www.blockpass.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "quadrata": {
+    "src": "/ecosystem/quadrata-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://quadrata.com/favicon.ico",
+    "sourcePage": "https://quadrata.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "icomply": {
+    "src": "/ecosystem/icomply-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://icomplyis.com/wp-content/uploads/2023/07/cropped-favicon-192x192.png",
+    "sourcePage": "https://icomplyis.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "netki": {
+    "src": "/ecosystem/netki-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/62338d4b8636187ce87e70e2/624652edb1b5ac11698ec648_favicon.png",
+    "sourcePage": "https://www.netki.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "21-analytics": {
+    "src": "/ecosystem/21-analytics-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.21analytics.co/favicon.ico",
+    "sourcePage": "https://www.21analytics.co/",
+    "checkedOn": "2026-10-07"
+  },
+  "verifyvasp": {
+    "src": "/ecosystem/verifyvasp-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.verifyvasp.com/favicon.ico",
+    "sourcePage": "https://www.verifyvasp.com/en/",
+    "checkedOn": "2026-10-07"
+  },
+  "sygna": {
+    "src": "/ecosystem/sygna-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://d2pv8o42zh00pr.cloudfront.net/wp-content/uploads/2023/01/cropped-favicon-192x192.png",
+    "sourcePage": "https://www.sygna.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "shyft-network": {
+    "src": "/ecosystem/shyft-network-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/63a23376dc2eb1ed6d789406/63a23376dc2eb19c4a78946d_shyft-favicon.png",
+    "sourcePage": "https://www.shyft.network/",
+    "checkedOn": "2026-10-07"
+  },
+  "kaleido": {
+    "src": "/ecosystem/kaleido-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/5dfc18aeef0cf9644ab5ccca/6255b631d36284ba8781702a_Blue_Avatar_256x256.png",
+    "sourcePage": "https://www.kaleido.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "settlemint": {
+    "src": "/ecosystem/settlemint-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.settlemint.com/hubfs/SM-Logo_Icon.svg",
+    "sourcePage": "https://www.settlemint.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "tokenovate": {
+    "src": "/ecosystem/tokenovate-official-audit-20261007.webp",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.tokenovate.com/wp-content/uploads/2025/05/cropped-Tokenovate_NewLogo_Blue-192x192.webp",
+    "sourcePage": "https://www.tokenovate.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "lukka": {
+    "src": "/ecosystem/lukka-official-audit-20261007.webp",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://lukka.tech/wp-content/uploads/2026/03/fav-2.webp",
+    "sourcePage": "https://lukka.tech/",
+    "checkedOn": "2026-10-07"
+  },
+  "taxbit": {
+    "src": "/ecosystem/taxbit-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.taxbit.com/hubfs/Taxbit%20Rebrand%20Website/Rebrand%20Logos/taxbit-favicon-black.png",
+    "sourcePage": "https://www.taxbit.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "cryptio": {
+    "src": "/ecosystem/cryptio-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cryptio.co/favicon-dark/safari-pinned-tab.svg",
+    "sourcePage": "https://cryptio.co/",
+    "checkedOn": "2026-10-07"
+  },
+  "bitwave": {
+    "src": "/ecosystem/bitwave-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/64c274e4918a55dc56106bc3/64c2780f012add41486e35e5_61571d3b8fe2e304b10564a8_favicon-32x32.png",
+    "sourcePage": "https://www.bitwave.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "ledgible": {
+    "src": "/ecosystem/ledgible-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://ledgible.io/wp-content/uploads/2020/11/cropped-Favicon-192x192.png",
+    "sourcePage": "https://ledgible.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "solidus-labs": {
+    "src": "/ecosystem/solidus-labs-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/5dc2e688a258f6237d614aa3/6a29a872be85357bafa2946d_Frame%20726%20(2).png",
+    "sourcePage": "https://www.soliduslabs.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "eventus": {
+    "src": "/ecosystem/eventus-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://eventus.com/favicon.ico",
+    "sourcePage": "https://eventus.com",
+    "checkedOn": "2026-10-07"
+  },
+  "anchain-ai": {
+    "src": "/ecosystem/anchain-ai-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/6464a8afaea854743c408e83/64a484545c9c14e483589428_AnChain-AI-Favicon%20(1).png",
+    "sourcePage": "https://www.anchain.ai/",
+    "checkedOn": "2026-10-07"
+  },
+  "chainargos": {
+    "src": "/ecosystem/chainargos-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.chainargos.com/wp-content/uploads/2023/05/64x64-Favicon.png",
+    "sourcePage": "https://chainargos.com",
+    "checkedOn": "2026-10-07"
+  },
+  "veriff": {
+    "src": "/ecosystem/veriff-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.veriff.com/wp-content/uploads/2025/09/cropped-veriff-favicon_logo-192x192.png",
+    "sourcePage": "https://www.veriff.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "jumio": {
+    "src": "/ecosystem/jumio-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://jumio.com/favicon.ico",
+    "sourcePage": "https://jumio.com",
+    "checkedOn": "2026-10-07"
+  },
+  "idenfy": {
+    "src": "/ecosystem/idenfy-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://idenfy.com/favicon.ico",
+    "sourcePage": "https://idenfy.com",
+    "checkedOn": "2026-10-07"
+  },
+  "komainu": {
+    "src": "/ecosystem/komainu-official-audit-20261007.webp",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://komainu.com/wp-content/uploads/2026/05/cropped-komainu-favicon-192x192.webp",
+    "sourcePage": "https://komainu.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "dfns": {
+    "src": "/ecosystem/dfns-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://dfns.co/favicon.svg",
+    "sourcePage": "https://dfns.co/",
+    "checkedOn": "2026-10-07"
+  },
+  "liminal": {
+    "src": "/ecosystem/liminal-official-audit-20261007.jpg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn-ilaimmf.nitrocdn.com/HwuKmSkzAdeInVFRkpeYovWxaTlnjAGn/assets/images/optimized/rev-b5fd480/www.liminalcustody.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-10-17-at-2.31.01-PM.jpeg",
+    "sourcePage": "https://liminalcustody.com",
+    "checkedOn": "2026-10-07"
+  },
+  "cobo": {
+    "src": "/ecosystem/cobo-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.cobo.com/favicon.ico",
+    "sourcePage": "https://www.cobo.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "finoa": {
+    "src": "/ecosystem/finoa-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/6821c1dc75bc41faa63d1e97/6821c1dc75bc41faa63d2423_Finoa_favicon_32px.svg",
+    "sourcePage": "https://www.finoa.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "ledger": {
+    "src": "/ecosystem/ledger-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://ledger-wp-website-s3-prd.ledger.com/uploads/2021/11/Ledger_favicon.png",
+    "sourcePage": "https://www.ledger.com/?hp_variant=g5.hero.a",
+    "checkedOn": "2026-10-07"
+  },
+  "kaiko": {
+    "src": "/ecosystem/kaiko-official-audit-20261007.webp",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://web-medias.kaiko.com/2026/04/cropped-0357725b-6aa1-4dea-9a4f-1431fea40de3.webp",
+    "sourcePage": "https://kaiko.com",
+    "checkedOn": "2026-10-07"
+  },
+  "talos": {
+    "src": "/ecosystem/talos-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/637e4cd92c6f22a30d5225fc/653fcae36eb6c6980a631d61_Talos%20Favicon%20256.png",
+    "sourcePage": "https://www.talos.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "nansen": {
+    "src": "/ecosystem/nansen-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/X6PAJXo4BDwSFLJcxI2JZNWsQ.png",
+    "sourcePage": "https://nansen.ai",
+    "checkedOn": "2026-10-07"
+  },
+  "the-tie": {
+    "src": "/ecosystem/the-tie-official-audit-20261007.jpg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/69387cd776a03a688f685128/695bc7521451ea9b963eaf75_favicon.jpg",
+    "sourcePage": "https://www.thetie.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "openzeppelin": {
+    "src": "/ecosystem/openzeppelin-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.openzeppelin.com/icon.png?icon.0n__x8e_phqgx.png",
+    "sourcePage": "https://www.openzeppelin.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "chainsecurity": {
+    "src": "/ecosystem/chainsecurity-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.chainsecurity.com/favicon.svg",
+    "sourcePage": "https://www.chainsecurity.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "certora": {
+    "src": "/ecosystem/certora-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.certora.com/favicon.ico",
+    "sourcePage": "https://www.certora.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "halborn": {
+    "src": "/ecosystem/halborn-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.halborn.com/safari-pinned-tab.svg",
+    "sourcePage": "https://www.halborn.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "ogier": {
+    "src": "/ecosystem/ogier-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.ogier.com/assets/favicon/apple-touch-icon-57x57.png",
+    "sourcePage": "https://www.ogier.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "walkers": {
+    "src": "/ecosystem/walkers-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://edge.sitecorecloud.io/walkersglob0d13-walkersglob57a9-prod318d-46e5/media/Project/Walkers-Global/shared/Metadata/favicon.ico?iar=0",
+    "sourcePage": "https://www.walkersglobal.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "pwc": {
+    "src": "/ecosystem/pwc-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://pwc.com/favicon.ico",
+    "sourcePage": "https://pwc.com",
+    "checkedOn": "2026-10-07"
+  },
+  "deloitte": {
+    "src": "/ecosystem/deloitte-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://deloitte.com/content/dam/assets-shared/icons/us/favicon.ico",
+    "sourcePage": "https://deloitte.com",
+    "checkedOn": "2026-10-07"
+  },
+  "kpmg": {
+    "src": "/ecosystem/kpmg-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://kpmg.com/content/experience-fragments/kpmgpublic/xx/en/site/header/master/_jcr_content/root/header_v2/logo.coreimg.svg/1787056531657/logo.svg",
+    "sourcePage": "https://kpmg.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "bdo": {
+    "src": "/ecosystem/bdo-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://bdo.com/favicon.ico",
+    "sourcePage": "https://bdo.com",
+    "checkedOn": "2026-10-07"
+  },
+  "tokenbridge": {
+    "src": "/ecosystem/tokenbridge-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://tokenbridge.co.uk/wp-content/uploads/2023/10/Tokenbridge-Icon-150x150-1.png",
+    "sourcePage": "https://tokenbridge.co.uk/",
+    "checkedOn": "2026-10-07"
+  },
+  "koreinside": {
+    "src": "/ecosystem/koreinside-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://kore.inc/wp-content/uploads/2025/10/korefavicon2024-150x150.png",
+    "sourcePage": "https://kore.inc/",
+    "checkedOn": "2026-10-07"
+  },
+  "rakkar": {
+    "src": "/ecosystem/rakkar-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/65eea162d9a1a95a5fbeb4d7/6639bc2f9a4ab33de94f1bf9_Website_Favicon.png",
+    "sourcePage": "https://www.rakkardigital.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "the-network-firm": {
+    "src": "/ecosystem/the-network-firm-official-audit-20261007.webp",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/63d04ceba661446bcb261c61/ec8ca83e-2f25-445c-848a-d66b20ab1c71/favicon.ico?format=100w",
+    "sourcePage": "https://www.thenetworkfirm.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "algorand": {
+    "src": "/ecosystem/algorand-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://algorand.co/hubfs/algorand_logo_mark_black-Feb-09-2024-07-38-01-8293-PM.png",
+    "sourcePage": "https://algorand.co/",
+    "checkedOn": "2026-10-07"
+  },
+  "cardano": {
+    "src": "/ecosystem/cardano-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cardano.org/img/favicon.ico",
+    "sourcePage": "https://cardano.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "tezos": {
+    "src": "/ecosystem/tezos-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://tezos.com/favicon.ico",
+    "sourcePage": "https://tezos.com",
+    "checkedOn": "2026-10-07"
+  },
+  "injective": {
+    "src": "/ecosystem/injective-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://injective.com/favicon.ico",
+    "sourcePage": "https://injective.com",
+    "checkedOn": "2026-10-07"
+  },
+  "sei": {
+    "src": "/ecosystem/sei-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.sei.io/icon.svg?icon.16lngz368qtbi.svg?dpl=dpl_9yr2ry55RGv6fk7SULicy5bDDvf6",
+    "sourcePage": "https://www.sei.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "sonic": {
+    "src": "/ecosystem/sonic-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.soniclabs.com/apple-touch-icon.png",
+    "sourcePage": "https://www.soniclabs.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "sui": {
+    "src": "/ecosystem/sui-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/68e8e0120513ba12c5cd12e0/6943eb04c4c52f01cfbb6c4a_icons.png",
+    "sourcePage": "https://www.sui.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "mantle": {
+    "src": "/ecosystem/mantle-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.mantle.xyz/favicon.ico",
+    "sourcePage": "https://www.mantle.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "linea": {
+    "src": "/ecosystem/linea-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://linea.build/apple-touch-icon.png",
+    "sourcePage": "https://linea.build",
+    "checkedOn": "2026-10-07"
+  },
+  "iota": {
+    "src": "/ecosystem/iota-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.iota.org/favicon.ico?favicon.3lqbongdl7dk7.ico",
+    "sourcePage": "https://www.iota.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "kaia": {
+    "src": "/ecosystem/kaia-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/666642b50954b5d26bc84836/6667a85f241d5c033f976181_KAIA%20256.png",
+    "sourcePage": "https://www.kaia.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "vechain": {
+    "src": "/ecosystem/vechain-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/p7QlBfvM4KUKfodRTcg7knQEYMI.png",
+    "sourcePage": "https://vechain.org",
+    "checkedOn": "2026-10-07"
+  },
+  "multiversx": {
+    "src": "/ecosystem/multiversx-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/6597cc7be68d63ec0c8ce338/659fac9b8d96a7bdeced582c_X-Favicon-256.png",
+    "sourcePage": "https://multiversx.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "liquid-network": {
+    "src": "/ecosystem/liquid-network-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://liquid.net/favicon.ico",
+    "sourcePage": "https://liquid.net/",
+    "checkedOn": "2026-10-07"
+  },
+  "near": {
+    "src": "/ecosystem/near-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.near.org/favicon.ico",
+    "sourcePage": "https://www.near.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "kava": {
+    "src": "/ecosystem/kava-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/61e9c71623b1f0311abcbbbc/622aa6b8307167f900575be7_Kava-Logomark-256.png",
+    "sourcePage": "https://www.kava.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "rootstock": {
+    "src": "/ecosystem/rootstock-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://rootstock.io/icons/icon-192x192.png?v=d5199ca8e8f274bc01b19fe9024f128e",
+    "sourcePage": "https://rootstock.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "fuse": {
+    "src": "/ecosystem/fuse-official-audit-20261007.png",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/63a6d0820bd1f472b4150067/63dc2d4a5032914b31877098_Favicon%20256.png",
+    "sourcePage": "https://www.fuse.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "coti": {
+    "src": "/ecosystem/coti-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://coti.io/apple-touch-icon.png",
+    "sourcePage": "https://coti.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "concordium": {
+    "src": "/ecosystem/concordium-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67d7fbcd510cf4a3a6267957/68ed2f58f300fc2737bfd0a2_Favicon.png",
+    "sourcePage": "https://www.concordium.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "anchorx": {
+    "src": "/ecosystem/anchorx-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.anchorx.org/favicon.png",
+    "sourcePage": "https://www.anchorx.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "stablecorp": {
+    "src": "/ecosystem/stablecorp-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/lilr82jG0Ivzk8HOVqzlhx0wPas.png",
+    "sourcePage": "https://stablecorp.ca",
+    "checkedOn": "2026-10-07"
+  },
+  "idrx": {
+    "src": "/ecosystem/idrx-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://idrx.co/favicon.svg",
+    "sourcePage": "https://idrx.co/en/",
+    "checkedOn": "2026-10-07"
+  },
+  "moneygram": {
+    "src": "/ecosystem/moneygram-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.moneygram.com/assets/favicon.svg",
+    "sourcePage": "https://www.moneygram.com",
+    "checkedOn": "2026-10-07"
+  },
+  "bitso": {
+    "src": "/ecosystem/bitso-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://assets.bitso.com/favicons/apple-icon-180x180.png",
+    "sourcePage": "https://bitso.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "yellow-card": {
+    "src": "/ecosystem/yellow-card-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/rGNd8ylttOXM8MzWkNs2c3WiojY.png",
+    "sourcePage": "https://yellowcard.io",
+    "checkedOn": "2026-10-07"
+  },
+  "transak": {
+    "src": "/ecosystem/transak-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://transak.com/favicon/apple-touch-icon.png",
+    "sourcePage": "https://transak.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "ramp-network": {
+    "src": "/ecosystem/ramp-network-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/63fe1b7ead2cd2d5e0af02e7/6a71d270f5221e58ce68b455_faviconwhite.png",
+    "sourcePage": "https://rampnetwork.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "ramp": {
+    "src": "/ecosystem/ramp-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://ramp.com/apple-touch-icon.png",
+    "sourcePage": "https://ramp.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "mural-pay": {
+    "src": "/ecosystem/mural-pay-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/KtOIRPSjc1ovqzlQpAjoLq0Z8.svg",
+    "sourcePage": "https://muralpay.com",
+    "checkedOn": "2026-10-07"
+  },
+  "due": {
+    "src": "/ecosystem/due-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/65035c417fe69396bd8c0d5c/6543e3f64df0abb551c71acc_favicon.png",
+    "sourcePage": "https://www.opendue.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "copperx": {
+    "src": "/ecosystem/copperx-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://copperx.io/apple-touch-icon-57x57.png",
+    "sourcePage": "https://copperx.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "transfi": {
+    "src": "/ecosystem/transfi-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/625eb292f5b2be1c055a2fa1/64ccda253afd959b04404bc3_fav.png",
+    "sourcePage": "https://www.transfi.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "dakota": {
+    "src": "/ecosystem/dakota-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://dakota.xyz/safari-pinned-tab.svg?v=3",
+    "sourcePage": "https://dakota.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "coinflow": {
+    "src": "/ecosystem/coinflow-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://coinflow.cash/apple-touch-icon.png",
+    "sourcePage": "https://coinflow.cash/",
+    "checkedOn": "2026-10-07"
+  },
+  "noah": {
+    "src": "/ecosystem/noah-official-audit-20261007.svg",
+    "background": "dark",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://noah.com/",
+    "sourcePage": "https://noah.com/",
+    "checkedOn": "2026-10-07",
+    "assetNote": "Inline header SVG; resolved brand-light from the source page CSS."
+  },
+  "stables": {
+    "src": "/ecosystem/stables-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/647fe94790c03420770215ff/648ffd3ee7f22432790a6cf1_fav%20copy.png",
+    "sourcePage": "https://www.stables.money/",
+    "checkedOn": "2026-10-07"
+  },
+  "mercuryo": {
+    "src": "/ecosystem/mercuryo-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.mercuryo.io/new/favicons/favicon-16x16.png",
+    "sourcePage": "https://www.mercuryo.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "mesh": {
+    "src": "/ecosystem/mesh-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/656cc624086b77872a31a084/6a9a39c38c21193cb8dae1f8_mesh-m-badge-raised.png",
+    "sourcePage": "https://www.meshpay.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "oobit": {
+    "src": "/ecosystem/oobit-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/689f5720d02bfbed3bbc3f87/6a81b9de23dfc932dbe5fe1d_type%3Dsymbol%2C%20color%3Dbrand.png",
+    "sourcePage": "https://www.oobit.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "fipto": {
+    "src": "/ecosystem/fipto-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/64511692b02334865eecc197/645e0df555e2226e326753b8_favicon-fipto%20(1).png",
+    "sourcePage": "https://www.fipto.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "request-finance": {
+    "src": "/ecosystem/request-finance-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.requestfinance.com/images/icon2.png",
+    "sourcePage": "https://www.requestfinance.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "minipay": {
+    "src": "/ecosystem/minipay-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67a18fbe6a1b30b8c753f370/67a1bd5d25d5c9f3dfa5545a_Favicon.png",
+    "sourcePage": "https://minipay.to/",
+    "checkedOn": "2026-10-07"
+  },
+  "band-protocol": {
+    "src": "/ecosystem/band-protocol-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bandprotocol.com/favicon.ico",
+    "sourcePage": "https://www.bandprotocol.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "supra": {
+    "src": "/ecosystem/supra-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://supra.com/favicon.svg",
+    "sourcePage": "https://supra.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "switchboard": {
+    "src": "/ecosystem/switchboard-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://switchboard.xyz/sb.svg",
+    "sourcePage": "https://switchboard.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "zengo": {
+    "src": "/ecosystem/zengo-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://zengo.com/favicon.ico",
+    "sourcePage": "https://zengo.com",
+    "checkedOn": "2026-10-07"
+  },
+  "lobstr": {
+    "src": "/ecosystem/lobstr-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://static.lobstr.co/static/lobstr/images/favicon-r.png",
+    "sourcePage": "https://lobstr.co/",
+    "checkedOn": "2026-10-07"
+  },
+  "bitget-wallet": {
+    "src": "/ecosystem/bitget-wallet-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://web3.bitget.com/favicon-192x192.png",
+    "sourcePage": "https://web3.bitget.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "mento": {
+    "src": "/ecosystem/mento-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67f90262140589c6bc5cceba/684c380765be920e8dc083dd_mento-favicon.png",
+    "sourcePage": "https://www.mento.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "qivalis": {
+    "src": "/ecosystem/qivalis-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://qivalis.eu/media/pages/media/0540b9f7e8-1783627789/favicon.svg",
+    "sourcePage": "https://qivalis.eu/",
+    "checkedOn": "2026-10-07"
+  },
+  "morse": {
+    "src": "/ecosystem/morse-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://morsemoney.com/apple-icon.png?apple-icon.2xdf1do8am80a.png",
+    "sourcePage": "https://morsemoney.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "seda-protocol": {
+    "src": "/ecosystem/seda-protocol-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.seda.xyz/apple-touch-icon.png",
+    "sourcePage": "https://www.seda.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "farmsent": {
+    "src": "/ecosystem/farmsent-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.farmsent.io/farmsent-mark-green.svg",
+    "sourcePage": "https://www.farmsent.io/brand",
+    "checkedOn": "2026-10-07"
+  },
+  "hedera": {
+    "src": "/ecosystem/hedera-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://brand.hedera.com/_assets/v11/58ee70384a591767354ac5a35e93d3059cfa1cfe.svg",
+    "sourcePage": "https://brand.hedera.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "revolut": {
+    "src": "/ecosystem/revolut-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/revolut.svg",
+    "sourcePage": "https://developer.revolut.com/docs/resources/marketing-guidelines",
+    "checkedOn": "2026-10-07",
+    "assetProvider": "Simple Icons (CC0); artwork reference linked in sourcePage"
+  },
+  "rwaf-axis": {
+    "src": "/ecosystem/rwaf-axis-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://axis.to/images/favicon.svg",
+    "sourcePage": "https://axis.to/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-newton": {
+    "src": "/ecosystem/rwaf-newton-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://newton.xyz/icon.svg?icon.e741907a.svg",
+    "sourcePage": "https://newton.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-diamondlake": {
+    "src": "/ecosystem/rwaf-diamondlake-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://diamondlakeminerals.com/wp-content/uploads/cropped-favicon-192x192.png",
+    "sourcePage": "https://diamondlakeminerals.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "wisdomtree": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.wisdomtree.com&sz=128",
+    "sourcePage": "https://www.wisdomtree.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/wisdomtree-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "grayscale": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=www.grayscale.com&sz=128",
+    "sourcePage": "https://www.grayscale.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/grayscale-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "euroclear": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=euroclear.com&sz=128",
+    "sourcePage": "https://euroclear.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/euroclear-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "credit-agricole-cib": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=ca-cib.com&sz=128",
+    "sourcePage": "https://ca-cib.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/credit-agricole-cib-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "lloyds-banking-group": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=lloydsbankinggroup.com&sz=128",
+    "sourcePage": "https://lloydsbankinggroup.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/lloyds-banking-group-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "cassa-depositi-e-prestiti": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=cdp.it&sz=128",
+    "sourcePage": "https://cdp.it",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/cassa-depositi-e-prestiti-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "banque-de-france": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=banque-france.fr&sz=128",
+    "sourcePage": "https://banque-france.fr",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/banque-de-france-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "woori-bank": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=wooribank.com&sz=128",
+    "sourcePage": "https://wooribank.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/woori-bank-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "trulioo": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=trulioo.com&sz=128",
+    "sourcePage": "https://trulioo.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/trulioo-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "ondato": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=ondato.com&sz=128",
+    "sourcePage": "https://ondato.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/ondato-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "zodia-custody": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=zodia-custody.com&sz=128",
+    "sourcePage": "https://zodia-custody.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/zodia-custody-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "utila": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=utila.io&sz=128",
+    "sourcePage": "https://utila.io",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/utila-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "dla-piper": {
+    "sourceUrl": "https://www.google.com/s2/favicons?domain=dlapiper.com&sz=128",
+    "sourcePage": "https://dlapiper.com",
+    "assetProvider": "Google cached site icon; visually reviewed against company identity",
+    "src": "/ecosystem/dla-piper-cached-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "checkedOn": "2026-10-07"
+  },
+  "dentons": {
+    "src": "/ecosystem/dentons-reference-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Dentons_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dentons_logo.svg",
+    "assetProvider": "Wikimedia Commons",
+    "checkedOn": "2026-10-07"
+  },
+  "jpyc": {
+    "src": "/ecosystem/jpyc-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://jpyc.jp/favicon.ico",
+    "sourcePage": "https://jpyc.jp/",
+    "checkedOn": "2026-10-07"
+  },
+  "base-chain": {
+    "src": "/ecosystem/base-chain-official-audit-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://brand.base.org/document/apple-touch-icon.png",
+    "sourcePage": "https://brand.base.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "bstocks": {
+    "src": "/ecosystem/binance-rwaio-20261003.jpg",
+    "shape": "symbol",
+    "treatment": "original",
+    "background": "dark",
+    "sourceUrl": "https://github.com/Bucktony/rwa-ecosystem-map",
+    "sourcePage": "https://www.binance.com/en/square/post/332985203672465",
+    "checkedOn": "2026-10-07",
+    "assetNote": "Uses the parent Binance company mark retained from the source directory; not a separate bStocks product mark."
+  },
+  "sbi-digital-asset-holdings": {
+    "src": "/ecosystem/sbi-digital-asset-holdings-official-audit-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.sbigroup.co.jp/favicon.ico",
+    "sourcePage": "https://www.sbigroup.co.jp/english/company/group/sbidah",
+    "checkedOn": "2026-10-07"
+  },
+  "blockpeer": {
+    "src": "/ecosystem/blockpeer-reference-audit-20261007.jpg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://media.thegrid.id/id1757619459-ACWS8aeYQCaONdPJDnNHRQ/7/id1757619459-qgZqDAZaRRWXNLrmL3Ka8Q/id1761223287-yofTwDGNQzWuWUaALp4d4Q/image-1762951720.jpg",
+    "sourcePage": "https://solanacompass.com/projects/blockpeer",
+    "checkedOn": "2026-10-07",
+    "assetProvider": "Solana Compass / The Grid"
+  },
+  "complyadvantage": {
+    "src": "/ecosystem/complyadvantage-reference-audit-20261007.webp",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://iconlogovector.com/uploads/images/2026/08/lg-6a7d91a9d6989-ComplyAdvantage.webp",
+    "sourcePage": "https://iconlogovector.com/logo/complyadvantage",
+    "checkedOn": "2026-10-07",
+    "assetProvider": "IconLogoVector; official source linked by catalog"
+  },
+  "banxa": {
+    "src": "/ecosystem/banxa-reference-audit-20261007.png",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://ml.globenewswire.com/Resource/Download/7b24b0ee-23ab-4794-950f-0f462aed23cf?size=3",
+    "sourcePage": "https://www.globenewswire.com/NewsRoom/AttachmentNg/7b24b0ee-23ab-4794-950f-0f462aed23cf",
+    "checkedOn": "2026-10-07",
+    "assetProvider": "Issuer-provided press asset"
+  },
+  "rabobank": {
+    "src": "/ecosystem/rabobank-reference-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Rabobank_text_logo.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Rabobank_text_logo.svg",
+    "assetProvider": "Wikimedia Commons",
+    "checkedOn": "2026-10-07"
+  },
+  "nonghyup-bank": {
+    "src": "/ecosystem/nonghyup-bank-reference-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/NACF_%28NongHyup%29_Logo_with_wordmark.svg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:NACF_(NongHyup)_Logo_with_wordmark.svg",
+    "assetProvider": "Wikimedia Commons",
+    "checkedOn": "2026-10-07",
+    "assetNote": "NongHyup group identity; parent brand of NongHyup Bank."
+  },
+  "rwaf-apexinvest": {
+    "src": "/ecosystem/rwaf-apexinvest-official-audit-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://www.apexgroup.com/media/vjzhaf3d/apexinvest-logo.svg",
+    "sourcePage": "https://www.apexgroup.com/apex-invest/",
+    "checkedOn": "2026-10-07"
+  }
+}

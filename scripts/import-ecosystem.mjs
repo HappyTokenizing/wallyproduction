@@ -29,23 +29,39 @@ for(const id of added){const p=byId.get(id),name=p.categories[0].name;let cat=ex
 sections.splice(sections.findIndex(s=>s.name==='Historical'),0,extra);
 // Dated, primary-source research is kept separate from the immutable upstream snapshot.
 const researchRead = name => JSON.parse(fs.readFileSync(new URL('../data/research/'+name, import.meta.url)));
+// Reuse canonical identities when adding placements or reviewing an upstream profile.
+function place(p,categories){
+ for(const category of categories){
+  let section=sections.find(s=>s.name===category.section);
+  if(!section){section={name:category.section,categories:[]};sections.splice(sections.findIndex(s=>s.name==='Historical'),0,section);}
+  let cat=section.categories.find(c=>c.name===category.name);
+  if(!cat)section.categories.push(cat={name:category.name,ids:[]});
+  if(!cat.ids.includes(p.id))cat.ids.push(p.id);
+ }
+}
 const researched=[];
-for(const name of ['institutions.json','services.json','networks.json']){
+for(const name of ['institutions.json','services.json','networks.json','requested-additions.json']){
  for(const entry of researchRead(name)){
   if(byId.has(entry.id)||profiles.some(p=>norm(p.name)===norm(entry.name)))throw Error('Duplicate research identity: '+entry.name);
   if(!entry.sources?.length||!entry.checkedOn||!entry.categories?.length)throw Error('Incomplete research: '+entry.name);
   const p={newsRules:[],newsTags:[],relatedEntities:[],logo:null,officialUpdates:[],legacyIds:[],...entry,aliases:[...new Set([entry.name,...(entry.aliases||[])])],provenance:'RWA Foundation / official-source research'};
   profiles.push(p);byId.set(p.id,p);researched.push(p.id);
-  for(const category of p.categories){
-   let section=sections.find(s=>s.name===category.section);
-   if(!section){section={name:category.section,categories:[]};sections.splice(sections.findIndex(s=>s.name==='Historical'),0,section);}
-   let cat=section.categories.find(c=>c.name===category.name);
-   if(!cat)section.categories.push(cat={name:category.name,ids:[]});
-   if(!cat.ids.includes(p.id))cat.ids.push(p.id);
-  }
+  place(p,p.categories);
  }
 }
-const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json')};
+// Explicit, dated corrections preserve upstream IDs, placements and favorites.
+const profileUpdates=researchRead('profile-updates.json');
+for(const [id,update] of Object.entries(profileUpdates)){
+ const p=byId.get(id);
+ if(!p||!update.sources?.length||!update.checkedOn)throw Error('Incomplete profile update: '+id);
+ const {aliases=[],addCategories=[],...fields}=update;
+ if(['id','categories','legacyIds','relatedEntities','logo'].some(k=>k in fields))throw Error('Identity-changing profile update: '+id);
+ Object.assign(p,fields);
+ p.aliases=[...new Set([...p.aliases,p.name,...aliases])];
+ for(const c of addCategories)if(!p.categories.some(x=>x.section===c.section&&x.name===c.name))p.categories.push(c);
+ place(p,addCategories);
+}
+const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json'),...researchRead('logos-followup.json'),...researchRead('logos-missing.json')};
 // Phantom already has a Stablecoin Builders placement; expose the same identity under Wallets.
 const phantom=byId.get('phantom');
 if(!phantom.categories.some(c=>c.section==='Wallets'&&c.name==='Wallets'))phantom.categories.push({section:'Wallets',name:'Wallets'});
@@ -55,7 +71,13 @@ for(const [id,logo] of Object.entries(logoOverrides)){
  if(!byId.has(id)||!logo.src||!logo.sourceUrl||!logo.sourcePage)throw Error('Incomplete logo override: '+id);
  byId.get(id).logo=logo;
 }
-const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,updatedLogos:Object.keys(logoOverrides).length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
+// Contrast-only corrections retain the original source artwork and provenance.
+for(const [id,display] of Object.entries(researchRead('logo-display.json'))){
+ const p=byId.get(id);
+ if(!p?.logo||Object.keys(display).some(k=>k!=='background')||!['light','dark'].includes(display.background))throw Error('Invalid logo display correction: '+id);
+ Object.assign(p.logo,display);
+}
+const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
 const output={snapshotDate:'2026-10-07',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
