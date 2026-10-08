@@ -5,16 +5,34 @@ import path from 'node:path';
 import {filterProfiles,memberFor,safeURL,websiteFor,key,memberCount,exitsFor,exitCount} from '../assets/ecosystem-model.js';
 const read=name=>JSON.parse(fs.readFileSync(new URL(name,import.meta.url)));
 const data=read('../data/ecosystem-directory.json'), source=read('../vendor/rwa-ecosystem-map/profiles.json');
-const research=['institutions','services','networks','requested-additions','community-additions-20261007','lifecycle-additions-20261007'].flatMap(name=>read(`../data/research/${name}.json`));
+const research=['institutions','services','networks','requested-additions','community-additions-20261007','lifecycle-additions-20261007','community-submissions-20261008'].flatMap(name=>read(`../data/research/${name}.json`));
 const logos={...read('../data/research/logos-core.json'),...read('../data/research/logos-special.json'),...read('../data/research/logos-refinements.json'),...read('../data/research/logos-followup.json'),...read('../data/research/logos-missing.json'),...read('../data/research/logos-community-20261007.json'),...read('../data/research/logos-community-fixes-20261007.json')};
 const excluded=read('../data/research/excluded-profiles.json');
 const display=read('../data/research/logo-display.json');
 const dated=read('../data/research/profile-updates-20261008.json');
 const updates={...read('../data/research/profile-updates.json'),...dated};
+const submissions=read('../data/research/community-submissions-20261008.json');
+const submissionUpdates=read('../data/research/profile-submissions-20261008.json');
+for(const [id,update] of Object.entries(submissionUpdates))updates[id]={...(updates[id]||{}),...update};
 // Net change in a status count from the dated 2026-10-08 review (retained rwaf- entries start as review).
 const statusShift=status=>Object.entries(dated).filter(([,u])=>u.directoryStatus).reduce((n,[id,u])=>n+(u.directoryStatus===status)-((id.startsWith('rwaf-')?'review':(source.profiles.find(p=>p.id===id)?.directoryStatus||'current'))===status),0);
 const byId=new Map(data.profiles.map(p=>[p.id,p]));
 const state={q:'',status:'all',section:'all',members:false};
+test('submission import maps every response once without granting membership or inventing event dates',()=>{
+ const report=read('../data/research/submission-import-20261008.json');
+ assert.equal(report.submissions,42);assert.equal(report.mapping.length,42);
+ assert.equal(new Set(report.mapping.map(r=>r.row)).size,42);
+ assert.equal(report.mapping.filter(r=>r.action==='added').length,23);
+ assert.equal(report.mapping.filter(r=>r.action==='merged').length,19);
+ for(const row of report.mapping){
+  const p=byId.get(row.profileId);assert.ok(p,row.profileId);assert.equal(p.directorySubmission.row,row.row);
+  assert.equal(memberFor(p,[]),undefined);assert.ok(!('member' in p.directorySubmission));
+ }
+ assert.equal(report.mapping.find(r=>r.row===15).profileId,'zig-finance');
+ assert.notEqual(report.mapping.find(r=>r.row===40).profileId,'strata-markets');
+ assert.equal(data.statsEvents.some(e=>e.profileId==='hyve'),false,'conflicting self-reported dates remain outside verified charts');
+ for(const payload of [report,submissions,submissionUpdates])assert.doesNotMatch(JSON.stringify(payload),/Primary contact email|mailto:|[\w.+-]+@[\w.-]+\.[a-z]{2,}/i);
+});
 test('source identities survive except explicit owner removals, without duplicate IDs or names',()=>{
  assert.equal(source.profiles.length,831);assert.ok(data.profiles.length>1000);
  assert.equal(data.profiles.length,866+research.length-Object.keys(excluded).length);
@@ -32,7 +50,7 @@ test('every non-excluded source map placement resolves to its canonical profile'
 test('default current filter separates historical and retained unreviewed entries',()=>{
  assert.equal(filterProfiles(data.profiles,{...state,status:'current'},[]).length,693+research.filter(p=>p.directoryStatus==='current').length+statusShift('current'));
  assert.equal(filterProfiles(data.profiles,{...state,status:'historical'},[]).length,139+research.filter(p=>p.directoryStatus==='historical').length+statusShift('historical'));
- assert.equal(filterProfiles(data.profiles,{...state,status:'review'},[]).length,34+statusShift('review'));
+ assert.equal(filterProfiles(data.profiles,{...state,status:'review'},[]).length,34+submissions.filter(p=>p.directoryStatus==='review').length+statusShift('review'));
  assert.equal(filterProfiles(data.profiles,state,[]).length,data.profiles.length);
  for(const p of data.profiles.filter(p=>p.directoryStatus==='historical'))assert.equal(websiteFor(p),'');
 });
@@ -78,12 +96,12 @@ test('new profiles have dated official evidence and no duplicate aliases or doma
  const identity=new Map(existing.flatMap(p=>[p.name,...p.aliases].map(n=>[key(n),p.id])));
  const domains=new Map(existing.filter(p=>p.domain).map(p=>[p.domain.toLowerCase().replace(/^www\./,''),p.id]));
  for(const p of research){
-  assert.match(p.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.equal(p.checkedOn,'2026-10-07');
+  assert.match(p.id,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);assert.match(p.checkedOn,/^2026-10-0[78]$/);
   assert.ok(p.sources.length&&p.evidenceNote&&p.categories.length,p.id);if(p.directoryStatus==='historical'){assert.equal(websiteFor(p),'');}else assert.ok(safeURL(p.website,p),p.id);
   for(const s of p.sources){assert.ok(s.title);assert.ok(safeURL(s.url,p),p.id);}
   for(const name of [p.name,...(p.aliases||[])]){const k=key(name);assert.ok(!identity.has(k)||identity.get(k)===p.id,`${p.id} duplicates ${identity.get(k)}`);identity.set(k,p.id);}
   const host=p.domain.toLowerCase().replace(/^www\./,'');assert.ok(host);if(p.directoryStatus==='review'&&host==='x.com'){assert.match(p.website,/^https:\/\/x\.com\/[a-zA-Z0-9_]+$/);}else if(domains.has(host)){assert.equal(p.parentProfileId,domains.get(host),`${p.id} shares ${host} without a parent relationship`);assert.ok(p.relatedEntities?.some(r=>r.id===p.parentProfileId));assert.notEqual(key(p.name),key(byId.get(p.parentProfileId).name));}else domains.set(host,p.id);
-  const imported=byId.get(p.id);assert.ok(imported);assert.deepEqual(imported.sources,p.sources);
+  const imported=byId.get(p.id);assert.ok(imported);assert.deepEqual(imported.sources,updates[p.id]?.sources||p.sources);
   for(const c of p.categories)assert.ok(data.sections.find(s=>s.name===c.section)?.categories.find(x=>x.name===c.name)?.ids.includes(p.id));
  }
 });
@@ -124,7 +142,7 @@ test('search ranks exact identity before name words, partial names and descripti
 test('member summary tracks the live roster and documented closures remain distinct from exits',()=>{
  assert.equal(memberCount([{name:'Maple'},{name:'Maple Finance'},{name:'Securitize'}]),2);
  assert.equal(memberCount([{name:'Securitize'}]),1);assert.equal(memberCount([]),0);
- const failed=data.profiles.filter(p=>p.failedInitiative===true);assert.deepEqual(failed.map(p=>p.id).sort(),['archblock','neufund','opulous']);for(const p of failed){assert.ok(p.sources.length);assert.equal(exitsFor(p).length,0);}
+ const failed=data.profiles.filter(p=>p.failedInitiative===true);assert.deepEqual(failed.map(p=>p.id).sort(),['archblock','dominion-market','neufund','opulous']);for(const p of failed){assert.ok(p.sources.length);assert.equal(exitsFor(p).length,0);}
  assert.ok(data.profiles.filter(p=>p.directoryStatus==='historical').length>failed.length);
  const seda=byId.get('seda-protocol');assert.ok(seda.categories.some(c=>c.section==='Oracles'));assert.ok(seda.sources.length);
 });

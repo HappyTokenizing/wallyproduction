@@ -1,0 +1,155 @@
+{
+  "dominion-market": {
+    "src": "/ecosystem/dominion-market-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://dominion.market/apple-touch-icon.png",
+    "sourcePage": "https://dominion.market/",
+    "checkedOn": "2026-10-08"
+  },
+  "epiphany-island": {
+    "src": "/ecosystem/epiphany-island-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.epiphanyisland.com/favicon.png",
+    "sourcePage": "https://www.epiphanyisland.com/",
+    "checkedOn": "2026-10-08"
+  },
+  "stork": {
+    "src": "/ecosystem/stork-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/67a320a8cfb34a64c5e092b7/67aeff0c8b0f0f15b5c80064_icon-stork.png",
+    "sourcePage": "https://stork.network",
+    "checkedOn": "2026-10-08"
+  },
+  "codetech": {
+    "src": "/ecosystem/codetech-submission-20261008.svg",
+    "background": "dark",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://codetech.cc/img/company/logo.svg",
+    "sourcePage": "https://codetech.cc/",
+    "checkedOn": "2026-10-08"
+  },
+  "nysa-finance": {
+    "src": "/ecosystem/nysa-finance-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://nysa.finance/assets/logo.png",
+    "sourcePage": "https://nysa.finance/",
+    "checkedOn": "2026-10-08"
+  },
+  "vs1-finance": {
+    "src": "/ecosystem/vs1-finance-submission-20261008.png",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://www.vs1.finance/_next/image?url=%2Flogo-new.png&w=1920&q=75",
+    "sourcePage": "https://www.vs1.finance/",
+    "checkedOn": "2026-10-08"
+  },
+  "easymm": {
+    "src": "/ecosystem/easymm-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/68d29d25667299cbc498eab0/68dd22f2a6c553fac4e93841_256x256.png",
+    "sourcePage": "https://www.easymm.io",
+    "checkedOn": "2026-10-08"
+  },
+  "loaf-markets": {
+    "src": "/ecosystem/loaf-markets-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.loafmarkets.com/favicon-192x192.png",
+    "sourcePage": "https://loafmarkets.com/",
+    "checkedOn": "2026-10-08"
+  },
+  "algebra": {
+    "src": "/ecosystem/algebra-submission-20261008.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://algebra.finance/favicon.ico?favicon.0b3bf435.ico",
+    "sourcePage": "https://algebra.finance/",
+    "checkedOn": "2026-10-08"
+  },
+  "dtec": {
+    "src": "/ecosystem/dtec-submission-20261008.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://dtec.space/images/dtec_logo.svg",
+    "sourcePage": "https://dtec.space/",
+    "checkedOn": "2026-10-08"
+  },
+  "metalex": {
+    "src": "/ecosystem/metalex-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.metalex.tech/favicon_256.png",
+    "sourcePage": "https://www.metalex.tech/",
+    "checkedOn": "2026-10-08"
+  },
+  "landhive": {
+    "src": "/ecosystem/landhive-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.landhive.io/icon-192.png",
+    "sourcePage": "https://www.landhive.io",
+    "checkedOn": "2026-10-08"
+  },
+  "fbyt": {
+    "src": "/ecosystem/fbyt-submission-20261008.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://fbyt.io/icon.svg?icon.04.6fyg7fugun.svg",
+    "sourcePage": "https://fbyt.io/",
+    "checkedOn": "2026-10-08"
+  },
+  "engine-protocol": {
+    "src": "/ecosystem/engine-protocol-submission-20261008.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://engineprotocol.io/favicon.svg",
+    "sourcePage": "https://engineprotocol.io/",
+    "checkedOn": "2026-10-08"
+  },
+  "strata-orderbook": {
+    "src": "/ecosystem/strata-orderbook-submission-20261008.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://stratabook.app/favicon.svg",
+    "sourcePage": "https://stratabook.app/",
+    "checkedOn": "2026-10-08"
+  },
+  "trustlogic": {
+    "src": "/ecosystem/trustlogic-submission-20261008.png",
+    "background": "dark",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://trustlogic.global/assets/trustlogic-logo.png",
+    "sourcePage": "https://trustlogic.global",
+    "checkedOn": "2026-10-08"
+  },
+  "blockfy": {
+    "src": "/ecosystem/blockfy-submission-20261008.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/q0WMoFNCUH4A8LOs124eXtz8.png",
+    "sourcePage": "https://blockfy.ph",
+    "checkedOn": "2026-10-08"
+  }
+}

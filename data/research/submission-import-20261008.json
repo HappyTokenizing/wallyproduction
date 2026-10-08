@@ -1,0 +1,327 @@
+{
+  "checkedOn": "2026-10-08",
+  "source": "User-provided RWAF ecosystem application export (42 responses)",
+  "privacy": "Contact details and raw responses are not published. Membership claims do not modify the admin member roster.",
+  "submissions": 42,
+  "added": 23,
+  "merged": 19,
+  "mapping": [
+    {
+      "row": 1,
+      "submittedName": "Agama",
+      "profileId": "agama-finance",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 2,
+      "submittedName": "Dominion",
+      "profileId": "dominion-market",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "historical"
+    },
+    {
+      "row": 3,
+      "submittedName": "Particula Ratings",
+      "profileId": "particula",
+      "action": "merged",
+      "reportedFoundingDate": "2022"
+    },
+    {
+      "row": 4,
+      "submittedName": "EPIPHANY ISLAND",
+      "profileId": "epiphany-island",
+      "action": "added",
+      "reportedFoundingDate": "2026",
+      "reviewStatus": "review"
+    },
+    {
+      "row": 5,
+      "submittedName": "ST0x",
+      "profileId": "st0x",
+      "action": "merged",
+      "reportedFoundingDate": "2025"
+    },
+    {
+      "row": 6,
+      "submittedName": "Real Finance",
+      "profileId": "rwaf-real",
+      "action": "merged",
+      "reportedFoundingDate": "2024"
+    },
+    {
+      "row": 7,
+      "submittedName": "CityCode by YuRich",
+      "profileId": "citycode-yurich",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "review"
+    },
+    {
+      "row": 8,
+      "submittedName": "Stork",
+      "profileId": "stork",
+      "action": "added",
+      "reportedFoundingDate": "2022",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 9,
+      "submittedName": "tokenforge GmbH",
+      "profileId": "tokenforge",
+      "action": "merged",
+      "reportedFoundingDate": "2021"
+    },
+    {
+      "row": 10,
+      "submittedName": "SHIFT",
+      "profileId": "shift-rwa",
+      "action": "merged",
+      "reportedFoundingDate": "2023"
+    },
+    {
+      "row": 11,
+      "submittedName": "SEDA",
+      "profileId": "seda-protocol",
+      "action": "merged",
+      "reportedFoundingDate": "2020"
+    },
+    {
+      "row": 12,
+      "submittedName": "TrustLogic",
+      "profileId": "trustlogic",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 13,
+      "submittedName": "CoDeTech",
+      "profileId": "codetech",
+      "action": "added",
+      "reportedFoundingDate": "2013",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 14,
+      "submittedName": "Nysa Finance",
+      "profileId": "nysa-finance",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 15,
+      "submittedName": "ZIGChain",
+      "profileId": "zig-finance",
+      "action": "merged",
+      "reportedFoundingDate": "Zignaly 2018 - ZIGChain 2024"
+    },
+    {
+      "row": 16,
+      "submittedName": "VS1 Finance",
+      "profileId": "vs1-finance",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 17,
+      "submittedName": "Orca",
+      "profileId": "rwaf-orca",
+      "action": "merged",
+      "reportedFoundingDate": "2021"
+    },
+    {
+      "row": 18,
+      "submittedName": "Blockfy Technology Inc.",
+      "profileId": "blockfy",
+      "action": "added",
+      "reportedFoundingDate": "2024",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 19,
+      "submittedName": "EasyMM",
+      "profileId": "easymm",
+      "action": "added",
+      "reportedFoundingDate": "2020",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 20,
+      "submittedName": "T-Blocks",
+      "profileId": "t-blocks",
+      "action": "merged",
+      "reportedFoundingDate": "2023"
+    },
+    {
+      "row": 21,
+      "submittedName": "Hyve",
+      "profileId": "hyve",
+      "action": "added",
+      "reportedFoundingDate": "2024",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 22,
+      "submittedName": "Algorand",
+      "profileId": "algorand",
+      "action": "merged",
+      "reportedFoundingDate": "2017"
+    },
+    {
+      "row": 23,
+      "submittedName": "Loaf",
+      "profileId": "loaf-markets",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "review"
+    },
+    {
+      "row": 24,
+      "submittedName": "Toto Finance",
+      "profileId": "toto-finance",
+      "action": "merged",
+      "reportedFoundingDate": "2022"
+    },
+    {
+      "row": 25,
+      "submittedName": "Lympid",
+      "profileId": "lympid",
+      "action": "merged",
+      "reportedFoundingDate": "2024"
+    },
+    {
+      "row": 26,
+      "submittedName": "Algebra DEX engine",
+      "profileId": "algebra",
+      "action": "added",
+      "reportedFoundingDate": "2021",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 27,
+      "submittedName": "Assetera",
+      "profileId": "assetera",
+      "action": "merged",
+      "reportedFoundingDate": "2024"
+    },
+    {
+      "row": 28,
+      "submittedName": "DTEC",
+      "profileId": "dtec",
+      "action": "added",
+      "reportedFoundingDate": null,
+      "reviewStatus": "current"
+    },
+    {
+      "row": 29,
+      "submittedName": "MetaLeX",
+      "profileId": "metalex",
+      "action": "added",
+      "reportedFoundingDate": "2024",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 30,
+      "submittedName": "Pareto",
+      "profileId": "pareto",
+      "action": "merged",
+      "reportedFoundingDate": "2024"
+    },
+    {
+      "row": 31,
+      "submittedName": "Cask Capital",
+      "profileId": "cask-capital",
+      "action": "merged",
+      "reportedFoundingDate": "2024"
+    },
+    {
+      "row": 32,
+      "submittedName": "Orange Street",
+      "profileId": "orange-street",
+      "action": "added",
+      "reportedFoundingDate": "2026",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 33,
+      "submittedName": "Demether",
+      "profileId": "demether",
+      "action": "merged",
+      "reportedFoundingDate": "2024"
+    },
+    {
+      "row": 34,
+      "submittedName": "LANDHIVE",
+      "profileId": "landhive",
+      "action": "added",
+      "reportedFoundingDate": "2023",
+      "reviewStatus": "review"
+    },
+    {
+      "row": 35,
+      "submittedName": "KHIPU INTERNATIONAL",
+      "profileId": "khipu-international",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "review"
+    },
+    {
+      "row": 36,
+      "submittedName": "Bondi Finance",
+      "profileId": "bondi-finance",
+      "action": "merged",
+      "reportedFoundingDate": "2024"
+    },
+    {
+      "row": 37,
+      "submittedName": "Splyce Finance",
+      "profileId": "splyce-finance",
+      "action": "merged",
+      "reportedFoundingDate": "2025"
+    },
+    {
+      "row": 38,
+      "submittedName": "FBYT",
+      "profileId": "fbyt",
+      "action": "added",
+      "reportedFoundingDate": "2026",
+      "reviewStatus": "current"
+    },
+    {
+      "row": 39,
+      "submittedName": "Engine",
+      "profileId": "engine-protocol",
+      "action": "added",
+      "reportedFoundingDate": "2026",
+      "reviewStatus": "review"
+    },
+    {
+      "row": 40,
+      "submittedName": "Strata",
+      "profileId": "strata-orderbook",
+      "action": "added",
+      "reportedFoundingDate": "2026",
+      "reviewStatus": "review"
+    },
+    {
+      "row": 41,
+      "submittedName": "AdCentral",
+      "profileId": "adcentral",
+      "action": "added",
+      "reportedFoundingDate": "2025",
+      "reviewStatus": "review"
+    },
+    {
+      "row": 42,
+      "submittedName": "Mey Network",
+      "profileId": "mey-network",
+      "action": "merged",
+      "reportedFoundingDate": "2024"
+    }
+  ]
+}

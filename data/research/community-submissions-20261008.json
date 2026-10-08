@@ -1,0 +1,857 @@
+[
+  {
+    "id": "agama-finance",
+    "name": "Agama",
+    "kind": "RWA yield infrastructure",
+    "description": "Developing curated vaults and synthetic-dollar infrastructure for tokenized real-world assets and private credit.",
+    "website": "https://agama.finance/",
+    "domain": "agama.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Private credit"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://agama.finance/",
+        "title": "Agama — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 1,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Early-stage project; its public website describes the platform as coming soon.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/agamafinance"
+      }
+    ]
+  },
+  {
+    "id": "dominion-market",
+    "name": "Dominion",
+    "kind": "Former asset issuer",
+    "description": "Former Solana-based issuer of SILV, a token intended to represent physically backed silver. Dominion has ceased operations.",
+    "website": "https://dominion.market/",
+    "domain": "dominion.market",
+    "directoryStatus": "historical",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Historical",
+        "name": "Closed initiatives"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://dominion.market/",
+        "title": "Dominion — official website / submitted reference"
+      },
+      {
+        "url": "https://dominion.market/docs/privacy",
+        "title": "Dominion — legal archive and operations-ceased notice"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 2,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "lifecycle": "Closed",
+    "failedInitiative": true,
+    "statusNote": "The official website and archived legal documents state that operations have ceased. No precise closure date is assigned without a dated primary source.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/dominion_market"
+      }
+    ]
+  },
+  {
+    "id": "epiphany-island",
+    "name": "Epiphany Island",
+    "kind": "Asset initiative",
+    "description": "A submitted initiative combining gold-related tokens, digital collectibles and a proposed island ecosystem.",
+    "website": "https://www.epiphanyisland.com/",
+    "domain": "epiphanyisland.com",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.epiphanyisland.com/",
+        "title": "Epiphany Island — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 4,
+      "reportedFoundingDate": "2026",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Submitted project; the available public information does not yet establish its full product scope or operating status.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/Epiphany_island"
+      }
+    ]
+  },
+  {
+    "id": "citycode-yurich",
+    "name": "CityCode by YuRich",
+    "kind": "Submitted initiative",
+    "description": "A city-focused digital community project submitted for the directory. Its public Telegram channel currently describes local AI-powered recommendations; the proposed tokenization activity remains unverified.",
+    "website": "https://t.me/Sevastopol_AI",
+    "domain": "t.me",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "RWAF directory",
+        "name": "Community"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://t.me/Sevastopol_AI",
+        "title": "CityCode by YuRich — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 7,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Public city-community channel located; RWA activity not yet corroborated."
+  },
+  {
+    "id": "stork",
+    "name": "Stork",
+    "kind": "Oracle infrastructure",
+    "description": "Provides low-latency price feeds for onchain derivatives, including around-the-clock data for real-world-asset markets.",
+    "website": "https://stork.network",
+    "domain": "stork.network",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Oracles",
+        "name": "Oracles"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://stork.network",
+        "title": "Stork — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 8,
+      "reportedFoundingDate": "2022",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/storkoracle"
+      }
+    ]
+  },
+  {
+    "id": "trustlogic",
+    "name": "TrustLogic",
+    "kind": "Compliance infrastructure",
+    "description": "Digital-rights infrastructure for enforcing transfer restrictions, permissions and revocation across tokenized assets and decentralized applications.",
+    "website": "https://trustlogic.global",
+    "domain": "trustlogic.global",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Compliance and identity"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://trustlogic.global",
+        "title": "TrustLogic — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 12,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/TrustLogicRWA"
+      }
+    ]
+  },
+  {
+    "id": "codetech",
+    "name": "CoDeTech",
+    "kind": "Blockchain infrastructure",
+    "description": "Blockchain technology provider developing infrastructure for digital identity, payments and interoperable applications.",
+    "website": "https://codetech.cc/",
+    "domain": "codetech.cc",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://codetech.cc/",
+        "title": "CoDeTech — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 13,
+      "reportedFoundingDate": "2013",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/CoDeTechCC"
+      }
+    ]
+  },
+  {
+    "id": "nysa-finance",
+    "name": "Nysa Finance",
+    "kind": "Lending infrastructure",
+    "description": "Builds curated lending markets for tokenized assets, with risk calibration, permissioning and liquidation infrastructure.",
+    "website": "https://nysa.finance/",
+    "domain": "nysa.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Private credit"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://nysa.finance/",
+        "title": "Nysa Finance — official website / submitted reference"
+      },
+      {
+        "url": "https://www.linkedin.com/pulse/easymm-demo-day-6-why-we-keep-doing-easy-mm-ioz5c",
+        "title": "EasyMM — Nysa Finance demo-day introduction"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 14,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/NysaFinance"
+      }
+    ]
+  },
+  {
+    "id": "vs1-finance",
+    "name": "VS1 Finance",
+    "kind": "Capital markets infrastructure",
+    "description": "Developing infrastructure for issuing, distributing and managing tokenized bonds, funds and structured products on the XRP Ledger.",
+    "website": "https://www.vs1.finance/",
+    "domain": "vs1.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.vs1.finance/",
+        "title": "VS1 Finance — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 16,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/vs1_finance"
+      }
+    ]
+  },
+  {
+    "id": "blockfy",
+    "name": "Blockfy",
+    "kind": "Tokenization platform",
+    "description": "Philippines-based platform for issuing, managing and trading tokenized real-world assets.",
+    "website": "https://blockfy.ph",
+    "domain": "blockfy.ph",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://blockfy.ph",
+        "title": "Blockfy — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [
+      "Blockfy Technology",
+      "Blockfy Technology Inc."
+    ],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 18,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/Blockfyglobal"
+      }
+    ]
+  },
+  {
+    "id": "easymm",
+    "name": "EasyMM",
+    "kind": "Liquidity provider",
+    "description": "Market-making provider offering liquidity management, token-launch support and exchange connectivity for digital-asset projects.",
+    "website": "https://www.easymm.io",
+    "domain": "easymm.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Market making"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.easymm.io",
+        "title": "EasyMM — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 19,
+      "reportedFoundingDate": "2020",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/EasyMM_official"
+      }
+    ]
+  },
+  {
+    "id": "hyve",
+    "name": "Hyve",
+    "kind": "Confidential data infrastructure",
+    "description": "Confidential data layer for finance, enabling counterparties to verify information without disclosing the underlying raw data.",
+    "website": "https://hyve.xyz/",
+    "domain": "hyve.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://hyve.xyz/",
+        "title": "Hyve — official website / submitted reference"
+      },
+      {
+        "url": "https://www.linkedin.com/company/hyveda",
+        "title": "Hyve — official company profile"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 21,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/HyveXYZ"
+      }
+    ]
+  },
+  {
+    "id": "loaf-markets",
+    "name": "Loaf Markets",
+    "kind": "Trading platform",
+    "description": "Developing a hybrid exchange for tokenized real-world assets, including real estate.",
+    "website": "https://loafmarkets.com/",
+    "domain": "loafmarkets.com",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://loafmarkets.com/",
+        "title": "Loaf Markets — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 23,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Submitted project; the available public information does not yet establish its full product scope or operating status.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/loafmarkets"
+      }
+    ]
+  },
+  {
+    "id": "algebra",
+    "name": "Algebra",
+    "kind": "DEX infrastructure",
+    "description": "Modular decentralized-exchange infrastructure with concentrated liquidity, dynamic fees and configurable plugins for tokenized-asset markets.",
+    "website": "https://algebra.finance/",
+    "domain": "algebra.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://algebra.finance/",
+        "title": "Algebra — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [
+      "Algebra DEX engine",
+      "CryptoAlgebra"
+    ],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 26,
+      "reportedFoundingDate": "2021",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/CryptoAlgebra"
+      }
+    ]
+  },
+  {
+    "id": "dtec",
+    "name": "DTEC",
+    "kind": "Vehicle data infrastructure",
+    "description": "Vehicle-focused AI and decentralized physical infrastructure project connecting assistant software, driver data and token incentives.",
+    "website": "https://dtec.space/",
+    "domain": "dtec.space",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "DePIN infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://dtec.space/",
+        "title": "DTEC — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 28,
+      "reportedFoundingDate": null,
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/Dtec_AINetwork"
+      }
+    ]
+  },
+  {
+    "id": "metalex",
+    "name": "MetaLeX",
+    "kind": "Legal and onchain infrastructure",
+    "description": "Develops legal and software infrastructure for onchain organizations, fundraising and securities transactions, including cyberCORP and cyberRaise.",
+    "website": "https://www.metalex.tech/",
+    "domain": "metalex.tech",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Legal, audit and assurance"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.metalex.tech/",
+        "title": "MetaLeX — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 29,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/MetaLeX_Labs"
+      }
+    ]
+  },
+  {
+    "id": "orange-street",
+    "name": "Orange Street",
+    "kind": "Fund tokenization infrastructure",
+    "description": "Tokenization infrastructure for commercial real-estate and private-credit funds, including compliant transfers, structured participation and investor distributions.",
+    "website": "https://orangestreetlabs.com",
+    "domain": "orangestreetlabs.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://orangestreetlabs.com",
+        "title": "Orange Street — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 32,
+      "reportedFoundingDate": "2026",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/orangestreetlab"
+      }
+    ]
+  },
+  {
+    "id": "landhive",
+    "name": "LANDHIVE",
+    "kind": "Submitted asset initiative",
+    "description": "Developing a platform for tokenized real-estate development and funding. Product scope is based on its directory submission and awaits further public verification.",
+    "website": "https://www.landhive.io",
+    "domain": "landhive.io",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.landhive.io",
+        "title": "LANDHIVE — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 34,
+      "reportedFoundingDate": "2023",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Submitted project; the available public information does not yet establish its full product scope or operating status.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/LandhiveRWA"
+      }
+    ]
+  },
+  {
+    "id": "khipu-international",
+    "name": "Khipu International",
+    "kind": "Proposed stablecoin issuer",
+    "description": "Submitted pre-launch initiative proposing SOLt, a Peruvian-sol-denominated stablecoin. Issuance and operating status have not been independently confirmed.",
+    "website": "https://www.khipu.international",
+    "domain": "khipu.international",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.khipu.international",
+        "title": "Khipu International — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 35,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Submitted as pre-launch. The official website returned an access restriction during review; public operating status remains unverified.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/KhipuInter26"
+      }
+    ]
+  },
+  {
+    "id": "fbyt",
+    "name": "FBYT",
+    "kind": "Asset management platform",
+    "description": "Solana-based asset-management platform connecting investors and strategy managers through non-custodial vaults and onchain performance records.",
+    "website": "https://fbyt.io/",
+    "domain": "fbyt.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "RWAF directory",
+        "name": "DeFi"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://fbyt.io/",
+        "title": "FBYT — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 38,
+      "reportedFoundingDate": "2026",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/FBYTio"
+      }
+    ]
+  },
+  {
+    "id": "engine-protocol",
+    "name": "Engine",
+    "kind": "Structured-product infrastructure",
+    "description": "Developing structured-product infrastructure for tokenized real-world assets, including tranche-based investment products.",
+    "website": "https://engineprotocol.io/",
+    "domain": "engineprotocol.io",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://engineprotocol.io/",
+        "title": "Engine — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 39,
+      "reportedFoundingDate": "2026",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Submitted project; the available public information does not yet establish its full product scope or operating status.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/EngineRWA"
+      }
+    ]
+  },
+  {
+    "id": "strata-orderbook",
+    "name": "Strata Orderbook",
+    "kind": "Trading infrastructure",
+    "description": "Solana orderbook project submitted as Strata, building trading infrastructure for tokenized assets. Separate from the Strata Markets yield-tranching protocol.",
+    "website": "https://stratabook.app/",
+    "domain": "stratabook.app",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://stratabook.app/",
+        "title": "Strata Orderbook — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [
+      "Stratabook",
+      "stratabookdex"
+    ],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 40,
+      "reportedFoundingDate": "2026",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Submitted project; the available public information does not yet establish its full product scope or operating status.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/stratabookdex"
+      }
+    ]
+  },
+  {
+    "id": "adcentral",
+    "name": "AdCentral",
+    "kind": "Advertising infrastructure",
+    "description": "Developing a decentralized marketplace connecting physical advertising screens with digital advertising demand.",
+    "website": "https://adcentralglobal.com/en",
+    "domain": "adcentralglobal.com",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-08",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "DePIN infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://adcentralglobal.com/en",
+        "title": "AdCentral — official website / submitted reference"
+      }
+    ],
+    "evidenceNote": "Added from the RWAF project-submission export and reviewed against the linked public reference. Submitted founding dates are retained separately and do not enter verified charts without corroboration.",
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 41,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    },
+    "statusNote": "Submitted project; the available public information does not yet establish its full product scope or operating status.",
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/adcentralglobal"
+      }
+    ]
+  }
+]

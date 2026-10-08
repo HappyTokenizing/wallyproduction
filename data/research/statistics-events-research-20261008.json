@@ -1,0 +1,1178 @@
+[
+  {
+    "id": "frax-launch-research-20261008",
+    "profileId": "frax",
+    "type": "launch",
+    "date": "2020-12-20",
+    "note": "Original Frax protocol launch; official documentation explicitly dates the launch to 20 December 2020.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://docs.frax.finance/frax-v1-original/original-design",
+        "title": "Frax documentation — original design"
+      }
+    ]
+  },
+  {
+    "id": "ethena-launch-research-20261008",
+    "profileId": "ethena",
+    "type": "launch",
+    "date": "2024-02",
+    "note": "Ethena Labs states that its subsidiary launched USDe in February 2024; this records the protocol/product launch, not the company's incorporation.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/files/ctf-written-input-ethena-labs-061125.pdf",
+        "title": "Ethena Labs letter to the SEC Crypto Task Force"
+      }
+    ]
+  },
+  {
+    "id": "m0-founding-research-20261008",
+    "profileId": "m0",
+    "type": "founding",
+    "date": "2023",
+    "note": "M0 explicitly identifies 2023 as its founding year in its own funding announcement.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.m0.org/press-releases/m0-raises-series-b-with-investment-from-polychain-and-ribbit-capital-bringing-total-funding-to-100m",
+        "title": "M0 Series B announcement"
+      }
+    ]
+  },
+  {
+    "id": "bvnk-founding-research-20261008",
+    "profileId": "bvnk",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company identifies 2021 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bvnk.com/about-us",
+        "title": "BVNK — About us"
+      }
+    ]
+  },
+  {
+    "id": "privy-founding-research-20261008",
+    "profileId": "privy",
+    "type": "founding",
+    "date": "2021",
+    "note": "Privy's investor lists its founding year as 2021, distinct from its later public and general-availability launches.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://sequoiacap.com/companies/privy",
+        "title": "Sequoia Capital — Privy"
+      }
+    ]
+  },
+  {
+    "id": "fordefi-founding-research-20261008",
+    "profileId": "fordefi",
+    "type": "founding",
+    "date": "2021",
+    "note": "Fordefi states that the company was founded in 2021.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://blog.fordefi.com/fordefi-launches-first-institutional-defi-wallet-security-platform",
+        "title": "Fordefi — institutional wallet launch"
+      }
+    ]
+  },
+  {
+    "id": "conduit-founding-research-20261008",
+    "profileId": "conduit",
+    "type": "founding",
+    "date": "2021",
+    "note": "Conduit's company overview explicitly lists 2021 as its establishment year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://conduitpay.com/about",
+        "title": "Conduit — About"
+      }
+    ]
+  },
+  {
+    "id": "arbol-founding-research-20261008",
+    "profileId": "arbol",
+    "type": "founding",
+    "date": "2018",
+    "note": "Arbol's own company history states that it was founded in 2018.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.arbol.io/company",
+        "title": "Arbol — Our company"
+      }
+    ]
+  },
+  {
+    "id": "alphaledger-founding-research-20261008",
+    "profileId": "alphaledger",
+    "type": "founding",
+    "date": "2019",
+    "note": "Alphaledger identifies 2019 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.alphaledger.com/about/",
+        "title": "Alphaledger — About us"
+      }
+    ]
+  },
+  {
+    "id": "alphapoint-founding-research-20261008",
+    "profileId": "alphapoint",
+    "type": "founding",
+    "date": "2013",
+    "note": "The company timeline dates AlphaPoint's founding to 2013.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://alphapoint.com/about",
+        "title": "AlphaPoint — About"
+      }
+    ]
+  },
+  {
+    "id": "bondblox-founding-research-20261008",
+    "profileId": "bondblox",
+    "type": "founding",
+    "date": "2016",
+    "note": "The company's own history states that it was founded in 2016.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://bondblox.com/about-us",
+        "title": "BondbloX — Our story"
+      }
+    ]
+  },
+  {
+    "id": "akru-founding-research-20261008",
+    "profileId": "akru",
+    "type": "founding",
+    "date": "2018",
+    "note": "AKRU's timeline dates its founding in Cincinnati to 2018.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.akru.com/company",
+        "title": "AKRU — Company history"
+      }
+    ]
+  },
+  {
+    "id": "taurus-founding-research-20261008",
+    "profileId": "taurus",
+    "type": "founding",
+    "date": "2018",
+    "note": "The founders identify 2018 as the company's founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.taurushq.com/about/",
+        "title": "Taurus — About"
+      }
+    ]
+  },
+  {
+    "id": "tzero-founding-research-20261008",
+    "profileId": "tzero",
+    "type": "founding",
+    "date": "2014",
+    "note": "tZERO states that it was founded in 2014 as an Overstock subsidiary.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.tzero.com/company",
+        "title": "tZERO — Company facts"
+      }
+    ]
+  },
+  {
+    "id": "carbonmark-founding-research-20261008",
+    "profileId": "carbonmark",
+    "type": "founding",
+    "date": "2023",
+    "note": "Carbonmark was established in 2023; the team's earlier work and Klima's 2021 launch are distinct events.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.carbonmark.com/company",
+        "title": "Carbonmark — Company history"
+      }
+    ]
+  },
+  {
+    "id": "dlt-finance-founding-research-20261008",
+    "profileId": "dlt-finance",
+    "type": "founding",
+    "date": "2019",
+    "note": "The company states that it was founded in 2019.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://dlt-finance.com/about-us",
+        "title": "DLT Finance — Our story"
+      }
+    ]
+  },
+  {
+    "id": "bsos-founding-research-20261008",
+    "profileId": "bsos",
+    "type": "founding",
+    "date": "2018",
+    "note": "BSOS states that it was established in 2018.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bsos.co/our-story",
+        "title": "BSOS — Our story"
+      }
+    ]
+  },
+  {
+    "id": "cosimo-digital-founding-research-20261008",
+    "profileId": "cosimo-digital",
+    "type": "founding",
+    "date": "2014",
+    "note": "The firm dates its founding as COSIMO Ventures to 2014; the COSIMO X fund launched later.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://cosimodigital.com/about",
+        "title": "COSIMO Digital — Milestones"
+      }
+    ]
+  },
+  {
+    "id": "kinesis-founding-research-20261008",
+    "profileId": "kinesis",
+    "type": "founding",
+    "date": "2018",
+    "note": "Kinesis states that it was established in 2018; this is not the founding date of its partner ABX.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://kinesis.money/about-us/",
+        "title": "Kinesis — About us"
+      }
+    ]
+  },
+  {
+    "id": "plastiks-founding-research-20261008",
+    "profileId": "plastiks",
+    "type": "founding",
+    "date": "2019",
+    "note": "The company timeline states that Plastiks was founded in 2019 and entered production in 2023.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://plastiks.io/about",
+        "title": "Plastiks — Company timeline"
+      }
+    ]
+  },
+  {
+    "id": "dvin-founding-research-20261008",
+    "profileId": "dvin",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company states that dVIN Labs was founded in 2021.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://dvinlabs.com/about/",
+        "title": "dVIN Labs — About"
+      }
+    ]
+  },
+  {
+    "id": "soma-finance-founding-research-20261008",
+    "profileId": "soma-finance",
+    "type": "founding",
+    "date": "2021",
+    "note": "SOMA.finance states that it was founded in 2021 through a partnership with Tritaurian Capital.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.soma.finance/about-us",
+        "title": "SOMA.finance — About us"
+      }
+    ]
+  },
+  {
+    "id": "polytrade-finance-founding-research-20261008",
+    "profileId": "polytrade-finance",
+    "type": "founding",
+    "date": "2021",
+    "note": "Polytrade's timeline dates the trade-finance protocol's founding to 2021.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://polytrade.app/about",
+        "title": "Polytrade — Company history"
+      }
+    ]
+  },
+  {
+    "id": "realio-network-founding-research-20261008",
+    "profileId": "realio-network",
+    "type": "founding",
+    "date": "2018",
+    "note": "The company timeline explicitly dates Realio's founding to 2018.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://realio.network/about",
+        "title": "Realio — Timeline"
+      }
+    ]
+  },
+  {
+    "id": "chromia-founding-research-20261008",
+    "profileId": "chromia",
+    "type": "founding",
+    "date": "2018",
+    "note": "Chromia's history dates the project to 2018; ChromaWay's 2014 founding is a separate parent-company event.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://chromia.com/about",
+        "title": "Chromia — History"
+      }
+    ]
+  },
+  {
+    "id": "enzyme-founding-research-20261008",
+    "profileId": "enzyme",
+    "type": "founding",
+    "date": "2017",
+    "note": "Enzyme dates its founding as Melon Protocol to 2017, before the 2019 mainnet launch and later rebrand.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://enzyme.finance/about-us",
+        "title": "Enzyme — Our history"
+      }
+    ]
+  },
+  {
+    "id": "bitbond-founding-research-20261008",
+    "profileId": "bitbond",
+    "type": "founding",
+    "date": "2013",
+    "note": "Bitbond states that it was founded in Berlin in 2013.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bitbond.com/company",
+        "title": "Bitbond — Our story"
+      }
+    ]
+  },
+  {
+    "id": "brickken-founding-research-20261008",
+    "profileId": "brickken",
+    "type": "founding",
+    "date": "2020",
+    "note": "The founding year is 2020. Official pages disagree on the month (January versus July), so no quarter is assigned.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.brickken.com/whitepaper",
+        "title": "Brickken — Whitepaper"
+      }
+    ]
+  },
+  {
+    "id": "cashlink-founding-research-20261008",
+    "profileId": "cashlink",
+    "type": "founding",
+    "date": "2016",
+    "note": "The partner's company profile explicitly dates Cashlink's founding to 2016.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://cashlink.de/wp-content/uploads/2020/11/Deutsche-Boerse-Group-New-partner-offers-start-up-financing-via-digital-company-shares.pdf",
+        "title": "Deutsche Börse — Cashlink partnership announcement"
+      }
+    ]
+  },
+  {
+    "id": "redstone-founding-research-20261008",
+    "profileId": "redstone",
+    "type": "founding",
+    "date": "2021-04",
+    "note": "RedStone explicitly dates its founding to April 2021, before production oracle deployments in 2023.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.redstone.finance/red-token",
+        "title": "RedStone — RED introduction"
+      }
+    ]
+  },
+  {
+    "id": "stokr-founding-research-20261008",
+    "profileId": "stokr",
+    "type": "founding",
+    "date": "2018",
+    "note": "STOKR identifies 2018 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://stokr.io/stoke-post/stokr-insights-issue-001",
+        "title": "STOKR Insights — Issue 001"
+      }
+    ]
+  },
+  {
+    "id": "bulla-network-founding-research-20261008",
+    "profileId": "bulla-network",
+    "type": "founding",
+    "date": "2021",
+    "note": "The official founder biography dates the establishment of Bulla Network to 2021.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bulla.network/about",
+        "title": "Bulla Network — About"
+      }
+    ]
+  },
+  {
+    "id": "nexbridge-founding-research-20261008",
+    "profileId": "nexbridge",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company timeline dates its founding and incorporation in El Salvador to 2023.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://sv.nexbridge.finance/about",
+        "title": "NexBridge — Company journey"
+      }
+    ]
+  },
+  {
+    "id": "pilgrim-partners-founding-research-20261008",
+    "profileId": "pilgrim-partners",
+    "type": "founding",
+    "date": "2009",
+    "note": "The company's own overview states that it was founded in 2009.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.pilgrimpartnersasia.com/services",
+        "title": "Pilgrim Partners Asia — Services"
+      }
+    ]
+  },
+  {
+    "id": "bitwave-founding-research-20261008",
+    "profileId": "bitwave",
+    "type": "founding",
+    "date": "2018",
+    "note": "Bitwave states that Pat White and Amy Kalnoki founded it in 2018.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bitwave.io/about",
+        "title": "Bitwave — Our story"
+      }
+    ]
+  },
+  {
+    "id": "mesh-founding-research-20261008",
+    "profileId": "mesh",
+    "type": "founding",
+    "date": "2020",
+    "note": "Mesh identifies 2020 as its founding year in the Bay Area.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.meshpay.com/about-us",
+        "title": "Mesh — About us"
+      }
+    ]
+  },
+  {
+    "id": "qivalis-founding-research-20261008",
+    "profileId": "qivalis",
+    "type": "founding",
+    "date": "2025-09",
+    "note": "The nine-bank consortium was incorporated in September 2025; earlier conceptual work and the December brand announcement are distinct.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://qivalis.eu/about-us",
+        "title": "Qivalis — Company timeline"
+      }
+    ]
+  },
+  {
+    "id": "bridgetower-founding-research-20261008",
+    "profileId": "bridgetower",
+    "type": "founding",
+    "date": "2020",
+    "note": "The founder biography dates the founding of BridgeTower Capital to 2020.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bridgetowercapital.com/about",
+        "title": "BridgeTower — About"
+      }
+    ]
+  },
+  {
+    "id": "scorechain-founding-research-20261008",
+    "profileId": "scorechain",
+    "type": "founding",
+    "date": "2015",
+    "note": "Scorechain identifies 2015 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.scorechain.com/blog/scorechain-integrates-with-sui-as-institutional-capital-moves-onto-the-network",
+        "title": "Scorechain — Sui integration announcement"
+      }
+    ]
+  },
+  {
+    "id": "netki-founding-research-20261008",
+    "profileId": "netki",
+    "type": "founding",
+    "date": "2014",
+    "note": "Netki's founder biography explicitly dates the company's co-founding to 2014.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.netki.com/team/justin-newton",
+        "title": "Netki — Justin Newton biography"
+      }
+    ]
+  },
+  {
+    "id": "complyadvantage-founding-research-20261008",
+    "profileId": "complyadvantage",
+    "type": "founding",
+    "date": "2014",
+    "note": "The company's own financing announcement states that it was founded in 2014.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://complyadvantage.com/press-media/regtech-firm-complyadvantage-raises-8-2-million-series-a/",
+        "title": "ComplyAdvantage — Series A announcement"
+      }
+    ]
+  },
+  {
+    "id": "ledgible-founding-research-20261008",
+    "profileId": "ledgible",
+    "type": "founding",
+    "date": "2016",
+    "note": "Ledgible identifies its founding year as 2016.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://ledgible.io/news/understanding-the-fasbs-updated-digital-asset-accounting-standards-2023-08/",
+        "title": "Ledgible — Digital asset accounting standards"
+      }
+    ]
+  },
+  {
+    "id": "cobo-founding-research-20261008",
+    "profileId": "cobo",
+    "type": "founding",
+    "date": "2017",
+    "note": "The company announcement dates Cobo's founding to 2017.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cobo.com/post/cobo-partners-with-umoja-labs",
+        "title": "Cobo — Umoja Labs partnership"
+      }
+    ]
+  },
+  {
+    "id": "tokenovate-founding-research-20261008",
+    "profileId": "tokenovate",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company states that Richard Baker and Gerard Banaszkiewicz founded Tokenovate in 2022.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.tokenovate.com/company/about/",
+        "title": "Tokenovate — About"
+      }
+    ]
+  },
+  {
+    "id": "plume-founding-research-20261008",
+    "profileId": "plume",
+    "type": "founding",
+    "date": "2023",
+    "note": "Plume dates its founding by Chris Yin, Teddy Pornprinya and Eugene Shen to 2023.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.plume.org/blog/plume-update-q2-2025",
+        "title": "Plume — Q2 2025 update"
+      }
+    ]
+  },
+  {
+    "id": "backed-founding-research-20261008",
+    "profileId": "backed",
+    "type": "founding",
+    "date": "2021",
+    "note": "Backed states that it was founded in early 2021; the source does not establish a precise calendar quarter.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://backed.fi/news-updates/introducing-backed-finance",
+        "title": "Backed — Introducing Backed Finance"
+      }
+    ]
+  },
+  {
+    "id": "bitwise-founding-research-20261008",
+    "profileId": "bitwise",
+    "type": "founding",
+    "date": "2017",
+    "note": "Bitwise's company announcement identifies 2017 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://bitwiseinvestments.com/newsroom/bitwise-joins-icapital-marketplace-to-expand-access-to-investment-opportunities",
+        "title": "Bitwise — iCapital marketplace announcement"
+      }
+    ]
+  },
+  {
+    "id": "huma-finance-founding-research-20261008",
+    "profileId": "huma-finance",
+    "type": "founding",
+    "date": "2022",
+    "note": "Huma's co-founder dates the network's inception to 2022.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://blog.huma.finance/huma-finance-partners-with-obligate-to-expand-access-to-trade-finance",
+        "title": "Huma — Obligate partnership announcement"
+      }
+    ]
+  },
+  {
+    "id": "fnality-founding-research-20261008",
+    "profileId": "fnality",
+    "type": "founding",
+    "date": "2019-05",
+    "note": "Fnality International was established in May 2019; the earlier Utility Settlement Coin research project began in 2015.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.fnality.org/hubfs/Fnality%20Insights%20-%20Enhancing%20the%20safety%20and%20efficiency%20of%20cross-border%20interbank%20payments%20-%20an%20overview%20of%20Fnality%20Global%20Payments.pdf",
+        "title": "Fnality — Overview of Fnality Global Payments"
+      }
+    ]
+  },
+  {
+    "id": "xstocks-launch-research-20261008",
+    "profileId": "xstocks",
+    "type": "launch",
+    "date": "2025-06-30",
+    "note": "The public phased launch of xStocks began on 30 June 2025; this is a product launch rather than Backed's founding date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://blog.kraken.com/product/xstocks/tokenized-equities-now-available",
+        "title": "Kraken — xStocks launch announcement"
+      }
+    ]
+  },
+  {
+    "id": "celo-launch-research-20261008",
+    "profileId": "celo",
+    "type": "launch",
+    "date": "2020-04-22",
+    "note": "Celo's research lead explicitly dates the mainnet launch to 22 April 2020.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://forum.celo.org/t/s11-planning-research-strategy-and-innovation/4458",
+        "title": "Celo — Season 11 planning, Research Strategy and Innovation"
+      }
+    ]
+  },
+  {
+    "id": "bridge-founding-research-20261008",
+    "profileId": "bridge",
+    "type": "founding",
+    "date": "2022",
+    "note": "Bridge's investor lists 2022 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://sequoiacap.com/companies/bridge",
+        "title": "Sequoia Capital — Bridge"
+      }
+    ]
+  },
+  {
+    "id": "exodus-movement-founding-research-20261008",
+    "profileId": "exodus-movement",
+    "type": "founding",
+    "date": "2015",
+    "note": "Exodus states that JP Richardson and Daniel Castagnoli founded the company in 2015.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.exodus.com/about",
+        "title": "Exodus — About"
+      }
+    ]
+  },
+  {
+    "id": "rain-founding-research-20261008",
+    "profileId": "rain",
+    "type": "founding",
+    "date": "2021",
+    "note": "The organization's partner profile dates Rain's founding to 2021 and identifies its stablecoin payments business.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.weforum.org/organizations/rain/",
+        "title": "World Economic Forum — Rain partner profile"
+      }
+    ]
+  },
+  {
+    "id": "matrixdock-founding-research-20261008",
+    "profileId": "matrixdock",
+    "type": "founding",
+    "date": "2023-02",
+    "note": "The official partnership announcement states that Matrixport founded Matrixdock in February 2023.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.plume.org/blog/matrixdock",
+        "title": "Plume and Matrixdock — Tokenized gold partnership"
+      }
+    ]
+  },
+  {
+    "id": "holyheld-founding-research-20261008",
+    "profileId": "holyheld",
+    "type": "founding",
+    "date": "2022",
+    "note": "Holyheld's own company profile states that it was founded in 2022.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/holyheldcom",
+        "title": "Holyheld — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "assetera-launch-research-20261008",
+    "profileId": "assetera",
+    "type": "launch",
+    "date": "2024",
+    "note": "Assetera dates the platform's live operation to 2024; this records the platform launch rather than legal incorporation.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.assetera.com/",
+        "title": "Assetera — Platform overview"
+      }
+    ]
+  },
+  {
+    "id": "eventus-launch-research-20261008",
+    "profileId": "eventus",
+    "type": "launch",
+    "date": "2015",
+    "note": "Eventus dates the launch of its Validus trade-surveillance platform to 2015.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.eventus.com/company/",
+        "title": "Eventus — Company story"
+      }
+    ]
+  },
+  {
+    "id": "redbelly-network-launch-research-20261008",
+    "profileId": "redbelly-network",
+    "type": "launch",
+    "date": "2024-11",
+    "note": "The official timeline dates mainnet launch to November 2024, distinct from earlier research and test networks.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://redbelly.network/about-us",
+        "title": "Redbelly — Network timeline"
+      }
+    ]
+  },
+  {
+    "id": "hutly-founding-research-20261008",
+    "profileId": "hutly",
+    "type": "founding",
+    "date": "2017",
+    "note": "The official partnership announcement states that Jeremy Hastings founded Hutly in 2017.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://hs.redbelly.network/blog/hutly-partners-with-redbelly-network-to-tokenise-1.8b-usd-in-rent-rolls",
+        "title": "Redbelly and Hutly — Rent-roll tokenization partnership"
+      }
+    ]
+  },
+  {
+    "id": "cardano-launch-research-20261008",
+    "profileId": "cardano",
+    "type": "launch",
+    "date": "2017-09",
+    "note": "Cardano's official roadmap dates the first network version to September 2017, following research begun in 2015.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://roadmap.cardano.org/en/byron/",
+        "title": "Cardano — Byron roadmap"
+      }
+    ]
+  },
+  {
+    "id": "sei-launch-research-20261008",
+    "profileId": "sei",
+    "type": "launch",
+    "date": "2023-08",
+    "note": "The Sei Foundation states that mainnet has been live since August 2023.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://blog.sei.io/running-the-financial-system-at-internet-scale-how-sei-can-transform-traditional-asset-markets/",
+        "title": "Sei — Financial system at internet scale"
+      }
+    ]
+  },
+  {
+    "id": "stork-founding-research-20261008",
+    "profileId": "stork",
+    "type": "founding",
+    "date": "2022",
+    "note": "Stork's official company profile gives 2022 as its founding year, consistent with its blog describing development beginning in May 2022.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/stork-labs",
+        "title": "Stork Labs — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "algebra-founding-research-20261008",
+    "profileId": "algebra",
+    "type": "founding",
+    "date": "2021",
+    "note": "Algebra's official company profile identifies 2021 as its founding year, corroborating the submitted year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/algebra-finance",
+        "title": "Algebra — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "metalex-launch-research-20261008",
+    "profileId": "metalex",
+    "type": "launch",
+    "date": "2024-12-13",
+    "note": "MetaLeX announced its first public application, CyTE, on 13 December 2024. This is a product launch, not a verified incorporation date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://metalex.substack.com/p/metalex-launches-cybernetic-law-token",
+        "title": "MetaLeX — First public application launch"
+      }
+    ]
+  },
+  {
+    "id": "ensuro-founding-research-20261008",
+    "profileId": "ensuro",
+    "type": "founding",
+    "date": "2021",
+    "note": "Ensuro's own company profile identifies 2021 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/ensuro",
+        "title": "Ensuro — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "boson-founding-research-20261008",
+    "profileId": "boson",
+    "type": "founding",
+    "date": "2019",
+    "note": "Boson's company profile dates its founding to 2019, distinct from later protocol releases.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/bosonprotocol/",
+        "title": "Boson — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "intain-founding-research-20261008",
+    "profileId": "intain",
+    "type": "founding",
+    "date": "2018",
+    "note": "Intain identifies 2018 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/intain",
+        "title": "Intain — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "obligate-founding-research-20261008",
+    "profileId": "obligate",
+    "type": "founding",
+    "date": "2019",
+    "note": "Obligate's company profile lists 2019 as the founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/obligatecom",
+        "title": "Obligate — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "ownera-founding-research-20261008",
+    "profileId": "ownera",
+    "type": "founding",
+    "date": "2018",
+    "note": "Ownera's company profile identifies 2018 as the founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/ownera",
+        "title": "Ownera — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "groma-founding-research-20261008",
+    "profileId": "groma",
+    "type": "founding",
+    "date": "2020",
+    "note": "Groma's real-estate company profile identifies 2020 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/gromabiz/",
+        "title": "Groma — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "grow-inc-founding-research-20261008",
+    "profileId": "grow-inc",
+    "type": "founding",
+    "date": "2016",
+    "note": "GROW Inc's financial-technology company profile identifies 2016 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/grow-inc",
+        "title": "GROW Inc — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "fusang-founding-research-20261008",
+    "profileId": "fusang",
+    "type": "founding",
+    "date": "2015",
+    "note": "Fusang lists 2015 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://sg.linkedin.com/company/fusang",
+        "title": "Fusang — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "agridex-founding-research-20261008",
+    "profileId": "agridex",
+    "type": "founding",
+    "date": "2020",
+    "note": "AgriDex's agricultural trading company profile identifies 2020 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/agridexplatform",
+        "title": "AgriDex — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "parcl-founding-research-20261008",
+    "profileId": "parcl",
+    "type": "founding",
+    "date": "2021",
+    "note": "The Parcl platform's company profile dates its founding to 2021; this does not independently date the separate Parcl Labs directory entry.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/parclco",
+        "title": "Parcl — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "halborn-founding-research-20261008",
+    "profileId": "halborn",
+    "type": "founding",
+    "date": "2019",
+    "note": "Halborn identifies 2019 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/halborn",
+        "title": "Halborn — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "cryptio-founding-research-20261008",
+    "profileId": "cryptio",
+    "type": "founding",
+    "date": "2018",
+    "note": "Cryptio's accounting-platform company profile lists 2018 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/cryptio/?viewAsMember=true",
+        "title": "Cryptio — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "zodia-custody-founding-research-20261008",
+    "profileId": "zodia-custody",
+    "type": "founding",
+    "date": "2020",
+    "note": "Zodia Custody's own company profile identifies 2020 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/zodiacustody/",
+        "title": "Zodia Custody — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "rakkar-founding-research-20261008",
+    "profileId": "rakkar",
+    "type": "founding",
+    "date": "2022",
+    "note": "Rakkar Digital lists 2022 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/rakkar-digital",
+        "title": "Rakkar Digital — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "chainsecurity-founding-research-20261008",
+    "profileId": "chainsecurity",
+    "type": "founding",
+    "date": "2017",
+    "note": "ChainSecurity dates its founding as an ETH Zurich spin-off to 2017.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/chainsecurity",
+        "title": "ChainSecurity — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "chainargos-founding-research-20261008",
+    "profileId": "chainargos",
+    "type": "founding",
+    "date": "2023",
+    "note": "ChainArgos's blockchain-analytics company profile identifies 2023 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/chainargos/",
+        "title": "ChainArgos — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "mural-pay-founding-research-20261008",
+    "profileId": "mural-pay",
+    "type": "founding",
+    "date": "2022",
+    "note": "Mural Pay's stablecoin-payments company profile identifies 2022 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/muralpay",
+        "title": "Mural Pay — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "banxa-founding-research-20261008",
+    "profileId": "banxa",
+    "type": "founding",
+    "date": "2014",
+    "note": "Banxa's company profile identifies 2014 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/banxa-com",
+        "title": "Banxa — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "hamsa-founding-research-20261008",
+    "profileId": "hamsa",
+    "type": "founding",
+    "date": "2020",
+    "note": "Hamsa's investor identifies 2020 as its founding year and links to hamsa.com.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://careers.relevanceventures.com/companies/hamsa-2",
+        "title": "Relevance Ventures — Hamsa portfolio profile"
+      }
+    ]
+  }
+]

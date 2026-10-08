@@ -41,17 +41,22 @@ function place(p,categories){
  }
 }
 const researched=[];
-for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json','lifecycle-additions-20261007.json']){
+for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json','lifecycle-additions-20261007.json','community-submissions-20261008.json']){
  for(const entry of researchRead(name)){
   if(byId.has(entry.id)||profiles.some(p=>norm(p.name)===norm(entry.name)))throw Error('Duplicate research identity: '+entry.name);
   if(!entry.sources?.length||!entry.checkedOn||!entry.categories?.length)throw Error('Incomplete research: '+entry.name);
-  const p={newsRules:[],newsTags:[],relatedEntities:[],logo:null,officialUpdates:[],legacyIds:[],...entry,aliases:[...new Set([entry.name,...(entry.aliases||[])])],provenance:'RWA Foundation / official-source research'};
+  const p={newsRules:[],newsTags:[],relatedEntities:[],logo:null,officialUpdates:[],legacyIds:[],...entry,aliases:[...new Set([entry.name,...(entry.aliases||[])])],provenance:entry.directorySubmission?'RWA Foundation / project submission and public-source review':'RWA Foundation / official-source research'};
   profiles.push(p);byId.set(p.id,p);researched.push(p.id);
   place(p,p.categories);
  }
 }
 // Explicit, dated corrections preserve upstream IDs, placements and favorites.
 const profileUpdates={...researchRead('profile-updates.json'),...researchRead('profile-updates-20261008.json')};
+// Submission metadata augments prior corrections instead of dropping earlier fields.
+for(const [id,update] of Object.entries(researchRead('profile-submissions-20261008.json'))){
+ const prior=profileUpdates[id]||{};
+ profileUpdates[id]={...prior,...update,aliases:[...new Set([...(prior.aliases||[]),...(update.aliases||[])])]};
+}
 for(const [id,update] of Object.entries(profileUpdates)){
  const p=byId.get(id);
  if(!p||!update.sources?.length||!update.checkedOn)throw Error('Incomplete profile update: '+id);
@@ -70,7 +75,7 @@ for(const event of exitEvents){
  for(const source of event.sources){const url=new URL(source.url);if(!source.title||url.protocol!=='https:'||url.username||url.password)throw Error('Invalid M&A source: '+event.id);}
  exitIds.add(event.id);(p.exitEvents||=[]).push(event);
 }
-const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json'),...researchRead('logos-followup.json'),...researchRead('logos-missing.json'),...researchRead('logos-community-20261007.json'),...researchRead('logos-community-fixes-20261007.json')};
+const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json'),...researchRead('logos-followup.json'),...researchRead('logos-missing.json'),...researchRead('logos-community-20261007.json'),...researchRead('logos-community-fixes-20261007.json'),...researchRead('logos-submissions-20261008.json')};
 // Phantom already has a Stablecoin Builders placement; expose the same identity under Wallets.
 const phantom=byId.get('phantom');
 if(!phantom.categories.some(c=>c.section==='Wallets'&&c.name==='Wallets'))phantom.categories.push({section:'Wallets',name:'Wallets'});
@@ -96,7 +101,7 @@ for(const [id,removal] of Object.entries(excludedProfiles)){
  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
 }
 // Lifecycle statistics never infer event dates from review or import timestamps.
-const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json')],statsIds=new Set(),statsTypes=new Set();
+const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json'),...researchRead('statistics-events-research-20261008.json')],statsIds=new Set(),statsTypes=new Set();
 for(const event of statsEvents){
  const key=event.profileId+':'+event.type;
  if(!byId.has(event.profileId)||!event.id||statsIds.has(event.id)||statsTypes.has(key)||!['founding','launch','failure'].includes(event.type)||!dateBounds(event.date)||!event.note||!event.checkedOn||!event.sources?.length)throw Error('Invalid statistics event: '+event.id);
@@ -106,7 +111,7 @@ for(const event of statsEvents){
 }
 for(const e of exitEvents)if(e.completedDate&&!dateBounds(e.completedDate))throw Error('Invalid exit date: '+e.id);
 const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,excludedProfiles:Object.keys(excludedProfiles),updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,completedExits:exitEvents.length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
-const output={snapshotDate:'2026-10-07',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents};
+const output={snapshotDate:'2026-10-08',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
 console.log({...report,merged:undefined,added:undefined,researched:undefined,crosswalk:undefined});

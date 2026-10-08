@@ -1,0 +1,342 @@
+{
+  "particula": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://particula.io",
+        "title": "Particula — official website / submitted reference"
+      }
+    ],
+    "aliases": [
+      "Particula Ratings"
+    ],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 3,
+      "reportedFoundingDate": "2022",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "st0x": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.st0x.io",
+        "title": "ST0x — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 5,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "rwaf-real": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.real.finance/about",
+        "title": "Real Finance — official information"
+      },
+      {
+        "url": "https://www.real.finance/",
+        "title": "Real Finance — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 6,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "tokenforge": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.tokenforge.io/",
+        "title": "tokenforge — official website / submitted reference"
+      }
+    ],
+    "aliases": [
+      "tokenforge GmbH"
+    ],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 9,
+      "reportedFoundingDate": "2021",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "shift-rwa": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.shiftrwa.xyz/",
+        "title": "SHIFT — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 10,
+      "reportedFoundingDate": "2023",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "seda-protocol": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.seda.xyz/",
+        "title": "SEDA: Oracle infrastructure for 24/7 markets"
+      },
+      {
+        "url": "https://seda.xyz",
+        "title": "SEDA Protocol — official website / submitted reference"
+      }
+    ],
+    "aliases": [
+      "SEDA"
+    ],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 11,
+      "reportedFoundingDate": "2020",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "zig-finance": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://zig.finance/about",
+        "title": "ZIG Finance — official product information"
+      },
+      {
+        "url": "https://zigchain.com",
+        "title": "ZIG Finance — official website / submitted reference"
+      }
+    ],
+    "aliases": [
+      "ZIGChain"
+    ],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 15,
+      "reportedFoundingDate": "Zignaly 2018 - ZIGChain 2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "rwaf-orca": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.orca.so/",
+        "title": "Orca: Solana liquidity infrastructure"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 17,
+      "reportedFoundingDate": "2021",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "t-blocks": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://tblocks.io/",
+        "title": "T-Blocks — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 20,
+      "reportedFoundingDate": "2023",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "algorand": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://algorand.co/solutions/tokenization",
+        "title": "Asset tokenization on Algorand"
+      },
+      {
+        "url": "https://algorand.co/",
+        "title": "Algorand — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 22,
+      "reportedFoundingDate": "2017",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "toto-finance": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://totofinance.com/",
+        "title": "Toto Finance"
+      },
+      {
+        "url": "https://totofinance.co/",
+        "title": "Toto Finance — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 24,
+      "reportedFoundingDate": "2022",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "lympid": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.lympid.io/",
+        "title": "Lympid — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 25,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "assetera": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.assetera.com/",
+        "title": "Assetera — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 27,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "pareto": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://pareto.credit/",
+        "title": "Pareto — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 30,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "cask-capital": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.caskcapital.io/",
+        "title": "Cask Capital — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 31,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "demether": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.demether.io/",
+        "title": "Demether: “Demether’s Alpha app is now live!”"
+      },
+      {
+        "url": "https://demether.io",
+        "title": "Demether — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 33,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "bondi-finance": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://app.bondifinance.io/",
+        "title": "Bondi Finance: Tokenized bond platform"
+      },
+      {
+        "url": "https://www.bondifinance.io",
+        "title": "Bondi Finance — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 36,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "splyce-finance": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://splyce.finance/",
+        "title": "Splyce Finance — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 37,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  },
+  "mey-network": {
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://mey.network/",
+        "title": "Mey Network — official website / submitted reference"
+      }
+    ],
+    "aliases": [],
+    "directorySubmission": {
+      "batch": "2026-10-08",
+      "row": 42,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "self-reported; not added to verified statistics without public corroboration"
+    }
+  }
+}

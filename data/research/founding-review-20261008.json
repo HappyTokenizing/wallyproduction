@@ -1,0 +1,5669 @@
+{
+  "checkedOn": "2026-10-08",
+  "baselineProfiles": 1131,
+  "baselineDatedProfiles": 494,
+  "scope": "Screened the official homepage and up to two linked company/about pages for each of the 637 undated profiles where available; followed promising evidence with targeted public-source searches. This is a first research pass, not an exhaustive search of every registry or archive.",
+  "datePolicy": "Only explicit company-specific founding or product/network launch statements become statistics events. Year-only evidence remains year-only. Copyright years, funding announcements, review dates and a founder’s previous companies are not used as founding dates.",
+  "outcomes": {
+    "date_corroborated": 81,
+    "no_explicit_start_date_found": 371,
+    "website_unavailable": 50,
+    "no_current_website": 135
+  },
+  "profiles": [
+    {
+      "profileId": "frax",
+      "name": "Frax",
+      "website": "https://frax.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://frax.com"
+      ],
+      "eventId": "frax-launch-research-20261008"
+    },
+    {
+      "profileId": "agora",
+      "name": "Agora",
+      "website": "https://www.agora.finance",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.agora.finance",
+        "https://www.agora.finance/company"
+      ]
+    },
+    {
+      "profileId": "ethena",
+      "name": "Ethena",
+      "website": "https://ethena.fi",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://ethena.fi"
+      ],
+      "eventId": "ethena-launch-research-20261008"
+    },
+    {
+      "profileId": "jupiter",
+      "name": "Jupiter",
+      "website": "https://jup.ag",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://jup.ag"
+      ]
+    },
+    {
+      "profileId": "neutrl",
+      "name": "Neutrl",
+      "website": "https://www.neutrl.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.neutrl.finance/"
+      ]
+    },
+    {
+      "profileId": "infinifi",
+      "name": "InfiniFi",
+      "website": "https://infinifi.xyz",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "midas",
+      "name": "Midas",
+      "website": "https://midas.app",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "avalon",
+      "name": "Avalon",
+      "website": "https://www.avalonfinance.xyz",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.avalonfinance.xyz"
+      ]
+    },
+    {
+      "profileId": "plume",
+      "name": "Plume",
+      "website": "https://plume.org",
+      "outcome": "date_corroborated",
+      "pagesScreened": [],
+      "eventId": "plume-founding-research-20261008"
+    },
+    {
+      "profileId": "reservoir",
+      "name": "Reservoir",
+      "website": "https://www.reservoir.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.reservoir.xyz/"
+      ]
+    },
+    {
+      "profileId": "m0",
+      "name": "M0",
+      "website": "https://www.m0.org/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.m0.org/"
+      ],
+      "eventId": "m0-founding-research-20261008"
+    },
+    {
+      "profileId": "gnosis-pay",
+      "name": "Gnosis Pay",
+      "website": "https://gnosispay.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://gnosispay.com"
+      ]
+    },
+    {
+      "profileId": "ready",
+      "name": "Ready",
+      "website": "https://www.ready.co/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.ready.co/"
+      ]
+    },
+    {
+      "profileId": "holyheld",
+      "name": "Holyheld",
+      "website": "https://holyheld.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://holyheld.com"
+      ],
+      "eventId": "holyheld-founding-research-20261008"
+    },
+    {
+      "profileId": "exa",
+      "name": "Exa App",
+      "website": "https://www.exactly.app/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.exactly.app/"
+      ]
+    },
+    {
+      "profileId": "rain",
+      "name": "Rain",
+      "website": "https://www.rain.xyz",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.rain.xyz",
+        "https://www.rain.xyz/about-us"
+      ],
+      "eventId": "rain-founding-research-20261008"
+    },
+    {
+      "profileId": "bvnk",
+      "name": "BVNK",
+      "website": "https://www.bvnk.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.bvnk.com",
+        "https://www.bvnk.com/about-us"
+      ],
+      "eventId": "bvnk-founding-research-20261008"
+    },
+    {
+      "profileId": "conduit",
+      "name": "Conduit",
+      "website": "https://conduitpay.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://conduitpay.com",
+        "https://conduitpay.com/about"
+      ],
+      "eventId": "conduit-founding-research-20261008"
+    },
+    {
+      "profileId": "bridge",
+      "name": "Bridge",
+      "website": "https://www.bridge.xyz",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.bridge.xyz",
+        "https://www.bridge.xyz/company"
+      ],
+      "eventId": "bridge-founding-research-20261008"
+    },
+    {
+      "profileId": "eco",
+      "name": "Eco",
+      "website": "https://eco.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://eco.com"
+      ]
+    },
+    {
+      "profileId": "relay",
+      "name": "Relay",
+      "website": "https://relay.link",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "halliday",
+      "name": "Halliday",
+      "website": "https://www.halliday.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.halliday.xyz/",
+        "https://www.halliday.xyz/about"
+      ]
+    },
+    {
+      "profileId": "openfx",
+      "name": "OpenFX",
+      "website": "https://www.openfx.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.openfx.com",
+        "https://www.openfx.com/company"
+      ]
+    },
+    {
+      "profileId": "hifi",
+      "name": "HIFI",
+      "website": "https://www.hifi.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.hifi.com",
+        "https://www.hifi.com/company"
+      ]
+    },
+    {
+      "profileId": "nest",
+      "name": "Nest",
+      "website": "https://nest.credit",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://nest.credit"
+      ]
+    },
+    {
+      "profileId": "theo",
+      "name": "Theo",
+      "website": "https://theo.xyz",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://theo.xyz"
+      ]
+    },
+    {
+      "profileId": "grove",
+      "name": "Grove",
+      "website": "https://grove.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://grove.finance/",
+        "https://grove.finance/about"
+      ]
+    },
+    {
+      "profileId": "daylight",
+      "name": "Daylight",
+      "website": "https://dayfi.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://dayfi.com/"
+      ]
+    },
+    {
+      "profileId": "xstocks",
+      "name": "xStocks",
+      "website": "https://xstocks.com/us",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://xstocks.com/us"
+      ],
+      "eventId": "xstocks-launch-research-20261008"
+    },
+    {
+      "profileId": "backed",
+      "name": "Backed",
+      "website": "https://backed.fi",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://backed.fi",
+        "https://backed.fi/company"
+      ],
+      "eventId": "backed-founding-research-20261008"
+    },
+    {
+      "profileId": "bitwise",
+      "name": "Bitwise",
+      "website": "https://bitwiseinvestments.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://bitwiseinvestments.com"
+      ],
+      "eventId": "bitwise-founding-research-20261008"
+    },
+    {
+      "profileId": "anemoy",
+      "name": "Anemoy",
+      "website": "https://www.anemoy.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.anemoy.io/"
+      ]
+    },
+    {
+      "profileId": "plasma",
+      "name": "Plasma",
+      "website": "https://www.plasma.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.plasma.org/",
+        "https://www.plasma.org/company/about",
+        "https://www.plasma.org/company/blog"
+      ]
+    },
+    {
+      "profileId": "zksync",
+      "name": "ZKsync",
+      "website": "https://www.zksync.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.zksync.io/"
+      ]
+    },
+    {
+      "profileId": "stable",
+      "name": "Stable",
+      "website": "https://www.stable.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.stable.xyz/"
+      ]
+    },
+    {
+      "profileId": "celo",
+      "name": "Celo",
+      "website": "https://celo.org",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://celo.org"
+      ],
+      "eventId": "celo-launch-research-20261008"
+    },
+    {
+      "profileId": "codex",
+      "name": "Codex FX",
+      "website": "https://codex.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://codex.xyz/"
+      ]
+    },
+    {
+      "profileId": "euler",
+      "name": "Euler",
+      "website": "https://www.euler.finance",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.euler.finance"
+      ]
+    },
+    {
+      "profileId": "goldfinch",
+      "name": "Goldfinch",
+      "website": "https://www.goldfinch.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.goldfinch.finance/"
+      ]
+    },
+    {
+      "profileId": "spark",
+      "name": "Spark",
+      "website": "https://spark.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://spark.finance/"
+      ]
+    },
+    {
+      "profileId": "wildcat",
+      "name": "Wildcat",
+      "website": "https://wildcat.finance",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://wildcat.finance"
+      ]
+    },
+    {
+      "profileId": "kamino",
+      "name": "Kamino",
+      "website": "https://kamino.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://kamino.com/"
+      ]
+    },
+    {
+      "profileId": "fluid",
+      "name": "Fluid",
+      "website": "https://fluid.io",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "dolomite",
+      "name": "Dolomite",
+      "website": "https://dolomite.io",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://dolomite.io"
+      ]
+    },
+    {
+      "profileId": "re",
+      "name": "Re",
+      "website": "https://re.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://re.xyz/"
+      ]
+    },
+    {
+      "profileId": "privy",
+      "name": "Privy",
+      "website": "https://www.privy.io",
+      "outcome": "date_corroborated",
+      "pagesScreened": [],
+      "eventId": "privy-founding-research-20261008"
+    },
+    {
+      "profileId": "dynamic",
+      "name": "Dynamic",
+      "website": "https://www.dynamic.xyz",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "fordefi",
+      "name": "Fordefi",
+      "website": "https://fordefi.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://fordefi.com",
+        "https://fordefi.com/company"
+      ],
+      "eventId": "fordefi-founding-research-20261008"
+    },
+    {
+      "profileId": "rabby",
+      "name": "Rabby",
+      "website": "https://rabby.io",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://rabby.io"
+      ]
+    },
+    {
+      "profileId": "base",
+      "name": "Base App / Coinbase Wallet",
+      "website": "https://base.app/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ether-fi",
+      "name": "ether.fi",
+      "website": "https://ether.fi",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "kast",
+      "name": "KAST",
+      "website": "https://www.kast.xyz",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.kast.xyz",
+        "https://www.kast.xyz/en/about"
+      ]
+    },
+    {
+      "profileId": "ur-app",
+      "name": "ur.app",
+      "website": "https://ur.app",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://ur.app",
+        "https://ur.app/about"
+      ]
+    },
+    {
+      "profileId": "arq",
+      "name": "ARQ (formerly DolarApp)",
+      "website": "https://www.arqfinance.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.arqfinance.com/en-MX"
+      ]
+    },
+    {
+      "profileId": "galaxyone",
+      "name": "GalaxyOne",
+      "website": "https://www.galaxy.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.galaxy.com",
+        "https://www.galaxy.com/digital-assets-academy-about",
+        "https://www.galaxy.com/about"
+      ]
+    },
+    {
+      "profileId": "redstone",
+      "name": "RedStone",
+      "website": "https://www.redstone.finance/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.redstone.finance/"
+      ],
+      "eventId": "redstone-founding-research-20261008"
+    },
+    {
+      "profileId": "justoken",
+      "name": "Justoken",
+      "website": "https://www.justoken.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.justoken.com/"
+      ]
+    },
+    {
+      "profileId": "allfunds-blockchain",
+      "name": "Allfunds Blockchain",
+      "website": "https://allfunds.com/en/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://allfunds.com/en/",
+        "https://allfunds.com/en/about",
+        "https://allfunds.com/en/about/team"
+      ]
+    },
+    {
+      "profileId": "alphaledger",
+      "name": "Alphaledger",
+      "website": "https://www.alphaledger.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.alphaledger.com",
+        "https://www.alphaledger.com/about/"
+      ],
+      "eventId": "alphaledger-founding-research-20261008"
+    },
+    {
+      "profileId": "alphapoint",
+      "name": "AlphaPoint",
+      "website": "https://alphapoint.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://alphapoint.com/",
+        "https://alphapoint.com/about"
+      ],
+      "eventId": "alphapoint-founding-research-20261008"
+    },
+    {
+      "profileId": "arbol",
+      "name": "Arbol",
+      "website": "https://www.arbol.io/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.arbol.io/",
+        "https://www.arbol.io/company"
+      ],
+      "eventId": "arbol-founding-research-20261008"
+    },
+    {
+      "profileId": "bitbond",
+      "name": "Bitbond",
+      "website": "https://www.bitbond.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [],
+      "eventId": "bitbond-founding-research-20261008"
+    },
+    {
+      "profileId": "blocksquare",
+      "name": "Blocksquare",
+      "website": "https://blocksquare.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://blocksquare.io/"
+      ]
+    },
+    {
+      "profileId": "bondblox",
+      "name": "BondbloX",
+      "website": "https://bondblox.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://bondblox.com/",
+        "https://bondblox.com/about-us",
+        "https://bondblox.com/about-us#ourStory"
+      ],
+      "eventId": "bondblox-founding-research-20261008"
+    },
+    {
+      "profileId": "boson",
+      "name": "Boson",
+      "website": "https://www.bosonprotocol.io/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.bosonprotocol.io/"
+      ],
+      "eventId": "boson-founding-research-20261008"
+    },
+    {
+      "profileId": "brickken",
+      "name": "Brickken",
+      "website": "https://www.brickken.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [],
+      "eventId": "brickken-founding-research-20261008"
+    },
+    {
+      "profileId": "cashlink",
+      "name": "Cashlink",
+      "website": "https://cashlink.de/de/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://cashlink.de/de/"
+      ],
+      "eventId": "cashlink-founding-research-20261008"
+    },
+    {
+      "profileId": "clearpool",
+      "name": "Clearpool",
+      "website": "https://clearpool.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://clearpool.finance/"
+      ]
+    },
+    {
+      "profileId": "dusk",
+      "name": "Dusk",
+      "website": "https://dusk.network",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://dusk.network"
+      ]
+    },
+    {
+      "profileId": "ensuro",
+      "name": "Ensuro",
+      "website": "https://www.ensuro.co",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.ensuro.co"
+      ],
+      "eventId": "ensuro-founding-research-20261008"
+    },
+    {
+      "profileId": "fnality",
+      "name": "Fnality",
+      "website": "https://fnality.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://fnality.com/",
+        "https://fnality.com/about-us"
+      ],
+      "eventId": "fnality-founding-research-20261008"
+    },
+    {
+      "profileId": "hqlax",
+      "name": "HQLAx",
+      "website": "https://www.hqla-x.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.hqla-x.com/",
+        "https://www.hqla-x.com/about-us"
+      ]
+    },
+    {
+      "profileId": "huma-finance",
+      "name": "Huma Finance",
+      "website": "https://www.huma.finance",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.huma.finance"
+      ],
+      "eventId": "huma-finance-founding-research-20261008"
+    },
+    {
+      "profileId": "investax",
+      "name": "InvestaX",
+      "website": "https://investax.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://investax.io/",
+        "https://investax.io/about",
+        "https://investax.io/deals/enote-metavisio-computer-manufacturing-company"
+      ]
+    },
+    {
+      "profileId": "inx",
+      "name": "INX",
+      "website": "https://www.inx.co",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.inx.co"
+      ]
+    },
+    {
+      "profileId": "matrixdock",
+      "name": "Matrixdock",
+      "website": "https://www.matrixdock.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.matrixdock.com",
+        "https://www.matrixdock.com/about-us"
+      ],
+      "eventId": "matrixdock-founding-research-20261008"
+    },
+    {
+      "profileId": "stokr",
+      "name": "STOKR",
+      "website": "https://stokr.io/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://stokr.io/"
+      ],
+      "eventId": "stokr-founding-research-20261008"
+    },
+    {
+      "profileId": "taurus",
+      "name": "Taurus",
+      "website": "https://www.taurushq.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.taurushq.com",
+        "https://www.taurushq.com/about/"
+      ],
+      "eventId": "taurus-founding-research-20261008"
+    },
+    {
+      "profileId": "xdc-network",
+      "name": "XDC Network",
+      "website": "https://xdc.org",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://xdc.org",
+        "https://xdc.org/network/history"
+      ]
+    },
+    {
+      "profileId": "redbelly-network",
+      "name": "Redbelly Network",
+      "website": "https://www.redbelly.network",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://redbelly.network/",
+        "https://redbelly.network/about-us#team"
+      ],
+      "eventId": "redbelly-network-launch-research-20261008"
+    },
+    {
+      "profileId": "glo-dollar",
+      "name": "Glo Dollar",
+      "website": "https://www.glodollar.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.glodollar.org/"
+      ]
+    },
+    {
+      "profileId": "tzero",
+      "name": "tZERO",
+      "website": "https://www.tzero.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.tzero.com",
+        "https://www.tzero.com/company",
+        "https://www.tzero.com/company#partners"
+      ],
+      "eventId": "tzero-founding-research-20261008"
+    },
+    {
+      "profileId": "agridex",
+      "name": "AgriDex",
+      "website": "https://agridex.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://agridex.com/"
+      ],
+      "eventId": "agridex-founding-research-20261008"
+    },
+    {
+      "profileId": "akru",
+      "name": "AKRU",
+      "website": "https://www.akru.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.akru.com",
+        "https://www.akru.com/company"
+      ],
+      "eventId": "akru-founding-research-20261008"
+    },
+    {
+      "profileId": "aktionariat",
+      "name": "Aktionariat",
+      "website": "https://www.aktionariat.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.aktionariat.com",
+        "https://www.aktionariat.com/about-us"
+      ]
+    },
+    {
+      "profileId": "allo",
+      "name": "Allo",
+      "website": "https://allo.xyz/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "alta",
+      "name": "Alta",
+      "website": "https://alta.exchange/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://alta.exchange/",
+        "https://alta.exchange/about-alta"
+      ]
+    },
+    {
+      "profileId": "anzen",
+      "name": "Anzen",
+      "website": "https://anzen.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://anzen.finance/"
+      ]
+    },
+    {
+      "profileId": "arf",
+      "name": "Arf",
+      "website": "https://arf.one/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://arf.one/",
+        "https://arf.one/about-us/"
+      ]
+    },
+    {
+      "profileId": "assetera",
+      "name": "Assetera",
+      "website": "https://www.assetera.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.assetera.com",
+        "https://www.assetera.com/about"
+      ],
+      "eventId": "assetera-launch-research-20261008"
+    },
+    {
+      "profileId": "baxus",
+      "name": "BAXUS",
+      "website": "https://www.baxus.co/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.baxus.co/",
+        "https://www.baxus.co/about"
+      ]
+    },
+    {
+      "profileId": "black-manta",
+      "name": "Black Manta",
+      "website": "https://blackmanta.capital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://blackmanta.capital/"
+      ]
+    },
+    {
+      "profileId": "blockapps",
+      "name": "BlockApps",
+      "website": "https://blockapps.net/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://blockapps.net/"
+      ]
+    },
+    {
+      "profileId": "carbonmark",
+      "name": "Carbonmark",
+      "website": "https://www.carbonmark.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.carbonmark.com",
+        "https://www.carbonmark.com/company"
+      ],
+      "eventId": "carbonmark-founding-research-20261008"
+    },
+    {
+      "profileId": "cicada-partners",
+      "name": "Cicada Partners",
+      "website": "https://www.cicada.partners/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.cicada.partners/"
+      ]
+    },
+    {
+      "profileId": "creditcoin",
+      "name": "Creditcoin",
+      "website": "https://creditcoin.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://creditcoin.org/"
+      ]
+    },
+    {
+      "profileId": "csigma",
+      "name": "cSigma",
+      "website": "https://www.csigma.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.csigma.finance/"
+      ]
+    },
+    {
+      "profileId": "dlt-finance",
+      "name": "DLT Finance",
+      "website": "https://dlt-finance.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://dlt-finance.com/",
+        "https://dlt-finance.com/about-us"
+      ],
+      "eventId": "dlt-finance-founding-research-20261008"
+    },
+    {
+      "profileId": "elysia",
+      "name": "ELYSIA",
+      "website": "https://www.elysia.land",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.elysia.land"
+      ]
+    },
+    {
+      "profileId": "everest",
+      "name": "Everest",
+      "website": "https://everest.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://everest.org/"
+      ]
+    },
+    {
+      "profileId": "fabrica",
+      "name": "Fabrica",
+      "website": "https://fabrica.land/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://fabrica.land/"
+      ]
+    },
+    {
+      "profileId": "gluwa",
+      "name": "Gluwa",
+      "website": "https://gluwa.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://gluwa.com/"
+      ]
+    },
+    {
+      "profileId": "homium",
+      "name": "Homium",
+      "website": "https://www.homium.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.homium.io/",
+        "https://www.homium.io/about-homium"
+      ]
+    },
+    {
+      "profileId": "intain",
+      "name": "Intain",
+      "website": "https://intainft.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://intainft.com/"
+      ],
+      "eventId": "intain-founding-research-20261008"
+    },
+    {
+      "profileId": "inveniam",
+      "name": "Inveniam",
+      "website": "https://www.inveniam.io",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.inveniam.io",
+        "https://www.inveniam.io/company/about-us",
+        "https://www.inveniam.io/company/team"
+      ]
+    },
+    {
+      "profileId": "kaio",
+      "name": "KAIO",
+      "website": "https://kaio.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://kaio.xyz/",
+        "https://kaio.xyz/about"
+      ]
+    },
+    {
+      "profileId": "lumia",
+      "name": "Lumia",
+      "website": "https://lumia.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://lumia.org/"
+      ]
+    },
+    {
+      "profileId": "mantra",
+      "name": "MANTRA",
+      "website": "https://mantrachain.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://mantrachain.io/"
+      ]
+    },
+    {
+      "profileId": "obligate",
+      "name": "Obligate",
+      "website": "https://www.obligate.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.obligate.com"
+      ],
+      "eventId": "obligate-founding-research-20261008"
+    },
+    {
+      "profileId": "ownera",
+      "name": "Ownera",
+      "website": "https://www.ownera.io",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.ownera.io",
+        "https://www.ownera.io/about"
+      ],
+      "eventId": "ownera-founding-research-20261008"
+    },
+    {
+      "profileId": "arkreen",
+      "name": "Arkreen",
+      "website": "https://www.arkreen.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.arkreen.com/"
+      ]
+    },
+    {
+      "profileId": "bsos",
+      "name": "BSOS",
+      "website": "https://www.bsos.co",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.bsos.co",
+        "https://www.bsos.co/our-story"
+      ],
+      "eventId": "bsos-founding-research-20261008"
+    },
+    {
+      "profileId": "denario",
+      "name": "Denario",
+      "website": "https://www.denario.swiss/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "fusang",
+      "name": "Fusang",
+      "website": "https://www.fusang.co",
+      "outcome": "date_corroborated",
+      "pagesScreened": [],
+      "eventId": "fusang-founding-research-20261008"
+    },
+    {
+      "profileId": "galileo-protocol",
+      "name": "Galileo Protocol",
+      "website": "https://www.galileoprotocol.io",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.galileoprotocol.io"
+      ]
+    },
+    {
+      "profileId": "hamsa",
+      "name": "Hamsa",
+      "website": "https://www.hamsa.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.hamsa.com",
+        "https://www.hamsa.com/about-us"
+      ],
+      "eventId": "hamsa-founding-research-20261008"
+    },
+    {
+      "profileId": "instruxi",
+      "name": "Instruxi",
+      "website": "https://www.instruxi.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.instruxi.io/"
+      ]
+    },
+    {
+      "profileId": "infineo",
+      "name": "infineo",
+      "website": "https://infineo.ai/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://infineo.ai/",
+        "https://infineo.ai/about/story",
+        "https://infineo.ai/about/team"
+      ]
+    },
+    {
+      "profileId": "kinesis",
+      "name": "Kinesis",
+      "website": "https://kinesis.money/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://kinesis.money/",
+        "https://kinesis.money/about-us/",
+        "https://kinesis.money/about-us/fees/"
+      ],
+      "eventId": "kinesis-founding-research-20261008"
+    },
+    {
+      "profileId": "onre",
+      "name": "OnRe",
+      "website": "https://www.onre.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.onre.finance/",
+        "https://www.onre.finance/about-us"
+      ]
+    },
+    {
+      "profileId": "regen-network",
+      "name": "Regen Network",
+      "website": "https://www.regen.network/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.regen.network/"
+      ]
+    },
+    {
+      "profileId": "arca",
+      "name": "Arca",
+      "website": "https://www.arcalabs.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.arcalabs.com/",
+        "https://www.arcalabs.com/about-arcoin"
+      ]
+    },
+    {
+      "profileId": "arttrade",
+      "name": "arttrade",
+      "website": "https://arttrade.de/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://arttrade.de/"
+      ]
+    },
+    {
+      "profileId": "balcony",
+      "name": "Balcony",
+      "website": "https://balcony.technology/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://balcony.technology/"
+      ]
+    },
+    {
+      "profileId": "enor",
+      "name": "Enor",
+      "website": "https://enorsecurities.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://enorsecurities.com/"
+      ]
+    },
+    {
+      "profileId": "entoro",
+      "name": "Entoro",
+      "website": "https://www.entoro.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.entoro.com",
+        "https://www.entoro.com/about/overview",
+        "https://www.entoro.com/about/the-entoro-team"
+      ]
+    },
+    {
+      "profileId": "estate-protocol",
+      "name": "Estate Protocol",
+      "website": "https://www.estateprotocol.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.estateprotocol.com/"
+      ]
+    },
+    {
+      "profileId": "estatex",
+      "name": "EstateX",
+      "website": "https://estatex.eu/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://estatex.eu/",
+        "https://estatex.eu/company/"
+      ]
+    },
+    {
+      "profileId": "gold-dao",
+      "name": "Gold DAO",
+      "website": "https://gldt.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://gldt.org/"
+      ]
+    },
+    {
+      "profileId": "groma",
+      "name": "Groma",
+      "website": "https://www.groma.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.groma.com/",
+        "https://www.groma.com/about"
+      ],
+      "eventId": "groma-founding-research-20261008"
+    },
+    {
+      "profileId": "kula",
+      "name": "Kula",
+      "website": "https://www.kula.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.kula.com/",
+        "https://www.kula.com/about-us",
+        "https://www.kula.com/about-us#team"
+      ]
+    },
+    {
+      "profileId": "ledgity",
+      "name": "Ledgity",
+      "website": "https://ledgity.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://ledgity.finance/"
+      ]
+    },
+    {
+      "profileId": "libertum",
+      "name": "Libertum",
+      "website": "https://www.libertum.io/en/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.libertum.io/en/",
+        "https://www.libertum.io/en/about/libertum/",
+        "https://www.libertum.io/en/about/industry-partners/"
+      ]
+    },
+    {
+      "profileId": "mansa",
+      "name": "MANSA",
+      "website": "https://mansa.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://mansa.xyz/",
+        "https://mansa.xyz/about.html"
+      ]
+    },
+    {
+      "profileId": "mavryk-network",
+      "name": "Mavryk Network",
+      "website": "https://mavryk.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://mavryk.org/"
+      ]
+    },
+    {
+      "profileId": "rwa-xyz",
+      "name": "RWA.xyz",
+      "website": "https://app.rwa.xyz/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "zivoe",
+      "name": "Zivoe",
+      "website": "https://www.zivoe.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "parvis",
+      "name": "Parvis",
+      "website": "https://www.parvisinvest.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.parvisinvest.com/individuals",
+        "https://www.parvisinvest.com/company/company",
+        "https://www.parvisinvest.com/company/company"
+      ]
+    },
+    {
+      "profileId": "cosimo-digital",
+      "name": "COSIMO Digital",
+      "website": "https://cosimodigital.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://cosimodigital.com/",
+        "https://cosimodigital.com/about"
+      ],
+      "eventId": "cosimo-digital-founding-research-20261008"
+    },
+    {
+      "profileId": "edel",
+      "name": "Edel",
+      "website": "https://www.edel.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.edel.finance/"
+      ]
+    },
+    {
+      "profileId": "helix-finance",
+      "name": "HELIX",
+      "website": "https://www.helixfi.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.helixfi.io/"
+      ]
+    },
+    {
+      "profileId": "homebase",
+      "name": "Homebase",
+      "website": "https://www.homebasedao.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.homebasedao.io/"
+      ]
+    },
+    {
+      "profileId": "houseafrica",
+      "name": "HouseAfrica",
+      "website": "https://houseafrica.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://houseafrica.io/"
+      ]
+    },
+    {
+      "profileId": "ink-finance",
+      "name": "Ink Finance",
+      "website": "https://www.inkfinance.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.inkfinance.xyz/"
+      ]
+    },
+    {
+      "profileId": "isle-finance",
+      "name": "Isle Finance",
+      "website": "https://www.isle.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.isle.finance/"
+      ]
+    },
+    {
+      "profileId": "kiichain",
+      "name": "KiiChain",
+      "website": "https://kiichain.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://kiichain.io/"
+      ]
+    },
+    {
+      "profileId": "parcl-labs",
+      "name": "Parcl Labs",
+      "website": "https://www.parcllabs.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.parcllabs.com/"
+      ]
+    },
+    {
+      "profileId": "plastiks",
+      "name": "Plastiks",
+      "website": "https://plastiks.io/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://plastiks.io/",
+        "https://plastiks.io/about",
+        "https://plastiks.io/about#team"
+      ],
+      "eventId": "plastiks-founding-research-20261008"
+    },
+    {
+      "profileId": "qiro-finance",
+      "name": "Qiro Finance",
+      "website": "https://www.qiro.fi/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.qiro.fi/"
+      ]
+    },
+    {
+      "profileId": "realtyx",
+      "name": "RealtyX",
+      "website": "https://realtyx.co/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://realtyx.co/"
+      ]
+    },
+    {
+      "profileId": "realx",
+      "name": "RealX",
+      "website": "https://www.realx.in/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.realx.in/"
+      ]
+    },
+    {
+      "profileId": "scintilla-network",
+      "name": "Scintilla Network",
+      "website": "https://scintillanetwork.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://scintillanetwork.com/",
+        "https://scintillanetwork.com/about",
+        "https://scintillanetwork.com/blogs/what-most-people-get-wrong-about-defi-and-real-world-assets"
+      ]
+    },
+    {
+      "profileId": "spydra",
+      "name": "Spydra",
+      "website": "https://www.spydra.app",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.spydra.app",
+        "https://www.spydra.app/about-us"
+      ]
+    },
+    {
+      "profileId": "toronet",
+      "name": "Toronet",
+      "website": "https://website.toronet.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://website.toronet.org/"
+      ]
+    },
+    {
+      "profileId": "anzi",
+      "name": "Anzi",
+      "website": "https://anzi.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://anzi.finance/"
+      ]
+    },
+    {
+      "profileId": "atyum",
+      "name": "ATYUM",
+      "website": "https://atyum.com/en",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "blockridge",
+      "name": "BlockRidge",
+      "website": "https://blockridge.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://blockridge.com/",
+        "https://blockridge.com/our-story/",
+        "https://blockridge.com/#about"
+      ]
+    },
+    {
+      "profileId": "bloom",
+      "name": "Bloom",
+      "website": "https://www.bloom.garden/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.bloom.garden/"
+      ]
+    },
+    {
+      "profileId": "bricklayer-dao",
+      "name": "Bricklayer DAO",
+      "website": "https://bricklayerdao.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://bricklayerdao.com/",
+        "https://bricklayerdao.com/about"
+      ]
+    },
+    {
+      "profileId": "cask-capital",
+      "name": "Cask Capital",
+      "website": "https://www.caskcapital.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.caskcapital.io/",
+        "https://www.caskcapital.io/about"
+      ]
+    },
+    {
+      "profileId": "ebric",
+      "name": "EBRIC / Likwid Asset",
+      "website": "https://www.likwidasset.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.likwidasset.com/"
+      ]
+    },
+    {
+      "profileId": "enerdao",
+      "name": "EnerDAO",
+      "website": "https://www.enerdao.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.enerdao.org/"
+      ]
+    },
+    {
+      "profileId": "etherland",
+      "name": "Etherland",
+      "website": "https://etherland.tech/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "frac",
+      "name": "Frac",
+      "website": "https://frac.io/?unit=3",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://frac.io/?unit=3"
+      ]
+    },
+    {
+      "profileId": "gramchain",
+      "name": "GramChain",
+      "website": "https://www.gramchain.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.gramchain.com/"
+      ]
+    },
+    {
+      "profileId": "grow-inc",
+      "name": "GROW Inc",
+      "website": "https://www.grow.inc/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.grow.inc/",
+        "https://www.grow.inc/company/about-us",
+        "https://www.grow.inc/company/careers"
+      ],
+      "eventId": "grow-inc-founding-research-20261008"
+    },
+    {
+      "profileId": "homecoin",
+      "name": "HomeCoin",
+      "website": "https://www.homecoin.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.homecoin.finance/",
+        "https://www.homecoin.finance/about"
+      ]
+    },
+    {
+      "profileId": "nasdex",
+      "name": "NASDEX",
+      "website": "https://www.nasdex.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.nasdex.xyz/"
+      ]
+    },
+    {
+      "profileId": "prestocks",
+      "name": "PreStocks",
+      "website": "https://prestocks.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://prestocks.com/"
+      ]
+    },
+    {
+      "profileId": "relevantz",
+      "name": "Relevantz",
+      "website": "https://blockchain.relevantz.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://blockchain.relevantz.com/"
+      ]
+    },
+    {
+      "profileId": "shift-rwa",
+      "name": "SHIFT",
+      "website": "https://www.shiftrwa.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.shiftrwa.xyz/"
+      ]
+    },
+    {
+      "profileId": "security-token-market",
+      "name": "Security Token Market (STM.co)",
+      "website": "https://www.stm.co/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://stm.co/"
+      ]
+    },
+    {
+      "profileId": "transfer-agent-protocol",
+      "name": "Transfer Agent Protocol",
+      "website": "https://transferagentprotocol.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://transferagentprotocol.xyz/"
+      ]
+    },
+    {
+      "profileId": "whrrl",
+      "name": "Whrrl",
+      "website": "https://www.whr.loans/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.whr.loans/"
+      ]
+    },
+    {
+      "profileId": "yieldbricks",
+      "name": "YieldBricks",
+      "website": "https://yieldbricks.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://yieldbricks.com/",
+        "https://yieldbricks.com/about.html"
+      ]
+    },
+    {
+      "profileId": "360xart",
+      "name": "360xart",
+      "website": "https://www.360xart.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.360xart.com",
+        "https://www.360xart.com#about"
+      ]
+    },
+    {
+      "profileId": "agrifi",
+      "name": "AgriFi",
+      "website": "https://agrifiafrica.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://agrifiafrica.com/"
+      ]
+    },
+    {
+      "profileId": "ammocrypt",
+      "name": "AmmoCrypt",
+      "website": "https://ammocrypt.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://ammocrypt.io/",
+        "https://ammocrypt.io/about/"
+      ]
+    },
+    {
+      "profileId": "bigfoot404",
+      "name": "BIGFOOT404",
+      "website": "https://bigfoot404.biz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://bigfoot404.biz/"
+      ]
+    },
+    {
+      "profileId": "bitbay",
+      "name": "BitBay",
+      "website": "https://bitbay.market/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://bitbay.market/"
+      ]
+    },
+    {
+      "profileId": "blockpeer",
+      "name": "Blockpeer",
+      "website": "https://www.blockpeer.finance/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "caskcoin",
+      "name": "CaskCoin",
+      "website": "https://www.caskcoin.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.caskcoin.com/",
+        "https://www.caskcoin.com/whisky/history/"
+      ]
+    },
+    {
+      "profileId": "chateau-capital",
+      "name": "Chateau Capital",
+      "website": "https://www.chateau.capital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.chateau.capital/",
+        "https://www.chateau.capital/about-us"
+      ]
+    },
+    {
+      "profileId": "cheersland",
+      "name": "Cheersland",
+      "website": "https://cheersland.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://cheersland.org/"
+      ]
+    },
+    {
+      "profileId": "coded-estate",
+      "name": "Coded Estate",
+      "website": "https://www.codedestate.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.codedestate.com/"
+      ]
+    },
+    {
+      "profileId": "coreestate",
+      "name": "Coreestate",
+      "website": "https://coreestate.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://coreestate.io/"
+      ]
+    },
+    {
+      "profileId": "crowdgenix",
+      "name": "Crowdgenix",
+      "website": "https://www.crowdgenix.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.crowdgenix.com/",
+        "https://www.crowdgenix.com/#About"
+      ]
+    },
+    {
+      "profileId": "curio",
+      "name": "Curio",
+      "website": "https://curioinvest.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "dequity",
+      "name": "Dequity",
+      "website": "https://dequity.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://dequity.io/",
+        "https://dequity.io/about"
+      ]
+    },
+    {
+      "profileId": "diamore",
+      "name": "Diamore",
+      "website": "https://diamore.co/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "digital-marks-syntrix",
+      "name": "Digital Marks / Syntrix",
+      "website": "https://digital-marks.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://digital-marks.com/"
+      ]
+    },
+    {
+      "profileId": "dvin",
+      "name": "dVIN",
+      "website": "https://dvinlabs.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://dvinlabs.com/",
+        "https://dvinlabs.com/about/"
+      ],
+      "eventId": "dvin-founding-research-20261008"
+    },
+    {
+      "profileId": "etherisc",
+      "name": "Etherisc",
+      "website": "https://etherisc.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "grandbase",
+      "name": "Grandbase",
+      "website": "https://grandbase.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://grandbase.io/"
+      ]
+    },
+    {
+      "profileId": "item-banc",
+      "name": "Item Banc",
+      "website": "https://itembanc.nl/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://itembanc.nl/"
+      ]
+    },
+    {
+      "profileId": "jadecity",
+      "name": "Jade City",
+      "website": "https://jadecity.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.jadecity.io/"
+      ]
+    },
+    {
+      "profileId": "manifest",
+      "name": "Manifest",
+      "website": "https://manifest.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://manifest.finance/"
+      ]
+    },
+    {
+      "profileId": "mystic-finance",
+      "name": "Mystic Finance",
+      "website": "https://app.mysticfinance.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://app.mysticfinance.xyz/"
+      ]
+    },
+    {
+      "profileId": "peerhive",
+      "name": "Peerhive",
+      "website": "https://www.peerhive.app/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "probal",
+      "name": "Probal",
+      "website": "https://www.probal.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.probal.io/"
+      ]
+    },
+    {
+      "profileId": "refuture",
+      "name": "ReFuture",
+      "website": "https://refuture.se/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://refuture.se/",
+        "https://refuture.se/about-us/",
+        "https://refuture.se/about-us/"
+      ]
+    },
+    {
+      "profileId": "republic-note",
+      "name": "Republic Note",
+      "website": "https://republic.com/note",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "six-digital-exchange-sdx",
+      "name": "SIX Digital Exchange (SDX)",
+      "website": "https://www.six-group.com/en/products-services/securities-services/digital-assets.html",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.six-group.com/en/products-services/securities-services/digital-assets.html",
+        "https://www.six-group.com/en/company.html",
+        "https://www.six-group.com/en/company/events.html"
+      ]
+    },
+    {
+      "profileId": "soil",
+      "name": "Soil",
+      "website": "https://soil.co/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://soil.co/",
+        "https://soil.co/#about"
+      ]
+    },
+    {
+      "profileId": "soma-finance",
+      "name": "SOMA Finance",
+      "website": "https://www.soma.finance/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.soma.finance/",
+        "https://www.soma.finance/about-us"
+      ],
+      "eventId": "soma-finance-founding-research-20261008"
+    },
+    {
+      "profileId": "tokenise",
+      "name": "Tokenise",
+      "website": "https://tokenise.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://tokenise.io/"
+      ]
+    },
+    {
+      "profileId": "tradefinex",
+      "name": "TradeFinex",
+      "website": "https://tradefinex.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://tradefinex.org/"
+      ]
+    },
+    {
+      "profileId": "tvvin",
+      "name": "TVVIN",
+      "website": "https://www.tvvin.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.tvvin.com/"
+      ]
+    },
+    {
+      "profileId": "xdc-trade-network",
+      "name": "XDC Trade Network",
+      "website": "https://xdctrade.network/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://xdctrade.network/",
+        "https://xdctrade.network/about-us.html"
+      ]
+    },
+    {
+      "profileId": "allocations",
+      "name": "Allocations",
+      "website": "https://www.allocations.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.allocations.com/"
+      ]
+    },
+    {
+      "profileId": "amerx",
+      "name": "AmerX",
+      "website": "https://www.amerx.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.amerx.com/"
+      ]
+    },
+    {
+      "profileId": "artory",
+      "name": "Artory",
+      "website": "https://www.wag-art.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.wag-art.com/"
+      ]
+    },
+    {
+      "profileId": "bitgreen",
+      "name": "Bitgreen",
+      "website": "https://bitgreen.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://bitgreen.org/"
+      ]
+    },
+    {
+      "profileId": "blockhouse",
+      "name": "Blockhouse",
+      "website": "https://www.blockhouse.app/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.blockhouse.app/"
+      ]
+    },
+    {
+      "profileId": "bru-finance",
+      "name": "Bru Finance",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "bukprotocol",
+      "name": "BukProtocol",
+      "website": "https://bukprotocol.ai/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://bukprotocol.ai/"
+      ]
+    },
+    {
+      "profileId": "caddy-finance",
+      "name": "Caddy Finance",
+      "website": "https://caddy.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://caddy.finance/"
+      ]
+    },
+    {
+      "profileId": "comtech",
+      "name": "ComTech",
+      "website": "https://cgold.ae/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://cgold.ae/"
+      ]
+    },
+    {
+      "profileId": "concentricdao",
+      "name": "ConcentricDAO",
+      "website": "https://concentricindustries.net/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "consolfreight",
+      "name": "ConsolFreight",
+      "website": "https://www.consolfreight.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.consolfreight.io/",
+        "https://www.consolfreight.io/about"
+      ]
+    },
+    {
+      "profileId": "cougar-dao",
+      "name": "Cougar DAO",
+      "website": "https://cougardao.substack.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://cougardao.substack.com/"
+      ]
+    },
+    {
+      "profileId": "danogo",
+      "name": "Danogo",
+      "website": "https://v2.dano.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://v2.dano.finance/"
+      ]
+    },
+    {
+      "profileId": "drvn-labo",
+      "name": "DRVN Labo",
+      "website": "https://www.vhcls.app/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ecosapiens",
+      "name": "Ecosapiens",
+      "website": "https://ecosapiens.xyz/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ethichub",
+      "name": "EthicHub",
+      "website": "https://www.ethichub.com/es/coffee",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.ethichub.com/es/coffee"
+      ]
+    },
+    {
+      "profileId": "frigg",
+      "name": "Frigg",
+      "website": "https://www.frigg.eco",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.frigg.eco"
+      ]
+    },
+    {
+      "profileId": "grtwines",
+      "name": "GRT Wines",
+      "website": "https://www.grtwines.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.grtwines.com/"
+      ]
+    },
+    {
+      "profileId": "hadco",
+      "name": "HADCO",
+      "website": "https://www.hadco.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.hadco.xyz/"
+      ]
+    },
+    {
+      "profileId": "hauck-aufh-user-lampe",
+      "name": "Hauck Aufhäuser Lampe",
+      "website": "https://www.bethmann-hal.de/de/index.html",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.bethmann-hal.de/de/index.html"
+      ]
+    },
+    {
+      "profileId": "montanaland-slowdao",
+      "name": "MontanaLand SlowDAO",
+      "website": "https://montanaland.slowdao.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://montanaland.slowdao.xyz/"
+      ]
+    },
+    {
+      "profileId": "numa",
+      "name": "Numa",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "parabol",
+      "name": "Parabol",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "pearl-exchange",
+      "name": "Pearl Exchange",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "pi-protocol",
+      "name": "Pi Protocol",
+      "website": "https://www.stbl.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.stbl.com/",
+        "https://www.stbl.com/about"
+      ]
+    },
+    {
+      "profileId": "plural-finance",
+      "name": "Plural Finance",
+      "website": "https://www.pluralfinance.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.pluralfinance.com/"
+      ]
+    },
+    {
+      "profileId": "poison-finance",
+      "name": "Poison Finance",
+      "website": "https://poison.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://poison.finance/"
+      ]
+    },
+    {
+      "profileId": "polytrade-finance",
+      "name": "Polytrade Finance",
+      "website": "https://polytrade.app/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://polytrade.app/",
+        "https://polytrade.app/about"
+      ],
+      "eventId": "polytrade-finance-founding-research-20261008"
+    },
+    {
+      "profileId": "pontoro",
+      "name": "Pontoro",
+      "website": "https://www.pontoro.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.pontoro.com",
+        "https://www.pontoro.com/#about"
+      ]
+    },
+    {
+      "profileId": "portio-capital",
+      "name": "Portio Capital",
+      "website": "https://portio.club/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://portio.club/",
+        "https://portio.club/about-us"
+      ]
+    },
+    {
+      "profileId": "realio-network",
+      "name": "Realio Network",
+      "website": "https://realio.network/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://realio.network/",
+        "https://realio.network/about"
+      ],
+      "eventId": "realio-network-founding-research-20261008"
+    },
+    {
+      "profileId": "realt",
+      "name": "RealT",
+      "website": "https://realtusa.pulse.is/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://realtusa.pulse.is/"
+      ]
+    },
+    {
+      "profileId": "rwa-finance",
+      "name": "RWA Finance",
+      "website": "https://www.rwa-finance.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.rwa-finance.com/"
+      ]
+    },
+    {
+      "profileId": "segmint-by-vaneck",
+      "name": "Segmint (by VanEck)",
+      "website": "https://www.segmint.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.segmint.io/"
+      ]
+    },
+    {
+      "profileId": "silta",
+      "name": "Silta",
+      "website": "https://silta.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://silta.finance/"
+      ]
+    },
+    {
+      "profileId": "beel",
+      "name": "Beel (formerly Tokenize.it)",
+      "website": "https://beel.com/de",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "truefi-asset-vaults",
+      "name": "TrueFi Asset Vaults",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "amberisland",
+      "name": "AmberIsland",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "anotherblock",
+      "name": "AnotherBlock",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "arkefi",
+      "name": "ArkeFi",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "arkive",
+      "name": "Arkive",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "artfi",
+      "name": "ArtFi",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "bosonic",
+      "name": "Bosonic",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "brightvine",
+      "name": "Brightvine",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "cadence-protocol",
+      "name": "Cadence Protocol",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "carbify",
+      "name": "Carbify",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "cogito-finance",
+      "name": "Cogito Finance",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "daylight-energy-by-anode-labs",
+      "name": "Daylight Energy (by Anode Labs)",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "degen-distillery",
+      "name": "Degen Distillery",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ekta",
+      "name": "Ekta",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "florence-finance",
+      "name": "Florence Finance",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "frictionless-markets",
+      "name": "Frictionless Markets",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "harbor-trade",
+      "name": "Harbor Trade",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ian",
+      "name": "IAN",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "invaria2222",
+      "name": "Invaria2222",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "kettle-finance",
+      "name": "Kettle Finance",
+      "website": "https://www.kettle.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.kettle.finance/"
+      ]
+    },
+    {
+      "profileId": "kinto",
+      "name": "Kinto",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "labs-groupio",
+      "name": "Labs Groupio",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "landx",
+      "name": "LandX",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "mortar",
+      "name": "Mortar",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "moss",
+      "name": "Moss",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "nash21",
+      "name": "Nash21",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "openchrono",
+      "name": "OpenChrono",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "penomo",
+      "name": "Penomo",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "planet-refi",
+      "name": "Planet ReFi",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "r3-corda",
+      "name": "R3 Corda",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "revenly-ai",
+      "name": "Revenly.ai",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rex-protocol",
+      "name": "REX Protocol",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "robinland",
+      "name": "Robinland",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "solidviolet",
+      "name": "SolidViolet",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "stream-protocol",
+      "name": "Stream Protocol",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "vortex-by-petale",
+      "name": "Vortex (by Petale)",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "watches-io",
+      "name": "Watches.io",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "altr-lend-by-lucidao",
+      "name": "Altr Lend (by LuciDAO)",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "angle",
+      "name": "Angle",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "archblock",
+      "name": "Archblock",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "cache-gold",
+      "name": "CACHE Gold",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "landshare",
+      "name": "Landshare",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "mountain-protocol",
+      "name": "Mountain Protocol",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "alloycapital",
+      "name": "AlloyCapital",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "alta-finance",
+      "name": "Alta Finance",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "arcton",
+      "name": "Arcton",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "aurus",
+      "name": "Aurus",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "bluejay-finance",
+      "name": "Bluejay Finance",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "cerchia",
+      "name": "Cerchia",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "certo-stusd",
+      "name": "Certo stUSD",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "companydao",
+      "name": "CompanyDAO",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "deltap3",
+      "name": "DeltaP3",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "embedr",
+      "name": "Embedr",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "emerald",
+      "name": "Emerald",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "jasmine-energy",
+      "name": "Jasmine Energy",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "joltify",
+      "name": "Joltify",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "levinswap",
+      "name": "LevinSwap",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "neutral-exchange",
+      "name": "Neutral Exchange",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "pleno",
+      "name": "Pleno",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "qorra",
+      "name": "Qorra",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "skyhookcapital",
+      "name": "Skyhookcapital",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "thovt",
+      "name": "Thovt",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "uranium3o8",
+      "name": "Uranium3o8",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "weown",
+      "name": "Weown",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "yakdao",
+      "name": "YakDAO",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "yieldteq",
+      "name": "Yieldteq",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "atlendis",
+      "name": "Atlendis",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "axon-protocol",
+      "name": "Axon Protocol",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "cellardao",
+      "name": "CellarDAO",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "comdex",
+      "name": "Comdex",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "dexstar",
+      "name": "Dexstar",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "gmp-gen-m-partners",
+      "name": "GMP (Gen M Partners)",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "horly-app",
+      "name": "Horly.app",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "kreskofi",
+      "name": "KreskoFi",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "lopo-finance",
+      "name": "LoPo Finance",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "phyken-network",
+      "name": "Phyken Network",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwata",
+      "name": "RWATA",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "sapling",
+      "name": "Sapling",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "solid-world",
+      "name": "Solid.world",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "solteria-by-solty-labs",
+      "name": "Solteria (by Solty Labs)",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ubuntu-glamping-ugst",
+      "name": "Ubuntu Glamping $UGST",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "vayu-trade",
+      "name": "Vayu.trade",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ventureclub",
+      "name": "VentureClub",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "whimsy-estates",
+      "name": "Whimsy Estates",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "artrade",
+      "name": "Artrade",
+      "website": "https://artrade.app/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "barter",
+      "name": "Barter",
+      "website": "https://barter.company/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://barter.company/"
+      ]
+    },
+    {
+      "profileId": "blockcellar",
+      "name": "Blockcellar",
+      "website": "https://blockcellar.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://blockcellar.com/",
+        "https://blockcellar.com/content/about-us"
+      ]
+    },
+    {
+      "profileId": "carnomaly",
+      "name": "Carnomaly",
+      "website": "https://carnomaly.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://carnomaly.io/",
+        "https://carnomaly.io/about"
+      ]
+    },
+    {
+      "profileId": "chirp",
+      "name": "Chirp",
+      "website": "https://chirptoken.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://chirptoken.io/"
+      ]
+    },
+    {
+      "profileId": "chromia",
+      "name": "Chromia",
+      "website": "https://chromia.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://chromia.com/",
+        "https://chromia.com/about"
+      ],
+      "eventId": "chromia-founding-research-20261008"
+    },
+    {
+      "profileId": "collaterize",
+      "name": "Collaterize",
+      "website": "https://collaterize.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://collaterize.com/"
+      ]
+    },
+    {
+      "profileId": "coreum",
+      "name": "TX",
+      "website": "https://tx.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://tx.org/"
+      ]
+    },
+    {
+      "profileId": "crypto-autos.com",
+      "name": "Crypto autos.com",
+      "website": "https://www.cryptoautos.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.cryptoautos.com/"
+      ]
+    },
+    {
+      "profileId": "defa-by-invoicemate",
+      "name": "DeFa By InvoiceMate",
+      "website": "https://www.imdefa.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.imdefa.com/",
+        "https://www.imdefa.com/about-us"
+      ]
+    },
+    {
+      "profileId": "dtravel",
+      "name": "Dtravel",
+      "website": "https://www.dtravel.com",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "e-money-network",
+      "name": "E Money Network",
+      "website": "https://emoney.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://emoney.io/"
+      ]
+    },
+    {
+      "profileId": "empowa",
+      "name": "Empowa",
+      "website": "https://www.empowa.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.empowa.io/",
+        "https://www.empowa.io/about/"
+      ]
+    },
+    {
+      "profileId": "enzyme",
+      "name": "Enzyme",
+      "website": "https://enzyme.finance/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://enzyme.finance/",
+        "https://enzyme.finance/about-us"
+      ],
+      "eventId": "enzyme-founding-research-20261008"
+    },
+    {
+      "profileId": "epoch-island",
+      "name": "Epoch Island",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "etana-custody",
+      "name": "Etana Custody",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "foretoken",
+      "name": "Foretoken",
+      "website": "https://foretoken.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://foretoken.xyz/"
+      ]
+    },
+    {
+      "profileId": "hashnote-usyc",
+      "name": "Hashnote USYC",
+      "website": "https://www.hashnote.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.hashnote.com/"
+      ]
+    },
+    {
+      "profileId": "hiyield",
+      "name": "HiYield",
+      "website": "https://www.hiyield.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.hiyield.xyz/"
+      ]
+    },
+    {
+      "profileId": "hifi-finance",
+      "name": "Hifi Finance",
+      "website": "https://hifi.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://hifi.finance/"
+      ]
+    },
+    {
+      "profileId": "ixo",
+      "name": "IXO",
+      "website": "https://www.ixo.world/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.ixo.world/"
+      ]
+    },
+    {
+      "profileId": "incomrwa",
+      "name": "IncomRWA",
+      "website": "https://www.incomrwa.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.incomrwa.io/",
+        "https://www.incomrwa.io/about-us"
+      ]
+    },
+    {
+      "profileId": "kuma-protocol",
+      "name": "KUMA Protocol",
+      "website": "https://www.kuma.bond/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.kuma.bond/"
+      ]
+    },
+    {
+      "profileId": "lto-network",
+      "name": "LTO Network",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "linear",
+      "name": "Linear",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "lucidao",
+      "name": "Lucidao",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "metazero",
+      "name": "MetaZero",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "meupass",
+      "name": "Meupass",
+      "website": "https://token.meupass.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://token.meupass.com/"
+      ]
+    },
+    {
+      "profileId": "mimo",
+      "name": "Mimo",
+      "website": "https://www.mimo.capital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.mimo.capital/",
+        "https://www.mimo.capital/#about"
+      ]
+    },
+    {
+      "profileId": "moongate",
+      "name": "Moongate",
+      "website": "https://app.moongate.id/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "opulous",
+      "name": "Opulous",
+      "website": "https://opulous.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://opulous.org/"
+      ]
+    },
+    {
+      "profileId": "pareto",
+      "name": "Pareto",
+      "website": "https://pareto.credit/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://pareto.credit/"
+      ]
+    },
+    {
+      "profileId": "prosper",
+      "name": "Prosper",
+      "website": "https://www.prosper-fi.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.prosper-fi.com/"
+      ]
+    },
+    {
+      "profileId": "qmc",
+      "name": "QMC",
+      "website": "https://qmc.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://qmc.finance/"
+      ]
+    },
+    {
+      "profileId": "rwa-inc",
+      "name": "RWA Inc",
+      "website": "https://rwa.inc/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://rwa.inc/",
+        "https://rwa.inc/#about",
+        "https://rwa.inc/forms/company-intake"
+      ]
+    },
+    {
+      "profileId": "raze",
+      "name": "Raze",
+      "website": "https://www.raze.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.raze.finance/",
+        "https://www.raze.finance/about",
+        "https://www.raze.finance/about/about-v2"
+      ]
+    },
+    {
+      "profileId": "re.al",
+      "name": "Re.al",
+      "website": "https://www.re.al/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.re.al/"
+      ]
+    },
+    {
+      "profileId": "rentible",
+      "name": "Rentible",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "revest-finance",
+      "name": "Revest Finance",
+      "website": "https://revest.finance/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "sailing-protocol",
+      "name": "Sailing Protocol",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "sologenic",
+      "name": "Sologenic",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "tessera",
+      "name": "Tessera",
+      "website": "https://www.tessera.pe/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.tessera.pe/"
+      ]
+    },
+    {
+      "profileId": "tokeniza",
+      "name": "Tokeniza",
+      "website": "https://tokeniza.com.br/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://tokeniza.com.br/"
+      ]
+    },
+    {
+      "profileId": "trendx",
+      "name": "TrendX",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "truefi",
+      "name": "TrueFi",
+      "website": "https://forum.truefi.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://forum.truefi.io/",
+        "https://forum.truefi.io/t/i-lost-130-000-because-i-believed-in-this-company/2989"
+      ]
+    },
+    {
+      "profileId": "union-protocol",
+      "name": "Union Protocol",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "vexora-properties",
+      "name": "Vexora Properties",
+      "website": "https://www.vexora.properties/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "weset.io",
+      "name": "WECOIN",
+      "website": "https://weset.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://weset.io/",
+        "https://weset.io/company/",
+        "https://weset.io/#about"
+      ]
+    },
+    {
+      "profileId": "xdb-chain",
+      "name": "XDB CHAIN",
+      "website": "https://xdbchain.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://xdbchain.com/"
+      ]
+    },
+    {
+      "profileId": "xend-finance",
+      "name": "Xend Finance",
+      "website": "https://xend.africa/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://xend.africa/"
+      ]
+    },
+    {
+      "profileId": "zoth.io",
+      "name": "Zoth.io",
+      "website": "https://www.zoth.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.zoth.io/"
+      ]
+    },
+    {
+      "profileId": "damm-finance",
+      "name": "dAMM Finance",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "impactmarket",
+      "name": "impactMarket",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "forte-tech-solution",
+      "name": "Forte Tech Solution",
+      "website": "https://www.forteaud.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.forteaud.com/"
+      ]
+    },
+    {
+      "profileId": "audc-pty-ltd",
+      "name": "AUDC Pty Ltd",
+      "website": "https://www.audd.digital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.audd.digital/",
+        "https://www.audd.digital/about/"
+      ]
+    },
+    {
+      "profileId": "allunity-gmbh",
+      "name": "AllUnity GmbH",
+      "website": "https://allunity.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://allunity.com/"
+      ]
+    },
+    {
+      "profileId": "anchorage-digital-bank-na",
+      "name": "Anchorage Digital Bank, N.A.",
+      "website": "https://usat.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://usat.io/"
+      ]
+    },
+    {
+      "profileId": "anzens-inc",
+      "name": "Anzens Inc.",
+      "website": "https://anzens.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://anzens.com/"
+      ]
+    },
+    {
+      "profileId": "aryze",
+      "name": "Aryze",
+      "website": "https://www.aryze.io/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "bantusaku",
+      "name": "BantuSaku",
+      "website": "https://bantusaku.id/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://bantusaku.id/"
+      ]
+    },
+    {
+      "profileId": "beanstalk",
+      "name": "Beanstalk",
+      "website": "https://bean.money/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://bean.money/"
+      ]
+    },
+    {
+      "profileId": "bilira",
+      "name": "BiLira",
+      "website": "https://www.bilira.co/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.bilira.co/"
+      ]
+    },
+    {
+      "profileId": "bulla-network",
+      "name": "Bulla Network",
+      "website": "https://www.bulla.network/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.bulla.network/",
+        "https://www.bulla.network/about"
+      ],
+      "eventId": "bulla-network-founding-research-20261008"
+    },
+    {
+      "profileId": "catena-digital-pty-ltd",
+      "name": "Macropod / Catena Digital",
+      "website": "https://www.macropod.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.macropod.com/",
+        "https://www.macropod.com/about"
+      ]
+    },
+    {
+      "profileId": "colb-asset-sa",
+      "name": "Colb Asset SA",
+      "website": "https://www.colb.finance/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "cygnus-labs",
+      "name": "Cygnus Labs",
+      "website": "https://www.cygnus.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.cygnus.finance/"
+      ]
+    },
+    {
+      "profileId": "elixir",
+      "name": "Elixir",
+      "website": "https://www.elixir.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.elixir.xyz/"
+      ]
+    },
+    {
+      "profileId": "etherfuse",
+      "name": "Etherfuse",
+      "website": "https://etherfuse.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://etherfuse.com/"
+      ]
+    },
+    {
+      "profileId": "galactica",
+      "name": "Galactica",
+      "website": "https://galacticarwa.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://galacticarwa.com/",
+        "https://galacticarwa.com/about/"
+      ]
+    },
+    {
+      "profileId": "hutly",
+      "name": "Hutly",
+      "website": "https://hutly.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://hutly.com/",
+        "https://hutly.com/about"
+      ],
+      "eventId": "hutly-founding-research-20261008"
+    },
+    {
+      "profileId": "isc",
+      "name": "ISC",
+      "website": "https://isc.money/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://isc.money/"
+      ]
+    },
+    {
+      "profileId": "mannah",
+      "name": "Mannah",
+      "website": "https://www.mannah.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.mannah.io/"
+      ]
+    },
+    {
+      "profileId": "nexbridge",
+      "name": "NexBridge",
+      "website": "https://sv.nexbridge.finance",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://sv.nexbridge.finance",
+        "https://sv.nexbridge.finance/about"
+      ],
+      "eventId": "nexbridge-founding-research-20261008"
+    },
+    {
+      "profileId": "nostra-finance",
+      "name": "Nostra Finance",
+      "website": "https://nostra.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://nostra.finance/"
+      ]
+    },
+    {
+      "profileId": "okifin-capital-gmbh",
+      "name": "OkiFin Capital GmbH",
+      "website": "https://www.okifin.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.okifin.com/"
+      ]
+    },
+    {
+      "profileId": "open-money-dao",
+      "name": "Open Money DAO",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "pt-rupiah-token",
+      "name": "PT Rupiah Token",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "palm-azgar-finance-company",
+      "name": "Palm USD / Palm Azgar",
+      "website": "https://www.palmusd.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.palmusd.com/"
+      ]
+    },
+    {
+      "profileId": "paytrie-ab-inc",
+      "name": "Paytrie AB Inc.",
+      "website": "https://paytrie.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://paytrie.com/"
+      ]
+    },
+    {
+      "profileId": "rwa-nova",
+      "name": "RWA NOVA",
+      "website": "https://rwanova.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://rwanova.io/"
+      ]
+    },
+    {
+      "profileId": "record-nexus",
+      "name": "Record Nexus",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ribbon-lend",
+      "name": "Ribbon Finance",
+      "website": "https://www.ribbon.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.ribbon.finance/"
+      ]
+    },
+    {
+      "profileId": "stbl",
+      "name": "STBL",
+      "website": "https://www.stbl.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.stbl.com/",
+        "https://www.stbl.com/about"
+      ]
+    },
+    {
+      "profileId": "stima",
+      "name": "STIMA",
+      "website": "https://stima.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://stima.io/"
+      ]
+    },
+    {
+      "profileId": "solv-finance",
+      "name": "Solv Finance",
+      "website": "https://solv.finance/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "stable-rwaio",
+      "name": "Stable (mortgage protocol)",
+      "website": "https://trystable.co/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://trystable.co/"
+      ]
+    },
+    {
+      "profileId": "standx-protocol",
+      "name": "StandX Protocol",
+      "website": "https://standx.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://standx.com/"
+      ]
+    },
+    {
+      "profileId": "straitsx",
+      "name": "StraitsX",
+      "website": "https://www.straitsx.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.straitsx.com/",
+        "https://www.straitsx.com/about"
+      ]
+    },
+    {
+      "profileId": "tezos-stable-technologies-ltd",
+      "name": "Tezos Stable Technologies, Ltd.",
+      "website": "https://usdtz.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://usdtz.com/",
+        "https://usdtz.com/about"
+      ]
+    },
+    {
+      "profileId": "the-fedz-1",
+      "name": "The Fedz",
+      "website": "https://thefedz.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://thefedz.org/",
+        "https://thefedz.org/#about-us"
+      ]
+    },
+    {
+      "profileId": "transfero-group",
+      "name": "Transfero Group",
+      "website": "https://transfero.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://transfero.com/",
+        "https://transfero.com/company/about-us"
+      ]
+    },
+    {
+      "profileId": "vnx",
+      "name": "VNX",
+      "website": "https://vnx.li/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://vnx.li/"
+      ]
+    },
+    {
+      "profileId": "welf",
+      "name": "WELF",
+      "website": "https://welf.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://welf.com/",
+        "https://welf.com/about"
+      ]
+    },
+    {
+      "profileId": "wspn-holding-limited",
+      "name": "WSPN Holding Limited",
+      "website": "https://wspn.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://wspn.io/"
+      ]
+    },
+    {
+      "profileId": "xbanking",
+      "name": "XBANKING",
+      "website": "https://xbanking.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://xbanking.org/"
+      ]
+    },
+    {
+      "profileId": "yieldnest",
+      "name": "YieldNest",
+      "website": "https://yieldnest.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://yieldnest.finance/",
+        "https://yieldnest.finance/about"
+      ]
+    },
+    {
+      "profileId": "altai",
+      "name": "Altai",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "auresources",
+      "name": "AuResources",
+      "website": "https://auresources.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://auresources.io/",
+        "https://auresources.io/about"
+      ]
+    },
+    {
+      "profileId": "auxite-gold",
+      "name": "Auxite",
+      "website": "https://www.auxite.io/en",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.auxite.io/en"
+      ]
+    },
+    {
+      "profileId": "bingold",
+      "name": "Bingold",
+      "website": "https://bingold.to/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://bingold.to/"
+      ]
+    },
+    {
+      "profileId": "cropto-1",
+      "name": "Cropto",
+      "website": "https://www.cropto.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.cropto.io/",
+        "https://www.cropto.io/corporate/about-cropto"
+      ]
+    },
+    {
+      "profileId": "emgemx-1",
+      "name": "EmGEMx",
+      "website": "https://gemx.ag/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://gemx.ag/",
+        "https://gemx.ag/about"
+      ]
+    },
+    {
+      "profileId": "exim-token",
+      "name": "Exim Token",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "goldpro",
+      "name": "GoldPro",
+      "website": "https://ipmb.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "goldzip",
+      "name": "GoldZip",
+      "website": "https://goldzip.info/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://goldzip.info/",
+        "https://goldzip.info/about/"
+      ]
+    },
+    {
+      "profileId": "kinka",
+      "name": "Kinka",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "lod3",
+      "name": "LOD3",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "palm-economy",
+      "name": "Palm Economy",
+      "website": "https://palmeconomy.io/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "quorium",
+      "name": "Quorium",
+      "website": "https://quorium.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://quorium.io/"
+      ]
+    },
+    {
+      "profileId": "serenity-1",
+      "name": "Serenity",
+      "website": "https://s.technology/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://s.technology/"
+      ]
+    },
+    {
+      "profileId": "silvertimes",
+      "name": "SilverTimes",
+      "website": "https://www.silvertimes.io",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "veraone",
+      "name": "VeraOne",
+      "website": "https://veraone.io/fr/accueil/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://veraone.io/fr/accueil/"
+      ]
+    },
+    {
+      "profileId": "zambesi-gold",
+      "name": "Zambesi gold",
+      "website": "https://www.zgdgold.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.zgdgold.com/",
+        "https://www.zgdgold.com/about"
+      ]
+    },
+    {
+      "profileId": "arvo",
+      "name": "Arvo",
+      "website": "https://arvoprotocol.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://arvoprotocol.com/"
+      ]
+    },
+    {
+      "profileId": "asset-list",
+      "name": "Asset List",
+      "website": "https://assetlist.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://assetlist.io/"
+      ]
+    },
+    {
+      "profileId": "bricksestate",
+      "name": "BricksEstate",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "contracoin",
+      "name": "Contracoin",
+      "website": "https://contracorp.com.au/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://contracorp.com.au/",
+        "https://contracorp.com.au/about-contracorp/",
+        "https://contracorp.com.au/about-contracorp/"
+      ]
+    },
+    {
+      "profileId": "decentralverse-ai",
+      "name": "Decentralverse AI",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "home3",
+      "name": "HOME3",
+      "website": "https://www.home3suite.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.home3suite.com/"
+      ]
+    },
+    {
+      "profileId": "headway-nova",
+      "name": "Headway Nova",
+      "website": "https://hwnova.site/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://hwnova.site/",
+        "https://hwnova.site/about-us/",
+        "https://hwnova.site/learn/company-news/headway-nova-named-most-innovative-real-estate-investment-platform-2025/"
+      ]
+    },
+    {
+      "profileId": "imo",
+      "name": "IMO",
+      "website": "https://www.imo-invest.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.imo-invest.com/"
+      ]
+    },
+    {
+      "profileId": "labsv2",
+      "name": "LABSV2",
+      "website": "https://www.labs.solutions/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.labs.solutions/"
+      ]
+    },
+    {
+      "profileId": "magma",
+      "name": "Magma",
+      "website": "https://thisismagma.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://thisismagma.com/"
+      ]
+    },
+    {
+      "profileId": "mey-network",
+      "name": "Mey Network",
+      "website": "https://mey.network/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://mey.network/",
+        "https://mey.network/#about"
+      ]
+    },
+    {
+      "profileId": "parcl",
+      "name": "Parcl",
+      "website": "https://www.parcllabs.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.parcllabs.com/"
+      ],
+      "eventId": "parcl-founding-research-20261008"
+    },
+    {
+      "profileId": "pixl",
+      "name": "PiXL",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "reental",
+      "name": "Reental",
+      "website": "https://www.reental.co/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.reental.co/"
+      ]
+    },
+    {
+      "profileId": "sqrbit",
+      "name": "SQRBIT",
+      "website": "https://sqrbit.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "tokenizerestate-3",
+      "name": "Tokenizer.estate",
+      "website": "https://tokenizer.estate/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://tokenizer.estate/",
+        "https://tokenizer.estate/about-platform",
+        "https://tokenizer.estate/about-us"
+      ]
+    },
+    {
+      "profileId": "vestn",
+      "name": "VESTN",
+      "website": "https://vestn.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://vestn.io/"
+      ]
+    },
+    {
+      "profileId": "atv-mbstoken-ii",
+      "name": "ATV MBSToken II",
+      "website": "https://atvfund.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://atvfund.io/",
+        "https://atvfund.io/about/"
+      ]
+    },
+    {
+      "profileId": "cmbiam",
+      "name": "CMB International",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "cyclex",
+      "name": "CycleX",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "evident",
+      "name": "EVIDENT",
+      "website": "https://evident.capital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://evident.capital/"
+      ]
+    },
+    {
+      "profileId": "fundbridge-capital",
+      "name": "FundBridge Capital",
+      "website": "https://fundbridge.sg/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://fundbridge.sg/",
+        "https://fundbridge.sg/about-us"
+      ]
+    },
+    {
+      "profileId": "gm-artification",
+      "name": "GM artification",
+      "website": "https://gmartification.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://gmartification.com/"
+      ]
+    },
+    {
+      "profileId": "jpmorgan-asset-management-holdings-inc",
+      "name": "J.P. Morgan Asset Management",
+      "website": "https://am.jpmorgan.com/us/asset-management/welcome/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://am.jpmorgan.com/us/asset-management/welcome/"
+      ]
+    },
+    {
+      "profileId": "maiv",
+      "name": "MAIV",
+      "website": "https://maiv.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://maiv.io/"
+      ]
+    },
+    {
+      "profileId": "mineral-vault",
+      "name": "Mineral Vault",
+      "website": "https://mineralvault.io/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "particle",
+      "name": "Particle",
+      "website": "https://www.particlecollection.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.particlecollection.com/"
+      ]
+    },
+    {
+      "profileId": "scenium",
+      "name": "Scenium",
+      "website": "https://www.scenium.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.scenium.io/"
+      ]
+    },
+    {
+      "profileId": "the-rwax",
+      "name": "The RWAX",
+      "website": "https://therwax.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://therwax.com/"
+      ]
+    },
+    {
+      "profileId": "blubird",
+      "name": "Blubird",
+      "website": "https://www.getblubird.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.getblubird.com/"
+      ]
+    },
+    {
+      "profileId": "dovu",
+      "name": "DOVU",
+      "website": "https://dovu.earth/en/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://dovu.earth/en/",
+        "https://dovu.earth/en/about-us/",
+        "https://dovu.earth/en/about-us/"
+      ]
+    },
+    {
+      "profileId": "gigatons",
+      "name": "GIGATONS",
+      "website": "https://www.gigatons.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "lumishare",
+      "name": "Lumishare",
+      "website": "https://lumishare.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://lumishare.io/"
+      ]
+    },
+    {
+      "profileId": "suno",
+      "name": "Suno",
+      "website": "https://suno.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://suno.finance/"
+      ]
+    },
+    {
+      "profileId": "apraemio",
+      "name": "Apraemio",
+      "website": "https://www.apraemio.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.apraemio.com/"
+      ]
+    },
+    {
+      "profileId": "beartie",
+      "name": "BEARTIE",
+      "website": "https://beartie.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://beartie.com/"
+      ]
+    },
+    {
+      "profileId": "dgtenergy",
+      "name": "DGTEnergy",
+      "website": "https://dgt.energy/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://dgt.energy/"
+      ]
+    },
+    {
+      "profileId": "exodus-movement",
+      "name": "Exodus Movement",
+      "website": "https://www.exodus.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.exodus.com/"
+      ],
+      "eventId": "exodus-movement-founding-research-20261008"
+    },
+    {
+      "profileId": "hash-global",
+      "name": "Hash Global",
+      "website": "https://www.hashglobal.io/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "haven1",
+      "name": "Haven1",
+      "website": "https://haven1.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://haven1.org/"
+      ]
+    },
+    {
+      "profileId": "hippo-protocol",
+      "name": "Hippo Protocol",
+      "website": "https://hippoprotocol.ai/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://hippoprotocol.ai/"
+      ]
+    },
+    {
+      "profileId": "house-of-emirates",
+      "name": "House of Emirates",
+      "website": "https://hoemirates.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://hoemirates.com/",
+        "https://hoemirates.com/about/",
+        "https://hoemirates.com/product/armenia-history/"
+      ]
+    },
+    {
+      "profileId": "maritime-dao",
+      "name": "Maritime DAO",
+      "website": "https://maritimedao.com/app/index.html",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://maritimedao.com/app/index.html"
+      ]
+    },
+    {
+      "profileId": "mner-club",
+      "name": "Mner Club",
+      "website": "https://www.mner.club/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.mner.club/"
+      ]
+    },
+    {
+      "profileId": "montis-group",
+      "name": "Montis Group",
+      "website": "https://montis.digital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://montis.digital/",
+        "https://montis.digital/about-us"
+      ]
+    },
+    {
+      "profileId": "osean",
+      "name": "Osean",
+      "website": "https://www.osean.online/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.osean.online/",
+        "https://www.osean.online/about/dao",
+        "https://www.osean.online/about/token"
+      ]
+    },
+    {
+      "profileId": "pilgrim-partners",
+      "name": "Pilgrim Partners",
+      "website": "https://www.pilgrimpartnersasia.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.pilgrimpartnersasia.com/",
+        "https://www.pilgrimpartnersasia.com/services"
+      ],
+      "eventId": "pilgrim-partners-founding-research-20261008"
+    },
+    {
+      "profileId": "rev",
+      "name": "REV",
+      "website": "https://staynearn.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "spotty-1",
+      "name": "S.P.O.T.T.Y.",
+      "website": "https://portal.spottyassets.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://portal.spottyassets.com/"
+      ]
+    },
+    {
+      "profileId": "sharingblock",
+      "name": "Sharingblock",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "unlimitime",
+      "name": "Unlimitime",
+      "website": "https://unlimitime.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://unlimitime.com/",
+        "https://unlimitime.com/about"
+      ]
+    },
+    {
+      "profileId": "vivi-coin",
+      "name": "VIVI COIN",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "veritas-protocol",
+      "name": "Veritas Protocol",
+      "website": "https://www.veritasprotocol.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.veritasprotocol.com/"
+      ]
+    },
+    {
+      "profileId": "vyronexvnx",
+      "name": "VyronexVNX",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "alpaca-securities",
+      "name": "Alpaca Securities",
+      "website": "https://alpaca.markets/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://alpaca.markets/",
+        "https://alpaca.markets/about-us"
+      ]
+    },
+    {
+      "profileId": "ggez1",
+      "name": "GGEZ1",
+      "website": "https://ggez.one/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://ggez.one/"
+      ]
+    },
+    {
+      "profileId": "piggycell",
+      "name": "Piggycell",
+      "website": "https://www.piggycell.io/home",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.piggycell.io/home"
+      ]
+    },
+    {
+      "profileId": "remora-markets",
+      "name": "Remora Markets",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "st0x",
+      "name": "ST0x",
+      "website": "https://www.st0x.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.st0x.io/"
+      ]
+    },
+    {
+      "profileId": "stablestocks-lab-limited",
+      "name": "Stablestocks Lab Limited",
+      "website": "https://www.stablestock.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.stablestock.finance/",
+        "https://www.stablestock.finance/#about-contect"
+      ]
+    },
+    {
+      "profileId": "acesfun",
+      "name": "ACES.FUN",
+      "website": "https://aces.fun/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://aces.fun/"
+      ]
+    },
+    {
+      "profileId": "ample-protocol",
+      "name": "AMPLE Protocol",
+      "website": "https://www.ampleprotocol.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.ampleprotocol.xyz/"
+      ]
+    },
+    {
+      "profileId": "aztecosystem-1",
+      "name": "AZTEcosystem",
+      "website": "https://aztecosystem.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://aztecosystem.com/"
+      ]
+    },
+    {
+      "profileId": "anvlfinance",
+      "name": "Anvl.finance",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "asset-avenue",
+      "name": "Asset Avenue",
+      "website": "https://www.assetavenue.capital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.assetavenue.capital/"
+      ]
+    },
+    {
+      "profileId": "assetlink",
+      "name": "AssetLink",
+      "website": "https://assetlink.io/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "cables-finance",
+      "name": "Cables Finance",
+      "website": "https://www.cables.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.cables.finance/",
+        "https://www.cables.finance/about/"
+      ]
+    },
+    {
+      "profileId": "capitalcustodytrust",
+      "name": "CapitalCustodyTrust",
+      "website": "https://capitalcustodytrust.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://capitalcustodytrust.com/"
+      ]
+    },
+    {
+      "profileId": "cavalre-multiswap",
+      "name": "CavalRe | Multiswap",
+      "website": "https://caval.re/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://caval.re/"
+      ]
+    },
+    {
+      "profileId": "codenekt",
+      "name": "CodeNekt Ecosystem",
+      "website": "https://codenekt-ecosystem.io/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "photocentra",
+      "name": "DEX.Photos",
+      "website": "https://dex.photos/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://dex.photos/"
+      ]
+    },
+    {
+      "profileId": "drvnvhcls",
+      "name": "DRVN / VHCLS",
+      "website": "https://www.vhcls.app/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.vhcls.app/"
+      ]
+    },
+    {
+      "profileId": "demether",
+      "name": "Demether",
+      "website": "https://www.demether.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.demether.io/"
+      ]
+    },
+    {
+      "profileId": "elevex",
+      "name": "Elevex",
+      "website": "https://elevex.ai/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://elevex.ai/"
+      ]
+    },
+    {
+      "profileId": "evolve-pro",
+      "name": "Evolve Pro",
+      "website": "https://evolvetoken.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://evolvetoken.io/"
+      ]
+    },
+    {
+      "profileId": "ferrous",
+      "name": "Ferrous",
+      "website": "https://ferrous.app/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://ferrous.app/",
+        "https://ferrous.app/#about-section"
+      ]
+    },
+    {
+      "profileId": "fiide",
+      "name": "Fiide",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "kwarxs",
+      "name": "KWARXS",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "minestarters",
+      "name": "Minestarters",
+      "website": "https://minestarters.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://minestarters.com/"
+      ]
+    },
+    {
+      "profileId": "moonwhale",
+      "name": "Moonwhale",
+      "website": "https://moonwhale.ai/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://moonwhale.ai/"
+      ]
+    },
+    {
+      "profileId": "mu-digital",
+      "name": "Mu Digital",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "multichainz",
+      "name": "MultichainZ",
+      "website": "https://multichainz.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://multichainz.com/"
+      ]
+    },
+    {
+      "profileId": "oases",
+      "name": "OASES Global",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "own-network",
+      "name": "Own Network",
+      "website": "https://ownnetwork.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://ownnetwork.xyz/"
+      ]
+    },
+    {
+      "profileId": "raac",
+      "name": "RAAC",
+      "website": "https://raac.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://raac.io/",
+        "https://raac.io/#about"
+      ]
+    },
+    {
+      "profileId": "redcarpethq",
+      "name": "RedCarpetHQ",
+      "website": "https://redcarpethq.org/en",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://redcarpethq.org/en"
+      ]
+    },
+    {
+      "profileId": "str8fire",
+      "name": "STR8FIRE",
+      "website": "https://str8fire.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://str8fire.io/"
+      ]
+    },
+    {
+      "profileId": "solarshare",
+      "name": "SolarShare",
+      "website": "https://www.solarshare.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.solarshare.io/",
+        "https://www.solarshare.io/about"
+      ]
+    },
+    {
+      "profileId": "soudian",
+      "name": "Soudian",
+      "website": "https://soudian.ai/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://soudian.ai/"
+      ]
+    },
+    {
+      "profileId": "splyce-finance",
+      "name": "Splyce Finance",
+      "website": "https://splyce.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://splyce.finance/",
+        "https://splyce.finance/about.html"
+      ]
+    },
+    {
+      "profileId": "sukuk",
+      "name": "Sukuk",
+      "website": "https://sukuk.fi/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://sukuk.fi/",
+        "https://sukuk.fi/about.html"
+      ]
+    },
+    {
+      "profileId": "sylvatrust",
+      "name": "SylvaTrust NextGen",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "toyow",
+      "name": "Toyow",
+      "website": "https://www.toyow.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.toyow.com/",
+        "https://www.toyow.com/about"
+      ]
+    },
+    {
+      "profileId": "veil",
+      "name": "Veil",
+      "website": "https://www.veil-rwa.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.veil-rwa.com/"
+      ]
+    },
+    {
+      "profileId": "f2o-sports",
+      "name": "f2o Sports",
+      "website": "https://f2osports.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://f2osports.com/",
+        "https://f2osports.com/about"
+      ]
+    },
+    {
+      "profileId": "the-foundation",
+      "name": "THE Foundation",
+      "website": "https://foundationnetwork.org/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://foundationnetwork.org/",
+        "https://foundationnetwork.org/about/"
+      ]
+    },
+    {
+      "profileId": "rwaf-sqft",
+      "name": "SQFT",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-ctrlalt",
+      "name": "Ctrl Alt",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-diamondlake",
+      "name": "DiamondLake",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-libre",
+      "name": "Libre",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-gauntlet",
+      "name": "Gauntlet",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-axis",
+      "name": "Axis",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-matterlabs",
+      "name": "Matter Labs (zkSync)",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-aleo",
+      "name": "Aleo",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-investready",
+      "name": "InvestReady",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-parc",
+      "name": "PARC-3643",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-falconx",
+      "name": "FalconX",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rwaf-newton",
+      "name": "Newton",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "ant-international",
+      "name": "Ant International",
+      "website": "https://ant-intl.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.ant-intl.com/inclusive-growth/",
+        "https://www.ant-intl.com/en/about-us/"
+      ]
+    },
+    {
+      "profileId": "vesteda",
+      "name": "Vesteda",
+      "website": "https://vesteda.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.vesteda.com/nl"
+      ]
+    },
+    {
+      "profileId": "apoc-aviation",
+      "name": "APOC Aviation",
+      "website": "https://apocaviation.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.apocaviation.com/",
+        "https://www.apocaviation.com/about-us/",
+        "https://www.apocaviation.com/about-us/"
+      ]
+    },
+    {
+      "profileId": "sbi-digital-asset-holdings",
+      "name": "SBI Digital Asset Holdings",
+      "website": "https://sbidah.com",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "scorechain",
+      "name": "Scorechain",
+      "website": "https://scorechain.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.scorechain.com/",
+        "https://www.scorechain.com/resources/about-us"
+      ],
+      "eventId": "scorechain-founding-research-20261008"
+    },
+    {
+      "profileId": "quadrata",
+      "name": "Quadrata",
+      "website": "https://quadrata.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://quadrata.com",
+        "https://quadrata.com/about"
+      ]
+    },
+    {
+      "profileId": "netki",
+      "name": "Netki",
+      "website": "https://netki.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.netki.com/"
+      ],
+      "eventId": "netki-founding-research-20261008"
+    },
+    {
+      "profileId": "verifyvasp",
+      "name": "VerifyVASP",
+      "website": "https://verifyvasp.com",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "tokenovate",
+      "name": "Tokenovate",
+      "website": "https://tokenovate.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [],
+      "eventId": "tokenovate-founding-research-20261008"
+    },
+    {
+      "profileId": "cryptio",
+      "name": "Cryptio",
+      "website": "https://cryptio.co",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://cryptio.co"
+      ],
+      "eventId": "cryptio-founding-research-20261008"
+    },
+    {
+      "profileId": "bitwave",
+      "name": "Bitwave",
+      "website": "https://bitwave.io",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.bitwave.io/",
+        "https://www.bitwave.io/about"
+      ],
+      "eventId": "bitwave-founding-research-20261008"
+    },
+    {
+      "profileId": "ledgible",
+      "name": "Ledgible",
+      "website": "https://ledgible.io",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://ledgible.io",
+        "https://ledgible.io/company/",
+        "https://ledgible.io/company/"
+      ],
+      "eventId": "ledgible-founding-research-20261008"
+    },
+    {
+      "profileId": "eventus",
+      "name": "Eventus",
+      "website": "https://eventus.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.eventus.com/",
+        "https://www.eventus.com/company/",
+        "https://www.eventus.com/company/"
+      ],
+      "eventId": "eventus-launch-research-20261008"
+    },
+    {
+      "profileId": "chainargos",
+      "name": "ChainArgos",
+      "website": "https://chainargos.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.chainargos.com/",
+        "https://www.chainargos.com/about/",
+        "https://www.chainargos.com/insights-company-news/"
+      ],
+      "eventId": "chainargos-founding-research-20261008"
+    },
+    {
+      "profileId": "complyadvantage",
+      "name": "ComplyAdvantage",
+      "website": "https://complyadvantage.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://complyadvantage.com",
+        "https://complyadvantage.com/mesh/aml-company-screening/",
+        "https://complyadvantage.com/about-us/"
+      ],
+      "eventId": "complyadvantage-founding-research-20261008"
+    },
+    {
+      "profileId": "zodia-custody",
+      "name": "Zodia Custody",
+      "website": "https://zodia-custody.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://zodia-custody.com",
+        "https://zodia-custody.com/about-us/",
+        "https://zodia-custody.com/custody-is-a-decision-about-everything-that-comes-after-it/"
+      ],
+      "eventId": "zodia-custody-founding-research-20261008"
+    },
+    {
+      "profileId": "cobo",
+      "name": "Cobo",
+      "website": "https://cobo.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [],
+      "eventId": "cobo-founding-research-20261008"
+    },
+    {
+      "profileId": "chainsecurity",
+      "name": "ChainSecurity",
+      "website": "https://chainsecurity.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.chainsecurity.com/",
+        "https://www.chainsecurity.com/about/"
+      ],
+      "eventId": "chainsecurity-founding-research-20261008"
+    },
+    {
+      "profileId": "halborn",
+      "name": "Halborn",
+      "website": "https://halborn.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [],
+      "eventId": "halborn-founding-research-20261008"
+    },
+    {
+      "profileId": "koreinside",
+      "name": "KoreInside",
+      "website": "https://kore.inc",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rakkar",
+      "name": "Rakkar",
+      "website": "https://rakkardigital.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.rakkardigital.com/",
+        "https://www.rakkardigital.com/about",
+        "https://www.rakkardigital.com/#home-about"
+      ],
+      "eventId": "rakkar-founding-research-20261008"
+    },
+    {
+      "profileId": "the-network-firm",
+      "name": "The Network Firm",
+      "website": "https://www.thenetworkfirm.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.thenetworkfirm.com"
+      ]
+    },
+    {
+      "profileId": "cardano",
+      "name": "Cardano",
+      "website": "https://cardano.org",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://cardano.org"
+      ],
+      "eventId": "cardano-launch-research-20261008"
+    },
+    {
+      "profileId": "sei",
+      "name": "Sei",
+      "website": "https://www.sei.io",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.sei.io"
+      ],
+      "eventId": "sei-launch-research-20261008"
+    },
+    {
+      "profileId": "kaia",
+      "name": "Kaia",
+      "website": "https://www.kaia.io",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.kaia.io",
+        "https://www.kaia.io/about"
+      ]
+    },
+    {
+      "profileId": "multiversx",
+      "name": "MultiversX",
+      "website": "https://multiversx.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://multiversx.com"
+      ]
+    },
+    {
+      "profileId": "kava",
+      "name": "Kava",
+      "website": "https://www.kava.io",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.kava.io"
+      ]
+    },
+    {
+      "profileId": "coti",
+      "name": "COTI",
+      "website": "https://coti.io",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://coti.io"
+      ]
+    },
+    {
+      "profileId": "anchorx",
+      "name": "AnchorX",
+      "website": "https://www.anchorx.org",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.anchorx.org"
+      ]
+    },
+    {
+      "profileId": "stablecorp",
+      "name": "Stablecorp",
+      "website": "https://stablecorp.ca",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://stablecorp.ca",
+        "https://stablecorp.ca/#about-stablecorp"
+      ]
+    },
+    {
+      "profileId": "idrx",
+      "name": "IDRX",
+      "website": "https://idrx.co",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://idrx.co/en/",
+        "https://idrx.co/en/#about"
+      ]
+    },
+    {
+      "profileId": "moneygram",
+      "name": "MoneyGram",
+      "website": "https://www.moneygram.com",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "banxa",
+      "name": "Banxa",
+      "website": "https://www.banxa.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://banxa.com/"
+      ],
+      "eventId": "banxa-founding-research-20261008"
+    },
+    {
+      "profileId": "mural-pay",
+      "name": "Mural Pay",
+      "website": "https://muralpay.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://muralpay.com"
+      ],
+      "eventId": "mural-pay-founding-research-20261008"
+    },
+    {
+      "profileId": "copperx",
+      "name": "Copperx",
+      "website": "https://copperx.io",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://copperx.io"
+      ]
+    },
+    {
+      "profileId": "dakota",
+      "name": "Dakota",
+      "website": "https://dakota.xyz",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://dakota.xyz",
+        "https://dakota.xyz/about"
+      ]
+    },
+    {
+      "profileId": "coinflow",
+      "name": "Coinflow",
+      "website": "https://coinflow.cash",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://coinflow.cash",
+        "https://coinflow.cash/about-us/"
+      ]
+    },
+    {
+      "profileId": "stables",
+      "name": "Stables",
+      "website": "https://www.stables.money",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.stables.money"
+      ]
+    },
+    {
+      "profileId": "mesh",
+      "name": "Mesh",
+      "website": "https://www.meshpay.com",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.meshpay.com",
+        "https://www.meshpay.com/about-us"
+      ],
+      "eventId": "mesh-founding-research-20261008"
+    },
+    {
+      "profileId": "minipay",
+      "name": "MiniPay",
+      "website": "https://minipay.to",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://minipay.to"
+      ]
+    },
+    {
+      "profileId": "bitget-wallet",
+      "name": "Bitget Wallet",
+      "website": "https://web3.bitget.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://web3.bitget.com",
+        "https://web3.bitget.com/about",
+        "https://web3.bitget.com/about/safety-commitment"
+      ]
+    },
+    {
+      "profileId": "mento",
+      "name": "Mento",
+      "website": "https://www.mento.org",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.mento.org"
+      ]
+    },
+    {
+      "profileId": "qivalis",
+      "name": "Qivalis",
+      "website": "https://qivalis.eu",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://qivalis.eu",
+        "https://qivalis.eu/about-us"
+      ],
+      "eventId": "qivalis-founding-research-20261008"
+    },
+    {
+      "profileId": "morse",
+      "name": "Morse (formerly Sling Money)",
+      "website": "https://morsemoney.com",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://morsemoney.com"
+      ]
+    },
+    {
+      "profileId": "aerodrome",
+      "name": "Aerodrome",
+      "website": "https://aerodrome.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://aerodrome.finance/"
+      ]
+    },
+    {
+      "profileId": "bondi-finance",
+      "name": "Bondi Finance",
+      "website": "https://www.bondifinance.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.bondifinance.io/",
+        "https://www.bondifinance.io/about"
+      ]
+    },
+    {
+      "profileId": "hastra",
+      "name": "Hastra",
+      "website": "https://hastra.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://hastra.io/"
+      ]
+    },
+    {
+      "profileId": "solstice",
+      "name": "Solstice",
+      "website": "https://solstice.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://solstice.finance/",
+        "https://solstice.finance/about"
+      ]
+    },
+    {
+      "profileId": "pact-protocol",
+      "name": "Pact",
+      "website": "https://pactfoundation.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://pactfoundation.com/"
+      ]
+    },
+    {
+      "profileId": "bstocks",
+      "name": "bStocks",
+      "website": "https://www.binance.com/en/square/post/332985203672465",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.binance.com/en/square/post/332985203672465"
+      ]
+    },
+    {
+      "profileId": "streamex",
+      "name": "Streamex",
+      "website": "https://www.streamex.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.streamex.com/",
+        "https://www.streamex.com/about/"
+      ]
+    },
+    {
+      "profileId": "oro-finance",
+      "name": "Oro Finance",
+      "website": "https://www.oro.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.oro.finance/"
+      ]
+    },
+    {
+      "profileId": "pharos",
+      "name": "Pharos",
+      "website": "https://www.pharos.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.pharos.xyz/"
+      ]
+    },
+    {
+      "profileId": "pleasing-gold",
+      "name": "Pleasing Gold",
+      "website": "https://www.pleasingmarket.com/tokens/pgold",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.pleasingmarket.com/tokens/pgold"
+      ]
+    },
+    {
+      "profileId": "trade-xyz",
+      "name": "Trade.xyz",
+      "website": "https://trade.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://trade.xyz/"
+      ]
+    },
+    {
+      "profileId": "qfex",
+      "name": "QFEX",
+      "website": "https://www.qfex.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.qfex.io/"
+      ]
+    },
+    {
+      "profileId": "gmtrade",
+      "name": "GMTrade",
+      "website": "https://gmtrade.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://gmtrade.xyz/"
+      ]
+    },
+    {
+      "profileId": "extended",
+      "name": "Extended",
+      "website": "https://extended.exchange/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://extended.exchange/"
+      ]
+    },
+    {
+      "profileId": "entropy",
+      "name": "Entropy",
+      "website": "https://entropy.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://entropy.io/"
+      ]
+    },
+    {
+      "profileId": "paragon",
+      "name": "Paragon",
+      "website": "https://paragon.trade/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://paragon.trade/",
+        "https://paragon.trade/about/"
+      ]
+    },
+    {
+      "profileId": "edgex",
+      "name": "edgeX",
+      "website": "https://pro.edgex.exchange/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://pro.edgex.exchange/"
+      ]
+    },
+    {
+      "profileId": "seda-protocol",
+      "name": "SEDA Protocol",
+      "website": "https://www.seda.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.seda.xyz/"
+      ]
+    },
+    {
+      "profileId": "collector-crypt",
+      "name": "Collector Crypt",
+      "website": "https://collectorcrypt.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://collectorcrypt.com/"
+      ]
+    },
+    {
+      "profileId": "beezie",
+      "name": "Beezie",
+      "website": "https://beezie.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://beezie.com/"
+      ]
+    },
+    {
+      "profileId": "phygitals",
+      "name": "Phygitals",
+      "website": "https://phygitals.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "blackopal",
+      "name": "BlackOpal",
+      "website": "https://www.blackopal.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.blackopal.finance/",
+        "https://www.blackopal.finance/about"
+      ]
+    },
+    {
+      "profileId": "asseto-finance",
+      "name": "Asseto Finance",
+      "website": "https://asseto.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://asseto.finance/"
+      ]
+    },
+    {
+      "profileId": "tenbin-labs",
+      "name": "Tenbin Labs",
+      "website": "https://www.tenbinlabs.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.tenbinlabs.xyz/"
+      ]
+    },
+    {
+      "profileId": "uranium-io",
+      "name": "Uranium.io",
+      "website": "https://uranium.io/en",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "pineapple-financial",
+      "name": "Pineapple Financial",
+      "website": "https://pineappledigitalassets.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://pineappledigitalassets.com/"
+      ]
+    },
+    {
+      "profileId": "bridgetower",
+      "name": "BridgeTower",
+      "website": "https://www.bridgetowercapital.com/",
+      "outcome": "date_corroborated",
+      "pagesScreened": [
+        "https://www.bridgetowercapital.com/",
+        "https://www.bridgetowercapital.com/about"
+      ],
+      "eventId": "bridgetower-founding-research-20261008"
+    },
+    {
+      "profileId": "accountable",
+      "name": "Accountable",
+      "website": "https://accountable.capital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://accountable.capital/"
+      ]
+    },
+    {
+      "profileId": "goldfish-gold",
+      "name": "Goldfish Gold",
+      "website": "https://goldfishgold.com/about",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://goldfishgold.com/about",
+        "https://goldfishgold.com/about#our-story"
+      ]
+    },
+    {
+      "profileId": "noon",
+      "name": "Noon",
+      "website": "https://noon.capital/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://noon.capital/"
+      ]
+    },
+    {
+      "profileId": "risex",
+      "name": "RISEx",
+      "website": "https://risechain.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://risechain.com/"
+      ]
+    },
+    {
+      "profileId": "backpack",
+      "name": "Backpack",
+      "website": "https://backpack.exchange/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://backpack.exchange/",
+        "https://backpack.exchange/stocks/about"
+      ]
+    },
+    {
+      "profileId": "gaib",
+      "name": "GAIB",
+      "website": "https://www.gaib.ai/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "rivool-finance",
+      "name": "Rivool Finance",
+      "website": "https://rivool.finance/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://rivool.finance/"
+      ]
+    },
+    {
+      "profileId": "aster",
+      "name": "Aster",
+      "website": "https://www.asterdex.com/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.asterdex.com/en"
+      ]
+    },
+    {
+      "profileId": "byreal",
+      "name": "Byreal",
+      "website": "https://byreal.io/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://www.byreal.io/en/restricted"
+      ]
+    },
+    {
+      "profileId": "saturn-credit",
+      "name": "Saturn Credit",
+      "website": "https://saturn.credit/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://saturn.credit/"
+      ]
+    },
+    {
+      "profileId": "refraction-research",
+      "name": "Refraction Research",
+      "website": "https://rwa-markets.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://rwa-markets.xyz/"
+      ]
+    },
+    {
+      "profileId": "arcus",
+      "name": "Arcus",
+      "website": "https://arcus.xyz/",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://arcus.xyz/"
+      ]
+    },
+    {
+      "profileId": "arch-network",
+      "name": "Arch Network",
+      "website": "https://arch.network/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "pons",
+      "name": "Pons",
+      "website": "https://www.ponsfamily.com/",
+      "outcome": "website_unavailable",
+      "pagesScreened": []
+    },
+    {
+      "profileId": "realityfi",
+      "name": "RealityFi",
+      "website": "https://x.com/RealityFi_xyz",
+      "outcome": "no_explicit_start_date_found",
+      "pagesScreened": [
+        "https://x.com/RealityFi_xyz",
+        "https://x.com/i/jf/onboarding/web?redirect_after_login=%2FRealityFi_xyz%2Fabout&mode=login"
+      ]
+    },
+    {
+      "profileId": "neufund",
+      "name": "Neufund",
+      "website": "",
+      "outcome": "no_current_website",
+      "pagesScreened": []
+    }
+  ],
+  "submissionDateConflicts": [
+    {
+      "profileId": "hyve",
+      "submittedYear": "2024",
+      "publicYear": "2023",
+      "source": "https://www.linkedin.com/company/hyveda",
+      "decision": "Leave undated pending clarification; preserve submitted year separately."
+    },
+    {
+      "profileId": "particula",
+      "submittedYear": "2022",
+      "existingSourcedYear": "2023",
+      "decision": "Keep existing sourced event; retain submission as an unverified claim."
+    },
+    {
+      "profileId": "t-blocks",
+      "submittedYear": "2023",
+      "existingSourcedYear": "2022",
+      "decision": "Keep existing sourced event; retain submission as an unverified claim."
+    },
+    {
+      "profileId": "lympid",
+      "submittedYear": "2024",
+      "existingSourcedYear": "2021",
+      "decision": "Keep existing sourced event; retain submission as an unverified claim."
+    }
+  ]
+}

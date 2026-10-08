@@ -40,7 +40,7 @@ test('live dataset has explicit event dates, undated exits, and separately verif
  const years=statsSeries(data,{...all,unit:'year',from:'1700',to:'2026'},[]);assert.equal(years.coverage.dated,first.size);assert.equal(years.coverage.yearOnly,0);
  const exits=statsSeries(data,{...all,metric:'exits'},[]);assert.equal(exits.coverage.eligible,9);assert.equal(exits.coverage.dated,8);assert.equal(exits.coverage.unknown,1);assert.equal(exits.total,8);
  assert.deepEqual(exits.points.filter(p=>p.value).map(p=>[p.label,p.value]),[['Q1 2025',2],['Q2 2025',1],['Q4 2025',2],['Q1 2026',1],['Q2 2026',1],['Q3 2026',1]]);
- const failures=statsSeries(data,{...all,metric:'failures'},[]);assert.equal(failures.total,3);assert.deepEqual(failures.shownEvents.map(e=>[e.name,quarterLabel(e.quarter)]),[['Neufund','Q1 2022'],['Archblock','Q1 2026'],['Opulous','Q2 2026']]);assert.equal(failures.coverage.eligible,3);
+ const failures=statsSeries(data,{...all,metric:'failures'},[]);assert.equal(failures.total,3);assert.deepEqual(failures.shownEvents.map(e=>[e.name,quarterLabel(e.quarter)]),[['Neufund','Q1 2022'],['Archblock','Q1 2026'],['Opulous','Q2 2026']]);assert.equal(failures.coverage.eligible,4);assert.equal(failures.coverage.unknown,1); // Dominion's closure is confirmed, but not yet precisely dated by a primary source.
  for(const e of data.statsEvents){assert.ok(data.profiles.some(p=>p.id===e.profileId));assert.ok(e.sources.length&&e.note&&dateBounds(e.date));assert.notEqual(e.date,e.checkedOn);}
 });
 test('export retains coverage, excludes tooltips/scripts, escapes content and protects pasted cells',()=>{
