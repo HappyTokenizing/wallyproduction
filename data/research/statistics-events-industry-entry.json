@@ -1,0 +1,804 @@
+[
+  {
+    "id": "klarna-rwa-entry-20261008",
+    "profileId": "klarna",
+    "type": "industry_entry",
+    "date": "2025-11-25",
+    "note": "KlarnaUSD testnet launch; mainnet was planned for 2026.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://investors.klarna.com/News--Events/news/news-details/2025/Klarna-Launches-KlarnaUSD-as-Stablecoin-Transactions-Hit-27-Trillion-Annually/default.aspx",
+        "title": "Klarna Group plc - Klarna Launches KlarnaUSD as Stablecoin Transactions Hit $27 Trillion Annually"
+      }
+    ]
+  },
+  {
+    "id": "paypal-rwa-entry-20261008",
+    "profileId": "paypal",
+    "type": "industry_entry",
+    "date": "2023-08-07",
+    "note": "PYUSD stablecoin launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://newsroom.paypal-corp.com/2023-08-07-PayPal-Launches-U-S-Dollar-Stablecoin",
+        "title": "Press Release: PayPal Launches U.S. Dollar Stablecoin - Aug 7, 2023"
+      }
+    ]
+  },
+  {
+    "id": "stripe-rwa-entry-20261008",
+    "profileId": "stripe",
+    "type": "industry_entry",
+    "date": "2022-04-22",
+    "note": "USDC payouts launched with Twitter as the first partner.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://stripe.com/en-ch/newsroom/news/crypto-payouts",
+        "title": "Stripe introduces global crypto payouts"
+      }
+    ]
+  },
+  {
+    "id": "visa-rwa-entry-20261008",
+    "profileId": "visa",
+    "type": "industry_entry",
+    "date": "2021-03",
+    "note": "First USDC settlement occurred in March; announcement was March 29.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://corporate.visa.com/en/sites/visa-perspectives/trends-insights/digital-currency-comes-to-visas-settlement-platform.html",
+        "title": "Digital currency comes to Visa’s settlement platform | Visa"
+      }
+    ]
+  },
+  {
+    "id": "vaneck-rwa-entry-20261008",
+    "profileId": "vaneck",
+    "type": "industry_entry",
+    "date": "2025-05-13",
+    "note": "VBILL, its first tokenized fund, launched with Securitize.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://investors.securitize.io/news/news-details/2025/VanEck-Launches-First-Tokenized-Fund-VBILL-on-Securitize-05-13-2025/default.aspx",
+        "title": "Securitize - VanEck Launches First Tokenized Fund, VBILL, on Securitize"
+      }
+    ]
+  },
+  {
+    "id": "janus-henderson-rwa-entry-20261008",
+    "profileId": "janus-henderson",
+    "type": "industry_entry",
+    "date": "2024-09-13",
+    "note": "First tokenized-fund partnership announced with Anemoy and Centrifuge.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-to-partner-with-anemoy-and-centrifuge-on-its-first-tokenized-fund/",
+        "title": "Janus Henderson to partner with Anemoy and Centrifuge on its first tokenized fund"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-hamiltonlane-rwa-entry-20261008",
+    "profileId": "rwaf-hamiltonlane",
+    "type": "industry_entry",
+    "date": "2022-03-29",
+    "note": "First tokenized fund partnership, with ADDX.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.hamiltonlane.com/en-us/news/addx-partnership",
+        "title": "ADDX Offers Tokenized Access to GPA Fund"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-kkr-rwa-entry-20261008",
+    "profileId": "rwaf-kkr",
+    "type": "industry_entry",
+    "date": "2022-09-13",
+    "note": "Securitize launched tokenized exposure to KKR HCSG II.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://media.kkr.com/news-details?news_id=5aa593b4-0063-4e7b-a0cc-b9d2d1668d21",
+        "title": "Securitize Launches Fund Providing Tokenized Exposure to KKR Fund for the First Time in the U.S"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-northerntrust-rwa-entry-20261008",
+    "profileId": "rwaf-northerntrust",
+    "type": "industry_entry",
+    "date": "2017-02",
+    "note": "Commercial blockchain private-equity administration with fund ownership transfers; source specifies February only.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.northerntrust.com/documents/articles/asset-servicing/global-investor-isf-awards-2017.pdf",
+        "title": "Private Equity Fund Administrator of the Year"
+      }
+    ]
+  },
+  {
+    "id": "goldman-sachs-rwa-entry-20261008",
+    "profileId": "goldman-sachs",
+    "type": "industry_entry",
+    "date": "2018",
+    "note": "Participated in a blockchain debt-issuance trial; source gives the year only.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.jpmorgan.com/kinexys/about",
+        "title": "About Kinexys: Our Story, Leadership and More | J.P. Morgan"
+      }
+    ]
+  },
+  {
+    "id": "calastone-rwa-entry-20261008",
+    "profileId": "calastone",
+    "type": "industry_entry",
+    "date": "2017-06",
+    "note": "Completed first blockchain fund-trading and settlement proof of concept; earlier research did not establish a deployed project.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.calastone.com/insights/calastone-successfully-completes-first-phase-of-blockchain-distributed-market-infrastructure-poc-for-the-funds-industry-2/",
+        "title": "Calastone successfully completes first phase of blockchain distributed market infrastructure PoC for the funds industry - Calastone"
+      }
+    ]
+  },
+  {
+    "id": "dubois-et-fils-rwa-entry-20261008",
+    "profileId": "dubois-et-fils",
+    "type": "industry_entry",
+    "date": "2021",
+    "note": "First tokenized watch movements sold in summer 2021; no exact date established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://duboisfils.ch/en/dbf-token/caliber-1673",
+        "title": "Caliber AS-1673 | duboisfils.ch"
+      }
+    ]
+  },
+  {
+    "id": "apoc-aviation-rwa-entry-20261008",
+    "profileId": "apoc-aviation",
+    "type": "industry_entry",
+    "date": "2023-01",
+    "note": "Inaugural digital bond reported January 11; exact issuance day not established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.apocaviation.com/apoc-raises-new-investment-capital-with-the-first-digital-bond-on-public-blockchain/",
+        "title": "APOC raises new investment capital with the first digital bond on public blockchain - APOC Aviation - Intuitive Aviation Solutions"
+      }
+    ]
+  },
+  {
+    "id": "vesteda-rwa-entry-20261008",
+    "profileId": "vesteda",
+    "type": "industry_entry",
+    "date": "2023-09",
+    "note": "First green tokenized debt issued in September; source announced the transaction September 12.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.abnamro.com/en/news/abn-amro-registers-first-digital-green-bond-on-the-public-blockchain",
+        "title": "ABN AMRO registers green bond on public blockchain. | ABN AMRO"
+      }
+    ]
+  },
+  {
+    "id": "pilgrim-partners-rwa-entry-20261008",
+    "profileId": "pilgrim-partners",
+    "type": "industry_entry",
+    "date": "2025-06-19",
+    "note": "Peakwater tokenized volatility fund announced live with DigiFT.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.pilgrimpartnersasia.com/in-the-news/press-release-digift-and-pilgrim-partners-asia-launch-peakwater",
+        "title": "DigiFT and Pilgrim Partners Asia Launch Peakwater — Pilgrim Partners Asia"
+      }
+    ]
+  },
+  {
+    "id": "european-central-bank-rwa-entry-20261008",
+    "profileId": "european-central-bank",
+    "type": "industry_entry",
+    "date": "2016-12",
+    "note": "Project Stella launched to study DLT settlement; source establishes the month only.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/pub/pdf/other/ecb.stella_project_report_september_2017.pdf",
+        "title": "Payment systems: liquidity saving mechanisms in a distributed ledger environment – Stella project report"
+      }
+    ]
+  },
+  {
+    "id": "bank-of-england-rwa-entry-20261008",
+    "profileId": "bank-of-england",
+    "type": "industry_entry",
+    "date": "2018-03-27",
+    "note": "Announced an active DLT settlement proof of concept with Baton, Clearmatics, R3 and Token.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bankofengland.co.uk/news/2018/july/rtgs-renewal-programme-proof-of-concept-supporting-dlt-settlement-models",
+        "title": "RTGS Renewal Programme Proof of Concept: Supporting DLT Settlement Models | Bank of England – the UK's central bank"
+      }
+    ]
+  },
+  {
+    "id": "monetary-authority-of-singapore-rwa-entry-20261008",
+    "profileId": "monetary-authority-of-singapore",
+    "type": "industry_entry",
+    "date": "2016-11-16",
+    "note": "Project Ubin tokenized-SGD pilot participant; announcement date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "dbs-rwa-entry-20261008",
+    "profileId": "dbs",
+    "type": "industry_entry",
+    "date": "2016-11-16",
+    "note": "Project Ubin tokenized-SGD pilot participant; announcement date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "hsbc-rwa-entry-20261008",
+    "profileId": "hsbc",
+    "type": "industry_entry",
+    "date": "2016-11-16",
+    "note": "Project Ubin tokenized-SGD pilot participant; announcement date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "jpmorgan-rwa-entry-20261008",
+    "profileId": "jpmorgan",
+    "type": "industry_entry",
+    "date": "2016-11-16",
+    "note": "Project Ubin tokenized-SGD pilot participant; announcement date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "mufg-rwa-entry-20261008",
+    "profileId": "mufg",
+    "type": "industry_entry",
+    "date": "2016-11-16",
+    "note": "Project Ubin tokenized-SGD pilot participant; announcement date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "ocbc-rwa-entry-20261008",
+    "profileId": "ocbc",
+    "type": "industry_entry",
+    "date": "2016-11-16",
+    "note": "Project Ubin tokenized-SGD pilot participant; announcement date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "sgx-group-rwa-entry-20261008",
+    "profileId": "sgx-group",
+    "type": "industry_entry",
+    "date": "2016-11-16",
+    "note": "Project Ubin tokenized-SGD pilot participant; announcement date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "united-overseas-bank-rwa-entry-20261008",
+    "profileId": "united-overseas-bank",
+    "type": "industry_entry",
+    "date": "2016-11-16",
+    "note": "Project Ubin tokenized-SGD pilot participant; announcement date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "standard-chartered-rwa-entry-20261008",
+    "profileId": "standard-chartered",
+    "type": "industry_entry",
+    "date": "2017-10-05",
+    "note": "Named participant in completed Ubin phase-two settlement prototypes.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-citi-rwa-entry-20261008",
+    "profileId": "rwaf-citi",
+    "type": "industry_entry",
+    "date": "2017-10-05",
+    "note": "Named participant in completed Ubin phase-two settlement prototypes.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "deloitte-rwa-entry-20261008",
+    "profileId": "deloitte",
+    "type": "industry_entry",
+    "date": "2017",
+    "note": "Commissioned reporting support for Project Ubin phase one, completed in 2017. The source does not establish the exact first day of Deloitte’s work.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/schemes-and-initiatives/Project-Ubin",
+        "title": "MAS: Project Ubin"
+      }
+    ]
+  },
+  {
+    "id": "bank-for-international-settlements-rwa-entry-20261008",
+    "profileId": "bank-for-international-settlements",
+    "type": "industry_entry",
+    "date": "2019-10-08",
+    "note": "Announced joint proof of concept for settling tokenized assets in central-bank money.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bis.org/media-releases/20191008-snb-and-bis-sign-operational-agreement-bis-innovation-hub-centre-switzerland",
+        "title": "BIS/SNB: tokenized-asset settlement project"
+      }
+    ]
+  },
+  {
+    "id": "swiss-national-bank-rwa-entry-20261008",
+    "profileId": "swiss-national-bank",
+    "type": "industry_entry",
+    "date": "2019-10-08",
+    "note": "Announced joint proof of concept for settling tokenized assets in central-bank money.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bis.org/media-releases/20191008-snb-and-bis-sign-operational-agreement-bis-innovation-hub-centre-switzerland",
+        "title": "BIS/SNB: tokenized-asset settlement project"
+      }
+    ]
+  },
+  {
+    "id": "world-bank-rwa-entry-20261008",
+    "profileId": "world-bank",
+    "type": "industry_entry",
+    "date": "2018-08-23",
+    "note": "Bond-i blockchain bond launched; settlement followed on August 28.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://projects.worldbank.org/en/about/unit/treasury/about",
+        "title": "World Bank Treasury: bond-i history"
+      }
+    ]
+  },
+  {
+    "id": "european-investment-bank-rwa-entry-20261008",
+    "profileId": "european-investment-bank",
+    "type": "industry_entry",
+    "date": "2021-04-27",
+    "note": "First blockchain digital bond launched on April 27; settlement was April 28.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.eib.org/en/press/all/2021-141-european-investment-bank-eib-issues-its-first-ever-digital-bond-on-a-public-blockchain",
+        "title": "EIB: first digital bond"
+      }
+    ]
+  },
+  {
+    "id": "franklin-templeton-rwa-entry-20261008",
+    "profileId": "franklin-templeton",
+    "type": "industry_entry",
+    "date": "2019",
+    "note": "Blockchain fund filed with the SEC; began validating Provenance and Stellar. Source gives the year only, before the 2021 fund launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.franklintempleton.com/private-markets/component-examples/timeline",
+        "title": "Franklin Templeton: digital-assets timeline"
+      }
+    ]
+  },
+  {
+    "id": "siemens-rwa-entry-20261008",
+    "profileId": "siemens",
+    "type": "industry_entry",
+    "date": "2019-01",
+    "note": "Commercial-paper pilot transaction occurred in January; the release was February 21. Exact transaction day not established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.continental.com/de/presse/pressemitteilungen/blockchain/",
+        "title": "Continental: blockchain commercial-paper pilot"
+      }
+    ]
+  },
+  {
+    "id": "continental-rwa-entry-20261008",
+    "profileId": "continental",
+    "type": "industry_entry",
+    "date": "2019-01",
+    "note": "Commercial-paper pilot transaction occurred in January; the release was February 21. Exact transaction day not established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.continental.com/de/presse/pressemitteilungen/blockchain/",
+        "title": "Continental: blockchain commercial-paper pilot"
+      }
+    ]
+  },
+  {
+    "id": "dekabank-rwa-entry-20261008",
+    "profileId": "dekabank",
+    "type": "industry_entry",
+    "date": "2019",
+    "note": "First finledger Schuldschein transaction with NRW.BANK; source gives the year only.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.deka.de/deka-gruppe/media--research/aktuelle-medienmitteilungen/pressearchiv/2020-1-1/september/nrwbank-dekabank-und-dz-bank-wickeln-erfolgreich-schuldscheindarlehen-transaktion-ueber-blockchain-ab",
+        "title": "DekaBank: finledger history"
+      }
+    ]
+  },
+  {
+    "id": "fidelity-investments-rwa-entry-20261008",
+    "profileId": "fidelity-investments",
+    "type": "industry_entry",
+    "date": "2025-07-23",
+    "note": "Named initial participant in BNY/Goldman’s tokenized MMF ownership-record solution. Its own Treasury Digital Fund OnChain class followed in Q3 2025.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.goldmansachs.com/pressroom/press-releases/2025/bny-goldman-sachs-launch-tokenized-money-market-funds-solution",
+        "title": "Goldman Sachs / BNY: tokenized MMF solution launch"
+      },
+      {
+        "url": "https://about.fidelity.com/data-and-insights/q3-2025-business-update",
+        "title": "Fidelity: Q3 2025 business update"
+      }
+    ]
+  },
+  {
+    "id": "vonovia-rwa-entry-20261008",
+    "profileId": "vonovia",
+    "type": "industry_entry",
+    "date": "2021-01-12",
+    "note": "First security-token registered bond. Interim report specifies January 12; press release followed January 13.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.vonovia.com/en/content/download/66107/5073360",
+        "title": "Vonovia: Q1 2021 interim statement"
+      }
+    ]
+  },
+  {
+    "id": "deutsche-bundesbank-rwa-entry-20261008",
+    "profileId": "deutsche-bundesbank",
+    "type": "industry_entry",
+    "date": "2016-11-28",
+    "note": "Public presentation of the securities-and-digital-cash settlement prototype with Deutsche Börse.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bundesbank.de/de/presse/pressenotizen/gemeinsamer-blockchain-prototyp-von-deutscher-bundesbank-und-deutscher-boerse-665448",
+        "title": "Bundesbank: joint blockchain prototype"
+      }
+    ]
+  },
+  {
+    "id": "banque-de-france-rwa-entry-20261008",
+    "profileId": "banque-de-france",
+    "type": "industry_entry",
+    "date": "2020-03",
+    "note": "Wholesale CBDC financial-asset settlement experiment programme began in March 2020; exact day not established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.banque-france.fr/fr/communiques-de-presse/la-banque-de-france-publie-son-rapport-des-experimentations-de-monnaie-numerique-de-banque-centrale",
+        "title": "Banque de France: 2020–2021 experiment report"
+      }
+    ]
+  },
+  {
+    "id": "banca-ditalia-rwa-entry-20261008",
+    "profileId": "banca-ditalia",
+    "type": "industry_entry",
+    "date": "2022-07",
+    "note": "Published results of TIPS/DLT delivery-versus-payment proofs of concept. Month is the earliest corroborated public milestone, not an invented experiment start day.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bancaditalia.it/pubblicazioni/mercati-infrastrutture-e-sistemi-di-pagamento/approfondimenti/2022-026/index.html",
+        "title": "Banca d’Italia: integrating DLTs with market infrastructures"
+      }
+    ]
+  },
+  {
+    "id": "republic-of-slovenia-rwa-entry-20261008",
+    "profileId": "republic-of-slovenia",
+    "type": "industry_entry",
+    "date": "2024-07-25",
+    "note": "Inaugural digital bond issued July 25; government announcement was July 26.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.gov.si/en/news/2024-07-26-the-republic-of-slovenia-issues-its-inaugural-digital-bond/",
+        "title": "Slovenia: inaugural digital bond"
+      }
+    ]
+  },
+  {
+    "id": "cassa-depositi-e-prestiti-rwa-entry-20261008",
+    "profileId": "cassa-depositi-e-prestiti",
+    "type": "industry_entry",
+    "date": "2024-07-18",
+    "note": "First blockchain digital bond issued on July 18.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cdp.it/sitointernet/page/en/cdp_successfully_issues_its_first_digital_bond_on_blockchain_intesa_sanpaolo_fully_underwrites_the_transaction?contentId=CSA48474",
+        "title": "CDP: first digital bond"
+      }
+    ]
+  },
+  {
+    "id": "intesa-sanpaolo-rwa-entry-20261008",
+    "profileId": "intesa-sanpaolo",
+    "type": "industry_entry",
+    "date": "2024-07-18",
+    "note": "Underwrote CDP’s first digital bond; earliest corroborated tokenized-asset transaction in reviewed sources.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cdp.it/sitointernet/page/en/cdp_successfully_issues_its_first_digital_bond_on_blockchain_intesa_sanpaolo_fully_underwrites_the_transaction?contentId=CSA48474",
+        "title": "CDP / Intesa Sanpaolo: digital bond transaction"
+      }
+    ]
+  },
+  {
+    "id": "hong-kong-monetary-authority-rwa-entry-20261008",
+    "profileId": "hong-kong-monetary-authority",
+    "type": "industry_entry",
+    "date": "2017",
+    "note": "Project LionRock began in 2017, covering token-based CBDC and debt securities; no month or day established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.hkma.gov.hk/media/eng/doc/key-functions/financial-infrastructure/Report_on_Project_Inthanon-LionRock.pdf",
+        "title": "HKMA: Project Inthanon-LionRock report"
+      }
+    ]
+  },
+  {
+    "id": "dla-piper-rwa-entry-20261008",
+    "profileId": "dla-piper",
+    "type": "industry_entry",
+    "date": "2020-11-05",
+    "note": "TOKO launched and completed its first tokenized fine-art security project on this day.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.dlapiper.com/en-pl/news/2020/11/dla-piper-and-aldersgate-dls-launch-toko-for-buying-and-selling-high-value-assets-using-blockchain",
+        "title": "DLA Piper: TOKO launch"
+      }
+    ]
+  },
+  {
+    "id": "nomura-rwa-entry-20261008",
+    "profileId": "nomura",
+    "type": "industry_entry",
+    "date": "2019-09",
+    "note": "Established BOOSTRY to develop a blockchain securities trading platform; month stated in investor presentation.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.nomuraholdings.com/en/investor/presentation/presentation_past/main/011117/teaserItems1/00/tableContents/01/multiFileUpload30/link/2019_1203_prem.pdf",
+        "title": "Nomura: Investment Forum 2019 presentation"
+      }
+    ]
+  },
+  {
+    "id": "mizuho-bank-rwa-entry-20261008",
+    "profileId": "mizuho-bank",
+    "type": "industry_entry",
+    "date": "2015-12",
+    "note": "Securities-settlement trial using Open Assets Protocol began December 2015 and ended February 2016; announcement followed March 8.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mizuhogroup.com/binaries/content/assets/pdf/mizuho-bank/news/2016/03/20160308release_eng.pdf",
+        "title": "Mizuho / Fujitsu: blockchain securities-settlement trial"
+      }
+    ]
+  },
+  {
+    "id": "ubs-asset-management-rwa-entry-20261008",
+    "profileId": "ubs-asset-management",
+    "type": "industry_entry",
+    "date": "2023-10",
+    "note": "First live tokenized VCC fund pilot announced October 2. Applies to the asset-management division, not the parent bank’s earlier bond projects.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.ubs.com/global/en/media/display-page-ndp/en-20230927-first-blockchain-native.html",
+        "title": "UBS Asset Management: first tokenized VCC fund pilot"
+      }
+    ]
+  },
+  {
+    "id": "venmo-rwa-entry-20261008",
+    "profileId": "venmo",
+    "type": "industry_entry",
+    "date": "2023-09-20",
+    "note": "PYUSD stablecoin became available on Venmo on this day.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://newsroom.paypal-corp.com/2023-09-20-PayPal-USD-is-now-available-on-Venmo",
+        "title": "PayPal: PYUSD available on Venmo"
+      }
+    ]
+  },
+  {
+    "id": "western-union-rwa-entry-20261008",
+    "profileId": "western-union",
+    "type": "industry_entry",
+    "date": "2025-10-28",
+    "note": "Announced the USDPT stablecoin project and digital asset network; this is project announcement, not the later 2026 launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://ir.westernunion.com/news/archived-press-releases/press-release-details/2025/Western-Union-Announces-USDPT-Stablecoin-on-Solana-and-Digital-Asset-Network/",
+        "title": "Western Union: USDPT project announcement"
+      }
+    ]
+  },
+  {
+    "id": "h-moser-rwa-entry-20261008",
+    "profileId": "h-moser",
+    "type": "industry_entry",
+    "date": "2022",
+    "note": "First Genesis watch combined the physical timepiece with blockchain authentication and NFTs. Official retrospective establishes year only.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.h-moser.com/en/genesis-part-two",
+        "title": "H. Moser: Genesis project history"
+      }
+    ]
+  },
+  {
+    "id": "landesbank-baden-wurttemberg-rwa-entry-20261008",
+    "profileId": "landesbank-baden-wurttemberg",
+    "type": "industry_entry",
+    "date": "2017-06",
+    "note": "Daimler blockchain Schuldschein pilot announced June 28. Exact transaction day not established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.lbbw.de/artikel/pressemitteilung/daimler-und-lbbw-setzen-blockchain-bei-schuldschein-transaktion-ein_8zvetwhio_d.html",
+        "title": "LBBW: Daimler blockchain debt pilot"
+      }
+    ]
+  },
+  {
+    "id": "m-m-warburg-co-rwa-entry-20261008",
+    "profileId": "m-m-warburg-co",
+    "type": "industry_entry",
+    "date": "2021-01",
+    "note": "Exclusive investor in Vonovia’s security-token note; January transaction confirmed by the bank’s January 13 release.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mmwarburg.de/export/shared/pressreleases/downloads/alt/2021/210113_PI_MMW_Digitale_Schuldverschreibung_engl.pdf",
+        "title": "M.M. Warburg: Vonovia digital note"
+      }
+    ]
+  },
+  {
+    "id": "federated-hermes-rwa-entry-20261008",
+    "profileId": "federated-hermes",
+    "type": "industry_entry",
+    "date": "2025-07-23",
+    "note": "Named initial participant in the BNY/Goldman tokenized money-market ownership-record solution at its launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.goldmansachs.com/pressroom/press-releases/2025/bny-goldman-sachs-launch-tokenized-money-market-funds-solution",
+        "title": "Goldman Sachs / BNY: tokenized MMF solution launch"
+      }
+    ]
+  },
+  {
+    "id": "basler-kantonalbank-rwa-entry-20261008",
+    "profileId": "basler-kantonalbank",
+    "type": "industry_entry",
+    "date": "2023-11",
+    "note": "Helvetia III pilot participation and Basel-Stadt digital bond; issuance reported November 15, settlement followed December 1. Exact first participation day not established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.bkb.ch/de/die-basler-kantonalbank/medien/medienmitteilungen/2023/bkb-emittiert-fuer-den-kanton-basel-stadt-erstmals-eine-digitale-anleihe-die-mit-digitalem-schweizer",
+        "title": "Basler Kantonalbank: tokenized bond and Helvetia III"
+      }
+    ]
+  },
+  {
+    "id": "mastercard-rwa-entry-20261008",
+    "profileId": "mastercard",
+    "type": "industry_entry",
+    "date": "2020-09-09",
+    "note": "Launched a CBDC issuance, distribution and exchange testing platform. Earlier card-credential tokenization is excluded.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mastercard.com/news/press/press-releases/2020/september/mastercard-launches-central-bank-digital-currencies-cbdcs-testing-platform/",
+        "title": "Mastercard: CBDC testing-platform launch"
+      }
+    ]
+  }
+]

@@ -45,7 +45,7 @@ Substantial date research is still required for industry-wide statistics.
 
 Add reviewed start/failure facts to `data/research/statistics-events.json` using
 an existing canonical profile ID, unique event ID, event type (`founding`,
-`launch`, or `failure`), date, explanatory note, review date, and source links.
+`launch`, `industry_entry`, or `failure`), date, explanatory note, review date, and source links.
 Supported precision is YYYY, YYYY-MM, YYYY-MM-DD, or YYYY-Q1 through YYYY-Q4.
 Preserve the precision established by the evidence. The importer rejects invalid
 dates, missing sources, unknown profile IDs, duplicate event types per profile,
@@ -68,3 +68,31 @@ Run `node scripts/import-ecosystem.mjs` to regenerate the directory, followed by
 - Exported PNG and desktop/mobile layouts were visually inspected.
 
 This change targets staging. Production is unchanged.
+
+## 2026-10-08 correction: industry entry, not corporate age
+
+Banks, institutions and every pre-2011 firm now require a sourced
+`industry_entry` event for their first tokenization/RWA project. Corporate
+founding facts remain in the research inputs for provenance but are excluded
+from generated starts and cannot leak through the founding/launch filters.
+These profiles display **RWA entry**, never a relabelled corporate birth date.
+Unknown entry dates remain explicitly under review. Exact days are used only
+where evidence establishes them; month/year sources keep their precision.
+
+The definition includes announced pilots and concrete supporting infrastructure
+for tokenized assets, deposits or stablecoins. Ordinary card credential tokens,
+generic crypto trading and broad blockchain commentary do not establish entry.
+Dates describe the earliest corroborated activity found in reviewed sources,
+not a guarantee that an earlier private experiment never existed. The policy
+is in `data/research/industry-entry-policy.json`; dated replacements are in
+`statistics-events-industry-entry.json`. The importer automatically applies the
+rule to newly added institutions and any future pre-2011 start records.
+
+
+Research review on 2026-10-08: the policy covers 127 profiles. Fifty-seven have
+sourced replacement milestones; 70 remain unverified and are excluded from the
+start charts. See `data/research/industry-entry-review-20261008.json` for every
+affected profile, superseded corporate date, evidence and pending-review reason.
+Including 15 additional researched younger projects, the annual chart has 529
+sourced starts among 1,154 profiles; 625 remain undated under the corrected rule.
+This coverage reduction is intentional: corporate age is not industry growth.

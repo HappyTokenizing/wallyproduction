@@ -1,6 +1,6 @@
 import {createStats} from './ecosystem-stats.js';
 import {filterProfiles,memberFor,safeURL,websiteFor,memberCount,exitsFor,exitCount} from './ecosystem-model.js';
-import {companyNews} from './company-news-match.js';
+import {startEvent} from './ecosystem-stats-model.js';
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const label={current:'Current',historical:'Historical',review:'Review pending'};
 let pending;
@@ -54,35 +54,39 @@ export async function mountEcosystem(mount, options) {
       }).join('')}</div>`;
     }
   }
-  // Founded / launched, from the sourced start events that also feed the Stats view.
+  // Industry entry / founding / launch, shared with the Stats view.
   const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
-  const startFor=id=>{const ev=(data.statsEvents||[]).filter(e=>e.profileId===id&&(e.type==='founding'||e.type==='launch'));return ev.find(e=>e.type==='founding')||ev[0]||null;};
+  const startFor=id=>startEvent(byId.get(id),data.statsEvents||[]);
   function fmtStart(d){const m=/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?|-Q([1-4]))?$/.exec(d||'');if(!m)return d||'';if(m[4])return `Q${m[4]} ${m[1]}`;if(m[3])return `${MONTHS[+m[2]-1]} ${+m[3]}, ${m[1]}`;if(m[2])return `${MONTHS[+m[2]-1]} ${m[1]}`;return m[1];}
-  function foundedHTML(p){const e=startFor(p.id);if(!e)return '';const src=(e.sources||[]).map(s=>safeURL(s.url,p)?{...s,url:safeURL(s.url,p)}:null).find(Boolean);return `<p class="ec-founded"><b>${e.type==='founding'?'Founded':'Launched'}</b> ${escape(fmtStart(e.date))}${e.note?`<span> · ${escape(e.note)}</span>`:''}${src?` <a href="${escape(src.url)}" target="_blank" rel="noopener noreferrer">Source ↗</a>`:''}</p>`;}
+  function foundedHTML(p){const e=startFor(p.id);if(!e)return p.industryStartRequired?'<p class="ec-founded"><b>RWA entry</b> Date under review</p>':'';const src=(e.sources||[]).map(s=>safeURL(s.url,p)?{...s,url:safeURL(s.url,p)}:null).find(Boolean);return `<p class="ec-founded"><b>${e.type==='industry_entry'?'RWA entry':e.type==='founding'?'Founded':'Launched'}</b> ${escape(fmtStart(e.date))}${e.note?`<span> · ${escape(e.note)}</span>`:''}${src?` <a href="${escape(src.url)}" target="_blank" rel="noopener noreferrer">Source ↗</a>`:''}</p>`;}
   // Company news: stories from the site's news feed that mention this company, kept in the news archive.
-  // Falls back to the live feed (same matcher) where the archive endpoint isn't available yet.
-  const newsCache=new Map(),newsPending=new Map();
+  // An unavailable archive is shown explicitly; a recent-only feed cannot stand in for history.
+  const newsCache=new Map(),newsPending=new Map(),newsPages=new Map();
   const newsURL=u=>/^https?:\/\//i.test(u||'')?u:null;
   const newsDate=d=>{const t=Date.parse(d||'');return t?new Date(t).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}):'';};
   function newsBody(p){
     const items=newsCache.get(p.id);
     if(items===undefined)return '<p class="ec-news-status">Loading company news…</p>';
-    if(items===null)return '<p class="ec-news-status">Company news is unavailable right now. Try again shortly.</p>';
+    if(items===null)return `<p class="ec-news-status">Company news is unavailable right now.</p><button data-news-retry="${escape(p.id)}">Retry company news</button>`;
     const list=items.filter(x=>newsURL(x.url)&&x.headline);
     if(!list.length)return `<p class="ec-news-status">No stories captured yet. Stories from the RWA Foundation news feed that mention ${escape(p.name)} appear here as they are published.</p>`;
-    return `<ul class="ec-updates ec-news-list">${list.map(x=>`<li><a href="${escape(newsURL(x.url))}" target="_blank" rel="noopener noreferrer">${escape(x.headline)} ↗</a><time>${escape([x.source?.name,newsDate(x.published_at)].filter(Boolean).join(' · '))}</time>${x.summary?`<p>${escape(x.summary)}</p>`:''}</li>`).join('')}</ul>`;
+    return `<ul class="ec-updates ec-news-list">${list.map(x=>`<li><a href="${escape(newsURL(x.url))}" target="_blank" rel="noopener noreferrer">${escape(x.headline)} ↗</a><time>${escape([x.source?.name,newsDate(x.published_at)].filter(Boolean).join(' · '))}</time>${x.summary?`<p>${escape(x.summary)}</p>`:''}</li>`).join('')}</ul>${newsPages.get(p.id)?`<button data-news-more="${escape(p.id)}" ${newsPending.has(p.id)?'disabled':''}>Load older company stories</button>`:''}`;
   }
-  async function fetchNews(p){
-    try{const r=await fetch('/api/company-news?id='+encodeURIComponent(p.id));if(!r.ok)throw Error('archive');const d=await r.json();if(!Array.isArray(d.items))throw Error('archive');return d.items;}
-    catch{
-      try{const [feed,hid]=await Promise.all([fetch('/api/news').then(r=>r.ok?r.json():Promise.reject()),fetch('/api/news?hidden=1').then(r=>r.ok?r.json():{ids:[]}).catch(()=>({ids:[]}))]);return companyNews(feed.items||[],p,{hidden:hid.ids||[]});}
-      catch{return null;}
-    }
+  async function fetchNews(p,cursor){
+    const r=await fetch('/api/company-news?id='+encodeURIComponent(p.id)+(cursor?'&cursor='+encodeURIComponent(cursor):''));
+    if(!r.ok)throw Error('archive');const d=await r.json();if(!Array.isArray(d.items))throw Error('archive');return d;
   }
-  function loadNews(p){
-    if(newsCache.has(p.id))return;
-    if(!newsPending.has(p.id))newsPending.set(p.id,fetchNews(p).then(items=>{newsCache.set(p.id,items);newsPending.delete(p.id);const box=root.querySelector(`.ec-news[data-news="${CSS.escape(p.id)}"]`);if(box)box.innerHTML='<h3>Company news</h3>'+newsBody(p);}));
+  function loadNews(p,more=false){
+    if(newsPending.has(p.id)||(!more&&newsCache.has(p.id)))return;
+    const task=fetchNews(p,more?newsPages.get(p.id):null).then(d=>{
+      const previous=more?(newsCache.get(p.id)||[]):[],seen=new Set(previous.map(x=>x.id));
+      newsCache.set(p.id,previous.concat(d.items.filter(x=>!seen.has(x.id))));newsPages.set(p.id,d.nextCursor||null);
+    }).catch(()=>{if(!more)newsCache.set(p.id,null);}).finally(()=>{
+      newsPending.delete(p.id);const box=root.querySelector(`.ec-news[data-news="${CSS.escape(p.id)}"]`);
+      if(box)box.innerHTML='<h3>Company news</h3>'+newsBody(p);
+    });newsPending.set(p.id,task);
   }
+
   function profileHTML(p){
     const website=websiteFor(p), fav=options.isFavorite?.(p.id,p.legacyIds);
     const related=p.relatedEntities.filter(r=>byId.has(r.id));
@@ -96,6 +100,8 @@ export async function mountEcosystem(mount, options) {
   root.addEventListener('error',event=>{const img=event.target;if(img.tagName==='IMG'){img.hidden=true;if(img.nextElementSibling)img.nextElementSibling.hidden=false;}},true);
   root.addEventListener('click',event=>{
     const b=event.target.closest('button');if(!b)return;
+    if(b.dataset.newsRetry){newsCache.delete(b.dataset.newsRetry);return loadNews(byId.get(b.dataset.newsRetry));}
+    if(b.dataset.newsMore){b.disabled=true;return loadNews(byId.get(b.dataset.newsMore),true);}
     if(b.dataset.profile)return open(b.dataset.profile);
     if(b.hasAttribute('data-close'))return close();
     if(b.dataset.favorite){const p=byId.get(b.dataset.favorite);options.onFavorite?.(p.id,p.legacyIds);if(dialog.open)root.querySelector('.ec-profile').innerHTML=profileHTML(p);return;}

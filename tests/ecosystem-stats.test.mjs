@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {dateBounds,quarterFromKey,quarterLabel,statsSeries,statsTSV} from '../assets/ecosystem-stats-model.js';
+import {dateBounds,quarterFromKey,quarterLabel,statsSeries,statsTSV,startEvent} from '../assets/ecosystem-stats-model.js';
 import {chartSVG} from '../assets/ecosystem-stats.js';
 const data=JSON.parse(fs.readFileSync(new URL('../data/ecosystem-directory.json',import.meta.url)));
 const source={title:'Primary evidence',url:'https://example.com/evidence'};
@@ -33,10 +33,11 @@ test('live dataset has explicit event dates, undated exits, and separately verif
  const all={...criteria,from:'2000-Q1',to:'2026-Q4'};
  const starts=statsSeries(data,all,[]);
  // Coverage is derived from the sourced start events (founding preferred over launch), so research additions stay consistent.
- const first=new Map();for(const e of data.statsEvents.filter(e=>e.type==='founding'||e.type==='launch')){const c=first.get(e.profileId);if(!c||(c.type!=='founding'&&e.type==='founding'))first.set(e.profileId,e);}
+ const first=new Map(data.profiles.map(p=>[p.id,startEvent(p,data.statsEvents)]).filter(([,e])=>e));
  const quarterDated=[...first.values()].filter(e=>dateBounds(e.date).quarter!=null).length;
  assert.equal(starts.coverage.future,0);assert.equal(starts.coverage.dated,quarterDated);assert.equal(starts.coverage.yearOnly,first.size-quarterDated);assert.equal(starts.coverage.unknown,data.profiles.length-first.size);
- assert.ok(first.size>=490,'sourced start dates for most of the directory');
+ assert.ok(first.size>0);
+ for(const e of first.values())assert.ok(Number(e.date.slice(0,4))>=2011,'corporate ages never count as RWA entries');
  const years=statsSeries(data,{...all,unit:'year',from:'1700',to:'2026'},[]);assert.equal(years.coverage.dated,first.size);assert.equal(years.coverage.yearOnly,0);
  const exits=statsSeries(data,{...all,metric:'exits'},[]);assert.equal(exits.coverage.eligible,9);assert.equal(exits.coverage.dated,8);assert.equal(exits.coverage.unknown,1);assert.equal(exits.total,8);
  assert.deepEqual(exits.points.filter(p=>p.value).map(p=>[p.label,p.value]),[['Q1 2025',2],['Q2 2025',1],['Q4 2025',2],['Q1 2026',1],['Q2 2026',1],['Q3 2026',1]]);
@@ -58,4 +59,29 @@ test('the year view charts year-only starts in their own year, never in an inven
  assert.equal(y.points.at(-1).partial,true);assert.deepEqual(y.coverage,{eligible:4,dated:3,yearOnly:0,unknown:0,future:1});
  const q=statsSeries(d,{...criteria,from:'2023-Q1',to:'2024-Q4'},[]);assert.equal(q.coverage.yearOnly,2);assert.equal(q.total,1);
  assert.match(statsTSV(y,'All profiles'),/\nYear\t/);
+});
+
+test('institutions and any pre-2011 firm require tokenization evidence across cards and every chart basis',()=>{
+ const bank={...profile('bank','Institutions'),industryStartRequired:true},old=profile('old'),young=profile('young');
+ const records=[event('bank','1799'),event('bank','2020','launch'),event('old','2005'),event('young','2024-02')];
+ assert.equal(startEvent(bank,records),null);assert.equal(startEvent(old,records),null);
+ records.push(event('bank','2024-04-12','industry_entry'));
+ assert.equal(startEvent(bank,records).date,'2024-04-12');assert.equal(startEvent(bank,records,'founding'),null);assert.equal(startEvent(bank,records,'launch'),null);
+ const d={snapshotDate:'2024-10-07',profiles:[bank,old,young],statsEvents:records};
+ const s=statsSeries(d,criteria);assert.equal(s.total,2);assert.equal(s.coverage.unknown,1);
+ assert.equal(statsSeries(d,{...criteria,basis:'industry_entry'}).total,1);
+ assert.equal(statsSeries(d,{...criteria,metric:'growth'}).baseline,0);
+});
+test('year-only RWA entries stay imprecise and chart exports explain the changed basis',()=>{
+ const p={...profile('bank'),industryStartRequired:true};const d={snapshotDate:'2024-10-07',profiles:[p],statsEvents:[event('bank','2022','industry_entry')]};
+ assert.equal(statsSeries(d,criteria).coverage.yearOnly,1);
+ const s=statsSeries(d,{...criteria,unit:'year',from:'2022',to:'2024'});assert.equal(s.total,1);
+ const svg=chartSVG(s,'Industry entry');assert.ok(svg.includes('RWA entry'));assert.ok(svg.includes('2022 – 2024'));assert.ok(!svg.includes('Q3 505'));
+});
+
+
+test('earliest supported industry milestone wins independently of research-file order',()=>{
+ const p={...profile('bank','Institutions'),industryStartRequired:true};
+ const records=[event('bank','2000'),event('bank','2024-04-12','industry_entry'),event('bank','2016-11','industry_entry')];
+ assert.equal(startEvent(p,records).date,'2016-11');
 });

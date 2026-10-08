@@ -2348,12 +2348,13 @@ html{ scrollbar-color:var(--line2) transparent }
           <div>
             <span class="eyebrow">Live industry feed</span>
             <h1>RWA News</h1>
-            <p class="nw-sub">Everything moving in tokenization, pulled from rwanews.today and refreshed hourly. News featuring RWA Foundation members carries our gold RWAF Member badge.</p>
+            <p class="nw-sub">Tokenization headlines from rwanews.today, with a searchable archive of captured stories. News featuring RWA Foundation members carries our gold RWAF Member badge.</p>
           </div>
           <span class="nw-status" id="nwStatus">connecting…</span>
         </div>
         <div class="nw-controls">
-          <label class="nw-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="nwQ" type="search" placeholder="Search headlines, sources, members" oninput="nwSetQ(this.value)"></label>
+          <label class="nw-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="nwQ" type="search" placeholder="Search headlines, sources, members" aria-label="Search news archive" oninput="nwSetQ(this.value)" onkeydown="if(event.key==='Enter')nwReload()"></label>
+          <button class="btn btn-ghost btn-sm" onclick="nwReload()">Search full archive</button>
           <div class="nw-chips" id="nwChips"></div>
         </div>
       </div>
@@ -2361,7 +2362,7 @@ html{ scrollbar-color:var(--line2) transparent }
     <section class="section" style="padding-top:6px;padding-bottom:90px">
       <div class="wrap">
         <div class="nw-list" id="nwList"><div class="nw-empty">Loading the feed…</div></div>
-        <div class="nw-foot">Powered by rwanews.today · refreshed hourly · headlines link to the original source.</div>
+        <div class="nw-foot">Powered by rwanews.today · captured stories are retained in the archive · headlines link to the original source.</div>
       </div>
     </section>
   </main>
@@ -2370,7 +2371,7 @@ html{ scrollbar-color:var(--line2) transparent }
     "use strict";
     var NW_URL="https://qrmbiestcjbedavsorrj.supabase.co";
     var NW_KEY="sb_publishable_CVXI0w69QnHwJSJYtbiJdg_dtXg6ot_"; /* publishable key — read-only */
-    var NW={items:[],hidden:[],cat:"All",q:"",loadedAt:0,err:null};
+    var NW={archiveQ:"",nextCursor:null,total:0,moreBusy:false,archive:null,items:[],hidden:[],cat:"All",q:"",loadedAt:0,err:null};
     var NW_MEMBERS=[];
     // The logo manager supplies the roster. Feed hints can identify a member,
     // but cannot grant membership to an organization absent from the logo wall.
@@ -2405,26 +2406,38 @@ html{ scrollbar-color:var(--line2) transparent }
     var NW_TTL=10*60*1000;
     function nq(s){return document.querySelector(s)}
     function nesc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
-    function nfmt(v){var d=new Date(v);if(isNaN(d))return String(v).slice(0,10);return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()]+" "+d.getDate()}
+    function nfmt(v){var d=new Date(v);if(isNaN(d))return String(v).slice(0,10);return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()]+" "+d.getDate()+", "+d.getFullYear()}
     function nwFetch(){
+      NW.archiveQ=NW.q;
       /* /api/news proxies rwanews.today (the key stays server-side) and is
-         edge-cached for an hour — that's the hourly pull. The console's deleted
+         persisted by scheduled collection and paginated from permanent storage. The console's deleted
          ids come from the uncached ?hidden=1 variant, so a deletion vanishes
          for every visitor immediately instead of waiting out the cache. */
-      var feed=fetch("/api/news").then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); });
+      var feed=fetch("/api/news"+(NW.archiveQ?"?q="+encodeURIComponent(NW.archiveQ):"")).then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); });
       var hid=fetch("/api/news?hidden=1")
         .then(function(r){ return r.ok?r.json():{ids:[]}; })
         .then(function(d){ return d.ids||[]; })
         .catch(function(){ return []; });
       return Promise.all([feed,hid]).then(function(res){
         NW.hidden=res[1];
-        NW.items=(res[0].items||[]).filter(function(x){return x.headline&&x.url}).map(function(x){
-          return {id:x.id||x.url,t:RwafCopy.text(x.headline),u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:RwafCopy.newsSection(x.section||"News"),memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:RwafCopy.text(x.summary||"")};
-        });
+        NW.nextCursor=res[0].nextCursor||null; NW.total=res[0].total||0; NW.archive=res[0].archive||null;
+        NW.items=(res[0].items||[]).filter(function(x){return x.headline&&x.url}).map(nwItem);
         NW.items.forEach(function(item){item.m=nwMatchMembers(item);});
         NW.loadedAt=Date.now(); NW.err=null;
       }).catch(function(e){ NW.err=e.message||"network error"; });
     }
+    function nwItem(x){
+      var item={id:x.id||x.url,t:RwafCopy.text(x.headline),u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:RwafCopy.newsSection(x.section||"News"),memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:RwafCopy.text(x.summary||"")};
+      item.m=nwMatchMembers(item);return item;
+    }
+    window.nwLoadOlder=async function(){
+      if(!NW.nextCursor||NW.moreBusy)return; NW.moreBusy=true;nwDraw();
+      try{var r=await fetch('/api/news?cursor='+encodeURIComponent(NW.nextCursor)+(NW.archiveQ?'&q='+encodeURIComponent(NW.archiveQ):''));if(!r.ok)throw Error();var d=await r.json();
+        var seen=new Set(NW.items.map(function(x){return x.id;}));
+        (d.items||[]).forEach(function(x){if(!seen.has(x.id)){NW.items.push(nwItem(x));seen.add(x.id);}});
+        NW.nextCursor=d.nextCursor||null;NW.total=d.total||NW.total;NW.moreError=false;
+      }catch(e){NW.moreError=true;}finally{NW.moreBusy=false;nwDraw();}
+    };
     function nwLive(){
       return NW.items.filter(function(x){ return NW.hidden.indexOf(x.id)<0; });
     }
@@ -2452,7 +2465,7 @@ html{ scrollbar-color:var(--line2) transparent }
         chips.innerHTML=""; return;
       }
       if(!NW.loadedAt){ st.textContent="connecting…"; list.innerHTML='<div class="nw-empty">Loading the feed…</div>'; chips.innerHTML=""; return; }
-      st.innerHTML='<span class="dot">●</span> live · '+nwLive().length+' items';
+      st.innerHTML='<span class="dot">●</span> '+nwLive().length+' loaded'+(NW.total?' of '+NW.total+' archived stories':'')+(NW.archive&&NW.archive.warning?' · '+nesc(NW.archive.warning):'');
       chips.innerHTML=nwCats().map(function(c,i){
         var member=c==="RWAF Members", count=nwLive().filter(function(x){return !!x.m;}).length;
         return '<button type="button" class="nw-chip'+(member?' members':'')+(c===NW.cat?" on":"")+'" aria-pressed="'+(c===NW.cat)+'" data-news-category="'+i+'">'+nesc(c)+(member?'<span class="nw-chip-count">'+count+'</span>':'')+'</button>';
@@ -2470,7 +2483,8 @@ html{ scrollbar-color:var(--line2) transparent }
           '<h3>'+nesc(x.t)+'</h3>'+
           (x.b?'<p class="nw-blurb">'+nesc(x.b)+'</p>':"")+
         '</a>';
-      }).join(""):'<div class="nw-empty">'+(NW.cat==="RWAF Members"?'No RWAF member stories match the current feed and search.':'Nothing matches that filter this week.')+'</div>';
+      }).join(""):'<div class="nw-empty">'+(NW.cat==="RWAF Members"?'No RWAF member stories match the current feed and search.':'No loaded stories match. Load older stories to continue browsing the archive.')+'</div>';
+      if(NW.nextCursor)list.innerHTML+='<div class="nw-archive-more"><button class="btn btn-ghost" onclick="nwLoadOlder()" '+(NW.moreBusy?'disabled':'')+'>'+(NW.moreBusy?'Loading…':NW.moreError?'Retry loading older stories':'Load older stories')+'</button></div>';
     }
     window.nwSetCat=function(c){NW.cat=c;nwDraw()};
     window.nwSetQ=function(v){NW.q=v||"";nwDraw()};

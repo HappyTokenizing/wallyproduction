@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { readArchive } from '../lib/news-archive.js';
 import { readHidden } from './news.js';
+import { newsPage } from '../lib/news-page.js';
 import { companyNews } from '../assets/company-news-match.js';
 // Company news for one ecosystem profile — Vercel serverless function.
 //   GET /api/company-news?id=<profile id> → the archived feed stories that mention that company, newest first.
@@ -17,6 +18,7 @@ export function createCompanyNewsHandler({ env = process.env, fetcher = fetch, a
     if (env.SITE_PUBLIC_API_ORIGIN) {
       try {
         const url = new URL('/api/company-news', env.SITE_PUBLIC_API_ORIGIN); url.searchParams.set('id', id);
+        for (const key of ['cursor', 'limit']) if (req.query?.[key]) url.searchParams.set(key, String(req.query[key]));
         const r = await fetcher(url, { signal: AbortSignal.timeout(15000) });
         res.setHeader('Cache-Control', 's-maxage=300');
         return res.status(r.status).json(await r.json());
@@ -27,8 +29,9 @@ export function createCompanyNewsHandler({ env = process.env, fetcher = fetch, a
     try {
       const [{ items }, ids] = await Promise.all([archive({ env }), env.SUPABASE_JOBS_SECRET ? hidden(env.SUPABASE_JOBS_SECRET).catch(() => []) : []]);
       res.setHeader('Cache-Control', 's-maxage=900, stale-while-revalidate=300');
-      return res.status(200).json({ id, items: companyNews(items, profile, { hidden: ids }), archived: items.length });
-    } catch {
+      return res.status(200).json({ id, ...newsPage(companyNews(items, profile, { hidden: ids }), req.query), archived: items.length });
+    } catch (e) {
+      if (e.message === 'Invalid cursor') return res.status(400).json({ error: 'Invalid cursor' });
       return res.status(503).json({ error: 'Company news is temporarily unavailable.' });
     }
   };

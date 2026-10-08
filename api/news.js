@@ -1,16 +1,16 @@
 import { mirrorPublicData } from '../lib/public-data.js';
-import { archiveNews } from '../lib/news-archive.js';
+import { readArchive, archiveStatus } from '../lib/news-archive.js';
+import { collectNews } from '../lib/news-collection.js';
+import { newsPage } from '../lib/news-page.js';
 // RWA news for the site — Vercel serverless function.
-//   GET  /api/news           → the rwanews.today feed, edge-cached for an hour
-//                              (this is the "pull hourly": the key never reaches
-//                              the browser, and at most one upstream fetch/hour).
+//   GET  /api/news           → the rwanews.today feed, permanent archive, paginated and cached for five minutes
+//                              (scheduled collection runs independently of visitors).
 //   GET  /api/news?hidden=1  → ids the console has deleted (uncached, so a
 //                              deletion disappears for everyone immediately).
 //   POST /api/news           → {pw, action:'hide'|'unhide', id} console moderation.
 // Every feed pull is also saved to the private news archive that powers each company's "Company news".
-// Env vars (Vercel): RWANEWS_KEY, SUPABASE_JOBS_SECRET, JOBS_ADMIN_PW.
+// Env vars (Vercel): RWANEWS_KEY, BLOB_READ_WRITE_TOKEN, CRON_SECRET, SUPABASE_JOBS_SECRET, JOBS_ADMIN_PW.
 const SB = 'https://qrmbiestcjbedavsorrj.supabase.co/rest/v1/wally_site';
-const FEED = 'https://www.rwanews.today/v1/feed';
 const MAX_HIDDEN = 500;
 
 function sbHeaders(key) {
@@ -35,17 +35,22 @@ export default async function handler(req, res) {
       res.status(200).json({ ids: sk ? await readHidden(sk) : [] });
       return;
     }
-    const key = process.env.RWANEWS_KEY;
-    if (!key) { res.status(500).json({ error: 'server not configured: RWANEWS_KEY missing' }); return; }
     try {
-      const r = await fetch(FEED + '?key=' + encodeURIComponent(key));
-      if (!r.ok) { res.status(502).json({ error: 'feed unavailable' }); return; }
-      const data = await r.json();
-      // keep the stories for company pages; bounded so the news page never waits more than ~4 s on it
-      await Promise.race([archiveNews(data.items).catch(() => false), new Promise((ok) => setTimeout(ok, 4000))]);
-      res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate=600');
-      res.status(200).json(data);
-    } catch (e) { res.status(500).json({ error: 'server error' }); }
+      let collectionWarning = null;
+      // Cron is primary; first-page reads also recover promptly after an outage.
+      if (!req.query?.cursor) {
+        try { await collectNews(); } catch { collectionWarning = 'Latest collection failed; showing saved news.'; }
+      }
+      const [{ items }, status] = await Promise.all([readArchive(), archiveStatus()]);
+      if (!items.length && collectionWarning) return res.status(503).json({ error: 'News archive unavailable. Check storage and feed configuration.' });
+      const hidden = new Set(sk ? await readHidden(sk) : []);
+      const page = newsPage(items.filter(x => !hidden.has(x.id)), req.query);
+      res.setHeader('Cache-Control', collectionWarning ? 'no-store' : 's-maxage=300, stale-while-revalidate=60');
+      res.status(200).json({ ...page, archive: { retention: 'indefinite', stored: items.length, lastSuccessfulCollection: status?.lastSuccessfulCollection || null, warning: collectionWarning } });
+    } catch (e) {
+      res.setHeader('Cache-Control', 'no-store');
+      res.status(e.message === 'Invalid cursor' ? 400 : 503).json({ error: e.message === 'Invalid cursor' ? 'Invalid cursor' : 'News archive unavailable. Check storage configuration.' });
+    }
     return;
   }
 

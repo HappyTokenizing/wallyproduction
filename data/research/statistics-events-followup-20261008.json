@@ -1,0 +1,212 @@
+[
+  {
+    "id": "jupiter-start-followup-20261008",
+    "profileId": "jupiter",
+    "type": "launch",
+    "date": "2021-11",
+    "note": "The team's archived account dates Jupiter's launch as a standalone project to November 2021. This records the project launch, not the corporate profile's earlier founding claim.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://discuss.jup.ag/t/archived-jupiter-the-liquidity-infrastructure-for-solana/21698",
+        "title": "Jupiter \u2014 The liquidity infrastructure for Solana"
+      }
+    ]
+  },
+  {
+    "id": "midas-start-followup-20261008",
+    "profileId": "midas",
+    "type": "founding",
+    "date": "2024",
+    "note": "Midas's own company description explicitly dates its founding to 2024; no month or quarter is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://blog.midas.app/introducing-the-midas-attestation-engine/",
+        "title": "Midas \u2014 Introducing the attestation engine"
+      }
+    ]
+  },
+  {
+    "id": "ready-start-followup-20261008",
+    "profileId": "ready",
+    "type": "launch",
+    "date": "2018",
+    "note": "The founder's account explicitly dates the original Argent wallet launch on Ethereum to 2018; this predates the Ready rebrand.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.ready.co/blog/doubling-down-on-starknet",
+        "title": "Ready / Argent \u2014 Doubling down on Starknet"
+      }
+    ]
+  },
+  {
+    "id": "halliday-start-followup-20261008",
+    "profileId": "halliday",
+    "type": "founding",
+    "date": "2022",
+    "note": "Halliday's official profile lists 2022 as the founding year and identifies its deposit-platform business at halliday.xyz.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/halliday",
+        "title": "Halliday \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "openfx-start-followup-20261008",
+    "profileId": "openfx",
+    "type": "founding",
+    "date": "2024",
+    "note": "OpenFX identifies 2024 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/openfx",
+        "title": "OpenFX \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "etherisc-start-followup-20261008",
+    "profileId": "etherisc",
+    "type": "founding",
+    "date": "2016",
+    "note": "Etherisc's insurance-platform company profile identifies 2016 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/etherisc",
+        "title": "Etherisc \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "blockapps-start-followup-20261008",
+    "profileId": "blockapps",
+    "type": "founding",
+    "date": "2015",
+    "note": "BlockApps, the company behind STRATO and Mercata, dates its founding to 2015.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/blockapps",
+        "title": "BlockApps \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "aryze-start-followup-20261008",
+    "profileId": "aryze",
+    "type": "founding",
+    "date": "2017",
+    "note": "Aryze explicitly dates its founding in Copenhagen to 2017.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/aryzeofficial/",
+        "title": "Aryze \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "qiro-finance-start-followup-20261008",
+    "profileId": "qiro-finance",
+    "type": "founding",
+    "date": "2023",
+    "note": "Qiro Finance's own company profile identifies 2023 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/qiro-finance",
+        "title": "Qiro Finance \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "transfero-group-start-followup-20261008",
+    "profileId": "transfero-group",
+    "type": "founding",
+    "date": "2015",
+    "note": "Transfero's own publication dates the Swiss-based company to 2015, corroborating its corporate profile.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://panoramacrypto.transfero.com/o-que-e-brz-stablecoin-real/",
+        "title": "Transfero \u2014 BRZ company history"
+      }
+    ]
+  },
+  {
+    "id": "parvis-start-followup-20261008",
+    "profileId": "parvis",
+    "type": "founding",
+    "date": "2021",
+    "note": "Parvis identifies 2021 as its founding year and links to its real-estate investment platform.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/parvis",
+        "title": "Parvis \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "inveniam-start-followup-20261008",
+    "profileId": "inveniam",
+    "type": "founding",
+    "date": "2017",
+    "note": "Inveniam's private-market data company identifies 2017 as its founding year; the unrelated inveniam.com consultancy is excluded.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/inveniam-io",
+        "title": "Inveniam \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "cicada-partners-start-followup-20261008",
+    "profileId": "cicada-partners",
+    "type": "founding",
+    "date": "2023",
+    "note": "The stablecoin-credit firm identifies 2023 as its founding year; unrelated marketing companies with similar names are excluded.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/cicada-partners",
+        "title": "Cicada Partners \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "dusk-start-followup-20261008",
+    "profileId": "dusk",
+    "type": "founding",
+    "date": "2018",
+    "note": "Dusk's blockchain company profile identifies 2018 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/dusknetwork",
+        "title": "Dusk \u2014 Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "hqlax-start-followup-20261008",
+    "profileId": "hqlax",
+    "type": "founding",
+    "date": "2017",
+    "note": "HQLAx's securities-finance infrastructure company profile identifies 2017 as its founding year.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/hqla-x/",
+        "title": "HQLAx \u2014 Official company profile"
+      }
+    ]
+  }
+]

@@ -101,17 +101,25 @@ for(const [id,removal] of Object.entries(excludedProfiles)){
  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
 }
 // Lifecycle statistics never infer event dates from review or import timestamps.
-const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json'),...researchRead('statistics-events-research-20261008.json')],statsIds=new Set(),statsTypes=new Set();
+const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json'),...researchRead('statistics-events-research-20261008.json'),...researchRead('statistics-events-followup-20261008.json'),...researchRead('statistics-events-industry-entry.json')],statsIds=new Set(),statsTypes=new Set();
 for(const event of statsEvents){
  const key=event.profileId+':'+event.type;
- if(!byId.has(event.profileId)||!event.id||statsIds.has(event.id)||statsTypes.has(key)||!['founding','launch','failure'].includes(event.type)||!dateBounds(event.date)||!event.note||!event.checkedOn||!event.sources?.length)throw Error('Invalid statistics event: '+event.id);
+ if(!byId.has(event.profileId)||!event.id||statsIds.has(event.id)||statsTypes.has(key)||!['founding','launch','industry_entry','failure'].includes(event.type)||!dateBounds(event.date)||!event.note||!event.checkedOn||!event.sources?.length)throw Error('Invalid statistics event: '+event.id);
  for(const s of event.sources){const u=new URL(s.url);if(!s.title||u.protocol!=='https:'||u.username||u.password)throw Error('Invalid statistics source: '+event.id);}
  if(event.type==='failure'&&!byId.get(event.profileId).failedInitiative)throw Error('Failure not verified: '+event.profileId);
  statsIds.add(event.id);statsTypes.add(key);
 }
+// Corporate history remains in the reviewed source files, but cannot inflate RWA growth.
+const industryPolicy=researchRead('industry-entry-policy.json');
+const entryRequired=new Set(industryPolicy.profileIds);
+for(const p of profiles)if(p.categories.some(c=>c.section==='Institutions'||c.name==='TradFi'))entryRequired.add(p.id);
+for(const e of statsEvents)if(['founding','launch'].includes(e.type)&&Number(e.date.slice(0,4))<2011)entryRequired.add(e.profileId);
+for(const id of entryRequired){if(!byId.has(id))throw Error('Unknown industry-entry profile: '+id);byId.get(id).industryStartRequired=true;}
+const publishedStats=statsEvents.filter(e=>!entryRequired.has(e.profileId)||!['founding','launch'].includes(e.type));
+for(const e of publishedStats)if(e.type==='industry_entry'&&Number(e.date.slice(0,4))<2011)throw Error('Pre-2011 industry entry needs review: '+e.id);
 for(const e of exitEvents)if(e.completedDate&&!dateBounds(e.completedDate))throw Error('Invalid exit date: '+e.id);
 const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,excludedProfiles:Object.keys(excludedProfiles),updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,completedExits:exitEvents.length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
-const output={snapshotDate:'2026-10-08',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents};
+const output={snapshotDate:'2026-10-08',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents:publishedStats};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
 console.log({...report,merged:undefined,added:undefined,researched:undefined,crosswalk:undefined});

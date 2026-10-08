@@ -26,9 +26,16 @@ export function quarterRange(from,to) {
 }
 const sourced=(e,p)=>e.sources?.some(s=>safeURL(s.url,p));
 const profileMatch=(p,criteria,members)=>(criteria.scope!=='members'||memberFor(p,members))&&(criteria.section==='all'||!criteria.section||p.categories.some(c=>c.section===criteria.section));
+// Single source of truth for both company cards and charts.
+export function startEvent(profile, records, basis='all') {
+  const starts=records.filter(e=>e.profileId===profile.id&&['founding','launch','industry_entry'].includes(e.type));
+  const required=profile.industryStartRequired||profile.categories?.some(c=>c.section==='Institutions'||c.name==='TradFi')||starts.some(e=>e.type!=='industry_entry'&&Number(e.date.slice(0,4))<2011);
+  const allowed=starts.filter(e=>(!required||e.type==='industry_entry')&&(basis==='all'||e.type===basis)).sort((a,b)=>String(dateBounds(a.date)?.start||'9999').localeCompare(String(dateBounds(b.date)?.start||'9999')));
+  return allowed.find(e=>e.type==='industry_entry')||allowed.find(e=>e.type==='founding')||allowed.find(e=>e.type==='launch')||null;
+}
 export function statsSeries(data,criteria={},members=[]) {
   const metric=['new','exits','growth','failures'].includes(criteria.metric)?criteria.metric:'new';
-  const basis=['founding','launch'].includes(criteria.basis)?criteria.basis:'all';
+  const basis=['founding','launch','industry_entry'].includes(criteria.basis)?criteria.basis:'all';
   const unit=criteria.unit==='year'?'year':'quarter';
   const asOf=data.snapshotDate,current=unit==='year'?(dateBounds(asOf)?Number(asOf.slice(0,4)):null):dateBounds(asOf)?.quarter;
   if(current==null)throw Error('A dated snapshot is required');
@@ -44,9 +51,7 @@ export function statsSeries(data,criteria={},members=[]) {
     candidates=profiles.filter(p=>p.failedInitiative===true).map(p=>({...records.find(e=>e.profileId===p.id&&e.type==='failure'),profileId:p.id,name:p.name}));
   }else{
     candidates=profiles.map(p=>{
-      const possible=records.filter(e=>e.profileId===p.id&&(basis==='all'?['founding','launch'].includes(e.type):e.type===basis));
-      // Prefer founding when both exist; don't substitute a later launch to hide imprecise founding data.
-      const e=possible.find(e=>e.type==='founding')||possible.find(e=>e.type==='launch');
+      const e=startEvent(p,records,basis);
       return {...e,profileId:p.id,name:p.name};
     });
   }

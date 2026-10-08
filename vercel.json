@@ -1,0 +1,8 @@
+{
+  "crons": [{ "path": "/api/collect-news", "schedule": "*/5 * * * *" }],
+  "functions": {
+    "api/collect-news.js": { "maxDuration": 60 },
+    "api/news.js": { "maxDuration": 60 },
+    "api/company-news.js": { "maxDuration": 60 }
+  }
+}
