@@ -1,0 +1,32 @@
+[
+  {
+    "id": "neufund",
+    "name": "Neufund",
+    "kind": "Equity tokenization platform",
+    "description": "Former blockchain-based equity fundraising platform. Neufund announced its closure in January 2022 and discontinued platform access on 17 January 2022.",
+    "website": "",
+    "domain": "neufund.org",
+    "directoryStatus": "historical",
+    "lifecycle": "Closed",
+    "failedInitiative": true,
+    "statusNote": "Documented closure announced by Neufund; not a merger or acquisition.",
+    "blockedWebsiteHosts": [
+      "neufund.org"
+    ],
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Historical",
+        "name": "Closed initiatives"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Neufund Closure FAQ \u2014 10 January 2022",
+        "url": "https://medium.com/neufund/neufund-closure-faq-d4d05b56c6c8"
+      }
+    ],
+    "evidenceNote": "Neufund\u2019s own closure FAQ states that platform access ended on 17 January 2022. Closure is recorded independently of M&A exit status.",
+    "aliases": []
+  }
+]

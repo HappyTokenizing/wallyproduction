@@ -40,7 +40,7 @@ function place(p,categories){
  }
 }
 const researched=[];
-for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json']){
+for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json','lifecycle-additions-20261007.json']){
  for(const entry of researchRead(name)){
   if(byId.has(entry.id)||profiles.some(p=>norm(p.name)===norm(entry.name)))throw Error('Duplicate research identity: '+entry.name);
   if(!entry.sources?.length||!entry.checkedOn||!entry.categories?.length)throw Error('Incomplete research: '+entry.name);
@@ -60,6 +60,14 @@ for(const [id,update] of Object.entries(profileUpdates)){
  p.aliases=[...new Set([...p.aliases,p.name,...aliases])];
  for(const c of addCategories)if(!p.categories.some(x=>x.section===c.section&&x.name===c.name))p.categories.push(c);
  place(p,addCategories);
+}
+// Exits are completed M&A events, independently of whether a product is still active.
+const exitEvents=researchRead('exits.json'), exitIds=new Set();
+for(const event of exitEvents){
+ const p=byId.get(event.profileId);
+ if(!p||!event.id||exitIds.has(event.id)||!['acquisition','merger'].includes(event.type)||event.status!=='completed'||!event.target||!event.counterparty||!event.summary||!event.checkedOn||!event.sources?.length)throw Error('Invalid M&A exit: '+event.id);
+ for(const source of event.sources){const url=new URL(source.url);if(!source.title||url.protocol!=='https:'||url.username||url.password)throw Error('Invalid M&A source: '+event.id);}
+ exitIds.add(event.id);(p.exitEvents||=[]).push(event);
 }
 const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json'),...researchRead('logos-followup.json'),...researchRead('logos-missing.json'),...researchRead('logos-community-20261007.json'),...researchRead('logos-community-fixes-20261007.json')};
 // Phantom already has a Stablecoin Builders placement; expose the same identity under Wallets.
@@ -86,7 +94,7 @@ for(const [id,removal] of Object.entries(excludedProfiles)){
  for(const p of profiles)p.relatedEntities=p.relatedEntities.filter(x=>x.id!==id);
  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
 }
-const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,excludedProfiles:Object.keys(excludedProfiles),updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
+const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,excludedProfiles:Object.keys(excludedProfiles),updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,completedExits:exitEvents.length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
 const output={snapshotDate:'2026-10-07',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');

@@ -3,7 +3,7 @@
   "sourcePlacements": 844,
   "mergedLegacy": 83,
   "retainedLegacy": 35,
-  "researchedProfiles": 265,
+  "researchedProfiles": 266,
   "excludedProfiles": [
     "novastro"
   ],
@@ -25,9 +25,10 @@
     "rwa-xyz"
   ],
   "updatedLogos": 349,
-  "totalProfiles": 1130,
+  "completedExits": 8,
+  "totalProfiles": 1131,
   "current": 957,
-  "historical": 139,
+  "historical": 140,
   "review": 34,
   "merged": [
     {
@@ -665,7 +666,8 @@
     "arch-network",
     "pi-network",
     "pons",
-    "realityfi"
+    "realityfi",
+    "neufund"
   ],
   "crosswalk": {
     "wally": "rwaf-wally",

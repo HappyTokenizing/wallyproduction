@@ -1,0 +1,130 @@
+[
+  {
+    "id": "hashnote-circle",
+    "profileId": "hashnote-usyc",
+    "type": "acquisition",
+    "status": "completed",
+    "target": "Hashnote",
+    "counterparty": "Circle",
+    "summary": "Circle acquired Hashnote, the manager behind USYC. The product\u2019s continued operation does not erase the acquisition.",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000116/a2025annualreport0331.pdf",
+        "title": "Circle 2025 annual report \u2014 Hashnote acquisition"
+      }
+    ]
+  },
+  {
+    "id": "membrane-paxos",
+    "profileId": "membrane-finance",
+    "type": "acquisition",
+    "status": "completed",
+    "target": "Membrane Finance",
+    "counterparty": "Paxos",
+    "summary": "Paxos completed its acquisition of Membrane Finance on 4 February 2025. The separate winding down of legacy products is not counted as another exit.",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.paxos.com/newsroom/paxos-completes-acquisition-of-finnish-e-money-institution-membrane-finance",
+        "title": "Paxos confirms completed Membrane Finance acquisition"
+      }
+    ]
+  },
+  {
+    "id": "tokeny-apex",
+    "profileId": "tokeny",
+    "type": "acquisition",
+    "status": "completed",
+    "target": "Tokeny",
+    "counterparty": "Apex Group",
+    "summary": "Apex acquired a controlling majority stake in Tokeny in May 2025. The announced route to full ownership is distinct from the completed majority acquisition.",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.apexgroup.com/insights/blockchain-powers-capital/",
+        "title": "Apex confirms its May 2025 acquisition of Tokeny"
+      }
+    ]
+  },
+  {
+    "id": "oasis-ondo",
+    "profileId": "oasis-pro",
+    "type": "acquisition",
+    "status": "completed",
+    "target": "Oasis Pro",
+    "counterparty": "Ondo Finance",
+    "summary": "Ondo confirmed completion of its Oasis Pro acquisition on 7 October 2025.",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://ondo.finance/blog/ondo-acquires-oasis-pro",
+        "title": "Ondo completes acquisition of Oasis Pro"
+      }
+    ]
+  },
+  {
+    "id": "backed-payward",
+    "profileId": "backed",
+    "type": "acquisition",
+    "status": "completed",
+    "target": "Backed Finance",
+    "counterparty": "Payward / Kraken",
+    "summary": "Payward\u2019s financial update confirms that the acquisition of Backed closed in January 2026. xStocks is not counted as a separate acquisition.",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://blog.kraken.com/news/kraken-2025-financials",
+        "title": "Kraken 2025 financial update \u2014 Backed acquisition closed in January 2026"
+      }
+    ]
+  },
+  {
+    "id": "tradias-boerse-stuttgart",
+    "profileId": "tradias",
+    "type": "merger",
+    "status": "completed",
+    "target": "tradias",
+    "counterparty": "Boerse Stuttgart Digital",
+    "summary": "The companies confirmed their merger closed on 5 August 2026 after the ownership-control procedure was completed.",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.tradias.de/news/boerse-stuttgart-digital-and-tradias-close-merger-and-aim-for-european-leadership-in-cryptocurrencies-and-digital-assets/",
+        "title": "tradias and Boerse Stuttgart Digital close merger"
+      }
+    ]
+  },
+  {
+    "id": "coreum-sologenic-tx",
+    "profileId": "coreum",
+    "type": "merger",
+    "status": "completed",
+    "target": "Coreum and Sologenic",
+    "counterparty": "TX",
+    "summary": "TX\u2019s official documentation describes the merger of Coreum and Sologenic into one protocol. The combined transaction is counted once under the canonical TX profile.",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://docs.tx.org/docs/next/sologenic-coreum-merger/introduction",
+        "title": "TX documentation \u2014 Coreum and Sologenic merger"
+      }
+    ]
+  },
+  {
+    "id": "amberdata-kaiko",
+    "profileId": "kaiko",
+    "type": "acquisition",
+    "status": "completed",
+    "target": "Amberdata",
+    "counterparty": "Kaiko",
+    "summary": "Kaiko acquired Amberdata. Amberdata is represented by an alias within the existing Kaiko profile, so this records the acquired business without adding a duplicate company entry.",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.kaiko.com/news/kaiko-acquires-amberdata-in-landmark-digital-asset-data-consolidation",
+        "title": "Kaiko confirms acquisition of Amberdata"
+      }
+    ]
+  }
+]

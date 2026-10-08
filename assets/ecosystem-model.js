@@ -21,8 +21,12 @@ export function relevance(profile, query) {
   return Infinity;
 }
 export const memberCount = members => new Set(members.filter(m=>m.name).map(m=>memberKey(m.name))).size;
+export function exitsFor(profile) {
+  return (profile.exitEvents||[]).filter(e=>e.id&&e.status==='completed'&&['acquisition','merger'].includes(e.type)&&e.sources?.some(s=>safeURL(s.url,profile)));
+}
+export const exitCount = profiles => new Set(profiles.flatMap(p=>exitsFor(p).map(e=>e.id))).size;
 export function filterProfiles(profiles, state, members) {
-  const matched=profiles.filter(p => (state.status==='all'||p.directoryStatus===state.status)
+  const matched=profiles.filter(p => (state.status==='all'||(state.status==='exits'?exitsFor(p).length>0:p.directoryStatus===state.status))
     && (state.section==='all'||p.categories.some(c=>c.section===state.section))
     && (!state.members||memberFor(p,members)))
     .map(p=>({p,rank:relevance(p,state.q),member:!!memberFor(p,members)}))
