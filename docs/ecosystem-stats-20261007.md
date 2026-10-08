@@ -89,18 +89,36 @@ is in `data/research/industry-entry-policy.json`; dated replacements are in
 rule to newly added institutions and any future pre-2011 start records.
 
 
-Research review on 2026-10-08: the policy covers 127 profiles. Seventy-nine have
-sourced replacement milestones; 48 remain unverified and are excluded from the
+Research review on 2026-10-08: the policy covers 127 profiles. 105 have
+sourced replacement milestones; 22 remain unverified and are excluded from the
 start charts. See `data/research/industry-entry-review-20261008.json` for every
 affected profile, superseded corporate date, evidence and pending-review reason.
-Including 15 additional researched younger projects, the annual chart has 551
-sourced starts among 1,154 profiles; 603 remain undated under the corrected rule.
+Including 15 additional researched younger projects, the annual chart has 577
+sourced starts among 1,154 profiles; 577 remain undated under the corrected rule.
 This coverage reduction is intentional: corporate age is not industry growth.
 
-The latest source pass adds 22 institution/infrastructure milestones, including
+The preceding source pass added 22 institution/infrastructure milestones, including
 Deutsche Bank's H2 2015 corporate-bond prototype, BNP Paribas' April 2016 share
 register agreement, the 2016 Fundchain work of CACEIS and PwC, and the April 2023
 Spruce pilots of Wellington and T. Rowe Price. Pilot, infrastructure and project
 agreement notes explicitly distinguish these events from commercial launches.
 Season/half-year evidence remains year-only; a publication day is not substituted
 for an earlier transaction or pilot date. Remaining profiles stay under review.
+
+A further source pass resolves 26 profiles using primary announcements, project
+partners and a founder interview. These include the 2017 Commerzbank/KfW
+securities pilot, the 2016 BNY settlement-coin partnership and KPMG FundsDLT
+project, SteelWave Digital in August 2021, and CSOP's June 2026 tokenized fund.
+Amundi uses the actual November 4, 2025 first transaction, not the later release.
+Completed pilots without an execution month/day retain year precision; the
+Bankhaus Scheich release only establishes its pilot as an early-2020 event, so
+it retains Q1 precision. Ant's international-team predecessor and subsidiary
+versus parent identities are documented explicitly. The ABN AMRO collateral
+lead stays in the review log because DLT messaging alone does not establish
+asset tokenization. No companies, membership status or logos changed.
+
+This pass also covers Hitachi's 2016 electronic-check experiment, Invesco's
+2023 ERC3643 resource-development project, PostFinance's deposit-token project,
+and 2024 digital-securities trials involving BayernLB, L-Bank and Spuerkeess.
+The Bundesbank's transaction chronology establishes exact trial dates where
+individual banks' press releases alone would only support broader precision.
