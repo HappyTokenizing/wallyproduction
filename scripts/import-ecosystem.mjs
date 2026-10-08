@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {dateBounds} from '../assets/ecosystem-stats-model.js';
 import { MARKET_MAP } from '../vendor/rwa-ecosystem-map/marketMap.ts';
 const read = name => JSON.parse(fs.readFileSync(new URL('../vendor/rwa-ecosystem-map/'+name, import.meta.url)));
 const source = read('profiles.json'), legacy = read('legacy.json');
@@ -94,8 +95,18 @@ for(const [id,removal] of Object.entries(excludedProfiles)){
  for(const p of profiles)p.relatedEntities=p.relatedEntities.filter(x=>x.id!==id);
  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
 }
+// Lifecycle statistics never infer event dates from review or import timestamps.
+const statsEvents=researchRead('statistics-events.json'),statsIds=new Set(),statsTypes=new Set();
+for(const event of statsEvents){
+ const key=event.profileId+':'+event.type;
+ if(!byId.has(event.profileId)||!event.id||statsIds.has(event.id)||statsTypes.has(key)||!['founding','launch','failure'].includes(event.type)||!dateBounds(event.date)||!event.note||!event.checkedOn||!event.sources?.length)throw Error('Invalid statistics event: '+event.id);
+ for(const s of event.sources){const u=new URL(s.url);if(!s.title||u.protocol!=='https:'||u.username||u.password)throw Error('Invalid statistics source: '+event.id);}
+ if(event.type==='failure'&&!byId.get(event.profileId).failedInitiative)throw Error('Failure not verified: '+event.profileId);
+ statsIds.add(event.id);statsTypes.add(key);
+}
+for(const e of exitEvents)if(e.completedDate&&!dateBounds(e.completedDate))throw Error('Invalid exit date: '+e.id);
 const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,excludedProfiles:Object.keys(excludedProfiles),updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,completedExits:exitEvents.length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
-const output={snapshotDate:'2026-10-07',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk};
+const output={snapshotDate:'2026-10-07',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
 console.log({...report,merged:undefined,added:undefined,researched:undefined,crosswalk:undefined});

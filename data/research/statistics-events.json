@@ -1,0 +1,282 @@
+[
+  {
+    "id": "founding-kraken",
+    "profileId": "kraken",
+    "type": "founding",
+    "date": "2011-07-28",
+    "note": "Kraken company founding",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Kraken company founding",
+        "url": "https://blog.kraken.com/news/kraken-is-born"
+      }
+    ]
+  },
+  {
+    "id": "founding-coinbase",
+    "profileId": "coinbase",
+    "type": "founding",
+    "date": "2012-06",
+    "note": "Coinbase founding, reported by its seed investor",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Coinbase founding, reported by its seed investor",
+        "url": "https://www.ycombinator.com/companies/coinbase"
+      }
+    ]
+  },
+  {
+    "id": "founding-bybit",
+    "profileId": "bybit",
+    "type": "founding",
+    "date": "2018-03",
+    "note": "Bybit founding and first launch",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Bybit founding and first launch",
+        "url": "https://www.bybit.com/en/learn/this-week-in-bybit/bybit-major-milestones"
+      }
+    ]
+  },
+  {
+    "id": "founding-binance",
+    "profileId": "binance",
+    "type": "founding",
+    "date": "2017-07",
+    "note": "Binance founding team launches the company",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Binance founding team launches the company",
+        "url": "https://www.binance.com/en/blog/ecosystem/1968152125579137703"
+      }
+    ]
+  },
+  {
+    "id": "founding-tokeny",
+    "profileId": "tokeny",
+    "type": "founding",
+    "date": "2017",
+    "note": "Tokeny founding year; quarter not stated",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Tokeny founding year; quarter not stated",
+        "url": "https://tokeny.com/why-join-us/"
+      }
+    ]
+  },
+  {
+    "id": "founding-securitize",
+    "profileId": "securitize",
+    "type": "founding",
+    "date": "2017",
+    "note": "Securitize company profile; quarter not stated",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Securitize company profile; quarter not stated",
+        "url": "https://www.linkedin.com/company/securitize"
+      }
+    ]
+  },
+  {
+    "id": "founding-circle",
+    "profileId": "circle",
+    "type": "founding",
+    "date": "2013",
+    "note": "Circle confirms its founding year; quarter not stated",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Circle confirms its founding year; quarter not stated",
+        "url": "https://www.circle.com/es/blog/circle-lights-up-d-c-fintech-week-and-iif"
+      }
+    ]
+  },
+  {
+    "id": "launch-ethereum",
+    "profileId": "ethereum",
+    "type": "launch",
+    "date": "2015-07-30",
+    "note": "Ethereum first live release",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Ethereum first live release",
+        "url": "https://blog.ethereum.org/2015/07/30/ethereum-launches"
+      }
+    ]
+  },
+  {
+    "id": "launch-uniswap",
+    "profileId": "uniswap",
+    "type": "launch",
+    "date": "2018-11-02",
+    "note": "Uniswap first public mainnet deployment",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Uniswap first public mainnet deployment",
+        "url": "https://blog.uniswap.org/uniswap-history"
+      }
+    ]
+  },
+  {
+    "id": "launch-chainlink",
+    "profileId": "chainlink",
+    "type": "launch",
+    "date": "2019-05-30",
+    "note": "Chainlink initial Ethereum mainnet release",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Chainlink initial Ethereum mainnet release",
+        "url": "https://chain.link/blog/chainlink-connected-consensus-on-ethereum"
+      }
+    ]
+  },
+  {
+    "id": "launch-aave",
+    "profileId": "aave",
+    "type": "launch",
+    "date": "2020-01-08",
+    "note": "Aave v1 first mainnet release; distinct from ETHLend history",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Aave v1 first mainnet release; distinct from ETHLend history",
+        "url": "https://www.aave.com/docs/resources/changelog"
+      }
+    ]
+  },
+  {
+    "id": "launch-maple-finance",
+    "profileId": "maple-finance",
+    "type": "launch",
+    "date": "2021-05",
+    "note": "Maple protocol initial mainnet launch",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Maple protocol initial mainnet launch",
+        "url": "https://maple.finance/insights/maples-network-partners"
+      }
+    ]
+  },
+  {
+    "id": "launch-sui",
+    "profileId": "sui",
+    "type": "launch",
+    "date": "2023-05-03",
+    "note": "Sui public mainnet launch",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Sui public mainnet launch",
+        "url": "https://www.sui.io/blog/mainnet-anniversary-milestones-innovation"
+      }
+    ]
+  },
+  {
+    "id": "launch-base-chain",
+    "profileId": "base-chain",
+    "type": "launch",
+    "date": "2023-08-09",
+    "note": "Base mainnet opens to the public",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Base mainnet opens to the public",
+        "url": "https://blog.base.org/base-is-open-for-everyone"
+      }
+    ]
+  },
+  {
+    "id": "launch-ink-chain",
+    "profileId": "ink-chain",
+    "type": "launch",
+    "date": "2024-12-18",
+    "note": "Ink initial mainnet launch",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Ink initial mainnet launch",
+        "url": "https://blog.kraken.com/news/ink-mainnet-launch"
+      }
+    ]
+  },
+  {
+    "id": "launch-aptos",
+    "profileId": "aptos",
+    "type": "launch",
+    "date": "2022-10",
+    "note": "Aptos initial mainnet launch",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Aptos initial mainnet launch",
+        "url": "https://aptoslabs.com/"
+      }
+    ]
+  },
+  {
+    "id": "launch-arbitrum",
+    "profileId": "arbitrum",
+    "type": "launch",
+    "date": "2021-08-31",
+    "note": "Arbitrum opens to public users, confirmed by launch partner Uniswap",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Arbitrum opens to public users, confirmed by launch partner Uniswap",
+        "url": "https://blog.uniswap.org/uniswap-arbitrum-alpha"
+      }
+    ]
+  },
+  {
+    "id": "founding-ondo-finance",
+    "profileId": "ondo-finance",
+    "type": "founding",
+    "date": "2021-03",
+    "note": "Ondo establishment, reported in Kraken\u2019s asset statement",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Ondo establishment, reported in Kraken\u2019s asset statement",
+        "url": "https://assets-cms.kraken.com/files/51n36hrp/facade/124b01d29b9fd2f80111d709b28d42f67c89618d.pdf"
+      }
+    ]
+  },
+  {
+    "id": "failure-neufund",
+    "profileId": "neufund",
+    "type": "failure",
+    "date": "2022-01-17",
+    "note": "Neufund platform closure",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Neufund platform closure",
+        "url": "https://medium.com/neufund/neufund-closure-faq-d4d05b56c6c8"
+      }
+    ]
+  },
+  {
+    "id": "failure-archblock",
+    "profileId": "archblock",
+    "type": "failure",
+    "date": "2026-02-06",
+    "note": "Archblock Chapter 11 petition; bankruptcy milestone, not an inferred shutdown date",
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "title": "Archblock Chapter 11 petition; bankruptcy milestone, not an inferred shutdown date",
+        "url": "https://cases.stretto.com/archblock/"
+      }
+    ]
+  }
+]

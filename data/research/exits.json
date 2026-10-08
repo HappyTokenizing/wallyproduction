@@ -13,7 +13,8 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000116/a2025annualreport0331.pdf",
         "title": "Circle 2025 annual report \u2014 Hashnote acquisition"
       }
-    ]
+    ],
+    "completedDate": "2025-01"
   },
   {
     "id": "membrane-paxos",
@@ -29,7 +30,8 @@
         "url": "https://www.paxos.com/newsroom/paxos-completes-acquisition-of-finnish-e-money-institution-membrane-finance",
         "title": "Paxos confirms completed Membrane Finance acquisition"
       }
-    ]
+    ],
+    "completedDate": "2025-02-04"
   },
   {
     "id": "tokeny-apex",
@@ -45,7 +47,8 @@
         "url": "https://www.apexgroup.com/insights/blockchain-powers-capital/",
         "title": "Apex confirms its May 2025 acquisition of Tokeny"
       }
-    ]
+    ],
+    "completedDate": "2025-05"
   },
   {
     "id": "oasis-ondo",
@@ -61,7 +64,8 @@
         "url": "https://ondo.finance/blog/ondo-acquires-oasis-pro",
         "title": "Ondo completes acquisition of Oasis Pro"
       }
-    ]
+    ],
+    "completedDate": "2025-10-07"
   },
   {
     "id": "backed-payward",
@@ -77,7 +81,8 @@
         "url": "https://blog.kraken.com/news/kraken-2025-financials",
         "title": "Kraken 2025 financial update \u2014 Backed acquisition closed in January 2026"
       }
-    ]
+    ],
+    "completedDate": "2026-01"
   },
   {
     "id": "tradias-boerse-stuttgart",
@@ -93,7 +98,8 @@
         "url": "https://www.tradias.de/news/boerse-stuttgart-digital-and-tradias-close-merger-and-aim-for-european-leadership-in-cryptocurrencies-and-digital-assets/",
         "title": "tradias and Boerse Stuttgart Digital close merger"
       }
-    ]
+    ],
+    "completedDate": "2026-08-05"
   },
   {
     "id": "coreum-sologenic-tx",
@@ -124,7 +130,12 @@
       {
         "url": "https://www.kaiko.com/news/kaiko-acquires-amberdata-in-landmark-digital-asset-data-consolidation",
         "title": "Kaiko confirms acquisition of Amberdata"
+      },
+      {
+        "title": "Amberdata acquisition announcement \u2014 2 June 2026",
+        "url": "https://blog.amberdata.io/kaiko-acquires-amberdata-in-landmark-digital-asset-data-consolidation"
       }
-    ]
+    ],
+    "completedDate": "2026-06-02"
   }
 ]

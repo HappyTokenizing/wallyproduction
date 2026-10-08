@@ -1,3 +1,4 @@
+import {createStats} from './ecosystem-stats.js';
 import {filterProfiles,memberFor,safeURL,websiteFor,memberCount,exitsFor,exitCount} from './ecosystem-model.js';
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const label={current:'Current',historical:'Historical',review:'Review pending'};
@@ -14,13 +15,14 @@ export async function mountEcosystem(mount, options) {
   const counts=Object.fromEntries(['current','historical','review'].map(s=>[s,data.profiles.filter(p=>p.directoryStatus===s).length]));
   mount.innerHTML=`<div class="ec-directory">
     <div class="ec-summary"><div><strong>${data.profiles.length}</strong><span>Total Companies</span></div><div><strong>${counts.current}</strong><span>Active Companies</span></div><div title="Completed mergers and acquisitions only, counted once per documented transaction. Closures, bankruptcies and unconfirmed deals are excluded."><strong>${exitCount(data.profiles)}</strong><span>Exits</span></div><div><strong data-member-count>${memberCount(members())}</strong><span>RWAF Members</span></div></div>
-    <div class="ec-toolbar"><div class="ec-views" role="group" aria-label="Directory view"><button data-view="directory" aria-pressed="true">Directory</button><button data-view="map" aria-pressed="false">Ecosystem map</button></div><label class="ec-search">Search<input type="search" placeholder="Search all companies and initiatives" aria-label="Search ecosystem"></label></div>
+    <div class="ec-toolbar"><div class="ec-views" role="group" aria-label="Directory view"><button data-view="directory" aria-pressed="true">Directory</button><button data-view="map" aria-pressed="false">Ecosystem map</button><button type="button" data-stats-open aria-haspopup="dialog">Stats ↗</button></div><label class="ec-search">Search<input type="search" placeholder="Search all companies and initiatives" aria-label="Search ecosystem"></label></div>
     <div class="ec-filters"><label>Status<select aria-label="Profile status"><option value="current">Current (${counts.current})</option><option value="all">All profiles (${data.profiles.length})</option><option value="exits">Exits — M&amp;A (${exitCount(data.profiles)})</option><option value="historical">Historical (${counts.historical})</option><option value="review">Review pending (${counts.review})</option></select></label><label>Sector<select aria-label="Ecosystem sector"><option value="all">All sectors</option>${data.sections.filter(s=>s.name!=='Historical').map(s=>`<option value="${escape(s.name)}">${escape(s.name)}</option>`).join('')}</select></label><label class="ec-members"><input type="checkbox">RWAF Members</label><button class="ec-clear" data-clear>Clear filters</button></div>
     <p class="ec-result" role="status" aria-live="polite"></p><div class="ec-results"></div>
     <footer class="ec-attribution">Expanded: ${escape(data.snapshotDate)}. Current status reflects the dated source review, not continuous monitoring. Exits counts documented completed M&amp;A transactions once each. Closures, bankruptcies, rebrands and unconfirmed deals are excluded. An acquired company may still be active. Historical records also include retired or unverified initiatives and do not necessarily indicate company closure. Institutional profiles include documented pilots and past issuances; inclusion does not imply a currently available product.<br>Original directory curated by Ray Buckton / RWA News Today, drawing on RWA World, RWA.io and company references (snapshot ${escape(data.upstreamSnapshotDate)}). Expanded by RWA Foundation with official references linked in each new profile. Company names and logos belong to their respective owners. <a href="${escape(data.source)}" target="_blank" rel="noopener noreferrer">Source repository ↗</a></footer>
     <dialog class="ec-dialog" aria-labelledby="ec-profile-title"><div class="ec-dialog-bar"><span>Company profile</span><button data-close aria-label="Close company profile">×</button></div><div class="ec-profile"></div></dialog>
   </div>`;
   const root=mount.querySelector('.ec-directory'), results=root.querySelector('.ec-results'), dialog=root.querySelector('dialog');
+  const stats=createStats(root,data,members);
   function logo(p){
     const member=memberFor(p,members());
     const custom=p.logo?.useForMembers?'':member?.icon||member?.src;
@@ -60,6 +62,7 @@ export async function mountEcosystem(mount, options) {
   root.addEventListener('error',event=>{const img=event.target;if(img.tagName==='IMG'){img.hidden=true;if(img.nextElementSibling)img.nextElementSibling.hidden=false;}},true);
   root.addEventListener('click',event=>{
     const b=event.target.closest('button');if(!b)return;
+    if(b.hasAttribute('data-stats-open'))return stats.open();
     if(b.dataset.profile)return open(b.dataset.profile);
     if(b.hasAttribute('data-close'))return close();
     if(b.dataset.favorite){const p=byId.get(b.dataset.favorite);options.onFavorite?.(p.id,p.legacyIds);if(dialog.open)root.querySelector('.ec-profile').innerHTML=profileHTML(p);return;}
@@ -74,6 +77,6 @@ export async function mountEcosystem(mount, options) {
   root.querySelector('select[aria-label="Profile status"]').addEventListener('change',e=>{state.status=e.target.value;state.limit=50;paint();});
   root.querySelector('select[aria-label="Ecosystem sector"]').addEventListener('change',e=>{state.section=e.target.value;state.limit=50;paint();});
   root.querySelector('input[type=checkbox]').addEventListener('change',e=>{state.members=e.target.checked;state.limit=50;paint();});
-  mount.__ecosystem={refresh(){paint();if(selected)root.querySelector('.ec-profile').innerHTML=profileHTML(byId.get(selected));}};
+  mount.__ecosystem={refresh(){paint();stats.refresh();if(selected)root.querySelector('.ec-profile').innerHTML=profileHTML(byId.get(selected));}};
   paint();
 }
