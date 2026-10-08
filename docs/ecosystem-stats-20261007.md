@@ -1,6 +1,9 @@
 # Ecosystem quarterly statistics
 
-The ecosystem directory now has a Stats button opening four charts: new firms,
+The ecosystem directory has three adjacent view buttons: Directory, Ecosystem
+map, and Stats. Stats appears directly to the right of Ecosystem map and displays
+its charts inline, with all three view buttons always available. Each view keeps
+its filter selections when switching away and back. Stats contains four charts: new firms,
 M&A exits, cumulative project starts, and failures. Filters cover directory
 sector, current RWAF membership, founding versus first launch, and quarter range.
 Hover, keyboard focus, or tap reveals each quarter's companies and source links.
@@ -58,10 +61,10 @@ Run `node scripts/import-ecosystem.mjs` to regenerate the directory, followed by
 - 75 unit tests pass, including quarter boundaries, leap dates, year-only and
   future exclusions, canonical identity deduplication, cumulative baselines,
   membership/sector filters, real-data coverage, escaping, and TSV formula safety.
-- Chromium desktop/mobile checks pass with no page errors: dialog controls,
+- Chromium desktop/mobile checks pass with no page errors: view switching controls,
   company/source hover details, keyboard access, date ranges, criteria changes,
   actual PNG clipboard writes, 2400 × 1400 PNG download, text clipboard export,
-  mobile overflow containment, Escape dismissal, and restored focus.
+  mobile overflow containment, and keyboard view navigation.
 - Exported PNG and desktop/mobile layouts were visually inspected.
 
 This change targets staging. Production is unchanged.
