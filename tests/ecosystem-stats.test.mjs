@@ -31,10 +31,11 @@ test('sector and current membership filters count each identity once',()=>{
 });
 test('live dataset has explicit event dates, undated exits, and separately verified failures',()=>{
  const all={...criteria,from:'2000-Q1',to:'2026-Q4'};
- const starts=statsSeries(data,all,[]);assert.equal(starts.coverage.dated,15);assert.equal(starts.coverage.yearOnly,3);assert.equal(starts.coverage.unknown,1113);
- const exits=statsSeries(data,{...all,metric:'exits'},[]);assert.equal(exits.coverage.eligible,8);assert.equal(exits.coverage.dated,7);assert.equal(exits.coverage.unknown,1);assert.equal(exits.total,7);
- assert.deepEqual(exits.points.filter(p=>p.value).map(p=>[p.label,p.value]),[['Q1 2025',2],['Q2 2025',1],['Q4 2025',1],['Q1 2026',1],['Q2 2026',1],['Q3 2026',1]]);
- const failures=statsSeries(data,{...all,metric:'failures'},[]);assert.equal(failures.total,2);assert.deepEqual(failures.shownEvents.map(e=>[e.name,quarterLabel(e.quarter)]),[['Neufund','Q1 2022'],['Archblock','Q1 2026']]);assert.equal(failures.coverage.eligible,2);
+ const starts=statsSeries(data,all,[]);assert.equal(starts.coverage.dated,63);assert.equal(starts.coverage.yearOnly,429);assert.equal(starts.coverage.unknown,639);
+ const years=statsSeries(data,{...all,unit:'year',from:'1800',to:'2026'},[]);assert.equal(years.coverage.dated,63+429);assert.equal(years.coverage.yearOnly,0);
+ const exits=statsSeries(data,{...all,metric:'exits'},[]);assert.equal(exits.coverage.eligible,9);assert.equal(exits.coverage.dated,8);assert.equal(exits.coverage.unknown,1);assert.equal(exits.total,8);
+ assert.deepEqual(exits.points.filter(p=>p.value).map(p=>[p.label,p.value]),[['Q1 2025',2],['Q2 2025',1],['Q4 2025',2],['Q1 2026',1],['Q2 2026',1],['Q3 2026',1]]);
+ const failures=statsSeries(data,{...all,metric:'failures'},[]);assert.equal(failures.total,3);assert.deepEqual(failures.shownEvents.map(e=>[e.name,quarterLabel(e.quarter)]),[['Neufund','Q1 2022'],['Archblock','Q1 2026'],['Opulous','Q2 2026']]);assert.equal(failures.coverage.eligible,3);
  for(const e of data.statsEvents){assert.ok(data.profiles.some(p=>p.id===e.profileId));assert.ok(e.sources.length&&e.note&&dateBounds(e.date));assert.notEqual(e.date,e.checkedOn);}
 });
 test('export retains coverage, excludes tooltips/scripts, escapes content and protects pasted cells',()=>{
@@ -44,4 +45,12 @@ test('export retains coverage, excludes tooltips/scripts, escapes content and pr
 });
 test('missing or empty data remains explicit instead of manufacturing quarterly history',()=>{
  const s=statsSeries({snapshotDate:'2026-10-07',profiles:[profile('unknown')],statsEvents:[]},{...criteria,from:'2026-Q1',to:'2026-Q4'},[]);assert.equal(s.total,0);assert.equal(s.coverage.unknown,1);assert.ok(s.points.every(p=>p.value===0));assert.equal(s.shownEvents.length,0);
+});
+test('the year view charts year-only starts in their own year, never in an invented quarter',()=>{
+ const d={snapshotDate:'2024-10-07',profiles:['a','b','c','d'].map(id=>profile(id)),statsEvents:[event('a','2022'),event('b','2023-05-02'),event('c','2024'),event('d','2025')]};
+ const y=statsSeries(d,{...criteria,unit:'year',from:'2022',to:'2024'},[]);
+ assert.equal(y.unit,'year');assert.deepEqual(y.points.map(p=>[p.label,p.value]),[['2022',1],['2023',1],['2024',1]]);
+ assert.equal(y.points.at(-1).partial,true);assert.deepEqual(y.coverage,{eligible:4,dated:3,yearOnly:0,unknown:0,future:1});
+ const q=statsSeries(d,{...criteria,from:'2023-Q1',to:'2024-Q4'},[]);assert.equal(q.coverage.yearOnly,2);assert.equal(q.total,1);
+ assert.match(statsTSV(y,'All profiles'),/\nYear\t/);
 });

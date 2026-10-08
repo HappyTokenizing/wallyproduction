@@ -1,4 +1,5 @@
 import { mirrorPublicData } from '../lib/public-data.js';
+import { archiveNews } from '../lib/news-archive.js';
 // RWA news for the site — Vercel serverless function.
 //   GET  /api/news           → the rwanews.today feed, edge-cached for an hour
 //                              (this is the "pull hourly": the key never reaches
@@ -6,6 +7,7 @@ import { mirrorPublicData } from '../lib/public-data.js';
 //   GET  /api/news?hidden=1  → ids the console has deleted (uncached, so a
 //                              deletion disappears for everyone immediately).
 //   POST /api/news           → {pw, action:'hide'|'unhide', id} console moderation.
+// Every feed pull is also saved to the private news archive that powers each company's "Company news".
 // Env vars (Vercel): RWANEWS_KEY, SUPABASE_JOBS_SECRET, JOBS_ADMIN_PW.
 const SB = 'https://qrmbiestcjbedavsorrj.supabase.co/rest/v1/wally_site';
 const FEED = 'https://www.rwanews.today/v1/feed';
@@ -14,7 +16,7 @@ const MAX_HIDDEN = 500;
 function sbHeaders(key) {
   return { apikey: key, Authorization: 'Bearer ' + key, 'Content-Type': 'application/json' };
 }
-async function readHidden(key) {
+export async function readHidden(key) {
   try {
     const r = await fetch(SB + '?k=eq.news_hidden&select=v', { headers: sbHeaders(key) });
     if (!r.ok) return [];
@@ -39,6 +41,8 @@ export default async function handler(req, res) {
       const r = await fetch(FEED + '?key=' + encodeURIComponent(key));
       if (!r.ok) { res.status(502).json({ error: 'feed unavailable' }); return; }
       const data = await r.json();
+      // keep the stories for company pages; bounded so the news page never waits more than ~4 s on it
+      await Promise.race([archiveNews(data.items).catch(() => false), new Promise((ok) => setTimeout(ok, 4000))]);
       res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate=600');
       res.status(200).json(data);
     } catch (e) { res.status(500).json({ error: 'server error' }); }

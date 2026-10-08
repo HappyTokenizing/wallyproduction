@@ -1,5 +1,6 @@
 import {createStats} from './ecosystem-stats.js';
 import {filterProfiles,memberFor,safeURL,websiteFor,memberCount,exitsFor,exitCount} from './ecosystem-model.js';
+import {companyNews} from './company-news-match.js';
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const label={current:'Current',historical:'Historical',review:'Review pending'};
 let pending;
@@ -53,15 +54,44 @@ export async function mountEcosystem(mount, options) {
       }).join('')}</div>`;
     }
   }
+  // Founded / launched, from the sourced start events that also feed the Stats view.
+  const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const startFor=id=>{const ev=(data.statsEvents||[]).filter(e=>e.profileId===id&&(e.type==='founding'||e.type==='launch'));return ev.find(e=>e.type==='founding')||ev[0]||null;};
+  function fmtStart(d){const m=/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?|-Q([1-4]))?$/.exec(d||'');if(!m)return d||'';if(m[4])return `Q${m[4]} ${m[1]}`;if(m[3])return `${MONTHS[+m[2]-1]} ${+m[3]}, ${m[1]}`;if(m[2])return `${MONTHS[+m[2]-1]} ${m[1]}`;return m[1];}
+  function foundedHTML(p){const e=startFor(p.id);if(!e)return '';const src=(e.sources||[]).map(s=>safeURL(s.url,p)?{...s,url:safeURL(s.url,p)}:null).find(Boolean);return `<p class="ec-founded"><b>${e.type==='founding'?'Founded':'Launched'}</b> ${escape(fmtStart(e.date))}${e.note?`<span> · ${escape(e.note)}</span>`:''}${src?` <a href="${escape(src.url)}" target="_blank" rel="noopener noreferrer">Source ↗</a>`:''}</p>`;}
+  // Company news: stories from the site's news feed that mention this company, kept in the news archive.
+  // Falls back to the live feed (same matcher) where the archive endpoint isn't available yet.
+  const newsCache=new Map(),newsPending=new Map();
+  const newsURL=u=>/^https?:\/\//i.test(u||'')?u:null;
+  const newsDate=d=>{const t=Date.parse(d||'');return t?new Date(t).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}):'';};
+  function newsBody(p){
+    const items=newsCache.get(p.id);
+    if(items===undefined)return '<p class="ec-news-status">Loading company news…</p>';
+    if(items===null)return '<p class="ec-news-status">Company news is unavailable right now. Try again shortly.</p>';
+    const list=items.filter(x=>newsURL(x.url)&&x.headline);
+    if(!list.length)return `<p class="ec-news-status">No stories captured yet. Stories from the RWA Foundation news feed that mention ${escape(p.name)} appear here as they are published.</p>`;
+    return `<ul class="ec-updates ec-news-list">${list.map(x=>`<li><a href="${escape(newsURL(x.url))}" target="_blank" rel="noopener noreferrer">${escape(x.headline)} ↗</a><time>${escape([x.source?.name,newsDate(x.published_at)].filter(Boolean).join(' · '))}</time>${x.summary?`<p>${escape(x.summary)}</p>`:''}</li>`).join('')}</ul>`;
+  }
+  async function fetchNews(p){
+    try{const r=await fetch('/api/company-news?id='+encodeURIComponent(p.id));if(!r.ok)throw Error('archive');const d=await r.json();if(!Array.isArray(d.items))throw Error('archive');return d.items;}
+    catch{
+      try{const [feed,hid]=await Promise.all([fetch('/api/news').then(r=>r.ok?r.json():Promise.reject()),fetch('/api/news?hidden=1').then(r=>r.ok?r.json():{ids:[]}).catch(()=>({ids:[]}))]);return companyNews(feed.items||[],p,{hidden:hid.ids||[]});}
+      catch{return null;}
+    }
+  }
+  function loadNews(p){
+    if(newsCache.has(p.id))return;
+    if(!newsPending.has(p.id))newsPending.set(p.id,fetchNews(p).then(items=>{newsCache.set(p.id,items);newsPending.delete(p.id);const box=root.querySelector(`.ec-news[data-news="${CSS.escape(p.id)}"]`);if(box)box.innerHTML='<h3>Company news</h3>'+newsBody(p);}));
+  }
   function profileHTML(p){
     const website=websiteFor(p), fav=options.isFavorite?.(p.id,p.legacyIds);
     const related=p.relatedEntities.filter(r=>byId.has(r.id));
     const updates=p.directoryStatus==='historical'?[]:p.officialUpdates.filter(u=>safeURL(u.url,p));
     const sources=(p.sources||[]).filter(s=>safeURL(s.url,p));
     const exits=exitsFor(p);
-    return `<header>${logo(p)}<div><h2 id="ec-profile-title">${escape(p.name)}</h2><div class="ec-profile-badges">${badges(p)}<span class="ec-status-badge">${escape(p.kind)}</span></div></div></header><p class="ec-profile-categories">${escape(p.categories.map(c=>c.section+' / '+c.name).join(' · '))}</p><p>${escape(p.description)}</p>${p.statusNote||p.lifecycle?`<div class="ec-lifecycle"><b>${escape(p.lifecycle||label[p.directoryStatus])}</b><p>${escape(p.statusNote||'')}</p>${p.archiveScope?`<p>${escape(p.archiveScope)}</p>`:''}</div>`:''}${exits.length?`<section class="ec-lifecycle ec-exits"><h3>Exits · M&amp;A</h3>${exits.map(e=>`<p><b>${escape(e.target)} → ${escape(e.counterparty)}</b><br>${e.type==='merger'?'Completed merger':'Completed acquisition'}</p><p>${escape(e.summary)}</p><ul class="ec-updates">${e.sources.filter(s=>safeURL(s.url,p)).map(s=>`<li><a href="${escape(safeURL(s.url,p))}" target="_blank" rel="noopener noreferrer">${escape(s.title)} ↗</a></li>`).join('')}</ul><p class="ec-reviewed">Source reviewed: ${escape(e.checkedOn)}</p>`).join('')}</section>`:''}<div class="ec-profile-actions">${website?`<a href="${escape(website)}" target="_blank" rel="noopener noreferrer">Visit website ↗</a>`:''}<button data-favorite="${escape(p.id)}">${fav?'★ Favorited':'☆ Favorite'}</button></div>${related.length?`<h3>Related initiatives</h3><div class="ec-related">${related.map(r=>`<button data-profile="${escape(r.id)}">${escape(byId.get(r.id).name)} →</button>`).join('')}</div>`:''}${updates.length?`<h3>Official reference updates</h3><ul class="ec-updates">${updates.map(u=>`<li><a href="${escape(safeURL(u.url,p))}" target="_blank" rel="noopener noreferrer">${escape(u.title)} ↗</a><time>${escape(u.publishedOn)}</time></li>`).join('')}</ul>`:''}${sources.length?`<h3>Research sources</h3>${p.evidenceNote?`<p class="ec-evidence">${escape(p.evidenceNote)}</p>`:''}<ul class="ec-updates">${sources.map(s=>`<li><a href="${escape(safeURL(s.url,p))}" target="_blank" rel="noopener noreferrer">${escape(s.title)} ↗</a></li>`).join('')}</ul>`:''}<p class="ec-reviewed">${p.checkedOn?`Source reviewed: ${escape(p.checkedOn)}`:'Review date not recorded in the earlier RWAF directory.'}<br>${escape(p.provenance)}</p>`;
+    return `<header>${logo(p)}<div><h2 id="ec-profile-title">${escape(p.name)}</h2><div class="ec-profile-badges">${badges(p)}<span class="ec-status-badge">${escape(p.kind)}</span></div></div></header><p class="ec-profile-categories">${escape(p.categories.map(c=>c.section+' / '+c.name).join(' · '))}</p><p>${escape(p.description)}</p>${foundedHTML(p)}${p.statusNote||p.lifecycle?`<div class="ec-lifecycle"><b>${escape(p.lifecycle||label[p.directoryStatus])}</b><p>${escape(p.statusNote||'')}</p>${p.archiveScope?`<p>${escape(p.archiveScope)}</p>`:''}</div>`:''}${exits.length?`<section class="ec-lifecycle ec-exits"><h3>Exits · M&amp;A</h3>${exits.map(e=>`<p><b>${escape(e.target)} → ${escape(e.counterparty)}</b><br>${e.type==='merger'?'Completed merger':'Completed acquisition'}</p><p>${escape(e.summary)}</p><ul class="ec-updates">${e.sources.filter(s=>safeURL(s.url,p)).map(s=>`<li><a href="${escape(safeURL(s.url,p))}" target="_blank" rel="noopener noreferrer">${escape(s.title)} ↗</a></li>`).join('')}</ul><p class="ec-reviewed">Source reviewed: ${escape(e.checkedOn)}</p>`).join('')}</section>`:''}<div class="ec-profile-actions">${website?`<a href="${escape(website)}" target="_blank" rel="noopener noreferrer">Visit website ↗</a>`:''}<button data-favorite="${escape(p.id)}">${fav?'★ Favorited':'☆ Favorite'}</button></div><section class="ec-news" data-news="${escape(p.id)}" aria-live="polite"><h3>Company news</h3>${newsBody(p)}</section>${related.length?`<h3>Related initiatives</h3><div class="ec-related">${related.map(r=>`<button data-profile="${escape(r.id)}">${escape(byId.get(r.id).name)} →</button>`).join('')}</div>`:''}${updates.length?`<h3>Official reference updates</h3><ul class="ec-updates">${updates.map(u=>`<li><a href="${escape(safeURL(u.url,p))}" target="_blank" rel="noopener noreferrer">${escape(u.title)} ↗</a><time>${escape(u.publishedOn)}</time></li>`).join('')}</ul>`:''}${sources.length?`<h3>Research sources</h3>${p.evidenceNote?`<p class="ec-evidence">${escape(p.evidenceNote)}</p>`:''}<ul class="ec-updates">${sources.map(s=>`<li><a href="${escape(safeURL(s.url,p))}" target="_blank" rel="noopener noreferrer">${escape(s.title)} ↗</a></li>`).join('')}</ul>`:''}<p class="ec-reviewed">${p.checkedOn?`Source reviewed: ${escape(p.checkedOn)}`:'Review date not recorded in the earlier RWAF directory.'}<br>${escape(p.provenance)}</p>`;
   }
-  function open(id){const p=byId.get(id);if(!p)return;selected=id;if(!dialog.open)priorFocus=root.contains(document.activeElement)?document.activeElement:null;root.querySelector('.ec-profile').innerHTML=profileHTML(p);if(!dialog.open)dialog.showModal();dialog.scrollTop=0;root.querySelector('[data-close]').focus();}
+  function open(id){const p=byId.get(id);if(!p)return;selected=id;if(!dialog.open)priorFocus=root.contains(document.activeElement)?document.activeElement:null;root.querySelector('.ec-profile').innerHTML=profileHTML(p);loadNews(p);if(!dialog.open)dialog.showModal();dialog.scrollTop=0;root.querySelector('[data-close]').focus();}
   function close(){dialog.close();selected=null;priorFocus?.focus();}
   root.addEventListener('error',event=>{const img=event.target;if(img.tagName==='IMG'){img.hidden=true;if(img.nextElementSibling)img.nextElementSibling.hidden=false;}},true);
   root.addEventListener('click',event=>{

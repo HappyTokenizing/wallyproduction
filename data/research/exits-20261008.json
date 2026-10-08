@@ -1,0 +1,19 @@
+[
+ {
+  "id": "dynamic-fireblocks",
+  "profileId": "dynamic",
+  "type": "acquisition",
+  "status": "completed",
+  "target": "Dynamic",
+  "counterparty": "Fireblocks",
+  "summary": "Fireblocks acquired Dynamic, the wallet-infrastructure company.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.dynamic.xyz/",
+    "title": "Dynamic: “Dynamic was acquired by Fireblocks in October 2025”"
+   }
+  ],
+  "completedDate": "2025-10"
+ }
+]

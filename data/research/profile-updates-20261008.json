@@ -1,0 +1,368 @@
+{
+ "opulous": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://opulous.org/",
+    "title": "Opulous: shutdown notice"
+   }
+  ],
+  "directoryStatus": "historical",
+  "lifecycle": "Closed",
+  "failedInitiative": true,
+  "statusNote": "Shut down. All platform services went offline on 30 April 2026 after a bridge exploit collapsed the OPUL token, according to Opulous’s own notice."
+ },
+ "florence-finance": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.florence.finance/",
+    "title": "Florence Finance: closing statement"
+   }
+  ],
+  "statusNote": "Closed: the protocol’s website carried a closing statement when reviewed in October 2026."
+ },
+ "dynamic": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.dynamic.xyz/",
+    "title": "Dynamic: “Dynamic was acquired by Fireblocks in October 2025”"
+   }
+  ],
+  "statusNote": "Acquired by Fireblocks in October 2025."
+ },
+ "goldfinch": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.goldfinch.finance/",
+    "title": "Goldfinch: “Goldfinch Prime is shutting down. No new deposits will be taken.”"
+   }
+  ],
+  "statusNote": "Goldfinch Prime is winding down and takes no new deposits (governance proposal GIP-87); the legacy protocol remains accessible."
+ },
+ "usdkg": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://panews.io/articles/01a11958-89f4-727b-89cc-4088656c42ff",
+    "title": "PANews: Kyrgyzstan terminates the USDKG stablecoin"
+   }
+  ],
+  "directoryStatus": "historical",
+  "lifecycle": "Discontinued",
+  "statusNote": "Kyrgyzstan’s government decided in October 2026 to terminate the USDKG gold-backed stablecoin and liquidate its state-owned issuer; holders can exchange tokens for fiat or USDT."
+ },
+ "yieldnest": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://yieldnest.finance/",
+    "title": "YieldNest"
+   }
+  ],
+  "description": "Liquid restaking and DeFi yield protocol whose tokens (such as ynETHx, ynRWAx and ynUSDx) combine staking, restaking and real-world-asset strategies."
+ },
+ "liquity-protocol": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.liquity.org/",
+    "title": "Liquity"
+   }
+  ],
+  "kind": "Lending protocol",
+  "description": "Decentralized borrowing protocol that issues stablecoins against ETH and liquid staking tokens as collateral."
+ },
+ "salient-yachts": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://docs.salientyachts.com/fundamentals/the-solution-yacht-tokenization-rwa",
+    "title": "Salient Yachts docs: yacht tokenization"
+   }
+  ],
+  "description": "An asset-tokenization initiative focused on yachts. Listed by RWA.io as pre-launch."
+ },
+ "farm-city-rwa": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://farmcity.dev/en",
+    "title": "FarmCity"
+   }
+  ],
+  "description": "A tokenization initiative funding real-world farm businesses such as copra, shrimp and poultry farming."
+ },
+ "kryptofanten-ag": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://kryptofanten.de/",
+    "title": "Kryptofanten: “Kryptofanten tokenisiert Immobilienprojekte seit 2022”"
+   }
+  ],
+  "description": "An initiative connecting real-estate projects with digital ownership and investment applications."
+ },
+ "house-of-emirates": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://hoemirates.com/",
+    "title": "House of Emirates"
+   }
+  ],
+  "description": "A tokenization initiative for rare coins, collectible treasures, jewelry and art."
+ },
+ "incomrwa": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.incomrwa.io/",
+    "title": "IncomRWA"
+   }
+  ],
+  "kind": "Trade financing",
+  "description": "A staking product in which holders of the iRWA token earn USDT yield backed by Incomlend trade-receivables financing."
+ },
+ "artory": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.wag-art.com/",
+    "title": "Winston Artory Group"
+   }
+  ],
+  "description": "Collection stewardship, appraisal and advisory platform, now operating as Winston Artory Group.",
+  "statusNote": "The listed website now presents Winston Artory Group without a tokenization offering."
+ },
+ "dequity": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://dequity.io/",
+    "title": "Dequity"
+   }
+  ],
+  "kind": "Investment platform",
+  "description": "Fractional, income-producing real-estate investment platform; not available to US investors.",
+  "statusNote": "The site describes the platform as still in a testing phase."
+ },
+ "digital-marks-syntrix": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://digital-marks.com/",
+    "title": "Digital Marks"
+   }
+  ],
+  "kind": "Tokenization initiative",
+  "statusNote": "Its website states it is not offering any services at the moment."
+ },
+ "demether": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.demether.io/",
+    "title": "Demether: “Demether’s Alpha app is now live!”"
+   }
+  ],
+  "statusNote": "Its Alpha app is live, taking USDC deposits, according to the official site."
+ },
+ "elevex": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://elevex.ai/",
+    "title": "EleveX"
+   }
+  ],
+  "statusNote": "Live: fractional real-estate investment from €10 after an identity check; a secondary exchange is planned."
+ },
+ "rwaf-northerntrust": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.northerntrust.com/",
+    "title": "northerntrust.com (official site)"
+   }
+  ],
+  "website": "https://www.northerntrust.com/",
+  "domain": "northerntrust.com",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-opacity": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://opacitylabs.com/",
+    "title": "opacitylabs.com (official site)"
+   }
+  ],
+  "website": "https://opacitylabs.com/",
+  "domain": "opacitylabs.com",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-prometheum": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.prometheum.com/",
+    "title": "prometheum.com (official site)"
+   }
+  ],
+  "website": "https://www.prometheum.com/",
+  "domain": "prometheum.com",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-redswan": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://redswan.io/",
+    "title": "redswan.io (official site)"
+   }
+  ],
+  "website": "https://redswan.io/",
+  "domain": "redswan.io",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-rialto": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://rialtomarkets.com/",
+    "title": "rialtomarkets.com (official site)"
+   }
+  ],
+  "website": "https://rialtomarkets.com/",
+  "domain": "rialtomarkets.com",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-rwaio": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.rwa.io/",
+    "title": "rwa.io (official site)"
+   }
+  ],
+  "website": "https://www.rwa.io/",
+  "domain": "rwa.io",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-rwaworld": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.rwa.world/",
+    "title": "rwa.world (official site)"
+   }
+  ],
+  "website": "https://www.rwa.world/",
+  "domain": "rwa.world",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-steelwave": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.steelwave.com/",
+    "title": "steelwave.com (official site)"
+   }
+  ],
+  "website": "https://www.steelwave.com/",
+  "domain": "steelwave.com",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-tradable": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://tradable.xyz/",
+    "title": "tradable.xyz (official site)"
+   }
+  ],
+  "website": "https://tradable.xyz/",
+  "domain": "tradable.xyz",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-wally": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://wallynft.xyz/",
+    "title": "wallynft.xyz (official site)"
+   }
+  ],
+  "website": "https://wallynft.xyz/",
+  "domain": "wallynft.xyz",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "rwaf-zoniqx": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.zoniqx.com/",
+    "title": "zoniqx.com (official site)"
+   }
+  ],
+  "website": "https://www.zoniqx.com/",
+  "domain": "zoniqx.com",
+  "directoryStatus": "current",
+  "statusNote": null
+ },
+ "toto-finance": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://totofinance.com/",
+    "title": "Toto Finance"
+   }
+  ],
+  "website": "https://totofinance.com/",
+  "domain": "totofinance.com"
+ },
+ "klarna": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.klarna.com/us/",
+    "title": "Klarna"
+   }
+  ],
+  "website": "https://www.klarna.com/us/"
+ },
+ "binance": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Binance",
+    "title": "Binance — Wikipedia"
+   }
+  ],
+  "kind": "Company",
+  "description": "Cryptocurrency exchange group, listed here for its stablecoin initiatives."
+ },
+ "scenium": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.scenium.io/",
+    "title": "Scenium"
+   }
+  ],
+  "statusNote": "The website shows a coming-soon page (reviewed October 2026)."
+ }
+}

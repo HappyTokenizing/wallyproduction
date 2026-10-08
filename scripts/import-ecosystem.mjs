@@ -51,7 +51,7 @@ for(const name of ['institutions.json','services.json','networks.json','requeste
  }
 }
 // Explicit, dated corrections preserve upstream IDs, placements and favorites.
-const profileUpdates=researchRead('profile-updates.json');
+const profileUpdates={...researchRead('profile-updates.json'),...researchRead('profile-updates-20261008.json')};
 for(const [id,update] of Object.entries(profileUpdates)){
  const p=byId.get(id);
  if(!p||!update.sources?.length||!update.checkedOn)throw Error('Incomplete profile update: '+id);
@@ -63,7 +63,7 @@ for(const [id,update] of Object.entries(profileUpdates)){
  place(p,addCategories);
 }
 // Exits are completed M&A events, independently of whether a product is still active.
-const exitEvents=researchRead('exits.json'), exitIds=new Set();
+const exitEvents=[...researchRead('exits.json'),...researchRead('exits-20261008.json')], exitIds=new Set();
 for(const event of exitEvents){
  const p=byId.get(event.profileId);
  if(!p||!event.id||exitIds.has(event.id)||!['acquisition','merger'].includes(event.type)||event.status!=='completed'||!event.target||!event.counterparty||!event.summary||!event.checkedOn||!event.sources?.length)throw Error('Invalid M&A exit: '+event.id);
@@ -96,7 +96,7 @@ for(const [id,removal] of Object.entries(excludedProfiles)){
  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
 }
 // Lifecycle statistics never infer event dates from review or import timestamps.
-const statsEvents=researchRead('statistics-events.json'),statsIds=new Set(),statsTypes=new Set();
+const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json')],statsIds=new Set(),statsTypes=new Set();
 for(const event of statsEvents){
  const key=event.profileId+':'+event.type;
  if(!byId.has(event.profileId)||!event.id||statsIds.has(event.id)||statsTypes.has(key)||!['founding','launch','failure'].includes(event.type)||!dateBounds(event.date)||!event.note||!event.checkedOn||!event.sources?.length)throw Error('Invalid statistics event: '+event.id);

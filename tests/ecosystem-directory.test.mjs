@@ -9,7 +9,10 @@ const research=['institutions','services','networks','requested-additions','comm
 const logos={...read('../data/research/logos-core.json'),...read('../data/research/logos-special.json'),...read('../data/research/logos-refinements.json'),...read('../data/research/logos-followup.json'),...read('../data/research/logos-missing.json'),...read('../data/research/logos-community-20261007.json'),...read('../data/research/logos-community-fixes-20261007.json')};
 const excluded=read('../data/research/excluded-profiles.json');
 const display=read('../data/research/logo-display.json');
-const updates=read('../data/research/profile-updates.json');
+const dated=read('../data/research/profile-updates-20261008.json');
+const updates={...read('../data/research/profile-updates.json'),...dated};
+// Net change in a status count from the dated 2026-10-08 review (retained rwaf- entries start as review).
+const statusShift=status=>Object.entries(dated).filter(([,u])=>u.directoryStatus).reduce((n,[id,u])=>n+(u.directoryStatus===status)-((id.startsWith('rwaf-')?'review':(source.profiles.find(p=>p.id===id)?.directoryStatus||'current'))===status),0);
 const byId=new Map(data.profiles.map(p=>[p.id,p]));
 const state={q:'',status:'all',section:'all',members:false};
 test('source identities survive except explicit owner removals, without duplicate IDs or names',()=>{
@@ -27,9 +30,9 @@ test('every non-excluded source map placement resolves to its canonical profile'
  assert.equal(mapped.size,data.profiles.length);
 });
 test('default current filter separates historical and retained unreviewed entries',()=>{
- assert.equal(filterProfiles(data.profiles,{...state,status:'current'},[]).length,693+research.filter(p=>p.directoryStatus==='current').length);
- assert.equal(filterProfiles(data.profiles,{...state,status:'historical'},[]).length,139+research.filter(p=>p.directoryStatus==='historical').length);
- assert.equal(filterProfiles(data.profiles,{...state,status:'review'},[]).length,34);
+ assert.equal(filterProfiles(data.profiles,{...state,status:'current'},[]).length,693+research.filter(p=>p.directoryStatus==='current').length+statusShift('current'));
+ assert.equal(filterProfiles(data.profiles,{...state,status:'historical'},[]).length,139+research.filter(p=>p.directoryStatus==='historical').length+statusShift('historical'));
+ assert.equal(filterProfiles(data.profiles,{...state,status:'review'},[]).length,34+statusShift('review'));
  assert.equal(filterProfiles(data.profiles,state,[]).length,data.profiles.length);
  for(const p of data.profiles.filter(p=>p.directoryStatus==='historical'))assert.equal(websiteFor(p),'');
 });
@@ -121,7 +124,7 @@ test('search ranks exact identity before name words, partial names and descripti
 test('member summary tracks the live roster and documented closures remain distinct from exits',()=>{
  assert.equal(memberCount([{name:'Maple'},{name:'Maple Finance'},{name:'Securitize'}]),2);
  assert.equal(memberCount([{name:'Securitize'}]),1);assert.equal(memberCount([]),0);
- const failed=data.profiles.filter(p=>p.failedInitiative===true);assert.deepEqual(failed.map(p=>p.id),['archblock','neufund']);for(const p of failed){assert.ok(p.sources.length);assert.equal(exitsFor(p).length,0);}
+ const failed=data.profiles.filter(p=>p.failedInitiative===true);assert.deepEqual(failed.map(p=>p.id).sort(),['archblock','neufund','opulous']);for(const p of failed){assert.ok(p.sources.length);assert.equal(exitsFor(p).length,0);}
  assert.ok(data.profiles.filter(p=>p.directoryStatus==='historical').length>failed.length);
  const seda=byId.get('seda-protocol');assert.ok(seda.categories.some(c=>c.section==='Oracles'));assert.ok(seda.sources.length);
 });
@@ -165,10 +168,10 @@ test('Exits includes only completed sourced M&A and counts each deal once',()=>{
  assert.equal(exitCount(profiles),2);
 });
 test('reviewed M&A records have canonical targets and Neufund is a documented closure',()=>{
- const records=read('../data/research/exits.json');assert.equal(records.length,8);assert.equal(exitCount(data.profiles),records.length);
+ const records=[...read('../data/research/exits.json'),...read('../data/research/exits-20261008.json')];assert.equal(records.length,9);assert.equal(exitCount(data.profiles),records.length);
  assert.equal(new Set(records.map(e=>e.id)).size,records.length);
- assert.equal(filterProfiles(data.profiles,{...state,status:'exits'},[]).length,8);
- for(const e of records){const p=byId.get(e.profileId);assert.ok(p,e.profileId);assert.ok(exitsFor(p).some(x=>x.id===e.id));assert.ok(e.target&&e.counterparty&&e.summary);assert.equal(e.checkedOn,'2026-10-07');for(const s of e.sources)assert.ok(s.title&&safeURL(s.url,p));}
+ assert.equal(filterProfiles(data.profiles,{...state,status:'exits'},[]).length,9);
+ for(const e of records){const p=byId.get(e.profileId);assert.ok(p,e.profileId);assert.ok(exitsFor(p).some(x=>x.id===e.id));assert.ok(e.target&&e.counterparty&&e.summary);assert.ok(['2026-10-07','2026-10-08'].includes(e.checkedOn),e.id);for(const s of e.sources)assert.ok(s.title&&safeURL(s.url,p));}
  for(const id of ['archblock','neufund','realityfi','zodia-custody','mountain-protocol','xstocks'])assert.equal(exitsFor(byId.get(id)).length,0,id);
  const n=byId.get('neufund');assert.equal(n.directoryStatus,'historical');assert.equal(n.lifecycle,'Closed');assert.equal(n.failedInitiative,true);assert.match(n.sources[0].url,/medium\.com\/neufund\/neufund-closure-faq/);assert.equal(websiteFor(n),'');
  assert.equal(filterProfiles(data.profiles,{...state,status:'historical',q:'Neufund'},[])[0].id,'neufund');
