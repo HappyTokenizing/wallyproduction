@@ -94,7 +94,7 @@ sourced replacement milestones; 22 remain unverified and are excluded from the
 start charts. See `data/research/industry-entry-review-20261008.json` for every
 affected profile, superseded corporate date, evidence and pending-review reason.
 Including the subsequent founding/launch research passes, the annual chart has
-662 sourced starts among 1,154 profiles; 492 remain undated under the corrected rule.
+684 sourced starts among 1,154 profiles; 470 remain undated under the corrected rule.
 This coverage reduction is intentional: corporate age is not industry growth.
 
 The preceding source pass added 22 institution/infrastructure milestones, including
@@ -173,3 +173,24 @@ coverage is 169, with another 493 year-only starts available in annual charts.
 The audit in `data/research/founding-review-continuation3-20261008.json` records
 all additions and unresolved leads. This pass changes no company profiles,
 logos, membership, lifecycle records or previously sourced events.
+
+A further continuation resolves 22 previously undated profiles: 13 foundings
+and nine explicitly labeled launches. These include Ctrl Alt, SEDA, RealX,
+Kula, QFEX, GAIB, Anemoy, Grove, ZKsync, Stable and Quadrata. Company profiles,
+project announcements, team governance histories and a founder interview
+provide the supporting evidence. Similarly named businesses are distinguished
+explicitly, including Kula, RealX, EstateX and Pharos.
+
+This batch adds four day-precision dates, five month-precision dates and 13
+year-only dates. Zivoe uses the team's retrospective September 2024 launch,
+not the July target in its earlier announcement. Quadrata's March introduction
+is distinguished from its later Ethereum mainnet release. ZKsync uses its
+original 2020 network launch, separately from Era and Matter Labs' formation.
+GrtWines retains year precision while its January/April rollout is reconciled.
+
+Annual coverage is now 684 of 1,154 profiles; 470 remain undated. Quarterly
+coverage is 178, with 506 additional year-only dates.
+`data/research/founding-review-continuation4-20261008.json` records the batch,
+coverage and unresolved identity/history conflicts. Etherfuse remains 2019
+as previously requested; profiles, logos, memberships, lifecycle status and
+all prior events remain unchanged.

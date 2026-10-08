@@ -1,0 +1,224 @@
+{
+  "checkedOn": "2026-10-08",
+  "baselineCommit": "589348e",
+  "baselineCoverage": {
+    "eligible": 1154,
+    "dated": 662,
+    "unknown": 492
+  },
+  "scope": "Targeted continuation of missing founding and launch dates, not an exhaustive resolution of all remaining profiles.",
+  "datePolicy": "Use documented company formation or explicitly labeled project/product launch. Preserve precision and distinguish rebrands, parent histories, similarly named companies and planned versus actual launches. Institutions and pre-2011 firms retain the first-tokenization-activity rule.",
+  "newlySourcedProfiles": [
+    {
+      "profileId": "rwaf-ctrlalt",
+      "eventId": "rwaf-ctrlalt-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "estatex",
+      "eventId": "estatex-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "ledgity",
+      "eventId": "ledgity-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "frigg",
+      "eventId": "frigg-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "qfex",
+      "eventId": "qfex-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2025"
+    },
+    {
+      "profileId": "pharos",
+      "eventId": "pharos-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "gaib",
+      "eventId": "gaib-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2024-06"
+    },
+    {
+      "profileId": "koreinside",
+      "eventId": "koreinside-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2016"
+    },
+    {
+      "profileId": "seda-protocol",
+      "eventId": "seda-protocol-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "tokenise",
+      "eventId": "tokenise-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "blockcellar",
+      "eventId": "blockcellar-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "kula",
+      "eventId": "kula-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "realx",
+      "eventId": "realx-start-continuation4-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "anemoy",
+      "eventId": "anemoy-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2023-11-29"
+    },
+    {
+      "profileId": "grove",
+      "eventId": "grove-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2025-06"
+    },
+    {
+      "profileId": "zksync",
+      "eventId": "zksync-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2020-06-18"
+    },
+    {
+      "profileId": "stable",
+      "eventId": "stable-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2025-12-08"
+    },
+    {
+      "profileId": "dtravel",
+      "eventId": "dtravel-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2021-06-16"
+    },
+    {
+      "profileId": "zivoe",
+      "eventId": "zivoe-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2024-09"
+    },
+    {
+      "profileId": "ecosapiens",
+      "eventId": "ecosapiens-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2023-02"
+    },
+    {
+      "profileId": "quadrata",
+      "eventId": "quadrata-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2022-03"
+    },
+    {
+      "profileId": "grtwines",
+      "eventId": "grtwines-start-continuation4-20261008",
+      "type": "launch",
+      "date": "2024"
+    }
+  ],
+  "pending": [
+    {
+      "profileId": "pontoro",
+      "reason": "Official profile says late 2023, but Pontoro Inc. filed its financial-asset trademark in 2018. Need to establish whether the later date concerns a successor company; neither date is assumed.",
+      "sources": [
+        "https://www.linkedin.com/company/pontoro/",
+        "https://trademarks.justia.com/881/67/pontoro-88167404.html"
+      ]
+    },
+    {
+      "profileId": "bitgreen",
+      "reason": "Official company profile says 2021; trademark history documents earlier use in 2017. Need to separate company formation from predecessor project history.",
+      "sources": [
+        "https://www.linkedin.com/company/bitgreen",
+        "https://trademarks.justia.com/907/04/bitgreen-90704150.html"
+      ]
+    },
+    {
+      "profileId": "rivool-finance",
+      "reason": "Official profile gives 2024 but the same page exposes a February 2023 funding record. Prior entity versus current project history remains unclear.",
+      "sources": [
+        "https://www.linkedin.com/company/rivool-finance/"
+      ]
+    },
+    {
+      "profileId": "empowa",
+      "reason": "Sources point to different formation years. Insufficient verified primary chronology in this pass.",
+      "sources": [
+        "https://www.empowa.io/",
+        "https://coinmarketcap.com/academy/article/cardano-s-smart-contract-and-dapps-ecosystem"
+      ]
+    },
+    {
+      "profileId": "etana-custody",
+      "reason": "A UK company of the same name incorporated in 2014 and dissolved in 2016; relationship to the US custody business was not established. Do not import the UK incorporation date.",
+      "sources": [
+        "https://find-and-update.company-information.service.gov.uk/company/09275173/filing-history"
+      ]
+    }
+  ],
+  "otherLeadsNotResolved": [
+    "agora",
+    "neutrl",
+    "infinifi",
+    "plasma",
+    "wildcat",
+    "denario",
+    "entoro",
+    "instruxi",
+    "arkreen",
+    "dakota",
+    "morse",
+    "wspn-holding-limited",
+    "mavryk-network",
+    "infineo",
+    "ink-finance",
+    "onre",
+    "csigma",
+    "cerchia",
+    "soil",
+    "comtech"
+  ],
+  "preservation": "Company profiles, logos, memberships, lifecycle status and all previously sourced events remain unchanged. Etherfuse remains 2019 per the prior owner decision.",
+  "resultCoverage": {
+    "annual": {
+      "eligible": 1154,
+      "dated": 684,
+      "yearOnly": 0,
+      "unknown": 470,
+      "future": 0
+    },
+    "quarterly": {
+      "eligible": 1154,
+      "dated": 178,
+      "yearOnly": 506,
+      "unknown": 470,
+      "future": 0
+    }
+  }
+}

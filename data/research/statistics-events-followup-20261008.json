@@ -1410,5 +1410,321 @@
         "title": "Techstars \u2014 Fabrica portfolio company profile"
       }
     ]
+  },
+  {
+    "id": "rwaf-ctrlalt-start-continuation4-20261008",
+    "profileId": "rwaf-ctrlalt",
+    "type": "founding",
+    "date": "2022",
+    "note": "Ctrl Alt's official company profile explicitly states this founding year; no month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/ctrl-alt",
+        "title": "Ctrl Alt \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "estatex-start-continuation4-20261008",
+    "profileId": "estatex",
+    "type": "founding",
+    "date": "2020",
+    "note": "The official profile linked to EstateX.eu gives 2020. This is the tokenized real-estate platform, not similarly named real-estate consultancies or agencies.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/estatex-eu",
+        "title": "EstateX \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "ledgity-start-continuation4-20261008",
+    "profileId": "ledgity",
+    "type": "founding",
+    "date": "2018",
+    "note": "The official company profile gives 2018. The date concerns Ledgity's formation, not its later repositioning around stablecoin savings or its new website.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/ledgity/",
+        "title": "Ledgity \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "frigg-start-continuation4-20261008",
+    "profileId": "frigg",
+    "type": "founding",
+    "date": "2022",
+    "note": "Frigg's official company profile explicitly states this founding year; no month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/frigg-eco/",
+        "title": "Frigg \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "qfex-start-continuation4-20261008",
+    "profileId": "qfex",
+    "type": "founding",
+    "date": "2025",
+    "note": "Y Combinator explicitly lists QFEX as founded in 2025. The founders meeting at Cambridge in 2016 is not the company founding, and the Spring cohort does not establish a founding quarter.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.ycombinator.com/companies/qfex",
+        "title": "Y Combinator \u2014 QFEX company profile"
+      }
+    ]
+  },
+  {
+    "id": "pharos-start-continuation4-20261008",
+    "profileId": "pharos",
+    "type": "founding",
+    "date": "2024",
+    "note": "The blockchain network's official company profile gives 2024. It is distinct from the older Pharos Production software consultancy.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/pharosnetwork",
+        "title": "Pharos Network \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "gaib-start-continuation4-20261008",
+    "profileId": "gaib",
+    "type": "founding",
+    "date": "2024-06",
+    "note": "Co-founder and CEO Kony Kwong told The Block that GAIB was founded in June 2024. The December article and July funding close are separate dates.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.theblock.co/news/deals/2024-12-03-crypto-ai-startup-gaib-funding-329306",
+        "title": "The Block \u2014 GAIB founder interview"
+      }
+    ]
+  },
+  {
+    "id": "koreinside-start-continuation4-20261008",
+    "profileId": "koreinside",
+    "type": "founding",
+    "date": "2016",
+    "note": "Kore's official history explicitly gives 2016. This dates the company behind the private-market infrastructure, not a later KoreInside rebrand.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/koreinside",
+        "title": "KoreInside \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "seda-protocol-start-continuation4-20261008",
+    "profileId": "seda-protocol",
+    "type": "founding",
+    "date": "2021",
+    "note": "SEDA's official company profile gives 2021. This records project formation rather than its 2024 mainnet rollout.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/sedanetwork/",
+        "title": "SEDA Protocol \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "tokenise-start-continuation4-20261008",
+    "profileId": "tokenise",
+    "type": "founding",
+    "date": "2018",
+    "note": "The company profile gives 2018, while separately dating Tokenise as a Service to 2024 under VERO Labs. The later product launch is not substituted for the original company founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/tokenise",
+        "title": "Tokenise \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "blockcellar-start-continuation4-20261008",
+    "profileId": "blockcellar",
+    "type": "founding",
+    "date": "2022",
+    "note": "BlockCellar's official company profile explicitly states this founding year; no month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/blockcellar",
+        "title": "BlockCellar \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "kula-start-continuation4-20261008",
+    "profileId": "kula",
+    "type": "founding",
+    "date": "2022",
+    "note": "The impact-investment and RWA tokenization company gives 2022. A different Chicago social-commerce company also used kula.com; its 2011 history is not applied to this profile.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/kuladao",
+        "title": "Kula \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "realx-start-continuation4-20261008",
+    "profileId": "realx",
+    "type": "founding",
+    "date": "2017",
+    "note": "The Indian fractional-property platform's official profile gives 2017. It is distinct from RealX Ventures renewable-energy development and Qatar's realX student app.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://in.linkedin.com/company/hellorealx",
+        "title": "RealX \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "anemoy-start-continuation4-20261008",
+    "profileId": "anemoy",
+    "type": "launch",
+    "date": "2023-11-29",
+    "note": "Anemoy announces the launch of its first onchain Liquid Treasury Fund pool on Centrifuge that day. This dates the first documented product launch, not a separately established corporate founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.anemoy.io/news/onchain-us-treasury-bills-offering",
+        "title": "Anemoy \u2014 First onchain US Treasury offering"
+      }
+    ]
+  },
+  {
+    "id": "grove-start-continuation4-20261008",
+    "profileId": "grove",
+    "type": "launch",
+    "date": "2025-06",
+    "note": "In its November 2025 retrospective, Grove says it launched at the end of June. Month precision is retained; neither the later Avalanche expansion nor the November data-dashboard launch is counted as its original start.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://grove.finance/blog/introducing-grove-data",
+        "title": "Grove \u2014 Introducing Grove Data and launch history"
+      }
+    ]
+  },
+  {
+    "id": "zksync-start-continuation4-20261008",
+    "profileId": "zksync",
+    "type": "launch",
+    "date": "2020-06-18",
+    "note": "The ZKsync Community Hub explicitly dates ZKsync 1.0, later called Lite, to June 18, 2020 and separately dates Era to March 24, 2023. This dates the original ZKsync network family, not the founding of the separately listed developer Matter Labs.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://zknation.gitbook.io/zksync-community-hub/support/faq",
+        "title": "ZKsync Community Hub \u2014 Lite and Era launch chronology"
+      }
+    ]
+  },
+  {
+    "id": "stable-start-continuation4-20261008",
+    "profileId": "stable",
+    "type": "launch",
+    "date": "2025-12-08",
+    "note": "Stable announces the actual mainnet launch of its USDT-powered Layer 1 that day. This is the Stable blockchain, not the separately listed mortgage protocol with the same name.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/stable-launches-stablechain-mainnet-and-unveils-both-the-stable-foundation-and-native-token-stable-302635433.html",
+        "title": "Stable \u2014 StableChain mainnet launch"
+      }
+    ]
+  },
+  {
+    "id": "dtravel-start-continuation4-20261008",
+    "profileId": "dtravel",
+    "type": "launch",
+    "date": "2021-06-16",
+    "note": "Dtravel announces the launch of the decentralized home-sharing project. This dates the original project introduction, distinct from the June 2022 v2 smart-contract booking release and unrelated travel agencies.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.globenewswire.com/news-release/2021/06/16/2248267/0/en/Introducing-Dtravel-a-Blockchain-based-Airbnb-Rival.html",
+        "title": "Dtravel \u2014 Introducing the decentralized home-sharing platform"
+      }
+    ]
+  },
+  {
+    "id": "zivoe-start-continuation4-20261008",
+    "profileId": "zivoe",
+    "type": "launch",
+    "date": "2024-09",
+    "note": "The Zivoe team explicitly dates the credit protocol launch to September 2024 in its governance proposal. An earlier press release targeted July 31; that planned date is not substituted for the team-reported launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://gov.frax.finance/t/fip-429-incentivize-a-joint-frax-zivoe-pool-on-curve/3610",
+        "title": "Zivoe team \u2014 Frax governance proposal and launch history"
+      },
+      {
+        "url": "https://chainwire.org/2024/07/18/zivoe-to-launch-real-world-asset-credit-protocol-democratizing-access-to-credit/",
+        "title": "Zivoe \u2014 Earlier targeted launch announcement"
+      }
+    ]
+  },
+  {
+    "id": "ecosapiens-start-continuation4-20261008",
+    "profileId": "ecosapiens",
+    "type": "launch",
+    "date": "2023-02",
+    "note": "The company-issued April 2023 release retrospectively dates its alpha carbon-backed NFT collection and initial community distribution to February 2023. This dates the first collection launch, not its earlier fundraising or corporate formation.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.vcaonline.com/news/2023040408/ecosapiens-secures-3-5-million-to-power-carbon-backed-nft-community-in-latest-seed-round/",
+        "title": "Ecosapiens \u2014 Company release and alpha-collection history"
+      }
+    ]
+  },
+  {
+    "id": "quadrata-start-continuation4-20261008",
+    "profileId": "quadrata",
+    "type": "launch",
+    "date": "2022-03",
+    "note": "Quadrata states that its Web3 passport network launched in March 2022. This records the earlier network introduction, distinct from the July 2022 Ethereum mainnet release; no exact day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.businesswire.com/news/home/20220427005140/en/Quadrata-Adds-Team-of-Trusted-Advisors-to-Support-Building-the-Standard-for-Open-Compliance-Aware-Framework-in-DeFi",
+        "title": "Quadrata \u2014 Company release and passport-network launch history"
+      }
+    ]
+  },
+  {
+    "id": "grtwines-start-continuation4-20261008",
+    "profileId": "grtwines",
+    "type": "launch",
+    "date": "2024",
+    "note": "The company-issued April 2024 release confirms the digital wine marketplace launch. Earlier company posts promoted January availability, so only the corroborated calendar year is used pending reconciliation of the rollout stages; April 16 is a collection debut, not assumed to be the platform founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/in/news-releases/introducing-grtwines-new-web3-wine-marketplace-opening-doors-for-next-generations-of-investors-to-vintage-fine-wines-with-asset-tokenization-302114263.html",
+        "title": "GrtWines \u2014 Official platform launch announcement"
+      },
+      {
+        "url": "https://www.linkedin.com/posts/grtwines_where-are-your-wines-stored-activity-7142589342647992320-HwFg",
+        "title": "GrtWines \u2014 Earlier platform rollout announcement"
+      }
+    ]
   }
 ]
