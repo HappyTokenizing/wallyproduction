@@ -1726,5 +1726,2105 @@
         "title": "GrtWines \u2014 Earlier platform rollout announcement"
       }
     ]
+  },
+  {
+    "id": "infinifi-start-batch150-20261008",
+    "profileId": "infinifi",
+    "type": "founding",
+    "date": "2024",
+    "note": "DeFiLlama's description explicitly dates infiniFi's founding to 2024.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://defillama.com/protocol/infinifi",
+        "title": "DeFiLlama — infiniFi"
+      }
+    ]
+  },
+  {
+    "id": "arq-start-batch150-20261008",
+    "profileId": "arq",
+    "type": "founding",
+    "date": "2021",
+    "note": "The Y Combinator profile dates the company to 2021. This preserves its DolarApp origin rather than treating the ARQ rebrand as a new company.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.ycombinator.com/companies/arq",
+        "title": "Y Combinator — ARQ (formerly DolarApp)"
+      }
+    ]
+  },
+  {
+    "id": "avalon-start-batch150-20261008",
+    "profileId": "avalon",
+    "type": "founding",
+    "date": "2024",
+    "note": "CB Insights' company profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/avalon-finance",
+        "title": "CB Insights — Avalon Labs"
+      }
+    ]
+  },
+  {
+    "id": "eco-start-batch150-20261008",
+    "profileId": "eco",
+    "type": "founding",
+    "date": "2018",
+    "note": "CB Insights' company profile reports a 2018 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/eco-1",
+        "title": "CB Insights — Eco"
+      }
+    ]
+  },
+  {
+    "id": "codex-start-batch150-20261008",
+    "profileId": "codex",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/codexfx/",
+        "title": "Codex FX — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "plasma-start-batch150-20261008",
+    "profileId": "plasma",
+    "type": "founding",
+    "date": "2024",
+    "note": "CB Insights' company profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/plasma",
+        "title": "CB Insights — Plasma"
+      }
+    ]
+  },
+  {
+    "id": "enor-start-batch150-20261008",
+    "profileId": "enor",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/enor-securities/",
+        "title": "Enor Securities — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "rwa-xyz-start-batch150-20261008",
+    "profileId": "rwa-xyz",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/rwaxyz",
+        "title": "CB Insights — RWA.xyz"
+      }
+    ]
+  },
+  {
+    "id": "helix-finance-start-batch150-20261008",
+    "profileId": "helix-finance",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/helixfi/",
+        "title": "HELIX — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "arttrade-start-batch150-20261008",
+    "profileId": "arttrade",
+    "type": "founding",
+    "date": "2021",
+    "note": "The arttrade company profile identifies the Düsseldorf fractional-art business and reports a 2021 founding; this is not Artrade on Solana.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/arttradeio",
+        "title": "arttrade — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "anzen-start-batch150-20261008",
+    "profileId": "anzen",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/anzen",
+        "title": "CB Insights — Anzen"
+      }
+    ]
+  },
+  {
+    "id": "ink-finance-start-batch150-20261008",
+    "profileId": "ink-finance",
+    "type": "founding",
+    "date": "2020",
+    "note": "CB Insights' company profile reports a 2020 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/ink-finance",
+        "title": "CB Insights — Ink Finance"
+      }
+    ]
+  },
+  {
+    "id": "csigma-start-batch150-20261008",
+    "profileId": "csigma",
+    "type": "founding",
+    "date": "2023",
+    "note": "CB Insights' company profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/csigma-finance",
+        "title": "CB Insights — cSigma Finance"
+      }
+    ]
+  },
+  {
+    "id": "isle-finance-start-batch150-20261008",
+    "profileId": "isle-finance",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/isle-fi",
+        "title": "Isle Finance — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "yieldbricks-start-batch150-20261008",
+    "profileId": "yieldbricks",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/yieldbricks/",
+        "title": "YieldBricks — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "prestocks-start-batch150-20261008",
+    "profileId": "prestocks",
+    "type": "founding",
+    "date": "2025",
+    "note": "The company's own LinkedIn profile reports a 2025 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/prestocks/",
+        "title": "PreStocks — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "frac-start-batch150-20261008",
+    "profileId": "frac",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/frac",
+        "title": "CB Insights — Frac"
+      }
+    ]
+  },
+  {
+    "id": "blockridge-start-batch150-20261008",
+    "profileId": "blockridge",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/blockridge",
+        "title": "BlockRidge — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "scintilla-network-start-batch150-20261008",
+    "profileId": "scintilla-network",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/scintillanetwork",
+        "title": "Scintilla — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "atyum-start-batch150-20261008",
+    "profileId": "atyum",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/atyum-es",
+        "title": "ATYUM — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "blockpeer-start-batch150-20261008",
+    "profileId": "blockpeer",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/blockpeer-finance",
+        "title": "BlockPeer — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "nasdex-start-batch150-20261008",
+    "profileId": "nasdex",
+    "type": "founding",
+    "date": "2021",
+    "note": "CB Insights' company profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/nasdex",
+        "title": "CB Insights — NASDEX"
+      }
+    ]
+  },
+  {
+    "id": "cask-capital-start-batch150-20261008",
+    "profileId": "cask-capital",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/cask-capital",
+        "title": "Cask Capital — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "shift-rwa-start-batch150-20261008",
+    "profileId": "shift-rwa",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/shiftrwa",
+        "title": "SHIFT RWA — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "anzi-start-batch150-20261008",
+    "profileId": "anzi",
+    "type": "founding",
+    "date": "2023",
+    "note": "CB Insights' company profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/anzifinance",
+        "title": "CB Insights — Anzi Finance"
+      }
+    ]
+  },
+  {
+    "id": "parcl-labs-start-batch150-20261008",
+    "profileId": "parcl-labs",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/parcl-labs",
+        "title": "CB Insights — Parcl Labs"
+      }
+    ]
+  },
+  {
+    "id": "transfer-agent-protocol-start-batch150-20261008",
+    "profileId": "transfer-agent-protocol",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/transfer-agent-protocol",
+        "title": "Transfer Agent Protocol — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "whrrl-start-batch150-20261008",
+    "profileId": "whrrl",
+    "type": "founding",
+    "date": "2019",
+    "note": "The company's own LinkedIn profile reports a 2019 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/whrrl/",
+        "title": "Whrrl — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "bitbay-start-batch150-20261008",
+    "profileId": "bitbay",
+    "type": "founding",
+    "date": "2014",
+    "note": "The BitBay marketplace team's profile reports a 2014 founding and links bitbay.market; this is not the similarly named centralized exchange.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/bitbaymarket",
+        "title": "BitBay — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "tvvin-start-batch150-20261008",
+    "profileId": "tvvin",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/tvvin",
+        "title": "TVVIN — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "caddy-finance-start-batch150-20261008",
+    "profileId": "caddy-finance",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/caddy-finance",
+        "title": "Caddy Finance — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "bukprotocol-start-batch150-20261008",
+    "profileId": "bukprotocol",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/buk-technology",
+        "title": "CB Insights — Buk"
+      }
+    ]
+  },
+  {
+    "id": "coded-estate-start-batch150-20261008",
+    "profileId": "coded-estate",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/coded-estate",
+        "title": "CB Insights — Coded Estate"
+      }
+    ]
+  },
+  {
+    "id": "mystic-finance-start-batch150-20261008",
+    "profileId": "mystic-finance",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/mysticfinancexyz/",
+        "title": "Mystic Finance — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "chateau-capital-start-batch150-20261008",
+    "profileId": "chateau-capital",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/chateau-capital",
+        "title": "CB Insights — Chateau Capital"
+      }
+    ]
+  },
+  {
+    "id": "coreestate-start-batch150-20261008",
+    "profileId": "coreestate",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/coreestateglobal/",
+        "title": "Coreestate — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "cheersland-start-batch150-20261008",
+    "profileId": "cheersland",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/cheersland-rwa",
+        "title": "CheersLand — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "crowdgenix-start-batch150-20261008",
+    "profileId": "crowdgenix",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/crowdgenix/",
+        "title": "Crowdgenix — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "curio-start-batch150-20261008",
+    "profileId": "curio",
+    "type": "founding",
+    "date": "2018",
+    "note": "CB Insights' company profile reports a 2018 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/curioinvest",
+        "title": "CB Insights — CurioInvest"
+      }
+    ]
+  },
+  {
+    "id": "peerhive-start-batch150-20261008",
+    "profileId": "peerhive",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/peerhivehq",
+        "title": "PeerHive — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "item-banc-start-batch150-20261008",
+    "profileId": "item-banc",
+    "type": "founding",
+    "date": "2018",
+    "note": "The company's own LinkedIn profile reports a 2018 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/item-banc",
+        "title": "Item Banc — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "blockhouse-start-batch150-20261008",
+    "profileId": "blockhouse",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/blockhouse-capital",
+        "title": "Blockhouse — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "diamore-start-batch150-20261008",
+    "profileId": "diamore",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/diamorediamonds",
+        "title": "DIAMORE — official company profile"
+      }
+    ]
+  },
+  {
+    "id": "kinto-start-batch150-20261008",
+    "profileId": "kinto",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/mamori-labs",
+        "title": "Kinto company profile"
+      }
+    ]
+  },
+  {
+    "id": "nash21-start-batch150-20261008",
+    "profileId": "nash21",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/nash21/",
+        "title": "Nash21 company profile"
+      }
+    ]
+  },
+  {
+    "id": "ekta-start-batch150-20261008",
+    "profileId": "ekta",
+    "type": "founding",
+    "date": "2021",
+    "note": "CB Insights' company profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/ekta-1",
+        "title": "Ekta company profile"
+      }
+    ]
+  },
+  {
+    "id": "rwa-finance-start-batch150-20261008",
+    "profileId": "rwa-finance",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/rwafinance/",
+        "title": "RWA Finance company profile"
+      }
+    ]
+  },
+  {
+    "id": "plural-finance-start-batch150-20261008",
+    "profileId": "plural-finance",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights identifies Plural Energy at pluralfinance.com and dates the renewable-energy tokenization company to 2022.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/plural-energy",
+        "title": "Plural Energy company profile"
+      }
+    ]
+  },
+  {
+    "id": "florence-finance-start-batch150-20261008",
+    "profileId": "florence-finance",
+    "type": "founding",
+    "date": "2021",
+    "note": "CB Insights' company profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/florence-finance",
+        "title": "Florence Finance company profile"
+      }
+    ]
+  },
+  {
+    "id": "frictionless-markets-start-batch150-20261008",
+    "profileId": "frictionless-markets",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/frictionless-markets",
+        "title": "Frictionless Markets company profile"
+      }
+    ]
+  },
+  {
+    "id": "silta-start-batch150-20261008",
+    "profileId": "silta",
+    "type": "founding",
+    "date": "2021",
+    "note": "CB Insights' company profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/silta-finance",
+        "title": "Silta Finance company profile"
+      }
+    ]
+  },
+  {
+    "id": "arkefi-start-batch150-20261008",
+    "profileId": "arkefi",
+    "type": "founding",
+    "date": "2023",
+    "note": "CB Insights' company profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/arkefi",
+        "title": "Arkefi company profile"
+      }
+    ]
+  },
+  {
+    "id": "cogito-finance-start-batch150-20261008",
+    "profileId": "cogito-finance",
+    "type": "founding",
+    "date": "2022",
+    "note": "The Cogito Finance team profile reports a 2022 founding; a later Singularity Finance rebrand is not counted as a new start.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/cogito-finance",
+        "title": "Cogito Finance company profile"
+      }
+    ]
+  },
+  {
+    "id": "degen-distillery-start-batch150-20261008",
+    "profileId": "degen-distillery",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/degen-distillery",
+        "title": "Degen Distillery company profile"
+      }
+    ]
+  },
+  {
+    "id": "penomo-start-batch150-20261008",
+    "profileId": "penomo",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/penomo/",
+        "title": "Penomo company profile"
+      }
+    ]
+  },
+  {
+    "id": "watches-io-start-batch150-20261008",
+    "profileId": "watches-io",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/watchesio",
+        "title": "Watches.io company profile"
+      }
+    ]
+  },
+  {
+    "id": "alta-finance-start-batch150-20261008",
+    "profileId": "alta-finance",
+    "type": "founding",
+    "date": "2020",
+    "note": "The company's own LinkedIn profile reports a 2020 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/altafinprotocol",
+        "title": "Alta Finance company profile"
+      }
+    ]
+  },
+  {
+    "id": "arcton-start-batch150-20261008",
+    "profileId": "arcton",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/posts/arcton-hq_arcton-secures-chf-350000-in-pre-seed-round-activity-7109457025377427456-OTuz",
+        "title": "Arcton founding history"
+      }
+    ]
+  },
+  {
+    "id": "cerchia-start-batch150-20261008",
+    "profileId": "cerchia",
+    "type": "founding",
+    "date": "2020",
+    "note": "The cited source reports a 2020 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.htgf.de/en/htgf-seed-cerchia/",
+        "title": "HTGF investment in Cerchia"
+      }
+    ]
+  },
+  {
+    "id": "neutral-exchange-start-batch150-20261008",
+    "profileId": "neutral-exchange",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/posts/farouq-ghandour-b0697b121_weve-decided-to-close-the-neutral-exchange-activity-7264663754045358080-a3UF",
+        "title": "Neutral cofounder history"
+      }
+    ]
+  },
+  {
+    "id": "yakdao-start-batch150-20261008",
+    "profileId": "yakdao",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/yak-dao",
+        "title": "YakDAO company profile"
+      }
+    ]
+  },
+  {
+    "id": "dexstar-start-batch150-20261008",
+    "profileId": "dexstar",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/dexstar",
+        "title": "DexStar company profile"
+      }
+    ]
+  },
+  {
+    "id": "carnomaly-start-batch150-20261008",
+    "profileId": "carnomaly",
+    "type": "founding",
+    "date": "2019",
+    "note": "The company's own LinkedIn profile reports a 2019 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/carnomaly",
+        "title": "Carnomaly company profile"
+      }
+    ]
+  },
+  {
+    "id": "lto-network-start-batch150-20261008",
+    "profileId": "lto-network",
+    "type": "founding",
+    "date": "2017",
+    "note": "CB Insights' company profile reports a 2017 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/lto-network",
+        "title": "LTO Network company profile"
+      }
+    ]
+  },
+  {
+    "id": "metazero-start-batch150-20261008",
+    "profileId": "metazero",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/metazerogg",
+        "title": "MetaZero company profile"
+      }
+    ]
+  },
+  {
+    "id": "hiyield-start-batch150-20261008",
+    "profileId": "hiyield",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/hiyield-xyz",
+        "title": "HiYield company profile"
+      }
+    ]
+  },
+  {
+    "id": "sapling-start-batch150-20261008",
+    "profileId": "sapling",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/saplingteam",
+        "title": "Sapling company profile"
+      }
+    ]
+  },
+  {
+    "id": "rentible-start-batch150-20261008",
+    "profileId": "rentible",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/rentible",
+        "title": "Rentible company profile"
+      }
+    ]
+  },
+  {
+    "id": "coreum-start-batch150-20261008",
+    "profileId": "coreum",
+    "type": "founding",
+    "date": "2021",
+    "note": "The Coreum team profile dates the network initiative to 2021; the later tx branding is not a new founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/txlabs-us",
+        "title": "Coreum company profile"
+      }
+    ]
+  },
+  {
+    "id": "tessera-start-batch150-20261008",
+    "profileId": "tessera",
+    "type": "founding",
+    "date": "2025",
+    "note": "The company's own LinkedIn profile reports a 2025 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/tessera-pe",
+        "title": "Tessera PE company profile"
+      }
+    ]
+  },
+  {
+    "id": "chirp-start-batch150-20261008",
+    "profileId": "chirp",
+    "type": "founding",
+    "date": "2021",
+    "note": "CB Insights' company profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/chirp",
+        "title": "Chirp company profile"
+      }
+    ]
+  },
+  {
+    "id": "sailing-protocol-start-batch150-20261008",
+    "profileId": "sailing-protocol",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/sailingprotocol",
+        "title": "Sailing Protocol company profile"
+      }
+    ]
+  },
+  {
+    "id": "ixo-start-batch150-20261008",
+    "profileId": "ixo",
+    "type": "founding",
+    "date": "2017",
+    "note": "The company's own LinkedIn profile reports a 2017 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/ixoworld",
+        "title": "IXO company profile"
+      }
+    ]
+  },
+  {
+    "id": "moongate-start-batch150-20261008",
+    "profileId": "moongate",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/0xmoongate",
+        "title": "Moongate company profile"
+      }
+    ]
+  },
+  {
+    "id": "rwa-inc-start-batch150-20261008",
+    "profileId": "rwa-inc",
+    "type": "founding",
+    "date": "2020",
+    "note": "The company's own LinkedIn profile reports a 2020 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/rwainc",
+        "title": "RWA Inc company profile"
+      }
+    ]
+  },
+  {
+    "id": "linear-start-batch150-20261008",
+    "profileId": "linear",
+    "type": "founding",
+    "date": "2020",
+    "note": "CB Insights' company profile reports a 2020 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/linear-finance",
+        "title": "Linear Finance company profile"
+      }
+    ]
+  },
+  {
+    "id": "e-money-network-start-batch150-20261008",
+    "profileId": "e-money-network",
+    "type": "founding",
+    "date": "2019",
+    "note": "CB Insights' company profile reports a 2019 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/e-money-network",
+        "title": "E Money Network company profile"
+      }
+    ]
+  },
+  {
+    "id": "opulous-start-batch150-20261008",
+    "profileId": "opulous",
+    "type": "founding",
+    "date": "2020",
+    "note": "The company's own LinkedIn profile reports a 2020 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/opulous",
+        "title": "Opulous company profile"
+      }
+    ]
+  },
+  {
+    "id": "incomrwa-start-batch150-20261008",
+    "profileId": "incomrwa",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/incomrwa",
+        "title": "IncomRWA company profile"
+      }
+    ]
+  },
+  {
+    "id": "pt-rupiah-token-start-batch150-20261008",
+    "profileId": "pt-rupiah-token",
+    "type": "founding",
+    "date": "2019",
+    "note": "The company's own LinkedIn profile reports a 2019 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/rupiah-token/",
+        "title": "Rupiah Token company profile"
+      }
+    ]
+  },
+  {
+    "id": "rwa-nova-start-batch150-20261008",
+    "profileId": "rwa-nova",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/rwa-nova",
+        "title": "RWA Nova company profile"
+      }
+    ]
+  },
+  {
+    "id": "standx-protocol-start-batch150-20261008",
+    "profileId": "standx-protocol",
+    "type": "founding",
+    "date": "2025",
+    "note": "The company's own LinkedIn profile reports a 2025 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://vg.linkedin.com/company/standx-official",
+        "title": "StandX company profile"
+      }
+    ]
+  },
+  {
+    "id": "zoth.io-start-batch150-20261008",
+    "profileId": "zoth.io",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/zoth-io",
+        "title": "Zoth company profile"
+      }
+    ]
+  },
+  {
+    "id": "audc-pty-ltd-start-batch150-20261008",
+    "profileId": "audc-pty-ltd",
+    "type": "founding",
+    "date": "2019",
+    "note": "The company's own LinkedIn profile reports a 2019 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/audd-digital",
+        "title": "AUDD company profile"
+      }
+    ]
+  },
+  {
+    "id": "damm-finance-start-batch150-20261008",
+    "profileId": "damm-finance",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/damm-finance/",
+        "title": "dAMM Finance company profile"
+      }
+    ]
+  },
+  {
+    "id": "elixir-start-batch150-20261008",
+    "profileId": "elixir",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/elixir-protocol",
+        "title": "Elixir Protocol company profile"
+      }
+    ]
+  },
+  {
+    "id": "stbl-start-batch150-20261008",
+    "profileId": "stbl",
+    "type": "founding",
+    "date": "2024",
+    "note": "CB Insights' company profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/stbl",
+        "title": "STBL company profile"
+      }
+    ]
+  },
+  {
+    "id": "colb-asset-sa-start-batch150-20261008",
+    "profileId": "colb-asset-sa",
+    "type": "founding",
+    "date": "2020",
+    "note": "The company's own LinkedIn profile reports a 2020 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/colb-finance/",
+        "title": "Colb company profile"
+      }
+    ]
+  },
+  {
+    "id": "xbanking-start-batch150-20261008",
+    "profileId": "xbanking",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://ng.linkedin.com/company/xbanking",
+        "title": "XBANKING company profile"
+      }
+    ]
+  },
+  {
+    "id": "yieldnest-start-batch150-20261008",
+    "profileId": "yieldnest",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://sg.linkedin.com/company/yieldnest",
+        "title": "YieldNest company profile"
+      }
+    ]
+  },
+  {
+    "id": "cropto-1-start-batch150-20261008",
+    "profileId": "cropto-1",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/cropto",
+        "title": "Cropto company profile"
+      }
+    ]
+  },
+  {
+    "id": "the-fedz-1-start-batch150-20261008",
+    "profileId": "the-fedz-1",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/the-fedz",
+        "title": "The Fedz company profile"
+      }
+    ]
+  },
+  {
+    "id": "particle-start-batch150-20261008",
+    "profileId": "particle",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/collectparticle",
+        "title": "Particle company profile"
+      }
+    ]
+  },
+  {
+    "id": "hash-global-start-batch150-20261008",
+    "profileId": "hash-global",
+    "type": "founding",
+    "date": "2019",
+    "note": "The company's own LinkedIn profile reports a 2019 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/hash-global",
+        "title": "Hash Global company profile"
+      }
+    ]
+  },
+  {
+    "id": "serenity-1-start-batch150-20261008",
+    "profileId": "serenity-1",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/serenitystech/",
+        "title": "Serenity company profile"
+      }
+    ]
+  },
+  {
+    "id": "zambesi-gold-start-batch150-20261008",
+    "profileId": "zambesi-gold",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://za.linkedin.com/company/zambesi-gold-pty-ltd",
+        "title": "Zambesi Gold company profile"
+      }
+    ]
+  },
+  {
+    "id": "sqrbit-start-batch150-20261008",
+    "profileId": "sqrbit",
+    "type": "founding",
+    "date": "2024",
+    "note": "CB Insights' company profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/sqrbit",
+        "title": "SQRBIT company profile"
+      }
+    ]
+  },
+  {
+    "id": "dovu-start-batch150-20261008",
+    "profileId": "dovu",
+    "type": "founding",
+    "date": "2016",
+    "note": "The company's own LinkedIn profile reports a 2016 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/dovu/",
+        "title": "DOVU company profile"
+      }
+    ]
+  },
+  {
+    "id": "scenium-start-batch150-20261008",
+    "profileId": "scenium",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/sceniumapp",
+        "title": "Scenium company profile"
+      }
+    ]
+  },
+  {
+    "id": "suno-start-batch150-20261008",
+    "profileId": "suno",
+    "type": "founding",
+    "date": "2025",
+    "note": "The company's own LinkedIn profile reports a 2025 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/suno-finance",
+        "title": "Suno company profile"
+      }
+    ]
+  },
+  {
+    "id": "magma-start-batch150-20261008",
+    "profileId": "magma",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/magmarealestate",
+        "title": "Magma company profile"
+      }
+    ]
+  },
+  {
+    "id": "tokenizerestate-3-start-batch150-20261008",
+    "profileId": "tokenizerestate-3",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/tokenizer-estate",
+        "title": "Tokenizer.Estate company profile"
+      }
+    ]
+  },
+  {
+    "id": "silvertimes-start-batch150-20261008",
+    "profileId": "silvertimes",
+    "type": "founding",
+    "date": "2025",
+    "note": "The company's own LinkedIn profile reports a 2025 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/silvertimes/",
+        "title": "SilverTimes company profile"
+      }
+    ]
+  },
+  {
+    "id": "vestn-start-batch150-20261008",
+    "profileId": "vestn",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/vestn-io",
+        "title": "VESTN company profile"
+      }
+    ]
+  },
+  {
+    "id": "quorium-start-batch150-20261008",
+    "profileId": "quorium",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/quoriumgold",
+        "title": "Quorium company profile"
+      }
+    ]
+  },
+  {
+    "id": "mey-network-start-batch150-20261008",
+    "profileId": "mey-network",
+    "type": "founding",
+    "date": "2024",
+    "note": "Mey Network's own project introduction explicitly states it was established in Vietnam in 2024.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/posts/mey-network_meynetwork-gamification-meylandphase2-activity-7357018875844087811-tl-z",
+        "title": "Mey Network introduction"
+      }
+    ]
+  },
+  {
+    "id": "multichainz-start-batch150-20261008",
+    "profileId": "multichainz",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://sg.linkedin.com/company/multichainz",
+        "title": "MultichainZ company profile"
+      }
+    ]
+  },
+  {
+    "id": "acesfun-start-batch150-20261008",
+    "profileId": "acesfun",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/acesdotfun",
+        "title": "ACES.fun company profile"
+      }
+    ]
+  },
+  {
+    "id": "solarshare-start-batch150-20261008",
+    "profileId": "solarshare",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/solarshareio",
+        "title": "SolarShare company profile"
+      }
+    ]
+  },
+  {
+    "id": "anchorx-start-batch150-20261008",
+    "profileId": "anchorx",
+    "type": "founding",
+    "date": "2024",
+    "note": "CB Insights' company profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/anchorx",
+        "title": "AnchorX company profile"
+      }
+    ]
+  },
+  {
+    "id": "moonwhale-start-batch150-20261008",
+    "profileId": "moonwhale",
+    "type": "founding",
+    "date": "2017",
+    "note": "The company's own LinkedIn profile reports a 2017 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/moonwhale-ventures-capital/",
+        "title": "Moonwhale company profile"
+      }
+    ]
+  },
+  {
+    "id": "asset-avenue-start-batch150-20261008",
+    "profileId": "asset-avenue",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://ee.linkedin.com/company/asset-avenue-capital",
+        "title": "Asset Avenue company profile"
+      }
+    ]
+  },
+  {
+    "id": "str8fire-start-batch150-20261008",
+    "profileId": "str8fire",
+    "type": "founding",
+    "date": "2021",
+    "note": "CB Insights' company profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/str8fire",
+        "title": "STR8FIRE company profile"
+      }
+    ]
+  },
+  {
+    "id": "ggez1-start-batch150-20261008",
+    "profileId": "ggez1",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://ca.linkedin.com/company/ggezone",
+        "title": "GGEZ1 company profile"
+      }
+    ]
+  },
+  {
+    "id": "f2o-sports-start-batch150-20261008",
+    "profileId": "f2o-sports",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/f2osports",
+        "title": "f2o Sports company profile"
+      }
+    ]
+  },
+  {
+    "id": "minestarters-start-batch150-20261008",
+    "profileId": "minestarters",
+    "type": "founding",
+    "date": "2016",
+    "note": "The company's own LinkedIn profile reports a 2016 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/minestarters",
+        "title": "Minestarters company profile"
+      }
+    ]
+  },
+  {
+    "id": "landhive-start-batch150-20261008",
+    "profileId": "landhive",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/landhive/",
+        "title": "Landhive company profile"
+      }
+    ]
+  },
+  {
+    "id": "arch-network-start-batch150-20261008",
+    "profileId": "arch-network",
+    "type": "founding",
+    "date": "2024",
+    "note": "CB Insights identifies the Bitcoin application network led by Matt Mudano and reports a 2024 founding, distinct from unrelated IT/network service companies.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/arch-network",
+        "title": "Arch Network company profile"
+      }
+    ]
+  },
+  {
+    "id": "codetech-start-batch150-20261008",
+    "profileId": "codetech",
+    "type": "founding",
+    "date": "2017",
+    "note": "The company's own LinkedIn profile reports a 2017 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/codetechcc",
+        "title": "CoDeTech company profile"
+      }
+    ]
+  },
+  {
+    "id": "vs1-finance-start-batch150-20261008",
+    "profileId": "vs1-finance",
+    "type": "founding",
+    "date": "2025",
+    "note": "The company's own LinkedIn profile reports a 2025 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/vs1finance",
+        "title": "VS1 Finance company profile"
+      }
+    ]
+  },
+  {
+    "id": "beezie-start-batch150-20261008",
+    "profileId": "beezie",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company's own LinkedIn profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/beezie",
+        "title": "Beezie company profile"
+      }
+    ]
+  },
+  {
+    "id": "coinflow-start-batch150-20261008",
+    "profileId": "coinflow",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/coinflow-labs",
+        "title": "Coinflow company profile"
+      }
+    ]
+  },
+  {
+    "id": "dakota-start-batch150-20261008",
+    "profileId": "dakota",
+    "type": "founding",
+    "date": "2022",
+    "note": "CB Insights' company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/dakota",
+        "title": "Dakota company profile"
+      }
+    ]
+  },
+  {
+    "id": "phygitals-start-batch150-20261008",
+    "profileId": "phygitals",
+    "type": "founding",
+    "date": "2025",
+    "note": "The company's own LinkedIn profile reports a 2025 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/phygitals",
+        "title": "Phygitals company profile"
+      }
+    ]
+  },
+  {
+    "id": "blackopal-start-batch150-20261008",
+    "profileId": "blackopal",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/blackopalpayments",
+        "title": "BlackOpal company profile"
+      }
+    ]
+  },
+  {
+    "id": "accountable-start-batch150-20261008",
+    "profileId": "accountable",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/accountablecapital",
+        "title": "Accountable company profile"
+      }
+    ]
+  },
+  {
+    "id": "pact-protocol-start-batch150-20261008",
+    "profileId": "pact-protocol",
+    "type": "founding",
+    "date": "2020",
+    "note": "The company's own LinkedIn profile reports a 2020 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/pactfoundationofficial",
+        "title": "Pact Foundation company profile"
+      }
+    ]
+  },
+  {
+    "id": "extended-start-batch150-20261008",
+    "profileId": "extended",
+    "type": "founding",
+    "date": "2023",
+    "note": "CB Insights' company profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/x10",
+        "title": "Extended company profile"
+      }
+    ]
+  },
+  {
+    "id": "theo-start-batch150-20261008",
+    "profileId": "theo",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/theoxyz",
+        "title": "Theo company profile"
+      }
+    ]
+  },
+  {
+    "id": "galactica-start-batch150-20261008",
+    "profileId": "galactica",
+    "type": "founding",
+    "date": "2024",
+    "note": "The company's own LinkedIn profile reports a 2024 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/galacticarwa",
+        "title": "Galactica company profile"
+      }
+    ]
+  },
+  {
+    "id": "mannah-start-batch150-20261008",
+    "profileId": "mannah",
+    "type": "founding",
+    "date": "2023",
+    "note": "The company's own LinkedIn profile reports a 2023 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/mannah",
+        "title": "Mannah company profile"
+      }
+    ]
+  },
+  {
+    "id": "comdex-start-batch150-20261008",
+    "profileId": "comdex",
+    "type": "founding",
+    "date": "2017",
+    "note": "The company's own LinkedIn profile reports a 2017 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://sg.linkedin.com/company/comdexofficial",
+        "title": "Comdex company profile"
+      }
+    ]
+  },
+  {
+    "id": "robinland-start-batch150-20261008",
+    "profileId": "robinland",
+    "type": "founding",
+    "date": "2021",
+    "note": "CB Insights' company profile reports a 2021 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/robinland",
+        "title": "Robinland company profile"
+      }
+    ]
+  },
+  {
+    "id": "estate-protocol-start-batch150-20261008",
+    "profileId": "estate-protocol",
+    "type": "founding",
+    "date": "2021",
+    "note": "Digital Asset Research's January 2024 table identifies estateprotocol.com and reports a 2021 founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.digitalassetresearch.com/wp-content/uploads/2024/01/DAR-RWA-Tokenization-Report-January-2024.pdf",
+        "title": "DAR tokenization report January 2024"
+      }
+    ]
+  },
+  {
+    "id": "weown-start-batch150-20261008",
+    "profileId": "weown",
+    "type": "founding",
+    "date": "2017",
+    "note": "Digital Asset Research's January 2024 table identifies the WeOwn tokenization platform at weown.com and reports a 2017 founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.digitalassetresearch.com/wp-content/uploads/2024/01/DAR-RWA-Tokenization-Report-January-2024.pdf",
+        "title": "DAR tokenization report January 2024"
+      }
+    ]
+  },
+  {
+    "id": "yieldteq-start-batch150-20261008",
+    "profileId": "yieldteq",
+    "type": "founding",
+    "date": "2023",
+    "note": "Digital Asset Research's January 2024 table identifies yieldteq.io and reports a 2023 founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.digitalassetresearch.com/wp-content/uploads/2024/01/DAR-RWA-Tokenization-Report-January-2024.pdf",
+        "title": "DAR tokenization report January 2024"
+      }
+    ]
+  },
+  {
+    "id": "cellardao-start-batch150-20261008",
+    "profileId": "cellardao",
+    "type": "founding",
+    "date": "2023",
+    "note": "Digital Asset Research's November 2023 table reports a 2023 founding for the wine and spirits tokenization initiative.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.digitalassetresearch.com/real-world-assets-rwas-tokenization-report-november-2023-recap/",
+        "title": "DAR tokenization report November 2023"
+      }
+    ]
+  },
+  {
+    "id": "skyhookcapital-start-batch150-20261008",
+    "profileId": "skyhookcapital",
+    "type": "founding",
+    "date": "2017",
+    "note": "Dealroom identifies Lawrence Grinceri's Singapore digital-securities infrastructure company and reports a 2017 founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://app.dealroom.co/companies/skyhook_capital_pte_ltd",
+        "title": "Skyhook Capital company profile"
+      }
+    ]
+  },
+  {
+    "id": "kreskofi-start-batch150-20261008",
+    "profileId": "kreskofi",
+    "type": "founding",
+    "date": "2021",
+    "note": "Dealroom identifies Deepak Nuli's synthetic-asset protocol Kresko Labs and reports its founding in 2021.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://app.dealroom.co/companies/kresko_labs",
+        "title": "Kresko Labs company profile"
+      }
+    ]
+  },
+  {
+    "id": "arkreen-start-batch150-20261008",
+    "profileId": "arkreen",
+    "type": "founding",
+    "date": "2022",
+    "note": "Dealroom's company profile reports a 2022 founding for this project. Only the year is established; no quarter or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://app.dealroom.co/companies/arkreen",
+        "title": "Arkreen company profile"
+      }
+    ]
+  },
+  {
+    "id": "sologenic-start-batch150-20261008",
+    "profileId": "sologenic",
+    "type": "founding",
+    "date": "2020",
+    "note": "The Sologenic team profile reports a 2020 founding. This is the reported organization date, not the later tx brand transition.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/realsologenic",
+        "title": "Sologenic company profile"
+      }
+    ]
+  },
+  {
+    "id": "portio-capital-start-batch150-20261008",
+    "profileId": "portio-capital",
+    "type": "founding",
+    "date": "2023",
+    "note": "Portio's company profile dates its founding to 2023 and explicitly identifies Portio Capital and Portio Club as its two ventures.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://be.linkedin.com/company/portioco",
+        "title": "Portio company profile"
+      }
+    ]
+  },
+  {
+    "id": "cavalre-multiswap-start-batch150-20261008",
+    "profileId": "cavalre-multiswap",
+    "type": "founding",
+    "date": "2020",
+    "note": "CavalRe's company profile reports a 2020 founding. This dates the developer company represented by the combined profile, not a separate claim about Multiswap's release.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/cavalre",
+        "title": "CavalRe company profile"
+      }
+    ]
+  },
+  {
+    "id": "segmint-by-vaneck-start-batch150-20261008",
+    "profileId": "segmint-by-vaneck",
+    "type": "launch",
+    "date": "2024-02-28",
+    "note": "VanEck's announcement explicitly launches SegMint on February 28, 2024; VanEck's older corporate founding is not used.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.vaneck.com/us/en/press-releases/vaneck-launches-segmint-digital-assets-management-platform.pdf",
+        "title": "VanEck launches SegMint"
+      }
+    ]
+  },
+  {
+    "id": "beanstalk-start-batch150-20261008",
+    "profileId": "beanstalk",
+    "type": "launch",
+    "date": "2021-08-06",
+    "note": "The protocol's disclosures explicitly date original deployment to August 6, 2021, rather than a later relaunch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://docs.bean.money/almanac/disclosures",
+        "title": "Beanstalk disclosures"
+      }
+    ]
+  },
+  {
+    "id": "gold-dao-start-batch150-20261008",
+    "profileId": "gold-dao",
+    "type": "launch",
+    "date": "2023-12",
+    "note": "The official roadmap dates the Gold DAO SNS launch to December 2023. This records the DAO launch, not the earlier development of its gold-token products.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://docs.gold-dao.org/resources/roadmap",
+        "title": "Gold DAO official roadmap"
+      }
+    ]
+  },
+  {
+    "id": "nostra-finance-start-batch150-20261008",
+    "profileId": "nostra-finance",
+    "type": "launch",
+    "date": "2022-12",
+    "note": "The team's retrospective dates its original alpha application release to December 2022; later pools and mobile releases do not replace this first launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://paragraph.com/@nostra/nostra-on-starknet-building-the-crypto-super-app",
+        "title": "Nostra on Starknet — building the crypto super app"
+      }
+    ]
+  },
+  {
+    "id": "edgex-start-batch150-20261008",
+    "profileId": "edgex",
+    "type": "launch",
+    "date": "2024-08",
+    "note": "The issuer's release dates the mainnet web platform launch to August 2024; the September press-release date is not substituted for launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.globenewswire.com/news-release/2024/09/17/2947361/0/en/edgex-unveils-groundbreaking-modular-platform-to-revolutionize-decentralized-finance.html",
+        "title": "edgeX — modular platform launch announcement"
+      }
+    ]
+  },
+  {
+    "id": "archblock-start-batch150-20261008",
+    "profileId": "archblock",
+    "date": "2017",
+    "type": "founding",
+    "note": "CB Insights dates Archblock, formerly TrustToken, to 2017. The later Archblock rebrand is not treated as a new founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.cbinsights.com/company/trusttoken",
+        "title": "Archblock / TrustToken company profile"
+      }
+    ]
+  },
+  {
+    "id": "noon-start-batch150-20261008",
+    "profileId": "noon",
+    "date": "2024",
+    "type": "founding",
+    "note": "Noon's own company profile reports a 2024 founding and identifies the USN/sUSN stablecoin protocol at noon.capital, distinct from unrelated real-estate investment firms.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/nooncapital",
+        "title": "Noon Capital company profile"
+      }
+    ]
   }
 ]

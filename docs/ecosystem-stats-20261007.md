@@ -94,7 +94,7 @@ sourced replacement milestones; 22 remain unverified and are excluded from the
 start charts. See `data/research/industry-entry-review-20261008.json` for every
 affected profile, superseded corporate date, evidence and pending-review reason.
 Including the subsequent founding/launch research passes, the annual chart has
-684 sourced starts among 1,154 profiles; 470 remain undated under the corrected rule.
+834 sourced starts among 1,154 profiles; 320 remain undated under the corrected rule.
 This coverage reduction is intentional: corporate age is not industry growth.
 
 The preceding source pass added 22 institution/infrastructure milestones, including
@@ -194,3 +194,27 @@ coverage is 178, with 506 additional year-only dates.
 coverage and unresolved identity/history conflicts. Etherfuse remains 2019
 as previously requested; profiles, logos, memberships, lifecycle status and
 all prior events remain unchanged.
+
+
+## Publication batch: 150 additional sourced starts
+
+At the owner's request, this batch publishes 150 additions on top of the
+textbook update c298eaf. It adds 145 company founding years and five explicitly
+labeled launches (SegMint, Beanstalk, Gold DAO, Nostra and edgeX). Source notes
+distinguish original company histories from rebrands and separate products.
+Company-reported LinkedIn dates and secondary CB Insights, Dealroom and Digital
+Asset Research records are attributed rather than presented as incorporation
+certificates. Some source pages were reviewed through their indexed text.
+
+Annual coverage rises from 684 to 834 of 1,154 profiles; 320 remain undated.
+Quarterly coverage rises from 178 to 183, with 651 additional year-only dates.
+Year-only records are not assigned an invented quarter. The audit in
+`data/research/founding-review-batch150-20261008.json` lists every addition and
+rejected candidates. Unrelated Joltify, Evolve Pro and Blubird search results
+were discarded. Institutional founding dates without a tokenization milestone
+remain pending, as do sources blocked by the existing directory policy.
+
+The 150-record publication follows the owner's revised scope; it does not
+claim that the original 200-record research target or the remaining profiles
+are complete. No company profiles, logos, membership, lifecycle status or prior
+events change. Etherfuse remains 2019 as previously requested.

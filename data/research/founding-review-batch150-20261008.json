@@ -1,0 +1,977 @@
+{
+  "checkedOn": "2026-10-08",
+  "baselineCommit": "c298eaf",
+  "baselineCoverage": {
+    "eligible": 1154,
+    "dated": 684,
+    "unknown": 470
+  },
+  "scope": "Owner requested publishing 150 additions while a wider 200-profile research sweep was in progress.",
+  "datePolicy": "Preserve sourced year/month/day precision. Institutions and pre-2011 firms require first tokenization activity. Distinguish original companies, product launches, later rebrands and unrelated names.",
+  "sourceReview": "Company/source identities checked against profile domains, historical domains and descriptions. LinkedIn is company-reported; CB Insights, Dealroom and Digital Asset Research are secondary attributions, not incorporation certificates. Some directly inaccessible pages were reviewed through indexed text.",
+  "newlySourcedProfiles": [
+    {
+      "profileId": "infinifi",
+      "eventId": "infinifi-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "arq",
+      "eventId": "arq-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "avalon",
+      "eventId": "avalon-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "eco",
+      "eventId": "eco-start-batch150-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "codex",
+      "eventId": "codex-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "plasma",
+      "eventId": "plasma-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "enor",
+      "eventId": "enor-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "rwa-xyz",
+      "eventId": "rwa-xyz-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "helix-finance",
+      "eventId": "helix-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "arttrade",
+      "eventId": "arttrade-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "anzen",
+      "eventId": "anzen-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "ink-finance",
+      "eventId": "ink-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "csigma",
+      "eventId": "csigma-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "isle-finance",
+      "eventId": "isle-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "yieldbricks",
+      "eventId": "yieldbricks-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "prestocks",
+      "eventId": "prestocks-start-batch150-20261008",
+      "type": "founding",
+      "date": "2025"
+    },
+    {
+      "profileId": "frac",
+      "eventId": "frac-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "blockridge",
+      "eventId": "blockridge-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "scintilla-network",
+      "eventId": "scintilla-network-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "atyum",
+      "eventId": "atyum-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "blockpeer",
+      "eventId": "blockpeer-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "nasdex",
+      "eventId": "nasdex-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "cask-capital",
+      "eventId": "cask-capital-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "shift-rwa",
+      "eventId": "shift-rwa-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "anzi",
+      "eventId": "anzi-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "parcl-labs",
+      "eventId": "parcl-labs-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "transfer-agent-protocol",
+      "eventId": "transfer-agent-protocol-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "whrrl",
+      "eventId": "whrrl-start-batch150-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "bitbay",
+      "eventId": "bitbay-start-batch150-20261008",
+      "type": "founding",
+      "date": "2014"
+    },
+    {
+      "profileId": "tvvin",
+      "eventId": "tvvin-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "caddy-finance",
+      "eventId": "caddy-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "bukprotocol",
+      "eventId": "bukprotocol-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "coded-estate",
+      "eventId": "coded-estate-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "mystic-finance",
+      "eventId": "mystic-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "chateau-capital",
+      "eventId": "chateau-capital-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "coreestate",
+      "eventId": "coreestate-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "cheersland",
+      "eventId": "cheersland-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "crowdgenix",
+      "eventId": "crowdgenix-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "curio",
+      "eventId": "curio-start-batch150-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "peerhive",
+      "eventId": "peerhive-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "item-banc",
+      "eventId": "item-banc-start-batch150-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "blockhouse",
+      "eventId": "blockhouse-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "diamore",
+      "eventId": "diamore-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "kinto",
+      "eventId": "kinto-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "nash21",
+      "eventId": "nash21-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "ekta",
+      "eventId": "ekta-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "rwa-finance",
+      "eventId": "rwa-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "plural-finance",
+      "eventId": "plural-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "florence-finance",
+      "eventId": "florence-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "frictionless-markets",
+      "eventId": "frictionless-markets-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "silta",
+      "eventId": "silta-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "arkefi",
+      "eventId": "arkefi-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "cogito-finance",
+      "eventId": "cogito-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "degen-distillery",
+      "eventId": "degen-distillery-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "penomo",
+      "eventId": "penomo-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "watches-io",
+      "eventId": "watches-io-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "alta-finance",
+      "eventId": "alta-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "arcton",
+      "eventId": "arcton-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "cerchia",
+      "eventId": "cerchia-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "neutral-exchange",
+      "eventId": "neutral-exchange-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "yakdao",
+      "eventId": "yakdao-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "dexstar",
+      "eventId": "dexstar-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "carnomaly",
+      "eventId": "carnomaly-start-batch150-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "lto-network",
+      "eventId": "lto-network-start-batch150-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "metazero",
+      "eventId": "metazero-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "hiyield",
+      "eventId": "hiyield-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "sapling",
+      "eventId": "sapling-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "rentible",
+      "eventId": "rentible-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "coreum",
+      "eventId": "coreum-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "tessera",
+      "eventId": "tessera-start-batch150-20261008",
+      "type": "founding",
+      "date": "2025"
+    },
+    {
+      "profileId": "chirp",
+      "eventId": "chirp-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "sailing-protocol",
+      "eventId": "sailing-protocol-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "ixo",
+      "eventId": "ixo-start-batch150-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "moongate",
+      "eventId": "moongate-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "rwa-inc",
+      "eventId": "rwa-inc-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "linear",
+      "eventId": "linear-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "e-money-network",
+      "eventId": "e-money-network-start-batch150-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "opulous",
+      "eventId": "opulous-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "incomrwa",
+      "eventId": "incomrwa-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "pt-rupiah-token",
+      "eventId": "pt-rupiah-token-start-batch150-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "rwa-nova",
+      "eventId": "rwa-nova-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "standx-protocol",
+      "eventId": "standx-protocol-start-batch150-20261008",
+      "type": "founding",
+      "date": "2025"
+    },
+    {
+      "profileId": "zoth.io",
+      "eventId": "zoth.io-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "audc-pty-ltd",
+      "eventId": "audc-pty-ltd-start-batch150-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "damm-finance",
+      "eventId": "damm-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "elixir",
+      "eventId": "elixir-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "stbl",
+      "eventId": "stbl-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "colb-asset-sa",
+      "eventId": "colb-asset-sa-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "xbanking",
+      "eventId": "xbanking-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "yieldnest",
+      "eventId": "yieldnest-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "cropto-1",
+      "eventId": "cropto-1-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "the-fedz-1",
+      "eventId": "the-fedz-1-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "particle",
+      "eventId": "particle-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "hash-global",
+      "eventId": "hash-global-start-batch150-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "serenity-1",
+      "eventId": "serenity-1-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "zambesi-gold",
+      "eventId": "zambesi-gold-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "sqrbit",
+      "eventId": "sqrbit-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "dovu",
+      "eventId": "dovu-start-batch150-20261008",
+      "type": "founding",
+      "date": "2016"
+    },
+    {
+      "profileId": "scenium",
+      "eventId": "scenium-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "suno",
+      "eventId": "suno-start-batch150-20261008",
+      "type": "founding",
+      "date": "2025"
+    },
+    {
+      "profileId": "magma",
+      "eventId": "magma-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "tokenizerestate-3",
+      "eventId": "tokenizerestate-3-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "silvertimes",
+      "eventId": "silvertimes-start-batch150-20261008",
+      "type": "founding",
+      "date": "2025"
+    },
+    {
+      "profileId": "vestn",
+      "eventId": "vestn-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "quorium",
+      "eventId": "quorium-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "mey-network",
+      "eventId": "mey-network-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "multichainz",
+      "eventId": "multichainz-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "acesfun",
+      "eventId": "acesfun-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "solarshare",
+      "eventId": "solarshare-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "anchorx",
+      "eventId": "anchorx-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "moonwhale",
+      "eventId": "moonwhale-start-batch150-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "asset-avenue",
+      "eventId": "asset-avenue-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "str8fire",
+      "eventId": "str8fire-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "ggez1",
+      "eventId": "ggez1-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "f2o-sports",
+      "eventId": "f2o-sports-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "minestarters",
+      "eventId": "minestarters-start-batch150-20261008",
+      "type": "founding",
+      "date": "2016"
+    },
+    {
+      "profileId": "landhive",
+      "eventId": "landhive-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "arch-network",
+      "eventId": "arch-network-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "codetech",
+      "eventId": "codetech-start-batch150-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "vs1-finance",
+      "eventId": "vs1-finance-start-batch150-20261008",
+      "type": "founding",
+      "date": "2025"
+    },
+    {
+      "profileId": "beezie",
+      "eventId": "beezie-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "coinflow",
+      "eventId": "coinflow-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "dakota",
+      "eventId": "dakota-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "phygitals",
+      "eventId": "phygitals-start-batch150-20261008",
+      "type": "founding",
+      "date": "2025"
+    },
+    {
+      "profileId": "blackopal",
+      "eventId": "blackopal-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "accountable",
+      "eventId": "accountable-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "pact-protocol",
+      "eventId": "pact-protocol-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "extended",
+      "eventId": "extended-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "theo",
+      "eventId": "theo-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "galactica",
+      "eventId": "galactica-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "mannah",
+      "eventId": "mannah-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "comdex",
+      "eventId": "comdex-start-batch150-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "robinland",
+      "eventId": "robinland-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "estate-protocol",
+      "eventId": "estate-protocol-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "weown",
+      "eventId": "weown-start-batch150-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "yieldteq",
+      "eventId": "yieldteq-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "cellardao",
+      "eventId": "cellardao-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "skyhookcapital",
+      "eventId": "skyhookcapital-start-batch150-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "kreskofi",
+      "eventId": "kreskofi-start-batch150-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "arkreen",
+      "eventId": "arkreen-start-batch150-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "sologenic",
+      "eventId": "sologenic-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "portio-capital",
+      "eventId": "portio-capital-start-batch150-20261008",
+      "type": "founding",
+      "date": "2023"
+    },
+    {
+      "profileId": "cavalre-multiswap",
+      "eventId": "cavalre-multiswap-start-batch150-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "segmint-by-vaneck",
+      "eventId": "segmint-by-vaneck-start-batch150-20261008",
+      "type": "launch",
+      "date": "2024-02-28"
+    },
+    {
+      "profileId": "beanstalk",
+      "eventId": "beanstalk-start-batch150-20261008",
+      "type": "launch",
+      "date": "2021-08-06"
+    },
+    {
+      "profileId": "gold-dao",
+      "eventId": "gold-dao-start-batch150-20261008",
+      "type": "launch",
+      "date": "2023-12"
+    },
+    {
+      "profileId": "nostra-finance",
+      "eventId": "nostra-finance-start-batch150-20261008",
+      "type": "launch",
+      "date": "2022-12"
+    },
+    {
+      "profileId": "edgex",
+      "eventId": "edgex-start-batch150-20261008",
+      "type": "launch",
+      "date": "2024-08"
+    },
+    {
+      "profileId": "archblock",
+      "eventId": "archblock-start-batch150-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "noon",
+      "eventId": "noon-start-batch150-20261008",
+      "type": "founding",
+      "date": "2024"
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "profileId": "joltify",
+      "reason": "Unrelated UK EV installer."
+    },
+    {
+      "profileId": "evolve-pro",
+      "reason": "Unrelated recovery business."
+    },
+    {
+      "profileId": "blubird",
+      "reason": "Unrelated MSP marketing business."
+    },
+    {
+      "profileId": "stream-protocol",
+      "reason": "Payment company identity not established against historical project domain."
+    },
+    {
+      "profileId": "alta",
+      "reason": "Fundnel founding does not establish tokenization entry."
+    },
+    {
+      "profileId": "etana-custody",
+      "reason": "Corporate founding does not establish tokenization entry."
+    },
+    {
+      "profileId": "mimo",
+      "reason": "Older company formation needs reconciliation with initiative."
+    },
+    {
+      "profileId": "amerx",
+      "reason": "Bank requires tokenization entry."
+    },
+    {
+      "profileId": "pareto",
+      "reason": "2019 company date conflicts with submitted 2024 initiative date; reconcile Idle history."
+    },
+    {
+      "profileId": "kinka",
+      "reason": "December 2022 official source is on a domain blocked by existing directory policy; pending alternative corroboration."
+    },
+    {
+      "profileId": "r3-corda",
+      "reason": "November 2016 official source is on a domain blocked by existing directory policy; pending alternative corroboration."
+    }
+  ],
+  "remainingResearch": "320 profiles remain undated. Conflicting sources and ambiguous identities remain pending. Etherfuse remains 2019 per owner selection.",
+  "resultingCoverage": {
+    "annual": {
+      "eligible": 1154,
+      "dated": 834,
+      "yearOnly": 0,
+      "unknown": 320,
+      "future": 0
+    },
+    "quarterly": {
+      "eligible": 1154,
+      "dated": 183,
+      "yearOnly": 651,
+      "unknown": 320,
+      "future": 0
+    }
+  }
+}
