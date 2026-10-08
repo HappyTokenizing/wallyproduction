@@ -1090,5 +1090,325 @@
         "title": "Winston Artory Group \u2014 Nanne Dekking biography"
       }
     ]
+  },
+  {
+    "id": "etherfuse-start-continuation3-20261008",
+    "profileId": "etherfuse",
+    "type": "founding",
+    "date": "2019",
+    "note": "Uses the official company profile's 2019 founding year at the user's explicit direction on 2026-10-08. Solana's founder case study instead reports May 2021; that conflict remains documented rather than treated as independently resolved. No month or day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/etherfuse",
+        "title": "Etherfuse \u2014 official company profile"
+      },
+      {
+        "url": "https://solana.com/id/news/case-study-etherfuse",
+        "title": "Solana \u2014 Etherfuse founder case study (conflicting May 2021 date)"
+      }
+    ]
+  },
+  {
+    "id": "moss-start-continuation3-20261008",
+    "profileId": "moss",
+    "type": "founding",
+    "date": "2020-Q1",
+    "note": "MOSS states in its own release that it was founded in the first quarter of 2020. This is the carbon-credit token company associated with moss.earth; the December announcement date is not used as its founding date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/moss-signs-partnership-to-promote-archax-carbon-offset-301197821.html",
+        "title": "MOSS \u2014 Partnership to promote Archax carbon offset"
+      }
+    ]
+  },
+  {
+    "id": "realt-start-continuation3-20261008",
+    "profileId": "realt",
+    "type": "founding",
+    "date": "2019",
+    "note": "RealT's official company profile explicitly gives this founding year. No month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/realtplatform",
+        "title": "RealT \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "aurus-start-continuation3-20261008",
+    "profileId": "aurus",
+    "type": "founding",
+    "date": "2018",
+    "note": "The official Aurus company profile gives 2018 and identifies its gold/blockchain business and Aurus Vault Card. This dates the original company, not its subsequent mining-finance repositioning; the historical directory status is unchanged.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/aurusofficial",
+        "title": "Aurus \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "atlendis-start-continuation3-20261008",
+    "profileId": "atlendis",
+    "type": "founding",
+    "date": "2021",
+    "note": "Atlendis Labs's official company profile explicitly gives this founding year. No month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/atlendis/",
+        "title": "Atlendis Labs \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "anotherblock-start-continuation3-20261008",
+    "profileId": "anotherblock",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company pressroom names its three founders and explicitly states that anotherblock was founded in 2021. Its later 2022 marketplace/drop launch is a separate event.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.mynewsdesk.com/anotherblock/pressreleases/anotherblock-sells-out-genesis-drop-in-minutes-readies-regular-rhythm-of-music-royalty-nfts-3198985",
+        "title": "anotherblock \u2014 Genesis drop announcement and company history"
+      }
+    ]
+  },
+  {
+    "id": "brightvine-start-continuation3-20261008",
+    "profileId": "brightvine",
+    "type": "founding",
+    "date": "2020",
+    "note": "Brightvine's official company profile explicitly gives this founding year. No month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/brightvinetech/",
+        "title": "Brightvine \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "angle-start-continuation3-20261008",
+    "profileId": "angle",
+    "type": "launch",
+    "date": "2021-11-03",
+    "note": "The protocol team announces that Angle is deployed on Ethereum and that agEUR minting and burning are available starting that day. This records the protocol launch, not a company founding or its later wind-down.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://medium.com/angle-protocol/angle-is-live-on-the-ethereum-mainnet-a8253162daf0",
+        "title": "Angle \u2014 Live on the Ethereum mainnet"
+      }
+    ]
+  },
+  {
+    "id": "bosonic-start-continuation3-20261008",
+    "profileId": "bosonic",
+    "type": "founding",
+    "date": "2016",
+    "note": "Bosonic's official company profile explicitly gives this founding year. No month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/bosonic-digital",
+        "title": "Bosonic \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "bluejay-finance-start-continuation3-20261008",
+    "profileId": "bluejay-finance",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company-issued funding announcement explicitly states that Bluejay Finance was founded in 2021. The July 2022 funding date is not substituted for its founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.nasdaq.com/press-release/asia-focused-multi-currency-stablecoin-protocol-bluejay-finance-raises-%242.9m-in",
+        "title": "Bluejay Finance \u2014 Company announcement via NewsDirect / Nasdaq"
+      }
+    ]
+  },
+  {
+    "id": "jasmine-energy-start-continuation3-20261008",
+    "profileId": "jasmine-energy",
+    "type": "founding",
+    "date": "2022",
+    "note": "Y Combinator lists Jasmine Energy as founded in 2022. This is the renewable-energy certificate business, not the later launch date of its solar-incentive AI product.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.ycombinator.com/companies/jasmine-energy",
+        "title": "Y Combinator \u2014 Jasmine Energy company profile"
+      }
+    ]
+  },
+  {
+    "id": "artfi-start-continuation3-20261008",
+    "profileId": "artfi",
+    "type": "founding",
+    "date": "2021",
+    "note": "Artfi's official company profile explicitly gives this founding year. No month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/artfiglobal/",
+        "title": "Artfi \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "arkive-start-continuation3-20261008",
+    "profileId": "arkive",
+    "type": "launch",
+    "date": "2022-07-13",
+    "note": "The company release says Arkive launched out of stealth that day as a decentralized physical museum, with initial acquisitions already made. This records its public project launch, not the creation dates of artworks or a claimed legal incorporation date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.webwire.com/ViewPressRel.asp?aId=291636",
+        "title": "Arkive \u2014 Introducing the decentralized physical museum"
+      }
+    ]
+  },
+  {
+    "id": "landshare-start-continuation3-20261008",
+    "profileId": "landshare",
+    "type": "founding",
+    "date": "2021",
+    "note": "The team retrospective says Landshare began in early 2021 to bring real estate to the blockchain. Year precision is retained because early does not establish an exact quarter. Its August token launch and later real-estate offering are distinct milestones.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://landshare.medium.com/landshare-2021-a-year-in-review-372f65670df3",
+        "title": "Landshare \u2014 2021: A Year in Review"
+      }
+    ]
+  },
+  {
+    "id": "coti-start-continuation3-20261008",
+    "profileId": "coti",
+    "type": "founding",
+    "date": "2017",
+    "note": "COTI's official company profile explicitly gives 2017. This dates the original blockchain project/company, not the later Ethereum confidentiality-layer launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/coti-ltd",
+        "title": "COTI Group \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "multiversx-start-continuation3-20261008",
+    "profileId": "multiversx",
+    "type": "launch",
+    "date": "2020-07-30",
+    "note": "The project retrospective gives July 30, 2020 as the Elrond mainnet launch. MultiversX continues that network; its later rebrand is not counted as a new industry entrant.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://multiversx.com/blog/two-years-of-elrond",
+        "title": "MultiversX \u2014 Two years of Elrond"
+      }
+    ]
+  },
+  {
+    "id": "truefi-start-continuation3-20261008",
+    "profileId": "truefi",
+    "type": "launch",
+    "date": "2020-11",
+    "note": "TrueFi describes its launch as November 2020. The source does not establish an exact day; the record is for the lending protocol, not its separately listed Asset Vaults product.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://blog.truefi.io/p/unlocking-trillions-from-credit-markets",
+        "title": "TrueFi \u2014 Unlocking trillions from credit markets"
+      },
+      {
+        "url": "https://forum.truefi.io/t/proposal-establishing-the-truefi-foundation/1226",
+        "title": "TrueFi \u2014 Foundation proposal and protocol history"
+      }
+    ]
+  },
+  {
+    "id": "kava-start-continuation3-20261008",
+    "profileId": "kava",
+    "type": "launch",
+    "date": "2019-11",
+    "note": "Records the original Kava mainnet launch month. Validator Stake Capital reports operation in November 2019; Kava Labs archive documentation independently dates Kava 2 to that month. Exact-day accounts differ, so no day is assigned and the archive start is not mistaken for the original launch day.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://medium.com/stakecapital/stake-capital-supports-kava-on-mainnet-e671c9ee71ca",
+        "title": "Stake Capital \u2014 Supporting Kava on mainnet"
+      },
+      {
+        "url": "https://docs.kava.io/docs/faq/historic-data/",
+        "title": "Kava Labs \u2014 Historic mainnet data"
+      }
+    ]
+  },
+  {
+    "id": "everest-start-continuation3-20261008",
+    "profileId": "everest",
+    "type": "founding",
+    "date": "2016",
+    "note": "Everest's official company profile explicitly gives this founding year. No month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/everestdotorg/",
+        "title": "Everest \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "gluwa-start-continuation3-20261008",
+    "profileId": "gluwa",
+    "type": "founding",
+    "date": "2014",
+    "note": "Gluwa dates its incorporation to 2014 in its own milestones. The founder bio separately mentions building blockchain products since 2012; that personal history is not used as the company founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://gluwa.com/about",
+        "title": "Gluwa \u2014 Company milestones"
+      }
+    ]
+  },
+  {
+    "id": "creditcoin-start-continuation3-20261008",
+    "profileId": "creditcoin",
+    "type": "launch",
+    "date": "2019",
+    "note": "Developer Gluwa dates the Creditcoin mainnet launch to 2019. Its timeline separately says work on Creditcoin began in 2017; this event explicitly measures the network launch, not the developer company founding or later network upgrades.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://gluwa.com/about",
+        "title": "Gluwa \u2014 Creditcoin mainnet milestone"
+      }
+    ]
+  },
+  {
+    "id": "fabrica-start-continuation3-20261008",
+    "profileId": "fabrica",
+    "type": "founding",
+    "date": "2017",
+    "note": "The Techstars portfolio job board identifies the real-estate platform at fabrica.land and gives 2017 as its founding year. No month or day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://jobs.techstars.com/companies/fabrica",
+        "title": "Techstars \u2014 Fabrica portfolio company profile"
+      }
+    ]
   }
 ]

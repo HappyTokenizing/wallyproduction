@@ -1,0 +1,208 @@
+{
+  "checkedOn": "2026-10-08",
+  "baselineCommit": "83cb1dc",
+  "baselineCoverage": {
+    "eligible": 1154,
+    "dated": 640,
+    "unknown": 514
+  },
+  "scope": "Targeted continuation of missing founding and launch dates; remaining profiles have not all been resolved.",
+  "datePolicy": "Preserve source precision, company/project identity, and the institutional first-RWA-activity rule. Distinguish company formation, mainnet launch, rebrands and funding announcements.",
+  "newlySourcedProfiles": [
+    {
+      "profileId": "etherfuse",
+      "eventId": "etherfuse-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "moss",
+      "eventId": "moss-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2020-Q1"
+    },
+    {
+      "profileId": "realt",
+      "eventId": "realt-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "aurus",
+      "eventId": "aurus-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "atlendis",
+      "eventId": "atlendis-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "anotherblock",
+      "eventId": "anotherblock-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "brightvine",
+      "eventId": "brightvine-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "angle",
+      "eventId": "angle-start-continuation3-20261008",
+      "type": "launch",
+      "date": "2021-11-03"
+    },
+    {
+      "profileId": "bosonic",
+      "eventId": "bosonic-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2016"
+    },
+    {
+      "profileId": "bluejay-finance",
+      "eventId": "bluejay-finance-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "jasmine-energy",
+      "eventId": "jasmine-energy-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "artfi",
+      "eventId": "artfi-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "arkive",
+      "eventId": "arkive-start-continuation3-20261008",
+      "type": "launch",
+      "date": "2022-07-13"
+    },
+    {
+      "profileId": "landshare",
+      "eventId": "landshare-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "coti",
+      "eventId": "coti-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "multiversx",
+      "eventId": "multiversx-start-continuation3-20261008",
+      "type": "launch",
+      "date": "2020-07-30"
+    },
+    {
+      "profileId": "truefi",
+      "eventId": "truefi-start-continuation3-20261008",
+      "type": "launch",
+      "date": "2020-11"
+    },
+    {
+      "profileId": "kava",
+      "eventId": "kava-start-continuation3-20261008",
+      "type": "launch",
+      "date": "2019-11"
+    },
+    {
+      "profileId": "everest",
+      "eventId": "everest-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2016"
+    },
+    {
+      "profileId": "gluwa",
+      "eventId": "gluwa-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2014"
+    },
+    {
+      "profileId": "creditcoin",
+      "eventId": "creditcoin-start-continuation3-20261008",
+      "type": "launch",
+      "date": "2019"
+    },
+    {
+      "profileId": "fabrica",
+      "eventId": "fabrica-start-continuation3-20261008",
+      "type": "founding",
+      "date": "2017"
+    }
+  ],
+  "userDateDecision": {
+    "profileId": "etherfuse",
+    "selectedDate": "2019",
+    "reason": "User explicitly requested the earlier date. Official LinkedIn says 2019; Solana founder case study says May 2021. Both sources remain attached.",
+    "supersedesPendingReview": "founding-review-continuation2-20261008.json"
+  },
+  "pending": [
+    {
+      "profileId": "mountain-protocol",
+      "reason": "Official company profile says 2023; Bluechip assessment describes October 2022. Founding conflict remains unresolved.",
+      "sources": [
+        "https://www.linkedin.com/company/mountain-protocol/",
+        "https://assets.ctfassets.net/0x04pt0ewi4n/7eSQkMvnAGZA6jJ2a4RF3x/dd15f776a7957d00496b4d2994afd9f7/Bluechip_Assessment_-_USDM__Sep-2024_.pdf"
+      ]
+    },
+    {
+      "profileId": "sologenic",
+      "reason": "Official company profile gives 2020 but earlier histories point to 2019. Organization versus ecosystem launch must be distinguished.",
+      "sources": [
+        "https://www.linkedin.com/company/realsologenic"
+      ]
+    },
+    {
+      "profileId": "landx",
+      "reason": "December 2023 announcements give changing future launch dates. Planned dates alone are insufficient evidence of actual launch.",
+      "sources": [
+        "https://chainwire.org/2023/12/04/landx-closes-private-round-securing-5m-in-private-funding/",
+        "https://chainwire.org/2023/12/17/lndx-tokens-spectacular-190-surge-on-weekend-trade/"
+      ]
+    },
+    {
+      "profileId": "parcl-labs",
+      "reason": "Introduction article is dated July 31 in the older index and August 1 on the migrated page; it describes existing work, so publication is not treated as founding. Parent Parcl history is distinct.",
+      "sources": [
+        "https://www.parcl.co/blog/introducing-parcl-labs",
+        "https://blog.parcl.co/articles/introducing-parcl-labs"
+      ]
+    }
+  ],
+  "otherLeadsNotResolved": [
+    "kinto",
+    "lto-network",
+    "carbify",
+    "rwa-xyz",
+    "anzen"
+  ],
+  "preservation": "No profile, logo, membership, lifecycle or prior event changes.",
+  "resultCoverage": {
+    "annual": {
+      "eligible": 1154,
+      "dated": 662,
+      "yearOnly": 0,
+      "unknown": 492,
+      "future": 0
+    },
+    "quarterly": {
+      "eligible": 1154,
+      "dated": 169,
+      "yearOnly": 493,
+      "unknown": 492,
+      "future": 0
+    }
+  }
+}

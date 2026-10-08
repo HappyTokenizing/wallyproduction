@@ -94,7 +94,7 @@ sourced replacement milestones; 22 remain unverified and are excluded from the
 start charts. See `data/research/industry-entry-review-20261008.json` for every
 affected profile, superseded corporate date, evidence and pending-review reason.
 Including the subsequent founding/launch research passes, the annual chart has
-640 sourced starts among 1,154 profiles; 514 remain undated under the corrected rule.
+662 sourced starts among 1,154 profiles; 492 remain undated under the corrected rule.
 This coverage reduction is intentional: corporate age is not industry growth.
 
 The preceding source pass added 22 institution/infrastructure milestones, including
@@ -154,3 +154,22 @@ stay undated. The audit in
 and seven unresolved leads, including conflicting Etherfuse histories and
 FalconX's still-missing institutional tokenization milestone. Profiles, logos,
 membership and all previously sourced events remain unchanged.
+
+The next continuation adds 22 previously undated profiles: 16 foundings and
+six explicitly labeled launches. These include RealT, Moss, Atlendis, Aurus,
+Anotherblock, Angle, TrueFi, MultiversX, Gluwa and Creditcoin. Etherfuse uses
+2019 at the owner's explicit request; both its official company profile and
+the conflicting May 2021 founder case study remain attached to the event.
+This records the selection without claiming the source conflict was resolved.
+
+Three additions have exact days, two have months, one has a sourced quarter,
+and 16 retain year precision. Landshare's description of beginning in early
+2021 stays year-only. Kava's sources agree on November 2019 but differ on the
+day, so the month is retained. Company incorporation, developer history,
+mainnet launch and rebranding remain distinguished in the event notes.
+
+Annual coverage is now 662 of 1,154 profiles, with 492 still undated. Quarterly
+coverage is 169, with another 493 year-only starts available in annual charts.
+The audit in `data/research/founding-review-continuation3-20261008.json` records
+all additions and unresolved leads. This pass changes no company profiles,
+logos, membership, lifecycle records or previously sourced events.
