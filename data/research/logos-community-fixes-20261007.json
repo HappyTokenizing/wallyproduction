@@ -1,0 +1,106 @@
+{
+  "intesa-sanpaolo": {
+    "src": "/ecosystem/intesa-sanpaolo-brandfix-20261007.png",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "useForMembers": true,
+    "sourceUrl": "https://group.intesasanpaolo.com/etc/designs/portalgroup/clientlib-all/images/logo/ISP_logo-01.png",
+    "sourcePage": "https://group.intesasanpaolo.com/it/newsroom/PressKit",
+    "checkedOn": "2026-10-07"
+  },
+  "natwest-group": {
+    "src": "/ecosystem/natwest-group-brandfix-20261007.svg",
+    "background": "dark",
+    "shape": "wordmark",
+    "treatment": "original",
+    "useForMembers": true,
+    "sourceUrl": "https://www.natwestgroup.com/content/dam/championlogos/Logo_Wh_NatWestGroupColleague-Hor.svg",
+    "sourcePage": "https://www.natwestgroup.com/news-and-insights/news-room/photo-library/brand-logos.html",
+    "checkedOn": "2026-10-07"
+  },
+  "bank-of-england": {
+    "src": "/ecosystem/bank-of-england-brandfix-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "useForMembers": true,
+    "sourceUrl": "https://www.bankofengland.co.uk/-/media/boe/images/logo/logo-boe.svg",
+    "sourcePage": "https://www.bankofengland.co.uk/",
+    "checkedOn": "2026-10-07"
+  },
+  "world-bank": {
+    "src": "/ecosystem/world-bank-brandfix-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "useForMembers": true,
+    "sourceUrl": "https://www.worldbank.org/ext/en/media_1b9d836624bdfd028dfbe9f018f3f12e52326504c.svg",
+    "sourcePage": "https://www.worldbank.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "jadecity": {
+    "src": "/ecosystem/jadecity-brandfix-20261007.svg",
+    "background": "dark",
+    "shape": "wordmark",
+    "treatment": "original",
+    "useForMembers": true,
+    "sourceUrl": "https://cdn.prod.website-files.com/65dc6fba98c8b56a0b126321/65de0e14e8b448725236f1ff_logo%20new.svg",
+    "sourcePage": "https://jadecity.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "sui": {
+    "src": "/ecosystem/sui-brandfix-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "useForMembers": true,
+    "sourcePage": "https://live.standards.site/sui-media-kit",
+    "sourceUrl": "https://live.standards.site/sui-media-kit",
+    "assetNote": "01_Sui_Logo.zip: 01_Sui_Logo/Sui_Droplet/SVG/Logo_Sui_Droplet_Sui Blue.svg",
+    "checkedOn": "2026-10-07"
+  },
+  "rwaf-orca": {
+    "src": "/ecosystem/rwaf-orca-brandfix-20261007.svg",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://www.orca.so/",
+    "sourcePage": "https://www.orca.so/",
+    "assetNote": "Original inline header SVG.",
+    "checkedOn": "2026-10-07",
+    "useForMembers": true
+  },
+  "stellar": {
+    "src": "/ecosystem/stellar-brandfix-20261007.png",
+    "background": "light",
+    "shape": "wordmark",
+    "treatment": "original",
+    "useForMembers": true,
+    "sourceUrl": "https://cdn.sanity.io/files/e2r40yh6/production-i18n/9ef5ab890833c2571489b41a23a0ffc29307300c.zip",
+    "sourcePage": "https://stellar.org/brand-resources",
+    "assetNote": "Logo Press Kit 2026/Stellar/RGB/Stellar Logo Final Black RGB.png",
+    "checkedOn": "2026-10-07"
+  },
+  "grtwines": {
+    "src": "/ecosystem/grtwines-retained-20261003.png",
+    "background": "dark",
+    "shape": "wordmark",
+    "treatment": "original",
+    "sourceUrl": "https://www.grtwines.com/",
+    "sourcePage": "https://www.grtwines.com/",
+    "assetNote": "Existing retained brand artwork; display original colors without inversion.",
+    "checkedOn": "2026-10-07",
+    "useForMembers": true
+  },
+  "vaneck": {
+    "src": "/ecosystem/vaneck-brandfix-20261007.svg",
+    "background": "dark",
+    "shape": "wordmark",
+    "treatment": "original",
+    "useForMembers": true,
+    "sourceUrl": "https://www.vaneck.com/globalassets/home/ucits/home/icons/logo-white.svg",
+    "sourcePage": "https://www.vaneck.com/sitemap/",
+    "checkedOn": "2026-10-07"
+  }
+}

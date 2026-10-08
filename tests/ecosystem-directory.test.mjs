@@ -5,23 +5,24 @@ import path from 'node:path';
 import {filterProfiles,memberFor,safeURL,websiteFor,key,memberCount} from '../assets/ecosystem-model.js';
 const read=name=>JSON.parse(fs.readFileSync(new URL(name,import.meta.url)));
 const data=read('../data/ecosystem-directory.json'), source=read('../vendor/rwa-ecosystem-map/profiles.json');
-const research=['institutions','services','networks','requested-additions'].flatMap(name=>read(`../data/research/${name}.json`));
-const logos={...read('../data/research/logos-core.json'),...read('../data/research/logos-special.json'),...read('../data/research/logos-refinements.json'),...read('../data/research/logos-followup.json'),...read('../data/research/logos-missing.json')};
+const research=['institutions','services','networks','requested-additions','community-additions-20261007'].flatMap(name=>read(`../data/research/${name}.json`));
+const logos={...read('../data/research/logos-core.json'),...read('../data/research/logos-special.json'),...read('../data/research/logos-refinements.json'),...read('../data/research/logos-followup.json'),...read('../data/research/logos-missing.json'),...read('../data/research/logos-community-20261007.json'),...read('../data/research/logos-community-fixes-20261007.json')};
+const excluded=read('../data/research/excluded-profiles.json');
 const display=read('../data/research/logo-display.json');
 const updates=read('../data/research/profile-updates.json');
 const byId=new Map(data.profiles.map(p=>[p.id,p]));
 const state={q:'',status:'all',section:'all',members:false};
-test('all 831 source identities survive without duplicate IDs or normalized names',()=>{
+test('source identities survive except explicit owner removals, without duplicate IDs or names',()=>{
  assert.equal(source.profiles.length,831);assert.ok(data.profiles.length>1000);
- assert.equal(data.profiles.length,866+research.length);
+ assert.equal(data.profiles.length,866+research.length-Object.keys(excluded).length);
  assert.equal(new Set(data.profiles.map(p=>p.id)).size,data.profiles.length);
  assert.equal(new Set(data.profiles.map(p=>key(p.name))).size,data.profiles.length);
- for(const p of source.profiles){const imported=byId.get(p.id);assert.ok(imported);assert.equal(imported.description,updates[p.id]?.description||p.description);assert.deepEqual(imported.logo,display[p.id]?{...(logos[p.id]||p.logo),...display[p.id]}:logos[p.id]||p.logo);}
+ for(const p of source.profiles){if(excluded[p.id]){assert.ok(!byId.has(p.id));continue;}const imported=byId.get(p.id);assert.ok(imported);assert.equal(imported.description,updates[p.id]?.description||p.description);assert.deepEqual(imported.logo,display[p.id]?{...(logos[p.id]||p.logo),...display[p.id]}:logos[p.id]||p.logo);}
 });
-test('every source map placement is retained and resolves to its canonical profile',()=>{
+test('every non-excluded source map placement resolves to its canonical profile',()=>{
  let count=0;
- for(const [binding,id] of Object.entries(source.bindings)){const [section,category]=JSON.parse(binding);const c=data.sections.find(s=>s.name===section)?.categories.find(c=>c.name===category);assert.ok(c?.ids.includes(id),binding);count++;}
- assert.equal(count,844);
+ for(const [binding,id] of Object.entries(source.bindings)){if(excluded[id])continue;const [section,category]=JSON.parse(binding);const c=data.sections.find(s=>s.name===section)?.categories.find(c=>c.name===category);assert.ok(c?.ids.includes(id),binding);count++;}
+ assert.equal(count,Object.values(source.bindings).filter(id=>!excluded[id]).length);
  const mapped=new Set();for(const s of data.sections)for(const c of s.categories){assert.equal(new Set(c.ids).size,c.ids.length);for(const id of c.ids){assert.ok(byId.has(id));mapped.add(id);}}
  assert.equal(mapped.size,data.profiles.length);
 });
@@ -78,7 +79,7 @@ test('new profiles have dated official evidence and no duplicate aliases or doma
   assert.ok(p.sources.length&&p.evidenceNote&&p.categories.length,p.id);assert.ok(safeURL(p.website,p),p.id);
   for(const s of p.sources){assert.ok(s.title);assert.ok(safeURL(s.url,p),p.id);}
   for(const name of [p.name,...(p.aliases||[])]){const k=key(name);assert.ok(!identity.has(k)||identity.get(k)===p.id,`${p.id} duplicates ${identity.get(k)}`);identity.set(k,p.id);}
-  const host=p.domain.toLowerCase().replace(/^www\./,'');assert.ok(host);if(domains.has(host)){assert.equal(p.parentProfileId,domains.get(host),`${p.id} shares ${host} without a parent relationship`);assert.ok(p.relatedEntities?.some(r=>r.id===p.parentProfileId));assert.notEqual(key(p.name),key(byId.get(p.parentProfileId).name));}else domains.set(host,p.id);
+  const host=p.domain.toLowerCase().replace(/^www\./,'');assert.ok(host);if(p.directoryStatus==='review'&&host==='x.com'){assert.match(p.website,/^https:\/\/x\.com\/[a-zA-Z0-9_]+$/);}else if(domains.has(host)){assert.equal(p.parentProfileId,domains.get(host),`${p.id} shares ${host} without a parent relationship`);assert.ok(p.relatedEntities?.some(r=>r.id===p.parentProfileId));assert.notEqual(key(p.name),key(byId.get(p.parentProfileId).name));}else domains.set(host,p.id);
   const imported=byId.get(p.id);assert.ok(imported);assert.deepEqual(imported.sources,p.sources);
   for(const c of p.categories)assert.ok(data.sections.find(s=>s.name===c.section)?.categories.find(x=>x.name===c.name)?.ids.includes(p.id));
  }
@@ -89,10 +90,10 @@ test('profile links reject active protocols and former blocked domains',()=>{
  assert.equal(safeURL('https://current.example/path',p),'https://current.example/path');
  for(const profile of data.profiles)for(const related of profile.relatedEntities)assert.ok(byId.has(related.id));
 });
-test('requested additions reuse existing identities and expose all ten RWA Perps profiles',()=>{
+test('requested additions reuse existing identities and expose all requested RWA Perps profiles',()=>{
  const requested={Orca:'rwaf-orca',Aerodrome:'aerodrome',Meteora:'meteora','Base Chain by Coinbase':'base-chain','Bondi Finance':'bondi-finance',JPMorgan:'jpmorgan','Ether.fi':'ether-fi',HastraFi:'hastra','1inch':'1inch','USD.AI':'usd-ai','3Jane':'3jane','Reserve Protocol':'reserve-rights',Solstice:'solstice','Strata Markets':'strata-markets',Uniswap:'uniswap',Pact:'pact-protocol',bStocks:'bstocks',StreamEx:'streamex','Oro Finance (Gold)':'oro-finance','Lend.xyz':'lendxyz',Pharos:'pharos','Chainlink CCIP':'chainlink',XRPL:'xrp-ledger',Multipli:'multipli','Pleasing Gold':'pleasing-gold',Cap:'cap'};
  for(const [q,id] of Object.entries(requested)){assert.ok(filterProfiles(data.profiles,{...state,q,status:'current'},[]).some(p=>p.id===id),q);assert.equal(data.profiles.filter(p=>p.id===id).length,1);}
- const expected='trade-xyz variational qfex gmtrade lighter ondo-finance extended entropy paragon edgex'.split(' ').sort();
+ const expected='trade-xyz variational qfex gmtrade lighter ondo-finance extended entropy paragon edgex risex arcus hyperliquid'.split(' ').sort();
  const perps=filterProfiles(data.profiles,{...state,section:'RWA Perps',status:'current'},[]).map(p=>p.id).sort();assert.deepEqual(perps,expected);
  const mapped=data.sections.find(s=>s.name==='RWA Perps').categories.flatMap(c=>c.ids);assert.deepEqual(mapped.sort(),expected);
  assert.notEqual(byId.get('base-chain').domain,byId.get('base').domain);
@@ -123,4 +124,30 @@ test('member summary tracks the live roster while failure totals exclude unverif
  const failed=data.profiles.filter(p=>p.failedInitiative===true);assert.deepEqual(failed.map(p=>p.id),['archblock']);assert.ok(failed[0].sources.length);
  assert.ok(data.profiles.filter(p=>p.directoryStatus==='historical').length>failed.length);
  const seda=byId.get('seda-protocol');assert.ok(seda.categories.some(c=>c.section==='Oracles'));assert.ok(seda.sources.length);
+});
+
+
+test('community additions reuse existing companies and preserve renamed identities',()=>{
+ const expected={TX:'coreum',Coreum:'coreum','Real Finance':'rwaf-real','GRT Wines':'grtwines','Jade City':'jadecity','Quant':'quant','RealityFi':'realityfi'};
+ for(const [q,id] of Object.entries(expected))assert.equal(filterProfiles(data.profiles,{...state,q},[])[0]?.id,id,q);
+ assert.equal(byId.get('rwaf-real').directoryStatus,'current');
+ assert.equal(byId.get('realityfi').directoryStatus,'review');
+ assert.equal(byId.get('realityfi').website,'https://x.com/RealityFi_xyz');
+ assert.ok(!byId.get('realityfi').failedInitiative);
+ assert.ok(!filterProfiles(data.profiles,{...state,q:'RealityFi',status:'current'},[]).length);
+ assert.equal(byId.get('coreum').name,'TX');assert.ok(!byId.has('tx'));
+ assert.ok(!byId.has('novastro'));
+ for(const s of data.sections)for(const c of s.categories)assert.ok(!c.ids.includes('novastro'));
+});
+test('Collectibles and Data categories group canonical companies without duplicating them',()=>{
+ for(const [section,ids] of Object.entries({'Collectibles':['collector-crypt','beezie','phygitals','courtyard','dualmint','grtwines'],'Data & analytics':['rwa-xyz','defillama','token-terminal','refraction-research','dune','blockworks']})){
+  const profiles=filterProfiles(data.profiles,{...state,section,status:'current'},[]);
+  for(const id of ids)assert.ok(profiles.some(p=>p.id===id),section+': '+id);
+  assert.equal(new Set(profiles.map(p=>p.id)).size,profiles.length);
+ }
+});
+test('community logo repairs retain original artwork and dated provenance',()=>{
+ for(const id of ['stellar','sui','intesa-sanpaolo','natwest-group','bank-of-england','world-bank','rwaf-orca','grtwines','jadecity','vaneck']){
+  const logo=byId.get(id).logo;assert.equal(logo.treatment,'original',id);assert.ok(logo.sourceUrl&&logo.sourcePage,id);assert.equal(logo.checkedOn,'2026-10-07');
+ }
 });

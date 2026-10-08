@@ -1,0 +1,1192 @@
+[
+  {
+    "id": "collector-crypt",
+    "name": "Collector Crypt",
+    "kind": "Protocol or platform",
+    "description": "Marketplace connecting vaulted physical trading cards and collectibles with digital ownership, trading and redemption.",
+    "website": "https://collectorcrypt.com/",
+    "domain": "collectorcrypt.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Collectibles",
+        "name": "Trading cards and collectibles"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://collectorcrypt.com/",
+        "title": "Collector Crypt \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Collector Crypto",
+      "Collector_Crypt"
+    ]
+  },
+  {
+    "id": "beezie",
+    "name": "Beezie",
+    "kind": "Protocol or platform",
+    "description": "Collectibles platform offering digital trading and physical redemption of vaulted cards and other collectibles.",
+    "website": "https://beezie.com/",
+    "domain": "beezie.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Collectibles",
+        "name": "Trading cards and collectibles"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.beezie.com/",
+        "title": "Beezie \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "phygitals",
+    "name": "Phygitals",
+    "kind": "Protocol or platform",
+    "description": "Marketplace for vaulted trading cards, with digital pack openings, secondary trading and physical redemption.",
+    "website": "https://phygitals.com/",
+    "domain": "phygitals.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Collectibles",
+        "name": "Trading cards and collectibles"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://phygitals.com/",
+        "title": "Phygitals \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "ink-chain",
+    "name": "Ink",
+    "kind": "Blockchain network",
+    "description": "Ethereum Layer 2 built on the OP Stack by Kraken, supporting DeFi, payments and tokenized-asset applications.",
+    "website": "https://inkonchain.com/",
+    "domain": "inkonchain.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://inkonchain.com/",
+        "title": "Ink \u2014 official product information"
+      },
+      {
+        "url": "https://support.kraken.com/articles/xstocks-faq",
+        "title": "Kraken \u2014 xStocks supported networks"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Ink blockchain"
+    ]
+  },
+  {
+    "id": "optimism",
+    "name": "Optimism",
+    "kind": "Blockchain network",
+    "description": "Ethereum scaling infrastructure and the OP Stack, supporting Layer 2 networks and applications for payments and onchain finance.",
+    "website": "https://www.optimism.io/",
+    "domain": "optimism.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.optimism.io/",
+        "title": "Optimism \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "blackopal",
+    "name": "BlackOpal",
+    "kind": "Protocol or platform",
+    "description": "Asset-backed financing platform connecting emerging-market receivables with traditional and onchain capital.",
+    "website": "https://www.blackopal.finance/",
+    "domain": "blackopal.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Private credit"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.blackopal.finance/",
+        "title": "BlackOpal \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "asseto-finance",
+    "name": "Asseto Finance",
+    "kind": "Protocol or platform",
+    "description": "Asset-tokenization infrastructure connecting financial assets and investment strategies with onchain capital markets.",
+    "website": "https://asseto.finance/",
+    "domain": "asseto.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://asseto.finance/",
+        "title": "Asseto Finance \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Asseto"
+    ]
+  },
+  {
+    "id": "tenbin-labs",
+    "name": "Tenbin Labs",
+    "kind": "Protocol or platform",
+    "description": "Tokenization protocol for foreign exchange, commodities and precious metals, combining institutional liquidity with onchain settlement.",
+    "website": "https://www.tenbinlabs.xyz/",
+    "domain": "tenbinlabs.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.tenbinlabs.xyz/",
+        "title": "Tenbin Labs \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "uranium-io",
+    "name": "Uranium.io",
+    "kind": "Protocol or platform",
+    "description": "Platform for xU3O8, a token representing fractional exposure to physical uranium held at licensed storage facilities; supported by Archax, Curzon Uranium and Tezos.",
+    "website": "https://uranium.io/en",
+    "domain": "uranium.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://uranium.io/en",
+        "title": "Uranium.io \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "defillama",
+    "name": "DefiLlama",
+    "kind": "Data provider",
+    "description": "Open-source analytics platform tracking DeFi liquidity, revenue, stablecoins, tokenized assets and activity across blockchains.",
+    "website": "https://defillama.com/",
+    "domain": "defillama.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Data & analytics",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://defillama.com/about",
+        "title": "DefiLlama \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "token-terminal",
+    "name": "Token Terminal",
+    "kind": "Data provider",
+    "description": "Blockchain data platform providing standardized financial and operational metrics for protocols and tokenized assets.",
+    "website": "https://tokenterminal.com/",
+    "domain": "tokenterminal.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Data & analytics",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://tokenterminal.com/",
+        "title": "Token Terminal \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Tokenterminal"
+    ]
+  },
+  {
+    "id": "dune",
+    "name": "Dune",
+    "kind": "Data provider",
+    "description": "Blockchain analytics platform for querying onchain data, publishing dashboards and building research datasets.",
+    "website": "https://dune.com/",
+    "domain": "dune.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Data & analytics",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://dune.com/about",
+        "title": "Dune \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "blockworks",
+    "name": "Blockworks",
+    "kind": "Data provider",
+    "description": "Digital-asset research and analytics provider covering protocols, tokenized assets, market structure and institutional adoption.",
+    "website": "https://app.blockworks.com/",
+    "domain": "app.blockworks.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Data & analytics",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://app.blockworks.com/",
+        "title": "Blockworks \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "pineapple-financial",
+    "name": "Pineapple Financial",
+    "kind": "Protocol or platform",
+    "description": "Mortgage-finance company developing blockchain-based mortgage data records and asset infrastructure through Pineapple Digital Assets. Digitized records are distinct from ownership of the underlying loans.",
+    "website": "https://pineappledigitalassets.com/",
+    "domain": "pineappledigitalassets.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pineappledigitalassets.com/",
+        "title": "Pineapple Financial \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "bridgetower",
+    "name": "BridgeTower",
+    "kind": "Protocol or platform",
+    "description": "Institutional blockchain infrastructure provider supporting staking, digital securities and tokenization workflows.",
+    "website": "https://www.bridgetowercapital.com/",
+    "domain": "bridgetowercapital.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bridgetowercapital.com/press",
+        "title": "BridgeTower \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "accountable",
+    "name": "Accountable",
+    "kind": "Protocol or platform",
+    "description": "Financial verification infrastructure that proves assets and liabilities using cryptographic evidence, supporting transparent institutional credit and tokenized products.",
+    "website": "https://accountable.capital/",
+    "domain": "accountable.capital",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://accountable.capital/",
+        "title": "Accountable \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "goldfish-gold",
+    "name": "Goldfish Gold",
+    "kind": "Protocol or platform",
+    "description": "Provider of GGBR, a token backed by gold-reserve-backed securities. The documented collateral structure differs from direct ownership of allocated bullion.",
+    "website": "https://goldfishgold.com/about",
+    "domain": "goldfishgold.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://goldfishgold.com/about",
+        "title": "Goldfish Gold \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "noon",
+    "name": "Noon",
+    "kind": "Protocol or platform",
+    "description": "Stablecoin protocol providing USN and a staked yield-bearing form, with reserve, strategy and solvency disclosures.",
+    "website": "https://noon.capital/",
+    "domain": "noon.capital",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://noon.capital/",
+        "title": "Noon \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "risex",
+    "name": "RISEx",
+    "kind": "Protocol or platform",
+    "description": "Exchange on RISE with perpetual markets covering crypto, equities and commodities. Perpetuals provide derivative exposure rather than ownership of the underlying assets.",
+    "website": "https://risechain.com/",
+    "domain": "risechain.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://risechain.com/",
+        "title": "RISEx \u2014 official product information"
+      },
+      {
+        "url": "https://docs.risechain.com/",
+        "title": "RISE \u2014 RISEx documentation"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "backpack",
+    "name": "Backpack",
+    "kind": "Protocol or platform",
+    "description": "Trading platform combining crypto, perpetual futures, stocks and ETFs with portfolio margin, lending and wallet services; availability varies by jurisdiction.",
+    "website": "https://backpack.exchange/",
+    "domain": "backpack.exchange",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Brokerage & exchanges",
+        "name": "Digital asset exchanges"
+      },
+      {
+        "section": "Wallets",
+        "name": "Wallets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://backpack.exchange/",
+        "title": "Backpack \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "gaib",
+    "name": "GAIB",
+    "kind": "Protocol or platform",
+    "description": "Financing platform for GPUs and robotics, connecting compute-related cash flows with onchain products including AID and sAID.",
+    "website": "https://www.gaib.ai/",
+    "domain": "gaib.ai",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Asset financing"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.gaib.ai/",
+        "title": "GAIB \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "pancakeswap",
+    "name": "PancakeSwap",
+    "kind": "Protocol or platform",
+    "description": "Multichain decentralized exchange providing swaps, liquidity pools and related trading infrastructure.",
+    "website": "https://pancakeswap.finance/",
+    "domain": "pancakeswap.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pancakeswap.finance/",
+        "title": "PancakeSwap \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "raydium",
+    "name": "Raydium",
+    "kind": "Protocol or platform",
+    "description": "Solana automated-market-maker and liquidity protocol supporting token swaps and liquidity provision.",
+    "website": "https://raydium.io/",
+    "domain": "raydium.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://raydium.io/",
+        "title": "Raydium \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "hyperliquid",
+    "name": "Hyperliquid",
+    "kind": "Protocol or platform",
+    "description": "Blockchain and trading infrastructure supporting spot and perpetual markets, including commodity, equity, index and FX exposure through ecosystem venues.",
+    "website": "https://hyperliquid.xyz/",
+    "domain": "hyperliquid.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      },
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://hyperliquid.xyz/",
+        "title": "Hyperliquid \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Hyper liquid"
+    ]
+  },
+  {
+    "id": "kraken",
+    "name": "Kraken",
+    "kind": "Protocol or platform",
+    "description": "Digital-asset exchange offering crypto trading and tokenized equity products such as xStocks to eligible users.",
+    "website": "https://www.kraken.com/",
+    "domain": "kraken.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Brokerage & exchanges",
+        "name": "Digital asset exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://support.kraken.com/articles/xstocks-faq",
+        "title": "Kraken \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "rivool-finance",
+    "name": "Rivool Finance",
+    "kind": "Protocol or platform",
+    "description": "Financial platform providing self-custodial access to digital assets, dollar payments and tokenized real-world assets.",
+    "website": "https://rivool.finance/",
+    "domain": "rivool.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Fintech",
+        "name": "Payments"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://rivool.finance/",
+        "title": "Rivool Finance \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "coinbase",
+    "name": "Coinbase",
+    "kind": "Protocol or platform",
+    "description": "Digital-asset exchange and institutional services provider offering trading, custody and infrastructure for onchain finance.",
+    "website": "https://www.coinbase.com/",
+    "domain": "coinbase.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Brokerage & exchanges",
+        "name": "Digital asset exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.coinbase.com/institutional",
+        "title": "Coinbase \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "zebec-network",
+    "name": "Zebec Network",
+    "kind": "Protocol or platform",
+    "description": "Payments infrastructure supporting real-time payroll, stablecoin wages, crypto cards and multichain settlement.",
+    "website": "https://zebec.io/",
+    "domain": "zebec.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Fintech",
+        "name": "Payments"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://zebec.io/",
+        "title": "Zebec Network \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "ton",
+    "name": "TON",
+    "kind": "Blockchain network",
+    "description": "The Open Network, a smart-contract blockchain supporting token issuance, payments and consumer applications.",
+    "website": "https://ton.org/",
+    "domain": "ton.org",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://docs.ton.org/",
+        "title": "TON \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "TON blockchain",
+      "The Open Network"
+    ]
+  },
+  {
+    "id": "zig-finance",
+    "name": "ZIG Finance",
+    "kind": "Blockchain network",
+    "description": "Onchain-finance ecosystem combining ZIG Markets, ZIG Chain and ZIG Labs; its Layer 1 supports tokenized financial products and asset lifecycle infrastructure.",
+    "website": "https://zig.finance/about",
+    "domain": "zig.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://zig.finance/about",
+        "title": "ZIG Finance \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "ZIG",
+      "ZIGChain",
+      "ZIG Chain",
+      "Zignaly"
+    ]
+  },
+  {
+    "id": "multibank",
+    "name": "MultiBank Group",
+    "kind": "Protocol or platform",
+    "description": "Financial-services group offering brokerage and digital-asset trading, with tokenization initiatives through its affiliated platforms.",
+    "website": "https://www.multibankgroup.com/",
+    "domain": "multibankgroup.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Brokerage & exchanges",
+        "name": "Brokerage"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.multibankgroup.com/",
+        "title": "MultiBank Group \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Multi Bank",
+      "MultiBank"
+    ]
+  },
+  {
+    "id": "aster",
+    "name": "Aster",
+    "kind": "Protocol or platform",
+    "description": "Decentralized exchange focused on perpetual trading, with multichain support and collateral-yield features.",
+    "website": "https://www.asterdex.com/",
+    "domain": "asterdex.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.asterdex.com/",
+        "title": "Aster \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "starknet",
+    "name": "Starknet",
+    "kind": "Blockchain network",
+    "description": "Zero-knowledge execution and scaling network supporting smart contracts and financial applications in the Ethereum and Bitcoin ecosystems.",
+    "website": "https://www.starknet.io/",
+    "domain": "starknet.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.starknet.io/",
+        "title": "Starknet \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "byreal",
+    "name": "Byreal",
+    "kind": "Protocol or platform",
+    "description": "Solana decentralized exchange using concentrated liquidity to support spot trading.",
+    "website": "https://byreal.io/",
+    "domain": "byreal.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Decentralized exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://byreal.io/",
+        "title": "Byreal \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "open-standard",
+    "name": "Open Standard",
+    "kind": "Protocol or platform",
+    "description": "Company operating Open USD (OUSD), a stablecoin designed for business payments and settlement with partner participation in governance and reserve economics.",
+    "website": "https://joinopenstandard.com/",
+    "domain": "joinopenstandard.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Builders"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://joinopenstandard.com/",
+        "title": "Open Standard \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "bybit",
+    "name": "Bybit",
+    "kind": "Protocol or platform",
+    "description": "Digital-asset exchange offering crypto markets and tokenized equities through xStocks for eligible users.",
+    "website": "https://www.bybit.com/",
+    "domain": "bybit.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Brokerage & exchanges",
+        "name": "Digital asset exchanges"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bybit.com/en/learn/rwa/what-are-tokenized-stocks",
+        "title": "Bybit \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "united-stables",
+    "name": "United Stables",
+    "kind": "Protocol or platform",
+    "description": "Issuer of U, a dollar-pegged token backed by fiat currency and other stablecoins, designed for payments, settlement and onchain liquidity.",
+    "website": "https://www.u.tech/",
+    "domain": "u.tech",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.u.tech/",
+        "title": "United Stables \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "saturn-credit",
+    "name": "Saturn Credit",
+    "kind": "Protocol or platform",
+    "description": "Structured-finance protocol providing USDat backed by tokenized Treasury bills and a staked product exposed to digital credit, including Strategy STRC.",
+    "website": "https://saturn.credit/",
+    "domain": "saturn.credit",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Private credit"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://saturn.credit/",
+        "title": "Saturn Credit \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "barclays",
+    "name": "Barclays",
+    "kind": "Financial services",
+    "description": "British universal bank with consumer, corporate and investment-banking operations, included among institutions relevant to digital-finance adoption.",
+    "website": "https://home.barclays/",
+    "domain": "home.barclays",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Institutions",
+        "name": "Banks and financial institutions"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://home.barclays/",
+        "title": "Barclays \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "sofi",
+    "name": "SoFi",
+    "kind": "Financial services",
+    "description": "Digital financial-services company offering banking, investing and crypto services, including the SoFiUSD payment stablecoin through SoFi Bank.",
+    "website": "https://www.sofi.com/",
+    "domain": "sofi.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Neobanks",
+        "name": "Neobanks"
+      },
+      {
+        "section": "Stablecoins",
+        "name": "Stablecoin Issuers"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.sofi.com/crypto/sofiusd/",
+        "title": "SoFi \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": []
+  },
+  {
+    "id": "lifi",
+    "name": "LI.FI",
+    "kind": "Protocol or platform",
+    "description": "Cross-chain liquidity aggregation and routing infrastructure connecting decentralized exchanges and bridges for stablecoins, tokenized assets and other tokens.",
+    "website": "https://li.fi/",
+    "domain": "li.fi",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Interoperability"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://li.fi/",
+        "title": "LI.FI \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "LiFi",
+      "LI FI"
+    ]
+  },
+  {
+    "id": "refraction-research",
+    "name": "Refraction Research",
+    "kind": "Data provider",
+    "description": "Research and market-structure analytics for tokenized assets through RWA Markets, covering trading volume, liquidity, funding, flows and yields.",
+    "website": "https://rwa-markets.xyz/",
+    "domain": "rwa-markets.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Data & analytics",
+        "name": "Data and research"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://forum.pyth.network/t/community-council-term-2-six-month-mid-term-report/2704",
+        "title": "Pyth Community Council \u2014 RWA Markets research"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Refraction",
+      "RefractionRWA",
+      "RWA Markets"
+    ]
+  },
+  {
+    "id": "arcus",
+    "name": "Arcus",
+    "kind": "Protocol or platform",
+    "description": "Trading platform on Robinhood Chain for stock tokens and planned perpetual markets. The reviewed website still advertises a perpetuals waitlist; stock tokens and derivatives do not confer ordinary shareholder rights.",
+    "website": "https://arcus.xyz/",
+    "domain": "arcus.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWA Perps",
+        "name": "Perpetual markets"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arcus.xyz/",
+        "title": "Arcus \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Arcus_xyz"
+    ]
+  },
+  {
+    "id": "arch-network",
+    "name": "Arch Network",
+    "kind": "Blockchain network",
+    "description": "Bitcoin-native financial-market infrastructure enabling programmable settlement, credit and trading applications through the Arch execution environment.",
+    "website": "https://arch.network/",
+    "domain": "arch.network",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://arch.network/",
+        "title": "Arch Network \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Arch",
+      "ArchNtwrk"
+    ]
+  },
+  {
+    "id": "pi-network",
+    "name": "Pi Network",
+    "kind": "Blockchain network",
+    "description": "Blockchain ecosystem focused on accessible payments and consumer applications. A dedicated RWA tokenization deployment was not verified in this review.",
+    "website": "https://minepi.com/",
+    "domain": "minepi.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://minepi.com/",
+        "title": "Pi Network \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Pi"
+    ]
+  },
+  {
+    "id": "pons",
+    "name": "Pons",
+    "kind": "Protocol or platform",
+    "description": "Non-custodial token launchpad and trading interface on Robinhood Chain. It is listed as trading infrastructure, not as a licensed stock broker.",
+    "website": "https://www.ponsfamily.com/",
+    "domain": "ponsfamily.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "Trading and liquidity",
+        "name": "Token launchpads"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ponsfamily.com/",
+        "title": "Pons \u2014 official product information"
+      }
+    ],
+    "evidenceNote": "Reviewed dated official product or documentation sources. Inclusion does not imply availability in every jurisdiction or endorsement.",
+    "aliases": [
+      "Ponsfamily"
+    ]
+  },
+  {
+    "id": "realityfi",
+    "name": "RealityFi",
+    "kind": "Directory entry",
+    "description": "Project with a public X profile. Its website is reported unavailable and current operations and product details await verification.",
+    "website": "https://x.com/RealityFi_xyz",
+    "domain": "x.com",
+    "directoryStatus": "review",
+    "statusNote": "Review pending: website reported unavailable; not classified as failed.",
+    "checkedOn": "2026-10-07",
+    "categories": [
+      {
+        "section": "RWAF directory",
+        "name": "Protocols"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://x.com/RealityFi_xyz",
+        "title": "RealityFi \u2014 supplied official X profile"
+      }
+    ],
+    "evidenceNote": "Handle supplied by the site owner. Current operating status remains unverified.",
+    "aliases": [
+      "Reality",
+      "RealityFi_xyz"
+    ]
+  }
+]

@@ -140,5 +140,123 @@
     "evidenceNote": "Archblock\u2019s official website reports ceased operations and Chapter 11 bankruptcy; the court notice confirms the proceeding. This explicitly documented failure is distinct from unverified historical records.",
     "aliases": [],
     "addCategories": []
+  },
+  "rwaf-real": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.real.finance/about",
+        "title": "Real Finance \u2014 official information"
+      }
+    ],
+    "website": "https://www.real.finance/",
+    "domain": "real.finance",
+    "directoryStatus": "current",
+    "statusNote": "Reviewed official network roadmap; mainnet launch remains a stated target.",
+    "addCategories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      }
+    ],
+    "description": "Purpose-built Layer 1 infrastructure for tokenized financial markets, connecting issuance, asset metadata, custody, settlement and distribution. The roadmap targets mainnet after testnet validation."
+  },
+  "coreum": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://docs.tx.org/docs/next/sologenic-coreum-merger/introduction",
+        "title": "TX \u2014 official information"
+      }
+    ],
+    "name": "TX",
+    "aliases": [
+      "Coreum",
+      "TX blockchain"
+    ],
+    "website": "https://tx.org/",
+    "domain": "tx.org",
+    "description": "TX is the successor network formed from the Coreum and Sologenic merger, providing enterprise blockchain infrastructure for tokenized assets and financial applications."
+  },
+  "grtwines": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.grtwines.com/",
+        "title": "GRT Wines \u2014 official information"
+      }
+    ],
+    "name": "GRT Wines",
+    "aliases": [
+      "GrtWines"
+    ],
+    "addCategories": [
+      {
+        "section": "Collectibles",
+        "name": "Wine and alternative collectibles"
+      }
+    ],
+    "description": "Fine-wine platform transitioning from its original tokenized marketplace toward wine-backed financing infrastructure; existing marketplace holders can redeem their wine."
+  },
+  "jadecity": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://jadecity.io/",
+        "title": "Jade City \u2014 official information"
+      }
+    ],
+    "name": "Jade City",
+    "aliases": [
+      "JadeCity"
+    ],
+    "website": "https://jadecity.io/",
+    "domain": "jadecity.io",
+    "description": "Jade-focused real-world-asset platform building tokenized access and rewards linked to jade gemstones."
+  },
+  "courtyard": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://courtyard.io/",
+        "title": "Courtyard \u2014 official information"
+      }
+    ],
+    "addCategories": [
+      {
+        "section": "Collectibles",
+        "name": "Trading cards and collectibles"
+      }
+    ]
+  },
+  "dualmint": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.dualmint.com/",
+        "title": "DualMint \u2014 official information"
+      }
+    ],
+    "addCategories": [
+      {
+        "section": "Collectibles",
+        "name": "Physical asset tokenization"
+      }
+    ]
+  },
+  "rwa-xyz": {
+    "checkedOn": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://app.rwa.xyz/",
+        "title": "RWA.xyz \u2014 official information"
+      }
+    ],
+    "addCategories": [
+      {
+        "section": "Data & analytics",
+        "name": "Data and research"
+      }
+    ]
   }
 }

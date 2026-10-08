@@ -40,7 +40,7 @@ function place(p,categories){
  }
 }
 const researched=[];
-for(const name of ['institutions.json','services.json','networks.json','requested-additions.json']){
+for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json']){
  for(const entry of researchRead(name)){
   if(byId.has(entry.id)||profiles.some(p=>norm(p.name)===norm(entry.name)))throw Error('Duplicate research identity: '+entry.name);
   if(!entry.sources?.length||!entry.checkedOn||!entry.categories?.length)throw Error('Incomplete research: '+entry.name);
@@ -61,7 +61,7 @@ for(const [id,update] of Object.entries(profileUpdates)){
  for(const c of addCategories)if(!p.categories.some(x=>x.section===c.section&&x.name===c.name))p.categories.push(c);
  place(p,addCategories);
 }
-const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json'),...researchRead('logos-followup.json'),...researchRead('logos-missing.json')};
+const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json'),...researchRead('logos-followup.json'),...researchRead('logos-missing.json'),...researchRead('logos-community-20261007.json'),...researchRead('logos-community-fixes-20261007.json')};
 // Phantom already has a Stablecoin Builders placement; expose the same identity under Wallets.
 const phantom=byId.get('phantom');
 if(!phantom.categories.some(c=>c.section==='Wallets'&&c.name==='Wallets'))phantom.categories.push({section:'Wallets',name:'Wallets'});
@@ -77,7 +77,16 @@ for(const [id,display] of Object.entries(researchRead('logo-display.json'))){
  if(!p?.logo||Object.keys(display).some(k=>k!=='background')||!['light','dark'].includes(display.background))throw Error('Invalid logo display correction: '+id);
  Object.assign(p.logo,display);
 }
-const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
+// Owner-requested removals are explicit and reproducible without altering the vendor snapshot.
+const excludedProfiles=researchRead('excluded-profiles.json');
+for(const [id,removal] of Object.entries(excludedProfiles)){
+ if(!byId.has(id)||!removal.reason||!removal.requestedOn)throw Error('Invalid exclusion: '+id);
+ byId.delete(id);profiles.splice(profiles.findIndex(p=>p.id===id),1);
+ for(const section of sections)for(const category of section.categories)category.ids=category.ids.filter(x=>x!==id);
+ for(const p of profiles)p.relatedEntities=p.relatedEntities.filter(x=>x.id!==id);
+ for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
+}
+const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,excludedProfiles:Object.keys(excludedProfiles),updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
 const output={snapshotDate:'2026-10-07',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');

@@ -1,7 +1,7 @@
 {
   "checkedOn": "2026-10-07",
-  "totalProfiles": 1084,
-  "profilesWithLogo": 1070,
+  "totalProfiles": 1130,
+  "profilesWithLogo": 1115,
   "activeProfilesWithoutLogo": 0,
   "unresolved": [
     {
@@ -87,6 +87,12 @@
       "name": "PARC-3643",
       "status": "review",
       "reason": "Identity or logo source not sufficiently verified; retain initials rather than substitute another organization."
+    },
+    {
+      "id": "realityfi",
+      "name": "RealityFi",
+      "status": "review",
+      "reason": "Owner supplied the X profile; current operation and official artwork remain unverified."
     }
   ]
 }

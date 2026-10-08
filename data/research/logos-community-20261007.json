@@ -1,0 +1,421 @@
+{
+  "collector-crypt": {
+    "src": "/ecosystem/collector-crypt-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://collectorcrypt.com/logo.svg",
+    "sourcePage": "https://collectorcrypt.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "ink-chain": {
+    "src": "/ecosystem/ink-chain-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://inkonchain.com/icon.svg?163528741f97f677",
+    "sourcePage": "https://inkonchain.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "optimism": {
+    "src": "/ecosystem/optimism-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.sanity.io/images/y6ka751a/production/b5455d6825417cb9be16dfda5471a72360102118-64x64.png?w=180&h=180&fm=png&fit=fill&auto=format",
+    "sourcePage": "https://www.optimism.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "blackopal": {
+    "src": "/ecosystem/blackopal-community-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.blackopal.finance/favicon.ico",
+    "sourcePage": "https://www.blackopal.finance/",
+    "checkedOn": "2026-10-07"
+  },
+  "asseto-finance": {
+    "src": "/ecosystem/asseto-finance-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://asseto.finance/icon?f8eda2bd0a54feae",
+    "sourcePage": "https://asseto.finance/",
+    "checkedOn": "2026-10-07"
+  },
+  "tenbin-labs": {
+    "src": "/ecosystem/tenbin-labs-community-20261007.jpg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.tenbinlabs.xyz/tenbin-favicon.jpg",
+    "sourcePage": "https://www.tenbinlabs.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "uranium-io": {
+    "src": "/ecosystem/uranium-io-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://uranium.io/favicon.svg",
+    "sourcePage": "https://uranium.io/en",
+    "checkedOn": "2026-10-07"
+  },
+  "defillama": {
+    "src": "/ecosystem/defillama-community-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://defillama.com/favicon.ico",
+    "sourcePage": "https://defillama.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "token-terminal": {
+    "src": "/ecosystem/token-terminal-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://tokenterminal.com/apple-touch-icon.png",
+    "sourcePage": "https://tokenterminal.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "dune": {
+    "src": "/ecosystem/dune-community-20261007.ico",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://dune.com/favicon.ico",
+    "sourcePage": "https://dune.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "blockworks": {
+    "src": "/ecosystem/blockworks-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://app.blockworks.com/icon.svg?icon.08w22vp8tug7p.svg",
+    "sourcePage": "https://app.blockworks.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "pineapple-financial": {
+    "src": "/ecosystem/pineapple-financial-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://pineappledigitalassets.com/favicon.webp",
+    "sourcePage": "https://pineappledigitalassets.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "accountable": {
+    "src": "/ecosystem/accountable-community-20261007.ico",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://accountable.capital/favicon-light.ico",
+    "sourcePage": "https://accountable.capital/",
+    "checkedOn": "2026-10-07"
+  },
+  "goldfish-gold": {
+    "src": "/ecosystem/goldfish-gold-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://goldfishgold.com/goldfish-logo.svg",
+    "sourcePage": "https://goldfishgold.com/about",
+    "checkedOn": "2026-10-07"
+  },
+  "noon": {
+    "src": "/ecosystem/noon-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://noon.capital/favicon.png",
+    "sourcePage": "https://noon.capital/",
+    "checkedOn": "2026-10-07"
+  },
+  "risex": {
+    "src": "/ecosystem/risex-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://risechain.com/icons/favi.png",
+    "sourcePage": "https://risechain.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "backpack": {
+    "src": "/ecosystem/backpack-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://backpack.exchange/favicon-64x64.png",
+    "sourcePage": "https://backpack.exchange/",
+    "checkedOn": "2026-10-07"
+  },
+  "gaib": {
+    "src": "/ecosystem/gaib-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.gaib.ai/favicon.svg",
+    "sourcePage": "https://www.gaib.ai/",
+    "checkedOn": "2026-10-07"
+  },
+  "pancakeswap": {
+    "src": "/ecosystem/pancakeswap-community-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://pancakeswap.finance/favicon.ico",
+    "sourcePage": "https://pancakeswap.finance/",
+    "checkedOn": "2026-10-07"
+  },
+  "raydium": {
+    "src": "/ecosystem/raydium-community-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://raydium.io/favicon.ico",
+    "sourcePage": "https://raydium.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "hyperliquid": {
+    "src": "/ecosystem/hyperliquid-community-20261007.png",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://hyperliquid.xyz/apple-touch-icon.png",
+    "sourcePage": "https://hyperliquid.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "kraken": {
+    "src": "/ecosystem/kraken-community-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.kraken.com/favicon.ico",
+    "sourcePage": "https://www.kraken.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "rivool-finance": {
+    "src": "/ecosystem/rivool-finance-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://rivool.finance/favicon.svg",
+    "sourcePage": "https://rivool.finance/",
+    "checkedOn": "2026-10-07"
+  },
+  "coinbase": {
+    "src": "/ecosystem/coinbase-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.coinbase.com/apple-touch-icon.png",
+    "sourcePage": "https://www.coinbase.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "zebec-network": {
+    "src": "/ecosystem/zebec-network-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn.prod.website-files.com/68caaf537569afdf5b2312c1/68cdcc9586fe0c90ce83407e_fav.png",
+    "sourcePage": "https://zebec.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "zig-finance": {
+    "src": "/ecosystem/zig-finance-community-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://zig.finance/favicon.v3.ico",
+    "sourcePage": "https://zig.finance/about",
+    "checkedOn": "2026-10-07"
+  },
+  "starknet": {
+    "src": "/ecosystem/starknet-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.starknet.io/wp-content/uploads/2024/05/SN-Symbol-Flat-colour.png",
+    "sourcePage": "https://www.starknet.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "byreal": {
+    "src": "/ecosystem/byreal-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://s1.bycsi.com/bybit/deadpool/image-2ff8fb0670c440f98d9d890f15202655.png",
+    "sourcePage": "https://byreal.io/",
+    "checkedOn": "2026-10-07"
+  },
+  "open-standard": {
+    "src": "/ecosystem/open-standard-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://joinopenstandard.com/favicon.svg",
+    "sourcePage": "https://joinopenstandard.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "united-stables": {
+    "src": "/ecosystem/united-stables-community-20261007.ico",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.u.tech/images/favicon.ico",
+    "sourcePage": "https://www.u.tech/",
+    "checkedOn": "2026-10-07"
+  },
+  "barclays": {
+    "src": "/ecosystem/barclays-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://home.barclays/content/dam/icons/favicons/barclays/apple-touch-icon-180x180.png",
+    "sourcePage": "https://home.barclays/",
+    "checkedOn": "2026-10-07"
+  },
+  "sofi": {
+    "src": "/ecosystem/sofi-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.sofi.com/apple-touch-icon.png",
+    "sourcePage": "https://www.sofi.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "lifi": {
+    "src": "/ecosystem/lifi-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/Ko1d3psdNJC0B6qdn12wnLc.svg",
+    "sourcePage": "https://li.fi/",
+    "checkedOn": "2026-10-07"
+  },
+  "refraction-research": {
+    "src": "/ecosystem/refraction-research-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://rwa-markets.xyz/favicon.svg",
+    "sourcePage": "https://rwa-markets.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "arcus": {
+    "src": "/ecosystem/arcus-community-20261007.svg",
+    "background": "dark",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://framerusercontent.com/images/guf5M0HuNqEnFtbTOGRhtZGfWsU.svg",
+    "sourcePage": "https://arcus.xyz/",
+    "checkedOn": "2026-10-07"
+  },
+  "arch-network": {
+    "src": "/ecosystem/arch-network-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://arch.network/favicon.png",
+    "sourcePage": "https://arch.network/",
+    "checkedOn": "2026-10-07"
+  },
+  "pi-network": {
+    "src": "/ecosystem/pi-network-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://cdn-ilehkna.nitrocdn.com/HWkhaRwUyufobGYsEqsSlFCDqvvZeqjw/assets/images/optimized/rev-ce91d41/minepi.com/wp-content/uploads/2022/06/cropped-pi1-192x192.png",
+    "sourcePage": "https://minepi.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "pons": {
+    "src": "/ecosystem/pons-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.ponsfamily.com/favicon.png",
+    "sourcePage": "https://www.ponsfamily.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "beezie": {
+    "src": "/ecosystem/beezie-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://1870534471-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/organizations%2FLkm5rul2gFdPcfW4YoWW%2Fsites%2Fsite_4nRUR%2Ficon%2F50C7en94liNlfJoxUtpI%2FBeezie%20Hex%20Black.png?alt=media&token=ce4bf50e-d2f4-4e9d-9c26-1754980a4767",
+    "sourcePage": "https://docs.beezie.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "bridgetower": {
+    "src": "/ecosystem/bridgetower-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.bridgetowercapital.com/app/tf/571nsjfl/master/dtdzxtfsx7r3m82gzz/logos/bridgetower-mark.svg",
+    "sourcePage": "https://www.bridgetowercapital.com/",
+    "checkedOn": "2026-10-07"
+  },
+  "ton": {
+    "src": "/ecosystem/ton-community-20261007.svg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://ton.org/assets/favicon.svg",
+    "sourcePage": "https://ton.org/",
+    "checkedOn": "2026-10-07"
+  },
+  "phygitals": {
+    "src": "/ecosystem/phygitals-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fphygitals.com%2F&sz=128",
+    "sourcePage": "https://phygitals.com/",
+    "checkedOn": "2026-10-07",
+    "assetNote": "Cached domain favicon; direct site asset was unavailable during retrieval."
+  },
+  "multibank": {
+    "src": "/ecosystem/multibank-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.multibankgroup.com%2F&sz=128",
+    "sourcePage": "https://www.multibankgroup.com/",
+    "checkedOn": "2026-10-07",
+    "assetNote": "Cached domain favicon; direct site asset was unavailable during retrieval."
+  },
+  "bybit": {
+    "src": "/ecosystem/bybit-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.bybit.com%2F&sz=128",
+    "sourcePage": "https://www.bybit.com/",
+    "checkedOn": "2026-10-07",
+    "assetNote": "Cached domain favicon; direct site asset was unavailable during retrieval."
+  },
+  "saturn-credit": {
+    "src": "/ecosystem/saturn-credit-community-20261007.png",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsaturn.credit%2F&sz=128",
+    "sourcePage": "https://saturn.credit/",
+    "checkedOn": "2026-10-07",
+    "assetNote": "Cached domain favicon; direct site asset was unavailable during retrieval."
+  },
+  "aster": {
+    "src": "/ecosystem/aster-community-20261007.jpg",
+    "background": "light",
+    "shape": "symbol",
+    "treatment": "original",
+    "sourceUrl": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fwww.asterdex.com%2F&sz=128",
+    "sourcePage": "https://www.asterdex.com/",
+    "checkedOn": "2026-10-07",
+    "assetNote": "Cached domain favicon; direct site asset was unavailable during retrieval."
+  }
+}
