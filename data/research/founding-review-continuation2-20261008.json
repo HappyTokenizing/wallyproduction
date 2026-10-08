@@ -1,0 +1,260 @@
+{
+  "checkedOn": "2026-10-08",
+  "baselineCommit": "35c2876",
+  "baselineCoverage": {
+    "eligible": 1154,
+    "dated": 611,
+    "unknown": 543
+  },
+  "scope": "Additional targeted source pass across missing company founding and protocol/product launch dates. Not an exhaustive resolution of the remaining directory.",
+  "datePolicy": "Preserve source precision and distinguish company formation, product launch, rebrand, parent history and first institutional RWA activity. Dates of funding announcements, incorporation of unrelated entities and copyright notices are not substituted for project starts.",
+  "newlySourcedProfiles": [
+    {
+      "profileId": "aerodrome",
+      "eventId": "aerodrome-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2023-08-28"
+    },
+    {
+      "profileId": "dolomite",
+      "eventId": "dolomite-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "solv-finance",
+      "eventId": "solv-finance-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "spark",
+      "eventId": "spark-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2023-05"
+    },
+    {
+      "profileId": "rwaf-gauntlet",
+      "eventId": "rwaf-gauntlet-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "backpack",
+      "eventId": "backpack-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "xdc-network",
+      "eventId": "xdc-network-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2019-06-01"
+    },
+    {
+      "profileId": "regen-network",
+      "eventId": "regen-network-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "rwaf-aleo",
+      "eventId": "rwaf-aleo-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "inx",
+      "eventId": "inx-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "allunity-gmbh",
+      "eventId": "allunity-gmbh-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2024"
+    },
+    {
+      "profileId": "reental",
+      "eventId": "reental-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "bilira",
+      "eventId": "bilira-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "straitsx",
+      "eventId": "straitsx-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2020-10"
+    },
+    {
+      "profileId": "bitget-wallet",
+      "eventId": "bitget-wallet-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2018-05"
+    },
+    {
+      "profileId": "glo-dollar",
+      "eventId": "glo-dollar-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2023"
+    },
+    {
+      "profileId": "arca",
+      "eventId": "arca-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "rwaf-matterlabs",
+      "eventId": "rwaf-matterlabs-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "balcony",
+      "eventId": "balcony-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "paytrie-ab-inc",
+      "eventId": "paytrie-ab-inc-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "fluid",
+      "eventId": "fluid-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2024-02"
+    },
+    {
+      "profileId": "libertum",
+      "eventId": "libertum-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "rwaf-investready",
+      "eventId": "rwaf-investready-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2013"
+    },
+    {
+      "profileId": "artrade",
+      "eventId": "artrade-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "hashnote-usyc",
+      "eventId": "hashnote-usyc-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "rwaf-libre",
+      "eventId": "rwaf-libre-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2024-03-19"
+    },
+    {
+      "profileId": "uranium-io",
+      "eventId": "uranium-io-start-continuation2-20261008",
+      "type": "launch",
+      "date": "2024-12"
+    },
+    {
+      "profileId": "neufund",
+      "eventId": "neufund-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2016-09"
+    },
+    {
+      "profileId": "artory",
+      "eventId": "artory-start-continuation2-20261008",
+      "type": "founding",
+      "date": "2016"
+    }
+  ],
+  "pendingReview": [
+    {
+      "profileId": "etherfuse",
+      "reason": "The official LinkedIn profile says 2019, while Solana’s founder-interview case study explicitly says May 2021. Leave undated until the company-versus-project timeline is reconciled.",
+      "sources": [
+        "https://www.linkedin.com/company/etherfuse",
+        "https://solana.com/id/news/case-study-etherfuse"
+      ]
+    },
+    {
+      "profileId": "copperx",
+      "reason": "The current company profile is renamed KOSH and gives 2025, while earlier Copperx histories point to 2022. The rebrand must not be treated as a new founding; original formation remains unresolved.",
+      "sources": [
+        "https://www.linkedin.com/company/koshmoney",
+        "https://solanacompass.com/projects/copperx"
+      ]
+    },
+    {
+      "profileId": "galileo-protocol",
+      "reason": "The company profile says 2015, while the protocol fundraising profile says 2022. An earlier entity versus later protocol timeline needs reconciliation.",
+      "sources": [
+        "https://www.linkedin.com/company/galileo-network",
+        "https://www.gate.com/en-dubai/price/market-data/institutions/fundraising/galileo-protocol-8251"
+      ]
+    },
+    {
+      "profileId": "coinflow",
+      "reason": "Company-written hiring descriptions say founded 2023, while other histories say 2022. Leave undated pending a durable company history that distinguishes formation from operating launch.",
+      "sources": [
+        "https://jobs.ashbyhq.com/coinflow/25bf496b-eb1a-43c5-910c-3c3a209a58c8",
+        "https://www.linkedin.com/posts/jesselandry23_fintech-payments-stablecoins-activity-7483615199858524160-nD09"
+      ]
+    },
+    {
+      "profileId": "houseafrica",
+      "reason": "The company site says 2019 while an earlier RWA research directory says 2017. Do not silently choose between those histories.",
+      "sources": [
+        "https://houseafrica.io/",
+        "https://www.digitalassetresearch.com/wp-content/uploads/2024/06/DAR-RWA-Tokenization-Report-June-2023-Updated.pdf"
+      ]
+    },
+    {
+      "profileId": "rwaf-falconx",
+      "reason": "A 2018 company founding is sourced, but this profile requires an institutional RWA-entry milestone. Generic digital-asset trading is not sufficient tokenization evidence.",
+      "sources": [
+        "https://www.falconx.io/newsroom/falconx-raises-17m-in-financing-to-build-the-future-of-digital-asset-trading"
+      ]
+    },
+    {
+      "profileId": "mansa",
+      "reason": "The official company profile dates founding to 2023; an industry stablecoin report gives 2024. Formation versus operating launch has not been reconciled.",
+      "sources": [
+        "https://www.linkedin.com/company/mansa-finance-def/",
+        "https://udbki2025.obs.ap-southeast-1.myhuaweicloud.com/stablecoins-in-cross-border-payments-fcx.pdf"
+      ]
+    }
+  ],
+  "finalCoverage": {
+    "annual": {
+      "eligible": 1154,
+      "dated": 640,
+      "yearOnly": 0,
+      "unknown": 514,
+      "future": 0
+    },
+    "quarterly": {
+      "eligible": 1154,
+      "dated": 163,
+      "yearOnly": 477,
+      "unknown": 514,
+      "future": 0
+    }
+  }
+}

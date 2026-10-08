@@ -684,5 +684,411 @@
         "title": "VNX x LBank AMA Recap"
       }
     ]
+  },
+  {
+    "id": "aerodrome-start-continuation2-20261008",
+    "profileId": "aerodrome",
+    "type": "launch",
+    "date": "2023-08-28",
+    "note": "Aerodrome's own documentation explicitly dates the protocol launch to 28 August 2023. This is the original Aerodrome launch, not a later merger or branding change.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://aerodrome.finance/docs",
+        "title": "Aerodrome \u2014 About Aerodrome"
+      }
+    ]
+  },
+  {
+    "id": "dolomite-start-continuation2-20261008",
+    "profileId": "dolomite",
+    "type": "founding",
+    "date": "2018",
+    "note": "Dolomite's own company profile states its founding year. Retains the original project/company history rather than assigning a later lending-product release date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/dolomiteio/",
+        "title": "Dolomite \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "solv-finance-start-continuation2-20261008",
+    "profileId": "solv-finance",
+    "type": "founding",
+    "date": "2020",
+    "note": "Solv's official company profile explicitly states 2020. Does not substitute the later SolvBTC product launch or a token listing.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/solv-foundation",
+        "title": "Solv Protocol \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "spark-start-continuation2-20261008",
+    "profileId": "spark",
+    "type": "launch",
+    "date": "2023-05",
+    "note": "Spark's own milestone timeline dates its initial SparkLend launch to May 2023; the savings and liquidity-layer releases followed later.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://spark.finance/spk",
+        "title": "Spark \u2014 key achievements timeline"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-gauntlet-start-continuation2-20261008",
+    "profileId": "rwaf-gauntlet",
+    "type": "founding",
+    "date": "2018",
+    "note": "Gauntlet's own company profile identifies 2018 as its founding year. Retains year precision.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/gauntlet-xyz",
+        "title": "Gauntlet \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "backpack-start-continuation2-20261008",
+    "profileId": "backpack",
+    "type": "founding",
+    "date": "2022",
+    "note": "Backpack's own history dates its founding and wallet origins to 2022. The exchange's later November 2023 beta launch is a separate product milestone.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://learn.backpack.exchange/blog/a-brief-history-of-backpack",
+        "title": "A Brief History of Backpack"
+      }
+    ]
+  },
+  {
+    "id": "xdc-network-start-continuation2-20261008",
+    "profileId": "xdc-network",
+    "type": "launch",
+    "date": "2019-06-01",
+    "note": "XDC Foundation's anniversary history explicitly identifies 1 June 2019 as the XDC mainnet launch. This records the network launch, not an inferred company incorporation date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://xdc.org/articles/seven-years-of-xdc-mainnet",
+        "title": "Seven Years of XDC Mainnet: Welcoming the Future of Finance"
+      }
+    ]
+  },
+  {
+    "id": "regen-network-start-continuation2-20261008",
+    "profileId": "regen-network",
+    "type": "founding",
+    "date": "2017",
+    "note": "The project's own origin story and timeline explicitly date Regen Network's founding to 2017. Spring is not converted into an invented month or quarter.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://compute.regen.network/about",
+        "title": "Regen Compute \u2014 origin story and Regen Network timeline"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-aleo-start-continuation2-20261008",
+    "profileId": "rwaf-aleo",
+    "type": "founding",
+    "date": "2019",
+    "note": "Aleo's own introduction states that the company was founded in 2019; this is distinct from its later mainnet launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://aleo.org/post/what-is-a-zero-knowledge-proof/",
+        "title": "Aleo \u2014 What is a zero-knowledge proof?"
+      }
+    ]
+  },
+  {
+    "id": "inx-start-continuation2-20261008",
+    "profileId": "inx",
+    "type": "founding",
+    "date": "2017",
+    "note": "INX's official company profile states 2017. This dates INX itself rather than its later acquisition by Republic or the acquirer's founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/theinxdigitalcompany",
+        "title": "INX \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "allunity-gmbh-start-continuation2-20261008",
+    "profileId": "allunity-gmbh",
+    "type": "founding",
+    "date": "2024",
+    "note": "AllUnity's own company profile dates its formation to 2024. This is the stablecoin venture's founding, not the founding of DWS, Galaxy or Flow Traders, and not its 2025 operating launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/allunity/",
+        "title": "AllUnity \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "reental-start-continuation2-20261008",
+    "profileId": "reental",
+    "type": "founding",
+    "date": "2020",
+    "note": "Reental's own company history explicitly dates its founding to 2020. Month/day precision is not established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.reental.co/en/blog/real-estate-3-0-l-a-nueva-era-donde-la-regulacion-y-el-defi-se-encuentran",
+        "title": "Reental \u2014 Real Estate 3.0"
+      }
+    ]
+  },
+  {
+    "id": "bilira-start-continuation2-20261008",
+    "profileId": "bilira",
+    "type": "founding",
+    "date": "2019",
+    "note": "BiLira's official company profile identifies its founding year as 2019; the corporate site also describes operations since 2019.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/bilira",
+        "title": "BiLira \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "straitsx-start-continuation2-20261008",
+    "profileId": "straitsx",
+    "type": "launch",
+    "date": "2020-10",
+    "note": "StraitsX's own announcement explicitly dates the Southeast Asian stablecoin initiative's launch to October 2020. Xfers' earlier corporate founding is not substituted for the tokenization initiative.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.straitsx.com/blog-post/xfers-seba-bank-named-finalists-for-global-cbdc-challenge-organised-by-the-monetary-authority-of-singapore",
+        "title": "Xfers and SEBA Bank \u2014 Global CBDC Challenge finalists"
+      }
+    ]
+  },
+  {
+    "id": "bitget-wallet-start-continuation2-20261008",
+    "profileId": "bitget-wallet",
+    "type": "launch",
+    "date": "2018-05",
+    "note": "The wallet's own brand history dates BitKeep's launch to May 2018. The Bitget Wallet rebrand in 2023 is not treated as a new company start.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://web3.bitget.com/en/blog/articles/bitget-wallet-brand-evolution",
+        "title": "How the Bitget Wallet Brand has Evolved"
+      }
+    ]
+  },
+  {
+    "id": "glo-dollar-start-continuation2-20261008",
+    "profileId": "glo-dollar",
+    "type": "launch",
+    "date": "2023",
+    "note": "Glo's own year-end review confirms the stablecoin's debut in 2023. Earlier Brale availability and later August Uniswap availability are distinguished; no single initial launch day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.glodollar.org/articles/2023-glo-in-review",
+        "title": "Glo's 2023 in review"
+      }
+    ]
+  },
+  {
+    "id": "arca-start-continuation2-20261008",
+    "profileId": "arca",
+    "type": "founding",
+    "date": "2018",
+    "note": "Arca's own About page explicitly dates the digital-asset business to 2018 and distinguishes its investment and Arca Labs divisions. This does not claim that ArCoin was issued in 2018.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.ar.ca/about-arca",
+        "title": "Arca \u2014 About"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-matterlabs-start-continuation2-20261008",
+    "profileId": "rwaf-matterlabs",
+    "type": "founding",
+    "date": "2018",
+    "note": "Matter Labs' official company profile dates the developer company to 2018. Does not apply this company founding date to the separately listed ZKsync network.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/matterlabs",
+        "title": "Matter Labs \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "balcony-start-continuation2-20261008",
+    "profileId": "balcony",
+    "type": "founding",
+    "date": "2021",
+    "note": "Balcony's official company profile explicitly identifies 2021 as its founding year. The company identity matches balcony.technology and its land-registry tokenization work.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/balcony-technology/",
+        "title": "Balcony \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "paytrie-ab-inc-start-continuation2-20261008",
+    "profileId": "paytrie-ab-inc",
+    "type": "founding",
+    "date": "2019",
+    "note": "Paytrie's own company profile states that it was founded in 2019. Does not infer a founding date from FINTRAC registration or a stablecoin integration.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/paytrie",
+        "title": "Paytrie \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "fluid-start-continuation2-20261008",
+    "profileId": "fluid",
+    "type": "launch",
+    "date": "2024-02",
+    "note": "Co-founder Samyak Jain's 27 February 2024 governance proposal says Fluid had launched nearly a week earlier. This establishes February, not an exact day; the October 2023 preview was not the live protocol launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://gov.fluid.io/t/transfer-fluid-ownership-to-governance-and-wrap-ups/694",
+        "title": "Fluid \u2014 Transfer Fluid Ownership to Governance and wrap-ups"
+      }
+    ]
+  },
+  {
+    "id": "libertum-start-continuation2-20261008",
+    "profileId": "libertum",
+    "type": "founding",
+    "date": "2022",
+    "note": "Libertum's official company profile explicitly states 2022. This records company formation, not a later token sale or regulatory licence.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/libertum1",
+        "title": "Libertum \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-investready-start-continuation2-20261008",
+    "profileId": "rwaf-investready",
+    "type": "founding",
+    "date": "2013",
+    "note": "InvestReady's own company profile identifies 2013 as its founding year and describes its investor-verification business. No month/day is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/investready",
+        "title": "InvestReady \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "artrade-start-continuation2-20261008",
+    "profileId": "artrade",
+    "type": "founding",
+    "date": "2021",
+    "note": "Artrade's official company profile explicitly dates its founding to 2021. The later move of its token to Solana does not reset its history.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/artrade-app/",
+        "title": "Artrade \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "hashnote-usyc-start-continuation2-20261008",
+    "profileId": "hashnote-usyc",
+    "type": "founding",
+    "date": "2022",
+    "note": "Hashnote's own About page explicitly states it was founded in 2022. This dates the Hashnote business, not USYC's first issuance, DRW's founding or Circle's subsequent acquisition.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.hashnote.com/about",
+        "title": "Hashnote \u2014 About"
+      }
+    ]
+  },
+  {
+    "id": "rwaf-libre-start-continuation2-20261008",
+    "profileId": "rwaf-libre",
+    "type": "launch",
+    "date": "2024-03-19",
+    "note": "Polygon's contemporaneous announcement confirms Libre was live for eligible investors on 19 March 2024. Distinguishes the live tokenization platform from the January unveiling and its parent ventures.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://polygon.technology/blog/libre-is-live-and-putting-tradfi-on-blockchain-wheels-with-access-to-funds-from-brevan-howard-and-blackrock",
+        "title": "Libre Is Live and Putting TradFi on Blockchain Wheels"
+      }
+    ]
+  },
+  {
+    "id": "uranium-io-start-continuation2-20261008",
+    "profileId": "uranium-io",
+    "type": "launch",
+    "date": "2024-12",
+    "note": "The Tezos ecosystem's December 2024 announcement confirms Uranium.io was live. Retains month precision rather than equating the December 4 publication date with the earlier launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://spotlight.tezos.com/tezos-powered-uranium-trading-goes-live/",
+        "title": "Tezos-Powered Uranium Trading Goes Live"
+      }
+    ]
+  },
+  {
+    "id": "neufund-start-continuation2-20261008",
+    "profileId": "neufund",
+    "type": "founding",
+    "date": "2016-09",
+    "note": "Neufund's original Lightpaper 2.0 milestone list explicitly dates its founding to September 2016. The platform's existing January 2022 closure remains a separate event.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://programmablecapital.com/wp-content/uploads/2018/12/Neufund-Lightpaper-2.0.pdf",
+        "title": "Neufund Lightpaper 2.0 \u2014 Neufund milestones"
+      }
+    ]
+  },
+  {
+    "id": "artory-start-continuation2-20261008",
+    "profileId": "artory",
+    "type": "founding",
+    "date": "2016",
+    "note": "Nanne Dekking's biography on successor Winston Artory Group's own site explicitly dates Artory's founding to 2016. The later merger does not replace Artory's original founding date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.wag-art.com/team/nanne-dekking",
+        "title": "Winston Artory Group \u2014 Nanne Dekking biography"
+      }
+    ]
   }
 ]

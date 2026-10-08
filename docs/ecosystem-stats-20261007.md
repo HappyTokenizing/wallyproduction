@@ -94,7 +94,7 @@ sourced replacement milestones; 22 remain unverified and are excluded from the
 start charts. See `data/research/industry-entry-review-20261008.json` for every
 affected profile, superseded corporate date, evidence and pending-review reason.
 Including the subsequent founding/launch research passes, the annual chart has
-611 sourced starts among 1,154 profiles; 543 remain undated under the corrected rule.
+640 sourced starts among 1,154 profiles; 514 remain undated under the corrected rule.
 This coverage reduction is intentional: corporate age is not industry growth.
 
 The preceding source pass added 22 institution/infrastructure milestones, including
@@ -137,3 +137,20 @@ batch audit in `data/research/founding-review-followup-20261008.json` records al
 34 additions, the conflicting sources and the before/after coverage. This pass
 changes no company profiles, logos or membership data, and does not claim the
 remaining 543 unknown dates have been exhaustively resolved.
+
+A subsequent pass adds 29 more previously undated profiles: 20 foundings and
+nine explicitly labeled launches. These include Aerodrome, Spark, XDC, Fluid,
+Backpack, Bitget Wallet, StraitsX, Artory and Libre. Neufund's original lightpaper
+establishes its September 2016 founding without changing its separate closure
+record. Matter Labs' founding dates the developer company, not the separately
+listed ZKsync network; parent histories and later rebrands are not substituted
+for the relevant project start.
+
+This batch adds three day-precision dates, six month-precision dates and 20
+year-only dates. Annual coverage is 640; quarterly coverage is 163, with another
+477 year-only starts available in the annual chart. The 514 remaining profiles
+stay undated. The audit in
+`data/research/founding-review-continuation2-20261008.json` records the additions
+and seven unresolved leads, including conflicting Etherfuse histories and
+FalconX's still-missing institutional tokenization milestone. Profiles, logos,
+membership and all previously sourced events remain unchanged.
