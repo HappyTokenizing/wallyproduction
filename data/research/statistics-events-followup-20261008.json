@@ -208,5 +208,481 @@
         "title": "HQLAx \u2014 Official company profile"
       }
     ]
+  },
+  {
+    "id": "euler-start-continuation-20261008",
+    "profileId": "euler",
+    "type": "founding",
+    "date": "2020",
+    "note": "Euler's co-founder dates the start of the project to 2020; the December 2021 protocol deployment was later.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.euler.finance/blog/war-peace-behind-the-scenes-of-eulers-240m-exploit-recovery",
+        "title": "War & Peace: Behind the Scenes of Euler's $240M Exploit Recovery"
+      }
+    ]
+  },
+  {
+    "id": "gnosis-pay-start-continuation-20261008",
+    "profileId": "gnosis-pay",
+    "type": "launch",
+    "date": "2023-07",
+    "note": "Gnosis's July 2023 weekly report identifies the Gnosis Pay launch at that month's EthCC. This is the payments product, not the older Gnosis network.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.gnosis.io/blog/gnosis-chain-weekly-28-july-2023-7640f",
+        "title": "Gnosis Chain Weekly \u2014 28 July 2023"
+      }
+    ]
+  },
+  {
+    "id": "investax-start-continuation-20261008",
+    "profileId": "investax",
+    "type": "founding",
+    "date": "2015",
+    "note": "InvestaX's own company description states a 2015 founding. Retains year precision; this is not a dated first token issuance.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://investax.io/blog/investax-and-korea-st-exchange-announce-strategic-collaboration",
+        "title": "InvestaX and Korea ST Exchange Announce Strategic Collaboration"
+      }
+    ]
+  },
+  {
+    "id": "dynamic-start-continuation-20261008",
+    "profileId": "dynamic",
+    "type": "founding",
+    "date": "2021",
+    "note": "The company's own LinkedIn profile explicitly states Founded 2021. No month/day is established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/dynamiclabs",
+        "title": "Dynamic \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "goldfinch-start-continuation-20261008",
+    "profileId": "goldfinch",
+    "type": "founding",
+    "date": "2020-07",
+    "note": "The founder interview discusses the company starting in July 2020; month precision retained. This predates the protocol's public launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.buzzsprout.com/1753569/episodes/10002855-ep14-bringing-crypto-loans-to-the-real-world-with-blake-west-co-founder-cto-of-goldfinch-500m-dao-and-25m-from-a16z",
+        "title": "Founder interview with Goldfinch co-founder Blake West"
+      }
+    ]
+  },
+  {
+    "id": "kast-start-continuation-20261008",
+    "profileId": "kast",
+    "type": "founding",
+    "date": "2024-07",
+    "note": "KAST's company-issued financing announcement explicitly states it was founded in July 2024; funding publication date is not used as the founding date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/ae/news-releases/kast-raises-80-million-as-stablecoins-move-from-infrastructure-into-mainstream-financial-services-302708236.html",
+        "title": "KAST raises $80 million as stablecoins move into mainstream financial services"
+      }
+    ]
+  },
+  {
+    "id": "aktionariat-start-continuation-20261008",
+    "profileId": "aktionariat",
+    "type": "founding",
+    "date": "2020",
+    "note": "Aktionariat's own investor page states Founded in 2020 and links to its Swiss commercial-register record. No finer date is inferred.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://shares.aktionariat.com/",
+        "title": "Aktionariat AG Investor Page"
+      }
+    ]
+  },
+  {
+    "id": "clearpool-start-continuation-20261008",
+    "profileId": "clearpool",
+    "type": "launch",
+    "date": "2022-03",
+    "note": "Clearpool's May 2022 retrospective confirms that its institutional lending protocol launched on Ethereum in March 2022. This is the protocol launch, not the earlier CPOOL token sale.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://medium.com/clearpool-finance/clearpool-launches-its-first-permissioned-lending-pool-in-partnership-with-jane-street-and-ac90414fa4c9",
+        "title": "Clearpool launches its first Permissioned Lending Pool with Jane Street and BlockTower"
+      }
+    ]
+  },
+  {
+    "id": "rabby-start-continuation-20261008",
+    "profileId": "rabby",
+    "type": "launch",
+    "date": "2021-07-26",
+    "note": "Rabby's dated release announcement introduces the DeBank-built browser wallet as available that day. Uses the wallet launch rather than DeBank's earlier founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://medium.com/@rabby_io/rabby-release-announcement-564406988e2b",
+        "title": "Rabby Release Announcement"
+      }
+    ]
+  },
+  {
+    "id": "kamino-start-continuation-20261008",
+    "profileId": "kamino",
+    "type": "launch",
+    "date": "2022-08-30",
+    "note": "Hubble's company-issued announcement introduces Kamino's concentrated-liquidity product as launched. This predates Kamino's later lending product.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://news.bitcoin.com/hubble-protocol-launches-kamino-finance-to-optimize-yields-for-liquidity-providers-on-solana/",
+        "title": "Hubble Protocol Launches Kamino Finance to Optimize Yields for Liquidity Providers on Solana"
+      }
+    ]
+  },
+  {
+    "id": "baxus-start-continuation-20261008",
+    "profileId": "baxus",
+    "type": "founding",
+    "date": "2021",
+    "note": "BAXUS's own careers page states Founded 2021; no month/day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.baxus.co/careers",
+        "title": "Careers at BAXUS \u2014 Build the Future of Wine and Spirits"
+      }
+    ]
+  },
+  {
+    "id": "re-start-continuation-20261008",
+    "profileId": "re",
+    "type": "launch",
+    "date": "2022-09-28",
+    "note": "Re's company-issued press release announces its public launch alongside seed financing. Records project launch, not a claim about incorporation or its later investor-facing products.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/re-the-worlds-first-blockchain-powered-reinsurer-raises-a-14m-seed-round-to-build-a-decentralized-global-reinsurance-market-301635662.html",
+        "title": "Re launches blockchain-powered reinsurance project and announces seed funding"
+      }
+    ]
+  },
+  {
+    "id": "ethichub-start-continuation-20261008",
+    "profileId": "ethichub",
+    "type": "founding",
+    "date": "2017",
+    "note": "EthicHub's official company profile dates its founding to 2017; the later crowdlending platform launch is a separate milestone.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/ethichub/",
+        "title": "EthicHub \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "allocations-start-continuation-20261008",
+    "profileId": "allocations",
+    "type": "founding",
+    "date": "2019",
+    "note": "A founder transcript posted by Allocations explicitly dates the company founding to 2019; retains year precision.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/posts/allocations_from-zero-to-2bn-assets-the-allocations-activity-7210996429811585025-MTlS",
+        "title": "Allocations founder story \u2014 Kingsley Advani"
+      }
+    ]
+  },
+  {
+    "id": "consolfreight-start-continuation-20261008",
+    "profileId": "consolfreight",
+    "type": "founding",
+    "date": "2016",
+    "note": "ConsolFreight's company-issued tokenization partnership release explicitly states a 2016 founding. The 2020 Dai/Tinlake integration is not used as the company's founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/consolfreight-and-centrifuge-integrate-dai-to-transform-logistics-access-to-liquidity-through-innovative-defi-blockchain-solution-301044326.html",
+        "title": "ConsolFreight and Centrifuge Integrate Dai to Transform Logistics Access to Liquidity"
+      }
+    ]
+  },
+  {
+    "id": "the-network-firm-start-continuation-20261008",
+    "profileId": "the-network-firm",
+    "type": "founding",
+    "date": "2023-01",
+    "note": "The firm's own history dates formation to January 2023 and distinguishes its first operational month in March. The earlier work of its founders at Armanino is not assigned to this independent firm.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.thenetworkfirm.com/blog/our-story-and-approach-at-the-intersection-of-accounting-amp-digital-assets",
+        "title": "Our Story and Approach at the Intersection of Accounting & Digital Assets"
+      }
+    ]
+  },
+  {
+    "id": "ether-fi-start-continuation-20261008",
+    "profileId": "ether-fi",
+    "type": "founding",
+    "date": "2022",
+    "note": "ether.fi's own company profile explicitly states Founded 2022; retains year precision rather than deriving a quarter from later product announcements.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/etherfi",
+        "title": "ether.fi \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "homium-start-continuation-20261008",
+    "profileId": "homium",
+    "type": "founding",
+    "date": "2018",
+    "note": "Homium's own company profile explicitly states Founded 2018. No month/day is supplied.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/homium",
+        "title": "Homium \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "elysia-start-continuation-20261008",
+    "profileId": "elysia",
+    "type": "founding",
+    "date": "2018",
+    "note": "The official ELYSIA profile, linked to elysia.land and describing RWA tokenization, dates its founding to 2018. Unrelated UK companies and audio-equipment brands are excluded.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://kr.linkedin.com/company/elysialand",
+        "title": "ELYSIA \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "collector-crypt-start-continuation-20261008",
+    "profileId": "collector-crypt",
+    "type": "founding",
+    "date": "2021",
+    "note": "Collector Crypt's own company profile dates founding to 2021; trading-card issue years and domain-registration dates are not used.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://uk.linkedin.com/company/collector-crypt-rwa",
+        "title": "Collector Crypt \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "toronet-start-continuation-20261008",
+    "profileId": "toronet",
+    "type": "founding",
+    "date": "2021",
+    "note": "ToroNet's own organizational profile dates founding to 2021. Records organization founding rather than inferring a completed launch from the whitepaper's planned technical milestones.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/toronet",
+        "title": "ToroNet \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "stables-start-continuation-20261008",
+    "profileId": "stables",
+    "type": "founding",
+    "date": "2021",
+    "note": "Stables's company-issued release explicitly dates founding to 2021; retains year precision.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://chainwire.org/2026/04/29/stables-records-466-yearly-growth-and-expands-asian-infrastructure-via-estable-partnership/",
+        "title": "Stables Records 466% Yearly Growth and Expands Asian Infrastructure via eStable Partnership"
+      }
+    ]
+  },
+  {
+    "id": "galaxyone-start-continuation-20261008",
+    "profileId": "galaxyone",
+    "type": "launch",
+    "date": "2025-10-06",
+    "note": "Galaxy's quarterly results explicitly date GalaxyOne's launch to October 6, 2025. This product's launch is separate from the Galaxy parent company's founding.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://investor.galaxy.com/news-releases/news-release-details/galaxy-announces-third-quarter-2025-financial-results",
+        "title": "Galaxy Announces Third Quarter 2025 Financial Results"
+      }
+    ]
+  },
+  {
+    "id": "black-manta-start-continuation-20261008",
+    "profileId": "black-manta",
+    "type": "founding",
+    "date": "2018",
+    "note": "Black Manta's official press profile dates the tokenization business's founding in Luxembourg to 2018.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://blackmanta.capital/press/",
+        "title": "Black Manta Capital Partners \u2014 press and company background"
+      }
+    ]
+  },
+  {
+    "id": "mantra-start-continuation-20261008",
+    "profileId": "mantra",
+    "type": "launch",
+    "date": "2020-08",
+    "note": "MANTRA's official history dates its original DeFi project and OM launch to August 2020. The RWA-focused chain was developed later and its 2024 mainnet is not substituted for the project's origin.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://docs.mantrachain.io/mantra-token-background",
+        "title": "MANTRA Token Background"
+      }
+    ]
+  },
+  {
+    "id": "kaia-start-continuation-20261008",
+    "profileId": "kaia",
+    "type": "launch",
+    "date": "2024-08-29",
+    "note": "Kaia's official report dates formation of the unified network to August 29, 2024. Records Kaia's merged-network launch, not the earlier Klaytn or Finschia founding dates.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://blog.kaia.io/research-report-on-kaia-blockchain-and-its-mini-dapp-ecosystem-as-of-may-2025/",
+        "title": "Research Report on Kaia Blockchain and its Mini Dapp Ecosystem"
+      }
+    ]
+  },
+  {
+    "id": "minipay-start-continuation-20261008",
+    "profileId": "minipay",
+    "type": "launch",
+    "date": "2023-09",
+    "note": "MiniPay's two-year review explicitly dates its initial launch within Opera Mini in Nigeria to September 2023; later standalone Android/iOS releases are not used.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://minipay.to/blog/minipay-2-years-stablecoins-everyday-payments",
+        "title": "MiniPay at 2 Years: 10 Million Wallets and Stablecoins in Daily Life"
+      }
+    ]
+  },
+  {
+    "id": "arf-start-continuation-20261008",
+    "profileId": "arf",
+    "type": "founding",
+    "date": "2019",
+    "note": "Arf's official company profile dates founding to 2019; retains year precision.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/arf-one",
+        "title": "Arf \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "stablecorp-start-continuation-20261008",
+    "profileId": "stablecorp",
+    "type": "launch",
+    "date": "2020-02-11",
+    "note": "Stablecorp's own announcement states that QCAD became available that day. Records its initial stablecoin launch, not the 2023 relaunch or the earlier parent companies' histories.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://medium.com/stablecorp/introducing-qcad-by-stablecorp-bc7216194e82",
+        "title": "Introducing QCAD by Stablecorp"
+      }
+    ]
+  },
+  {
+    "id": "relay-start-continuation-20261008",
+    "profileId": "relay",
+    "type": "launch",
+    "date": "2024",
+    "note": "Relay\u2019s official MoonPay integration announcement explicitly dates the platform launch to 2024. Records the cross-chain payments product, not its creator Reservoir or an unrelated stablecoin issuer.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.relay.link/blog/relay-integrates-moonpay-for-instant-fiat-to-crypto-transactions",
+        "title": "Relay Integrates MoonPay for Instant Fiat-to-Crypto Transactions"
+      }
+    ]
+  },
+  {
+    "id": "hifi-start-continuation-20261008",
+    "profileId": "hifi",
+    "type": "founding",
+    "date": "2022",
+    "note": "The company-issued release explicitly states HIFI was founded in 2022. This is the payments infrastructure company at hifi.com, not Hifi Finance. The 2026 financing announcement is not used as the founding date.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://chainwire.org/2026/09/24/hifi-raises-37-million-to-build-tokenized-financial-infrastructure-as-wall-street-moves-onchain/",
+        "title": "HIFI Raises $37 Million to Build Tokenized Financial Infrastructure as Wall Street Moves Onchain"
+      }
+    ]
+  },
+  {
+    "id": "verifyvasp-start-continuation-20261008",
+    "profileId": "verifyvasp",
+    "type": "founding",
+    "date": "2019",
+    "note": "The company\u2019s own profile describes its establishment in 2019 and repeats that year in the Founded field. No month or day is established.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/verifyvasp",
+        "title": "VerifyVASP \u2014 official company profile"
+      }
+    ]
+  },
+  {
+    "id": "security-token-market-start-continuation-20261008",
+    "profileId": "security-token-market",
+    "type": "founding",
+    "date": "2018-07",
+    "note": "Note 1 of the company\u2019s SEC-filed 2021 financial statements identifies its organization in Florida in July 2018 and describes its tokenized-asset data business. Month precision is retained.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1936384/000193638422000002/financials.pdf",
+        "title": "Security Token Market, LLC \u2014 2021 financial statements, Note 1"
+      }
+    ]
+  },
+  {
+    "id": "vnx-start-continuation-20261008",
+    "profileId": "vnx",
+    "type": "founding",
+    "date": "2018",
+    "note": "Founder Alexander Tkachenko dates the original traditional-asset tokenization platform to 2018 in VNX\u2019s own AMA recap. This is distinct from his 2017 mentoring activity and the later 2022 precious-metals product launch.",
+    "checkedOn": "2026-10-08",
+    "sources": [
+      {
+        "url": "https://medium.com/@vnx/vnx-x-lbank-ama-recap-a63cdfc9320c",
+        "title": "VNX x LBank AMA Recap"
+      }
+    ]
   }
 ]

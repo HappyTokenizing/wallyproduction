@@ -1,0 +1,253 @@
+{
+  "checkedOn": "2026-10-08",
+  "baselineCommit": "25d1b4c",
+  "baselineCoverage": {
+    "eligible": 1154,
+    "dated": 577,
+    "yearOnly": 0,
+    "unknown": 577,
+    "future": 0
+  },
+  "scope": "Targeted primary-source searches for missing dates across lending, wallets, stablecoins, collectibles, tokenization and supporting services. This is an additional research batch, not a claim that the remaining directory has been exhaustively resolved.",
+  "datePolicy": "Use explicit founding dates when corroborated; otherwise use a clearly labeled project/product launch. Preserve source precision. Funding, publication, domain registration and copyright dates do not establish founding. Older institutions continue to require sourced tokenization/RWA entry milestones.",
+  "newlySourcedProfiles": [
+    {
+      "profileId": "euler",
+      "eventId": "euler-start-continuation-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "gnosis-pay",
+      "eventId": "gnosis-pay-start-continuation-20261008",
+      "type": "launch",
+      "date": "2023-07"
+    },
+    {
+      "profileId": "investax",
+      "eventId": "investax-start-continuation-20261008",
+      "type": "founding",
+      "date": "2015"
+    },
+    {
+      "profileId": "dynamic",
+      "eventId": "dynamic-start-continuation-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "goldfinch",
+      "eventId": "goldfinch-start-continuation-20261008",
+      "type": "founding",
+      "date": "2020-07"
+    },
+    {
+      "profileId": "kast",
+      "eventId": "kast-start-continuation-20261008",
+      "type": "founding",
+      "date": "2024-07"
+    },
+    {
+      "profileId": "aktionariat",
+      "eventId": "aktionariat-start-continuation-20261008",
+      "type": "founding",
+      "date": "2020"
+    },
+    {
+      "profileId": "clearpool",
+      "eventId": "clearpool-start-continuation-20261008",
+      "type": "launch",
+      "date": "2022-03"
+    },
+    {
+      "profileId": "rabby",
+      "eventId": "rabby-start-continuation-20261008",
+      "type": "launch",
+      "date": "2021-07-26"
+    },
+    {
+      "profileId": "kamino",
+      "eventId": "kamino-start-continuation-20261008",
+      "type": "launch",
+      "date": "2022-08-30"
+    },
+    {
+      "profileId": "baxus",
+      "eventId": "baxus-start-continuation-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "re",
+      "eventId": "re-start-continuation-20261008",
+      "type": "launch",
+      "date": "2022-09-28"
+    },
+    {
+      "profileId": "ethichub",
+      "eventId": "ethichub-start-continuation-20261008",
+      "type": "founding",
+      "date": "2017"
+    },
+    {
+      "profileId": "allocations",
+      "eventId": "allocations-start-continuation-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "consolfreight",
+      "eventId": "consolfreight-start-continuation-20261008",
+      "type": "founding",
+      "date": "2016"
+    },
+    {
+      "profileId": "the-network-firm",
+      "eventId": "the-network-firm-start-continuation-20261008",
+      "type": "founding",
+      "date": "2023-01"
+    },
+    {
+      "profileId": "ether-fi",
+      "eventId": "ether-fi-start-continuation-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "homium",
+      "eventId": "homium-start-continuation-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "elysia",
+      "eventId": "elysia-start-continuation-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "collector-crypt",
+      "eventId": "collector-crypt-start-continuation-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "toronet",
+      "eventId": "toronet-start-continuation-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "stables",
+      "eventId": "stables-start-continuation-20261008",
+      "type": "founding",
+      "date": "2021"
+    },
+    {
+      "profileId": "galaxyone",
+      "eventId": "galaxyone-start-continuation-20261008",
+      "type": "launch",
+      "date": "2025-10-06"
+    },
+    {
+      "profileId": "black-manta",
+      "eventId": "black-manta-start-continuation-20261008",
+      "type": "founding",
+      "date": "2018"
+    },
+    {
+      "profileId": "mantra",
+      "eventId": "mantra-start-continuation-20261008",
+      "type": "launch",
+      "date": "2020-08"
+    },
+    {
+      "profileId": "kaia",
+      "eventId": "kaia-start-continuation-20261008",
+      "type": "launch",
+      "date": "2024-08-29"
+    },
+    {
+      "profileId": "minipay",
+      "eventId": "minipay-start-continuation-20261008",
+      "type": "launch",
+      "date": "2023-09"
+    },
+    {
+      "profileId": "arf",
+      "eventId": "arf-start-continuation-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "stablecorp",
+      "eventId": "stablecorp-start-continuation-20261008",
+      "type": "launch",
+      "date": "2020-02-11"
+    },
+    {
+      "profileId": "relay",
+      "eventId": "relay-start-continuation-20261008",
+      "type": "launch",
+      "date": "2024"
+    },
+    {
+      "profileId": "hifi",
+      "eventId": "hifi-start-continuation-20261008",
+      "type": "founding",
+      "date": "2022"
+    },
+    {
+      "profileId": "verifyvasp",
+      "eventId": "verifyvasp-start-continuation-20261008",
+      "type": "founding",
+      "date": "2019"
+    },
+    {
+      "profileId": "security-token-market",
+      "eventId": "security-token-market-start-continuation-20261008",
+      "type": "founding",
+      "date": "2018-07"
+    },
+    {
+      "profileId": "vnx",
+      "eventId": "vnx-start-continuation-20261008",
+      "type": "founding",
+      "date": "2018"
+    }
+  ],
+  "pendingConflicts": [
+    {
+      "profileId": "blocksquare",
+      "reason": "Two interviews on the official blog give different launch years (2017 and 2018). The earlier idea-development account is not an unambiguous founding date. Retain as undated pending reconciliation.",
+      "sources": [
+        "https://blog.blocksquare.io/article/how-blocksquare-brings-real-estate-to-the-blockchain/",
+        "https://blog.blocksquare.io/article/telegram-ama-with-gold-diggers-community-written-interview-with-denis-petrovcic/"
+      ]
+    },
+    {
+      "profileId": "spydra",
+      "reason": "Official About page states founded 2021; official LinkedIn company profile states 2022. Retain as undated pending clarification of company formation versus project start.",
+      "sources": [
+        "https://www.spydra.app/about-us",
+        "https://www.linkedin.com/company/spydra"
+      ]
+    }
+  ],
+  "finalCoverage": {
+    "annual": {
+      "eligible": 1154,
+      "dated": 611,
+      "yearOnly": 0,
+      "unknown": 543,
+      "future": 0
+    },
+    "quarterly": {
+      "eligible": 1154,
+      "dated": 154,
+      "yearOnly": 457,
+      "unknown": 543,
+      "future": 0
+    }
+  }
+}

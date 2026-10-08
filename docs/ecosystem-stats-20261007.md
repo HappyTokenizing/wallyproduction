@@ -93,8 +93,8 @@ Research review on 2026-10-08: the policy covers 127 profiles. 105 have
 sourced replacement milestones; 22 remain unverified and are excluded from the
 start charts. See `data/research/industry-entry-review-20261008.json` for every
 affected profile, superseded corporate date, evidence and pending-review reason.
-Including 15 additional researched younger projects, the annual chart has 577
-sourced starts among 1,154 profiles; 577 remain undated under the corrected rule.
+Including the subsequent founding/launch research passes, the annual chart has
+611 sourced starts among 1,154 profiles; 543 remain undated under the corrected rule.
 This coverage reduction is intentional: corporate age is not industry growth.
 
 The preceding source pass added 22 institution/infrastructure milestones, including
@@ -122,3 +122,18 @@ This pass also covers Hitachi's 2016 electronic-check experiment, Invesco's
 and 2024 digital-securities trials involving BayernLB, L-Bank and Spuerkeess.
 The Bundesbank's transaction chronology establishes exact trial dates where
 individual banks' press releases alone would only support broader precision.
+
+The next pass sources another 34 previously undated profiles: 23 company
+foundings and 11 explicitly labeled product/project launches. Sources include
+company histories, founder interviews, company-issued announcements, official
+company profiles and Security Token Market's SEC-filed financial statements.
+Examples include Euler, KAST, BAXUS, Rabby, Kamino, Relay, HIFI and VerifyVASP.
+Twenty additions have year precision, eight have month precision and six have
+day precision. Quarterly coverage is now 154 dated starts; 457 year-only starts
+remain in annual charts without being assigned an invented quarter.
+
+Conflicting official dates for Blocksquare and Spydra remain unresolved. The
+batch audit in `data/research/founding-review-followup-20261008.json` records all
+34 additions, the conflicting sources and the before/after coverage. This pass
+changes no company profiles, logos or membership data, and does not claim the
+remaining 543 unknown dates have been exhaustively resolved.
