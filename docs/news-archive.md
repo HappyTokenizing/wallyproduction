@@ -44,6 +44,13 @@ Official references:
 
 ## Required live verification
 
+Dashboard inspection on 2026-10-08 confirmed the production project is on Pro,
+has Production-scoped `RWANEWS_KEY`, `BLOB_READ_WRITE_TOKEN` and `CRON_SECRET`,
+and is connected to a private Blob store. No credential values were revealed or
+changed. The Cron Jobs screen showed the feature enabled but no deployed jobs.
+Production was still on `97e0677`; configuration alone does not activate the new
+collector. The Git deployment and the following runtime checks remain required.
+
 1. Confirm the scheduler is enabled and succeeds without site visitors.
 2. Confirm `/api/news` returns `archive.retention: indefinite` and a recent
    `lastSuccessfulCollection`, with no warning.

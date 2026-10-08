@@ -89,10 +89,18 @@ is in `data/research/industry-entry-policy.json`; dated replacements are in
 rule to newly added institutions and any future pre-2011 start records.
 
 
-Research review on 2026-10-08: the policy covers 127 profiles. Fifty-seven have
-sourced replacement milestones; 70 remain unverified and are excluded from the
+Research review on 2026-10-08: the policy covers 127 profiles. Seventy-nine have
+sourced replacement milestones; 48 remain unverified and are excluded from the
 start charts. See `data/research/industry-entry-review-20261008.json` for every
 affected profile, superseded corporate date, evidence and pending-review reason.
-Including 15 additional researched younger projects, the annual chart has 529
-sourced starts among 1,154 profiles; 625 remain undated under the corrected rule.
+Including 15 additional researched younger projects, the annual chart has 551
+sourced starts among 1,154 profiles; 603 remain undated under the corrected rule.
 This coverage reduction is intentional: corporate age is not industry growth.
+
+The latest source pass adds 22 institution/infrastructure milestones, including
+Deutsche Bank's H2 2015 corporate-bond prototype, BNP Paribas' April 2016 share
+register agreement, the 2016 Fundchain work of CACEIS and PwC, and the April 2023
+Spruce pilots of Wellington and T. Rowe Price. Pilot, infrastructure and project
+agreement notes explicitly distinguish these events from commercial launches.
+Season/half-year evidence remains year-only; a publication day is not substituted
+for an earlier transaction or pilot date. Remaining profiles stay under review.

@@ -2,8 +2,8 @@
   "reviewedOn": "2026-10-08",
   "definition": "Banks, established institutions and any profile with a pre-2011 start require evidence of first tokenization/RWA activity. Corporate incorporation, card credential tokenization and generic crypto trading do not qualify. Dates represent the earliest activity corroborated in the reviewed sources, not proof that no earlier private pilot existed. Preserve source precision; never infer an exact day.",
   "affectedProfiles": 127,
-  "sourcedReplacements": 57,
-  "pending": 70,
+  "sourcedReplacements": 79,
+  "pending": 48,
   "profiles": [
     {
       "profileId": "klarna",
@@ -123,14 +123,18 @@
       "priorCorporateOrLaunchDates": [
         "1792"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://investors.statestreet.com/investor-news-events/press-releases/news-details/2026/State-Street-Launches-Digital-Asset-Platform-to-Power-Tokenized-Finance/",
-        "https://www.statestreet.com/in/en/insights/digital-digest-july-2025-state-street-taurus",
-        "https://www.statestreet.com/us/en/insights/digital-digest-march-2026-conversation-angus-fletcher",
-        "https://investors.statestreet.com/investor-news-events/press-releases/news-details/2019/State-Street-and-Gemini-Launch-Digital-Asset-Pilot-12-17-2019/default.aspx",
-        "https://investors.statestreet.com/investor-news-events/press-releases/news-details/2026/State-Street-to-Launch-Tokenized-Fund-Servicing-from-Luxembourg/default.aspx"
+      "status": "sourced_industry_entry",
+      "note": "Tested digital tokens representing securities-lending collateral during 2016. The executive's December interview describes seven months of testing but does not establish an exact starting month; year precision is retained.",
+      "date": "2016",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/news/state-street-tests-blockchain-system-191524535.html",
+          "title": "Reuters interview with State Street's Hu Liang: 2016 tokenized collateral tests"
+        },
+        {
+          "url": "https://s201.q4cdn.com/681076340/files/doc_presentation/2017/State-Street-Global-Markets-Global-Exchange.pdf",
+          "title": "State Street 2017 Investor Day: blockchain loan/collateral settlement tests"
+        }
       ]
     },
     {
@@ -191,14 +195,14 @@
       "priorCorporateOrLaunchDates": [
         "1988"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://ir.blackrock.com/files/doc_financials/2024/ar/2024-blk-annual-shareholder-meeting-transcript.pdf",
-        "https://www.blackrock.com/cash/en-ie/press-release-t4",
-        "https://www.blackrock.com/cash/en-hk/press-release-t2",
-        "https://www.blackrock.com/corporate/literature/publication/hmt-financial-services-growth-competitiveness-strategy-call-for-evidence-121824.pdf",
-        "https://ir.blackrock.com/files/doc_financials/2024/ar/2024-Proxy-Statement_vF.pdf"
+      "status": "sourced_industry_entry",
+      "note": "BlackRock participated in the first live Tokenized Collateral Network transaction, posting tokenized money-market fund shares as derivatives collateral. JPMorgan's contribution to the GBBC annual report gives October 2023; no exact trade day is inferred.",
+      "date": "2023-10",
+      "sources": [
+        {
+          "url": "https://assets.ctfassets.net/so75yocayyva/xnEHHYDDNKkjE6kR4cxQh/660f63332a9db94952c0646607b4a7a7/2023_Annual_Report_GBBC.pdf",
+          "title": "GBBC 2023 report: Onyx/JPMorgan account of TCN's first transaction"
+        }
       ]
     },
     {
@@ -207,14 +211,18 @@
       "priorCorporateOrLaunchDates": [
         "1985"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-prime-state-of-the-union",
-        "https://ir.wisdomtree.com/news-events/press-releases/detail/807/wisdomtree-introduces-wisdomtree-onchain-as-tokenized",
-        "https://www.wisdomtree.com/onchain/insights/blog/income-that-earns-the-infrastructure-behind-dividend-generating-payroll",
-        "https://www.wisdomtree.com/onchain/insights/blog/24-7trading-and-instant-settlement-for-onchain-money-market-funds",
-        "https://www.wisdomtree.com/onchain/insights/blog/making-real-world-assets-move-like-crypto"
+      "status": "sourced_industry_entry",
+      "note": "Strategic Securrency investment and collaboration to integrate blockchain into the ETF ecosystem. The annual filing dates the investment to December 2019; the collaboration was publicly announced January 7, 2020. Not the launch of a tokenized fund.",
+      "date": "2019-12",
+      "sources": [
+        {
+          "url": "https://ir.wisdomtree.com/sec-filings/all-sec-filings/content/0001193125-20-055331/0001193125-20-055331.pdf",
+          "title": "WisdomTree 2019 Form 10-K: December 2019 Securrency investment"
+        },
+        {
+          "url": "https://ir.wisdomtree.com/news-events/press-releases/detail/126/wisdomtree-makes-strategic-investment-in-securrency-inc/1000",
+          "title": "WisdomTree: Securrency collaboration for blockchain-based ETFs"
+        }
       ]
     },
     {
@@ -239,14 +247,14 @@
       "priorCorporateOrLaunchDates": [
         "2007"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.broadridge.com/press-release/2026/broadridge-launches-dlx",
-        "https://www.broadridge.com/press-release/2026/ondo-finance-launches-first-ever-custodial-tokenized-securities-in-the-us",
-        "https://www.broadridge.com/press-release/2026/broadridge-digital-assets-for-canadian-wealth-firms",
-        "https://www.broadridge.com/press-release/2025/broadridge-enables-societe-generales-first-us-digital-bond",
-        "https://www.broadridge.com/press-release/2026/tokenized-assets-a-key-priority-for-financial-services-firms"
+      "status": "sourced_industry_entry",
+      "note": "Announced successful bilateral-repo blockchain pilot with Natixis and Societe Generale, recording trades and collateral. The earlier proxy-vote analytics pilot is not used as an asset-tokenization milestone.",
+      "date": "2017-10-17",
+      "sources": [
+        {
+          "url": "https://www.broadridge.com/press-release/2017/broadridge-successfully-completes-pilot-of-blockchain-based-bilateral-repo-solution",
+          "title": "Broadridge: bilateral repo pilot completion"
+        }
       ]
     },
     {
@@ -271,14 +279,14 @@
       "priorCorporateOrLaunchDates": [
         "2003"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.apexgroup.com/insights/apex-group-provides-transfer-agency-services-in-support-of-the-launch-of-fidelity-international-s-first-tokenised-product/",
-        "https://www.apexgroup.com/our-story/case-studies/supporting-fidelity-international-s-first-tokenised-fund-launch/",
-        "https://www.apexgroup.com/insights/apex-malta-transforms-industry-with-launch-of-new-tokenised-fund-share/",
-        "https://www.apexgroup.com/insights/apex-group-supports-launch-of-tokenised-real-estate-fund-with-industry-partners/",
-        "https://www.apexgroup.com/insights/apex-group-and-truleum-venture-partners-announce-dfsa-regulated-tokenized-fund-launch-in-difc/"
+      "status": "sourced_industry_entry",
+      "note": "Announced Inveniam partnership and investment with an operational rollout for blockchain-verified private-asset data and valuations. This is supporting RWA infrastructure, not a token issuance.",
+      "date": "2021-09-14",
+      "sources": [
+        {
+          "url": "https://www.apexgroup.com/insights/inveniam-closes-out-series-a-led-by-global-financial-services-provider-apex-group/",
+          "title": "Apex Group: Inveniam partnership and private-asset rollout"
+        }
       ]
     },
     {
@@ -351,14 +359,18 @@
       "priorCorporateOrLaunchDates": [
         "1973"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.dtcc.com/press-releases/2026/DTCC-FundSERV-Adds-Ondo-Finance-as-First-Tokenization-Member",
-        "https://www.dtcc.com/press-releases/2022/dtcc-shares-findings-from-its-pilot-with-the-digital-dollar-project",
-        "https://www.dtcc.com/press-releases",
-        "https://www.dtcc.com/press-releases/2026/dtcc-turns-tokenization-into-reality?trk=article-ssr-frontend-pulse_little-text-block",
-        "https://www.dtcc.com/insights/2026/tokenization-moves-from-theory-to-reality"
+      "status": "sourced_industry_entry",
+      "note": "Announced the Digital Asset proof-of-concept agreement for blockchain-based clearing and settlement of Treasury, agency and mortgage-backed repos. This was supporting post-trade infrastructure, not a production token issuance.",
+      "date": "2016-03-29",
+      "sources": [
+        {
+          "url": "https://mondovisione.com/news/dtcc-and-digital-asset-to-develop-distributed-ledger-solution-to-drive-improveme-2016329/",
+          "title": "DTCC and Digital Asset joint release: repo-clearing proof of concept"
+        },
+        {
+          "url": "https://www.cftc.gov/PressRoom/SpeechesTestimony/opagiancarlo-15",
+          "title": "CFTC speech citing DTCC's March 29, 2016 project announcement"
+        }
       ]
     },
     {
@@ -399,14 +411,14 @@
       "priorCorporateOrLaunchDates": [
         "1990"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://ir.apollo.com/_assets/_1330c9952814458ddb36d7b8cbfb7499/apollo/db/2220/21795/file/CORRECTED%2BTRANSCRIPT_%2BApollo%2BGlobal%2BManagement%2C%2BInc.%28APO-US%29%2C%2BBank%2Bof%2BAmerica%2BFinancials%2BCEO%2BConference%2C%2B16-September-2025%2B6_00%2BAM%2BET.pdf",
-        "https://www.apollo.com/insights-news/pressreleases/2022/03/figure-and-apollo-execute-mortgage-transactions-using-blockchain-technology-to-transfer-ownership-120240961",
-        "https://ir.apollo.com/_assets/_429d450fe7b9acff63268caf68941530/apollo/db/2247/21769/webcast_transcript/APO%2B1Q%2725%2BFinal%2BTranscript..pdf",
-        "https://www.apollo.com/insights-news/pressreleases/2026/06/broadcom--apollo--and-blackstone-establish-landmark-strategic-pl",
-        "https://ir.apollo.com/sec-filings/content/0001858681-26-000013/apo-20251231.htm"
+      "status": "sourced_industry_entry",
+      "note": "Announced the Figure collaboration for Provenance-based fund listings, securitization and digital marketplaces; project agreement, not a completed fund launch.",
+      "date": "2021-07-14",
+      "sources": [
+        {
+          "url": "https://www.apollo.com/insights-news/pressreleases/2021/07/apollo-and-figure-to-collaborate-on-blockchain-enabled-initiatives",
+          "title": "Apollo and Figure: blockchain initiative agreement"
+        }
       ]
     },
     {
@@ -510,9 +522,15 @@
       "priorCorporateOrLaunchDates": [
         "1928"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": []
+      "status": "sourced_industry_entry",
+      "note": "Named initial participant in the Spruce institutional testnet for FX and interest-rate swaps and asset settlement. This is a pilot using valueless test tokens, not a commercial tokenized fund launch.",
+      "date": "2023-04-12",
+      "sources": [
+        {
+          "url": "https://medium.com/avalancheavax/financial-institutions-join-avalanche-evergreen-subnet-spruce-to-drive-on-chain-finance-99686b715a55",
+          "title": "Avalanche: institutional Spruce testnet launch, April 12, 2023"
+        }
+      ]
     },
     {
       "profileId": "rwaf-steelwave",
@@ -562,14 +580,14 @@
       "priorCorporateOrLaunchDates": [
         "1998"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://investor.cmegroup.com/news-releases/news-release-details/cme-group-will-introduce-tokenization-technology-enhance-capital",
-        "https://www.cmegroup.com/media-room/press-releases/2025/3/25/cme_group_will_introducetokenizationtechnologytoenhancecapitalma.html?trk=article-ssr-frontend-pulse_little-text-block",
-        "https://www.prnewswire.com/news-releases/cme-group-will-introduce-tokenization-technology-to-enhance-capital-market-efficiency-using-google-clouds-new-universal-ledger-302410343.html",
-        "https://cloud.google.com/blog/products/identity-security/get-started-with-built-in-tokenization-for-sensitive-data-protection?hl=en",
-        "https://www.prnewswire.com/news-releases/bmo-introduces-tokenized-cash-and-deposit-platform-with-cme-group-and-google-cloud-302723324.html"
+      "status": "sourced_industry_entry",
+      "note": "Digital Asset launched its DAML distributed-ledger platform on Google Cloud, with Google joining the developer beta. This is the documented start of supporting financial smart-contract infrastructure, not a Google-issued tokenized asset.",
+      "date": "2018-07-23",
+      "sources": [
+        {
+          "url": "https://hub.digitalasset.com/hubfs/Press%20Releases/DA_GoogleCloud_FINAL.pdf",
+          "title": "Digital Asset and Google Cloud: DAML platform collaboration"
+        }
       ]
     },
     {
@@ -718,14 +736,14 @@
       "priorCorporateOrLaunchDates": [
         "2001"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.dzbank.com/content/dam/dzbank/dokumente/en/dz-bank/investor-relations/reports/archive/2024/DZ_BANK_Gruppe_HFB_2024_EN.pdf",
-        "https://www.dzbank.com/content/dzbank/en/home/we-are-dz-bank/press/news_archive/2026/premiere--dz-bank-and-kfw-fully-map-the-lifecycle-of-a-crypto-se.html",
-        "https://www.dzbank.com/content/dzbank/en/home/we-are-dz-bank/press/news_archive/2024/first-half-of-2024--dz-bank-group-reports-a-profit-before-taxes-.html",
-        "https://www.dzbank.com/content/dam/dzbank/dokumente/en/dz-bank/investor-relations/reports/archive/2026/DZBANK_Group_Pillar3_ARB_2025_12_EN.pdf",
-        "https://www.dzbank.com/content/dam/dzbank/dokumente/en/dz-bank/Press/press_releases/2024/EN%202024_HFB_Pressemitteilung_final.pdf"
+      "status": "sourced_industry_entry",
+      "note": "Named participant in the completed finledger pilot for blockchain processing of promissory-note issuance. Date is the pilot-completion announcement; production expansion followed.",
+      "date": "2019-05-21",
+      "sources": [
+        {
+          "url": "https://www.dzbank.com/content/dzbank/en/home/we-are-dz-bank/press/news_archive/2019/2019-05-21_blockchain_platform_finledger.html",
+          "title": "DZ BANK: finledger blockchain promissory-note pilot"
+        }
       ]
     },
     {
@@ -766,14 +784,14 @@
       "priorCorporateOrLaunchDates": [
         "1992"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.helaba.com/media/docs/int/investor-relations/publications/annual-reports/annual-reports-2025/half-yearly-financial-report-2025.pdf",
-        "https://www.helaba.com/int/press/news/releases/2024/first-time-ever-helaba-and-vc-trade-achieve-complete-digitalisation-in-the-schuldschein-market-.php",
-        "https://www.helaba.com/de/presse/news/meldungen/2019/blockchain-plattform-finledger-ermoeglicht-erstmals-vollstaendig-digitale-abwicklung-von-schuldscheindarlehen.php",
-        "https://www.helaba.com/media/docs/int/investor-relations/publications/annual-reports/annual-reports-2024/annual-report-2024.pdf",
-        "https://www.helaba.com/media/docs/de/investor-relations/refinanzierung/prospekte_protected/helaba-update-prospectus-2025/annual-financial-report-2024.pdf"
+      "status": "sourced_industry_entry",
+      "note": "Named participant in the completed finledger pilot for blockchain processing of promissory-note issuance. Date is the pilot-completion announcement; production expansion followed.",
+      "date": "2019-05-21",
+      "sources": [
+        {
+          "url": "https://www.dzbank.com/content/dzbank/en/home/we-are-dz-bank/press/news_archive/2019/2019-05-21_blockchain_platform_finledger.html",
+          "title": "DZ BANK: finledger blockchain promissory-note pilot"
+        }
       ]
     },
     {
@@ -782,14 +800,14 @@
       "priorCorporateOrLaunchDates": [
         "1870-03-10"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://flow.db.com/Topics/trust-and-securities-services/ready-for-take-off-scaling-digital-assets",
-        "https://gcp.prd.corporates.db.com/more/latest-news/deutsche-bank-completes-live-project-agora-real-value-test-transaction",
-        "https://www.db.com/news/detail/20260916-deutsche-bank-to-launch-digital-asset-custody-solution-for-institutional-and-corporate-clients?language_id=1",
-        "https://www.db.com/what-next/digital-disruption/tokenised-economy/kfw-armbruster/index?language_id=1",
-        "https://www.db.com/news/detail/20250526-deutsche-bank-partners-with-ai-firm-finaxai-to-transform-tokenised-funds-servicing-with-cutting-edge-ai?language_id=1"
+      "status": "sourced_industry_entry",
+      "note": "The bank's November 2017 timeline dates its corporate-bond smart-contract proof of value to the second half of 2015. Retained year precision because no quarter or day is established; earlier generic blockchain research is excluded.",
+      "date": "2015",
+      "sources": [
+        {
+          "url": "https://flow.db.com/files/documents/cash-management/GTB_Blockchain_Infographic_November_2017.pdf",
+          "title": "Deutsche Bank: blockchain journey, corporate-bond prototype in H2 2015"
+        }
       ]
     },
     {
@@ -830,14 +848,18 @@
       "priorCorporateOrLaunchDates": [
         "1968"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.euroclear.com/newsandinsights/en/press/2025/mr-09-digital-asset-and-euroclear.html",
-        "https://www.euroclear.com/newsandinsights/en/Format/Whitepapers-Reports/cbdc-to-settle-french-government-bonds.html",
-        "https://www.euroclear.com/newsandinsights/en/Format/Whitepapers-Reports/dlt-to-enhance-collateral-mobility.html",
-        "https://www.euroclear.com/newsandinsights/en/press/2024/mr-35-euroclear-robust-third-quarter-results.html",
-        "https://www.euroclear.com/newsandinsights/en/press/2021/2021-mr-24-cbdc-to-settle-french-government-bonds.html"
+      "status": "sourced_industry_entry",
+      "note": "Announced an itBit/Bankchain gold-settlement project and, on the same day, a separate European SME blockchain securities post-trade pilot. These were project agreements, not production launches.",
+      "date": "2016-06-21",
+      "sources": [
+        {
+          "url": "https://mondovisione.com/media-and-resources/news/euroclear-and-itbit-collaborate-on-blockchain-solution-for-gold-market-settlemen-2016622/",
+          "title": "Euroclear and itBit joint release: blockchain gold settlement"
+        },
+        {
+          "url": "https://www.euronext.com/en/investor-relations/financial-information/news/euronext-7-major-financial-institutions-join-forces",
+          "title": "Euronext: SME blockchain post-trade pilot agreement"
+        }
       ]
     },
     {
@@ -878,14 +900,14 @@
       "priorCorporateOrLaunchDates": [
         "1956"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://realestate.union-investment.com/en_GB/magazine/places-and-spaces/2024/issue-02-2024/digitalisation-real-estate-token",
-        "https://realestate.union-investment.com/en_GB/media-center/press-releases/dissolution-union-investment-real-estate-digital-gmbh",
-        "https://realestate.union-investment.com/magazin/raum-und-mehr/2024/ausgabe-02-2024/digitalisierung-immobilien-token",
-        "https://www.union-investment.com/expert-views/stablecoins-trumps-digital-dollar-dream",
-        "https://realestate.union-investment.com/en_GB/magazine/places-and-spaces/2025/issue-02-2025/real-estate-investment-capital-back-on-the-market"
+      "status": "sourced_industry_entry",
+      "note": "Participated as investor in the EIB's Ethereum digital bond. The issuer gives April 27 as launch/pricing and April 28 as settlement; the launch date is used. Undated earlier internal research is not treated as an event.",
+      "date": "2021-04-27",
+      "sources": [
+        {
+          "url": "https://www.eib.org/en/press/all/2021-141-european-investment-bank-eib-issues-its-first-ever-digital-bond-on-a-public-blockchain",
+          "title": "EIB: first public-blockchain bond and Union Investment participation"
+        }
       ]
     },
     {
@@ -956,14 +978,18 @@
       "priorCorporateOrLaunchDates": [
         "2000"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://group.bnpparibas/en/press-release/bnp-paribas-participated-in-eurosystem-trials-of-wholesale-settlement-dlt-solution",
-        "https://group.bnpparibas/uploads/file/bnpp_rar2016_gb_final.pdf",
-        "https://group.bnpparibas/communique-de-presse/bnp-paribas-explore-une-infrastructure-de-blockchain-publique-pour-la-tokenisation-de-fonds-monetaires",
-        "https://group.bnpparibas/en/press-release/bnp-paribas-confirms-commitment-blockchain",
-        "https://group.bnpparibas/en/press-release/bnp-paribas-explores-public-blockchain-infrastructure-for-money-market-fund-tokenisation?trk=article-ssr-frontend-pulse_little-text-block"
+      "status": "sourced_industry_entry",
+      "note": "Announced the SmartAngels blockchain securities-register pilot. The launch was planned for the second half of 2016; the dated event is the project agreement, not its completion.",
+      "date": "2016-04-05",
+      "sources": [
+        {
+          "url": "https://group.bnpparibas/en/press-release/bnp-paribas-securities-services-smartangels-revolutionise-financing-private-companies",
+          "title": "BNP Paribas and SmartAngels: blockchain share register"
+        },
+        {
+          "url": "https://group.bnpparibas/en/archive/2016",
+          "title": "BNP Paribas 2016 archive: announcement dated April 5"
+        }
       ]
     },
     {
@@ -1016,14 +1042,14 @@
       "priorCorporateOrLaunchDates": [
         "1857"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.santander.com/en/press-room/press-releases/santander-launches-the-first-end-to-end-blockchain-bond",
-        "https://www.santander.com/en/press-room/press-releases/2022/03/santander-and-agrotoken-join-forces-to-offer-loans-secured-by-cryptoassets",
-        "https://www.santander.com/content/dam/santander-com/en/documentos/resultados-trimestrales/2026/q1/rt-q1-2026-banco-santander-financial-report-en.pdf",
-        "https://www.santander.com/en/press-room/press-releases/2026/03/santander-and-visa-deliver-latin-americas-first-end-to-end-payments-powered-by-ai-agents",
-        "https://www.santander.com/es/sala-de-comunicacion/notas-de-prensa/santander-lanza-el-primer-bono-con-tecnologia-blockchain-de-prin"
+      "status": "sourced_industry_entry",
+      "note": "Santander's 2019 blockchain-bond release explicitly traces the bond initiative's work back to its blockchain lab in 2016. This dates the documented project work, not the September 2019 bond issuance.",
+      "date": "2016",
+      "sources": [
+        {
+          "url": "https://www.santander.com/en/press-room/press-releases/santander-launches-the-first-end-to-end-blockchain-bond",
+          "title": "Santander: end-to-end blockchain bond and project origins in 2016"
+        }
       ]
     },
     {
@@ -1048,14 +1074,18 @@
       "priorCorporateOrLaunchDates": [
         "2005"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.caceis.com/fr/communiques-de-presse/le-credit-agricole-lance-leurxt-son-stablecoin-en-euro",
-        "https://www.caceis.com/nl/persbericht/credit-agricole-launches-eurxt-its-euro-denominated-stablecoin",
-        "https://www.caceis.com/fr/actualites/digitalisation-de-la-finance-de-la-tokenisation-a-lia",
-        "https://www.caceis.com/fr/actualites/innovation-une-nouvelle-ligne-metier-exclusivement-dediee-aux-actifs-digitaux",
-        "https://www.caceis.com/fr/actualites/de-la-finance-traditionnelle-a-la-finance-tokenisee-une-transition-en-toute-confiance"
+      "status": "sourced_industry_entry",
+      "note": "Founding participant in Fundchain, launched in summer 2016 to build a blockchain investment-fund distribution proof of concept. Year precision is retained because the launch season does not establish a specific quarter or day.",
+      "date": "2016",
+      "sources": [
+        {
+          "url": "https://www.pwc.lu/en/fintech/docs/pwc-fintech-distributed-ledger-technology.pdf",
+          "title": "PwC Luxembourg: Fundchain launch in summer 2016 and fund-distribution prototype"
+        },
+        {
+          "url": "https://www.scorechain.com/blog/fundchain-initiative-investigating-the-potential-benefit-of-blockchain-to-the-luxembourg-fund-industry",
+          "title": "Scorechain: founding Fundchain participants and summer 2016 start"
+        }
       ]
     },
     {
@@ -1160,14 +1190,14 @@
       "priorCorporateOrLaunchDates": [
         "1968"
       ],
-      "status": "entry_date_unverified",
-      "note": "Paperless mortgage evidence does not establish asset tokenization.",
-      "candidateSources": [
-        "https://www.natwestgroup.com/news-and-insights/latest-stories/ai-and-data/2026/apr/the-future-of-digital-assets-why-customer-led-innovation-and-col.html",
-        "https://www.natwestgroup.com/news-and-insights/news-room/press-releases/climate/2021/jul/banks-join-forces-to-create-voluntary-carbon-marketplace.html",
-        "https://investors.natwestgroup.com/~/media/Files/R/RBS-IR-V2/results-center/18022022/natwest-group-annual-report-accounts-2021.pdf",
-        "https://investors.natwestgroup.com/~/media/Files/R/RBS-IR-V2/annual-report-2025/2025-annual-report-and-accounts.pdf",
-        "https://investors.natwestgroup.com/~/media/Files/R/RBS-IR-V2/results-center/13022026/nwb-annual-report.pdf"
+      "status": "sourced_industry_entry",
+      "note": "Royal Bank of Scotland, the group's former name, participated in the Synaps syndicated-loan blockchain prototype announced on this date. This is a successful test, not the later NatWest LenderComm production launch.",
+      "date": "2017-03-30",
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/financial-institutions-move-closer-to-realizing-a-blockchain-solution-for-syndicated-loans-300431763.html",
+          "title": "Ipreo/Synaps release: syndicated-loan blockchain demonstration"
+        }
       ]
     },
     {
@@ -1382,14 +1412,14 @@
       "priorCorporateOrLaunchDates": [
         "1804"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.schroders.com/en-gb/uk/intermediary/long-term-asset-fund-ltaf-page/",
-        "https://www.schroders.com/en-gb/uk/institutional/sc-uk-innovation-ltaf/",
-        "https://www.schroders.com/en/global/official-institutions/about-us/our-history/",
-        "https://www.schroders.com/en/global/individual/corporate-transparency/reporting/",
-        "https://www.schroders.com/de-de/de/privatanleger/ueber-uns/unsere-geschichte/"
+      "status": "sourced_industry_entry",
+      "note": "Participated as investor in the EIB's sterling digital bond on HSBC Orion. January 31 is the issuer's pricing date; settlement followed February 2.",
+      "date": "2023-01-31",
+      "sources": [
+        {
+          "url": "https://www.eib.org/en/press/all/2023-030-eib-issues-its-first-ever-digital-bond-in-british-pounds",
+          "title": "EIB: sterling digital bond with Schroders as investor"
+        }
       ]
     },
     {
@@ -1430,14 +1460,14 @@
       "priorCorporateOrLaunchDates": [
         "1937"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.troweprice.com/en/us/press/2026/press-release--t--rowe-price-debuts-industry-s-first-actively-ma0",
-        "https://investors.troweprice.com/news-releases/news-release-details/t-rowe-price-expand-fixed-income-etf-and-sma-capabilities",
-        "https://investors.troweprice.com/news-releases/news-release-details/goldman-sachs-asset-management-and-t-rowe-price-debut-first",
-        "https://investors.troweprice.com/news-releases/news-release-details/t-rowe-price-announces-chief-operating-officer-departure-and",
-        "https://www.troweprice.com/en/be/insights/the-long-view-goldman-sachs"
+      "status": "sourced_industry_entry",
+      "note": "Named initial participant in the Spruce institutional testnet for FX and interest-rate swaps and asset settlement. This is a pilot using valueless test tokens, not a commercial tokenized fund launch.",
+      "date": "2023-04-12",
+      "sources": [
+        {
+          "url": "https://medium.com/avalancheavax/financial-institutions-join-avalanche-evergreen-subnet-spruce-to-drive-on-chain-finance-99686b715a55",
+          "title": "Avalanche: institutional Spruce testnet launch, April 12, 2023"
+        }
       ]
     },
     {
@@ -1926,14 +1956,18 @@
       "priorCorporateOrLaunchDates": [
         "1998"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": [
-        "https://www.pwc.com/us/en/industries/financial-services/library/tokenized-funds-operating-model.html",
-        "https://www.pwc.com/us/en/industries/financial-services/library/tokenizing-assets.html",
-        "https://www.pwc.com/us/en/tech-effect/emerging-tech/tokenization-in-financial-services.html",
-        "https://www.pwc.com/us/en/industries/financial-services/library/asset-management-universal-asset-access.html",
-        "https://www.pwc.com/gx/en/financial-services/pdf/pwc-global-cbdc-index-and-stablecoin-overview-2023.pdf"
+      "status": "sourced_industry_entry",
+      "note": "Founding participant in Fundchain, launched in summer 2016 to build a blockchain investment-fund distribution proof of concept. Year precision is retained because the launch season does not establish a specific quarter or day.",
+      "date": "2016",
+      "sources": [
+        {
+          "url": "https://www.pwc.lu/en/fintech/docs/pwc-fintech-distributed-ledger-technology.pdf",
+          "title": "PwC Luxembourg: Fundchain launch in summer 2016 and fund-distribution prototype"
+        },
+        {
+          "url": "https://www.scorechain.com/blog/fundchain-initiative-investigating-the-potential-benefit-of-blockchain-to-the-luxembourg-fund-industry",
+          "title": "Scorechain: founding Fundchain participants and summer 2016 start"
+        }
       ]
     },
     {
@@ -2006,9 +2040,15 @@
       "priorCorporateOrLaunchDates": [
         "1690"
       ],
-      "status": "entry_date_unverified",
-      "note": "Reviewed primary-source search results do not yet establish the earliest qualifying tokenization/RWA project date. Corporate start excluded; no replacement date inferred.",
-      "candidateSources": []
+      "status": "sourced_industry_entry",
+      "note": "Barclays presented its working Smart Contract Templates investment-banking prototype for an interest-rate swap on a distributed ledger in April 2016. Month precision avoids equating the April 25 presentation date with the earlier public demonstration.",
+      "date": "2016-04",
+      "sources": [
+        {
+          "url": "https://barclays.relayto.com/e/presentation-to-coindesk-snevwxxn",
+          "title": "Barclays / Lee Braine: April 2016 Smart Contract Templates presentation"
+        }
+      ]
     }
   ]
 }
