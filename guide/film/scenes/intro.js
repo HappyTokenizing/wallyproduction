@@ -18,9 +18,9 @@
     K.txt(ctx, 'RWA TEXTBOOK', 0, -h / 2 + 222 * u, { f: 'mono', s: K.fitSize(ctx, 'RWA TEXTBOOK', w * 0.86, { f: 'mono', s: 64 * u, w: 900 }), w: 900, c: C.orange, a: 'center' });
     window.WallyRig.draw(ctx, { x: 0, y: h / 2 - 118 * u, s: 0.43 * u, trunk: { bend: Math.sin((o.t || 0) * 1.3) * 0.05 } });
     ctx.fillStyle = 'rgba(32,26,19,.35)'; ctx.fillRect(-w * 0.38, h / 2 - 92 * u, w * 0.76, 1.5);
-    K.headMark(ctx, -w * 0.3, h / 2 - 66 * u, 46 * u, C.ink);
+    K.rwafMark(ctx, -w * 0.31, h / 2 - 64 * u, 38 * u, C.ink);
     K.txt(ctx, 'SPONSORED BY RWA FOUNDATION', w * 0.04, h / 2 - 59 * u, { f: 'mono', s: 14 * u, w: 600, c: C.ink, a: 'center', ls: 1.5 * u });
-    K.txt(ctx, '@WALLY_DAO', 0, h / 2 - 26 * u, { f: 'mono', s: 14 * u, w: 600, c: C.ink2, a: 'center', ls: 2 * u });
+    K.txt(ctx, '@wallycollection', 0, h / 2 - 26 * u, { f: 'mono', s: 14 * u, w: 600, c: C.ink2, a: 'center', ls: 2 * u });
     ctx.restore();
   };
   const noSign = (ctx, x, y, r, p) => { if (p <= 0) return; const s = K.lerp(1.8, 1, E.outCubic(K.clamp(p))); ctx.save(); ctx.translate(x, y); ctx.scale(s, s); ctx.globalAlpha = K.clamp(p * 3); ctx.lineWidth = r * 0.16; ctx.strokeStyle = C.red; ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.stroke(); ctx.beginPath(); ctx.moveTo(-r * 0.7, -r * 0.7); ctx.lineTo(r * 0.7, r * 0.7); ctx.stroke(); ctx.restore(); };
@@ -56,8 +56,9 @@
   };
   SC.I4 = (ctx, S) => {
     const tiles = [['49', 'PAGES'], ['11', 'CHAPTERS'], ['1', 'ELEPHANT']];
-    const out = S.at(4.0, 0.5, E.inCubic);
-    tiles.forEach(([n, l], k) => {
+    // the tiles and the note are completely gone before the contents arrive (they never share a frame)
+    const out = S.at(3.55, 0.45, E.inOutCubic);
+    if (out < 1) tiles.forEach(([n, l], k) => {
       const p = S.pop(k * 1.0, 0.5); if (p <= 0) return;
       const x = 720 + k * 400, y = 470 - out * 60;
       ctx.save(); ctx.globalAlpha = 1 - out; ctx.translate(x, y); ctx.scale(p, p);
@@ -66,13 +67,13 @@
       K.txt(ctx, l, 0, 112, { f: 'mono', s: 26, w: 700, c: C.ink, a: 'center', ls: 6 });
       ctx.restore();
     });
-    if (out < 1) { ctx.save(); ctx.globalAlpha = 1 - out; K.note(ctx, "let's read.", 1080, 760 - out * 60, { p: S.lin(3.0, 0.8), s: 92, rot: -0.04, underline: true }); ctx.restore(); }
+    if (out < 1) { ctx.save(); ctx.globalAlpha = 1 - out; K.note(ctx, "let's read.", 1080, 760 - out * 60, { p: S.lin(2.6, 0.8), s: 92, rot: -0.04, underline: true }); ctx.restore(); }
     // table of contents cascade
-    if (S.bt > 4.0) {
+    if (S.bt > 4.05) {
       const chs = ['Foundations', 'Tokenized Equities', 'Market Structure', 'Treasuries', 'Yield & Returns', 'Private Credit', 'Real Estate', 'Infrastructure & Compliance Rails', 'Commodities', 'Funds', 'Risk & Red Flags'];
-      K.txt(ctx, 'CONTENTS', 560, 300, { f: 'mono', s: 20, w: 700, c: C.orange, ls: 6, alpha: S.at(4.0, 0.3) });
+      K.txt(ctx, 'CONTENTS', 560, 300, { f: 'mono', s: 20, w: 700, c: C.orange, ls: 6, alpha: S.at(4.05, 0.3) });
       chs.forEach((c, k) => {
-        const a = S.at(4.1 + k * 0.12, 0.35), col = k < 6 ? 0 : 1, row = k < 6 ? k : k - 6;
+        const a = S.at(4.15 + k * 0.12, 0.35), col = k < 6 ? 0 : 1, row = k < 6 ? k : k - 6;
         const x = 560 + col * 640, y = 370 + row * 66 + (1 - a) * 14;
         K.txt(ctx, String(k + 1).padStart(2, '0'), x, y, { f: 'mono', s: 22, w: 700, c: C.orange, alpha: a });
         K.txt(ctx, c, x + 56, y + 2, { f: 'serif', s: 34, w: 700, c: C.ink, alpha: a });

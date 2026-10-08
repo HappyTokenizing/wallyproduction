@@ -46,7 +46,7 @@
     K.words(ctx, 'Read it. Watch it. Play Tokens, Please.', 1190, 610, { f: 'serif', s: 46, w: 400, i: true, c: C.ink2, a: 'center', t: S.since(1.0), per: 0.06 });
     const u = S.pop(2.2);
     if (u > 0) { ctx.save(); ctx.translate(1190, 720); ctx.scale(u, u); K.chip(ctx, 'rwaf.xyz/guide', 0, 0, { s: 40, fill: C.orange, c: '#FFFFFF', a: 'center', ls: 1, padX: 40, h: 86, w: 700 }); ctx.restore(); }
-    K.txt(ctx, 'SPONSORED BY RWA FOUNDATION  ·  @WALLY_DAO  ·  @RWAFOUNDATION_', 1190, 850, { f: 'mono', s: 20, w: 600, c: C.ink2, a: 'center', ls: 3, alpha: S.at(3.0, 0.5) });
+    K.txt(ctx, 'SPONSORED BY RWA FOUNDATION  ·  @wallycollection  ·  @RWAFOUNDATION_', 1190, 850, { f: 'mono', s: 20, w: 600, c: C.ink2, a: 'center', ls: 3, alpha: S.at(3.0, 0.5) });
     S.wally.pose = { sparkle: S.bt > 1 && S.bt < 2.4 ? Math.sin((S.bt - 1) / 1.4 * Math.PI) : 0 };
     S.fadeBlack = fadeOut;
   };

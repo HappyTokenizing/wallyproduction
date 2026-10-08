@@ -530,10 +530,12 @@
     K.box(ctx, -82, -88, 164, 176, { r: 6, fill: '#F4EFE4', stroke: '#2B2620', lw: 4 });
     ctx.fillStyle = '#3A332B'; ctx.fillRect(-82, -88, 164, 42); for (const rx of [-40, 40]) { ctx.beginPath(); ctx.arc(rx, -92, 8, 0, 7); ctx.fillStyle = '#8E8576'; ctx.fill(); ctx.stroke(); }
     K.txt(ctx, 'OCTOBER', 0, -58, { f: 'mono', s: 18, w: 700, c: '#EDE6D8', a: 'center', ls: 3 });
-    K.txt(ctx, DAYS[day], 0, 52, { f: 'serif', s: 78, w: 700, c: day === 1 || day === 2 ? '#2B2620' : '#2B2620', a: 'center' });
+    // one size for every day, fitted to the widest name (MON) so nothing spills past the page edges
+    const ds = K.fitSize(ctx, 'MON', 128, { f: 'serif', s: 78, w: 700 });
+    K.txt(ctx, DAYS[day], 0, 21 + ds * 0.36, { f: 'serif', s: ds, w: 700, c: '#2B2620', a: 'center' });
     if (day > 0 && tb < T[day - 1] + 0.25) { // the old page flies off
       const u = (tb - T[day - 1]) / 0.25; ctx.save(); ctx.translate(30 * u, -46 - 120 * u); ctx.rotate(-0.9 * u); ctx.globalAlpha = 1 - u;
-      K.box(ctx, -82, 0, 164, 134, { r: 6, fill: '#FAF7F0', stroke: '#2B2620', lw: 3 }); K.txt(ctx, DAYS[day - 1], 0, 96, { f: 'serif', s: 78, w: 700, c: '#2B2620', a: 'center' }); ctx.restore();
+      K.box(ctx, -82, 0, 164, 134, { r: 6, fill: '#FAF7F0', stroke: '#2B2620', lw: 3 }); K.txt(ctx, DAYS[day - 1], 0, 67 + ds * 0.36, { f: 'serif', s: ds, w: 700, c: '#2B2620', a: 'center' }); ctx.restore();
     }
     ctx.restore();
     // CLOSED, in the teller window
@@ -759,7 +761,9 @@
     for (const sx of [-1, 1]) { ctx.beginPath(); ctx.moveTo(0, 60); ctx.lineTo(sx * 452, 60); ctx.lineTo(sx * 430, -88); ctx.lineTo(0, -82); ctx.closePath(); ctx.fillStyle = '#F2EDE2'; ctx.fill(); ctx.lineWidth = 3; ctx.strokeStyle = '#2B2620'; ctx.stroke(); }
     ctx.strokeStyle = 'rgba(40,32,24,.38)'; ctx.lineWidth = 1.5; for (let i = 1; i < 8; i++) { const yy = -82 + i * 18; ctx.beginPath(); ctx.moveTo(-436 + i * 2, yy); ctx.lineTo(436 - i * 2, yy); ctx.stroke(); }
     for (let c = -8; c <= 8; c++) { if (!c) continue; ctx.beginPath(); ctx.moveTo(c * 52, -84); ctx.lineTo(c * 54, 58); ctx.stroke(); }
-    const r = K.rand(12); for (let i = 0; i < 34; i++) { const cx = -420 + Math.floor(r() * 8) * 52 + (r() < 0.5 ? 0 : 0), cy = -66 + Math.floor(r() * 7) * 18; K.txt(ctx, String(Math.floor(r() * 900 + 100)), cx + 6, cy + 14, { f: 'hand', s: 19, w: 700, c: '#3A332B' }); }
+    const r = K.rand(12), cells = []; for (let c = 0; c < 8; c++) for (let w = 0; w < 7; w++) cells.push([c, w]);
+    for (let i = cells.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [cells[i], cells[j]] = [cells[j], cells[i]]; } // one number per cell, never two in the same box
+    for (const [c, w] of cells.slice(0, 34)) K.txt(ctx, String(Math.floor(r() * 900 + 100)), -420 + c * 52 + 6, -66 + w * 18 + 14, { f: 'hand', s: 19, w: 700, c: '#3A332B' });
     ctx.restore();
     // the fund admin inches along a row of the right page, pencil in hand, then nods off
     const asleep = ramp(tb, tz - 0.25, 0.3), sx = 1140 - Math.min(tb, tz - 0.25) * 40;
@@ -801,9 +805,8 @@
     });
     // Wally the barista: sips through it all, raises the mug at the fine print
     const cyc = (t + 0.4) % 2.2, sip = cyc < 1.1 ? Math.sin(cyc / 1.1 * Math.PI) : 0, cheers = ramp(t, A.fineZ - 0.3, 0.3), s2 = sip * (1 - cheers);
-    const pose = { x: 418, y: 992, s: 0.9, trunk: { bend: lerp(0.35, 0.25, s2), lift: lerp(0.55, 1.05, s2), curl: lerp(0.35, 0.6, s2) }, headRot: 0.04 * s2, bob: 3 * Math.abs(Math.sin(t * Math.PI / BEAT)) };
-    if (cheers > 0) pose.trunk = { bend: lerp(pose.trunk.bend, 0.6, cheers), lift: lerp(pose.trunk.lift, 1.0, cheers), curl: lerp(pose.trunk.curl, 0.1, cheers) };
-    pose.prop = { kind: 'mug', a: 0.3 * s2 - 0.2 * cheers, t };
+    const pose = { x: 418, y: 992, s: 0.9, headRot: 0.03 * s2, bob: 3 * Math.abs(Math.sin(t * Math.PI / BEAT)) };
+    window.WallyRig.coffee(pose, sip, cheers, t); // mug in the paw, trunk dips in to sip
     addPose(pose, { sparkle: 1.1 }, bump(t, A.fineZ, 0.8));
     if (t < A.sl0) finePrint(ctx, A, t);
     shadow(ctx, 418, 996, 150, 0.12); wally(ctx, pose);
@@ -990,7 +993,7 @@
   const SPOTS = {
     AD0: { boring: ad0Boring, colour: ad0Colour, slateWally: (p) => { p.skate = { tilt: 0 }; } },
     AD1: { boring: ad1Boring, colour: ad1Colour, slateWally: (p, u) => { p.trunk = { bend: 0.35, lift: 1.0 }; p.prop = { kind: 'coin', t: u }; } },
-    AD2: { boring: ad2Boring, colour: ad2Colour, slateWally: (p, u) => { const sip = Math.sin(clamp((u - 0.3) / 1.0) * Math.PI); p.trunk = { bend: lerp(0.35, 0.25, sip), lift: lerp(0.55, 1.05, sip), curl: lerp(0.35, 0.6, sip) }; p.prop = { kind: 'mug', a: 0.3 * sip, t: u }; } },
+    AD2: { boring: ad2Boring, colour: ad2Colour, slateWally: (p, u) => { const sip = Math.sin(clamp((u - 0.3) / 1.0) * Math.PI); window.WallyRig.coffee(p, sip, 0, u); } },
     AD3: { boring: ad3Boring, colour: ad3Colour, slateWally: (p, u) => { p.trunk = { bend: 0.35, lift: 1.0 }; p.prop = { kind: 'coin', t: u }; } },
     AD4: { boring: ad4Boring, colour: ad4Colour, slateWally: (p, u) => { p.trunk = { bend: 0.65, lift: 0.6, curl: 0.1 }; p.prop = { kind: 'magnifier', a: -0.3 + Math.sin(u * 2.2) * 0.1 }; } },
   };

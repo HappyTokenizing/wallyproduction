@@ -24,9 +24,9 @@ window.CASES = {
         fields: [['ASSET', 'Tokenized T-bill fund shares'], ['TOTAL VALUE', '$300M onchain'], ['DEPOSITED IN PROTOCOLS', '$4M (the rest sits untouched in wallets)', 1], ['CUSTODIAN', 'Named, qualified custodian'], ['TRANSFER AGENT', 'Registered']],
         answer: 'deny', cite: '1.6', why: "Total Value measures what exists onchain. TVL measures what's actually working. Calling $300M of mostly idle supply \"TVL\" turns a nap into a story about demand." },
       { id: '1e', type: 'inspect', ticker: 'NOTA', name: 'No-Agent fund token', kind: 'fund', mood: 'smug',
-        pitch: "No transfer agent needed. The blockchain IS the register. Disrupt!",
-        fields: [['ASSET', 'Shares of a short-duration bond fund'], ['CUSTODIAN', 'Named, qualified custodian'], ['TRANSFER AGENT', 'None. "The chain decides who can hold it."', 1], ['WRAPPER', 'Open ERC-20, no transfer checks'], ['TOTAL VALUE', '$18M']],
-        answer: 'deny', cite: '1.5', why: "A token can move in seconds. Whether that move counts under the law is the transfer agent's call, not the blockchain's." },
+        pitch: "No transfer agent. No rules. The blockchain IS the register. Disrupt!",
+        fields: [['ASSET', 'Shares of a short-duration bond fund'], ['CUSTODIAN', 'Named, qualified custodian'], ['TRANSFER AGENT', 'None appointed'], ['RULES IN THE TOKEN', 'None. Open ERC-20: no allowlist, no KYC or transfer checks', 1], ['TOTAL VALUE', '$18M']],
+        answer: 'deny', cite: '1.5', why: "Skipping the transfer agent can be fine: some RWAs build KYC and transfer rules into the token itself. $NOTA has neither, so nobody checks who may hold a fund share or whether a transfer counts." },
     ] },
     { n: 2, memo: "Stocks in wrappers. Native, custodial or synthetic? Which rulebook decides who can buy? And what happens on merger day?", cases: [
       { id: '2a', type: 'inspect', ticker: 'MCORPx', name: '"MegaCorp stock" token', kind: 'equity', mood: 'smug',

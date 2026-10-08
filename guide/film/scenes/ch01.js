@@ -170,7 +170,7 @@
       if (wi >= 0 && walk > 0) { x = K.lerp(x, 1470 + (wi % 3) * 90, walk); y = K.lerp(y, 470 + Math.floor(wi / 3) * 100, walk) - Math.sin(walk * Math.PI) * 50; }
       const sleepy = wi < 0 ? nap : 0;
       ctx.save(); ctx.translate(x, y); ctx.scale(p, p); K.coin(ctx, 0, 0, 25, { fill: sleepy > 0.5 ? '#E8A06A' : C.orange }); ctx.restore();
-      if (sleepy > 0.5 && (k === 9 || k === 26 || k === 3 || k === 33)) I.zzz(ctx, x + 10, y - 20, 90, t + k);
+      if (sleepy > 0.5 && (k === 17 || k === 20 || k === 26 || k === 35)) I.zzz(ctx, x + 10, y - 20, 90, t + k); // rows 2+: the Zs never reach the label
     }
     if (nap > 0) label(ctx, '…napping in wallets', gx + 210, gy + rows * step + 20, { c: C.ink2, s: 18, alpha: nap });
     // protocol box with gears
@@ -188,7 +188,8 @@
     if (st > 0) {
       ctx.save(); ctx.translate(gx + 220, gy + 120); ctx.rotate(-0.08); ctx.scale(st, st);
       K.box(ctx, -210, -58, 420, 116, { r: 10, fill: C.neonYellow, stroke: C.ink, lw: 4 });
-      K.txt(ctx, '$2B TVL!!!', 0, 22, { f: 'display', s: 66, w: 900, i: true, st: 'expanded', c: C.ink, a: 'center' });
+      const hs = K.fitSize(ctx, '$2B TVL!!!', 360, { f: 'display', s: 66, w: 900, i: true, st: 'expanded' });
+      K.txt(ctx, '$2B TVL!!!', 0, hs * 0.34, { f: 'display', s: hs, w: 900, i: true, st: 'expanded', c: C.ink, a: 'center' });
       ctx.restore();
       K.strike(ctx, gx + 20, gy + 140, gx + 420, S.lin(4.4, 0.25), { lw: 10 });
     }

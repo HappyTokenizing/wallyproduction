@@ -96,12 +96,19 @@ img{display:block;max-width:100%}
 .nav-cta{margin-left:auto;display:flex;align-items:center;gap:16px}
 .fdn-link{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);padding:6px 2px;border-bottom:1px solid transparent;transition:.15s}
 .fdn-link:hover,.fdn-link.on{color:var(--orange2);border-color:rgba(216,83,0,.5)}
-.nav-burger{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--line2);background:var(--card);align-items:center;justify-content:center}
+.nav-burger{display:flex;width:42px;height:42px;border-radius:12px;border:1px solid var(--line2);background:var(--card);align-items:center;justify-content:center}
+.nav-burger[aria-expanded="true"]{border-color:var(--orange2)}
 .nav-burger svg{width:20px;height:20px;stroke:var(--text);stroke-width:2;stroke-linecap:round;fill:none}
 .mobile-menu{position:fixed;inset:72px 0 auto 0;z-index:89;background:var(--bg2);border-bottom:1px solid var(--line);padding:14px 32px 26px;display:flex;flex-direction:column;gap:2px;transform:translateY(-10px);opacity:0;pointer-events:none;transition:.25s var(--ease)}
 .mobile-menu.open{transform:none;opacity:1;pointer-events:auto}
 .mobile-menu button,.mobile-menu a{display:block;padding:13px 4px;font-size:16.5px;font-weight:600;border-bottom:1px solid var(--line);text-align:left}
 .mobile-menu .fdn-link{margin-top:10px;border:0}
+@media(min-width:761px){
+  .mobile-menu{inset:80px max(32px,calc((100vw - 1180px)/2 + 32px)) auto auto;width:300px;padding:10px 12px;border:1px solid var(--line2);border-radius:16px;box-shadow:0 18px 50px rgba(32,26,19,.16)}
+  .mobile-menu button,.mobile-menu a{font-size:15px;padding:11px 10px;border-radius:10px;border-bottom:0}
+  .mobile-menu button:hover{background:var(--card)}
+  .mobile-menu .mm-members{display:none}
+}
 .mobile-menu .btn{margin-top:12px;border-bottom:0}
 
 /* ---------- hero ---------- */
@@ -952,7 +959,6 @@ input.err,.nf-row.err{animation:shake .4s}
 @media(max-width:760px){
   .wrap{padding:0 20px}
   .nav-cta .fdn-link{display:none}
-  .nav-burger{display:flex}
   .section{padding:42px 0}
   .hero{padding:18px 0 28px}
   .statgrid{grid-template-columns:1fr}
@@ -1672,8 +1678,6 @@ html{ scrollbar-color:var(--line2) transparent }
         <span>RWA Foundation</span>
       </button>
       <div class="nav-cta">
-        <button class="fdn-link" onclick="showPage('news')">News</button>
-        <button class="fdn-link" onclick="showPage('jobs')">Jobs</button>
         <button class="fdn-link" id="fdnLink" onclick="showPage('foundation')">Our Members</button>
         <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="mmenu" onclick="toggleMenu()">
           <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
@@ -1681,10 +1685,15 @@ html{ scrollbar-color:var(--line2) transparent }
       </div>
     </div>
   </nav>
+  <!-- the site menu: every link except Our Members lives here (dropdown on desktop, sheet on phones) -->
   <div class="mobile-menu" id="mmenu">
+    <button onclick="mm();showPage('home')">Home</button>
     <button onclick="mm();showPage('news')">News</button>
     <button onclick="mm();showPage('jobs')">Jobs</button>
-    <button class="fdn-link" onclick="showPage('foundation')">Our Members</button>
+    <button onclick="mm();openEcoFrom('home')">Ecosystem</button>
+    <button onclick="mm();location.href='/research/'">Research</button>
+    <button onclick="mm();location.href='/guide/'">Wally's RWA Textbook</button>
+    <button class="fdn-link mm-members" onclick="showPage('foundation')">Our Members</button>
   </div>
 
   <!-- ================= PAGE: HOME ================= -->
@@ -2836,6 +2845,8 @@ const ago = t => { const m=Math.max(1,Math.round((Date.now()-t)/60000)); return 
 /* ---------- landing: nav / reveal / counters ---------- */
 function mm(){ $('#mmenu').classList.remove('open'); const b=$('.nav-burger'); if(b) b.setAttribute('aria-expanded','false'); }
 function toggleMenu(){ const open=$('#mmenu').classList.toggle('open'); const b=$('.nav-burger'); if(b) b.setAttribute('aria-expanded', open); }
+document.addEventListener('keydown', e=>{ if(e.key==='Escape' && $('#mmenu').classList.contains('open')) mm(); });
+document.addEventListener('click', e=>{ const m=$('#mmenu'); if(m.classList.contains('open') && !m.contains(e.target) && !e.target.closest('.nav-burger')) mm(); });
 addEventListener('scroll', ()=> $('#nav').classList.toggle('scrolled', scrollY>24), {passive:true});
 
 const io = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }), {threshold:.15});

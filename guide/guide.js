@@ -10,8 +10,15 @@
   const player = $('#player'), canvas = $('#film'), range = $('#c-range'), fill = $('#c-fill');
   const DUR = TL.duration, I2 = TL.scenes.find((s) => s.id === 'I2'), POSTER_T = I2 ? +(I2.start + I2.dur * 0.85).toFixed(2) : 0; // poster: "This is a textbook."
   const P = { T: POSTER_T, playing: false, started: false, ready: false, quality: 1, last: 0, costs: [], idleTimer: 0 };
-  const audio = new Audio(); audio.preload = 'auto'; audio.src = 'assets/score.m4a';
-  let audioOk = true; audio.addEventListener('error', () => { audioOk = false; });
+  const audio = new Audio(); audio.preload = 'none'; audio.src = 'assets/score.m4a'; // streams on first play, never on page load
+  let audioOk = true; audio.addEventListener('error', () => { audioOk = false; buffering = 0; player.classList.remove('buffering'); startAssets(); });
+  let assetsStarted = false;
+  const startAssets = () => { if (assetsStarted) return; assetsStarted = true; K.loadAssets().then(() => { if (!P.playing) draw(); }); };
+  audio.addEventListener('playing', () => setTimeout(startAssets, 1500));
+  let buffering = 0; // performance.now() when the audio stalled, 0 when it is flowing
+  const stall = () => { if (P.playing && audioOk && !buffering) { buffering = performance.now(); player.classList.add('buffering'); } };
+  const flow = () => { buffering = 0; player.classList.remove('buffering'); };
+  audio.addEventListener('waiting', stall); ['playing', 'canplay', 'canplaythrough'].forEach((ev) => audio.addEventListener(ev, flow));
   $('#dur-label').textContent = fmt(DUR); $('#dur-label2').textContent = fmt(DUR); $('#c-dur').textContent = fmt(DUR);
   if (store.get('guide_muted') === '1') { audio.muted = true; player.classList.add('muted'); }
 
@@ -43,7 +50,10 @@
     const dt = Math.min(0.1, (now - P.last) / 1000); P.last = now;
     // quality governor: canvas raster cost shows up as long frames, so watch the frame interval itself
     P.costs.push(dt * 1000); if (P.costs.length >= 40) { const m = P.costs.sort((a, b) => a - b)[20]; P.costs = []; if (m > 24 && P.quality > 0.5) { P.quality *= 0.8; size(); } }
-    if (audioOk && !audio.paused && audio.readyState >= 3 && Math.abs(audio.currentTime - P.T) < 0.4) P.T = audio.currentTime; else P.T += dt;
+    const held = buffering && performance.now() - buffering < 4000;
+    if (buffering && !held) flow(); // audio is too slow: keep the film moving; 'playing' re-syncs the sound later
+    if (held) { /* hold the frame until the audio catches up */ }
+    else if (audioOk && !audio.paused && audio.readyState >= 3 && Math.abs(audio.currentTime - P.T) < 0.4) P.T = audio.currentTime; else P.T += dt;
     if (P.T >= DUR - 0.02) { P.T = DUR - 0.02; pause(); P.T = 0; }
     draw(); requestAnimationFrame(loop);
   }
@@ -51,10 +61,11 @@
     if (!P.ready) { P.wantPlay = true; if (audioOk) audio.play().then(() => { if (!P.playing) audio.pause(); }).catch(() => {}); return; } // unlock audio inside the gesture
     if (!P.started && P.T === POSTER_T) P.T = 0; // the poster is a frame from 0:11; the film itself starts at 0:00
     P.started = true; P.playing = true; player.classList.add('started', 'playing');
-    if (audioOk) { try { audio.currentTime = P.T; } catch (e) {} audio.play().catch(() => {}); }
+    if (audioOk) { if (audio.preload !== 'auto') audio.preload = 'auto'; try { audio.currentTime = P.T; } catch (e) {} audio.play().catch(() => {}); if (audio.readyState < 3) stall(); }
+    setTimeout(startAssets, audioOk ? 6000 : 0); // fallback if the audio never starts
     P.last = performance.now(); requestAnimationFrame(loop); poke();
   }
-  function pause() { P.playing = false; player.classList.remove('playing', 'idle'); audio.pause(); draw(); }
+  function pause() { P.playing = false; flow(); player.classList.remove('playing', 'idle'); audio.pause(); draw(); }
   function toggle() { P.playing ? pause() : play(); }
   function seek(t, andPlay) { P.T = Math.max(0, Math.min(DUR - 0.05, t)); if (audioOk) { try { audio.currentTime = P.T; } catch (e) {} } if (andPlay) { if (!P.playing) play(); } else draw(); }
   window.GuidePlayer = { seek, play, pause };
@@ -101,13 +112,15 @@
     // play() first, synchronously inside the click: iOS only unlocks audio within the gesture itself
     const a = e.target.closest('[data-act="play-film"]'); if (a) { e.preventDefault(); play(); $('#watch').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
   });
-  // boot: fonts + raster assets, then the poster frame
+  // boot: fonts, then the poster frame (raster assets follow in the background)
   (async () => {
     const faces = ['400 40px Lora', 'italic 700 40px Lora', '700 40px Lora', 'italic 400 40px Lora', '600 40px "Geist Mono"', '900 40px "Geist Mono"', '900 40px Archivo', 'italic 900 40px Archivo', '700 40px Caveat'];
     await Promise.all(faces.map((f) => document.fonts.load(f).catch(() => null)));
-    await K.loadAssets();
     FILM.init(canvas); P.ready = true; player.classList.add('ready'); size(); draw();
     if (P.wantPlay) play();
+    // logos + herd avatars (first needed in chapter 4) load in the background, but never ahead of the soundtrack:
+    // when the film is playing they start once the audio flows; on an idle page, after 6 s
+    setTimeout(() => { if (!P.started) startAssets(); }, 6000);
   })();
   // pause the film when it scrolls fully out of view (saves battery, avoids surprise audio)
   new IntersectionObserver((es) => { es.forEach((en) => { if (!en.isIntersecting && P.playing && !document.fullscreenElement && !player.classList.contains('theater')) pause(); }); }, { threshold: 0 }).observe(player);
@@ -191,7 +204,14 @@
   $('#herd-grid').innerHTML = BOOK.herd.accounts.map((a) => `<a class="bull" href="https://x.com/${a.handle}" target="_blank" rel="noopener"><img src="assets/herd/${a.handle.toLowerCase()}.png" alt="" loading="lazy" width="86" height="86"><b>${esc(a.name)}</b><span>@${esc(a.handle)}</span></a>`).join('');
 
   // ================================================================== nav scroll spy
-  const links = $$('.nav-links a');
+  const links = $$('.menu a[data-spy]');
+  // the site menu (burger): opens/closes, closes on a link, Escape or a click outside
+  const burger = $('.nav-burger'), menu = $('#menu');
+  const setMenu = (open) => { menu.hidden = !open; burger.setAttribute('aria-expanded', String(open)); };
+  burger.addEventListener('click', (e) => { e.stopPropagation(); setMenu(menu.hidden); });
+  menu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('click', (e) => { if (!menu.hidden && !menu.contains(e.target)) setMenu(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { setMenu(false); burger.focus(); } });
   const spy = new IntersectionObserver((es) => { es.forEach((en) => { if (en.isIntersecting) links.forEach((a) => a.classList.toggle('on', a.dataset.spy === en.target.id)); }); }, { rootMargin: '-45% 0px -50% 0px' });
   ['watch', 'play', 'read', 'herd'].forEach((id) => spy.observe(document.getElementById(id)));
 

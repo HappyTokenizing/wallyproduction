@@ -40,8 +40,8 @@
   function chrome(ctx, sc, i, dark) {
     const ink = dark ? '#F4F1EA' : C.ink, line = dark ? 'rgba(244,241,234,.18)' : C.line2, sub = dark ? 'rgba(244,241,234,.55)' : C.ink3;
     ctx.fillStyle = line; ctx.fillRect(96, 104, W - 192, 2); ctx.fillRect(96, 1004, W - 192, 2);
-    // mini Wally + book title
-    window.WallyRig.draw(ctx, { x: 124, y: 93, s: 0.088 });
+    // the RWA Foundation mark + book title (the real textbook's running head)
+    K.rwafMark(ctx, 122, 76, 46, ink);
     K.txt(ctx, "WALLY'S RWA TEXTBOOK", 160, 82, { f: 'mono', s: 17, w: 600, c: ink, ls: 5 });
     let eb = '';
     if (sc.kind === 'lesson') eb = `${sc.chapterName.toUpperCase()}  ·  ${sc.lesson}`;
@@ -241,13 +241,11 @@
       p.headRot = -0.035 * (1 - down); if (N >= 0) act(p, t, N, 'sparkle'); act(p, t, P + 0.7, 'nod');
       return p;
     },
-    barista(p, sc, t, T) { // sips coffee through the lesson; raises the mug to THE POINT
+    barista(p, sc, t, T) { // holds the mug in his paw and sips through his trunk; toasts THE POINT
       const { P, N } = hostTimes(sc), cyc = (t + 0.9) % 3.6, sip = cyc < 1.4 ? Math.sin(cyc / 1.4 * Math.PI) : 0;
-      const cheers = env(t, P, 0.4, 1.0, 0.5), s2 = sip * (1 - cheers);
-      let tr = mixT({ bend: 0.35, lift: 0.55, curl: 0.35 }, { bend: 0.25, lift: 1.05, curl: 0.6 }, s2);
-      p.trunk = mixT(tr, { bend: 0.6, lift: 1.0, curl: 0.1 }, cheers);
-      p.prop = { kind: 'mug', a: 0.3 * s2 - 0.2 * cheers, t: T };
-      p.headRot = 0.04 * s2; if (N >= 0) act(p, t, N, 'smirk'); act(p, t, P + 1.5, 'nod');
+      const cheers = env(t, P, 0.4, 1.0, 0.5);
+      window.WallyRig.coffee(p, sip, cheers, T); // the paw holds the mug, the trunk dips in to drink
+      p.headRot = 0.03 * sip * (1 - cheers); if (N >= 0) act(p, t, N, 'smirk'); act(p, t, P + 1.5, 'nod');
       return p;
     },
     reader(p, sc, t) { // sits reading the textbook; peeks over it for the joke; lowers it for THE POINT

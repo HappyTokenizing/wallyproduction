@@ -252,13 +252,16 @@
     ctx.save(); ctx.translate(x - window.WALLY_HEAD.w * s / 2, y - window.WALLY_HEAD.h * s / 2); ctx.scale(s, s); ctx.fillStyle = c || C.ink; ctx.fill(HEAD); ctx.restore();
   };
 
+  // the RWA Foundation logo (vector, any colour): centred at x,y, w wide
+  K.rwafMark = (ctx, x, y, w, c) => window.WallyRig.rwafMark(ctx, x, y, w, c || C.ink);
+
   // ---------------------------------------------------------------- raster assets (logos, herd avatars)
   K.ASSET_BASE = K.ASSET_BASE || '../assets/';
   K.IMG = {};
   K.loadAssets = () => {
     const A = window.FILM_ASSETS || { logos: [], herd: [] }, jobs = [];
     for (const [dir, list] of [['logos', A.logos], ['herd', A.herd], ['wally', A.wally || []]]) for (const n of list) {
-      const im = new Image(); im.src = K.ASSET_BASE + dir + '/' + n + '.png'; K.IMG[dir + '/' + n] = im;
+      const im = new Image(); im.decoding = 'async'; im.fetchPriority = 'low'; im.src = K.ASSET_BASE + dir + '/' + n + '.png'; K.IMG[dir + '/' + n] = im;
       jobs.push(im.decode().catch(() => console.warn('asset failed', n)));
     }
     return Promise.all(jobs);

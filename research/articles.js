@@ -1,6 +1,6 @@
 (() => {
   const sources = {
-    wally: { name: 'WALLY articles', username: 'WALLY_DAO', bio: 'Stories, ideas and dispatches from WALLY, published on X.' },
+    wally: { name: 'WALLY articles', username: 'wallycollection', bio: 'Stories, ideas and dispatches from WALLY, published on X.' },
     zeus: { name: 'Zeus’ Corner', username: 'ZeusRWA', bio: 'Long reads and perspectives on tokenization and the real-world asset economy.' }
   };
   const states = {}, $ = id => document.getElementById(id);

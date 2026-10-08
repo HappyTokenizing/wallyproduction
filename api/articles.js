@@ -1,7 +1,10 @@
 import { createHash, createHmac, timingSafeEqual } from 'node:crypto';
 import { get, put } from '@vercel/blob';
 
-export const SOURCES = { wally: { name: 'WALLY articles', username: 'WALLY_DAO' }, zeus: { name: "Zeus’ Corner", username: 'ZeusRWA' } };
+// store = the Blob namespace for a source's saved account identity and cached pages. Renames of the same
+// account keep the store and follow the permanent ID; moving a feed to a different account needs a new store.
+// WALLY moved from @WALLY_DAO (now deleted) to the new @wallycollection account on 2026-10-07: store 'wally-2'.
+export const SOURCES = { wally: { name: 'WALLY articles', username: 'wallycollection', store: 'wally-2' }, zeus: { name: "Zeus’ Corner", username: 'ZeusRWA' } };
 const HOUR = 3600000;
 const safeImage = value => { try { const u = new URL(value); return u.protocol === 'https:' && (u.hostname === 'pbs.twimg.com' || u.hostname.endsWith('.twimg.com')) ? u.href : null; } catch { return null; } };
 export function extractArticles(payload, source) {
@@ -44,7 +47,8 @@ export function createArticlesHandler({ env = process.env, fetcher = fetch, stor
     if (req.method !== 'GET') { res.setHeader('Allow', 'GET'); return res.status(405).json({ error: 'GET only' }); }
     const key = req.query?.source;
     if (!Object.hasOwn(SOURCES, key || '')) return res.status(400).json({ error: 'Unknown article source' });
-    let source = { ...SOURCES[key], username: env[key === 'wally' ? 'X_WALLY_USERNAME' : 'X_ZEUS_USERNAME'] || SOURCES[key].username };
+    const { store = key, ...base } = SOURCES[key];
+    let source = { ...base, username: env[key === 'wally' ? 'X_WALLY_USERNAME' : 'X_ZEUS_USERNAME'] || base.username };
     if (!/^[A-Za-z0-9_]{1,15}$/.test(source.username)) return res.status(503).json({ error: 'Article account is not configured.' });
     if (env.SITE_PUBLIC_API_ORIGIN) {
       const url = new URL('/api/articles', env.SITE_PUBLIC_API_ORIGIN); url.searchParams.set('source', key);
@@ -56,7 +60,7 @@ export function createArticlesHandler({ env = process.env, fetcher = fetch, stor
     if (!secret || !blob.token) return res.status(503).json({ error: 'The X article connection is not configured.', source });
     let cursor;
     try { cursor = decodeCursor(req.query?.cursor, key, secret); } catch { return res.status(400).json({ error: 'Invalid article cursor' }); }
-    const path = `x-articles/v1/${key}/${createHash('sha256').update(cursor).digest('hex')}.json`;
+    const path = `x-articles/v1/${store}/${createHash('sha256').update(cursor).digest('hex')}.json`;
     let cached, revision;
     try {
       const r = await storage.get(path, { ...blob, useCache: false, headers: { 'Accept-Encoding': 'identity' } });
@@ -80,7 +84,7 @@ export function createArticlesHandler({ env = process.env, fetcher = fetch, stor
     try {
       // Keep account identity separately from timeline pages. X usernames can
       // change; once resolved, always follow the permanent user ID.
-      const accountPath = `x-articles/v1/accounts/${key}.json`;
+      const accountPath = `x-articles/v1/accounts/${store}.json`;
       const accountBlob = await storage.get(accountPath, { ...blob, useCache: false, headers: { 'Accept-Encoding': 'identity' } });
       let account = accountBlob ? await new Response(accountBlob.stream).json() : null;
       if (!account || now() - account.checkedAt >= 6 * HOUR) {

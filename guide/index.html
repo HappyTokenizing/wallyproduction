@@ -27,22 +27,37 @@
 <body>
 <a class="skip" href="#watch">Skip to the film</a>
 
-<nav class="nav" aria-label="Guide">
+<nav class="nav" aria-label="Site">
   <div class="nav-in">
     <a class="nav-brand" href="/"><img src="assets/rwaf-mark.png" alt="" width="40" height="30"><span>RWA&nbsp;Foundation</span></a>
-    <div class="nav-links">
-      <a href="#watch" data-spy="watch">Watch</a>
-      <a href="#play" data-spy="play">Play</a>
-      <a href="#read" data-spy="read">Read</a>
+    <div class="nav-cta">
+      <a class="fdn-link" href="/#/foundation">Our Members</a>
+      <button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h12"/></svg></button>
+    </div>
+  </div>
+  <div class="menu" id="menu" hidden>
+    <div class="menu-group" aria-label="This guide">
+      <span class="menu-h">Wally's RWA Textbook</span>
+      <a href="#watch" data-spy="watch">Watch the film</a>
+      <a href="#play" data-spy="play">Play Tokens, Please</a>
+      <a href="#read" data-spy="read">Read the book</a>
       <a href="#herd" data-spy="herd">The Herd</a>
     </div>
-    <a class="pill" href="/">MAIN SITE</a>
+    <div class="menu-group" aria-label="RWA Foundation">
+      <span class="menu-h">RWA Foundation</span>
+      <a href="/">Home</a>
+      <a href="/#/news">News</a>
+      <a href="/#/jobs">Jobs</a>
+      <a href="/#/ecosystem">Ecosystem</a>
+      <a href="/research/">Research</a>
+      <a class="menu-members" href="/#/foundation">Our Members</a>
+    </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="hero-art" aria-hidden="true">
-    <div class="book-cover"><div class="bc-series">AN ONCHAIN EDUCATION SERIES</div><div class="bc-t1">WALLY'S</div><div class="bc-t2">RWA TEXTBOOK</div><div class="bc-wally" id="bc-wally"></div><div class="bc-foot"><span>SPONSORED BY RWA FOUNDATION</span><span>@WALLY_DAO</span></div></div>
+    <div class="book-cover"><div class="bc-series">AN ONCHAIN EDUCATION SERIES</div><div class="bc-t1">WALLY'S</div><div class="bc-t2">RWA TEXTBOOK</div><div class="bc-wally" id="bc-wally"></div><div class="bc-foot"><span class="bc-spons"><img src="assets/rwaf-mark.png" alt="" width="22" height="17">SPONSORED BY RWA FOUNDATION</span><span>@wallycollection</span></div></div>
     <canvas class="hero-wally" id="hero-wally" width="380" height="460"></canvas>
   </div>
   <div class="wrap hero-in">
@@ -131,14 +146,15 @@
 
 <footer class="foot">
   <div class="wrap f-in">
-    <div class="f-brand"><img src="assets/rwaf-mark-white.png" alt="" width="53" height="40"><div><div class="t1">WALLY'S RWA TEXTBOOK</div><div class="t2">SPONSORED BY RWA FOUNDATION · @WALLY_DAO</div></div></div>
-    <div class="f-right"><a href="/">RWAF.XYZ</a><a href="/research/">RESEARCH</a><a href="https://x.com/WALLY_DAO" target="_blank" rel="noopener">@WALLY_DAO</a><a href="https://x.com/RWAFoundation_" target="_blank" rel="noopener">@RWAFOUNDATION_</a></div>
+    <div class="f-brand"><img src="assets/rwaf-mark-white.png" alt="" width="53" height="40"><div><div class="t1">WALLY'S RWA TEXTBOOK</div><div class="t2">SPONSORED BY RWA FOUNDATION · @wallycollection</div></div></div>
+    <div class="f-right"><a href="/">RWAF.XYZ</a><a href="/research/">RESEARCH</a><a href="https://x.com/wallycollection" target="_blank" rel="noopener">@wallycollection</a><a href="https://x.com/RWAFoundation_" target="_blank" rel="noopener">@RWAFOUNDATION_</a></div>
   </div>
   <div class="wrap f-note">Educational content only. Not financial, legal or investment advice. Tokens, issuers and numbers in the film and the game are fictional and illustrative unless named in the book. Company names appear as examples from the textbook, not endorsements.</div>
 </footer>
 
 <script src="film/wally-rig.js"></script>
 <script src="film/headmark.js"></script>
+<script src="film/rwafmark.js"></script>
 <script src="film/assets.js"></script>
 <script src="film/timeline.js"></script>
 <script src="film/kit.js"></script>

@@ -138,8 +138,11 @@
         strokeInk(ctx, cache[k + 's']);
       }
       // arms (hands on hips); armL/armR = small rotation about the shoulder for gestures
+      const prop = pose.prop || (pose.pointer ? Object.assign({ kind: 'pointer' }, pose.pointer) : null);
+      const mug = prop && prop.kind === 'mug' ? mugAt(pose) : null; // coffee is held in the right paw
+      const armR = () => withPivot(ctx, 352, 212, -(pose.armR || 0), undefined, undefined, () => { fillP(ctx, P2('armRFill'), FILL); strokeInk(ctx, P2('armR')); strokeInk(ctx, P2('armRInner')); });
       withPivot(ctx, 148, 212, pose.armL || 0, undefined, undefined, () => { fillP(ctx, P2('armLFill'), FILL); strokeInk(ctx, P2('armL')); strokeInk(ctx, P2('armLInner')); });
-      withPivot(ctx, 352, 212, -(pose.armR || 0), undefined, undefined, () => { fillP(ctx, P2('armRFill'), FILL); strokeInk(ctx, P2('armR')); strokeInk(ctx, P2('armRInner')); });
+      armR();
       // head group
       withPivot(ctx, 250, 250, headRot, undefined, undefined, () => {
         fillP(ctx, P2('headFill'), FILL);
@@ -153,16 +156,60 @@
         ctx.fillStyle = WHITE; ctx.fill(P2('glintL')); ctx.fill(P2('glintR'));
         if (pose.sparkle) drawSparkle(ctx, 352, 112, pose.sparkle);
         const tg = trunkGeom(pose.trunk);
-        const prop = pose.prop || (pose.pointer ? Object.assign({ kind: 'pointer' }, pose.pointer) : null);
-        if (prop && prop.kind !== 'juggle' && prop.kind !== 'cover') drawProp(ctx, tg, prop);
+        if (prop && prop.kind !== 'juggle' && prop.kind !== 'cover' && prop.kind !== 'mug') drawProp(ctx, tg, prop);
+        if (mug) withPivot(ctx, 250, 250, -headRot, undefined, undefined, () => drawMugBack(ctx, mug)); // coffee surface: under the trunk
         drawTrunk(ctx, pose.trunk, tg); // last: a raised trunk passes in front of tusks and glasses
         if (prop && prop.kind === 'cover') drawProp(ctx, tg, prop); // held up in front of the face
         if (prop && prop.kind === 'juggle') drawJuggle(ctx, tg, prop);
         if (prop && prop.kind === 'coin') drawCoinOnTip(ctx, tg, prop);
         if (pose.think) drawThink(ctx, pose.think);
       });
+      if (mug) { // the mug's front wall hides the dipped trunk tip; then the paw is redrawn over the handle
+        drawMugFront(ctx, mug, prop);
+        ctx.save(); ctx.beginPath(); ctx.arc(mug.hx, mug.hy, 46, 0, Math.PI * 2); ctx.clip(); armR(); ctx.restore();
+      }
     });
     ctx.restore();
+  }
+
+  // ---- coffee: a mug gripped by the right paw (handle under the paw), the trunk drinks from it
+  const MUG = { w: 72, h: 78 };
+  function mugAt(pose) { // hand position for the current armR, and the mug centred just inside it
+    const a = -(pose.armR || 0), vx = 22, vy = 227, c = Math.cos(a), sn = Math.sin(a);
+    const hx = 352 + vx * c - vy * sn, hy = 212 + vx * sn + vy * c, tilt = (pose.prop && pose.prop.tilt) || 0;
+    return { hx, hy, x: hx - MUG.w / 2 - 14, y: hy - 8, tilt };
+  }
+  function mugBody(ctx, m) { const w = MUG.w, h = MUG.h, top = -h / 2; ctx.beginPath(); ctx.moveTo(-w / 2, top); ctx.lineTo(-w / 2 + 5, h / 2 - 10); ctx.quadraticCurveTo(-w / 2 + 6, h / 2, -w / 2 + 16, h / 2); ctx.lineTo(w / 2 - 16, h / 2); ctx.quadraticCurveTo(w / 2 - 6, h / 2, w / 2 - 5, h / 2 - 10); ctx.lineTo(w / 2, top); ctx.ellipse(0, top, w / 2, 8, 0, 0, Math.PI, false); ctx.closePath(); }
+  function drawMugBack(ctx, m) {
+    ctx.save(); ctx.translate(m.x, m.y); ctx.rotate(m.tilt); const w = MUG.w, top = -MUG.h / 2;
+    ctx.beginPath(); ctx.ellipse(0, top, w / 2, 8, 0, 0, Math.PI * 2); ctx.fillStyle = '#F7F2E6'; ctx.fill(); inkLine(ctx, 6); ctx.stroke(); // the rim
+    ctx.beginPath(); ctx.ellipse(0, top + 1, w / 2 - 6, 5.5, 0, 0, Math.PI * 2); ctx.fillStyle = '#5A3A22'; ctx.fill(); // coffee
+    ctx.restore();
+  }
+  function drawMugFront(ctx, m, p) {
+    const w = MUG.w, h = MUG.h, t = p.t || 0;
+    ctx.save(); ctx.translate(m.x, m.y); ctx.rotate(m.tilt);
+    ctx.beginPath(); ctx.ellipse(w / 2 + 4, 0, 17, 21, 0, -Math.PI / 2, Math.PI / 2); inkLine(ctx, 9); ctx.stroke(); // handle, under the paw
+    mugBody(ctx, m); ctx.fillStyle = '#F7F2E6'; ctx.fill();
+    ctx.save(); mugBody(ctx, m); ctx.clip(); ctx.fillStyle = '#FF6200'; ctx.fillRect(-w / 2, -4, w, 16); ctx.restore();
+    mugBody(ctx, m); inkLine(ctx, 7); ctx.stroke();
+    if (p.steam !== false) for (let i = 0; i < 3; i++) { // steam
+      const ph = (t * 0.55 + i / 3) % 1, x0 = -18 + i * 18, al = Math.sin(ph * Math.PI) * 0.7;
+      ctx.beginPath(); for (let k = 0; k <= 9; k++) { const yy = -h / 2 - 14 - k * 7 - ph * 30, xx = x0 + Math.sin(k * 0.9 + t * 3 + i) * 6; k ? ctx.lineTo(xx, yy) : ctx.moveTo(xx, yy); }
+      ctx.lineWidth = 5; ctx.lineCap = 'round'; ctx.strokeStyle = `rgba(160,150,135,${al})`; ctx.stroke();
+    }
+    ctx.restore();
+  }
+  // pose helper for every coffee scene. sip 0..1: trunk out (curled away) -> tip dipped in the mug; raise 0..1: a toast
+  function coffee(pose, sip, raise, t) {
+    const cl = (v) => Math.max(0, Math.min(1, v || 0)), e = (u) => u * u * (3 - 2 * u), L = (a, b, u) => a + (b - a) * u;
+    raise = e(cl(raise)); const d = e(cl(sip)) * (1 - raise);
+    const rest = { bend: -0.34, lift: 0.5, curl: 0.32, len: 1 }, dip = { bend: 0.02, lift: 0, curl: 0, len: 1.33 }, toast = { bend: 0.62, lift: 1.0, curl: 0.1, len: 1 };
+    const mix = (A, B, u) => ({ bend: L(A.bend, B.bend, u), lift: L(A.lift, B.lift, u), curl: L(A.curl, B.curl, u), len: L(A.len, B.len, u) });
+    pose.armR = L(-0.31, 1.0, raise);
+    pose.trunk = mix(mix(rest, dip, d), toast, raise);
+    pose.prop = { kind: 'mug', t: t || 0, tilt: -0.14 * raise };
+    return pose;
   }
 
   // a teacher's pointer stick gripped by the trunk tip. p = {a: angle (rad, 0 = right), len, show 0..1}
@@ -239,7 +286,7 @@
       ctx.fillStyle = '#FBF8F1'; ctx.font = '900 30px "Geist Mono", ui-monospace, monospace'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.fillText("WALLY'S", 6, -h / 2 + 56); ctx.font = '900 21px "Geist Mono", ui-monospace, monospace'; ctx.fillText('RWA TEXTBOOK', 6, -h / 2 + 88);
       ctx.fillStyle = INK; ctx.fillRect(-w / 2 + 34, -h / 2 + 116, w - 56, 4);
-      coinGlyph(ctx, 6, h / 2 - 50, 26, 0);
+      if (window.RWAF_MARK) rwafMark(ctx, 6, h / 2 - 47, 78, '#FBF8F1'); else coinGlyph(ctx, 6, h / 2 - 50, 26, 0); // the RWA Foundation mark, as on the real cover
     } else if (p.kind === 'sign') {
       const L = p.len || 130, nx = -sa, ny = ca;
       ctx.beginPath(); ctx.moveTo(-ca * 30 + nx * 7, -sa * 30 + ny * 7); ctx.lineTo(ca * L + nx * 6, sa * L + ny * 6); ctx.lineTo(ca * L - nx * 6, sa * L - ny * 6); ctx.lineTo(-ca * 30 - nx * 7, -sa * 30 - ny * 7); ctx.closePath();
@@ -250,6 +297,13 @@
       ctx.restore();
     }
     ctx.restore();
+  }
+  // the RWA Foundation logo (line-art elephant), centred at x,y, w wide, in one colour. Needs rwafmark.js.
+  let RWAF_PATH = null;
+  function rwafMark(ctx, x, y, w, color) {
+    const M = window.RWAF_MARK; if (!M) return;
+    if (!RWAF_PATH) RWAF_PATH = new Path2D(M.ink);
+    const s = w / M.w; ctx.save(); ctx.translate(x - w / 2, y - M.h * s / 2); ctx.scale(s, s); ctx.fillStyle = color || INK; ctx.fill(RWAF_PATH, 'evenodd'); ctx.restore();
   }
   function coinGlyph(ctx, x, y, r, spin) {
     const k = Math.max(0.12, Math.abs(Math.cos(spin || 0)));
@@ -389,6 +443,6 @@
       `</g></svg>`;
   }
 
-  const api = { draw, svg, trunkGeom, coinGlyph, P, INK, FILL, BELLY, WHITE, W: 500, H: 600, SEAT_Y, SEAT_K };
+  const api = { draw, svg, trunkGeom, coinGlyph, rwafMark, coffee, P, INK, FILL, BELLY, WHITE, W: 500, H: 600, SEAT_Y, SEAT_K };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.WallyRig = api;
 })(typeof window !== 'undefined' ? window : globalThis);
