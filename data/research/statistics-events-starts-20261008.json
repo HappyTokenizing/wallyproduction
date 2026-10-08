@@ -238,6 +238,20 @@
   ]
  },
  {
+  "id": "founding-ainslie-crypto",
+  "profileId": "ainslie-crypto",
+  "type": "founding",
+  "date": "2017",
+  "note": "Ainslie Group has run Ainslie Crypto since 2017 per its own site and Grokipedia",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://ainsliecrypto.com.au",
+    "title": "Ainslie Crypto"
+   }
+  ]
+ },
+ {
   "id": "founding-algorand",
   "profileId": "algorand",
   "type": "founding",
@@ -702,20 +716,6 @@
   ]
  },
  {
-  "id": "founding-bitbond",
-  "profileId": "bitbond",
-  "type": "founding",
-  "date": "2013",
-  "note": "Bitbond GmbH, a BaFin-regulated German fintech, founded 2013 in Berlin.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://www.bitbond.com",
-    "title": "Bitbond (official site FAQ)"
-   }
-  ]
- },
- {
   "id": "founding-bitgo",
   "profileId": "bitgo",
   "type": "founding",
@@ -744,34 +744,6 @@
    {
     "url": "https://www.wikidata.org/wiki/Q76761850",
     "title": "Wikidata: Bitso (inception)"
-   }
-  ]
- },
- {
-  "id": "founding-bitwave",
-  "profileId": "bitwave",
-  "type": "founding",
-  "date": "2018",
-  "note": "Enterprise crypto accounting/reporting software company.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://bitwave.io",
-    "title": "Bitwave (official site structured data)"
-   }
-  ]
- },
- {
-  "id": "founding-bitwise",
-  "profileId": "bitwise",
-  "type": "founding",
-  "date": "2017",
-  "note": "Site copyright \"©2017-2025 Bitwise Asset Management, Inc.\" and notes its first crypto index fund launched in 2017.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://bitwiseinvestments.com",
-    "title": "Bitwise Investments (official site)"
    }
   ]
  },
@@ -1148,20 +1120,6 @@
   ]
  },
  {
-  "id": "founding-chainsecurity",
-  "profileId": "chainsecurity",
-  "type": "founding",
-  "date": "2017",
-  "note": "Company founding",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://chainsecurity.com",
-    "title": "ChainSecurity — official site"
-   }
-  ]
- },
- {
   "id": "founding-chintai",
   "profileId": "chintai",
   "type": "founding",
@@ -1204,20 +1162,6 @@
   ]
  },
  {
-  "id": "founding-cobo",
-  "profileId": "cobo",
-  "type": "founding",
-  "date": "2017",
-  "note": "Company founding",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://cobo.com",
-    "title": "Cobo — official site"
-   }
-  ]
- },
- {
   "id": "founding-coinme",
   "profileId": "coinme",
   "type": "founding",
@@ -1256,6 +1200,20 @@
    {
     "url": "https://www.coingecko.com/en/coins/compound",
     "title": "Compound — CoinGecko"
+   }
+  ]
+ },
+ {
+  "id": "founding-concordium",
+  "profileId": "concordium",
+  "type": "founding",
+  "date": "2018",
+  "note": "Founded 2018 by Lars Seier Christensen, co-founder of Saxo Bank",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.concordium.com/about",
+    "title": "Concordium — About"
    }
   ]
  },
@@ -1358,20 +1316,6 @@
    {
     "url": "https://en.wikipedia.org/wiki/Cr%C3%A9dit_Agricole_CIB",
     "title": "Credit Agricole CIB — Wikipedia"
-   }
-  ]
- },
- {
-  "id": "founding-creditcoin",
-  "profileId": "creditcoin",
-  "type": "founding",
-  "date": "2017",
-  "note": "Creditcoin mainnet launched 2017 per its own site.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://creditcoin.org/",
-    "title": "Creditcoin — official site"
    }
   ]
  },
@@ -3480,20 +3424,6 @@
   ]
  },
  {
-  "id": "launch-mey-network",
-  "profileId": "mey-network",
-  "type": "launch",
-  "date": "2026",
-  "note": "Official roadmap on mey.network shows the flagship 'MeyReal' onchain real-estate platform launching in Q1 2026 ('Your first step into onchain real estate'); no separate organizational founding date found.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://mey.network",
-    "title": "MEY Network"
-   }
-  ]
- },
- {
   "id": "founding-mintify",
   "profileId": "mintify",
   "type": "founding",
@@ -4588,20 +4518,6 @@
   ]
  },
  {
-  "id": "founding-realt",
-  "profileId": "realt",
-  "type": "founding",
-  "date": "2019",
-  "note": "RealT began tokenizing Detroit, Michigan real estate in 2019; its site's copyright footer also spans '2019-2025', corroborating a 2019 start.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://realtusa.pulse.is/",
-    "title": "RealT official site (copyright footer \"© 2019-2025\")"
-   }
-  ]
- },
- {
   "id": "founding-republic-of-slovenia",
   "profileId": "republic-of-slovenia",
   "type": "founding",
@@ -5130,20 +5046,6 @@
   ]
  },
  {
-  "id": "founding-scorechain",
-  "profileId": "scorechain",
-  "type": "founding",
-  "date": "2015",
-  "note": "Company founding",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://scorechain.com",
-    "title": "Scorechain"
-   }
-  ]
- },
- {
   "id": "founding-sdax",
   "profileId": "sdax",
   "type": "founding",
@@ -5268,6 +5170,20 @@
   ]
  },
  {
+  "id": "founding-shyft-network",
+  "profileId": "shyft-network",
+  "type": "founding",
+  "date": "2017",
+  "note": "Project page (via CoinGecko) states: \"Founded in 2017 in Bridgetown Barbados, Shyft Network was built by a group of founders that have collectively launched several successful companies...\"; the network's mainnet/chain i",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.coingecko.com/en/coins/shyft-network",
+    "title": "Shyft Network (SHFT) - CoinGecko"
+   }
+  ]
+ },
+ {
   "id": "founding-siemens",
   "profileId": "siemens",
   "type": "founding",
@@ -5342,6 +5258,20 @@
    {
     "url": "https://en.wikipedia.org/wiki/Solana_(blockchain_platform)",
     "title": "Solana (blockchain platform) - Wikipedia"
+   }
+  ]
+ },
+ {
+  "id": "launch-solayer",
+  "profileId": "solayer",
+  "type": "launch",
+  "date": "2024",
+  "note": "CoinGecko states: \"Solayer was launched in Q1 2024.\" No more precise date found.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.coingecko.com/en/coins/solayer",
+    "title": "Solayer (LAYER) - CoinGecko"
    }
   ]
  },
@@ -5924,20 +5854,6 @@
   ]
  },
  {
-  "id": "founding-taurus",
-  "profileId": "taurus",
-  "type": "founding",
-  "date": "2018",
-  "note": "Taurus SA (Geneva) founded 2018 by Lamine Brahimi, Jean-Philippe Aumasson and Olivier Dale; legacyFounded 2018 consistent with widely reported company history, though not freshly re-verified this session.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://www.taurushq.com",
-    "title": "Taurus - official site"
-   }
-  ]
- },
- {
   "id": "founding-taxbit",
   "profileId": "taxbit",
   "type": "founding",
@@ -6104,20 +6020,6 @@
   ]
  },
  {
-  "id": "founding-the-network-firm",
-  "profileId": "the-network-firm",
-  "type": "founding",
-  "date": "2016",
-  "note": "A fetched company-profile source states The Network Firm was founded in 2016 (Miami-based crypto/digital-asset audit firm); given how recently this audit niche emerged (post-2022 stablecoin attestation demand), this date",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://www.thenetworkfirm.com",
-    "title": "The Network Firm"
-   }
-  ]
- },
- {
   "id": "founding-the-tie",
   "profileId": "the-tie",
   "type": "founding",
@@ -6226,20 +6128,6 @@
    {
     "url": "https://pitchbook.com/profiles/company/494576-74",
     "title": "Vórtx QR Tokenizadora - PitchBook Company Profile"
-   }
-  ]
- },
- {
-  "id": "founding-tokenovate",
-  "profileId": "tokenovate",
-  "type": "founding",
-  "date": "2022",
-  "note": "A company-profile source states Tokenovate (Cambridge, UK post-trade automation) was established in 2022; some earlier press coverage of related technology work dates to 2018, so treat with some caution.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://tokenovate.com",
-    "title": "Tokenovate"
    }
   ]
  },
@@ -6430,20 +6318,6 @@
   ]
  },
  {
-  "id": "launch-truefi",
-  "profileId": "truefi",
-  "type": "launch",
-  "date": "2020",
-  "note": "TrueFi lending protocol launched November 2020 by TrustToken (TrustToken itself founded 2017).",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://forum.truefi.io/",
-    "title": "TrueFi Forum"
-   }
-  ]
- },
- {
   "id": "founding-truflation",
   "profileId": "truflation",
   "type": "founding",
@@ -6490,20 +6364,6 @@
    {
     "url": "https://www.wikidata.org/wiki/Q136330662",
     "title": "Wikidata: Trust Wallet (inception)"
-   }
-  ]
- },
- {
-  "id": "launch-tzero",
-  "profileId": "tzero",
-  "type": "launch",
-  "date": "2018",
-  "note": "tZERO's branded platform launched in 2018 as an Overstock.com/Medici Ventures initiative (its ATS began trading in 2019); the underlying blockchain effort within Overstock traces back to roughly 2014. legacyFounded 2018 ",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://www.tzero.com",
-    "title": "tZERO"
    }
   ]
  },
