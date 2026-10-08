@@ -30,7 +30,9 @@ test('submission import maps every response once without granting membership or 
  }
  assert.equal(report.mapping.find(r=>r.row===15).profileId,'zig-finance');
  assert.notEqual(report.mapping.find(r=>r.row===40).profileId,'strata-markets');
- assert.equal(data.statsEvents.some(e=>e.profileId==='hyve'),false,'conflicting self-reported dates remain outside verified charts');
+ const hyve=data.statsEvents.find(e=>e.profileId==='hyve');
+ assert.equal(hyve.date,'2023','owner resolved the earlier submission conflict');
+ assert.ok(hyve.sources.some(s=>s.url.endsWith('/owner-clarifications-20261008.json')));
  for(const payload of [report,submissions,submissionUpdates])assert.doesNotMatch(JSON.stringify(payload),/Primary contact email|mailto:|[\w.+-]+@[\w.-]+\.[a-z]{2,}/i);
 });
 test('source identities survive except explicit owner removals, without duplicate IDs or names',()=>{
@@ -49,7 +51,7 @@ test('every non-excluded source map placement resolves to its canonical profile'
 });
 test('default current filter separates historical and retained unreviewed entries',()=>{
  assert.equal(filterProfiles(data.profiles,{...state,status:'current'},[]).length,693+research.filter(p=>p.directoryStatus==='current').length+statusShift('current'));
- assert.equal(filterProfiles(data.profiles,{...state,status:'historical'},[]).length,139+research.filter(p=>p.directoryStatus==='historical').length+statusShift('historical'));
+ assert.equal(filterProfiles(data.profiles,{...state,status:'historical'},[]).length,139+research.filter(p=>p.directoryStatus==='historical').length+statusShift('historical')-Object.keys(excluded).filter(id=>source.profiles.find(p=>p.id===id)?.directoryStatus==='historical').length);
  assert.equal(filterProfiles(data.profiles,{...state,status:'review'},[]).length,34+submissions.filter(p=>p.directoryStatus==='review').length+statusShift('review'));
  assert.equal(filterProfiles(data.profiles,state,[]).length,data.profiles.length);
  for(const p of data.profiles.filter(p=>p.directoryStatus==='historical'))assert.equal(websiteFor(p),'');
@@ -60,6 +62,11 @@ test('known identity overlaps merge while unrelated names and distinct initiativ
  assert.notEqual(data.crosswalk.real,'re.al');
  assert.ok(byId.has('ondo-finance')&&byId.has('ondo-network'));
  assert.ok(byId.has('blackrock')&&byId.has('blackrock-buidl'));
+ assert.equal(data.crosswalk['daylight-energy-by-anode-labs'],'daylight');
+ assert.ok(!byId.has('daylight-energy-by-anode-labs'));
+ assert.equal(filterProfiles(data.profiles,{...state,q:'Anode Labs'},[])[0].id,'daylight');
+ assert.equal(byId.get('daylight').directoryStatus,'current');
+ assert.match(byId.get('kaio').description,/^Previously Libre, KAIO/);
 });
 test('membership follows the current admin roster including deletions and aliases',()=>{
  const maple=byId.get('maple-finance');

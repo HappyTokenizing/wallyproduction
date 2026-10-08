@@ -381,5 +381,42 @@
   "statusNote": null,
   "archiveScope": null,
   "description": "Marketplace for trading and borrowing against authenticated luxury watches held in an insured New York vault."
+ },
+ "kaio": {
+  "checkedOn": "2026-10-08",
+  "description": "Previously Libre, KAIO provides infrastructure for bringing institutional investment funds onchain.",
+  "aliases": [
+   "Libre",
+   "Libre Capital"
+  ],
+  "sources": [
+   {
+    "url": "https://www.rwaf.xyz/data/research/owner-clarifications-20261008.json",
+    "title": "RWAF owner confirmation of KAIO / Libre continuity"
+   },
+   {
+    "url": "https://www.ledgerinsights.com/fund-tokenization-protocol-libre-launches/",
+    "title": "Libre fund-tokenization protocol launch"
+   }
+  ]
+ },
+ "daylight": {
+  "checkedOn": "2026-10-08",
+  "aliases": [
+   "Daylight Energy",
+   "Daylight Energy (by Anode Labs)",
+   "Anode Labs",
+   "React Network"
+  ],
+  "sources": [
+   {
+    "url": "https://www.rwaf.xyz/data/research/owner-clarifications-20261008.json",
+    "title": "RWAF owner confirmation of duplicate Daylight identities"
+   },
+   {
+    "url": "https://www.theblock.co/news/deals/2024-07-31-a16z-crypto-depin-project-daylight-funding-308589",
+    "title": "The Block — Daylight founders and 2022 formation"
+   }
+  ]
  }
 }

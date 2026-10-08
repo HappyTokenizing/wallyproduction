@@ -5,7 +5,8 @@
   "retainedLegacy": 35,
   "researchedProfiles": 289,
   "excludedProfiles": [
-    "novastro"
+    "novastro",
+    "daylight-energy-by-anode-labs"
   ],
   "updatedProfiles": [
     "rwaf-orca",
@@ -56,6 +57,8 @@
     "binance",
     "scenium",
     "kettle-finance",
+    "kaio",
+    "daylight",
     "particula",
     "st0x",
     "tokenforge",
@@ -74,9 +77,9 @@
   ],
   "updatedLogos": 366,
   "completedExits": 9,
-  "totalProfiles": 1154,
+  "totalProfiles": 1153,
   "current": 981,
-  "historical": 142,
+  "historical": 141,
   "review": 31,
   "merged": [
     {
@@ -858,6 +861,7 @@
     "prestocks": "prestocks",
     "etherfuse": "etherfuse",
     "ixswap": "ixs",
-    "orca": "rwaf-orca"
+    "orca": "rwaf-orca",
+    "daylight-energy-by-anode-labs": "daylight"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "checkedOn": "2026-10-08",
+  "source": "RWAF site owner clarification in this task",
+  "independentVerification": false,
+  "foundingYears": {
+    "hyve": "2023",
+    "splyce-finance": "2024",
+    "wildcat": "2023",
+    "lumishare": "2021",
+    "stima": "2022",
+    "justoken": "2020"
+  },
+  "identityCorrections": {
+    "daylight-energy-by-anode-labs": "Same project as Daylight; merge into daylight.",
+    "kaio": "Previously Libre, KAIO; retain identity continuity."
+  },
+  "dateBasis": {
+    "mento": "Original protocol launch, not Mento Labs incorporation.",
+    "nest": "Original Ethereum launch, not subsequent Plume deployment."
+  },
+  "note": "Owner-confirmed values are attributed corrections. Splyce was subsequently corrected by the owner from 2023 to 2024. The earlier submitted 2025 value is retained as original submission metadata."
+}

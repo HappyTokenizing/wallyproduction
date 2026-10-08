@@ -95,9 +95,17 @@ for(const [id,display] of Object.entries(researchRead('logo-display.json'))){
 const excludedProfiles=researchRead('excluded-profiles.json');
 for(const [id,removal] of Object.entries(excludedProfiles)){
  if(!byId.has(id)||!removal.reason||!removal.requestedOn)throw Error('Invalid exclusion: '+id);
+ if(removal.mergedInto){
+  const target=byId.get(removal.mergedInto),old=byId.get(id);
+  if(!target||target.id===id||excludedProfiles[target.id])throw Error('Invalid merge target: '+id);
+  target.aliases=[...new Set([...target.aliases,...old.aliases])];
+  target.legacyIds=[...new Set([...target.legacyIds,...old.legacyIds,id])];
+  crosswalk[id]=target.id;
+  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)crosswalk[legacyId]=target.id;
+ }
  byId.delete(id);profiles.splice(profiles.findIndex(p=>p.id===id),1);
  for(const section of sections)for(const category of section.categories)category.ids=category.ids.filter(x=>x!==id);
- for(const p of profiles)p.relatedEntities=p.relatedEntities.filter(x=>x.id!==id);
+ for(const p of profiles)p.relatedEntities=p.relatedEntities.flatMap(x=>x.id!==id?[x]:removal.mergedInto&&p.id!==removal.mergedInto?[{...x,id:removal.mergedInto}]:[]).filter((x,i,a)=>a.findIndex(y=>y.id===x.id)===i);
  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
 }
 // Lifecycle statistics never infer event dates from review or import timestamps.
