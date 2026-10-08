@@ -364,5 +364,22 @@
    }
   ],
   "statusNote": "The website shows a coming-soon page (reviewed October 2026)."
+ },
+ "kettle-finance": {
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.kettle.finance/",
+    "title": "Kettle: “The Marketplace For Luxury Watch Traders” (live on mainnet)"
+   }
+  ],
+  "website": "https://www.kettle.finance/",
+  "domain": "kettle.finance",
+  "kind": "Protocol or platform",
+  "directoryStatus": "current",
+  "lifecycle": null,
+  "statusNote": null,
+  "archiveScope": null,
+  "description": "Marketplace for trading and borrowing against authenticated luxury watches held in an insured New York vault."
  }
 }

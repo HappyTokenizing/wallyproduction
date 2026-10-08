@@ -460,20 +460,6 @@
   ]
  },
  {
-  "id": "founding-backed",
-  "profileId": "backed",
-  "type": "founding",
-  "date": "2021",
-  "note": "Matches provided legacy value; Backed Finance AG (Zug, Switzerland).",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://backed.fi",
-    "title": "Backed Finance (site operating under this entity since at least 2023; founding year per legacy record)"
-   }
-  ]
- },
- {
   "id": "founding-banca-ditalia",
   "profileId": "banca-ditalia",
   "type": "founding",
@@ -752,13 +738,9 @@
   "profileId": "bitso",
   "type": "founding",
   "date": "2014",
-  "note": "Mexican crypto exchange/payments company; site states it has operated \"for over a decade\" (as of 2026), consistent with a 2014 founding, though an exact year page could not be fetched this session.",
+  "note": "Company founding",
   "checkedOn": "2026-10-08",
   "sources": [
-   {
-    "url": "https://bitso.com",
-    "title": "Bitso (official site)"
-   },
    {
     "url": "https://www.wikidata.org/wiki/Q76761850",
     "title": "Wikidata: Bitso (inception)"
@@ -812,13 +794,9 @@
   "profileId": "blackrock",
   "type": "founding",
   "date": "1988",
-  "note": "Matches provided legacy value; founded 1988 initially as an enterprise risk management and fixed income institutional asset manager.",
+  "note": "Company founding",
   "checkedOn": "2026-10-08",
   "sources": [
-   {
-    "url": "https://en.wikipedia.org/wiki/BlackRock",
-    "title": "BlackRock - Wikipedia"
-   },
    {
     "url": "https://www.wikidata.org/wiki/Q219635",
     "title": "Wikidata: BlackRock (inception)"
@@ -942,13 +920,9 @@
   "profileId": "broadridge",
   "type": "founding",
   "date": "2007",
-  "note": "Matches provided legacy value. Spun out of ADP's shareholder communications business at end of March 2007 to form independent public company Broadridge Financial Solutions; underlying operations trace to 1962 within ADP.",
+  "note": "Company founding",
   "checkedOn": "2026-10-08",
   "sources": [
-   {
-    "url": "https://en.wikipedia.org/wiki/Broadridge_Financial_Solutions",
-    "title": "Broadridge Financial Solutions - Wikipedia"
-   },
    {
     "url": "https://www.wikidata.org/wiki/Q4972280",
     "title": "Wikidata: Broadridge Financial Solutions (inception)"
@@ -2694,6 +2668,48 @@
   ]
  },
  {
+  "id": "founding-jia",
+  "profileId": "jia",
+  "type": "founding",
+  "date": "2022",
+  "note": "Jia Co. was founded in 2022 by four ex-Tala executives (Zach Marks, Cheng Cheng, Ivan Orone, Yuting Wang). Not stated on Jia's own site but confirmed by TechCrunch's coverage of its 2023 seed round ('Jia was founded last",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://techcrunch.com/2023/05/17/jia-a-blockchain-based-lender-of-small-businesses-in-emerging-markets-raises-4-3-million-seed/",
+    "title": "Jia, a blockchain-based lender of small businesses in emerging markets, raises $4.3 million seed - TechCrunch"
+   }
+  ]
+ },
+ {
+  "id": "founding-jpmorgan",
+  "profileId": "jpmorgan",
+  "type": "founding",
+  "date": "1799",
+  "note": "JPMorgan Chase's own official history states the firm 'traces its founding to New York City's first water company in 1799' (The Manhattan Company); its banking arm (Bank of the Manhattan Company) merged with Chase Nation",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.jpmorganchase.com/about/our-history",
+    "title": "Our History - JPMorgan Chase & Co."
+   }
+  ]
+ },
+ {
+  "id": "founding-jpyc",
+  "profileId": "jpyc",
+  "type": "founding",
+  "date": "2019",
+  "note": "JPYC Inc's official company page lists establishment (設立) as November 2019. The JPYC yen stablecoin / JPYC EX exchange service obtained its funds-transfer registration and broader rollout later (2021 and 2025).",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://jpyc.co.jp/about/",
+    "title": "会社概要 (Company Overview) - JPYC Inc"
+   }
+  ]
+ },
+ {
   "id": "founding-jumio",
   "profileId": "jumio",
   "type": "founding",
@@ -2701,6 +2717,10 @@
   "note": "Company founding",
   "checkedOn": "2026-10-08",
   "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Jumio",
+    "title": "Jumio - Wikipedia"
+   },
    {
     "url": "https://www.wikidata.org/wiki/Q16988433",
     "title": "Wikidata: Jumio (inception)"
@@ -2718,6 +2738,48 @@
    {
     "url": "https://www.wikidata.org/wiki/Q135992441",
     "title": "Wikidata: Kaiko (inception)"
+   }
+  ]
+ },
+ {
+  "id": "founding-kaleido",
+  "profileId": "kaleido",
+  "type": "founding",
+  "date": "2015",
+  "note": "Kaleido's About page: 'Our Web3 journey began in 2015... That's when Kaleido was born,' founded by former IBM blockchain leaders.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.kaleido.io/about",
+    "title": "About Kaleido's Team and Vision"
+   }
+  ]
+ },
+ {
+  "id": "founding-kasu",
+  "profileId": "kasu",
+  "type": "founding",
+  "date": "2024",
+  "note": "kasu.finance's own timeline lists 'Foundations laid' in H1 2024 as its earliest milestone.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://kasu.finance/about",
+    "title": "Kasu - About/timeline page"
+   }
+  ]
+ },
+ {
+  "id": "founding-kb-kookmin-bank",
+  "profileId": "kb-kookmin-bank",
+  "type": "founding",
+  "date": "1963",
+  "note": "Kookmin Bank's predecessor, the Citizens National Bank, was established by the Korean government and began operations Nov 1, 1963; it merged with Housing & Commercial Bank in 2001 and became part of KB Financial Group in",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/KB_Kookmin_Bank",
+    "title": "KB Kookmin Bank - Wikipedia"
    }
   ]
  },
@@ -2832,13 +2894,45 @@
   ]
  },
  {
+  "id": "founding-laiqon-token",
+  "profileId": "laiqon-token",
+  "type": "founding",
+  "date": "2021",
+  "note": "Registered 2 Dec 2021 with the Hamburg Handelsregister as 'Lloyd Token GmbH'; renamed LAIQON Token GmbH after parent Lloyd Fonds AG rebranded to LAIQON AG.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.northdata.com/LAIQON+Token+GmbH,+Hamburg/HRB+172377",
+    "title": "LAIQON Token GmbH, Hamburg (HRB 172377) – Northdata company register"
+   }
+  ]
+ },
+ {
+  "id": "launch-land-invest-corp",
+  "profileId": "land-invest-corp",
+  "type": "launch",
+  "date": "2025",
+  "note": "SEC Form D (filed 11 Dec 2025, CIK 0002094781) lists the Delaware entity's year of incorporation as 2025 and date of first sale as 10 Dec 2025, not 2024 as given.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.sec.gov/Archives/edgar/data/2094781/000109991025000261/primary_doc.xml",
+    "title": "Land Invest Corp. Form D, SEC EDGAR (CIK 0002094781)"
+   }
+  ]
+ },
+ {
   "id": "founding-landesbank-baden-wurttemberg",
   "profileId": "landesbank-baden-wurttemberg",
   "type": "founding",
   "date": "1999",
-  "note": "Company founding",
+  "note": "LBBW was formed 1 Jan 1999 by the merger of SüdwestLB, Landesgirokasse Stuttgart and L-Bank's commercial-banking business; it later absorbed BW-Bank (2005) and Landesbank Rheinland-Pfalz (2008).",
   "checkedOn": "2026-10-08",
   "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Landesbank_Baden-W%C3%BCrttemberg",
+    "title": "Landesbank Baden-Württemberg – Wikipedia"
+   },
    {
     "url": "https://www.wikidata.org/wiki/Q451814",
     "title": "Wikidata: Landesbank Baden-Württemberg (inception)"
@@ -2846,16 +2940,44 @@
   ]
  },
  {
-  "id": "founding-ledger",
-  "profileId": "ledger",
+  "id": "founding-lcx",
+  "profileId": "lcx",
   "type": "founding",
-  "date": "2011-01-01",
+  "date": "2018",
   "note": "Company founding",
   "checkedOn": "2026-10-08",
   "sources": [
    {
-    "url": "https://www.wikidata.org/wiki/Q65770312",
-    "title": "Wikidata: Ledger (inception)"
+    "url": "https://www.lcx.com/about/",
+    "title": "About LCX"
+   }
+  ]
+ },
+ {
+  "id": "founding-ledger",
+  "profileId": "ledger",
+  "type": "founding",
+  "date": "2014",
+  "note": "Founded 2014 in Paris by Éric Larchevêque together with the founders of BTChip and ChronoCoin; French Wikipedia's infobox separately lists 2011 as the legal-entity registration date of the holding company.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Ledger_(entreprise)",
+    "title": "Ledger (entreprise) — Wikipédia"
+   }
+  ]
+ },
+ {
+  "id": "launch-lendxyz",
+  "profileId": "lendxyz",
+  "type": "launch",
+  "date": "2026",
+  "note": "Operated by Lend Real Estate SA; lend.xyz launched its first tokenized real-estate operation on 26 Jan 2026.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://lend.xyz/blog",
+    "title": "Lend.xyz blog — \"Introducing Our First Operation: Datacenter Facility\""
    }
   ]
  },
@@ -2863,13 +2985,13 @@
   "id": "founding-lf-decentralized-trust",
   "profileId": "lf-decentralized-trust",
   "type": "founding",
-  "date": "2024-09",
-  "note": "Per Wikipedia's Hyperledger article: 'In September 2024, Hyperledger Foundation and Trust Over IP Foundation became part of the newly launched Linux Foundation Decentralized Trust.' Treated as the Foundation's formation ",
+  "date": "2015",
+  "note": "Founded as Hyperledger under the Linux Foundation in Dec 2015; renamed Hyperledger Foundation in Oct 2021; in Sept 2024 Hyperledger Foundation and the Trust Over IP Foundation became part of the newly formed LF Decentral",
   "checkedOn": "2026-10-08",
   "sources": [
    {
     "url": "https://en.wikipedia.org/wiki/Hyperledger",
-    "title": "Hyperledger - Wikipedia"
+    "title": "Hyperledger – Wikipedia"
    }
   ]
  },
@@ -2878,12 +3000,12 @@
   "profileId": "libeara",
   "type": "founding",
   "date": "2023",
-  "note": "LinkedIn company page lists founding year 2023; Singapore-based, incubated by Standard Chartered's SC Ventures.",
+  "note": "Established in Singapore in 2023; incubated by SC Ventures, the innovation arm of Standard Chartered, but operates as its own entity.",
   "checkedOn": "2026-10-08",
   "sources": [
    {
-    "url": "https://www.linkedin.com/company/libeara",
-    "title": "Libeara | LinkedIn"
+    "url": "https://libeara.com/about",
+    "title": "About Libeara"
    }
   ]
  },
@@ -2920,26 +3042,26 @@
   "profileId": "liminal",
   "type": "founding",
   "date": "2021",
-  "note": "Official About Us page states: 'Liminal was founded in 2021 by a team of wallet engineers with extensive experience in the crypto ecosystem, formerly behind... Zebpay.'",
+  "note": "Founded by Mahin Gupta, a ZebPay co-founder, together with former ZebPay wallet engineers.",
   "checkedOn": "2026-10-08",
   "sources": [
    {
-    "url": "https://liminalcustody.com/about-us",
-    "title": "About Us - Liminal"
+    "url": "https://liminalcustody.com/about-us/",
+    "title": "About Us — Liminal Custody"
    }
   ]
  },
  {
-  "id": "launch-linea",
+  "id": "founding-linea",
   "profileId": "linea",
-  "type": "launch",
-  "date": "2023-07",
-  "note": "Linea is ConsenSys's zkEVM L2 (a product of a larger firm, not an independent company). CoinMarketCap timeline: R&D began 2019, zkEVM spec 2022, public testnet early 2023, mainnet live July 2023. Linea Association/Consor",
+  "type": "founding",
+  "date": "2015",
+  "note": "Linea was built by ConsenSys, founded by Joseph Lubin in early 2015; Linea's own mainnet launched 12 July 2023 and is now stewarded by an Ecosystem Council that includes ConsenSys.",
   "checkedOn": "2026-10-08",
   "sources": [
    {
-    "url": "https://coinmarketcap.com/currencies/linea/",
-    "title": "Linea (LINEA) - CoinMarketCap"
+    "url": "https://en.wikipedia.org/wiki/ConsenSys",
+    "title": "ConsenSys – Wikipedia"
    }
   ]
  },
@@ -3130,20 +3252,6 @@
   ]
  },
  {
-  "id": "founding-mantra",
-  "profileId": "mantra",
-  "type": "founding",
-  "date": "2020",
-  "note": "Retained the provided legacyFounded year; founders John Patrick Mullin, Will Corkin and Rodrigo Quan Miranda, with OM token activity documented from 2021 onward, consistent with a 2020 founding.",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://coinmarketcap.com/currencies/mantra-dao/",
-    "title": "MANTRA DAO - CoinMarketCap"
-   }
-  ]
- },
- {
   "id": "founding-marsbase",
   "profileId": "marsbase",
   "type": "founding",
@@ -3266,20 +3374,6 @@
    {
     "url": "https://mementoblockchain.com/about.html",
     "title": "Memento Blockchain — About"
-   }
-  ]
- },
- {
-  "id": "founding-mento",
-  "profileId": "mento",
-  "type": "founding",
-  "date": "2022",
-  "note": "Mento Labs (Berlin) — the independent entity formed to govern the Mento multi-currency stablecoin protocol; CB Insights lists founded 2022. The Mento protocol/mechanism itself originated earlier inside Celo (~2019) befor",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://www.cbinsights.com/company/mento-labs",
-    "title": "Mento Labs - CB Insights Company Profile"
    }
   ]
  },
@@ -3512,20 +3606,6 @@
    {
     "url": "https://www.wikidata.org/wiki/Q141272722",
     "title": "Wikidata: Morpho Association (inception)"
-   }
-  ]
- },
- {
-  "id": "founding-mountain-protocol",
-  "profileId": "mountain-protocol",
-  "type": "founding",
-  "date": "2023",
-  "note": "Confirms the provided legacyFounded year. Site: 'Launched in 2023 with the vision that stablecoin holders are the natural owners of the risk free rate...'",
-  "checkedOn": "2026-10-08",
-  "sources": [
-   {
-    "url": "https://mountainprotocol.com/company",
-    "title": "Mountain Protocol"
    }
   ]
  },
@@ -4536,6 +4616,48 @@
   ]
  },
  {
+  "id": "founding-request-finance",
+  "profileId": "request-finance",
+  "type": "founding",
+  "date": "2017",
+  "note": "Per Request Finance's own 'company' page (requestfinance.com/company), led by co-founder/CEO Christophe; crypto invoicing/spend-management platform now processing $1B+.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.requestfinance.com/company",
+    "title": "Request Finance - Company"
+   }
+  ]
+ },
+ {
+  "id": "founding-reserve-rights",
+  "profileId": "reserve-rights",
+  "type": "founding",
+  "date": "2018",
+  "note": "Reserve Protocol co-founded 2018 by Nevin Freeman per aggregated sources; the RSR token itself launched via a Huobi Prime IEO in May 2019.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.coingecko.com/en/coins/reserve-rights",
+    "title": "Reserve Rights (RSR) - CoinGecko"
+   }
+  ]
+ },
+ {
+  "id": "founding-resolv",
+  "profileId": "resolv",
+  "type": "founding",
+  "date": "2023",
+  "note": "Earliest public post on Resolv's own blog is dated Oct 31, 2023 ('Resolv: The True Delta-Neutral Stablecoin'), consistent with the USR protocol's public launch window.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://resolv.xyz/blog",
+    "title": "Resolv Blog"
+   }
+  ]
+ },
+ {
   "id": "founding-revolut",
   "profileId": "revolut",
   "type": "founding",
@@ -4586,6 +4708,20 @@
   ]
  },
  {
+  "id": "launch-roofstock-onchain",
+  "profileId": "roofstock-onchain",
+  "type": "launch",
+  "date": "2022-10",
+  "note": "Roofstock's official onChain page states its first 'Home onChain' (NFT-linked, blockchain-financed home) traded Oct 14, 2022; parent Roofstock itself was founded 2015.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://onchain.roofstock.com",
+    "title": "Roofstock onChain"
+   }
+  ]
+ },
+ {
   "id": "launch-rootstock",
   "profileId": "rootstock",
   "type": "launch",
@@ -4600,6 +4736,20 @@
    {
     "url": "https://www.wikidata.org/wiki/Q22908379",
     "title": "Wikidata: Rootstock (inception)"
+   }
+  ]
+ },
+ {
+  "id": "founding-rwaf-apexinvest",
+  "profileId": "rwaf-apexinvest",
+  "type": "founding",
+  "date": "2003",
+  "note": "ApexInvest.io is a capital-raising platform operated by Apex Group, which was established in Bermuda in 2003 per Apex Group's own 'About Us' page.",
+  "checkedOn": "2026-10-08",
+  "sources": [
+   {
+    "url": "https://www.apexgroup.com/about-us/",
+    "title": "About Us - Apex Group"
    }
   ]
  },

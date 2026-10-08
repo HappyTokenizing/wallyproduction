@@ -31,8 +31,13 @@ test('sector and current membership filters count each identity once',()=>{
 });
 test('live dataset has explicit event dates, undated exits, and separately verified failures',()=>{
  const all={...criteria,from:'2000-Q1',to:'2026-Q4'};
- const starts=statsSeries(data,all,[]);assert.equal(starts.coverage.dated,63);assert.equal(starts.coverage.yearOnly,429);assert.equal(starts.coverage.unknown,639);
- const years=statsSeries(data,{...all,unit:'year',from:'1800',to:'2026'},[]);assert.equal(years.coverage.dated,63+429);assert.equal(years.coverage.yearOnly,0);
+ const starts=statsSeries(data,all,[]);
+ // Coverage is derived from the sourced start events (founding preferred over launch), so research additions stay consistent.
+ const first=new Map();for(const e of data.statsEvents.filter(e=>e.type==='founding'||e.type==='launch')){const c=first.get(e.profileId);if(!c||(c.type!=='founding'&&e.type==='founding'))first.set(e.profileId,e);}
+ const quarterDated=[...first.values()].filter(e=>dateBounds(e.date).quarter!=null).length;
+ assert.equal(starts.coverage.future,0);assert.equal(starts.coverage.dated,quarterDated);assert.equal(starts.coverage.yearOnly,first.size-quarterDated);assert.equal(starts.coverage.unknown,data.profiles.length-first.size);
+ assert.ok(first.size>=490,'sourced start dates for most of the directory');
+ const years=statsSeries(data,{...all,unit:'year',from:'1700',to:'2026'},[]);assert.equal(years.coverage.dated,first.size);assert.equal(years.coverage.yearOnly,0);
  const exits=statsSeries(data,{...all,metric:'exits'},[]);assert.equal(exits.coverage.eligible,9);assert.equal(exits.coverage.dated,8);assert.equal(exits.coverage.unknown,1);assert.equal(exits.total,8);
  assert.deepEqual(exits.points.filter(p=>p.value).map(p=>[p.label,p.value]),[['Q1 2025',2],['Q2 2025',1],['Q4 2025',2],['Q1 2026',1],['Q2 2026',1],['Q3 2026',1]]);
  const failures=statsSeries(data,{...all,metric:'failures'},[]);assert.equal(failures.total,3);assert.deepEqual(failures.shownEvents.map(e=>[e.name,quarterLabel(e.quarter)]),[['Neufund','Q1 2022'],['Archblock','Q1 2026'],['Opulous','Q2 2026']]);assert.equal(failures.coverage.eligible,3);

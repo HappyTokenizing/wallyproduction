@@ -54,13 +54,14 @@
     "toto-finance",
     "klarna",
     "binance",
-    "scenium"
+    "scenium",
+    "kettle-finance"
   ],
   "updatedLogos": 349,
   "completedExits": 9,
   "totalProfiles": 1131,
-  "current": 966,
-  "historical": 142,
+  "current": 967,
+  "historical": 141,
   "review": 23,
   "merged": [
     {
