@@ -29,7 +29,7 @@
         ctx.save(); ctx.translate(cx, cy); ctx.scale(c, c); K.coin(ctx, 0, 0, 44, {}); ctx.restore();
       }
     });
-    label(ctx, 'THE TOKEN MOVES AT INTERNET SPEED · THE ASSET DOESN\'T', 1195, 790, { s: 17, c: C.ink2, alpha: S.at(3.2, 0.5) });
+    label(ctx, 'THE TOKEN MOVES ONCHAIN · THE ASSET STAYS WHERE IT IS', 1195, 790, { s: 17, c: C.ink2, alpha: S.at(3.2, 0.5) });
   };
 
   // 1.2 Tokenization — a T-bill gets wrapped; an x-ray shows it is still a T-bill
@@ -220,7 +220,7 @@
       K.arrow(ctx, cx - 14, cy - R + 14, cx - 190, cy - R + 20, { p: l1, head: false, lw: 3, c: C.ink, bend: 30 });
       K.txt(ctx, '3% everyone else', cx - 196, cy - R + 26, { f: 'mono', s: 18, w: 700, c: C.ink, a: 'right', alpha: l1 });
     }
-    if (S.sc.kicker) K.txt(ctx, S.sc.kicker, 1470, 770, { f: 'serif', s: 34, w: 700, i: true, c: C.orange, a: 'center', alpha: S.at(4.6, 0.5) });
+    if (S.sc.kicker) K.wrap(ctx, S.sc.kicker, 760, { f: 'serif', s: 34, w: 700, i: true }).forEach((ln, i, all) => K.txt(ctx, ln, 1470, 770 - (all.length - 1) * 21 + i * 42, { f: 'serif', s: 34, w: 700, i: true, c: C.orange, a: 'center', alpha: S.at(4.6 + i * 0.12, 0.5) }));
   };
 
   // 1.8 Smart contract wrapper — same gold, different off-switch

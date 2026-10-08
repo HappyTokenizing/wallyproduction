@@ -267,8 +267,8 @@
     ctx.beginPath(); ctx.moveTo(door.x, y1); ctx.lineTo(door.x, door.y); ctx.lineTo(door.x + door.w, door.y); ctx.lineTo(door.x + door.w, y1); ctx.stroke();
   };
   const CRACKS = [ // under the banner, down both sides of the wall, never across the plaque or the door
-    [[1236, 418], [1222, 452], [1250, 484], [1214, 522], [1248, 562], [1226, 612], [1262, 662], [1240, 724]],
-    [[1214, 522], [1180, 552]], [[1248, 562], [1296, 592], [1318, 642]],
+    [[1196, 422], [1184, 458], [1198, 494], [1180, 528], [1210, 566], [1226, 612], [1262, 662], [1240, 724]],
+    [[1210, 566], [1178, 598]], [[1248, 640], [1296, 652], [1318, 690]],
     [[1740, 418], [1756, 456], [1722, 492], [1762, 532], [1730, 582], [1772, 642], [1746, 704]],
     [[1730, 582], [1662, 610], [1604, 600], [1560, 644]], [[1722, 492], [1700, 524]],
     [[1488, 420], [1458, 442], [1418, 436], [1376, 450], [1320, 444]], [[1488, 420], [1532, 444], [1592, 438], [1646, 452]],
@@ -288,9 +288,10 @@
     }
     const pp = S.pop(0.3);
     at(ctx, pp, dX, 497, (c) => {
-      K.box(c, -206, -38, 412, 76, { r: 10, fill: '#E9C77E', stroke: C.ink, lw: 4, shadow: 10 });
-      K.txt(c, L.rope, 0, -4, { f: 'display', s: 32, w: 900, st: 'semi-condensed', c: C.ink, a: 'center', ls: 2 });
-      K.txt(c, L.rule, 0, 25, { f: 'mono', s: 15, w: 700, c: C.ink2, a: 'center' });
+      const rules = [].concat(L.rule); // the eligibility tests, one per line
+      K.box(c, -220, -45, 440, 54 + rules.length * 20, { r: 10, fill: '#E9C77E', stroke: C.ink, lw: 4, shadow: 10 });
+      K.txt(c, L.rope, 0, -12, { f: 'display', s: 30, w: 900, st: 'semi-condensed', c: C.ink, a: 'center', ls: 2 });
+      rules.forEach((r, i) => K.txt(c, r, 0, 14 + i * 20, { f: 'mono', s: 14, w: 700, c: C.ink2, a: 'center' }));
     });
     // the velvet rope (until the rulebook takes its place)
     const ropeA = 1 - S.at(2.2, 0.2), ropeOpen = S.at(1.4, 0.25) * (1 - S.at(1.92, 0.22));

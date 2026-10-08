@@ -199,7 +199,7 @@
     K.arrow(ctx, A + 40, sy, M - 60, sy, { p: S.at(2.0, 0.12, E.lin), lw: 5, c: C.orange, hs: 15 });
     K.arrow(ctx, M + 60, sy, B - 52, sy, { p: S.at(2.1, 0.12, E.lin), lw: 5, c: C.orange, hs: 15 });
     grow(ctx, B, sy, S.pop(2.22, 0.45), () => I.cash(ctx, 0, 0, 72));
-    grow(ctx, M, sy + 82, S.pop(2.3, 0.45), () => label(ctx, 'INSTANT ✓', 0, 0, { c: C.green, s: 20 }));
+    grow(ctx, M, sy + 82, S.pop(2.3, 0.45), () => label(ctx, 'QUICK ✓', 0, 0, { c: C.green, s: 20 }));
     // REDEEM — the fund's calendar: you wait for the window
     head(r1, r2, 566, S.at(2.2, 0.4));
     grow(ctx, A, ry, S.pop(2.25, 0.45), () => K.coin(ctx, 0, 0, 30, {}));
@@ -255,8 +255,8 @@
         ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(26, -4); ctx.lineTo(130, -4); ctx.lineTo(130, 66); ctx.lineTo(26, 66); ctx.lineTo(0, 62); ctx.closePath();
         ctx.fillStyle = '#F6E7C8'; ctx.fill(); ctx.lineWidth = 4; ctx.strokeStyle = C.ink; ctx.lineJoin = 'round'; ctx.stroke();
         ctx.beginPath(); ctx.arc(14, 31, 5, 0, 7); ctx.fillStyle = C.bg; ctx.fill(); ctx.lineWidth = 2.5; ctx.stroke();
-        K.txt(ctx, 'MATURES', 78, 22, { f: 'mono', s: 14, w: 700, c: C.ink2, a: 'center', ls: 2 });
-        K.txt(ctx, '2031', 78, 56, { f: 'display', s: 34, w: 900, st: 'condensed', c: C.ink, a: 'center' });
+        K.txt(ctx, 'ON DEMAND', 78, 22, { f: 'mono', s: 13, w: 700, c: C.ink2, a: 'center', ls: 1 });
+        K.txt(ctx, 'NO', 78, 56, { f: 'display', s: 34, w: 900, st: 'condensed', c: C.red, a: 'center' });
       });
     }
     // the token: tradable to another buyer, not redeemable back through the door

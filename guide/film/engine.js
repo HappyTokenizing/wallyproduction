@@ -84,7 +84,10 @@
     const pAt = (sc.pointAt || 1.2) * BEAT;
     ctx.fillStyle = C.line2; ctx.fillRect(STAGE.x, 818, STAGE.w, 2);
     K.txt(ctx, 'THE POINT', STAGE.x, 856, { f: 'mono', s: 17, w: 700, c: C.orange, ls: 5, alpha: K.ep(t, pAt - 0.15, 0.3) });
-    if (t > pAt) K.words(ctx, sc.point, STAGE.x, 912, { f: 'serif', s: 41, w: 700, i: true, maxW: STAGE.w, lh: 52, t: t - pAt, per: 0.065, fd: 0.5, c: C.ink });
+    if (t > pAt) { // two lines at most: long points step down in size instead of running into the footer
+      const pS = [41, 39, 37, 35, 33].find((s) => K.wrap(ctx, sc.point, STAGE.w, { f: 'serif', s, w: 700, i: true }).length <= 2) || 33;
+      K.words(ctx, sc.point, STAGE.x, 912, { f: 'serif', s: pS, w: 700, i: true, maxW: STAGE.w, lh: Math.round(pS * 1.27), t: t - pAt, per: 0.065, fd: 0.5, c: C.ink });
+    }
     // margin note (Wally's joke)
     if (sc.note) {
       const nAt = (sc.noteAt || 4) * BEAT;

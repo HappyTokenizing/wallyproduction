@@ -19,7 +19,7 @@
     window.WallyRig.draw(ctx, { x: 0, y: h / 2 - 118 * u, s: 0.43 * u, trunk: { bend: Math.sin((o.t || 0) * 1.3) * 0.05 } });
     ctx.fillStyle = 'rgba(32,26,19,.35)'; ctx.fillRect(-w * 0.38, h / 2 - 92 * u, w * 0.76, 1.5);
     K.rwafMark(ctx, -w * 0.31, h / 2 - 64 * u, 38 * u, C.ink);
-    K.txt(ctx, 'SPONSORED BY RWA FOUNDATION', w * 0.04, h / 2 - 59 * u, { f: 'mono', s: 14 * u, w: 600, c: C.ink, a: 'center', ls: 1.5 * u });
+    K.txt(ctx, 'CREATED BY RWA FOUNDATION', w * 0.04, h / 2 - 59 * u, { f: 'mono', s: 14 * u, w: 600, c: C.ink, a: 'center', ls: 1.5 * u });
     K.txt(ctx, '@wallycollection', 0, h / 2 - 26 * u, { f: 'mono', s: 14 * u, w: 600, c: C.ink2, a: 'center', ls: 2 * u });
     ctx.restore();
   };

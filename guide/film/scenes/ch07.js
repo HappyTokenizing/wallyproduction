@@ -140,7 +140,7 @@
       if (num) K.txt(ctx, num, nx[i], fy + 124, { f: 'display', s: 38, w: 900, st: 'condensed', c: i ? C.orange : C.ink, a: 'center', alpha: p });
       else K.txt(ctx, 'holds the deed', nx[i], fy + 120, { f: 'hand', s: 30, w: 700, c: C.ink2, a: 'center', alpha: p });
     });
-    // the per-token maths, counted up
+    // the per-token math, counted up
     const mp = S.at(2.7, 0.35);
     if (mp > 0) {
       const [lhs, rhs] = L.math.split(' = '), sp = rhs.indexOf(' '), num = rhs.slice(0, sp), rest = rhs.slice(sp + 1).toUpperCase();

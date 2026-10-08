@@ -146,7 +146,7 @@
     // day counter at the cash finish
     const cp = S.pop(0.6, 0.4);
     if (cp > 0) {
-      const day = S.bt >= 2.4 ? 2 : S.bt >= 1.6 ? 1 : 0, flip = day === 0 ? 1 : S.at(day === 1 ? 1.6 : 2.4, 0.22, E.outBack);
+      const day = S.bt >= 1.6 ? 1 : 0, flip = day === 0 ? 1 : S.at(1.6, 0.22, E.outBack); // US trades settle T+1; the wire lands next business day
       ctx.save(); ctx.translate(1724, y2 + 4); ctx.scale(cp, cp);
       I.calendar(ctx, 0, 0, 104, { top: C.ink2, label: 'CASH' });
       ctx.save(); ctx.translate(0, 0); ctx.scale(1, K.clamp(flip, 0.05, 1.2)); K.txt(ctx, 'T+' + day, 0, 30, { f: 'display', s: 40, w: 900, st: 'condensed', c: day ? C.red : C.ink, a: 'center' }); ctx.restore();

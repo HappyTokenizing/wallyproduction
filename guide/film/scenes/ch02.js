@@ -10,7 +10,8 @@
   const fragLines = (ctx, str, maxW, o) => {
     const parts = String(str).split(' · '), out = []; let cur = '';
     for (const p of parts) { const test = cur ? cur + ' · ' + p : p; if (cur && K.measure(ctx, test, o) > maxW) { out.push(cur); cur = p; } else cur = test; }
-    if (cur) out.push(cur); return out;
+    if (cur) out.push(cur);
+    return out.flatMap((l) => (K.measure(ctx, l, o) > maxW ? wrapLines(ctx, l, maxW, o) : [l])); // one fragment wider than maxW breaks between words
   };
   const wrapLines = (ctx, str, maxW, o) => {
     if (K.measure(ctx, str, o) <= maxW) return [str];
@@ -68,7 +69,7 @@
     const b0 = 1.2, b1 = 2.85, bx = K.lerp(640, 1752, E.inOutSine(S.lin(b0, b1 - b0))), scanning = S.bt >= b0;
     const inner = [
       (c) => cert(c, xs[0], cy + 4, 164, 106, { name: shareName || '', big: shareBig }),
-      (c) => I.sticky(c, xs[1], cy + 4, 120, { text: L.promise, ts: 0.28, tilt: -0.08 }),
+      (c) => I.sticky(c, xs[1], cy + 4, 120, { text: L.promise, ts: 0.24, tilt: -0.08 }),
     ];
     // "=" between them: same ticker... until it isn't
     const eq = S.at(0.9, 0.4), neq = S.lin(2.9, 0.25);
