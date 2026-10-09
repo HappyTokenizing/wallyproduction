@@ -27,3 +27,7 @@
 .ec-public-date-clue span{display:block;color:var(--ec-muted)}
 .ec-public-date-clue a{color:var(--ec-ink);font-size:11px}
 @media(max-width:640px){.ec-logo-versions li{gap:12px}.ec-logo-versions .ec-logo{--ec-logo-inset:9px;width:72px;height:72px}.ec-logo-versions .ec-logo.ec-wordmark{--ec-logo-inset:5px}.ec-logo-history{padding:12px}.ec-logo-history summary span{display:block;margin-left:0}}
+
+.ec-member-note{margin:0 0 18px;color:var(--ec-muted);font-size:13px;line-height:1.5}
+
+.ec-map-members{display:block;column-span:all}.ec-map-members .ec-map-tiles{grid-template-columns:repeat(auto-fill,minmax(76px,1fr))}

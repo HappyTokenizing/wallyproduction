@@ -5,6 +5,20 @@ export function memberFor(profile, members) {
   const names = new Set([profile.name,...(profile.aliases || [])].map(memberKey));
   return members.find(member=>names.has(memberKey(member.name)));
 }
+export const RWAF_DIRECTORY = 'RWAF Directory';
+export const ADDITIONAL_ECOSYSTEM = 'Additional ecosystem';
+// The original import bucket is provenance, not membership. Keep its profiles
+// discoverable without presenting them as members or changing the source data.
+export function prepareDirectory(data) {
+  const sectionName = name => name === 'RWAF directory' ? ADDITIONAL_ECOSYSTEM : name;
+  return {...data,
+    profiles:data.profiles.map(p=>({...p,categories:p.categories.map(c=>({...c,section:sectionName(c.section)}))})),
+    sections:data.sections.map(s=>({...s,name:sectionName(s.name)}))
+  };
+}
+export function directorySections(data, members) {
+  return [{name:RWAF_DIRECTORY,categories:[{name:'RWAF Members',ids:data.profiles.filter(p=>memberFor(p,members)).map(p=>p.id)}]},...data.sections];
+}
 const words = value => String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 export function relevance(profile, query) {
   const q=words(query), compact=q.replace(/ /g,''), terms=q.split(' ');
@@ -27,7 +41,7 @@ export function exitsFor(profile) {
 export const exitCount = profiles => new Set(profiles.flatMap(p=>exitsFor(p).map(e=>e.id))).size;
 export function filterProfiles(profiles, state, members) {
   const matched=profiles.filter(p => (state.status==='all'||(state.status==='exits'?exitsFor(p).length>0:p.directoryStatus===state.status))
-    && (state.section==='all'||p.categories.some(c=>c.section===state.section))
+    && (state.section==='all'||(state.section===RWAF_DIRECTORY?memberFor(p,members):p.categories.some(c=>c.section===state.section)))
     && (!state.members||memberFor(p,members)))
     .map(p=>({p,rank:relevance(p,state.q),member:!!memberFor(p,members)}))
     .filter(x=>Number.isFinite(x.rank));
