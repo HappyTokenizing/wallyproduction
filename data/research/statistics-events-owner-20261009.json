@@ -1,0 +1,34 @@
+[
+  {
+    "id": "360xart-owner-20261009",
+    "profileId": "360xart",
+    "type": "founding",
+    "date": "2021",
+    "note": "Owner supplied 2021; independently corroborated by 360X Art’s official company profile. Only year precision is supported.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://de.linkedin.com/company/360xart",
+        "title": "360X Art — Official company profile, founded 2021"
+      }
+    ]
+  },
+  {
+    "id": "tokenizethis-launch-20261009",
+    "profileId": "tokenizethis",
+    "type": "launch",
+    "date": "2023-10-11",
+    "note": "First day of the inaugural TokenizeThis conference, corroborated by the organizer’s dated announcement and contemporaneous day-one reporting. This is the event-series launch, not STM’s founding.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/posts/kylesonlin_stellar-lineup-announced-for-security-token-activity-7115331812213538816-kyVf",
+        "title": "TokenizeThis / Kyle Sonlin — inaugural conference, 11–13 October 2023"
+      },
+      {
+        "url": "https://securities.io/the-liquidity-problem-in-digital-securities-insights-from-the-tokenizethis-summit/",
+        "title": "Securities.io — Day one of the inaugural TokenizeThis summit, 11 October 2023"
+      }
+    ]
+  }
+]

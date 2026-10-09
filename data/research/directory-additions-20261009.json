@@ -1,0 +1,43 @@
+[
+  {
+    "id": "tokenizethis",
+    "name": "TokenizeThis",
+    "kind": "Conference",
+    "description": "Conference series connecting institutions, issuers and infrastructure providers working on tokenization and real-world assets. Established by Security Token Market and acquired by RedStone alongside STM.",
+    "website": "https://tokenizethis.redstone.finance/",
+    "domain": "tokenizethis.redstone.finance",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-09",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Events & education"
+      }
+    ],
+    "aliases": [
+      "Tokenize This",
+      "TokenizeThis Conference"
+    ],
+    "sources": [
+      {
+        "url": "https://tokenizethis.redstone.finance/",
+        "title": "TokenizeThis — official conference website"
+      },
+      {
+        "url": "https://blog.redstone.finance/2026/01/21/redstone-acquires-security-token-market-and-tokenizethis-conference/",
+        "title": "RedStone — Acquisition of STM and TokenizeThis, 21 January 2026"
+      }
+    ],
+    "lifecycle": "Acquired",
+    "statusNote": "RedStone announced its completed acquisition of TokenizeThis and STM on 21 January 2026. The conference continues under RedStone; the separate closing date was not disclosed.",
+    "newsRules": [
+      {
+        "aliases": [
+          "TokenizeThis",
+          "Tokenize This"
+        ]
+      }
+    ],
+    "evidenceNote": "Official conference website and RedStone acquisition announcement identify the continuing TokenizeThis event series separately from STM’s data business; the transaction is recorded once across both profiles."
+  }
+]

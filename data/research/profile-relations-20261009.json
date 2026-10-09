@@ -1,0 +1,44 @@
+{
+  "tokenizethis": [
+    {
+      "id": "redstone",
+      "relationship": "Acquired by"
+    },
+    {
+      "id": "security-token-market",
+      "relationship": "Established by"
+    }
+  ],
+  "redstone": [
+    {
+      "id": "tokenizethis",
+      "relationship": "Acquired conference"
+    },
+    {
+      "id": "security-token-market",
+      "relationship": "Acquired data business"
+    }
+  ],
+  "security-token-market": [
+    {
+      "id": "tokenizethis",
+      "relationship": "Conference established by STM"
+    },
+    {
+      "id": "redstone",
+      "relationship": "Acquired by"
+    }
+  ],
+  "anchorage-digital-bank-na": [
+    {
+      "id": "anchorage",
+      "relationship": "Stablecoin issuer"
+    }
+  ],
+  "anchorage": [
+    {
+      "id": "anchorage-digital-bank-na",
+      "relationship": "USA₮ stablecoin offering"
+    }
+  ]
+}

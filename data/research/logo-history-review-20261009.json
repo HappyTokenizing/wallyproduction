@@ -1,0 +1,621 @@
+{
+  "/ecosystem/reservoir-logo-v2.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/m0-logo-v2.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/halliday-logo-v2.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/ondo-finance-logo-v2.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/centrifuge-logo-v2.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/blackrock-logo-v2.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/bitwise-logo-v2.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/anemoy-logo-v2.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/xrp-ledger-logo-v2.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/zksync-symbol-v4.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/cap-logo-v2.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/goldfinch-logo-v2.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/fireblocks-symbol-v3.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/world-app-logo-v2.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/archax-batch001.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/brale-batch001.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/calastone-batch001.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/dusk-batch001.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/openeden-batch001.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/stokr-batch001.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/taurus-batch001.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/agridex-batch002.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/akru-batch002.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/arf-batch002.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/blockapps-batch002.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/carbonmark-batch002.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/cicada-partners-batch002.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/creditcoin-batch002.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/csigma-batch002.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/dlt-finance-batch002.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/fabrica-batch002.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/goldman-sachs-batch002.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/homium-batch002.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/hydra-x-batch002.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/kaio-batch002.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/bankhaus-scheich-batch003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/bsos-batch003.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/deal-box-batch003.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/sg-forge-batch003.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/hamsa-batch003.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/infineo-batch003.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/kasu-batch003.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/onre-batch003.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/regen-network-batch003.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/arca-batch004.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/credible-finance-batch004.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/enor-batch004.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/entoro-batch004.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/estate-protocol-batch004.svg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/ledgity-batch004.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/mansa-batch004.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/oasis-pro-batch004.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/polymath-batch004.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/rwa-xyz-batch004.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/dtcc-batch004.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/dubois-et-fils-batch005.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/laiqon-token-batch005.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/peaq-batch005.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/spydra-batch005.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/toronet-batch005.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/blockridge-batch006.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/enerdao-batch006.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/etherland-batch006.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/h-moser-batch006.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/smart-token-labs-batch007.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/toto-finance-batch007.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/transfer-agent-protocol-batch007.svg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/chateau-capital-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/cheersland-retained-20261003.png": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/diamore-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/allocations-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/bru-finance-retained-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/cougar-dao-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/credix-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/ecosapiens-retained-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/flowcarbon-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/frigg-retained-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/hadco-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/lcx-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/numa-retained-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/parabol-retained-20261003.jpg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/tokenstreet-retained-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/amberisland-retained-20261003.jpg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/anotherblock-retained-20261003.png": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/artfi-retained-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/ian-retained-20261003.jpg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/kinto-retained-20261003.jpg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/labs-groupio-retained-20261003.png": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/openchrono-retained-20261003.png": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/stream-protocol-retained-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/watches-io-retained-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/archblock-retained-20261003.jpg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/emerald-retained-20261003.jpg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/neutral-exchange-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/skyhookcapital-retained-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/thovt-retained-20261003.jpg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/ventureclub-retained-20261003.jpg": {
+    "background": "dark",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/artrade-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/collaterize-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/moongate-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/pareto-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/quant-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/re.al-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/revest-finance-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/tokeniza-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/zoth.io-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/globacap-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/colb-asset-sa-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/membrane-finance-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/paytrie-ab-inc-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/cyclex-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/fundbridge-capital-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/ubs-asset-management-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/suno-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/csop-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/hash-global-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/taikang-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/timeless-investments-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/vivi-coin-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/str8fire-rwaio-20261003.png": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/sylvatrust-rwaio-20261003.jpg": {
+    "background": "light",
+    "treatment": "original",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/stellar-symbol-v4.svg": {
+    "background": "light",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/jadecity-retained-20261003.png": {
+    "displayInHistory": false,
+    "reviewNote": "Retained for provenance only: this file is the X platform logo, not Jade City artwork.",
+    "displayReviewedOn": "2026-10-09"
+  },
+  "/ecosystem/consolfreight-retained-20261003.ico": {
+    "displayInHistory": false,
+    "reviewNote": "Retained for provenance only: blank 16×16 placeholder with no visible company mark.",
+    "displayReviewedOn": "2026-10-09"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "redstone-stm-tokenizethis-2026",
+    "profileId": "tokenizethis",
+    "relatedProfileIds": [
+      "security-token-market"
+    ],
+    "type": "acquisition",
+    "status": "completed",
+    "target": "Security Token Market and TokenizeThis",
+    "counterparty": "RedStone",
+    "announcedDate": "2026-01-21",
+    "summary": "RedStone confirmed its acquisition of STM and TokenizeThis in one announcement on 21 January 2026. Counted as one transaction across both profiles. The exact closing date was not disclosed, so this exit is retained in undated coverage rather than assigned an assumed quarter.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://blog.redstone.finance/2026/01/21/redstone-acquires-security-token-market-and-tokenizethis-conference/",
+        "title": "RedStone — Acquisition of STM and TokenizeThis, 21 January 2026"
+      }
+    ]
+  }
+]

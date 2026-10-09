@@ -1,0 +1,314 @@
+[
+  {
+    "id": "denario-additional-20261009",
+    "profileId": "denario",
+    "type": "founding",
+    "date": "2021",
+    "note": "Denario's own precious-metals website explicitly lists 2021 as its established year. This is the Swiss tokenization company, not the unrelated Berlin payments company.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.denario.swiss/",
+        "title": "Denario — Company / established year"
+      }
+    ]
+  },
+  {
+    "id": "tradefinex-additional-20261009",
+    "profileId": "tradefinex",
+    "type": "launch",
+    "date": "2018-01",
+    "note": "XinFin's January 2018 issuer announcement records the TradeFinex beta platform launch at ASSOCHAM's P2P summit. Month precision is retained because the announcement does not separately state the event day; XinFin's 2017 founding is not substituted for the TradeFinex launch.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/in/news-releases/singapore-based-xinfin-unveils-blockchain-powered-tradefinex-platform-with-indias-largest-trade-organization-assocham-668776163.html",
+        "title": "XinFin — TradeFinex platform launch announcement"
+      }
+    ]
+  },
+  {
+    "id": "hauck-aufh-user-lampe-additional-20261009",
+    "profileId": "hauck-aufh-user-lampe",
+    "type": "industry_entry",
+    "date": "2020-12",
+    "note": "DekaBank's account quotes Hauck & Aufhäuser's treasury head identifying their first secured securities-lending transaction on the blockchain platform in December 2020. This records the earliest verified asset transaction in this review, not the bank's corporate founding.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.deka.de/deka-group/media-research-en/media-releases/archive/archive2021/december/dekabank-issues-first-crypto-securities-on-the-blockchain",
+        "title": "DekaBank — First crypto securities and December 2020 lending transaction"
+      }
+    ]
+  },
+  {
+    "id": "anchorage-digital-bank-na-additional-20261009",
+    "profileId": "anchorage-digital-bank-na",
+    "type": "launch",
+    "date": "2026-01-27",
+    "note": "This separate profile points to usat.io and represents the USA₮ stablecoin offering. Tether explicitly announces its official launch on 27 January 2026 and identifies Anchorage Digital Bank, N.A. as issuer; the date is not the founding of the broader Anchorage company.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://tether.io/news/tether-announces-the-launch-of-usat-the-federally-regulated-dollar-backed-stablecoin-made-in-america/",
+        "title": "Tether — Official launch of USA₮"
+      }
+    ]
+  },
+  {
+    "id": "catena-digital-pty-ltd-additional-20261009",
+    "profileId": "catena-digital-pty-ltd",
+    "type": "launch",
+    "date": "2025-10-08",
+    "note": "AAP's contemporaneous interview with CEO Drew Bradford records AUDM's first use on 8 October 2025. This dates the Macropod/AUDM product launch, not the unrelated Scottish Catena Digital or the precursor NAB stablecoin.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://aapnews.aap.com.au/news/first-regulated-australian-dollar-stablecoin-launched",
+        "title": "AAP — Macropod CEO describes first AUDM transaction"
+      },
+      {
+        "url": "https://www.independentreserve.com/blog?p=8202",
+        "title": "Independent Reserve — AUDM issuer and 2025 platform launch"
+      }
+    ]
+  },
+  {
+    "id": "mimo-additional-20261009",
+    "profileId": "mimo",
+    "type": "founding",
+    "date": "2015",
+    "note": "Mimo's own company profile gives 2015 as its founding year and links to mimo.capital, identifying its stablecoin and tokenized-asset business. Only year precision is supported.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://sg.linkedin.com/company/mimocapital",
+        "title": "Mimo — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "lumia-additional-20261009",
+    "profileId": "lumia",
+    "type": "founding",
+    "date": "2024",
+    "note": "Lumia's official company profile dates the RWA Layer 2 initiative to 2024 and links to lumia.org. This is the Lumia network initiative; it does not assign the founding date of the older Orion business to the network.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/buildonlumia",
+        "title": "Lumia — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "crypto-autos.com-additional-20261009",
+    "profileId": "crypto-autos.com",
+    "type": "founding",
+    "date": "2023",
+    "note": "CryptoAutos' official company profile lists 2023 as its founding year, with the matching cryptoautos.com website and automotive marketplace identity.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/cryptoautos",
+        "title": "CryptoAutos — Official company profile"
+      }
+    ]
+  },
+  {
+    "id": "headway-nova-additional-20261009",
+    "profileId": "headway-nova",
+    "type": "launch",
+    "date": "2023-Q4",
+    "note": "Headway NOVA's own February 2024 issuer release explicitly dates entry into the tokenized-property market to Q4 2023. Quarter precision is retained instead of inventing a day.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/ae/news-releases/headway-nova-new-investing-in-real-estate-302064231.html",
+        "title": "Headway NOVA — New investing in real estate"
+      }
+    ]
+  },
+  {
+    "id": "anzens-inc-additional-20261009",
+    "profileId": "anzens-inc",
+    "type": "launch",
+    "date": "2025-03",
+    "note": "EMURGO's March 2025 launch announcement and monthly retrospective confirm that Anzens/USDA became available that month. Month precision covers the initial USDA trading launch and subsequent retail minting access, rather than treating the postponed 2023 launch target as completed.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.emurgo.io/press-news/anzens-is-live-usda-stablecoin-minting-access-is-here-cardano/",
+        "title": "EMURGO — Anzens is live"
+      },
+      {
+        "url": "https://www.emurgo.io/press-news/emurgo-march-2025-newsletter/",
+        "title": "EMURGO — March 2025 launch retrospective"
+      }
+    ]
+  },
+  {
+    "id": "bru-finance-additional-20261009",
+    "profileId": "bru-finance",
+    "type": "launch",
+    "date": "2021",
+    "note": "A contemporaneous founder interview explicitly separates Whrrl's 2019 launch from Bru Finance's 2021 launch. The team's 2021 Devpost submission confirms its RWA testnet implementation; this is an initial project launch, not the later 2023 mainnet deployment or a resolution of conflicting corporate founding records.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://yourstory.com/the-decrypting-story/blockchain-startup-farmers-loans-bru-finance-whrrl",
+        "title": "YourStory — Founder explains Whrrl and Bru Finance launch history"
+      },
+      {
+        "url": "https://devpost.com/software/bru-finance",
+        "title": "Bru Finance team — RWA testnet project submission"
+      }
+    ]
+  },
+  {
+    "id": "oro-finance-additional-20261009",
+    "profileId": "oro-finance",
+    "type": "founding",
+    "date": "2024",
+    "note": "Contemporaneous funding coverage identifies Usman Saleem's tokenized-gold ORO as founded in 2024. ORO's own legal page identifies the Singapore ORO Labs entity; this excludes the unrelated procurement-software company with a 2020 founding.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.wamda.com/en/2025/03/oro-labs-secures-1-5-million-pre-seed-backed-468-capital",
+        "title": "Wamda — ORO Labs funding and founding history"
+      },
+      {
+        "url": "https://app.oro.finance/privacy-policy",
+        "title": "ORO — Legal entity and platform identity"
+      }
+    ]
+  },
+  {
+    "id": "refuture-additional-20261009",
+    "profileId": "refuture",
+    "type": "founding",
+    "date": "2020-11-26",
+    "note": "The public German company-register mirror records REFuture SE's new registration on 26 November 2020. Its name, address and HRB 18892 match the company's own legal imprint; the separately incorporated REFuture X Invest subsidiary is not used.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.unternehmen24.info/Firmeninformationen/Deutschland/Firma/4934340",
+        "title": "Unternehmen24 — REFuture SE registration record"
+      },
+      {
+        "url": "https://refuture.se/impressum/",
+        "title": "REFuture — Official legal imprint"
+      }
+    ]
+  },
+  {
+    "id": "galileo-protocol-additional-20261009",
+    "profileId": "galileo-protocol",
+    "type": "founding",
+    "date": "2022",
+    "note": "Galileo Protocol's January 2023 issuer press release explicitly states that Pierre Beunardeau and Nathaniel Debache founded the physical-asset tokenization startup in 2022. Later token-sale and protocol-version releases do not reset its founding year.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://markets.financialcontent.com/stocks/article/accwirecq-2023-1-17-first-quant-network-qrc-20-token-sale-issued-on-lcx-exchange",
+        "title": "Galileo Protocol — Issuer founding statement in January 2023 press release"
+      }
+    ]
+  },
+  {
+    "id": "apraemio-additional-20261009",
+    "profileId": "apraemio",
+    "type": "launch",
+    "date": "2022-11",
+    "note": "Apraemio's official delivered-milestones timeline dates its original APRA token going live on BNB Chain to November 2022. This is the digital project launch, not the older mining partner's incorporation; current issuer disclosures explicitly state that APRA is not backed by gold or other assets.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.apraemio.com/token/",
+        "title": "Apraemio — Delivered timeline and APRA legal scope"
+      }
+    ]
+  },
+  {
+    "id": "defa-by-invoicemate-additional-20261009",
+    "profileId": "defa-by-invoicemate",
+    "type": "launch",
+    "date": "2024",
+    "note": "The project's own 2024 retrospective lists the DeFa Protocol launch among that year's achievements and confirms a live testnet. This dates the original DeFa protocol/testnet initiative, not the older InvoiceMate business or its subsequent mainnet deployment.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://paragraph.com/@defa-by-invoicemate/defa-by-invoicemate-2024-a-groundbreaking-year-of-growth-and-achievement",
+        "title": "DeFa by InvoiceMate — Official 2024 achievements and live testnet retrospective"
+      }
+    ]
+  },
+  {
+    "id": "meupass-additional-20261009",
+    "profileId": "meupass",
+    "type": "founding",
+    "date": "2024",
+    "note": "MeuPass's official company profile explicitly reports founding in 2024. Its token website links the same LinkedIn company and identifies MEUPASS SOLUCOES INTEGRADAS LTDA, confirming the gastronomy/events token project rather than an unrelated namesake.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://br.linkedin.com/company/meupassbr",
+        "title": "MeuPass — Official company profile"
+      },
+      {
+        "url": "https://token.meupass.com/",
+        "title": "MeuPass — Token website and legal identity"
+      }
+    ]
+  },
+  {
+    "id": "sukuk-additional-20261009",
+    "profileId": "sukuk",
+    "type": "founding",
+    "date": "2024",
+    "note": "SukukFi's official company profile lists founding in 2024 and links the same sukuk.fi telecom-credit platform. The project's own documentation links this company profile, establishing the identity match.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://ae.linkedin.com/company/sukukfi",
+        "title": "SukukFi — Official company profile"
+      },
+      {
+        "url": "https://docs.sukuk.fi/contact-and-support",
+        "title": "SukukFi — Official profile links"
+      }
+    ]
+  },
+  {
+    "id": "spotty-1-additional-20261009",
+    "profileId": "spotty-1",
+    "type": "founding",
+    "date": "2024",
+    "note": "SPOTTY's official company profile states founding in 2024 and links portal.spottyassets.com, identifying the Calgary commodity-tokenization business rather than similarly named software and travel companies.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://ca.linkedin.com/company/spottyrwa",
+        "title": "SPOTTY — Official commodity-tokenization company profile"
+      }
+    ]
+  },
+  {
+    "id": "redcarpethq-additional-20261009",
+    "profileId": "redcarpethq",
+    "type": "launch",
+    "date": "2026-03-19",
+    "note": "Entertainment partner mm2's dated announcement records RedCarpetHQ's official public platform/onboarding launch on March 19, 2026: producer applications for its inaugural slate were then being accepted. The separate technical roadmap distinguishes earlier development/testnet work and a later mainnet phase. This event does not assert live token issuance, secondary trading, or mainnet deployment on that day.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/pulse/redcarpethq-launches-new-platform-entertainment-funding-ns6wc",
+        "title": "mm2 Entertainment — RedCarpetHQ official platform launch"
+      },
+      {
+        "url": "https://docs.redcarpethq.org/platform-investors/roadmap/",
+        "title": "RedCarpetHQ — Development, testnet and mainnet roadmap"
+      }
+    ]
+  }
+]

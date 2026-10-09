@@ -7,5 +7,13 @@
     "reason": "Owner confirmed this archived entry is the same project as Daylight; retain one current canonical company.",
     "requestedOn": "2026-10-08",
     "mergedInto": "daylight"
+  },
+  "adcentral": {
+    "reason": "Owner confirmed this project never tokenized and requested its removal.",
+    "requestedOn": "2026-10-09"
+  },
+  "agama-finance": {
+    "reason": "Owner confirmed this project never tokenized and requested its removal.",
+    "requestedOn": "2026-10-09"
   }
 }

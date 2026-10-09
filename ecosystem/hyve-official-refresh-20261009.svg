@@ -1,0 +1,27 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#385583"/>
+<stop offset="0.34" stop-color="#405f8d"/>
+<stop offset="0.68" stop-color="#4d6b9b"/>
+<stop offset="1" stop-color="#5b75a4"/>
+</linearGradient>
+<radialGradient id="glowTop" gradientUnits="userSpaceOnUse" cx="32" cy="0" r="51.2" gradientTransform="matrix(1 0 0 0.6875 0 0)">
+<stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+<stop offset="0.62" stop-color="#ffffff" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="glowLeft" gradientUnits="userSpaceOnUse" cx="11.52" cy="15.36" r="41.6" gradientTransform="matrix(1 0 0 0.6923 0 4.726)">
+<stop offset="0" stop-color="#9fbeee" stop-opacity="0.16"/>
+<stop offset="0.68" stop-color="#9fbeee" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="glowRight" gradientUnits="userSpaceOnUse" cx="56.32" cy="21.76" r="44.8" gradientTransform="matrix(1 0 0 0.7143 0 6.217)">
+<stop offset="0" stop-color="#5e7cb1" stop-opacity="0.18"/>
+<stop offset="0.72" stop-color="#5e7cb1" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="64" height="64" rx="18" fill="url(#base)"/>
+<rect width="64" height="64" rx="18" fill="url(#glowRight)"/>
+<rect width="64" height="64" rx="18" fill="url(#glowLeft)"/>
+<rect width="64" height="64" rx="18" fill="url(#glowTop)"/>
+<path d="M35.3682 41.2852L38.5586 43.1182L38.5508 46.7979L38.5586 50.4775L35.3682 52.3115L32.1846 54.1582L29.002 52.3115L25.8115 50.4775L25.8184 46.7979L25.8115 43.1182L29.002 41.2852L32.1846 39.4385L35.3682 41.2852ZM22.5566 33.9248L25.7471 35.7588L25.7402 39.4385L25.7471 43.1182L22.5566 44.9512L19.374 46.7979L16.1904 44.9512L13 43.1182L13.0078 39.4385L13 35.7588L16.1904 33.9248L19.374 32.0791L22.5566 33.9248ZM48.1797 33.9248L51.3701 35.7588L51.3623 39.4385L51.3701 43.1182L48.1797 44.9512L44.9961 46.7979L41.8135 44.9512L38.623 43.1182L38.6299 39.4385L38.623 35.7588L41.8135 33.9248L44.9961 32.0791L48.1797 33.9248ZM22.5566 19.2061L25.7471 21.0391L25.7402 24.7197L25.7471 28.3994L22.5566 30.2324L19.374 32.0791L16.1904 30.2324L13 28.3994L13.0078 24.7197L13 21.0391L16.1904 19.2061L19.374 17.3594L22.5566 19.2061ZM48.1797 19.2061L51.3701 21.0391L51.3623 24.7197L51.3701 28.3994L48.1797 30.2324L44.9961 32.0791L41.8135 30.2324L38.623 28.3994L38.6299 24.7197L38.623 21.0391L41.8135 19.2061L44.9961 17.3594L48.1797 19.2061ZM35.3682 11.8467L38.5586 13.6797L38.5508 17.3594L38.5586 21.0391L35.3682 22.873L32.1846 24.7188L29.002 22.873L25.8115 21.0391L25.8184 17.3594L25.8115 13.6797L29.002 11.8467L32.1846 10L35.3682 11.8467Z" fill="#fff"/>
+</svg>

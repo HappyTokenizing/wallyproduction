@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {dateBounds,quarterFromKey,quarterLabel,statsSeries,statsTSV,startEvent} from '../assets/ecosystem-stats-model.js';
 import {chartSVG} from '../assets/ecosystem-stats.js';
+const exitRecords=['exits','exits-20261008','exits-20261009'].flatMap(name=>JSON.parse(fs.readFileSync(new URL(`../data/research/${name}.json`,import.meta.url))));
 const data=JSON.parse(fs.readFileSync(new URL('../data/ecosystem-directory.json',import.meta.url)));
 const source={title:'Primary evidence',url:'https://example.com/evidence'};
 const profile=(id,section='A')=>({id,name:id,aliases:[],categories:[{section,name:section}],directoryStatus:'current'});
@@ -39,8 +40,11 @@ test('live dataset has explicit event dates, undated exits, and separately verif
  assert.ok(first.size>0);
  for(const e of first.values())assert.ok(Number(e.date.slice(0,4))>=2011,'corporate ages never count as RWA entries');
  const years=statsSeries(data,{...all,unit:'year',from:'1700',to:'2026'},[]);assert.equal(years.coverage.dated,first.size);assert.equal(years.coverage.yearOnly,0);
- const exits=statsSeries(data,{...all,metric:'exits'},[]);assert.equal(exits.coverage.eligible,9);assert.equal(exits.coverage.dated,8);assert.equal(exits.coverage.unknown,1);assert.equal(exits.total,8);
- assert.deepEqual(exits.points.filter(p=>p.value).map(p=>[p.label,p.value]),[['Q1 2025',2],['Q2 2025',1],['Q4 2025',2],['Q1 2026',1],['Q2 2026',1],['Q3 2026',1]]);
+ const exits=statsSeries(data,{...all,metric:'exits'},[]),datedExits=exitRecords.filter(e=>dateBounds(e.completedDate)?.quarter!=null);
+ assert.equal(exits.coverage.eligible,exitRecords.length);assert.equal(exits.coverage.dated,datedExits.length);assert.equal(exits.coverage.unknown,exitRecords.filter(e=>!dateBounds(e.completedDate)).length);assert.equal(exits.total,datedExits.length);
+ assert.deepEqual(exits.shownEvents.map(e=>e.id).sort(),datedExits.map(e=>e.id).sort());
+ const expectedQuarters=new Map();for(const e of datedExits){const q=dateBounds(e.completedDate).quarter;expectedQuarters.set(q,(expectedQuarters.get(q)||0)+1);}
+ assert.deepEqual(exits.points.filter(p=>p.value).map(p=>[p.quarter,p.value]),[...expectedQuarters].sort((a,b)=>a[0]-b[0]));
  const failures=statsSeries(data,{...all,metric:'failures'},[]);assert.equal(failures.total,3);assert.deepEqual(failures.shownEvents.map(e=>[e.name,quarterLabel(e.quarter)]),[['Neufund','Q1 2022'],['Archblock','Q1 2026'],['Opulous','Q2 2026']]);assert.equal(failures.coverage.eligible,4);assert.equal(failures.coverage.unknown,1); // Dominion's closure is confirmed, but not yet precisely dated by a primary source.
  for(const e of data.statsEvents){assert.ok(data.profiles.some(p=>p.id===e.profileId));assert.ok(e.sources.length&&e.note&&dateBounds(e.date));assert.notEqual(e.date,e.checkedOn);}
 });
@@ -84,4 +88,29 @@ test('earliest supported industry milestone wins independently of research-file 
  const p={...profile('bank','Institutions'),industryStartRequired:true};
  const records=[event('bank','2000'),event('bank','2024-04-12','industry_entry'),event('bank','2016-11','industry_entry')];
  assert.equal(startEvent(p,records).date,'2016-11');
+});
+
+
+test('shared RedStone acquisition counts once and its announcement is not a completed-date proxy',()=>{
+ const id='redstone-stm-tokenizethis-2026';
+ const profiles=data.profiles.filter(p=>['tokenizethis','security-token-market'].includes(p.id));
+ assert.equal(profiles.length,2);
+ for(const p of profiles)assert.ok(p.exitEvents.some(e=>e.id===id));
+ const s=statsSeries({...data,profiles},{...criteria,metric:'exits',from:'2026-Q1',to:'2026-Q4'});
+ assert.equal(s.coverage.eligible,1);assert.equal(s.coverage.unknown,1);assert.equal(s.coverage.dated,0);
+ assert.equal(s.total,0);assert.ok(s.points.every(p=>p.value===0));assert.equal(s.unknown[0].id,id);
+ assert.equal(s.unknown[0].announcedDate,'2026-01-21');assert.equal(s.unknown[0].date,'');
+});
+
+test('owner date clarifications and new research are preserved without inferring dates from public-presence clues',()=>{
+ const byId=new Map(data.profiles.map(p=>[p.id,p]));
+ const additions=['statistics-events-owner-20261009','statistics-events-additional-20261009'].flatMap(name=>JSON.parse(fs.readFileSync(new URL(`../data/research/${name}.json`,import.meta.url))));
+ for(const e of additions){
+  const p=byId.get(e.profileId);assert.ok(p,e.profileId);
+  if(p.industryStartRequired&&['founding','launch'].includes(e.type))continue;
+  assert.ok(data.statsEvents.some(actual=>actual.id===e.id&&actual.date===e.date&&actual.type===e.type),e.id);
+ }
+ const allo=byId.get('allo');assert.equal(allo.publicDateClue.date,'2024');assert.equal(startEvent(allo,data.statsEvents),null);
+ const s=statsSeries({...data,profiles:[allo]},criteria);assert.equal(s.coverage.unknown,1);assert.equal(s.total,0);
+ for(const id of ['adcentral','agama-finance'])assert.ok(data.statsEvents.every(e=>e.profileId!==id));
 });

@@ -1,0 +1,1884 @@
+{
+  "checkedOn": "2026-10-09",
+  "scope": "Additional targeted source sweep of unresolved profiles; excludes the six owner-answer entries handled separately.",
+  "reviewed": 88,
+  "resolved": 20,
+  "unresolved": 68,
+  "datePolicy": "Use actual founding/launch, or first supported tokenization/RWA milestone for institutions; retain source precision and identify project versus parent/predecessor scope. Unresolved dates remain blank.",
+  "records": [
+    {
+      "profileId": "lumia",
+      "name": "Lumia",
+      "status": "resolved",
+      "eventId": "lumia-additional-20261009",
+      "type": "founding",
+      "date": "2024",
+      "reason": "Lumia's official company profile dates the RWA Layer 2 initiative to 2024 and links to lumia.org. This is the Lumia network initiative; it does not assign the founding date of the older Orion business to the network.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/company/buildonlumia",
+          "title": "Lumia — Official company profile"
+        }
+      ]
+    },
+    {
+      "profileId": "denario",
+      "name": "Denario",
+      "status": "resolved",
+      "eventId": "denario-additional-20261009",
+      "type": "founding",
+      "date": "2021",
+      "reason": "Denario's own precious-metals website explicitly lists 2021 as its established year. This is the Swiss tokenization company, not the unrelated Berlin payments company.",
+      "sources": [
+        {
+          "url": "https://www.denario.swiss/",
+          "title": "Denario — Company / established year"
+        }
+      ]
+    },
+    {
+      "profileId": "mavryk-network",
+      "name": "Mavryk Network",
+      "status": "unresolved",
+      "reason": "Secondary 2022 founding claims found, but project-age metrics and predecessor Maven activity differ. No sufficiently explicit primary founding statement or original launch date confirmed.",
+      "sources": [
+        {
+          "url": "https://app.dealroom.co/companies/mavryk",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.ipaddress.com/website/mavryk.org/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://skynet.certik.com/projects/mavryk-network",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://lucidityinsights.com/startups/mavryk-network-19785",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://documentation.mavryk.org/mavryk-basics/test_networks/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "bloom",
+      "name": "Bloom",
+      "status": "unresolved",
+      "reason": "Official terms and privacy pages carry 2023 dates and describe an already-deployed protocol; a policy date is not an original launch date.",
+      "sources": [
+        {
+          "url": "https://docs.bloom.garden/legal/terms-of-service",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://docs.bloom.garden/legal/privacy-policy",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://trove.nla.gov.au/sites/default/files/attachments/2020-11/Recent%20Australian%20Publications%20May%202020%20-%20Dewey_0.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.sedgefieldweb.co.uk/history/Jul03.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://forum.balancer.fi/t/bip-398-enable-gauges-for-bloom-tbys-eth-approve-future-maturity-gauges/5054",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "enerdao",
+      "name": "EnerDAO",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.enerdao.org/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "gramchain",
+      "name": "GramChain",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/posts/silverbullionsg_gold-appmc-gold-activity-7207113308506587137-yPSZ",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://sg.linkedin.com/in/glenndanker",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "ammocrypt",
+      "name": "AmmoCrypt",
+      "status": "unresolved",
+      "reason": "The official whitepaper and draft roadmap establish project activity, but roadmap targets and copyright dates do not verify an actual first launch.",
+      "sources": [
+        {
+          "url": "https://ammocrypt.io/wp-content/uploads/2024/02/AmmoCrypt-Whitepaper-Current.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://ammocrypt.io/home-draft/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://ammocrypt.io/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://ammocrypt.io/privacy-policy/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://ammocrypt.io/wp-content/uploads/2024/01/Terms-and-Conditions-V.1.3.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "grandbase",
+      "name": "Grandbase",
+      "status": "unresolved",
+      "reason": "Token and contract records found, but no explicit original launch or founding statement established.",
+      "sources": [
+        {
+          "url": "https://www.scam-detector.com/validator/grandbase-io-review/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://basescan.org/token/0x2af864fb54b55900cd58d19c7102d9e4fa8d84a3?a=0xcda9387c6e089b89c311ef4e3af3890302bbb0e8",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://basescan.org/token/0x2af864fb54b55900cd58d19c7102d9e4fa8d84a3?a=0x382ffce2287252f930e1c8dc9328dac5bf282ba1",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://medium.com/%40grand.base/introducing-grand-base-925cb2ecc713",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://basescan.org/token/0x2af864fb54b55900cd58d19c7102d9e4fa8d84a3?a=0x996f23653e0f5a7f24150f63ac4b598590c958e2",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "manifest",
+      "name": "Manifest",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://manifest.finance/privacy-policy",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.crunchbase.com/organization/trulybased",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://skynet.certik.com/projects/manifest",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://docs.manifest.finance/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://mobile.x.com/ns_dub/with_replies",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "probal",
+      "name": "Probal",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.ipaddress.com/website/probal.io/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.probal.io/privacy-policy",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/company/pro-capital-io",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.probal.io/terms-of-service",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/in/emmanuelbinjo",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "refuture",
+      "name": "ReFuture",
+      "status": "resolved",
+      "eventId": "refuture-additional-20261009",
+      "type": "founding",
+      "date": "2020-11-26",
+      "reason": "The public German company-register mirror records REFuture SE's new registration on 26 November 2020. Its name, address and HRB 18892 match the company's own legal imprint; the separately incorporated REFuture X Invest subsidiary is not used.",
+      "sources": [
+        {
+          "url": "https://www.unternehmen24.info/Firmeninformationen/Deutschland/Firma/4934340",
+          "title": "Unternehmen24 — REFuture SE registration record"
+        },
+        {
+          "url": "https://refuture.se/impressum/",
+          "title": "REFuture — Official legal imprint"
+        }
+      ]
+    },
+    {
+      "profileId": "tradefinex",
+      "name": "TradeFinex",
+      "status": "resolved",
+      "eventId": "tradefinex-additional-20261009",
+      "type": "launch",
+      "date": "2018-01",
+      "reason": "XinFin's January 2018 issuer announcement records the TradeFinex beta platform launch at ASSOCHAM's P2P summit. Month precision is retained because the announcement does not separately state the event day; XinFin's 2017 founding is not substituted for the TradeFinex launch.",
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/in/news-releases/singapore-based-xinfin-unveils-blockchain-powered-tradefinex-platform-with-indias-largest-trade-organization-assocham-668776163.html",
+          "title": "XinFin — TradeFinex platform launch announcement"
+        }
+      ]
+    },
+    {
+      "profileId": "bru-finance",
+      "name": "Bru Finance",
+      "status": "resolved",
+      "eventId": "bru-finance-additional-20261009",
+      "type": "launch",
+      "date": "2021",
+      "reason": "A contemporaneous founder interview explicitly separates Whrrl's 2019 launch from Bru Finance's 2021 launch. The team's 2021 Devpost submission confirms its RWA testnet implementation; this is an initial project launch, not the later 2023 mainnet deployment or a resolution of conflicting corporate founding records.",
+      "sources": [
+        {
+          "url": "https://yourstory.com/the-decrypting-story/blockchain-startup-farmers-loans-bru-finance-whrrl",
+          "title": "YourStory — Founder explains Whrrl and Bru Finance launch history"
+        },
+        {
+          "url": "https://devpost.com/software/bru-finance",
+          "title": "Bru Finance team — RWA testnet project submission"
+        }
+      ]
+    },
+    {
+      "profileId": "danogo",
+      "name": "Danogo",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www6.twstalker.com/LinhZuro",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www6.twstalker.com/AnneGoTM",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.adastack.io/item/dano-finance",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://v2.dano.finance/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "hauck-aufh-user-lampe",
+      "name": "Hauck Aufhäuser Lampe",
+      "status": "resolved",
+      "eventId": "hauck-aufh-user-lampe-additional-20261009",
+      "type": "industry_entry",
+      "date": "2020-12",
+      "reason": "DekaBank's account quotes Hauck & Aufhäuser's treasury head identifying their first secured securities-lending transaction on the blockchain platform in December 2020. This records the earliest verified asset transaction in this review, not the bank's corporate founding.",
+      "sources": [
+        {
+          "url": "https://www.deka.de/deka-group/media-research-en/media-releases/archive/archive2021/december/dekabank-issues-first-crypto-securities-on-the-blockchain",
+          "title": "DekaBank — First crypto securities and December 2020 lending transaction"
+        }
+      ]
+    },
+    {
+      "profileId": "poison-finance",
+      "name": "Poison Finance",
+      "status": "unresolved",
+      "reason": "Sources conflict between an estimated 2022 project launch and a secondary 2021 claim. No original project announcement confirmed.",
+      "sources": [
+        {
+          "url": "https://skynet.certik.com/projects/poison",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.gate.com/en-eu/price/market-data/institutions/fundraising/poison-finance-7369",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://coinpaprika.com/coin/poion-poison-finance",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://skynet.certik.com/zh-CN/projects/poison",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.gate.com/en-dubai/price/market-data/institutions/fundraising/poison-finance-7369",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "pontoro",
+      "name": "Pontoro",
+      "status": "unresolved",
+      "reason": "The official LinkedIn now says late 2023; earlier company/job and third-party histories say 2018 or 2019 for the same founders and platform. A restart versus incorporation history remains unconfirmed.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/company/pontoro/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/company/pontoro",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://teaserclub.com/investors/ulu-ventures",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.teaserclub.com/investors/ulu-ventures",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.digitalassetresearch.com/wp-content/uploads/2024/06/DAR-RWA-Tokenization-Report-November-2023-Updated.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "crypto-autos.com",
+      "name": "Crypto autos.com",
+      "status": "resolved",
+      "eventId": "crypto-autos.com-additional-20261009",
+      "type": "founding",
+      "date": "2023",
+      "reason": "CryptoAutos' official company profile lists 2023 as its founding year, with the matching cryptoautos.com website and automotive marketplace identity.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/company/cryptoautos",
+          "title": "CryptoAutos — Official company profile"
+        }
+      ]
+    },
+    {
+      "profileId": "mimo",
+      "name": "Mimo",
+      "status": "resolved",
+      "eventId": "mimo-additional-20261009",
+      "type": "founding",
+      "date": "2015",
+      "reason": "Mimo's own company profile gives 2015 as its founding year and links to mimo.capital, identifying its stablecoin and tokenized-asset business. Only year precision is supported.",
+      "sources": [
+        {
+          "url": "https://sg.linkedin.com/company/mimocapital",
+          "title": "Mimo — Official company profile"
+        }
+      ]
+    },
+    {
+      "profileId": "anchorage-digital-bank-na",
+      "name": "Anchorage Digital Bank, N.A.",
+      "status": "resolved",
+      "eventId": "anchorage-digital-bank-na-additional-20261009",
+      "type": "launch",
+      "date": "2026-01-27",
+      "reason": "This separate profile points to usat.io and represents the USA₮ stablecoin offering. Tether explicitly announces its official launch on 27 January 2026 and identifies Anchorage Digital Bank, N.A. as issuer; the date is not the founding of the broader Anchorage company.",
+      "sources": [
+        {
+          "url": "https://tether.io/news/tether-announces-the-launch-of-usat-the-federally-regulated-dollar-backed-stablecoin-made-in-america/",
+          "title": "Tether — Official launch of USA₮"
+        }
+      ]
+    },
+    {
+      "profileId": "anzens-inc",
+      "name": "Anzens Inc.",
+      "status": "resolved",
+      "eventId": "anzens-inc-additional-20261009",
+      "type": "launch",
+      "date": "2025-03",
+      "reason": "EMURGO's March 2025 launch announcement and monthly retrospective confirm that Anzens/USDA became available that month. Month precision covers the initial USDA trading launch and subsequent retail minting access, rather than treating the postponed 2023 launch target as completed.",
+      "sources": [
+        {
+          "url": "https://www.emurgo.io/press-news/anzens-is-live-usda-stablecoin-minting-access-is-here-cardano/",
+          "title": "EMURGO — Anzens is live"
+        },
+        {
+          "url": "https://www.emurgo.io/press-news/emurgo-march-2025-newsletter/",
+          "title": "EMURGO — March 2025 launch retrospective"
+        }
+      ]
+    },
+    {
+      "profileId": "catena-digital-pty-ltd",
+      "name": "Macropod / Catena Digital",
+      "status": "resolved",
+      "eventId": "catena-digital-pty-ltd-additional-20261009",
+      "type": "launch",
+      "date": "2025-10-08",
+      "reason": "AAP's contemporaneous interview with CEO Drew Bradford records AUDM's first use on 8 October 2025. This dates the Macropod/AUDM product launch, not the unrelated Scottish Catena Digital or the precursor NAB stablecoin.",
+      "sources": [
+        {
+          "url": "https://aapnews.aap.com.au/news/first-regulated-australian-dollar-stablecoin-launched",
+          "title": "AAP — Macropod CEO describes first AUDM transaction"
+        },
+        {
+          "url": "https://www.independentreserve.com/blog?p=8202",
+          "title": "Independent Reserve — AUDM issuer and 2025 platform launch"
+        }
+      ]
+    },
+    {
+      "profileId": "cygnus-labs",
+      "name": "Cygnus Labs",
+      "status": "unresolved",
+      "reason": "Secondary founder biography suggests August 2023, but exact primary founding evidence for the matching cygnus.finance business remains unverified.",
+      "sources": [
+        {
+          "url": "https://v1.skynet.cdn.certik.com/projects/cygnus-finance",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://iq-wiki-ui.vercel.app/wiki/eric-cheung",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://basescan.org/token/0x2e6C4BD1C947e195645d2B920b827498cfAa6766",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://t.me/s/DeJob_official/3162",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://holder.io/coins/cgusd/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "okifin-capital-gmbh",
+      "name": "OkiFin Capital GmbH",
+      "status": "unresolved",
+      "reason": "Official product documents and a customer announcement confirm tokenized-note activity; no definitive original founding or first-launch date established.",
+      "sources": [
+        {
+          "url": "https://de.linkedin.com/company/okifin",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.okifin.com/dokumente/OkiFin_Digital_Asset_Performace_Note_Verbraucherinformationen.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.okifin.com/dokumente/OkiFin_Digital_Asset_Performace_Note_BIB.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "welf",
+      "name": "WELF",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://welf.com/about",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://welf.com/privacy-policy",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.welf.com/terms",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/welf_your-wealth-deserves-more-at-welf-were-activity-7264961568705048576-XWtZ",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.gulfleads.ae/company/welf-7715e7",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "auxite-gold",
+      "name": "Auxite",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.auxite.io/en",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.auxite.io/en/contact",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.auxite.io/en/faq",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.auxite.io/en/metals/auxpt",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.auxite.io/en/how-it-works",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "goldpro",
+      "name": "GoldPro",
+      "status": "unresolved",
+      "reason": "A token-market-data launch date was found, but the original IPMB-to-GoldPro product history remains unresolved.",
+      "sources": [
+        {
+          "url": "https://www.coindesk.com/price/gpro",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://koinbxsupport.freshdesk.com/support/solutions/articles/82000920465-goldpro-gpro-",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://ipmb.com/ipmb-group/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://ipmb.com/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://ipmb.com/personal/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "arvo",
+      "name": "Arvo",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://arvoprotocol.com/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://arvoprotocol.com/roadmap",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://arvoprotocol.com/faq",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://arvoprotocol.com/team",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://arvoprotocol.com/token",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "asset-list",
+      "name": "Asset List",
+      "status": "unresolved",
+      "reason": "Matching official company profile and product site found without an explicit founding date.",
+      "sources": [
+        {
+          "url": "https://www.crunchbase.com/organization/asset-list",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://uk.linkedin.com/company/assetlistio",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/assetlistio_assetlist-tokenization-realestate-activity-7399784818793697280-W-9O",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://nl.linkedin.com/company/assetlistio",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/assetlistio_assetlist-tokenization-tokenizeddeposits-activity-7491078773145124865-EsIx",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "headway-nova",
+      "name": "Headway Nova",
+      "status": "resolved",
+      "eventId": "headway-nova-additional-20261009",
+      "type": "launch",
+      "date": "2023-Q4",
+      "reason": "Headway NOVA's own February 2024 issuer release explicitly dates entry into the tokenized-property market to Q4 2023. Quarter precision is retained instead of inventing a day.",
+      "sources": [
+        {
+          "url": "https://www.prnewswire.com/ae/news-releases/headway-nova-new-investing-in-real-estate-302064231.html",
+          "title": "Headway NOVA — New investing in real estate"
+        }
+      ]
+    },
+    {
+      "profileId": "jpmorgan-asset-management-holdings-inc",
+      "name": "J.P. Morgan Asset Management",
+      "status": "unresolved",
+      "reason": "An official December 15, 2025 announcement explicitly launches the asset-management division's first tokenized money-market fund. Earlier group-wide Kinexys activity must not be conflated with this division; its earliest qualifying initiative remains under review.",
+      "sources": [
+        {
+          "url": "https://am.jpmorgan.com/us/en/asset-management/liq/insights/liquidity-insights/updates/tokenization-of-money-market-funds/tokenization-videos/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://am.jpmorgan.com/us/en/asset-management/institutional/about-us/media/press-releases/jp-morgan-asset-management-launches-its-first-tokenized-money-market-fund/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://am.jpmorgan.com/gb/en/asset-management/institutional/insights/market-insights/eye-on-the-market/holiday-eye-on-the-market-non-fungible-trainwreck/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/regulatory/reit/regulatory-documents/2022-annual-report-and-stockholder-letter.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://am.jpmorgan.com/fi/en/asset-management/institutional/insights/market-insights/eye-on-the-market/holiday-eye-on-the-market-non-fungible-trainwreck/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "beartie",
+      "name": "BEARTIE",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://w.twstalker.com/Sol_Surfer_",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://history.denverlibrary.org/sites/history/files/DPL_1916-1919_DeathIndex.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.electricscotland.com/history/records/scottishrecordso06scot.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://dms.psc.sc.gov/Attachments/Matter/0ac71bb0-059b-8170-fdd76e7f63ca063b",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://history.denverlibrary.org/sites/history/files/DPL_1915-1919_Death_Index.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "hippo-protocol",
+      "name": "Hippo Protocol",
+      "status": "unresolved",
+      "reason": "Official mainnet launch is May 1, 2025, but Hippo is a rebrand of Hippocrat. Earlier predecessor history must be resolved before setting the original company/project start.",
+      "sources": [
+        {
+          "url": "https://whitepaper.hippoprotocol.ai/8.-roadmap",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://community.hippoprotocol.ai/c/announcements/hippo-protocol-mainnet-is-now-live",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://github.com/hippocrat-dao/hippo-protocol",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://whitepaper.hippoprotocol.ai/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://hippoprotocol.ai/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "veritas-protocol",
+      "name": "Veritas Protocol",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://docs.veritasprotocol.com/veritas-protocol/white-paper",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.veritasprotocol.com/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://docs.veritasprotocol.com/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.veritasprotocol.com/blog/smart-contract-security-company-for-web3-projects-veritas-protocol",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://skynet.certik.com/projects/veritas-protocol",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "cables-finance",
+      "name": "Cables Finance",
+      "status": "unresolved",
+      "reason": "Official 2025 material describes upcoming launch, early access and a points program; completed original platform launch remains unverified.",
+      "sources": [
+        {
+          "url": "https://www.cables.finance/news/cables-finance-white-paper/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.cables.finance/about/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.cables.finance/news/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.cables.finance/news/introduction/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://docs.cables.finance/introduction",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "demether",
+      "name": "Demether",
+      "status": "unresolved",
+      "reason": "A partner newsletter confirms the LDR product launch in March 2026; older Demether activity exists, so this later product launch is not used as the project's original start.",
+      "sources": [
+        {
+          "url": "https://hadron-newsletter.beehiiv.com/p/the-hadron-hub-march",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://startup-seeker.com/company/demether~io",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/demether_another-milestone-week-for-demether-as-we-activity-7460950706607374336-e0Hx",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.quicknode.com/blog/feature-fridays-demether",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://blog.deepventures.io/p/deep-ventures-monthly-newsletter-march-2025",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "own-network",
+      "name": "Own Network",
+      "status": "unresolved",
+      "reason": "Fasset's Own network appears in 2025 announcements; some describe a launch and others still describe a planned rollout. The original completed launch is unconfirmed.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/company/own-network",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://fliphtml5.com/own_network/mbmb/OWN_Network_%E2%80%94_Utility_Token%2C_Blockchain%2C_Wallet_%26_Ecosystem/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Oprah_Winfrey_Network",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://wew.twstalker.com/own_xyz",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://community.twstalker.com/own_xyz",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "toyow",
+      "name": "Toyow",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.crunchbase.com/organization/toyow",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://toyow.com/join-waitlist",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.toyow.com/privacy-policy",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://toyow.com/marketplace",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/company/toyow",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "rabobank",
+      "name": "Rabobank",
+      "status": "unresolved",
+      "reason": "The bank's records confirm we.trade transactions in 2018 and komgo participation. These trade-finance blockchain activities do not by themselves establish its first asset-tokenization milestone.",
+      "sources": [
+        {
+          "url": "https://www.rabobank.com/about-us/press/press-releases?ct=all&f-page-number=35&lang=default&m=all&page=0&pt=PressReleasePage&term=&y=all",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.rabobank.com/about-us/press/press-releases?ct=all&f-page-number=34&lang=default&m=all&page=0&pt=PressReleasePage&term=&y=all",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.rabobank.com/about-us/rabofoundation/project/011109655/caravela-connects-latin-american-coffee-farmers",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.rabobank.com/about-us/rabofoundation/project/011425821/a-story-of-empowerment-and-resilience-exotic-epz",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.rabobank.com/products/rules-and-regulations/mifid/systematic-internaliser",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "caixabank",
+      "name": "CaixaBank",
+      "status": "unresolved",
+      "reason": "Official April 2018 Batavia pilot evidence found; it describes trade agreements and smart payments, not an unambiguous first tokenization/RWA issuance.",
+      "sources": [
+        {
+          "url": "https://www.caixabank.com/ca/actualitat/noticies/caixabank-blockchain-batavia",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.caixabank.com/es/actualidad/noticias/caixabank-blockchain-batavia",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.caixabank.com/en/headlines/news/first-pilot-client-transactions-successfully-executed-on-batavia-global-trade-finance-platform",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.caixabank.com/docs/comunicacion/62610.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.caixabank.com/es/actualidad/noticias/tecnologia-blockchain-ftl",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "banco-bpm",
+      "name": "Banco BPM",
+      "status": "unresolved",
+      "reason": "Search results found conventional bond and financial announcements, but no unambiguous dated first tokenization project.",
+      "sources": [
+        {
+          "url": "https://www.bancobpm.it/privati/risparmio-e-investimento/risparmio/btp/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://gruppo.bancobpm.it/press-and-media/comunicati-stampa/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://it.linkedin.com/posts/bancobpm_bancobpm-emissioniesg-investitori-activity-7426988540992831488-a6m-",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.bancobpm.it/privati/conti/servizi-digitali/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://financialfilings.com/filings/banco-bpm/earnings-release/2026/49978040/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "unicredit",
+      "name": "UniCredit",
+      "status": "unresolved",
+      "reason": "Official 2025 tokenized-minibond announcement refers to an earlier 2024 journey. Neither later first-product claim establishes the bank's earliest tokenization project by itself.",
+      "sources": [
+        {
+          "url": "https://www.unicreditgroup.eu/en/press-media/press-releases/2025/december/unicredit-structures-italy-s-first-tokenized-minibond-on-public-.html",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.unicreditgroup.eu/en/press-media/press-releases/2026/april/unicredit-invests-in-blockinvest-to-accelerate-its-leadership-in.html",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/en/business/cib/SFI-1st_Edition_Termsheet_EN.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/en/investors/financial-reports/2019/4Q19/2019-Annual-Report-and-Accounts-General-Meeting-Draft.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/en/investors/funding-and-ratings/funding-programs/covered-bond/obg2/unicredit-OBG-srl-balance-sheets/UniOBG_bilancio-31.12.20_ENG.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "hana-bank",
+      "name": "Hana Bank",
+      "status": "unresolved",
+      "reason": "Official September 2026 digital-note announcement is specific to a later product type; earlier tokenized-deposit participation makes it unsuitable as the earliest industry date.",
+      "sources": [
+        {
+          "url": "https://www.hanafn.com/microsite/2020/pdf/01_HFG_2020AR_Full.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.citigroup.com/global/news/press-release/2026/citi-supports-hana-bank-s-first-digitally-native-note-dnn-issuance-on-euroclear-s-d-fmi-platform",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://hanafn.com/microsite/2020/CoverStory.html?active=platform",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.imeritz.com/introduction/report/Meritz_Securities%28FY2023%29.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.koex.jp/int/disc/dat/202106/1H2021_Presentation_Eng.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "kb-kookmin-bank",
+      "name": "KB Kookmin Bank",
+      "status": "unresolved",
+      "reason": "Corporate filings and tokenized-deposit pilot references found; the earliest qualifying completed tokenization milestone remains unresolved.",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1445930/000119312519147512/d748378d6k.htm",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1445930/000119312519220496/d780897d6k.htm",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1445930/000119312519093891/d729211d6k.htm",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1445930/000119312519291669/d826266d6k.htm",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://file-cdn.bok.or.kr/eng/9612c008869d4254ac9c2a1be21ad187/1/cd0f4b17755d46e09c3a3d97da1abcf2.pdf?token=st%3D1765495263~exp%3D1765498863~acl%3D%2Feng%2F9612c008869d4254ac9c2a1be21ad187%2F1%2Fcd0f4b17755d46e09c3a3d97da1abcf2.pdf%2A~hmac%3D9804f51d8c5e44c6e29b9a4b3d78bc31b951625e9fb2a2caf45c9c52741df584",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "woori-bank",
+      "name": "Woori Bank",
+      "status": "unresolved",
+      "reason": "Bank of Korea evidence supports 2025 tokenized-deposit trials, but does not establish Woori's earliest qualifying project.",
+      "sources": [
+        {
+          "url": "https://file-cdn.bok.or.kr/eng/9612c008869d4254ac9c2a1be21ad187/1/cd0f4b17755d46e09c3a3d97da1abcf2.pdf?token=st%3D1765495263~exp%3D1765498863~acl%3D%2Feng%2F9612c008869d4254ac9c2a1be21ad187%2F1%2Fcd0f4b17755d46e09c3a3d97da1abcf2.pdf%2A~hmac%3D9804f51d8c5e44c6e29b9a4b3d78bc31b951625e9fb2a2caf45c9c52741df584",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://file-cdn.bok.or.kr/eng/b6effecbf71f4ee69f60f471276c5712/1/03563849ae5f4fdf96da8cb2f92dfa93.pdf?token=st%3D1774192469~exp%3D1774196069~acl%3D%2Feng%2Fb6effecbf71f4ee69f60f471276c5712%2F1%2F03563849ae5f4fdf96da8cb2f92dfa93.pdf%2A~hmac%3D60e85508ffbbb06c7b0a2547a1b8fb43257344fb04b1f8327fd4b705efc52dd9",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.tokenpost.com/news/business/20257",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.ledgerinsights.com/lg-cns-demos-deposit-tokens-for-ai-agentic-payments-in-central-bank-trials/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://research.4pillars.io/en/research/blockchain-for-korean-enterprises-choosing-the-right-chain-and-the-right-way-to-build",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "nonghyup-bank",
+      "name": "NongHyup Bank",
+      "status": "unresolved",
+      "reason": "Bank of Korea evidence supports 2025 tokenized-deposit trials, but does not establish NongHyup's earliest qualifying project.",
+      "sources": [
+        {
+          "url": "https://file-cdn.bok.or.kr/eng/9612c008869d4254ac9c2a1be21ad187/1/cd0f4b17755d46e09c3a3d97da1abcf2.pdf?token=st%3D1765495263~exp%3D1765498863~acl%3D%2Feng%2F9612c008869d4254ac9c2a1be21ad187%2F1%2Fcd0f4b17755d46e09c3a3d97da1abcf2.pdf%2A~hmac%3D9804f51d8c5e44c6e29b9a4b3d78bc31b951625e9fb2a2caf45c9c52741df584",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://file-cdn.bok.or.kr/eng/b6effecbf71f4ee69f60f471276c5712/1/03563849ae5f4fdf96da8cb2f92dfa93.pdf?token=st%3D1774192469~exp%3D1774196069~acl%3D%2Feng%2Fb6effecbf71f4ee69f60f471276c5712%2F1%2F03563849ae5f4fdf96da8cb2f92dfa93.pdf%2A~hmac%3D60e85508ffbbb06c7b0a2547a1b8fb43257344fb04b1f8327fd4b705efc52dd9",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.ledgerinsights.com/lg-cns-demos-deposit-tokens-for-ai-agentic-payments-in-central-bank-trials/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/business/banking-finance/20241029/major-banks-accelerate-preparations-to-enter-tokenized-securities-market",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://view.asiae.co.kr/en/article/2026052809131523629",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "jumio",
+      "name": "Jumio",
+      "status": "unresolved",
+      "reason": "Official 2017 ICO identity-compliance activity and a January 2018 Byteball integration found. The Byteball release itself contains a 2017/2018 inconsistency and does not resolve first direct RWA/tokenization support.",
+      "sources": [
+        {
+          "url": "https://www.jumio.com/about/press-releases/byteball-ico-identity-layer/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.jumio.com/ico-infographic/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.jumio.com/about/press-releases/bitcoin-ico-markets/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.jumio.com/about/press-releases/jumio-sets-market-pace-q1/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.jumio.com/about/press-releases/jumio-doubles-sales-q2-2017/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "bondi-finance",
+      "name": "Bondi Finance",
+      "status": "unresolved",
+      "reason": "The developer's 2024 case study and an official live-on-Base announcement establish activity. The case-study delivery year and a relative post timestamp do not yet establish a precise original launch date.",
+      "sources": [
+        {
+          "url": "https://www.bondifinance.io/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/bondifinance_were-excited-to-announce-that-bondi-finance-activity-7295903364108763136-Bt3w",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://docs.bondifinance.io/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://linktr.ee/bondifinance",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://docs.bondifinance.io/pdfs/Bondi%20Audit%20Report.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "oro-finance",
+      "name": "Oro Finance",
+      "status": "resolved",
+      "eventId": "oro-finance-additional-20261009",
+      "type": "founding",
+      "date": "2024",
+      "reason": "Contemporaneous funding coverage identifies Usman Saleem's tokenized-gold ORO as founded in 2024. ORO's own legal page identifies the Singapore ORO Labs entity; this excludes the unrelated procurement-software company with a 2020 founding.",
+      "sources": [
+        {
+          "url": "https://www.wamda.com/en/2025/03/oro-labs-secures-1-5-million-pre-seed-backed-468-capital",
+          "title": "Wamda — ORO Labs funding and founding history"
+        },
+        {
+          "url": "https://app.oro.finance/privacy-policy",
+          "title": "ORO — Legal entity and platform identity"
+        }
+      ]
+    },
+    {
+      "profileId": "paragon",
+      "name": "Paragon",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.ycombinator.com/companies/heysift",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://techcrunch.com/2022/07/27/paragon-wants-to-be-the-plaid-of-saas-apps/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Paragon_Software",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.ycombinator.com/companies/paragon",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.ycombinator.com/companies/paragon/jobs",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "aster",
+      "name": "Aster",
+      "status": "unresolved",
+      "reason": "The issuer's March 31, 2025 Aster announcement is expressly a rebrand after the Astherus/APX merger. Earlier Astherus activity exists, so that date is not used as an original founding/launch without resolving predecessor continuity.",
+      "sources": [
+        {
+          "url": "https://github.com/aster-exchange/aster-exchange.github.io",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Aster_%28cryptocurrency_exchange%29",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://github.com/Astherus/Aster/blob/main/README.md",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.asterdex.com/en/announcement",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://medium.com/asterdex/ama-recap-inside-the-aster-rebrand-apr-3-2025-a69aa3e8e522",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "refraction-research",
+      "name": "Refraction Research",
+      "status": "unresolved",
+      "reason": "Pyth's community report confirms project identity and sponsorship, without a definitive original founding or launch date.",
+      "sources": [
+        {
+          "url": "https://forum.pyth.network/t/community-council-term-2-six-month-mid-term-report/2704",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://twstalker.com/CHOPPAtheSHARK",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://solanacompass.com/tokens/4bg5yHMZgCJeyDSCTrpNmSEnsCrKkwP3h6am64iKpump",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://solanacompass.com/tokens/HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://solanacompass.com/tokens/3E4PLBH3JmgPzXajpRpqzbWLzKvRYoVBF465Yfijpump",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "pons",
+      "name": "Pons",
+      "status": "unresolved",
+      "reason": "Official documentation confirms identity and Robinhood-chain functionality, without a dated original launch.",
+      "sources": [
+        {
+          "url": "https://docs.ponsfamily.com/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.ponsfamiily.com/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.scamadviser.com/check-website/ponssfamily.com",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.cbinsights.com/company/pons",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.launchparty.wtf/docs/pons",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "dominion-market",
+      "name": "Dominion",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.reddit.com/r/leagueoflegends/comments/4557kz",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://dominion.market/docs/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.dominionmarkets.com/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://dominion-cs.com/about-us/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://solanacompass.com/news/dominion-markets-silv-draws-3m-in-first-day-volume-claims-60-of-solanas-tokenized-commodity-market",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "nysa-finance",
+      "name": "Nysa Finance",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.sotwe.com/gicappaemme",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.sotwe.com/gicappaemme?lang=en",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.sotwe.com/gicappaemme?lang=id",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://br.linkedin.com/company/easy-mm",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.sotwe.com/gicappaemme?lang=tr",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "loaf-markets",
+      "name": "Loaf Markets",
+      "status": "unresolved",
+      "reason": "Official July 2026 material still describes an upcoming public beta. No founding year or original completed launch confirmed.",
+      "sources": [
+        {
+          "url": "https://www.loafmarkets.com/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.loafmarkets.com/insight/scaling-physical-rwa-s-to-millions-with-arbitrum/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.rootdata.com/projects/detail/Loaf?k=MjU0Mjg%3D",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://loafmarkets.medium.com/introducing-loaf-markets-liquid-trading-of-the-worlds-most-exclusive-properties-0f077924cba4",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/company/loaf-markets",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "khipu-international",
+      "name": "Khipu International",
+      "status": "unresolved",
+      "reason": "Matching websites and public source leads were reviewed, but no explicit, sufficiently supported founding or original launch date was established for this exact profile. No date inferred from copyright, domain registration or unrelated names.",
+      "sources": [
+        {
+          "url": "https://www.khipu.international/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://inria.cl/en/role-inria-and-academia-industry-collaboration-artificial-intelligence-and-outcomes-oceania-inria",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://khipu.edu.pe/about-us/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://khipu.edu.pe/history/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.khipu-networks.com/wp-content/uploads/KHIPU-Networks-PAIA-and-FOIA-Manual.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "engine-protocol",
+      "name": "Engine",
+      "status": "unresolved",
+      "reason": "The matching product site is active, but its 2026 page label is not an explicit founding or launch statement.",
+      "sources": [
+        {
+          "url": "https://engineprotocol.io/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/09/29/3370642/0/en/the-engine-plans-october-15-launch-of-an-ai-team-that-creates-content-and-handles-sales-conversations.html",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Engine_%28organization%29",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Engine_%28organization%29",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Engine_No._1",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "strata-orderbook",
+      "name": "Strata Orderbook",
+      "status": "unresolved",
+      "reason": "Onchain aggregator activity is present, but no sourced first project launch or founding statement found.",
+      "sources": [
+        {
+          "url": "https://defillama.com/protocol/stratabook",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://investors.defillama.com/protocol/stratabook",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://enterprise.defillama.com/protocol/stratabook",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://company-announcements.afr.com/asx/mye/7a4ace0f-638a-11f1-8424-a25307cfe2e4.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://cdn1.i3investor.com/my/files/st88k/03047_LSH/ipo/2025/03047_LSH_IPO_IPOP_LSHCapitalProspectusPart3of3_1114278794.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "galileo-protocol",
+      "name": "Galileo Protocol",
+      "status": "resolved",
+      "eventId": "galileo-protocol-additional-20261009",
+      "type": "founding",
+      "date": "2022",
+      "reason": "Galileo Protocol's January 2023 issuer press release explicitly states that Pierre Beunardeau and Nathaniel Debache founded the physical-asset tokenization startup in 2022. Later token-sale and protocol-version releases do not reset its founding year.",
+      "sources": [
+        {
+          "url": "https://markets.financialcontent.com/stocks/article/accwirecq-2023-1-17-first-quant-network-qrc-20-token-sale-issued-on-lcx-exchange",
+          "title": "Galileo Protocol — Issuer founding statement in January 2023 press release"
+        }
+      ]
+    },
+    {
+      "profileId": "apraemio",
+      "name": "Apraemio",
+      "status": "resolved",
+      "eventId": "apraemio-additional-20261009",
+      "type": "launch",
+      "date": "2022-11",
+      "reason": "Apraemio's official delivered-milestones timeline dates its original APRA token going live on BNB Chain to November 2022. This is the digital project launch, not the older mining partner's incorporation; current issuer disclosures explicitly state that APRA is not backed by gold or other assets.",
+      "sources": [
+        {
+          "url": "https://www.apraemio.com/token/",
+          "title": "Apraemio — Delivered timeline and APRA legal scope"
+        }
+      ]
+    },
+    {
+      "profileId": "defa-by-invoicemate",
+      "name": "DeFa By InvoiceMate",
+      "status": "resolved",
+      "eventId": "defa-by-invoicemate-additional-20261009",
+      "type": "launch",
+      "date": "2024",
+      "reason": "The project's own 2024 retrospective lists the DeFa Protocol launch among that year's achievements and confirms a live testnet. This dates the original DeFa protocol/testnet initiative, not the older InvoiceMate business or its subsequent mainnet deployment.",
+      "sources": [
+        {
+          "url": "https://paragraph.com/@defa-by-invoicemate/defa-by-invoicemate-2024-a-groundbreaking-year-of-growth-and-achievement",
+          "title": "DeFa by InvoiceMate — Official 2024 achievements and live testnet retrospective"
+        }
+      ]
+    },
+    {
+      "profileId": "meupass",
+      "name": "Meupass",
+      "status": "resolved",
+      "eventId": "meupass-additional-20261009",
+      "type": "founding",
+      "date": "2024",
+      "reason": "MeuPass's official company profile explicitly reports founding in 2024. Its token website links the same LinkedIn company and identifies MEUPASS SOLUCOES INTEGRADAS LTDA, confirming the gastronomy/events token project rather than an unrelated namesake.",
+      "sources": [
+        {
+          "url": "https://br.linkedin.com/company/meupassbr",
+          "title": "MeuPass — Official company profile"
+        },
+        {
+          "url": "https://token.meupass.com/",
+          "title": "MeuPass — Token website and legal identity"
+        }
+      ]
+    },
+    {
+      "profileId": "sukuk",
+      "name": "Sukuk",
+      "status": "resolved",
+      "eventId": "sukuk-additional-20261009",
+      "type": "founding",
+      "date": "2024",
+      "reason": "SukukFi's official company profile lists founding in 2024 and links the same sukuk.fi telecom-credit platform. The project's own documentation links this company profile, establishing the identity match.",
+      "sources": [
+        {
+          "url": "https://ae.linkedin.com/company/sukukfi",
+          "title": "SukukFi — Official company profile"
+        },
+        {
+          "url": "https://docs.sukuk.fi/contact-and-support",
+          "title": "SukukFi — Official profile links"
+        }
+      ]
+    },
+    {
+      "profileId": "spotty-1",
+      "name": "S.P.O.T.T.Y.",
+      "status": "resolved",
+      "eventId": "spotty-1-additional-20261009",
+      "type": "founding",
+      "date": "2024",
+      "reason": "SPOTTY's official company profile states founding in 2024 and links portal.spottyassets.com, identifying the Calgary commodity-tokenization business rather than similarly named software and travel companies.",
+      "sources": [
+        {
+          "url": "https://ca.linkedin.com/company/spottyrwa",
+          "title": "SPOTTY — Official commodity-tokenization company profile"
+        }
+      ]
+    },
+    {
+      "profileId": "redcarpethq",
+      "name": "RedCarpetHQ",
+      "status": "resolved",
+      "eventId": "redcarpethq-additional-20261009",
+      "type": "launch",
+      "date": "2026-03-19",
+      "reason": "Entertainment partner mm2's dated announcement records RedCarpetHQ's official public platform/onboarding launch on March 19, 2026: producer applications for its inaugural slate were then being accepted. The separate technical roadmap distinguishes earlier development/testnet work and a later mainnet phase. This event does not assert live token issuance, secondary trading, or mainnet deployment on that day.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/pulse/redcarpethq-launches-new-platform-entertainment-funding-ns6wc",
+          "title": "mm2 Entertainment — RedCarpetHQ official platform launch"
+        },
+        {
+          "url": "https://docs.redcarpethq.org/platform-investors/roadmap/",
+          "title": "RedCarpetHQ — Development, testnet and mainnet roadmap"
+        }
+      ]
+    },
+    {
+      "profileId": "relevantz",
+      "name": "Relevantz",
+      "status": "unresolved",
+      "reason": "Company dates predate this asset-tokenization practice. Current official case studies and 2024 marketing describe completed work without identifying the first project date; corporate founding and page publication are not substituted.",
+      "sources": [
+        {
+          "url": "https://blockchain.relevantz.com/digital-asset-tokenization/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://relevantz.com/blog/tokenization-democratizing-investment-across-asset-classes/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "piggycell",
+      "name": "Piggycell",
+      "status": "unresolved",
+      "reason": "Official 2024 funding announcement planned an upcoming beta while newer documentation lists later milestones; the established power-bank company's 2019 launch is not automatically the blockchain initiative's start.",
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/cryptocurrency-news/piggycell-a-iot-based-rwa-project-secures-investment-from-a-public-mainnet-internet-computer-3508223",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://piggycell.gitbook.io/docs/milestones",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "contracoin",
+      "name": "Contracoin",
+      "status": "unresolved",
+      "reason": "Market directories repeat a June 2018 launch, but the reviewed issuer's 2020 listing announcement does not verify that original date. No sufficient primary original launch statement confirmed.",
+      "sources": [
+        {
+          "url": "https://coinmarketcap.com/currencies/contracoin/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.globenewswire.com/en/news-release/2020/10/19/2110165/0/en/Real-Estate-Token-Contracoin-to-List-on-ProBit-Exchange.html",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "prosper",
+      "name": "Prosper",
+      "status": "unresolved",
+      "reason": "Official 2024 materials describe a pivot from an older prediction-market protocol, confirmed by Animoca's 2021 acquisition. The pivot must not reset the origin date; original founding/launch remains unverified in primary sources.",
+      "sources": [
+        {
+          "url": "https://www.prosper-fi.com/news/prosper-receives-investment-from-metalpha",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.animocabrands.com/announcement/animoca-brands-acquires-prosper-and-the-prosper-token-pros",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "foretoken",
+      "name": "Foretoken",
+      "status": "unresolved",
+      "reason": "Founder confirms a later website/dashboard launch, but Foretoken was already publishing and appearing publicly earlier in 2025. Earliest genuine project launch/founding is still not explicit; unrelated Foretoken AI and ForesToken excluded.",
+      "sources": [
+        {
+          "url": "https://foretoken.substack.com/p/foretoken-were-at-web3-amsterdam",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/jason-rowlett_tokenization-rwa-foretoken-activity-7353871714369368065-lvCr",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "trustlogic",
+      "name": "TrustLogic",
+      "status": "unresolved",
+      "reason": "Identity verified against the official dual-token protocol and cofounder Amy Pearson, but no explicit founding/launch date appears. The 2023 LinkedIn company is an unrelated Australian trust consultancy.",
+      "sources": [
+        {
+          "url": "https://www.trustlogic.global/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://trustlogic.global/whitepaper/TrustLogic-Whitepaper-v1.0.pdf",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "blockfy",
+      "name": "Blockfy",
+      "status": "unresolved",
+      "reason": "Official company profile and Philippine website confirm founders and RWA scope but provide no founding date. Unrelated Brazilian software registration excluded.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/company/blockfyio",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://blockfy.ph/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "forte-tech-solution",
+      "name": "Forte Tech Solution",
+      "status": "unresolved",
+      "reason": "A dated November 2023 AUDF whitepaper introduces the token but does not establish actual first issuance or company founding. Later listings are not treated as original launch.",
+      "sources": [
+        {
+          "url": "https://static1.squarespace.com/static/6545f5553cf9c3606f20f252/t/656076c70bbe2574655732ec/1700820680547/Forte%2BAUD%2B-%2BWhitepaper%2BNovember%2B2023.pdf",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.forteaud.com/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "qmc",
+      "name": "QMC",
+      "status": "unresolved",
+      "reason": "Founder introduction and current terms establish the correct platform but do not provide explicit original founding/launch date. Terms-update and relative post ages are not founding dates.",
+      "sources": [
+        {
+          "url": "https://qmc.finance/legal/terms",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/joaoguilhermecruz_qmcfinance-tokenization-rwa-activity-7492980558331875328-Hu7w",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "bingold",
+      "name": "Bingold",
+      "status": "unresolved",
+      "reason": "Official roadmap describes 2022 concept work and December 2024 pre-launch, while secondary market data labels June 2025 launch. No unequivocal initial operational launch/founding date; unrelated 1972 glove manufacturer excluded.",
+      "sources": [
+        {
+          "url": "https://bingold.to/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://www.coindesk.com/price/bingold-token",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "unlimitime",
+      "name": "Unlimitime",
+      "status": "unresolved",
+      "reason": "Current independent watch-certification website has no explicit founding date; a dissolved 2020 namesake legal entity cannot be assumed to be this initiative.",
+      "sources": [
+        {
+          "url": "https://unlimitime.com/about",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://unlimitime.com/faq",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "capitalcustodytrust",
+      "name": "CapitalCustodyTrust",
+      "status": "unresolved",
+      "reason": "Targeted exact-name searches produced no usable dated company/launch evidence. No date inferred from a domain or generic directory entry.",
+      "sources": []
+    },
+    {
+      "profileId": "ferrous",
+      "name": "Ferrous",
+      "status": "unresolved",
+      "reason": "Official project repository describes an already-built MVP but no original launch/founding statement was found. Repository crawl age and release existence are insufficient without a dated first-release event.",
+      "sources": [
+        {
+          "url": "https://github.com/FerrousApp/Ferrous",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://0xenginelabs.org/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "soudian",
+      "name": "Soudian",
+      "status": "unresolved",
+      "reason": "Current official site distinguishes the existing power-bank operating business from an upcoming RWA node-program launch. The physical company's age is not substituted for the undated blockchain initiative.",
+      "sources": [
+        {
+          "url": "https://soudian.ai/site/index.html",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "veil",
+      "name": "Veil",
+      "status": "unresolved",
+      "reason": "Exact domain/name searches returned no usable dated primary-source evidence for this RWA project. Unrelated uses of Veil excluded.",
+      "sources": []
+    },
+    {
+      "profileId": "orange-street",
+      "name": "Orange Street",
+      "status": "unresolved",
+      "reason": "Exact domain searches did not yield usable dated primary-source company evidence; infrastructure/domain listings are not launch dates.",
+      "sources": []
+    },
+    {
+      "profileId": "epiphany-island",
+      "name": "Epiphany Island",
+      "status": "unresolved",
+      "reason": "Exact-name searches yielded unrelated books, churches and marine projects rather than a dated primary record for epiphanyisland.com.",
+      "sources": []
+    },
+    {
+      "profileId": "dtec",
+      "name": "DTEC",
+      "status": "unresolved",
+      "reason": "Search results conflate unrelated Dubai technology-center companies and similarly named tokens. No explicit founding/launch date tied to dtec.space was confirmed.",
+      "sources": []
+    },
+    {
+      "profileId": "gm-artification",
+      "name": "GM artification",
+      "status": "unresolved",
+      "reason": "Commercial-register mirrors show inconsistent 2015 versus December 2024 dates for the same Swiss UID, while founder profile does not date the tokenization initiative. Likely legal-history/rebranding distinction needs resolution.",
+      "sources": [
+        {
+          "url": "https://business-monitor.ch/en/companies/684667-gm-artification-sa",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://yellowpages.swiss/location.cfm?art=HRB&company=GM-ARTIFICATION-SA&key=2256918",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "mner-club",
+      "name": "Mner Club",
+      "status": "unresolved",
+      "reason": "Current platform and third-party reports establish Mineral/Mner Club continuity, but an estimated project-age date and a later 2.0 migration do not establish the actual first launch.",
+      "sources": [
+        {
+          "url": "https://www.mner.club/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://skynet.certik.com/projects/mineral",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "the-foundation",
+      "name": "THE Foundation",
+      "status": "unresolved",
+      "reason": "Founder interviews establish the nonprofit identity/wallet spinout before the later 2024 GEMS token offering. Neither the interview publication nor GEMS launch proves the nonprofit's original founding/launch.",
+      "sources": [
+        {
+          "url": "https://cryptocoinshow.com/interview/global-banking-system-with-minimum-kyc-may-explode-w-bob-reid-blockchain-interviews/",
+          "title": "Reviewed public source lead"
+        },
+        {
+          "url": "https://jimruttshow.blubrry.net/the-jim-rutt-show-transcripts/transcript-of-ep-194-bob-reid-on-user-owned-identity/",
+          "title": "Reviewed public source lead"
+        }
+      ]
+    },
+    {
+      "profileId": "hadco",
+      "name": "HADCO",
+      "status": "unresolved",
+      "reason": "Targeted exact-domain searches returned no usable dated primary-source company/launch evidence.",
+      "sources": []
+    }
+  ]
+}

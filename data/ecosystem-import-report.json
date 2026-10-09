@@ -3,10 +3,12 @@
   "sourcePlacements": 844,
   "mergedLegacy": 83,
   "retainedLegacy": 35,
-  "researchedProfiles": 289,
+  "researchedProfiles": 290,
   "excludedProfiles": [
     "novastro",
-    "daylight-energy-by-anode-labs"
+    "daylight-energy-by-anode-labs",
+    "adcentral",
+    "agama-finance"
   ],
   "updatedProfiles": [
     "rwaf-orca",
@@ -73,14 +75,23 @@
     "cask-capital",
     "bondi-finance",
     "splyce-finance",
-    "mey-network"
+    "mey-network",
+    "360xart",
+    "allo",
+    "alloycapital",
+    "security-token-market",
+    "anchorage-digital-bank-na",
+    "catena-digital-pty-ltd",
+    "apraemio",
+    "anzens-inc",
+    "redcarpethq"
   ],
-  "updatedLogos": 366,
-  "completedExits": 9,
-  "totalProfiles": 1153,
+  "updatedLogos": 687,
+  "completedExits": 10,
+  "totalProfiles": 1152,
   "current": 981,
   "historical": 141,
-  "review": 31,
+  "review": 30,
   "merged": [
     {
       "legacyId": "ondo",
@@ -741,7 +752,8 @@
     "fbyt",
     "engine-protocol",
     "strata-orderbook",
-    "adcentral"
+    "adcentral",
+    "tokenizethis"
   ],
   "crosswalk": {
     "wally": "rwaf-wally",

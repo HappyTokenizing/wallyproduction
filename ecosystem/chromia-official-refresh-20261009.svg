@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none">
+  <!-- The 142x181 mark centred on a square 204x204 canvas. Square because Google Search
+       stretches a non-square favicon to fill its box. The farthest filled pixel sits 100.8
+       units from the centre, so a 204 canvas keeps the whole mark inside the inscribed circle
+       (the minimum would be 202) and it survives the SERP circular crop too. -->
+  <g transform="translate(31,11.5)">
+    <g transform="translate(0,36.122)">
+      <path d="M 103.856 89.445 C 97.773 101.002 85.719 108.884 71.817 108.884 C 51.802 108.884 35.577 92.555 35.577 72.413 C 35.577 52.27 51.802 35.942 71.817 35.942 C 85.719 35.942 97.773 43.824 103.856 55.38 L 141.584 55.38 C 134.014 23.629 105.694 0 71.817 0 C 32.153 0 0 32.358 0 72.272 C 0 112.187 32.153 144.542 71.817 144.542 C 105.591 144.542 133.841 121.053 141.512 89.445 L 103.856 89.445 Z" fill="#FF7EA3"></path>
+    </g>
+    <g transform="translate(69.818,0)">
+      <path d="M 58.797 64.375 C 66.897 57.726 72.069 47.601 72.069 36.262 C 72.069 16.235 55.936 0 36.035 0 C 16.133 0 0 16.235 0 36.262 L 0 36.29 C 0.669 36.271 1.339 36.261 2.012 36.261 C 25.143 36.261 45.683 47.278 58.797 64.375 Z" fill="#C98CF0"></path>
+    </g>
+    <g transform="matrix(0.725,-0.689,-0.684,-0.729,104.319,87.514)">
+      <path d="M 11.332 9.77 C 17.629 3.824 25.5 0.58 33.512 0 C 35.647 21.424 28.205 43.557 11.332 59.487 C 10.842 59.951 10.346 60.405 9.847 60.851 C -3.841 46.334 -3.177 23.469 11.332 9.77 Z" fill="#9E5ECF"></path>
+    </g>
+  </g>
+</svg>

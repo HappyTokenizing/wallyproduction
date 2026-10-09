@@ -1,0 +1,35 @@
+{
+  "reviewedOn": "2026-10-09",
+  "answers": [
+    {
+      "profileId": "360xart",
+      "answer": "Launched in 2021, Frankfurt",
+      "action": "2021 founding independently corroborated; accepted."
+    },
+    {
+      "profileId": "adcentral",
+      "answer": "Delete; never tokenized",
+      "action": "Excluded from directory."
+    },
+    {
+      "profileId": "agama-finance",
+      "answer": "Delete; never tokenized",
+      "action": "Excluded from directory."
+    },
+    {
+      "profileId": "agrifi",
+      "answer": "Launched in 2026",
+      "action": "Identity clarification pending: existing agrifiafrica.com versus agrifi.tech; no date invented."
+    },
+    {
+      "profileId": "allo",
+      "answer": "Use X account opening year 2024",
+      "action": "Shown as separate public-presence clue, not a verified founding/launch event."
+    },
+    {
+      "profileId": "alloycapital",
+      "answer": "Obligate partnership in 2024 but never actually tokenized",
+      "action": "Retained as historical unlaunched initiative pending removal preference; no start event."
+    }
+  ]
+}

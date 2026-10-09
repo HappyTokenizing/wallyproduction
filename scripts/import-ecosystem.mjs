@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import {dateBounds} from '../assets/ecosystem-stats-model.js';
 import { MARKET_MAP } from '../vendor/rwa-ecosystem-map/marketMap.ts';
 const read = name => JSON.parse(fs.readFileSync(new URL('../vendor/rwa-ecosystem-map/'+name, import.meta.url)));
@@ -41,7 +42,7 @@ function place(p,categories){
  }
 }
 const researched=[];
-for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json','lifecycle-additions-20261007.json','community-submissions-20261008.json']){
+for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json','lifecycle-additions-20261007.json','community-submissions-20261008.json','directory-additions-20261009.json']){
  for(const entry of researchRead(name)){
   if(byId.has(entry.id)||profiles.some(p=>norm(p.name)===norm(entry.name)))throw Error('Duplicate research identity: '+entry.name);
   if(!entry.sources?.length||!entry.checkedOn||!entry.categories?.length)throw Error('Incomplete research: '+entry.name);
@@ -53,7 +54,7 @@ for(const name of ['institutions.json','services.json','networks.json','requeste
 // Explicit, dated corrections preserve upstream IDs, placements and favorites.
 const profileUpdates={...researchRead('profile-updates.json'),...researchRead('profile-updates-20261008.json')};
 // Submission metadata augments prior corrections instead of dropping earlier fields.
-for(const [id,update] of Object.entries(researchRead('profile-submissions-20261008.json'))){
+for(const file of ['profile-submissions-20261008.json','profile-updates-20261009.json'])for(const [id,update] of Object.entries(researchRead(file))){
  const prior=profileUpdates[id]||{};
  profileUpdates[id]={...prior,...update,aliases:[...new Set([...(prior.aliases||[]),...(update.aliases||[])])]};
 }
@@ -67,29 +68,75 @@ for(const [id,update] of Object.entries(profileUpdates)){
  for(const c of addCategories)if(!p.categories.some(x=>x.section===c.section&&x.name===c.name))p.categories.push(c);
  place(p,addCategories);
 }
+// Explicit relationships connect distinct initiatives without merging their identities.
+for(const [id,relations] of Object.entries(researchRead('profile-relations-20261009.json'))){
+ const p=byId.get(id);if(!p)throw Error('Unknown related profile: '+id);
+ for(const relation of relations){
+  if(!byId.has(relation.id)||relation.id===id)throw Error('Invalid profile relation: '+id);
+  p.relatedEntities=p.relatedEntities.filter(r=>r.id!==relation.id);p.relatedEntities.push(relation);
+ }
+}
 // Exits are completed M&A events, independently of whether a product is still active.
-const exitEvents=[...researchRead('exits.json'),...researchRead('exits-20261008.json')], exitIds=new Set();
+const exitEvents=[...researchRead('exits.json'),...researchRead('exits-20261008.json'),...researchRead('exits-20261009.json')], exitIds=new Set();
 for(const event of exitEvents){
  const p=byId.get(event.profileId);
  if(!p||!event.id||exitIds.has(event.id)||!['acquisition','merger'].includes(event.type)||event.status!=='completed'||!event.target||!event.counterparty||!event.summary||!event.checkedOn||!event.sources?.length)throw Error('Invalid M&A exit: '+event.id);
  for(const source of event.sources){const url=new URL(source.url);if(!source.title||url.protocol!=='https:'||url.username||url.password)throw Error('Invalid M&A source: '+event.id);}
- exitIds.add(event.id);(p.exitEvents||=[]).push(event);
+ exitIds.add(event.id);
+ for(const id of new Set([event.profileId,...(event.relatedProfileIds||[])])){
+  const target=byId.get(id);if(!target)throw Error('Unknown shared exit profile: '+id);
+  (target.exitEvents||=[]).push(event);
+ }
 }
-const logoOverrides={...researchRead('logos-core.json'),...researchRead('logos-special.json'),...researchRead('logos-refinements.json'),...researchRead('logos-followup.json'),...researchRead('logos-missing.json'),...researchRead('logos-community-20261007.json'),...researchRead('logos-community-fixes-20261007.json'),...researchRead('logos-submissions-20261008.json')};
+const logoFiles=['logos-core.json','logos-special.json','logos-refinements.json','logos-followup.json','logos-missing.json','logos-community-20261007.json','logos-community-fixes-20261007.json','logos-submissions-20261008.json'];
+const logoOverrides={};
+const logoDigest=logo=>{
+ if(!logo?.src?.startsWith('/ecosystem/')||logo.src.includes('..'))throw Error('Invalid logo asset path: '+logo?.src);
+ return createHash('sha256').update(fs.readFileSync(new URL('..'+logo.src,import.meta.url))).digest('hex');
+};
+function replaceLogo(id,logo){
+ const p=byId.get(id);
+ if(!p||!logo.src)throw Error('Incomplete logo override: '+id);
+ if(logo.changeKind==='display-correction'){
+  if(logo.src!==p.logo?.src)throw Error('Display correction changes artwork: '+id);
+  logo={...p.logo,...logo};
+ }else if(!logo.sourceUrl||!logo.sourcePage)throw Error('Unsourced logo replacement: '+id);
+ const digest=logoDigest(logo);
+ if(p.logo&&logoDigest(p.logo)!==digest){
+  const prior={...p.logo,archivedOn:'2026-10-09',versionLabel:'Earlier directory artwork'};
+  if(!prior.checkedOn&&!prior.recordedOn)prior.recordedOn='2026-10-04';
+  (p.logoHistory||=[]).unshift(prior);
+ }
+ p.logo={...logo};
+ const seen=new Set([digest]);
+ p.logoHistory=(p.logoHistory||[]).filter(old=>{const hash=logoDigest(old);if(seen.has(hash))return false;seen.add(hash);return true;});
+ if(!p.logoHistory.length)delete p.logoHistory;
+ logoOverrides[id]=logo;
+}
 // Phantom already has a Stablecoin Builders placement; expose the same identity under Wallets.
 const phantom=byId.get('phantom');
 if(!phantom.categories.some(c=>c.section==='Wallets'&&c.name==='Wallets'))phantom.categories.push({section:'Wallets',name:'Wallets'});
 const wallets=sections.find(s=>s.name==='Wallets').categories.find(c=>c.name==='Wallets');
 if(!wallets.ids.includes(phantom.id))wallets.ids.push(phantom.id);
-for(const [id,logo] of Object.entries(logoOverrides)){
- if(!byId.has(id)||!logo.src||!logo.sourceUrl||!logo.sourcePage)throw Error('Incomplete logo override: '+id);
- byId.get(id).logo=logo;
-}
+for(const file of logoFiles)for(const [id,logo] of Object.entries(researchRead(file)))replaceLogo(id,logo);
 // Contrast-only corrections retain the original source artwork and provenance.
 for(const [id,display] of Object.entries(researchRead('logo-display.json'))){
  const p=byId.get(id);
  if(!p?.logo||Object.keys(display).some(k=>k!=='background')||!['light','dark'].includes(display.background))throw Error('Invalid logo display correction: '+id);
  Object.assign(p.logo,display);
+}
+// Freshly reviewed artwork takes precedence; same-file contrast fixes are not new versions.
+const refreshedLogos=researchRead('logos-refresh-20261009.json');
+for(const [id,logo] of Object.entries(refreshedLogos))replaceLogo(id,logo);
+const displayBySource=new Map(Object.values(refreshedLogos).map(logo=>[logo.src,logo.background]));
+const historyReview=researchRead('logo-history-review-20261009.json');
+for(const p of profiles)for(const logo of p.logoHistory||[]){
+ if(displayBySource.has(logo.src))logo.background=displayBySource.get(logo.src);
+ const review=historyReview[logo.src];
+ if(review){
+  if(review.displayInHistory===false&&!review.reviewNote)throw Error('Unexplained hidden logo history: '+logo.src);
+  Object.assign(logo,review);
+ }
 }
 // Owner-requested removals are explicit and reproducible without altering the vendor snapshot.
 const excludedProfiles=researchRead('excluded-profiles.json');
@@ -109,7 +156,7 @@ for(const [id,removal] of Object.entries(excludedProfiles)){
  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
 }
 // Lifecycle statistics never infer event dates from review or import timestamps.
-const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json'),...researchRead('statistics-events-research-20261008.json'),...researchRead('statistics-events-followup-20261008.json'),...researchRead('statistics-events-industry-entry.json')],statsIds=new Set(),statsTypes=new Set();
+const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json'),...researchRead('statistics-events-research-20261008.json'),...researchRead('statistics-events-followup-20261008.json'),...researchRead('statistics-events-industry-entry.json'),...researchRead('statistics-events-owner-20261009.json'),...researchRead('statistics-events-additional-20261009.json')],statsIds=new Set(),statsTypes=new Set();
 for(const event of statsEvents){
  const key=event.profileId+':'+event.type;
  if(!byId.has(event.profileId)||!event.id||statsIds.has(event.id)||statsTypes.has(key)||!['founding','launch','industry_entry','failure'].includes(event.type)||!dateBounds(event.date)||!event.note||!event.checkedOn||!event.sources?.length)throw Error('Invalid statistics event: '+event.id);
@@ -127,7 +174,7 @@ const publishedStats=statsEvents.filter(e=>!entryRequired.has(e.profileId)||!['f
 for(const e of publishedStats)if(e.type==='industry_entry'&&Number(e.date.slice(0,4))<2011)throw Error('Pre-2011 industry entry needs review: '+e.id);
 for(const e of exitEvents)if(e.completedDate&&!dateBounds(e.completedDate))throw Error('Invalid exit date: '+e.id);
 const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,excludedProfiles:Object.keys(excludedProfiles),updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,completedExits:exitEvents.length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
-const output={snapshotDate:'2026-10-08',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents:publishedStats};
+const output={snapshotDate:'2026-10-09',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents:publishedStats};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
 console.log({...report,merged:undefined,added:undefined,researched:undefined,crosswalk:undefined});

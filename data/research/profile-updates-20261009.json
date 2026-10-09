@@ -1,0 +1,147 @@
+{
+  "360xart": {
+    "name": "360X Art",
+    "description": "Frankfurt-based company founded in 2021 to assess, structure and tokenize primarily physical artworks as part of the 360X group.",
+    "lifecycle": "Current",
+    "statusNote": "Company founding in 2021 confirmed by its official company profile; individual offerings have their own launch dates.",
+    "aliases": [
+      "360X ART",
+      "360X Art AG"
+    ],
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://de.linkedin.com/company/360xart",
+        "title": "360X Art — official company profile, founded 2021"
+      }
+    ]
+  },
+  "allo": {
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://x.com/allo_xyz",
+        "title": "Allo — official X profile"
+      }
+    ],
+    "publicDateClue": {
+      "date": "2024",
+      "label": "X account opened",
+      "note": "Owner-supplied public-presence clue; not a confirmed founding or launch date.",
+      "sources": [
+        {
+          "url": "https://x.com/allo_xyz",
+          "title": "Allo — X account opening year supplied by the site owner"
+        }
+      ]
+    }
+  },
+  "alloycapital": {
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://x.com/alloyfinance",
+        "title": "Alloy Finance — profile supplied by the site owner"
+      }
+    ],
+    "statusNote": "Owner reports a 2024 Obligate partnership but no completed tokenization. Retained as a historical, unlaunched initiative; no founding, launch or failure date is inferred.",
+    "lifecycle": "Unlaunched initiative"
+  },
+  "security-token-market": {
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://blog.redstone.finance/2026/01/21/redstone-acquires-security-token-market-and-tokenizethis-conference/",
+        "title": "RedStone — Acquisition of STM and TokenizeThis, 21 January 2026"
+      }
+    ],
+    "lifecycle": "Acquired",
+    "statusNote": "Acquired by RedStone alongside the TokenizeThis conference, as confirmed by RedStone on 21 January 2026. The data and research business continues; the separate closing date was not disclosed."
+  },
+  "anchorage-digital-bank-na": {
+    "name": "USA₮ (Anchorage Digital Bank)",
+    "aliases": [
+      "USAT",
+      "USA₮",
+      "Anchorage Digital Bank, N.A."
+    ],
+    "description": "U.S. dollar stablecoin issued by Anchorage Digital Bank, N.A. and launched by Tether in January 2026. This profile covers USA₮; the broader Anchorage company has a separate directory entry.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://tether.io/news/tether-announces-the-launch-of-usat-the-federally-regulated-dollar-backed-stablecoin-made-in-america/",
+        "title": "Tether — Official launch of USA₮ on 27 January 2026"
+      }
+    ]
+  },
+  "catena-digital-pty-ltd": {
+    "description": "Macropod issues AUDM, an Australian dollar stablecoin first used in October 2025.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://aapnews.aap.com.au/news/first-regulated-australian-dollar-stablecoin-launched",
+        "title": "AAP — Macropod CEO describes first AUDM transaction"
+      },
+      {
+        "url": "https://www.independentreserve.com/blog?p=8202",
+        "title": "Independent Reserve — AUDM issuer and 2025 platform launch"
+      }
+    ]
+  },
+  "apraemio": {
+    "description": "APRA utility-token initiative connected with the Apraemio ecosystem. Its official token documentation states that APRA is not backed by gold or other assets and conveys no mine ownership, dividends or guaranteed redemption.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.apraemio.com/token/",
+        "title": "Apraemio — APRA utility token scope and limitations"
+      },
+      {
+        "url": "https://www.apraemio.com/terms-of-service/",
+        "title": "Apraemio — Terms of Service, 28 July 2026"
+      }
+    ],
+    "statusNote": "APRA should not be treated as a gold-backed token or a tokenized ownership claim. Retained with an explicit scope qualification."
+  },
+  "anzens-inc": {
+    "description": "Issuer of USDA, a U.S. dollar stablecoin launched in March 2025 for the Cardano ecosystem.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.emurgo.io/press-news/anzens-is-live-usda-stablecoin-minting-access-is-here-cardano/",
+        "title": "EMURGO — Anzens is live"
+      },
+      {
+        "url": "https://www.emurgo.io/press-news/emurgo-march-2025-newsletter/",
+        "title": "EMURGO — March 2025 launch retrospective"
+      }
+    ]
+  },
+  "redcarpethq": {
+    "description": "A platform for tokenized entertainment financing; producer onboarding opened in March 2026, with deployment phases described separately in its technical roadmap.",
+    "lifecycle": "Public onboarding",
+    "statusNote": "Public onboarding does not establish that all token issuance, trading or mainnet features are live.",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/pulse/redcarpethq-launches-new-platform-entertainment-funding-ns6wc",
+        "title": "mm2 Entertainment — RedCarpetHQ official platform launch"
+      },
+      {
+        "url": "https://docs.redcarpethq.org/platform-investors/roadmap/",
+        "title": "RedCarpetHQ — Development, testnet and mainnet roadmap"
+      }
+    ]
+  },
+  "rwaf-steelwave": {
+    "website": "https://www.steelwavellc.com/token-lab",
+    "domain": "steelwavellc.com",
+    "checkedOn": "2026-10-09",
+    "sources": [
+      {
+        "url": "https://www.steelwavellc.com/token-lab",
+        "title": "SteelWave — official SteelWave Digital subsidiary page"
+      }
+    ]
+  }
+}
