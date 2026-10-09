@@ -1,4 +1,5 @@
 import {createStats} from './ecosystem-stats.js';
+import {loadEcosystemData} from './ecosystem-data.js';
 import {filterProfiles,memberFor,safeURL,websiteFor,memberCount,exitsFor,exitCount,prepareDirectory,directorySections,RWAF_DIRECTORY} from './ecosystem-model.js';
 import {startEvent} from './ecosystem-stats-model.js';
 import {currentLogo,logoHTML,logoHistoryHTML} from './ecosystem-logo-model.js';
@@ -10,18 +11,19 @@ export function publicDateClueHTML(profile) {
   const source=(clue.sources||[]).find(s=>safeURL(s.url,profile));
   return `<p class="ec-public-date-clue"><b>${escape(clue.label)}</b> ${escape(clue.date)}<span>${escape(clue.note||'Public-presence clue; not a confirmed founding or launch date.')}</span>${source?` <a href="${escape(safeURL(source.url,profile))}" target="_blank" rel="noopener noreferrer">${escape(source.title||'Source')} ↗</a>`:''}</p>`;
 }
-let pending;
-export async function mountEcosystem(mount, options) {
-  pending ||= fetch('/data/ecosystem-directory.json').then(r=>{if(!r.ok)throw Error('Directory unavailable');return r.json();}).catch(e=>{pending=null;throw e;});
-  const data=prepareDirectory(await pending);
+export async function mountEcosystem(mount, options, force=false) {
+  if(mount.__ecosystem&&!force)return mount.__ecosystem.reload();
+  const loaded=await loadEcosystemData(),data=prepareDirectory(loaded.data);
+  const previous=mount.__ecosystem?.state,previousStats=mount.__ecosystem?.statsState();
+  mount.__ecosystem?.destroy();
   document.querySelectorAll('[data-ecosystem-count]').forEach(el=>{el.textContent=data.profiles.length.toLocaleString('en-US');});
-  if(mount.__ecosystem){mount.__ecosystem.refresh();return;}
   const byId=new Map(data.profiles.map(p=>[p.id,p]));
-  const state={q:'',status:'current',section:'all',members:false,view:'directory',limit:50};
+  const state={q:'',status:'current',section:'all',members:false,view:'directory',limit:50,...previous};
   let selected=null,priorFocus=null;
   const members=()=>options.getMembers?.()||[];
   const counts=Object.fromEntries(['current','historical','review'].map(s=>[s,data.profiles.filter(p=>p.directoryStatus===s).length]));
   mount.innerHTML=`<div class="ec-directory">
+    ${loaded.warning?`<p class="ec-update-warning" role="status">${escape(loaded.warning)} <button data-reload>Retry updates</button></p>`:''}
     <div class="ec-summary"><div><strong>${data.profiles.length}</strong><span>Total Companies</span></div><div><strong>${counts.current}</strong><span>Active Companies</span></div><div title="Completed mergers and acquisitions only, counted once per documented transaction. Closures, bankruptcies and unconfirmed deals are excluded."><strong>${exitCount(data.profiles)}</strong><span>Exits</span></div><div><strong data-member-count>${memberCount(members())}</strong><span>RWAF Members</span></div></div>
     <div class="ec-toolbar"><div class="ec-views" role="group" aria-label="Ecosystem view"><button data-view="directory" aria-pressed="true">Directory</button><button data-view="map" aria-pressed="false">Ecosystem map</button><button type="button" data-view="stats" aria-pressed="false" aria-controls="ec-stats-view">Stats</button></div><label class="ec-search">Search<input type="search" placeholder="Search all companies and initiatives" aria-label="Search ecosystem"></label></div>
     <div class="ec-filters"><label>Status<select aria-label="Profile status"><option value="current">Current (${counts.current})</option><option value="all">All profiles (${data.profiles.length})</option><option value="exits">Exits — M&amp;A (${exitCount(data.profiles)})</option><option value="historical">Historical (${counts.historical})</option><option value="review">Review pending (${counts.review})</option></select></label><label>Sector<select aria-label="Ecosystem sector"><option value="all">All sectors</option>${directorySections(data,members()).filter(s=>s.name!=='Historical').map(s=>`<option value="${escape(s.name)}">${escape(s.name)}</option>`).join('')}</select></label><label class="ec-members"><input type="checkbox">RWAF Members</label><button class="ec-clear" data-clear>Clear filters</button></div>
@@ -30,7 +32,7 @@ export async function mountEcosystem(mount, options) {
     <dialog class="ec-dialog" aria-labelledby="ec-profile-title"><div class="ec-dialog-bar"><span>Company profile</span><button data-close aria-label="Close company profile">×</button></div><div class="ec-profile"></div></dialog>
   </div>`;
   const root=mount.querySelector('.ec-directory'), results=root.querySelector('.ec-results'), dialog=root.querySelector('dialog');
-  const stats=createStats(root,data,members);
+  const stats=createStats(root,data,members,previousStats);
   function logo(p){
     return logoHTML(p,currentLogo(p,memberFor(p,members())));
   }
@@ -114,6 +116,7 @@ export async function mountEcosystem(mount, options) {
     if(b.dataset.newsMore){b.disabled=true;return loadNews(byId.get(b.dataset.newsMore),true);}
     if(b.dataset.profile)return open(b.dataset.profile);
     if(b.hasAttribute('data-close'))return close();
+    if(b.hasAttribute('data-reload'))return mount.__ecosystem.reload();
     if(b.dataset.favorite){const p=byId.get(b.dataset.favorite);options.onFavorite?.(p.id,p.legacyIds);if(dialog.open)root.querySelector('.ec-profile').innerHTML=profileHTML(p);return;}
     if(b.dataset.view){state.view=b.dataset.view;state.limit=50;paint();}
     if(b.hasAttribute('data-more')){state.limit+=50;paint();}
@@ -127,7 +130,10 @@ export async function mountEcosystem(mount, options) {
   });
   dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)close();}});
   dialog.addEventListener('close',()=>{selected=null;priorFocus?.focus();});
-  window.addEventListener('hashchange',()=>{if(dialog.open)close();});
+  const onHashChange=()=>{if(dialog.open)close();};
+  const onFocus=()=>{if(mount.getClientRects().length)mount.__ecosystem?.reload();};
+  window.addEventListener('hashchange',onHashChange);
+  window.addEventListener('focus',onFocus);
   root.querySelector('input[type=search]').addEventListener('input',e=>{state.q=e.target.value;state.limit=50;paint();});
   root.querySelector('select[aria-label="Profile status"]').addEventListener('change',e=>{state.status=e.target.value;state.limit=50;paint();});
   root.querySelector('select[aria-label="Ecosystem sector"]').addEventListener('change',e=>{
@@ -136,6 +142,23 @@ export async function mountEcosystem(mount, options) {
     paint();
   });
   root.querySelector('input[type=checkbox]').addEventListener('change',e=>{state.members=e.target.checked;state.limit=50;paint();});
-  mount.__ecosystem={refresh(){paint();if(selected)root.querySelector('.ec-profile').innerHTML=profileHTML(byId.get(selected));}};
+  let refreshing;
+  mount.__ecosystem={state,statsState:()=>stats.getState(),
+    refresh(){paint();if(selected)root.querySelector('.ec-profile').innerHTML=profileHTML(byId.get(selected));},
+    reload(afterSave=false){
+      if(afterSave&&refreshing)return refreshing.then(()=>mount.__ecosystem.reload());
+      refreshing ||= mountEcosystem(mount,options,true).catch(()=>{
+        let warning=root.querySelector('.ec-update-warning');
+        if(!warning){warning=document.createElement('p');warning.className='ec-update-warning';warning.setAttribute('role','status');root.prepend(warning);}
+        warning.textContent='Directory updates could not refresh. Showing the last confirmed version.';
+      }).finally(()=>{refreshing=null;});
+      return refreshing;
+    },
+    destroy(){window.removeEventListener('hashchange',onHashChange);window.removeEventListener('focus',onFocus);}
+  };
+  root.querySelector('input[type=search]').value=state.q;
+  root.querySelector('select[aria-label="Profile status"]').value=state.status;
+  root.querySelector('select[aria-label="Ecosystem sector"]').value=state.section;
+  root.querySelector('input[type=checkbox]').checked=state.members;
   paint();
 }

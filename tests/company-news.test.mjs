@@ -84,6 +84,17 @@ test('staging forwards company news to production with only the profile id', asy
   assert.equal(r.code, 200); assert.equal(url, 'https://www.rwaf.xyz/api/company-news?id=circle');
 });
 
+test('approved directory submissions can resolve their archived company news without a code deployment',async()=>{
+ const record={id:'fixture',updatedAt:'2026-10-09T12:00:00Z',review:{profileId:null,name:'Example Tokenization Company',description:'Test',website:'https://example.test',region:'International',directoryStatus:'current',categories:[{section:'Tokenization',name:'Tokenization Platforms'}],start:null}};
+ const options={env:{BLOB_READ_WRITE_TOKEN:'test'},updates:async()=>({records:[record]}),archive:async()=>({items:[item('new-company','Example Tokenization Company launches'),item('other','Other company launches')]})};
+ const h=createCompanyNewsHandler(options),result=await call(h,{id:'submitted-fixture'});
+ assert.equal(result.code,200);assert.deepEqual(result.body.items.map(x=>x.id),['new-company']);
+ const rejected=createCompanyNewsHandler({...options,updates:async()=>({records:[]})});
+ assert.equal((await call(rejected,{id:'submitted-fixture'})).code,404);
+ const offline=createCompanyNewsHandler({...options,updates:async()=>{throw Error('offline')}});
+ assert.equal((await call(offline,{id:'submitted-fixture'})).code,503);
+});
+
 
 test('monthly archive retains more than 5000 stories, the legacy archive, and full history after rotation', async () => {
  const storage=memoryBlob(),env={BLOB_READ_WRITE_TOKEN:'blob'};

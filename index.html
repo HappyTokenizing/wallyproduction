@@ -1663,6 +1663,7 @@ html{ scrollbar-color:var(--line2) transparent }
 
 </style>
 <link rel="stylesheet" href="/assets/ecosystem-directory.css">
+<link rel="stylesheet" href="/assets/ecosystem-admin.css">
 </head>
 <body>
 <script src="/assets/member-icons.js"></script>
@@ -2643,6 +2644,7 @@ html{ scrollbar-color:var(--line2) transparent }
     <div class="modal-h"><h4>Submit your project</h4><button class="icon-btn x" onclick="closeModal('mSubmitEco')" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
     <div class="modal-b">
       <div id="subEcoForm">
+        <div aria-hidden="true" style="position:absolute;left:-10000px"><label for="seWebsiteConfirm">Leave this field empty</label><input id="seWebsiteConfirm" tabindex="-1" autocomplete="off"></div>
         <div class="field"><label>Project or organization name</label><input id="seName" maxlength="80" placeholder="As it should appear in the directory"></div>
         <div class="field"><label>One line description</label><input id="seBlurb" maxlength="120" placeholder="A single sentence on what you do"><span class="fhint">Shown on your card. 120 characters max.</span></div>
         <div class="field"><label>Project type</label><select id="seType">
@@ -2657,8 +2659,8 @@ html{ scrollbar-color:var(--line2) transparent }
           <option>Other</option>
         </select></div>
         <div class="field"><label>Region</label><select id="seRegion"><option value="">Select</option><option>United States</option><option>International</option></select></div>
-        <div class="field"><label>Website URL</label><input id="seUrl" type="url" placeholder="https://"><span class="fhint">Full URL, including https://</span></div>
-        <div class="field"><label>Contact email</label><input id="seEmail" type="email" placeholder="you@project.xyz"><span class="fhint">So the RWA Foundation team can follow up. Never shown publicly.</span></div>
+        <div class="field"><label>Website URL</label><input id="seUrl" maxlength="500" type="url" placeholder="https://"><span class="fhint">Full URL, including https://</span></div>
+        <div class="field"><label>Contact email</label><input id="seEmail" maxlength="254" type="email" placeholder="you@project.xyz"><span class="fhint">So the RWA Foundation team can follow up. Never shown publicly.</span></div>
       </div>
       <div id="subEcoOk" hidden></div>
     </div>
@@ -4361,54 +4363,41 @@ async function submitJob(){
   finally{pjSending=false;button.disabled=false;button.textContent='Submit listing';}
 }
 
-/* ---------- ecosystem submission + Google Form handoff ---------- */
-/* Paste the numeric entry ids from the intake form to enable silent auto submit.
-   Find them once: open the form, view page source, search for "entry." */
-const GF_FORM='https://docs.google.com/forms/d/e/1FAIpQLSd4PAA-2-ebHFAr7RVTmslL6CtcINmVa2Fx3oyaAjQ-4Rc2Dw';
-const GF_ENTRIES={ name:'', blurb:'', type:'', region:'', url:'', email:'' };
-function openSubmitEco(){ $('#subEcoForm').hidden=false; $('#subEcoOk').hidden=true; $('#subEcoFoot').lastElementChild.hidden=false; openModal('mSubmitEco'); }
-function submitEco(){
-  const d={ name:pjValById('seName'), blurb:pjValById('seBlurb'), type:pjValById('seType'), region:pjValById('seRegion'), url:pjValById('seUrl'), email:pjValById('seEmail') };
-  let ok=true;
-  ok=pjMark('seName',!d.name)&&ok; ok=pjMark('seBlurb',!d.blurb)&&ok; ok=pjMark('seType',!d.type)&&ok;
-  ok=pjMark('seRegion',!d.region)&&ok; ok=pjMark('seUrl',!/^https?:\/\/.+\..+/.test(d.url))&&ok;
-  if(d.email) ok=pjMark('seEmail',!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email))&&ok; else pjMark('seEmail',false);
-  if(!ok){ jbShowErrs('mSubmitEco','Check the highlighted fields. A full https:// website URL is needed.'); return; }
-  const subs=lsGet(ECOSUB_LS,[]); subs.push(Object.assign({ts:Date.now(),status:'pending'},d)); lsSet(ECOSUB_LS,subs);
-  const keys=['name','blurb','type','region','url'];
-  const auto=keys.every(k=>GF_ENTRIES[k]);
-  if(auto){
-    const p=new URLSearchParams();
-    keys.concat(d.email?['email']:[]).forEach(k=>{ if(GF_ENTRIES[k]) p.append('entry.'+GF_ENTRIES[k], d[k]); });
-    p.append('pageHistory','0,1,2,3'); p.append('fvv','1');
-    fetch(GF_FORM+'/formResponse',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:p.toString()}).catch(()=>{});
-    subOkPanel('sent', d);
-  } else {
-    subOkPanel('manual', d);
-  }
-  $('#subEcoFoot').lastElementChild.hidden=true;
-  toast('Submission saved','The RWA Foundation team reviews every project.');
+/* ---------- ecosystem submissions: private server-side review queue ---------- */
+let seSending=false;
+function openSubmitEco(){
+  if(seSending)return;
+  $('#subEcoForm').hidden=false;$('#subEcoOk').hidden=true;
+  $('#subEcoFoot').lastElementChild.hidden=false;openModal('mSubmitEco');
 }
-function pjValById(id){ return ($('#'+id).value||'').trim(); }
+async function submitEco(){
+  if(seSending)return;
+  const submission={name:pjValById('seName'),description:pjValById('seBlurb'),type:pjValById('seType'),region:pjValById('seRegion'),website:pjValById('seUrl'),email:pjValById('seEmail'),websiteConfirm:pjValById('seWebsiteConfirm')};
+  let validURL=false;
+  try{const u=new URL(submission.website);validURL=u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.');}catch(e){}
+  let ok=true;
+  ok=pjMark('seName',!submission.name)&&ok;ok=pjMark('seBlurb',!submission.description)&&ok;
+  ok=pjMark('seType',!submission.type)&&ok;ok=pjMark('seRegion',!submission.region)&&ok;
+  ok=pjMark('seUrl',!validURL)&&ok;
+  ok=pjMark('seEmail',!!submission.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submission.email))&&ok;
+  if(!ok){jbShowErrs('mSubmitEco','Check the highlighted fields and use a full HTTPS website URL.');return;}
+  const button=$('#subEcoFoot').lastElementChild;
+  seSending=true;button.disabled=true;button.textContent='Submitting…';
+  try{
+    const r=await fetch('/api/ecosystem',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'submit',submission}),signal:AbortSignal.timeout(20000)});
+    const result=await r.json().catch(()=>({}));
+    if(!r.ok||!result.ok)throw Error(r.status===429?'Too many attempts. Please wait and retry.':result.error||'The server did not confirm receipt. Keep this form open and retry.');
+    $('#subEcoForm').hidden=true;$('#subEcoOk').hidden=false;
+    $('#subEcoOk').innerHTML='<div class="sub-ok"><h5>Project queued for review</h5><p>Your project was received. The RWA Foundation team will review it before it appears in the directory. Your contact email stays private.</p></div>';
+    button.hidden=true;toast('Project received','Queued for admin review.');
+  }catch(e){toast('Project not submitted',e.name==='TimeoutError'?'The request timed out. Keep the form open and retry.':e.message);}
+  finally{seSending=false;button.disabled=false;button.textContent='Submit';}
+}
+function pjValById(id){return ($('#'+id).value||'').trim();}
 function jbShowErrs(mid,msg){
   const f=document.querySelector('#'+mid+' .field.f-err');
-  if(f) f.scrollIntoView({behavior:'smooth',block:'center'});
-  toast('Almost there', msg||'Check the highlighted fields.');
-}
-function subOkPanel(mode, d){
-  $('#subEcoForm').hidden=true;
-  const rows=[['Name',d.name],['Blurb',d.blurb],['Type',d.type],['Region',d.region],['Website',d.url]].concat(d.email?[['Email',d.email]]:[])
-    .map(r=>'<div class="sub-copy-row"><span class="k">'+r[0]+'</span><span class="v">'+escHtml(r[1])+'</span><button onclick="jbCopyTxt(this,'+JSON.stringify(r[1]).replace(/"/g,'&quot;')+')">Copy</button></div>').join('');
-  const box=$('#subEcoOk'); box.hidden=false;
-  if(mode==='sent'){
-    box.innerHTML='<div class="sub-ok"><div class="ok-ic"><svg viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7"/></svg></div>'
-      +'<h5>Sent to the RWA Foundation intake</h5><p>Every submission is reviewed before it appears in the directory and on the map. The team may follow up by email.</p></div>';
-  } else {
-    box.innerHTML='<div class="sub-ok"><div class="ok-ic"><svg viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7"/></svg></div>'
-      +'<h5>One last step</h5><p>The official intake runs through the RWA Foundation form. It opens in a new tab, and your answers are below with one tap copy.</p>'
-      +'<a class="btn btn-orange" href="'+GF_FORM+'/viewform" target="_blank" rel="noopener">Open the intake form</a>'
-      +'<div class="sub-copy">'+rows+'</div></div>';
-  }
+  if(f)f.scrollIntoView({behavior:'smooth',block:'center'});
+  toast('Almost there',msg||'Check the highlighted fields.');
 }
 
 /* ---------- ecosystem local additions: merge at boot ---------- */
@@ -4420,7 +4409,7 @@ function subOkPanel(mode, d){
 
 /* ---------- admin console ---------- */
 const ADM_HASH='c544ce7c40eab55c481233a301356ecd1f7a7c5adce93d1aa4906f7886482ce9';
-const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions']];
+const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions'],['ecosystem','Ecosystem']];
 let admTabNow='logos';
 
 /* ---------- member logo manager: the console's only job ---------- */
@@ -4564,6 +4553,7 @@ async function admLogin(){
 function admLogout(){ try{ sessionStorage.removeItem('wally_adm_ok'); sessionStorage.removeItem('wally_adm_pw'); }catch(e){} renderAdmin(); }
 function renderAdmin(){
   const M=$('#admMount'); if(!M) return;
+  $('#admBody')?.__ecosystemAdminCleanup?.();admEcoCleanup?.();admEcoCleanup=null;
   if(!admOk()){
     M.innerHTML='<div class="adm-gate"><div class="adm-lock"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>'
       +'<h3>RWA Foundation console</h3><p>For the team. Enter the console password.</p>'
@@ -4577,9 +4567,22 @@ function renderAdmin(){
     +'<div class="adm-tools">'+(admTabNow==='logos'?'<button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button>':'')+'<button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
     +'<p class="adm-note">'+(admTabNow==='logos'
       ?'Member logos: reorder, upload or delete below. The foundation logo wall, homepage banner and RWAF Members news tags update together. Use the organization’s name for each logo so its stories can be matched. Check the save status below to confirm your changes are published for all visitors.'
-      :admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
+      :admTabNow==='ecosystem'?'Review directory submissions and edit sourced company dates. Approved changes update the directory and charts together. Earlier Google Form responses remain in the original form.':admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
     +'</p><div id="admBody"></div>';
-  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else admPaintNews();
+  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else if(admTabNow==='ecosystem') admPaintEcosystem(); else admPaintNews();
+}
+let admEcoCleanup=null,admEcoRequest=0;
+async function admPaintEcosystem(){
+  const body=$('#admBody'),request=++admEcoRequest;body.textContent='Loading ecosystem manager…';
+  try{
+    const {mountEcosystemAdmin}=await import('/assets/ecosystem-admin.js');
+    if(admTabNow!=='ecosystem'||!body.isConnected||request!==admEcoRequest)return;
+    const cleanup=await mountEcosystemAdmin(body,{getPassword:admPw,onPublished:async()=>{
+      await document.querySelector('#ecoMount')?.__ecosystem?.reload(true);
+    }});
+    if(admTabNow!=='ecosystem'||!body.isConnected||request!==admEcoRequest){if(typeof cleanup==='function')cleanup();return;}
+    admEcoCleanup=typeof cleanup==='function'?cleanup:null;
+  }catch(e){if(body.isConnected&&admTabNow==='ecosystem')body.textContent='The ecosystem manager could not load. Select Ecosystem to retry.';}
 }
 let admJobsRevision=null;
 async function admPaintJobs(){
