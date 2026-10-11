@@ -1,0 +1,58 @@
+[
+  {
+    "id": "quicknode-start-20261010",
+    "profileId": "quicknode",
+    "type": "launch",
+    "date": "2017",
+    "note": "Quicknode’s official history explicitly dates its blockchain infrastructure launch to 2017; no month or day is supplied.",
+    "checkedOn": "2026-10-10",
+    "sources": [
+      {
+        "url": "https://www.quicknode.com/about",
+        "title": "Quicknode — official launch history"
+      }
+    ]
+  },
+  {
+    "id": "arch-lending-start-20261010",
+    "profileId": "arch-lending",
+    "type": "founding",
+    "date": "2022-02",
+    "note": "The issuer-authored August 2024 announcement explicitly states that Arch Lending was founded in February 2022. Month precision is retained.",
+    "checkedOn": "2026-10-10",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/arch-lending-raises-75m-to-build-the-new-standard-of-crypto-lending-302227838.html",
+        "title": "Arch Lending — official financing announcement"
+      }
+    ]
+  },
+  {
+    "id": "fission-start-20261010",
+    "profileId": "fission",
+    "type": "launch",
+    "date": "2024-10-10",
+    "note": "Fission’s issuer-authored announcement explicitly states that its Ethereum closed testnet launched on 10 October 2024. This is a testnet milestone, not a mainnet launch or founding date.",
+    "checkedOn": "2026-10-10",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/fission-labs-announces-1-6m-pre-seed-raise-led-by-salt-fund-kraynos-capital-launches-closed-testnet-to-bring-vc-to-defi-302272215.html",
+        "title": "Fission Labs — closed-testnet launch"
+      }
+    ]
+  },
+  {
+    "id": "serotonin-start-20261010",
+    "profileId": "serotonin",
+    "type": "founding",
+    "date": "2020",
+    "note": "Serotonin’s official company profile gives 2020 as its founding year and describes its launch in that year. The research arm is not treated as a separate company.",
+    "checkedOn": "2026-10-10",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/company/serotoninco",
+        "title": "Serotonin — official company profile"
+      }
+    ]
+  }
+]

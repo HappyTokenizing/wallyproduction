@@ -42,7 +42,7 @@ function place(p,categories){
  }
 }
 const researched=[];
-for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json','lifecycle-additions-20261007.json','community-submissions-20261008.json','directory-additions-20261009.json']){
+for(const name of ['institutions.json','services.json','networks.json','requested-additions.json','community-additions-20261007.json','lifecycle-additions-20261007.json','community-submissions-20261008.json','directory-additions-20261009.json','directory-additions-20261010.json']){
  for(const entry of researchRead(name)){
   if(byId.has(entry.id)||profiles.some(p=>norm(p.name)===norm(entry.name)))throw Error('Duplicate research identity: '+entry.name);
   if(!entry.sources?.length||!entry.checkedOn||!entry.categories?.length)throw Error('Incomplete research: '+entry.name);
@@ -54,7 +54,7 @@ for(const name of ['institutions.json','services.json','networks.json','requeste
 // Explicit, dated corrections preserve upstream IDs, placements and favorites.
 const profileUpdates={...researchRead('profile-updates.json'),...researchRead('profile-updates-20261008.json')};
 // Submission metadata augments prior corrections instead of dropping earlier fields.
-for(const file of ['profile-submissions-20261008.json','profile-updates-20261009.json'])for(const [id,update] of Object.entries(researchRead(file))){
+for(const file of ['profile-submissions-20261008.json','profile-updates-20261009.json','profile-submissions-20261010.json'])for(const [id,update] of Object.entries(researchRead(file))){
  const prior=profileUpdates[id]||{};
  profileUpdates[id]={...prior,...update,aliases:[...new Set([...(prior.aliases||[]),...(update.aliases||[])])]};
 }
@@ -156,7 +156,7 @@ for(const [id,removal] of Object.entries(excludedProfiles)){
  for(const [legacyId,profileId] of Object.entries(crosswalk))if(profileId===id)delete crosswalk[legacyId];
 }
 // Lifecycle statistics never infer event dates from review or import timestamps.
-const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json'),...researchRead('statistics-events-research-20261008.json'),...researchRead('statistics-events-followup-20261008.json'),...researchRead('statistics-events-industry-entry.json'),...researchRead('statistics-events-owner-20261009.json'),...researchRead('statistics-events-additional-20261009.json')],statsIds=new Set(),statsTypes=new Set();
+const statsEvents=[...researchRead('statistics-events.json'),...researchRead('statistics-events-starts-20261008.json'),...researchRead('statistics-events-research-20261008.json'),...researchRead('statistics-events-followup-20261008.json'),...researchRead('statistics-events-industry-entry.json'),...researchRead('statistics-events-owner-20261009.json'),...researchRead('statistics-events-additional-20261009.json'),...researchRead('statistics-events-additional-20261010.json')],statsIds=new Set(),statsTypes=new Set();
 for(const event of statsEvents){
  const key=event.profileId+':'+event.type;
  if(!byId.has(event.profileId)||!event.id||statsIds.has(event.id)||statsTypes.has(key)||!['founding','launch','industry_entry','failure'].includes(event.type)||!dateBounds(event.date)||!event.note||!event.checkedOn||!event.sources?.length)throw Error('Invalid statistics event: '+event.id);
@@ -174,7 +174,7 @@ const publishedStats=statsEvents.filter(e=>!entryRequired.has(e.profileId)||!['f
 for(const e of publishedStats)if(e.type==='industry_entry'&&Number(e.date.slice(0,4))<2011)throw Error('Pre-2011 industry entry needs review: '+e.id);
 for(const e of exitEvents)if(e.completedDate&&!dateBounds(e.completedDate))throw Error('Invalid exit date: '+e.id);
 const report={sourceProfiles:source.profiles.length,sourcePlacements:Object.keys(source.bindings).length,mergedLegacy:merged.length,retainedLegacy:added.length,researchedProfiles:researched.length,excludedProfiles:Object.keys(excludedProfiles),updatedProfiles:Object.keys(profileUpdates),updatedLogos:Object.keys(logoOverrides).length,completedExits:exitEvents.length,totalProfiles:profiles.length,current:profiles.filter(p=>p.directoryStatus==='current').length,historical:profiles.filter(p=>p.directoryStatus==='historical').length,review:profiles.filter(p=>p.directoryStatus==='review').length,merged,added,researched,crosswalk};
-const output={snapshotDate:'2026-10-09',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents:publishedStats};
+const output={snapshotDate:'2026-10-10',upstreamSnapshotDate:'2026-10-04',source:'https://github.com/Bucktony/rwa-ecosystem-map',sourceRevision:'8669aa303764fa0736284e20e58eb0766eb66063',profiles,sections,crosswalk,statsEvents:publishedStats};
 fs.writeFileSync(new URL('../data/ecosystem-directory.json',import.meta.url),JSON.stringify(output));
 fs.writeFileSync(new URL('../data/ecosystem-import-report.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
 console.log({...report,merged:undefined,added:undefined,researched:undefined,crosswalk:undefined});

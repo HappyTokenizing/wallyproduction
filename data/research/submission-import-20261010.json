@@ -1,0 +1,90 @@
+{
+  "checkedOn": "2026-10-10",
+  "source": "RWAF project-submission Google Sheet, Form Responses 1; reviewed through worksheet row 54",
+  "priorImportedResponses": 42,
+  "totalResponses": 53,
+  "newResponses": 11,
+  "addedFromSubmissions": 9,
+  "mergedRepeats": 1,
+  "updatedExisting": 1,
+  "additionalOwnerRequested": [
+    "quicknode"
+  ],
+  "totalProfilesAfterImport": 1162,
+  "privacy": "Contact emails, raw responses and self-reported membership claims are not published. Member badges continue to use the current admin roster.",
+  "datePolicy": "Self-reported years are retained as submission metadata, not automatically added to verified charts. Four public-source start events are added.",
+  "reviewNotes": [
+    {
+      "profileId": "starcap",
+      "reason": "Submission token and blockchain differ from the current official website; retained under review without the conflicting product claims."
+    }
+  ],
+  "mapping": [
+    {
+      "row": 43,
+      "submittedName": "Fractionalised World",
+      "profileId": "fractionalised-world",
+      "action": "added"
+    },
+    {
+      "row": 44,
+      "submittedName": "RWA Space",
+      "profileId": "rwa-space",
+      "action": "added"
+    },
+    {
+      "row": 45,
+      "submittedName": "RWA Space",
+      "profileId": "rwa-space",
+      "action": "merged-repeat"
+    },
+    {
+      "row": 46,
+      "submittedName": "Arch Lending",
+      "profileId": "arch-lending",
+      "action": "added"
+    },
+    {
+      "row": 47,
+      "submittedName": "EQX",
+      "profileId": "eqx-labs",
+      "action": "added"
+    },
+    {
+      "row": 48,
+      "submittedName": "Sunrise",
+      "profileId": "sunrise",
+      "action": "added"
+    },
+    {
+      "row": 49,
+      "submittedName": "X Coin (XFER)",
+      "profileId": "x-coin-xfer",
+      "action": "added"
+    },
+    {
+      "row": 50,
+      "submittedName": "Fission",
+      "profileId": "fission",
+      "action": "added"
+    },
+    {
+      "row": 51,
+      "submittedName": "Serotonin",
+      "profileId": "serotonin",
+      "action": "added"
+    },
+    {
+      "row": 52,
+      "submittedName": "StarCap",
+      "profileId": "starcap",
+      "action": "added"
+    },
+    {
+      "row": 53,
+      "submittedName": "The Network Firm",
+      "profileId": "the-network-firm",
+      "action": "updated-existing"
+    }
+  ]
+}

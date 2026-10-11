@@ -1,0 +1,33 @@
+{
+  "the-network-firm": {
+    "checkedOn": "2026-10-10",
+    "sources": [
+      {
+        "url": "https://content.govdelivery.com/accounts/WYGOVSTC/bulletins/416f9d3",
+        "title": "Wyoming Stable Token Commission launches daily attestation dashboard with The Network Firm LLP"
+      },
+      {
+        "url": "https://www.thenetworkfirm.com/oracle-services-faq",
+        "title": "The Network Firm — LedgerLens Oracle Services FAQ"
+      },
+      {
+        "url": "https://www.thenetworkfirm.com/",
+        "title": "The Network Firm — official services and RWA issuer coverage"
+      }
+    ],
+    "region": "United States",
+    "description": "Digital-asset CPA firm providing audit, accounting, advisory and proof-of-reserves services for stablecoin and RWA issuers, with LedgerLens reserve-data infrastructure.",
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 53,
+      "reportedFoundingDate": "2023",
+      "dateEvidence": "Existing sourced January 2023 founding is preserved."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/The_NetworkFirm"
+      }
+    ]
+  }
+}

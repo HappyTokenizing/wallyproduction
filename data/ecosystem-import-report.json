@@ -3,7 +3,7 @@
   "sourcePlacements": 844,
   "mergedLegacy": 83,
   "retainedLegacy": 35,
-  "researchedProfiles": 290,
+  "researchedProfiles": 300,
   "excludedProfiles": [
     "novastro",
     "daylight-energy-by-anode-labs",
@@ -84,14 +84,15 @@
     "catena-digital-pty-ltd",
     "apraemio",
     "anzens-inc",
-    "redcarpethq"
+    "redcarpethq",
+    "the-network-firm"
   ],
   "updatedLogos": 687,
   "completedExits": 10,
-  "totalProfiles": 1152,
-  "current": 981,
+  "totalProfiles": 1162,
+  "current": 990,
   "historical": 141,
-  "review": 30,
+  "review": 31,
   "merged": [
     {
       "legacyId": "ondo",
@@ -753,7 +754,17 @@
     "engine-protocol",
     "strata-orderbook",
     "adcentral",
-    "tokenizethis"
+    "tokenizethis",
+    "quicknode",
+    "fractionalised-world",
+    "rwa-space",
+    "arch-lending",
+    "eqx-labs",
+    "sunrise",
+    "x-coin-xfer",
+    "fission",
+    "serotonin",
+    "starcap"
   ],
   "crosswalk": {
     "wally": "rwaf-wally",

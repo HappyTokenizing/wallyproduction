@@ -1,0 +1,565 @@
+[
+  {
+    "id": "quicknode",
+    "name": "Quicknode",
+    "kind": "Blockchain infrastructure",
+    "description": "Blockchain development infrastructure providing RPC endpoints, onchain data, streams and dedicated nodes for applications, including tokenization platforms and RWA networks.",
+    "website": "https://www.quicknode.com/",
+    "domain": "quicknode.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      }
+    ],
+    "aliases": [
+      "QuickNode",
+      "Quick Node"
+    ],
+    "region": "International",
+    "sources": [
+      {
+        "url": "https://www.quicknode.com/about",
+        "title": "Quicknode — official history"
+      },
+      {
+        "url": "https://www.quicknode.com/blog/race-and-quicknode-unite-for-rwa-tokenization",
+        "title": "Quicknode — RACE integration for RWA tokenization"
+      },
+      {
+        "url": "https://www.quicknode.com/brand",
+        "title": "Quicknode — current brand and press kit"
+      }
+    ],
+    "evidenceNote": "Official history confirms a 2017 launch. The RACE integration documents its role in RWA infrastructure. Uses the current Q mark and Quicknode spelling from the official brand kit.",
+    "logo": {
+      "src": "/ecosystem/quicknode-official-20261010.svg",
+      "background": "light",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://www.quicknode.com/brand-kit/quicknode-brand-kit.zip",
+      "sourcePage": "https://www.quicknode.com/brand",
+      "checkedOn": "2026-10-10",
+      "assetNote": "Unmodified black Q symbol from the official SVG mark kit."
+    }
+  },
+  {
+    "id": "fractionalised-world",
+    "name": "Fractionalised World",
+    "kind": "Real-world participation platform",
+    "description": "Digital Fusions platform connecting onchain participation with real-world businesses, products, services and experiences.",
+    "website": "https://fractionalised.world/",
+    "domain": "fractionalised.world",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "aliases": [
+      "Fractionalised.World",
+      "FractionalisedW"
+    ],
+    "region": "International",
+    "sources": [
+      {
+        "url": "https://fractionalised.world/",
+        "title": "Fractionalised World — official website"
+      }
+    ],
+    "evidenceNote": "Reviewed the project submission against its official website. Self-reported dates, partners and metrics are not treated as independently verified evidence.",
+    "logo": {
+      "src": "/ecosystem/fractionalised-world-official-20261010.png",
+      "background": "light",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://fractionalised.world/apple-touch-icon.png",
+      "sourcePage": "https://fractionalised.world/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 43,
+      "reportedFoundingDate": "2022",
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/fractionalisedW"
+      }
+    ]
+  },
+  {
+    "id": "rwa-space",
+    "name": "RWA Space",
+    "kind": "Market data provider",
+    "description": "Market-data terminal comparing tokenized stocks, funds, debt, stablecoins and metals, with issuer references, trading venues, price sources and observation timestamps.",
+    "website": "https://rwaspace.app/",
+    "domain": "rwaspace.app",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Data & analytics",
+        "name": "Data and research"
+      }
+    ],
+    "aliases": [
+      "rwaspace"
+    ],
+    "region": "International",
+    "sources": [
+      {
+        "url": "https://rwaspace.app/",
+        "title": "RWA Space — official website"
+      }
+    ],
+    "evidenceNote": "The two submissions share the same name and domain and are consolidated into one profile, using the latest description. Official pages describe issuer-level token prices and source methodology; no founding date is disclosed.",
+    "logo": {
+      "src": "/ecosystem/rwa-space-official-20261010.svg",
+      "background": "light",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://rwaspace.app/favicon.svg?v=9",
+      "sourcePage": "https://rwaspace.app/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 45,
+      "reportedFoundingDate": null,
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics.",
+      "supersedesRows": [
+        44
+      ]
+    }
+  },
+  {
+    "id": "arch-lending",
+    "name": "Arch Lending",
+    "kind": "Asset-backed lending platform",
+    "description": "Lending platform providing USD and USDC loans against digital-asset collateral, including tokenized gold such as PAXG and XAUT.",
+    "website": "https://archlending.com/",
+    "domain": "archlending.com",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Lending",
+        "name": "Lending"
+      }
+    ],
+    "aliases": [
+      "ArchLending"
+    ],
+    "region": "United States",
+    "sources": [
+      {
+        "url": "https://archlending.com/",
+        "title": "Arch Lending — official platform"
+      },
+      {
+        "url": "https://archlending.com/paxg-backed-loan/",
+        "title": "Arch Lending — Paxos Gold-backed loans"
+      },
+      {
+        "url": "https://archlending.com/xaut-backed-loan/",
+        "title": "Arch Lending — Tether Gold-backed loans"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/arch-lending-raises-75m-to-build-the-new-standard-of-crypto-lending-302227838.html",
+        "title": "Arch Lending — issuer announcement confirming February 2022 founding"
+      }
+    ],
+    "evidenceNote": "Distinct from Arch Network and Archax. Official product pages confirm tokenized-gold lending; its issuer-authored financing announcement states a February 2022 founding.",
+    "logo": {
+      "src": "/ecosystem/arch-lending-official-20261010.svg",
+      "background": "light",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://archlending.com/favicon.svg",
+      "sourcePage": "https://archlending.com/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 46,
+      "reportedFoundingDate": "2022",
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/ArchLending"
+      }
+    ]
+  },
+  {
+    "id": "eqx-labs",
+    "name": "EQX",
+    "kind": "Tokenized equity issuer",
+    "description": "Developing tokenized US equities on Hyperliquid. Its public site invites early-access registrations for an equity platform.",
+    "website": "https://www.eqxlabs.io/",
+    "domain": "eqxlabs.io",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "aliases": [
+      "EQX Labs"
+    ],
+    "region": "International",
+    "sources": [
+      {
+        "url": "https://www.eqxlabs.io/",
+        "title": "EQX — official website"
+      }
+    ],
+    "evidenceNote": "Reviewed the project submission against its official website. Self-reported dates, partners and metrics are not treated as independently verified evidence.",
+    "logo": {
+      "src": "/ecosystem/eqx-labs-official-20261010.png",
+      "background": "dark",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://www.eqxlabs.io/brand/eqx-180.png",
+      "sourcePage": "https://www.eqxlabs.io/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 47,
+      "reportedFoundingDate": "2026",
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/eqxlabs"
+      }
+    ],
+    "statusNote": "Early-access / pre-launch offering; this listing does not imply that trading is live."
+  },
+  {
+    "id": "sunrise",
+    "name": "Sunrise",
+    "kind": "Asset listing platform",
+    "description": "Solana-native asset gateway listing tokens, stocks and other assets with liquidity across wallets, decentralized exchanges and DeFi applications.",
+    "website": "https://sunrise.xyz/",
+    "domain": "sunrise.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      },
+      {
+        "section": "Trading and liquidity",
+        "name": "Token launchpads"
+      }
+    ],
+    "aliases": [
+      "Sunrise Asset Gateway"
+    ],
+    "region": "International",
+    "sources": [
+      {
+        "url": "https://sunrise.xyz/",
+        "title": "Sunrise — official website"
+      }
+    ],
+    "evidenceNote": "Reviewed the project submission against its official website. Self-reported dates, partners and metrics are not treated as independently verified evidence.",
+    "logo": {
+      "src": "/ecosystem/sunrise-official-20261010.svg",
+      "background": "light",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://sunrise.xyz/icon.svg?icon.3uwj9mr_y_nek.svg",
+      "sourcePage": "https://sunrise.xyz/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 48,
+      "reportedFoundingDate": "2025",
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/sunrise"
+      }
+    ],
+    "newsRules": [
+      {
+        "aliases": [
+          "Sunrise"
+        ],
+        "context": [
+          "tokenized",
+          "tokenization",
+          "RWA",
+          "Solana",
+          "DeFi",
+          "blockchain"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "x-coin-xfer",
+    "name": "X Coin (XFER)",
+    "kind": "Blockchain and asset issuance platform",
+    "description": "XFER blockchain and launch platform for creating and transferring named assets, NFTs and tokens, with optional creator identity linked to an X account.",
+    "website": "https://xferchain.net/",
+    "domain": "xferchain.net",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Blockchains",
+        "name": "Blockchains"
+      },
+      {
+        "section": "Tokenization",
+        "name": "Tokenization Platforms"
+      }
+    ],
+    "aliases": [
+      "XFERCHAIN",
+      "Xferchain",
+      "X Coin"
+    ],
+    "region": "United States",
+    "sources": [
+      {
+        "url": "https://xferchain.net/",
+        "title": "X Coin (XFER) — official website"
+      }
+    ],
+    "evidenceNote": "Official website identifies X Coin as a Ravencoin-descended UTXO chain. The site explicitly states that recording a token does not itself convey legal ownership of a physical asset and that the project is not affiliated with X Corp.",
+    "logo": {
+      "src": "/ecosystem/x-coin-xfer-official-20261010.png",
+      "background": "dark",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://xferchain.net/x-mark.png",
+      "sourcePage": "https://xferchain.net/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 49,
+      "reportedFoundingDate": "2026",
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/XCoinTokenize"
+      }
+    ]
+  },
+  {
+    "id": "fission",
+    "name": "Fission",
+    "kind": "Tokenized fund liquidity infrastructure",
+    "description": "Liquidity and settlement infrastructure for tokenized funds, providing an alternative to waiting for underlying fund redemption cycles.",
+    "website": "https://fission.xyz/",
+    "domain": "fission.xyz",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Services and infrastructure",
+        "name": "Tokenization infrastructure"
+      },
+      {
+        "section": "Trading and liquidity",
+        "name": "Market making"
+      }
+    ],
+    "aliases": [
+      "Fission Labs",
+      "FissionXYZ"
+    ],
+    "region": "United States",
+    "sources": [
+      {
+        "url": "https://fission.xyz/",
+        "title": "Fission — official platform"
+      },
+      {
+        "url": "https://www.linkedin.com/company/fissionxyz",
+        "title": "Fission — official company profile and fund-liquidity updates"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/fission-labs-announces-1-6m-pre-seed-raise-led-by-salt-fund-kraynos-capital-launches-closed-testnet-to-bring-vc-to-defi-302272215.html",
+        "title": "Fission Labs — 10 October 2024 closed-testnet launch announcement"
+      }
+    ],
+    "evidenceNote": "The official site and company updates confirm tokenized-fund liquidity infrastructure. The dated issuer announcement establishes the closed-testnet launch, not a mainnet launch or corporate founding. Distinct from fission.codes and unrelated software businesses.",
+    "logo": {
+      "src": "/ecosystem/fission-official-20261010.png",
+      "background": "light",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://fission.xyz/apple-touch-icon.png",
+      "sourcePage": "https://fission.xyz/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 50,
+      "reportedFoundingDate": "2024",
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/fissionxyz"
+      }
+    ],
+    "newsRules": [
+      {
+        "aliases": [
+          "Fission"
+        ],
+        "context": [
+          "tokenized",
+          "tokenization",
+          "RWA",
+          "Solana",
+          "DeFi",
+          "blockchain"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serotonin",
+    "name": "Serotonin",
+    "kind": "Research and market services",
+    "description": "Go-to-market and research firm covering blockchain and emerging technologies; Serotonin Research publishes analysis of onchain financial products and tokenized assets.",
+    "website": "https://serotonin.co/",
+    "domain": "serotonin.co",
+    "directoryStatus": "current",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Data & analytics",
+        "name": "Data and research"
+      }
+    ],
+    "aliases": [
+      "Serotonin Research",
+      "Serotonin HQ"
+    ],
+    "region": "United States",
+    "sources": [
+      {
+        "url": "https://serotonin.co/research",
+        "title": "Serotonin — research platform"
+      },
+      {
+        "url": "https://www.linkedin.com/company/serotoninco",
+        "title": "Serotonin — official company profile and 2020 founding"
+      }
+    ],
+    "evidenceNote": "The submitted research arm is represented under its parent company instead of counted as a second firm. Its own company profile confirms research services and a 2020 launch; distinct from the UK agency at serotonin.co.uk.",
+    "logo": {
+      "src": "/ecosystem/serotonin-official-20261010.ico",
+      "background": "light",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://serotonin.co/favicon.ico",
+      "sourcePage": "https://serotonin.co/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 51,
+      "reportedFoundingDate": null,
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/serotonin_hq"
+      }
+    ],
+    "newsRules": [
+      {
+        "aliases": [
+          "Serotonin"
+        ],
+        "context": [
+          "tokenized",
+          "tokenization",
+          "RWA",
+          "Solana",
+          "DeFi",
+          "blockchain"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "starcap",
+    "name": "StarCap",
+    "kind": "Space asset investment platform",
+    "description": "Developing tokenized investment exposure to private companies in the space economy, including equity and credit opportunities.",
+    "website": "https://starcap.xyz/",
+    "domain": "starcap.xyz",
+    "directoryStatus": "review",
+    "checkedOn": "2026-10-10",
+    "categories": [
+      {
+        "section": "Tokenization",
+        "name": "Tokenized Asset Issuers"
+      }
+    ],
+    "aliases": [
+      "Starcap"
+    ],
+    "region": "International",
+    "sources": [
+      {
+        "url": "https://starcap.xyz/",
+        "title": "StarCap — official website"
+      }
+    ],
+    "evidenceNote": "Official website describes tokenized private-space investment exposure. The submitted token/network details conflict with the current site, so those claims are not copied into the profile. The membership claim is not applied to the admin roster.",
+    "logo": {
+      "src": "/ecosystem/starcap-official-20261010.png",
+      "background": "dark",
+      "shape": "symbol",
+      "treatment": "original",
+      "sourceUrl": "https://starcap.xyz/assets/brand/favicon.png",
+      "sourcePage": "https://starcap.xyz/",
+      "checkedOn": "2026-10-10"
+    },
+    "directorySubmission": {
+      "batch": "2026-10-10",
+      "row": 52,
+      "reportedFoundingDate": "2026",
+      "dateEvidence": "Self-reported date retained separately; only corroborated public-source events appear in statistics."
+    },
+    "socialLinks": [
+      {
+        "label": "X",
+        "url": "https://x.com/Starcap_xyz"
+      }
+    ],
+    "statusNote": "Needs clarification: the submission names RKST and Robinhood Chain, while the current website describes SPACE on Solana. Product and network details remain under review."
+  }
+]

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
+  <title id="title">RWA Space — космическая спираль</title>
+  <desc id="description">Две световые дуги образуют абстрактную орбиту вокруг яркого ядра.</desc>
+  <defs>
+    <linearGradient id="arc" x1="12" y1="50" x2="54" y2="15" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4668F5"/>
+      <stop offset="0.55" stop-color="#6C88FF"/>
+      <stop offset="1" stop-color="#7DE4FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#101827"/>
+  <path d="M48 18.7A21 21 0 0 0 14 33" fill="none" stroke="#F9FBFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M16 45.3A21 21 0 0 0 50 31" fill="none" stroke="url(#arc)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M21.8 37.4A12.5 12.5 0 0 1 41.8 24.5" fill="none" stroke="url(#arc)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M42.2 26.6A12.5 12.5 0 0 1 22.2 39.5" fill="none" stroke="#F9FBFF" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="3.6" fill="#F9FBFF"/>
+</svg>
