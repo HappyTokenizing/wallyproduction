@@ -14,6 +14,14 @@ Old browser-only uploads can be recovered using **Restore browser copy** in the 
 
 Uploads are decoded to PNG, cropped to visible artwork (transparent or plain white margins), and resized proportionally to at most 400 × 64 pixels. The wall displays images at up to 200 × 32 pixels; the marquee uses up to 175 × 28 pixels. Original proportions are preserved.
 
+### Logo sourcing policy
+
+For new logos and logo refreshes, prioritize the project's current **official X profile**, followed by its other official social profiles. Check that the account belongs to the project using its official website or other corroborating official links. Prefer the highest-resolution available profile artwork. This is the user's standing preference, recorded on October 11, 2026.
+
+Use an official brand kit or website logo when suitable social-profile artwork is unavailable. **Favicons are a last resort**, used only when a better official logo cannot be obtained. Do not automatically replace an existing logo with a favicon during an import or refresh. Record any fallback and its quality limitations in the research metadata.
+
+Keep original colors and proportions, fit the artwork cleanly into the existing logo tiles, and choose a contrasting background without recoloring the logo. Bundle the selected asset locally and record its source image URL, official profile/source page, and review date. When replacing directory artwork, retain the previous file and its provenance in `logoHistory`; review dates are not evidence of a rebrand date. A sourcing preference does not trigger an automatic bulk replacement of existing logos.
+
 ## Staging
 
 Staging uses the same tracked source tree as production and a separate Blob store. `SITE_PUBLIC_API_ORIGIN=https://www.rwaf.xyz` mirrors production's public news/stat GET responses without copying hidden API credentials. It never proxies logo writes. Newsletter environment settings remain independently configured in each Vercel project. The older job/news moderation APIs still use their existing Supabase configuration; the member logo manager no longer depends on it.
