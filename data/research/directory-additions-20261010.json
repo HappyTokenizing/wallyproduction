@@ -477,13 +477,14 @@
     ],
     "evidenceNote": "The submitted research arm is represented under its parent company instead of counted as a second firm. Its own company profile confirms research services and a 2020 launch; distinct from the UK agency at serotonin.co.uk.",
     "logo": {
-      "src": "/ecosystem/serotonin-official-20261010.ico",
-      "background": "light",
+      "src": "/ecosystem/serotonin-x-20261011.jpg",
+      "background": "dark",
       "shape": "symbol",
       "treatment": "original",
-      "sourceUrl": "https://serotonin.co/favicon.ico",
-      "sourcePage": "https://serotonin.co/",
-      "checkedOn": "2026-10-10"
+      "sourceUrl": "https://pbs.twimg.com/profile_images/1708963179290865664/trJnBZvU_400x400.jpg",
+      "sourcePage": "https://x.com/serotonin_hq/photo",
+      "sourceTitle": "Serotonin official X profile image",
+      "checkedOn": "2026-10-11"
     },
     "directorySubmission": {
       "batch": "2026-10-10",
@@ -510,6 +511,19 @@
           "DeFi",
           "blockchain"
         ]
+      }
+    ],
+    "logoHistory": [
+      {
+        "src": "/ecosystem/serotonin-official-20261010.ico",
+        "background": "light",
+        "shape": "symbol",
+        "treatment": "original",
+        "sourceUrl": "https://serotonin.co/favicon.ico",
+        "sourcePage": "https://serotonin.co/",
+        "checkedOn": "2026-10-10",
+        "archivedOn": "2026-10-11",
+        "versionLabel": "Earlier directory favicon"
       }
     ]
   },
