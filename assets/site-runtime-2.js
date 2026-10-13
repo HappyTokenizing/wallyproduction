@@ -1289,7 +1289,7 @@ function showPage(p, anchor, fromRoute){
   else scrollTo(0,0);
   window.__page = p;
   if(['home','foundation','jobs','eco'].includes(p) && window.refreshMembers) refreshMembers();
-  document.title = PAGE_TITLES[p] || PAGE_TITLES.home;
+  document.title = document.body.dataset.title || PAGE_TITLES[p] || PAGE_TITLES.home;
   dispatchEvent(new Event('rwaf:pageview'));
 }
 function nav(anchor){ const pages={'#primer':'learn','#wallynft':'wallynft','#news':'newsletter'}; showPage(pages[anchor]||'home',pages[anchor]?null:anchor); }

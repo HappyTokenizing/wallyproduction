@@ -52,7 +52,7 @@ let css=0,js=0;
 template=template.replace(/<style>([\s\S]*?)<\/style>/g,(_,content)=>{const f=`assets/site-layout-${++css}.css`;write(f,content.trim()+'\n');return `<link rel="stylesheet" href="/${f}">`;});
 template=template.replace(/<script>([\s\S]*?)<\/script>/g,(_,content)=>{const f=`assets/site-runtime-${++js}.js`;write(f,content.trim()+'\n');return `<script src="/${f}"></script>`;});
 for(const page of pages.filter(p=>mains.has(p.id))){
- let html=template.replace(/<main id="page-([\w-]+)"[^>]*>[\s\S]*?<\/main>/g,(text,id)=>id===page.id?text.replace(' hidden',''):'');
+ let html=template.replace(/<main id="page-([\w-]+)"[^>]*>[\s\S]*?<\/main>/g,(text,id)=>id===page.id?text.replace(/^<main\b[^>]*>/,tag=>tag.replace(/\shidden\b/,'')):'');
  html=html.replace('<body>',`<body data-page="${page.id}">`);
  html=metadata(html,page);
  // Set display modes before first paint (the JS boot uses the same flags).

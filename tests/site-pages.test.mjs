@@ -13,11 +13,12 @@ test('every public route has a standalone page, unique static metadata and the c
   assert.equal((html.match(/<meta name="description"/g)||[]).length,1,p.path);
   assert.ok(html.includes(`href="${origin+p.path}"`),p.path);
   assert.ok(!titles.has(p.title));titles.add(p.title);assert.ok(!descriptions.has(p.description));descriptions.add(p.description);
-  if(html.includes('data-page=')){assert.equal((html.match(/<main\b/g)||[]).length,1,p.path);assert.match(html,new RegExp(`<main id="page-${p.id}">`));}
+  if(html.includes('data-page=')){assert.equal((html.match(/<main\b/g)||[]).length,1,p.path);assert.match(html,new RegExp(`<main id="page-${p.id}"[^>]*>`));}
   for(const icon of ['/favicon.png','/favicon.ico','/apple-touch-icon.png'])assert.ok(html.includes(`href="${icon}"`),p.path);
   assert.doesNotMatch(html,/href="\/#\//,p.path);
  }
- assert.doesNotMatch(read('index.html'),/id="(?:primer|wallynft|newsEmail|page-news|page-jobs)"/);
+ assert.doesNotMatch(read('index.html'),/id="(?:primer|wallynft|page-news|page-jobs)"/);
+ assert.match(read('index.html'),/<div class="nf-success" id="newsDone" hidden>/);
 });
 test('menu omits Home while the visible brand is a home link',()=>{
  for(const file of ['index.html','research/index.html','guide/index.html']){

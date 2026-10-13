@@ -1053,6 +1053,61 @@ input.err,.nf-row.err{animation:shake .4s}
 }
 @media (prefers-reduced-motion:reduce){ .lm-track{animation:none} }
 
+/* ── HOMEPAGE OPTION 3 (combined) · templates/home-variants/3.html ── */
+.home-plus .hp-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.home-plus .btn:hover .hp-down{transform:translateY(3px)}
+.home-plus #start-here{scroll-margin-top:72px}
+.home-plus .hp-hub{padding:34px 0 8px}
+.hp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.hp-card{position:relative;display:flex;flex-direction:column;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);padding:20px 20px 22px;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.hp-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);border-color:rgba(255,98,0,.55)}
+.hp-ico{width:38px;height:38px;flex:none;border-radius:11px;display:flex;align-items:center;justify-content:center;background:var(--orange-soft);border:1px solid rgba(255,98,0,.35)}
+.hp-ico svg{width:18px;height:18px;stroke:var(--orange2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hp-txt{display:block;min-width:0}
+.hp-meta{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange2)}
+.hp-card h3{font-family:var(--display);font-weight:780;font-stretch:113%;font-size:19px;letter-spacing:-.01em;text-transform:uppercase;margin-top:7px}
+.hp-card p{margin-top:7px;font-size:13.5px;line-height:1.6;color:var(--text2)}
+.hp-go{position:absolute;top:22px;right:20px;color:var(--orange);font-size:18px;line-height:1;transition:transform .18s var(--ease)}
+.hp-card:hover .hp-go{transform:translateX(3px)}
+.home-plus .sec-head .side{max-width:36ch}
+.home-plus .hp-book{margin-top:14px}
+.home-plus .hp-learn{padding-top:46px}
+.home-plus .news{padding-top:24px}
+.home-plus .news-card{padding:56px 64px}
+.home-plus .hp-community{padding-top:12px}
+.hp-duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hp-panel{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px 30px 28px}
+.hp-panel.hp-nft{border-color:rgba(255,98,0,.45);background:linear-gradient(180deg,#FFF6EF,var(--card))}
+.hp-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange2)}
+.hp-panel h3{font-family:var(--display);font-weight:800;font-stretch:114%;font-size:clamp(22px,2.3vw,28px);line-height:1.05;letter-spacing:-.015em;text-transform:uppercase;margin-top:12px;max-width:22ch}
+.hp-panel p{flex:1;margin-top:12px;font-size:14.5px;line-height:1.7;color:var(--text2)}
+.hp-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:22px}
+.hp-link{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--orange2)}
+.hp-link .arr{transition:transform .18s var(--ease)}
+.hp-link:hover .arr{transform:translateX(3px)}
+@media (max-width:1080px){ .hp-grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:760px){
+  .home-plus .hp-cta .btn{flex:1 1 100%}
+  .home-plus .statgrid{grid-template-columns:1fr 1fr;gap:10px}
+  .home-plus .stat{padding:16px 14px}
+  .home-plus .stat .s-n{font-size:27px}
+  .home-plus .stat.herd{order:1}
+  .home-plus .hp-handle{display:none}
+  .home-plus .hp-hub{padding-top:26px}
+  .hp-grid{gap:10px}
+  .hp-card{gap:12px;padding:15px 14px 16px}
+  .hp-go{top:18px;right:14px}
+  .hp-card h3{font-size:17px;margin-top:5px}
+  .hp-card p{display:none}
+  .home-plus .wbar{flex-wrap:wrap;row-gap:12px}
+  .home-plus .wbar>span:nth-child(2){flex:1 1 calc(100% - 60px)}
+  .home-plus .wbar .x{margin-left:53px}
+  .home-plus .news-card{padding:42px 26px}
+  .hp-duo{grid-template-columns:1fr}
+  .hp-panel{padding:24px 22px}
+}
+@media (prefers-reduced-motion:reduce){ .hp-card:hover{transform:none} }
+
 /* ============================================================
    MEDIA KIT / BRAND KIT  ·  Poppins brand system
 ============================================================ */

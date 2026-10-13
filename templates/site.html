@@ -1077,6 +1077,61 @@ input.err,.nf-row.err{animation:shake .4s}
 }
 @media (prefers-reduced-motion:reduce){ .lm-track{animation:none} }
 
+/* ── HOMEPAGE OPTION 3 (combined) · templates/home-variants/3.html ── */
+.home-plus .hp-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.home-plus .btn:hover .hp-down{transform:translateY(3px)}
+.home-plus #start-here{scroll-margin-top:72px}
+.home-plus .hp-hub{padding:34px 0 8px}
+.hp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.hp-card{position:relative;display:flex;flex-direction:column;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);padding:20px 20px 22px;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.hp-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);border-color:rgba(255,98,0,.55)}
+.hp-ico{width:38px;height:38px;flex:none;border-radius:11px;display:flex;align-items:center;justify-content:center;background:var(--orange-soft);border:1px solid rgba(255,98,0,.35)}
+.hp-ico svg{width:18px;height:18px;stroke:var(--orange2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hp-txt{display:block;min-width:0}
+.hp-meta{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange2)}
+.hp-card h3{font-family:var(--display);font-weight:780;font-stretch:113%;font-size:19px;letter-spacing:-.01em;text-transform:uppercase;margin-top:7px}
+.hp-card p{margin-top:7px;font-size:13.5px;line-height:1.6;color:var(--text2)}
+.hp-go{position:absolute;top:22px;right:20px;color:var(--orange);font-size:18px;line-height:1;transition:transform .18s var(--ease)}
+.hp-card:hover .hp-go{transform:translateX(3px)}
+.home-plus .sec-head .side{max-width:36ch}
+.home-plus .hp-book{margin-top:14px}
+.home-plus .hp-learn{padding-top:46px}
+.home-plus .news{padding-top:24px}
+.home-plus .news-card{padding:56px 64px}
+.home-plus .hp-community{padding-top:12px}
+.hp-duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hp-panel{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px 30px 28px}
+.hp-panel.hp-nft{border-color:rgba(255,98,0,.45);background:linear-gradient(180deg,#FFF6EF,var(--card))}
+.hp-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange2)}
+.hp-panel h3{font-family:var(--display);font-weight:800;font-stretch:114%;font-size:clamp(22px,2.3vw,28px);line-height:1.05;letter-spacing:-.015em;text-transform:uppercase;margin-top:12px;max-width:22ch}
+.hp-panel p{flex:1;margin-top:12px;font-size:14.5px;line-height:1.7;color:var(--text2)}
+.hp-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:22px}
+.hp-link{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--orange2)}
+.hp-link .arr{transition:transform .18s var(--ease)}
+.hp-link:hover .arr{transform:translateX(3px)}
+@media (max-width:1080px){ .hp-grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:760px){
+  .home-plus .hp-cta .btn{flex:1 1 100%}
+  .home-plus .statgrid{grid-template-columns:1fr 1fr;gap:10px}
+  .home-plus .stat{padding:16px 14px}
+  .home-plus .stat .s-n{font-size:27px}
+  .home-plus .stat.herd{order:1}
+  .home-plus .hp-handle{display:none}
+  .home-plus .hp-hub{padding-top:26px}
+  .hp-grid{gap:10px}
+  .hp-card{gap:12px;padding:15px 14px 16px}
+  .hp-go{top:18px;right:14px}
+  .hp-card h3{font-size:17px;margin-top:5px}
+  .hp-card p{display:none}
+  .home-plus .wbar{flex-wrap:wrap;row-gap:12px}
+  .home-plus .wbar>span:nth-child(2){flex:1 1 calc(100% - 60px)}
+  .home-plus .wbar .x{margin-left:53px}
+  .home-plus .news-card{padding:42px 26px}
+  .hp-duo{grid-template-columns:1fr}
+  .hp-panel{padding:24px 22px}
+}
+@media (prefers-reduced-motion:reduce){ .hp-card:hover{transform:none} }
+
 /* ============================================================
    MEDIA KIT / BRAND KIT  ·  Poppins brand system
 ============================================================ */
@@ -1701,57 +1756,207 @@ html{ scrollbar-color:var(--line2) transparent }
   </div>
 
   <!-- ================= PAGE: HOME ================= -->
-  <main id="page-home">
+  <main id="page-home" class="home-plus">
 
-    <!-- FEATURED MEMBER LOGO MARQUEE (first thing on the page, above the slogan) -->
-    <section class="logomarq" aria-label="Featured member companies">
-      <div class="lm-track" id="logoMarqTrack"></div>
-    </section>
+  <!-- FEATURED MEMBER LOGO MARQUEE (first thing on the page, above the slogan) -->
+  <section class="logomarq" aria-label="Featured member companies">
+    <div class="lm-track" id="logoMarqTrack"></div>
+  </section>
 
-    <!-- HERO -->
-    <header class="hero" id="top">
-      <div class="wrap">
-        <h1><span class="rv in">The world has a right</span><br><span class="rv in d1">to <span class="org">financial services.</span></span></h1>
-        <p class="hero-sub rv in d2">Most of the planet still banks on closed rails, or not at all. <b>Tokenization</b> changes that: dollars, yield, credit and markets, open to anyone with a wallet. WALLY is your guide to this sector called <b><span class="hl">R</span>eal <span class="hl">W</span>orld <span class="hl">A</span>ssets</b>.</p>
+  <!-- HERO: the mission, then the two most common next steps -->
+  <header class="hero" id="top">
+    <div class="wrap">
+      <h1><span class="rv in">The world has a right</span><br><span class="rv in d1">to <span class="org">financial services.</span></span></h1>
+      <p class="hero-sub rv in d2">Most of the planet still banks on closed rails, or not at all. <b>Tokenization</b> changes that: dollars, yield, credit and markets, open to anyone with a wallet. WALLY is your guide to this sector called <b><span class="hl">R</span>eal <span class="hl">W</span>orld <span class="hl">A</span>ssets</b>.</p>
+      <div class="hp-cta rv in d3">
+        <a class="btn btn-orange btn-lg" href="#start-here">Learn RWAs in 5 minutes <span class="arr hp-down" aria-hidden="true">↓</span></a>
+        <a class="btn btn-ghost btn-lg" href="/ecosystem/">Explore 1,000+ RWA companies <span class="arr" aria-hidden="true">→</span></a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- 5 KEY STATS -->
-    <section class="stats" id="stats">
-      <div class="wrap">
-        <div class="stats-head rv">
-          <h2>The RWA economy, right now</h2>
+  <!-- KEY STATS (values are pre-rendered; /api/stats refreshes them) -->
+  <section class="stats" id="stats">
+    <div class="wrap">
+      <div class="stats-head rv">
+        <h2>The RWA economy, right now</h2>
+      </div>
+      <div class="statgrid">
+        <div class="stat rv">
+          <span class="s-src"><span class="s-asof" data-stat-asof="stable">As of Aug '26</span> · <a href="https://tokenterminal.com/explorer/tokenized-assets" target="_blank" rel="noopener">Token Terminal</a></span>
+          <div class="s-n"><span id="stStable" data-count="298.7" data-prefix="$">$298.7</span><em>B</em></div>
+          <div class="s-l">Stablecoin market cap</div>
         </div>
-        <div class="statgrid">
-          <div class="stat rv">
-            <span class="s-src"><span class="s-asof" data-stat-asof="stable">As of Aug '26</span> · <a href="https://tokenterminal.com/explorer/tokenized-assets" target="_blank" rel="noopener">Token Terminal</a></span>
-            <div class="s-n"><span id="stStable" data-count="298.7" data-prefix="$">$298.7</span><em>B</em></div>
-            <div class="s-l">Stablecoin market cap</div>
-          </div>
-          <div class="stat rv d1">
-            <span class="s-src"><span class="s-asof" data-stat-asof="rwaMcap">As of Aug '26</span> · <a href="https://app.rwa.xyz/" target="_blank" rel="noopener">RWA.xyz</a></span>
-            <div class="s-n"><span id="stMcap" data-count="38.6" data-prefix="$">$38.6</span><em>B</em></div>
-            <div class="s-l">RWA market cap</div>
-            <div class="s-chg" id="stMcapChg"><span class="up">▲ 2.0% <em>30D</em></span></div>
-          </div>
-          <div class="stat herd rv d2">
-            <span class="s-src live-dot" id="herdSrc" title="Follower count from the X API, refreshed twice a day">SYNCED FROM X</span>
-            <div class="s-n"><span id="herdLive" data-count="23430" data-int="1">23,430</span></div>
-            <div class="s-l">Members of the Herd</div>
-            <div class="s-grow" id="herdGrow">@RWAFOUNDATION_ · FOLLOWERS</div>
-            <a class="btn btn-orange btn-sm s-follow" href="https://x.com/RWAFoundation_" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4 4l7.2 9.3L4.4 20h2.6l5.4-5.4L16.8 20H20l-7.5-9.7L18.9 4h-2.6l-4.8 4.9L7.2 4z"/></svg>Follow @RWAFoundation_</a>
-          </div>
-          <div class="stat rv d3">
-            <span class="s-src"><span class="s-asof" data-stat-asof="rwaTvl">As of Aug '26</span> · <a href="https://defillama.com/protocols/RWA" target="_blank" rel="noopener">DefiLlama</a></span>
-            <div class="s-n"><span id="stTvl" data-count="27.6" data-prefix="$">$27.6</span><em>B</em></div>
-            <div class="s-l">TVL in RWA protocols</div>
-            <div class="s-chg" id="stTvlChg"><span class="up">▲ 1.0% <em>7D</em></span><i></i><span class="up">▲ 8.3% <em>30D</em></span></div>
+        <div class="stat rv d1">
+          <span class="s-src"><span class="s-asof" data-stat-asof="rwaMcap">As of Aug '26</span> · <a href="https://app.rwa.xyz/" target="_blank" rel="noopener">RWA.xyz</a></span>
+          <div class="s-n"><span id="stMcap" data-count="38.6" data-prefix="$">$38.6</span><em>B</em></div>
+          <div class="s-l">RWA market cap</div>
+          <div class="s-chg" id="stMcapChg"><span class="up">▲ 2.0% <em>30D</em></span></div>
+        </div>
+        <div class="stat herd rv d2">
+          <span class="s-src live-dot" id="herdSrc" title="Follower count from the X API, refreshed twice a day">SYNCED FROM X</span>
+          <div class="s-n"><span id="herdLive" data-count="23430" data-int="1">23,430</span></div>
+          <div class="s-l">Members of the Herd</div>
+          <div class="s-grow" id="herdGrow">@RWAFOUNDATION_ · FOLLOWERS</div>
+          <a class="btn btn-orange btn-sm s-follow" href="https://x.com/RWAFoundation_" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4 4l7.2 9.3L4.4 20h2.6l5.4-5.4L16.8 20H20l-7.5-9.7L18.9 4h-2.6l-4.8 4.9L7.2 4z"/></svg>Follow<span class="hp-handle"> @RWAFoundation_</span></a>
+        </div>
+        <div class="stat rv d3">
+          <span class="s-src"><span class="s-asof" data-stat-asof="rwaTvl">As of Aug '26</span> · <a href="https://defillama.com/protocols/RWA" target="_blank" rel="noopener">DefiLlama</a></span>
+          <div class="s-n"><span id="stTvl" data-count="27.6" data-prefix="$">$27.6</span><em>B</em></div>
+          <div class="s-l">TVL in RWA protocols</div>
+          <div class="s-chg" id="stTvlChg"><span class="up">▲ 1.0% <em>7D</em></span><i></i><span class="up">▲ 8.3% <em>30D</em></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLLOW THE MARKET: the four live sections, one tap away -->
+  <section class="hp-hub" aria-labelledby="hp-hub-title">
+    <div class="wrap">
+      <div class="stats-head rv">
+        <h2 id="hp-hub-title">Follow the market</h2>
+      </div>
+      <div class="hp-grid">
+        <a class="hp-card rv" href="/news/">
+          <span class="hp-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/></svg></span>
+          <span class="hp-txt">
+            <span class="hp-meta">Live feed</span>
+            <h3>News</h3>
+            <p>Tokenization headlines as they break, with member stories tagged and a searchable archive.</p>
+          </span>
+          <span class="hp-go" aria-hidden="true">→</span>
+        </a>
+        <a class="hp-card rv d1" href="/ecosystem/">
+          <span class="hp-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.4"/><circle cx="5" cy="17" r="2.4"/><circle cx="19" cy="17" r="2.4"/><circle cx="12" cy="13" r="1.6"/><path d="M12 7.4v4M10.8 14.2L6.6 15.6M13.2 14.2l4.2 1.4"/></svg></span>
+          <span class="hp-txt">
+            <span class="hp-meta">1,000+ companies</span>
+            <h3>Ecosystem</h3>
+            <p>Search the directory, browse the category map and compare sourced industry stats.</p>
+          </span>
+          <span class="hp-go" aria-hidden="true">→</span>
+        </a>
+        <a class="hp-card rv d2" href="/research/">
+          <span class="hp-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 20 5v14a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19z"/><path d="M8 15.5v-4M12 15.5v-7M16 15.5v-2.5"/></svg></span>
+          <span class="hp-txt">
+            <span class="hp-meta">Reports + articles</span>
+            <h3>Research</h3>
+            <p>Market reports with Token Terminal and DefiLlama, plus long reads from WALLY and Zeus.</p>
+          </span>
+          <span class="hp-go" aria-hidden="true">→</span>
+        </a>
+        <a class="hp-card rv d3" href="/jobs/">
+          <span class="hp-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="7.5" width="17" height="12" rx="2"/><path d="M9 7.5V6a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 6v1.5M3.5 12.5h17"/></svg></span>
+          <span class="hp-txt">
+            <span class="hp-meta">Newest roles first</span>
+            <h3>Jobs</h3>
+            <p>Open roles at companies building the RWA economy, filtered by date, location and membership.</p>
+          </span>
+          <span class="hp-go" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- START HERE: the five-chapter explainer, then the full textbook -->
+  <section class="section hp-learn" id="start-here">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="eyebrow">Start here</span>
+          <h2>RWAs explained<br>in 5 minutes.</h2>
+        </div>
+        <p class="lede side">Simple concepts designed for everyone to understand. This is finance without the scary.</p>
+      </div>
+      <div class="jr rv" id="jr">
+        <aside class="jr-rail" id="jrRail"></aside>
+        <div class="jr-pane">
+          <span class="jr-tag" id="jrTag">CHAPTER 01</span>
+          <div class="jr-prog"><i id="jrProg"></i></div>
+          <div class="jr-body" id="jrBody"></div>
+          <div class="jr-foot">
+            <span class="jr-count" id="jrCount">01 / 05</span>
+            <button class="jr-next" id="jrNext">Next: Money <span class="arr">→</span></button>
           </div>
         </div>
       </div>
-    </section>
+      <div class="wbar dark rv hp-book">
+        <span class="bico"><svg viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5z"/><path d="M7 8h2M7 11h2M15 8h2M15 11h2"/></svg></span>
+        <span><b>Want the whole course? Wally's RWA Textbook.</b> All 49 pages as a nine-minute film, a customs-desk game and a book you can actually finish.</span>
+        <span class="x"><a class="btn btn-orange btn-sm" href="/guide/">Watch, play, read <span class="arr">&rarr;</span></a></span>
+      </div>
+    </div>
+  </section>
 
-<section class="section home-discover"><div class="wrap"><span class="eyebrow">Explore RWA Foundation</span><h2>Find your way into RWAs.</h2><div class="home-page-grid"><a class="home-page-card" href="/news/"><h3>News <span aria-hidden="true">↗</span></h3><p>Follow tokenization headlines and search the permanent news archive.</p></a><a class="home-page-card" href="/ecosystem/"><h3>Ecosystem <span aria-hidden="true">↗</span></h3><p>Discover companies, explore the map and compare industry growth.</p></a><a class="home-page-card" href="/research/"><h3>Research <span aria-hidden="true">↗</span></h3><p>Read our market reports and articles from WALLY and Zeus.</p></a><a class="home-page-card" href="/jobs/"><h3>Jobs <span aria-hidden="true">↗</span></h3><p>Find your next role with companies building the RWA economy.</p></a><a class="home-page-card" href="/learn/"><h3>RWAs explained <span aria-hidden="true">↗</span></h3><p>Start with wallets, stablecoins, vaults, trading and borrowing.</p></a><a class="home-page-card" href="/guide/"><h3>Wally’s RWA Textbook <span aria-hidden="true">↗</span></h3><p>Watch the film, play the game or read the textbook.</p></a><a class="home-page-card" href="/members/"><h3>Our members <span aria-hidden="true">↗</span></h3><p>Meet the companies supporting open access to financial services.</p></a><a class="home-page-card" href="/meet/"><h3>Meet WALLY <span aria-hidden="true">↗</span></h3><p>Get to know the face of our mission and the WALLY NFT community.</p></a></div><p class="home-newsletter">Stay in the loop. <a href="/newsletter/">Join the Herd newsletter →</a></p></div></section></main>
+  <!-- NEWSLETTER: the sign-up moment, after the reader has learned something -->
+  <section class="news" id="herd">
+    <div class="wrap">
+      <div class="news-card rv">
+        <span class="eyebrow">The newsletter</span>
+        <h2>Heard from<br><span class="org">the Herd.</span></h2>
+        <p>Updates from the real-world asset economy, new research and news from the Herd, in plain English.</p>
+        <div class="news-form">
+          <div class="nf-row" id="newsRow">
+            <input type="email" id="newsEmail" placeholder="you@future.finance" autocomplete="email" aria-label="Email address" onkeydown="if(event.key==='Enter')joinHerd()">
+            <button class="btn btn-orange" onclick="joinHerd()">Join the Herd <span class="arr">→</span></button>
+          </div>
+          <div class="nf-success" id="newsDone" hidden>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <span><b>Welcome to the Herd.</b> Check your inbox: your first briefing is on its way.</span>
+          </div>
+        </div>
+        <a class="wally-peek-link" href="/meet/" title="Meet WALLY" aria-label="Meet WALLY"><img class="wally-peek" src="/assets/embedded/481a325168e6f0693734.png" alt="" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY: members and WALLY NFT, condensed from the original four-card collection block -->
+  <section class="section hp-community">
+    <div class="wrap">
+      <div class="stats-head rv">
+        <h2>Backed by builders. Joined by believers.</h2>
+      </div>
+      <div class="hp-duo">
+        <article class="hp-panel rv">
+          <span class="hp-k">Our members</span>
+          <h3>The companies behind the mission</h3>
+          <p>Builders across the RWA economy support an independent, nonprofit foundation. Not for placement, not for favors: because neutral ground, honest data and real education help the whole industry grow.</p>
+          <div class="hp-actions">
+            <a class="btn btn-dark" href="/members/">Meet our members <span class="arr">→</span></a>
+            <a class="hp-link" href="https://form.typeform.com/to/WZzPc6Pw" target="_blank" rel="noopener">Apply for membership <span class="arr">→</span></a>
+          </div>
+        </article>
+        <article class="hp-panel hp-nft rv d1">
+          <span class="hp-k">WALLY NFT</span>
+          <h3>A collection of the biggest RWA supporters</h3>
+          <p>For people who want to keep Real-World Assets decentralized and open. Fees generated go directly to the RWA Foundation, and holder benefits include partner perks and community airdrops. The collection is still in development: stay tuned for the launch.</p>
+          <div class="hp-actions">
+            <a class="btn btn-orange" href="/meet/"><svg class="play-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Meet WALLY</a>
+            <a class="hp-link" href="/wally-nft/">About the collection <span class="arr">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER QUOTE -->
+  <section class="quote-sec">
+    <div class="wrap">
+      <div class="quote-grid rv">
+        <div class="quote-main">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <p class="quote-text">Truly open and globally accessible markets will create <span class="hl">fair, decentralized finance for all.</span></p>
+          <div class="quote-by">
+            <span class="qb-name">Herwig &ldquo;Happy&rdquo; Konings</span>
+            <span class="qb-role">Founder &amp; Director, RWA Foundation</span>
+          </div>
+        </div>
+        <div class="quote-photo">
+          <img src="/assets/embedded/5e4791b4d5dedda05c1e.webp" alt="Herwig Konings, Founder and Director of the RWA Foundation" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 <main id="page-learn" hidden><section class="section" id="primer" style="padding-top:44px">
       <div class="wrap">
         <div class="sec-head rv">
@@ -3960,7 +4165,7 @@ function showPage(p, anchor, fromRoute){
   else scrollTo(0,0);
   window.__page = p;
   if(['home','foundation','jobs','eco'].includes(p) && window.refreshMembers) refreshMembers();
-  document.title = PAGE_TITLES[p] || PAGE_TITLES.home;
+  document.title = document.body.dataset.title || PAGE_TITLES[p] || PAGE_TITLES.home;
   dispatchEvent(new Event('rwaf:pageview'));
 }
 function nav(anchor){ const pages={'#primer':'learn','#wallynft':'wallynft','#news':'newsletter'}; showPage(pages[anchor]||'home',pages[anchor]?null:anchor); }
