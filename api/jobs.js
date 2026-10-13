@@ -1,6 +1,7 @@
 // Private, project-specific Vercel Blob storage. Public readers receive approved fields only.
 import { createHash, timingSafeEqual, randomUUID } from 'node:crypto';
 import { get, put, BlobError, BlobPreconditionFailedError } from '@vercel/blob';
+import {queueSubmissionEmail} from '../lib/submission-emails.js';
 const PATH='job-submissions.json';
 const email=v=>/^[^\s@:/<>]+@[^\s@:/<>]+\.[^\s@:/<>]+$/.test(v);
 export function validateJob(j){
@@ -53,13 +54,18 @@ export function createJobsHandler(storage={get,put}){
     }
     if(b.action==='list_all')return res.status(200).json({jobs:rows,revision});
     if(b.action==='submit'){
-     if(rows.some(j=>j.email.toLowerCase()===input.email.toLowerCase()&&j.company===input.company&&j.role===input.role&&Date.now()-Date.parse(j.ts)<86400000))return res.status(200).json({ok:true});
+     const prior=rows.find(j=>j.email.toLowerCase()===input.email.toLowerCase()&&j.company===input.company&&j.role===input.role&&Date.now()-Date.parse(j.ts)<86400000);
+     if(prior){if(!queueSubmissionEmail(prior,'jobs','received',prior.email))return res.status(200).json({ok:true});}
+     else {
      if(rows.length>=1000)return res.status(503).json({error:'The review queue is full. Please contact happy@rwaf.xyz.'});
-     rows.push({...input,id:'u-'+randomUUID(),status:'pending',src:'site',ts:new Date().toISOString()});
+     const row={...input,id:'u-'+randomUUID(),status:'pending',src:'site',ts:new Date().toISOString()};
+     queueSubmissionEmail(row,'jobs','received',row.email,row.ts);rows.push(row);
+     }
     }else if(b.action==='moderate'){
      if(b.revision!==revision)return res.status(409).json({error:'Listings changed. Refresh the review queue.'});
      const job=rows.find(j=>j.id===b.id);
      if(!job||!['live','closed','pending'].includes(b.status))return res.status(400).json({error:'Invalid listing or status.'});
+     if(b.status==='live'&&job.status!=='live')queueSubmissionEmail(job,'jobs','published',job.email);
      job.status=b.status;job.updated_at=new Date().toISOString();
     }else return res.status(400).json({error:'Unknown action'});
     try{

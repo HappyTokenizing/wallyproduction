@@ -1295,7 +1295,7 @@ function showPage(p, anchor, fromRoute){
 function nav(anchor){ const pages={'#primer':'learn','#wallynft':'wallynft','#news':'newsletter'}; showPage(pages[anchor]||'home',pages[anchor]?null:anchor); }
 
 /* ---------- page URLs (legacy hash links are migrated in the head) ---------- */
-const PAGE_ROUTES = {home:'', foundation:'members', eco:'ecosystem', articles:'research', brandkit:'media-kit', meet:'meet', wallynft:'wally-nft', learn:'learn', newsletter:'newsletter', jobs:'jobs', news:'news', admin:'admin'};
+const PAGE_ROUTES = {home:'', foundation:'members', membership:'membership', eco:'ecosystem', articles:'research', brandkit:'media-kit', meet:'meet', wallynft:'wally-nft', learn:'learn', newsletter:'newsletter', jobs:'jobs', news:'news', admin:'admin'};
 function pageURL(page){const slug=PAGE_ROUTES[page];return slug?'/'+slug+'/':'/';}
 const PAGE_TITLES = window.RWAF_PAGE_TITLES;
 function routeFromLocation(){

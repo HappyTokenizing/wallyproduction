@@ -6,6 +6,7 @@ import {get, put, BlobError, BlobPreconditionFailedError} from '@vercel/blob';
 import {dateBounds} from '../assets/ecosystem-stats-model.js';
 import {ecosystemTaxonomy, requiresIndustryStart, ecosystemRecordProfileId} from '../assets/ecosystem-updates-model.js';
 
+import {queueSubmissionEmail} from '../lib/submission-emails.js';
 const PATH = 'ecosystem-submissions.json';
 const DAY = 86400000;
 const MAX_ROWS = 5000;
@@ -38,7 +39,7 @@ export function validateEcosystemSubmission(value) {
   const submission = {
     name: clean(value.name, 120, 1), description: clean(value.description, 1000, 1),
     type: TYPES.has(value.type) ? value.type : null, region: clean(value.region, 100, 1),
-    website: webURL(value.website, true), email: clean(value.email ?? '', 254)
+    website: webURL(value.website, true), email: clean(value.email ?? '', 254, 1)
   };
   if (Object.values(submission).some(item => item === null)) return null;
   if (submission.email && !/^[^\s@:/<>]+@[^\s@:/<>]+\.[^\s@:/<>]+$/.test(submission.email)) return null;
@@ -177,7 +178,9 @@ export function createEcosystemHandler(storage = {get, put}, {env = process.env,
         }
         if (body.action === 'list_all') return res.status(200).json({submissions: rows, revision});
         if (submitting) {
-          if (rows.some(row => row.submission && time - Date.parse(row.submittedAt) < DAY && JSON.stringify(row.submission) === JSON.stringify(input))) return res.status(200).json({ok: true});
+          const prior = rows.find(row => row.submission && time - Date.parse(row.submittedAt) < DAY && JSON.stringify(row.submission) === JSON.stringify(input));
+          if (prior) { if (!queueSubmissionEmail(prior, 'ecosystem', 'received', input.email, timestamp)) return res.status(200).json({ok: true}); }
+          else {
           if (rows.length >= MAX_ROWS) return res.status(503).json({error: 'The review queue is full. Please contact happy@rwaf.xyz.'});
           store.rateLimits = Object.fromEntries(Object.entries(store.rateLimits).filter(([, times]) => Array.isArray(times)).map(([key, times]) => [key, times.filter(stamp => typeof stamp === 'number' && time - stamp < DAY && stamp <= time)]).filter(([, times]) => times.length));
           const attempts = rateKey ? store.rateLimits[rateKey] || [] : [];
@@ -186,7 +189,10 @@ export function createEcosystemHandler(storage = {get, put}, {env = process.env,
             return res.status(429).json({error: 'Too many submissions. Please try again later.'});
           }
           if (rateKey) store.rateLimits[rateKey] = [...attempts, time];
-          rows.push({id: randomUUID(), status: 'pending', submittedAt: timestamp, updatedAt: timestamp, submission: input, review: null});
+          const row = {id: randomUUID(), status: 'pending', submittedAt: timestamp, updatedAt: timestamp, submission: input, review: null};
+          queueSubmissionEmail(row, 'ecosystem', 'received', input.email, timestamp);
+          rows.push(row);
+          }
         } else if (['save_review', 'save_profile'].includes(body.action)) {
           if (body.revision !== revision) return res.status(409).json({error: 'The directory changed. Refresh the manager before saving again.'});
           let row, status = body.status, rawReview = body.review;
@@ -215,6 +221,7 @@ export function createEcosystemHandler(storage = {get, put}, {env = process.env,
             row = {id: randomUUID(), submittedAt: timestamp, submission: null};
             rows.push(row);
           }
+          if (status === 'approved' && row.status !== 'approved' && row.submission?.email) queueSubmissionEmail(row, 'ecosystem', 'published', row.submission.email, timestamp);
           Object.assign(row, {status, review, updatedAt: timestamp});
         } else return res.status(400).json({error: 'Unknown action.'});
         try {

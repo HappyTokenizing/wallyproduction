@@ -2,6 +2,7 @@ export const origin='https://www.rwaf.xyz';
 export const pages=[
  {id:'home',path:'/',title:'RWA Foundation · Open access to onchain finance',description:'Explore real-world asset tokenization with RWA Foundation: industry news, research, companies, jobs and plain-English education for the onchain economy.'},
  {id:'foundation',path:'/members/',title:'Our Members & Mission · RWA Foundation',description:'Meet the RWA Foundation member companies and learn about our nonprofit mission to make tokenized real-world assets trustworthy, understood and open to everyone.'},
+ {id:'membership',path:'/membership/',title:'Apply for Membership · RWA Foundation',description:'Apply to join RWA Foundation. Tell us about your company, tokenization experience and interest in collaborating with the RWA community.'},
  {id:'eco',path:'/ecosystem/',title:'RWA Ecosystem Directory, Map & Stats · RWA Foundation',description:'Explore the RWA company directory and ecosystem map. Search tokenization providers, stablecoins, institutions and infrastructure, and view sourced industry statistics.'},
  {id:'news',path:'/news/',title:'RWA News & Tokenization Archive · RWA Foundation',description:'Follow real-world asset and tokenization news, search archived headlines, and discover updates from RWA Foundation member companies.'},
  {id:'jobs',path:'/jobs/',title:'RWA Jobs & Careers in Tokenization · RWA Foundation',description:'Find recent jobs at real-world asset, tokenization and blockchain companies. Filter roles by location, employment type, posting date and RWAF membership.'},

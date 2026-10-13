@@ -247,7 +247,7 @@ async function submitJob(){
     const data=await r.json().catch(()=>({}));
     if(!r.ok||!data.ok)throw Error(r.status===429?'Too many attempts. Please wait a minute and retry.':data.error||'Could not submit. Please retry.');
     $('#postJobForm').hidden=true;$('#postJobOk').hidden=false;
-    $('#postJobOk').innerHTML='<div class="sub-ok"><h5>Listing queued for review</h5><p>Your listing was received. The RWA Foundation team will review it before publication and may contact you by email.</p></div>';
+    $('#postJobOk').innerHTML='<div class="sub-ok"><h5>Listing queued for review</h5><p>Your listing was received. A confirmation email will be sent to the address you provided. The RWA Foundation team is reviewing it internally and will reach back out. We will also email you when your listing is published.</p></div>';
     button.hidden=true;toast('Listing received','Queued for review.');
   }catch(e){toast('Listing not submitted',e.message);}
   finally{pjSending=false;button.disabled=false;button.textContent='Submit listing';}
@@ -269,7 +269,7 @@ async function submitEco(){
   ok=pjMark('seName',!submission.name)&&ok;ok=pjMark('seBlurb',!submission.description)&&ok;
   ok=pjMark('seType',!submission.type)&&ok;ok=pjMark('seRegion',!submission.region)&&ok;
   ok=pjMark('seUrl',!validURL)&&ok;
-  ok=pjMark('seEmail',!!submission.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submission.email))&&ok;
+  ok=pjMark('seEmail',!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submission.email))&&ok;
   if(!ok){jbShowErrs('mSubmitEco','Check the highlighted fields and use a full HTTPS website URL.');return;}
   const button=$('#subEcoFoot').lastElementChild;
   seSending=true;button.disabled=true;button.textContent='Submitting…';
@@ -278,7 +278,7 @@ async function submitEco(){
     const result=await r.json().catch(()=>({}));
     if(!r.ok||!result.ok)throw Error(r.status===429?'Too many attempts. Please wait and retry.':result.error||'The server did not confirm receipt. Keep this form open and retry.');
     $('#subEcoForm').hidden=true;$('#subEcoOk').hidden=false;
-    $('#subEcoOk').innerHTML='<div class="sub-ok"><h5>Project queued for review</h5><p>Your project was received. The RWA Foundation team will review it before it appears in the directory. Your contact email stays private.</p></div>';
+    $('#subEcoOk').innerHTML='<div class="sub-ok"><h5>Project queued for review</h5><p>Your project was received. A confirmation email will be sent to the address you provided. The RWA Foundation team is reviewing it internally and will reach back out. We will also email you when your project is added to the directory. Your contact email stays private.</p></div>';
     button.hidden=true;toast('Project received','Queued for admin review.');
   }catch(e){toast('Project not submitted',e.name==='TimeoutError'?'The request timed out. Keep the form open and retry.':e.message);}
   finally{seSending=false;button.disabled=false;button.textContent='Submit';}
@@ -299,7 +299,7 @@ function jbShowErrs(mid,msg){
 
 /* ---------- admin console ---------- */
 const ADM_HASH='c544ce7c40eab55c481233a301356ecd1f7a7c5adce93d1aa4906f7886482ce9';
-const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions'],['ecosystem','Ecosystem']];
+const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions'],['ecosystem','Ecosystem'],['membership','Membership applications']];
 let admTabNow='logos';
 
 /* ---------- member logo manager: the console's only job ---------- */
@@ -458,9 +458,9 @@ function renderAdmin(){
     +'<div class="adm-tools">'+(admTabNow==='logos'?'<button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button>':'')+'<button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
     +'<p class="adm-note">'+(admTabNow==='logos'
       ?'Member logos: reorder, upload or delete below. The foundation logo wall, homepage banner and RWAF Members news tags update together. Use the organization’s name for each logo so its stories can be matched. Check the save status below to confirm your changes are published for all visitors.'
-      :admTabNow==='ecosystem'?'Review directory submissions and edit sourced company dates. Approved changes update the directory and charts together. Earlier Google Form responses remain in the original form.':admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
+      :admTabNow==='membership'?'Review membership applications privately. Confirmations are queued when applications are received.':admTabNow==='ecosystem'?'Review directory submissions and edit sourced company dates. Approved changes update the directory and charts together. Earlier Google Form responses remain in the original form.':admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
     +'</p><div id="admBody"></div>';
-  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else if(admTabNow==='ecosystem') admPaintEcosystem(); else admPaintNews();
+  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else if(admTabNow==='ecosystem') admPaintEcosystem(); else if(admTabNow==='membership') admPaintMembership(); else admPaintNews();
 }
 let admEcoCleanup=null,admEcoRequest=0;
 async function admPaintEcosystem(){
@@ -475,6 +475,12 @@ async function admPaintEcosystem(){
     admEcoCleanup=typeof cleanup==='function'?cleanup:null;
   }catch(e){if(body.isConnected&&admTabNow==='ecosystem')body.textContent='The ecosystem manager could not load. Select Ecosystem to retry.';}
 }
+async function admPaintMembership(){
+ const body=$('#admBody');body.textContent='Loading membership applications…';
+ try{const {mountMembershipAdmin}=await import('/assets/membership-admin.js');if(admTabNow==='membership'&&body.isConnected)await mountMembershipAdmin(body,{getPassword:admPw});}
+ catch(e){if(body.isConnected)body.textContent='Could not load membership applications. Select the tab to retry.';}
+}
+function submissionEmailStatus(row){return Object.entries(row.notifications||{}).map(([name,email])=>name+': '+(email.status==='sent'?'sent':email.status==='review'?'delivery needs review':email.error?'queued — '+email.error:'queued')).join(' · ')||'No confirmation email recorded';}
 let admJobsRevision=null;
 async function admPaintJobs(){
   const B=$('#admBody');B.textContent='Loading submissions…';
@@ -483,7 +489,7 @@ async function admPaintJobs(){
     const data=await r.json();if(!r.ok)throw Error(data.error||'Could not load submissions.');
     if(admTabNow!=='jobs')return;admJobsRevision=data.revision;
     B.innerHTML='<button class="adm-btn" onclick="admPaintJobs()">Refresh submissions</button>'+data.jobs.slice().reverse().map(j=>
-      '<div class="adm-empty" style="text-align:left;margin-top:16px"><b>'+escHtml(j.role)+' · '+escHtml(j.company)+'</b><p>'+escHtml(j.status)+' · '+escHtml(j.email)+' · '+escHtml(j.location)+'</p><p style="white-space:pre-wrap">'+escHtml(j.description)+'</p><p>Apply: '+escHtml(j.apply_to)+'</p><button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'live\')">Approve</button> <button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'closed\')">Close / reject</button></div>'
+      '<div class="adm-empty" style="text-align:left;margin-top:16px"><b>'+escHtml(j.role)+' · '+escHtml(j.company)+'</b><p>'+escHtml(j.status)+' · '+escHtml(j.email)+' · '+escHtml(j.location)+'</p><p style="white-space:pre-wrap">'+escHtml(j.description)+'</p><p>Apply: '+escHtml(j.apply_to)+'</p><p class="membership-mail">Emails: '+escHtml(submissionEmailStatus(j))+'</p><button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'live\')">Approve</button> <button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'closed\')">Close / reject</button></div>'
     ).join('')+(data.jobs.length?'':'<p>No submissions yet.</p>');
   }catch(e){if(admTabNow==='jobs')B.textContent=e.message;}
 }

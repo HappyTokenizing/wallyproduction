@@ -39,7 +39,7 @@ function siteChrome(html){
 let template=externalize(read('templates/site.html'));
 const mainMatches=[...template.matchAll(/<main id="page-([\w-]+)"[^>]*>[\s\S]*?<\/main>/g)];
 const mains=new Map(mainMatches.map(m=>[m[1],m[0]]));
-if(mains.size!==12)throw Error(`Expected 12 page templates; found ${mains.size}`);
+if(mains.size!==13)throw Error(`Expected 13 page templates; found ${mains.size}`);
 const members=[...mains.get('foundation').matchAll(/<div class="lw-tile(?: word)?">([\s\S]*?)<\/div>/g)].map((m,i)=>{
  const image=m[1].match(/<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"/);
  return image?{id:'d'+i,name:decode(image[2]),src:image[1]}:{id:'d'+i,name:decode(m[1].replace(/<[^>]+>/g,'').trim()),word:1};

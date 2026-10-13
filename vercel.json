@@ -3,6 +3,10 @@
     {
       "path": "/api/collect-news",
       "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/submission-emails",
+      "schedule": "* * * * *"
     }
   ],
   "functions": {
@@ -14,6 +18,9 @@
     },
     "api/company-news.js": {
       "maxDuration": 60
+    },
+    "api/submission-emails.js": {
+      "maxDuration": 60
     }
   },
   "buildCommand": "npm run build",
@@ -21,6 +28,11 @@
     {
       "source": "/members",
       "destination": "/members/",
+      "permanent": true
+    },
+    {
+      "source": "/membership",
+      "destination": "/membership/",
       "permanent": true
     },
     {

@@ -84,10 +84,12 @@ test('directory submissions persist privately, await moderation, and publish onl
   assert.notEqual(row.id, 'chosen');
   assert.equal(row.submission.member, undefined);
   assert.equal(row.review, null);
+  assert.equal(row.notifications.received.status, 'pending');
   assert.deepEqual((await call(handler, null, 'GET')).body, {records: [], updatedAt: null});
   assert.equal((await admin(handler, {pw: 'wrong'})).status, 401);
   const approved = await admin(handler, {action: 'save_review', id: row.id, status: 'approved', revision: queue.revision, review: {...review, email: 'leak@example.com', member: true}});
   assert.equal(approved.status, 200);
+  assert.equal((await admin(handler)).body.submissions[0].notifications.published.status, 'pending');
   const publicResult = await call(handler, null, 'GET');
   assert.equal(publicResult.body.records.length, 1);
   assert.equal(publicResult.body.updatedAt, now().toISOString());
@@ -120,7 +122,7 @@ test('JSON, origin, size, honeypot and validation checks prevent invalid submiss
   assert.equal((await call(handler, {action: 'submit', submission: submit}, 'POST', {origin: ''})).status, 403);
   assert.equal((await call(handler, {action: 'submit', submission: submit}, 'POST', {'content-type': 'text/plain'})).status, 415);
   assert.equal((await call(handler, {action: 'submit', submission: {...submit, description: 'x'.repeat(31000)}})).status, 413);
-  for (const changes of [{name: {}}, {name: 'a'.repeat(121)}, {description: ''}, {type: 'Bad type'}, {email: 'invalid'}, {website: 'javascript:alert(1)'}, {website: 'https://u:p@example.com'}, {name: 'bad\u0000name'}]) {
+  for (const changes of [{name: {}}, {name: 'a'.repeat(121)}, {description: ''}, {type: 'Bad type'}, {email: ''}, {email: 'invalid'}, {website: 'javascript:alert(1)'}, {website: 'https://u:p@example.com'}, {name: 'bad\u0000name'}]) {
     assert.equal((await call(handler, {action: 'submit', submission: {...submit, ...changes}})).status, 400, JSON.stringify(changes));
   }
   assert.equal((await call(handler, null, 'DELETE')).status, 405);
