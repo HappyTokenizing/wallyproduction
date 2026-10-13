@@ -1,7 +1,7 @@
 // Private, project-specific Vercel Blob storage. Public readers receive approved fields only.
 import { createHash, timingSafeEqual, randomUUID } from 'node:crypto';
 import { get, put, BlobError, BlobPreconditionFailedError } from '@vercel/blob';
-import {queueSubmissionEmail} from '../lib/submission-emails.js';
+import {assignSubmissionReferences,queueSubmissionEmail,queueTeamSubmissionEmails} from '../lib/submission-emails.js';
 const PATH='job-submissions.json';
 const email=v=>/^[^\s@:/<>]+@[^\s@:/<>]+\.[^\s@:/<>]+$/.test(v);
 export function validateJob(j){
@@ -47,6 +47,7 @@ export function createJobsHandler(storage={get,put}){
    for(let attempt=0;attempt<3;attempt++){
     const result=await storage.get(PATH,{access:'private',token,useCache:false});
     const rows=result?await new Response(result.stream).json():[];
+    assignSubmissionReferences(rows,'jobs');let reference;
     const revision=result?.blob.etag||null;
     if(req.method==='GET'){
      res.setHeader('Cache-Control','public, s-maxage=60');
@@ -55,11 +56,13 @@ export function createJobsHandler(storage={get,put}){
     if(b.action==='list_all')return res.status(200).json({jobs:rows,revision});
     if(b.action==='submit'){
      const prior=rows.find(j=>j.email.toLowerCase()===input.email.toLowerCase()&&j.company===input.company&&j.role===input.role&&Date.now()-Date.parse(j.ts)<86400000);
-     if(prior){if(!queueSubmissionEmail(prior,'jobs','received',prior.email))return res.status(200).json({ok:true});}
+     if(prior){reference=prior.reference;if(!queueSubmissionEmail(prior,'jobs','received',prior.email))return res.status(200).json({ok:true,reference});}
      else {
      if(rows.length>=1000)return res.status(503).json({error:'The review queue is full. Please contact happy@rwaf.xyz.'});
      const row={...input,id:'u-'+randomUUID(),status:'pending',src:'site',ts:new Date().toISOString()};
-     queueSubmissionEmail(row,'jobs','received',row.email,row.ts);rows.push(row);
+     rows.push(row);assignSubmissionReferences(rows,'jobs');reference=row.reference;
+     queueSubmissionEmail(row,'jobs','received',row.email,row.ts);
+     queueTeamSubmissionEmails(row,'jobs',row.ts);
      }
     }else if(b.action==='moderate'){
      if(b.revision!==revision)return res.status(409).json({error:'Listings changed. Refresh the review queue.'});
@@ -70,7 +73,7 @@ export function createJobsHandler(storage={get,put}){
     }else return res.status(400).json({error:'Unknown action'});
     try{
      const saved=await storage.put(PATH,JSON.stringify(rows),{access:'private',token,contentType:'application/json',addRandomSuffix:false,allowOverwrite:revision!==null,...(revision?{ifMatch:revision}:{})});
-     return res.status(200).json({ok:true,revision:saved.etag});
+     return res.status(200).json({ok:true,revision:saved.etag,...(reference?{reference}:{})});
     }catch(e){if(conflict(e)){if(b.action==='submit')continue;return res.status(409).json({error:'Listings changed. Refresh the review queue.'});}throw e;}
    }
    return res.status(409).json({error:'Another submission arrived at the same time. Please retry.'});

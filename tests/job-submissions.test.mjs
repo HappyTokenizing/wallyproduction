@@ -27,7 +27,10 @@ test('honeypots, cross-site requests, malformed fields and unsafe links never cr
 });
 test('repeat submissions deduplicate and concurrent writes preserve all records',async()=>{
  const {h}=setup();const requests=await Promise.all(['A','B'].map(company=>call(h,{action:'submit',job:{...job,company}})));assert.ok(requests.every(r=>r.status===200));
- await call(h,{action:'submit',job:{...job,company:'A'}});assert.equal((await admin(h)).body.jobs.length,2);
+ assert.deepEqual(requests.map(r=>r.body.reference).sort(),['J-000001','J-000002']);
+ const repeated=await call(h,{action:'submit',job:{...job,company:'A'}});const rows=(await admin(h)).body.jobs;assert.equal(rows.length,2);
+ assert.equal(repeated.body.reference,rows.find(r=>r.company==='A').reference);
+ for(const row of rows){assert.equal(Object.values(row.notifications).length,3);assert.equal(row.notifications.received.reference,row.reference);assert.ok(row.notifications['team:flynn@rwaf.xyz']);assert.ok(row.notifications['team:zeus@rwaf.xyz']);}
 });
 test('storage failures never claim success and hashed admin credentials work',async()=>{
  const h=createJobsHandler({async get(){throw Error('offline')}});assert.equal((await call(h,{action:'submit',job})).status,502);

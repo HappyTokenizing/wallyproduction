@@ -247,7 +247,7 @@ async function submitJob(){
     const data=await r.json().catch(()=>({}));
     if(!r.ok||!data.ok)throw Error(r.status===429?'Too many attempts. Please wait a minute and retry.':data.error||'Could not submit. Please retry.');
     $('#postJobForm').hidden=true;$('#postJobOk').hidden=false;
-    $('#postJobOk').innerHTML='<div class="sub-ok"><h5>Listing queued for review</h5><p>Your listing was received. A confirmation email will be sent to the address you provided. The RWA Foundation team is reviewing it internally and will reach back out. We will also email you when your listing is published.</p></div>';
+    $('#postJobOk').innerHTML='<div class="sub-ok"><h5>Listing queued for review</h5>'+(data.reference?'<p>Reference: '+escHtml(data.reference)+'</p>':'')+'<p>Your listing was received. A confirmation email will be sent to the address you provided. The RWA Foundation team is reviewing it internally and will reach back out. We will also email you when your listing is published.</p></div>';
     button.hidden=true;toast('Listing received','Queued for review.');
   }catch(e){toast('Listing not submitted',e.message);}
   finally{pjSending=false;button.disabled=false;button.textContent='Submit listing';}
@@ -278,7 +278,7 @@ async function submitEco(){
     const result=await r.json().catch(()=>({}));
     if(!r.ok||!result.ok)throw Error(r.status===429?'Too many attempts. Please wait and retry.':result.error||'The server did not confirm receipt. Keep this form open and retry.');
     $('#subEcoForm').hidden=true;$('#subEcoOk').hidden=false;
-    $('#subEcoOk').innerHTML='<div class="sub-ok"><h5>Project queued for review</h5><p>Your project was received. A confirmation email will be sent to the address you provided. The RWA Foundation team is reviewing it internally and will reach back out. We will also email you when your project is added to the directory. Your contact email stays private.</p></div>';
+    $('#subEcoOk').innerHTML='<div class="sub-ok"><h5>Project queued for review</h5>'+(result.reference?'<p>Reference: '+escHtml(result.reference)+'</p>':'')+'<p>Your project was received. A confirmation email will be sent to the address you provided. The RWA Foundation team is reviewing it internally and will reach back out. We will also email you when your project is added to the directory. Your contact email stays private.</p></div>';
     button.hidden=true;toast('Project received','Queued for admin review.');
   }catch(e){toast('Project not submitted',e.name==='TimeoutError'?'The request timed out. Keep the form open and retry.':e.message);}
   finally{seSending=false;button.disabled=false;button.textContent='Submit';}
@@ -489,7 +489,7 @@ async function admPaintJobs(){
     const data=await r.json();if(!r.ok)throw Error(data.error||'Could not load submissions.');
     if(admTabNow!=='jobs')return;admJobsRevision=data.revision;
     B.innerHTML='<button class="adm-btn" onclick="admPaintJobs()">Refresh submissions</button>'+data.jobs.slice().reverse().map(j=>
-      '<div class="adm-empty" style="text-align:left;margin-top:16px"><b>'+escHtml(j.role)+' · '+escHtml(j.company)+'</b><p>'+escHtml(j.status)+' · '+escHtml(j.email)+' · '+escHtml(j.location)+'</p><p style="white-space:pre-wrap">'+escHtml(j.description)+'</p><p>Apply: '+escHtml(j.apply_to)+'</p><p class="membership-mail">Emails: '+escHtml(submissionEmailStatus(j))+'</p><button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'live\')">Approve</button> <button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'closed\')">Close / reject</button></div>'
+      '<div class="adm-empty" style="text-align:left;margin-top:16px"><b>'+escHtml(j.role)+' · '+escHtml(j.company)+'</b><p>Reference: '+escHtml(j.reference)+' · '+escHtml(j.status)+' · '+escHtml(j.email)+' · '+escHtml(j.location)+'</p><p style="white-space:pre-wrap">'+escHtml(j.description)+'</p><p>Apply: '+escHtml(j.apply_to)+'</p><p class="membership-mail">Emails: '+escHtml(submissionEmailStatus(j))+'</p><button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'live\')">Approve</button> <button class="adm-btn" onclick="admModerateJob(\''+j.id+'\',\'closed\')">Close / reject</button></div>'
     ).join('')+(data.jobs.length?'':'<p>No submissions yet.</p>');
   }catch(e){if(admTabNow==='jobs')B.textContent=e.message;}
 }

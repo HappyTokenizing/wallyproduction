@@ -2,7 +2,7 @@ import {createHash,createHmac,timingSafeEqual,randomUUID} from 'node:crypto';
 import {isIP} from 'node:net';
 import {get,put,BlobError,BlobPreconditionFailedError} from '@vercel/blob';
 import {validateMembership} from '../assets/membership-model.js';
-import {queueSubmissionEmail} from '../lib/submission-emails.js';
+import {assignSubmissionReferences,queueSubmissionEmail,queueTeamSubmissionEmails} from '../lib/submission-emails.js';
 const PATH='membership-submissions.json',DAY=86400000;
 const conflict=e=>e instanceof BlobPreconditionFailedError||(e instanceof BlobError&&/already exists/i.test(e.message));
 export function createMembershipHandler(storage={get,put},{env=process.env,now=()=>new Date()}={}){
@@ -35,24 +35,27 @@ export function createMembershipHandler(storage={get,put},{env=process.env,now=(
    const revision=stored?.blob?.etag||null;
    if(store.version!==1||!Array.isArray(store.submissions)||!store.rateLimits||(stored&&(!revision||/^W\//i.test(revision))))throw Error('Invalid storage');
    const rows=store.submissions;
+   assignSubmissionReferences(rows,'membership');let reference;
    if(b.action==='list_all')return res.status(200).json({submissions:rows,revision});
    if(submitting){
     const prior=rows.find(row=>row.application.email===input.answers.email&&row.application.company.toLowerCase()===input.answers.company.toLowerCase()&&time-Date.parse(row.submittedAt)<DAY);
-    if(prior)return res.status(200).json({ok:true,emailQueued:!!prior.notifications?.received});
+    if(prior)return res.status(200).json({ok:true,reference:prior.reference,emailQueued:!!prior.notifications?.received});
     if(rows.length>=3000)return res.status(503).json({error:'The application queue is full. Please contact happy@rwaf.xyz.'});
     store.rateLimits=Object.fromEntries(Object.entries(store.rateLimits).map(([key,times])=>[key,times.filter(t=>t<=time&&time-t<DAY)]).filter(([,times])=>times.length));
     const times=store.rateLimits[ipKey]||[];
     if(times.length>=10||times.filter(t=>time-t<3600000).length>=5){res.setHeader('Retry-After','3600');return res.status(429).json({error:'Too many attempts. Please try again later.'});}
     if(ipKey)store.rateLimits[ipKey]=[...times,time];
     const row={id:randomUUID(),status:'pending',submittedAt:timestamp,updatedAt:timestamp,application:input.answers};
-    queueSubmissionEmail(row,'membership','received',input.answers.email,timestamp);rows.push(row);
+    rows.push(row);assignSubmissionReferences(rows,'membership');reference=row.reference;
+    queueSubmissionEmail(row,'membership','received',input.answers.email,timestamp);
+    queueTeamSubmissionEmails(row,'membership',timestamp,env);
    }else if(b.action==='moderate'){
     if(b.revision!==revision)return res.status(409).json({error:'Applications changed. Refresh the review queue.'});
     const row=rows.find(r=>r.id===b.id);
     if(!row||!['pending','reviewing','approved','rejected'].includes(b.status))return res.status(400).json({error:'Invalid application or status.'});
     row.status=b.status;row.updatedAt=timestamp;
    }else return res.status(400).json({error:'Unknown action.'});
-   try{const saved=await storage.put(PATH,JSON.stringify(store),{access:'private',token,contentType:'application/json',addRandomSuffix:false,allowOverwrite:revision!==null,...(revision?{ifMatch:revision}:{})});return res.status(200).json({ok:true,revision:saved.etag,...(submitting?{emailQueued:true}:{})});}
+   try{const saved=await storage.put(PATH,JSON.stringify(store),{access:'private',token,contentType:'application/json',addRandomSuffix:false,allowOverwrite:revision!==null,...(revision?{ifMatch:revision}:{})});return res.status(200).json({ok:true,revision:saved.etag,...(submitting?{emailQueued:true,reference}:{})});}
    catch(e){if(conflict(e)){if(submitting)continue;return res.status(409).json({error:'Applications changed. Refresh the review queue.'});}throw e;}
   }return res.status(409).json({error:'Another application arrived at the same time. Please retry.'});}
   catch(e){console.error('Membership storage failed:',e.name);return res.status(502).json({error:'Could not save your application. Keep this page open and retry.'});}

@@ -6,7 +6,7 @@ import {get, put, BlobError, BlobPreconditionFailedError} from '@vercel/blob';
 import {dateBounds} from '../assets/ecosystem-stats-model.js';
 import {ecosystemTaxonomy, requiresIndustryStart, ecosystemRecordProfileId} from '../assets/ecosystem-updates-model.js';
 
-import {queueSubmissionEmail} from '../lib/submission-emails.js';
+import {assignSubmissionReferences,queueSubmissionEmail,queueTeamSubmissionEmails} from '../lib/submission-emails.js';
 const PATH = 'ecosystem-submissions.json';
 const DAY = 86400000;
 const MAX_ROWS = 5000;
@@ -171,6 +171,7 @@ export function createEcosystemHandler(storage = {get, put}, {env = process.env,
         const store = result ? await new Response(result.stream).json() : {version: 1, submissions: [], rateLimits: {}};
         if (!object(store) || store.version !== 1 || !Array.isArray(store.submissions) || !object(store.rateLimits)) throw Error('Invalid directory storage');
         const revision = result?.blob?.etag || null, rows = store.submissions;
+        assignSubmissionReferences(rows,'ecosystem');let reference;
         // Never attempt a conditional update with a missing or weak ETag.
         if (result && (!revision || /^W\//i.test(revision))) throw Error('Missing strong storage revision');
         if (req.method === 'GET') {
@@ -179,7 +180,7 @@ export function createEcosystemHandler(storage = {get, put}, {env = process.env,
         if (body.action === 'list_all') return res.status(200).json({submissions: rows, revision});
         if (submitting) {
           const prior = rows.find(row => row.submission && time - Date.parse(row.submittedAt) < DAY && JSON.stringify(row.submission) === JSON.stringify(input));
-          if (prior) { if (!queueSubmissionEmail(prior, 'ecosystem', 'received', input.email, timestamp)) return res.status(200).json({ok: true}); }
+          if (prior) { reference=prior.reference;if (!queueSubmissionEmail(prior, 'ecosystem', 'received', input.email, timestamp)) return res.status(200).json({ok: true,reference}); }
           else {
           if (rows.length >= MAX_ROWS) return res.status(503).json({error: 'The review queue is full. Please contact happy@rwaf.xyz.'});
           store.rateLimits = Object.fromEntries(Object.entries(store.rateLimits).filter(([, times]) => Array.isArray(times)).map(([key, times]) => [key, times.filter(stamp => typeof stamp === 'number' && time - stamp < DAY && stamp <= time)]).filter(([, times]) => times.length));
@@ -190,8 +191,9 @@ export function createEcosystemHandler(storage = {get, put}, {env = process.env,
           }
           if (rateKey) store.rateLimits[rateKey] = [...attempts, time];
           const row = {id: randomUUID(), status: 'pending', submittedAt: timestamp, updatedAt: timestamp, submission: input, review: null};
+          rows.push(row);assignSubmissionReferences(rows,'ecosystem');reference=row.reference;
           queueSubmissionEmail(row, 'ecosystem', 'received', input.email, timestamp);
-          rows.push(row);
+          queueTeamSubmissionEmails(row,'ecosystem',timestamp,env);
           }
         } else if (['save_review', 'save_profile'].includes(body.action)) {
           if (body.revision !== revision) return res.status(409).json({error: 'The directory changed. Refresh the manager before saving again.'});
@@ -229,7 +231,7 @@ export function createEcosystemHandler(storage = {get, put}, {env = process.env,
             access: 'private', token, contentType: 'application/json', addRandomSuffix: false,
             allowOverwrite: revision !== null, ...(revision !== null ? {ifMatch: revision} : {})
           });
-          return res.status(200).json({ok: true, revision: saved.etag});
+          return res.status(200).json({ok: true, revision: saved.etag,...(reference?{reference}:{})});
         } catch (error) {
           if (conflict(error)) {
             if (submitting) continue;

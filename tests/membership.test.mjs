@@ -23,6 +23,7 @@ test('membership preserves non-fee questions and validates conditional answers s
 test('membership submissions remain private, atomically queue receipts and deduplicate retries',async()=>{
  const {h,data}=setup();const result=await call(h,{action:'submit',application:{...application,status:'approved',id:'chosen'}});assert.equal(result.status,200);assert.equal(result.body.emailQueued,true);
  const row=data().submissions[0];assert.equal(row.status,'pending');assert.notEqual(row.id,'chosen');assert.equal(row.application.status,undefined);assert.equal(row.notifications.received.status,'pending');assert.equal(row.notifications.received.to,application.email);
+ assert.equal(result.body.reference,'M-000001');assert.equal(row.reference,result.body.reference);assert.equal(Object.values(row.notifications).length,3);
  await call(h,{action:'submit',application});assert.equal(data().submissions.length,1);
  assert.equal((await call(h,null,{},'GET')).status,405);assert.equal((await call(h,{action:'list_all',pw:'wrong'})).status,401);
  let list=await admin(h);assert.equal((await admin(h,{action:'moderate',id:row.id,status:'reviewing',revision:list.body.revision})).status,200);
