@@ -197,5 +197,6 @@
         }
       ]
     }
-  ]
+  ],
+  "outputDirectory": "."
 }

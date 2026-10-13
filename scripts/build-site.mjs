@@ -75,7 +75,7 @@ for(const page of pages.filter(p=>['wallyArticles','zeusArticles'].includes(p.id
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+pages.filter(p=>!p.noindex).map(p=>`  <url><loc>${origin+p.path}</loc></url>`).join('\n')+'\n</urlset>\n');
 write('robots.txt','User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /templates/\nDisallow: /scripts/\nDisallow: /tests/\nDisallow: /vendor/\nDisallow: /data/research/\n\nSitemap: '+origin+'/sitemap.xml\n');
 const config=JSON.parse(read('vercel.json'));
-config.buildCommand='npm run build';delete config.trailingSlash;
+config.buildCommand='npm run build';config.outputDirectory='.';delete config.trailingSlash;
 config.redirects=pages.filter(p=>p.path!=='/').map(p=>({source:p.path.slice(0,-1),destination:p.path,permanent:true})).concat(Object.entries(aliases).flatMap(([source,destination])=>[source.slice(0,-1),source].map(source=>({source,destination,permanent:true}))));
 config.headers=[{source:'/assets/brand/(.*)',headers:[{key:'X-Content-Type-Options',value:'nosniff'}]},{source:'/assets/brand/rwa-foundation-logos.zip',headers:[{key:'Content-Disposition',value:'attachment; filename="RWA-Foundation-Logos.zip"'}]},{source:'/assets/brand/rwa-foundation-brand-guidelines.pdf',headers:[{key:'Content-Disposition',value:'attachment; filename="RWA-Foundation-Brand-Guidelines.pdf"'}]}];
 write('vercel.json',JSON.stringify(config,null,2)+'\n');
