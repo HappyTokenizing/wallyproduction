@@ -1,4 +1,4 @@
-/* Vercel Web Analytics for static pages and the site's hash-based router. */
+/* Vercel Web Analytics for static pages, with compatibility for legacy links. */
 (() => {
   const hosts = ['rwaf.xyz', 'www.rwaf.xyz', 'wallyproduction.vercel.app', 'wallystaging.vercel.app'];
   if (!hosts.includes(location.hostname) || window.RwafAnalytics) return;
@@ -9,13 +9,13 @@
     if (typeof PAGE_ROUTES !== 'undefined' && window.__page) {
       if (window.__page === 'admin') return null;
       const slug = PAGE_ROUTES[window.__page];
-      return slug === undefined ? null : slug ? '/' + slug : '/';
+      return slug === undefined ? null : slug ? '/' + slug.replace(/\/$/, '') + '/' : '/';
     }
     const path = location.pathname;
     if (/^\/admin(?:\/|$)/.test(path)) return null;
     if (/^\/research\/?$/.test(path)) {
       const tab = location.hash.slice(1);
-      return ['wally', 'zeus'].includes(tab) ? '/research/' + tab : '/research/';
+      return ['wally', 'zeus'].includes(tab) ? '/research/' + tab + '/' : '/research/';
     }
     return path;
   }
@@ -43,7 +43,7 @@
   const script = document.createElement('script');
   script.src = '/_vercel/insights/script.js';
   script.defer = true;
-  // Manual pageviews avoid duplicate counts and distinguish #/news from #/meet.
+  // Manual pageviews avoid duplicate counts and exclude the admin console.
   script.dataset.disableAutoTrack = '1';
   document.head.appendChild(script);
 })();

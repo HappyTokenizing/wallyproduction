@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
-const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
+const html=fs.readFileSync(new URL('../templates/site.html',import.meta.url),'utf8');
 const script=html.slice(html.indexOf('let seSending=false;'),html.indexOf('/* ---------- ecosystem local additions: merge at boot ---------- */'));
 function setup(fetcher) {
   const values={seName:'Example Project',seBlurb:'Tokenized asset infrastructure',seType:'Other',seRegion:'International',seUrl:'https://example.com',seEmail:'private@example.com',seWebsiteConfirm:''};

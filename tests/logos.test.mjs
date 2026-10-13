@@ -51,7 +51,7 @@ test('bad auth, oversized and invalid images are rejected atomically',async()=>{
   assert.equal((await call(h,'GET')).body.revision,null);
 });
 
-const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+const html=readFileSync(new URL('../templates/site.html',import.meta.url),'utf8');
 const sync=html.slice(html.indexOf("const LOGO_LS="),html.indexOf('function admOk()'));
 const bounds=html.slice(html.indexOf('function lgBounds('),html.indexOf('function lgNormalize('));
 const tick=()=>new Promise(resolve=>setImmediate(resolve));

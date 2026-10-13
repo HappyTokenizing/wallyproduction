@@ -1,0 +1,3 @@
+
+# Keep downloaded PDFs byte-for-byte intact; PDF whitespace is part of the file.
+*.pdf binary

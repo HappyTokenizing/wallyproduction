@@ -14,23 +14,23 @@ function boot({host = 'www.rwaf.xyz', pathname = '/', hash = '', page} = {}) {
   vm.runInNewContext(source, context);
   return {context, scripts, navigate: () => listeners['rwaf:pageview'](), views: () => Array.from(context.vaq || []).filter(a => a[0] === 'pageview').map(a => a[1].path)};
 }
-test('hash navigation counts each page once, excludes admin, and counts returning visits', () => {
+test('page navigation counts each page once, excludes admin, and counts returning visits', () => {
   const app = boot({page: 'meet', hash: '#/meet'});
-  assert.deepEqual(app.views(), ['/meet']);
+  assert.deepEqual(app.views(), ['/meet/']);
   assert.equal(app.scripts[0].dataset.disableAutoTrack, '1');
   app.navigate();
   app.context.__page = 'news'; app.navigate(); app.navigate();
   app.context.__page = 'home'; app.navigate();
   app.context.__page = 'admin'; app.navigate();
   app.context.__page = 'home'; app.navigate();
-  assert.deepEqual(app.views(), ['/meet', '/news', '/', '/']);
+  assert.deepEqual(app.views(), ['/meet/', '/news/', '/', '/']);
 });
 test('Research tabs and report pages receive distinct paths without arbitrary fragments', () => {
   const app = boot({pathname: '/research/', hash: '#wally'});
   app.context.location.hash = '#zeus'; app.navigate();
   app.context.location.hash = '#reports'; app.navigate();
   app.context.location.hash = '#private-input'; app.navigate();
-  assert.deepEqual(app.views(), ['/research/wally', '/research/zeus', '/research/']);
+  assert.deepEqual(app.views(), ['/research/wally/', '/research/zeus/', '/research/']);
   assert.deepEqual(boot({pathname: '/research/rwa-perps-sep-2026/'}).views(), ['/research/rwa-perps-sep-2026/']);
 });
 test('collector redacts query strings and fragments, and refuses custom data events', () => {

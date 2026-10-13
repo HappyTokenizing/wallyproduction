@@ -56,11 +56,9 @@
     dispatchEvent(new Event('rwaf:pageview'));
   }
   for (const [i, tab] of tabs.entries()) {
-    tab.addEventListener('click', () => { history.replaceState(null, '', '#' + tab.dataset.tab); select(tab.dataset.tab); });
     tab.addEventListener('keydown', e => { let target; if (e.key === 'ArrowRight') target = (i + 1) % tabs.length; if (e.key === 'ArrowLeft') target = (i + tabs.length - 1) % tabs.length; if (e.key === 'Home') target = 0; if (e.key === 'End') target = tabs.length - 1; if (target !== undefined) { e.preventDefault(); tabs[target].focus(); tabs[target].click(); } });
   }
   $('article-more').addEventListener('click', () => load(active, true));
   $('article-retry').addEventListener('click', () => load(active, states[active]?.retryAppend));
-  addEventListener('hashchange', () => select(location.hash.slice(1)));
-  select(location.hash.slice(1));
+  select(location.pathname.split('/').filter(Boolean)[1]);
 })();

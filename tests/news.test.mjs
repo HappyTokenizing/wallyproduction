@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import { readFileSync } from 'node:fs';
 
-const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+const html=readFileSync(new URL('../templates/site.html',import.meta.url),'utf8');
 const script=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].find(m=>m[1].includes('var NW='))[1];
 const story=(id,headline,extra={})=>({id,headline,url:'https://example.com/'+id,section:'Markets',summary:'',...extra});
 function client(items,hidden=[]){

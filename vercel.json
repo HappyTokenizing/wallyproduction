@@ -1,8 +1,201 @@
 {
-  "crons": [{ "path": "/api/collect-news", "schedule": "*/5 * * * *" }],
+  "crons": [
+    {
+      "path": "/api/collect-news",
+      "schedule": "*/5 * * * *"
+    }
+  ],
   "functions": {
-    "api/collect-news.js": { "maxDuration": 60 },
-    "api/news.js": { "maxDuration": 60 },
-    "api/company-news.js": { "maxDuration": 60 }
-  }
+    "api/collect-news.js": {
+      "maxDuration": 60
+    },
+    "api/news.js": {
+      "maxDuration": 60
+    },
+    "api/company-news.js": {
+      "maxDuration": 60
+    }
+  },
+  "buildCommand": "npm run build",
+  "redirects": [
+    {
+      "source": "/members",
+      "destination": "/members/",
+      "permanent": true
+    },
+    {
+      "source": "/ecosystem",
+      "destination": "/ecosystem/",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/jobs",
+      "destination": "/jobs/",
+      "permanent": true
+    },
+    {
+      "source": "/learn",
+      "destination": "/learn/",
+      "permanent": true
+    },
+    {
+      "source": "/wally-nft",
+      "destination": "/wally-nft/",
+      "permanent": true
+    },
+    {
+      "source": "/meet",
+      "destination": "/meet/",
+      "permanent": true
+    },
+    {
+      "source": "/newsletter",
+      "destination": "/newsletter/",
+      "permanent": true
+    },
+    {
+      "source": "/media-kit",
+      "destination": "/media-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/admin",
+      "destination": "/admin/",
+      "permanent": true
+    },
+    {
+      "source": "/research",
+      "destination": "/research/",
+      "permanent": true
+    },
+    {
+      "source": "/research/wally",
+      "destination": "/research/wally/",
+      "permanent": true
+    },
+    {
+      "source": "/research/zeus",
+      "destination": "/research/zeus/",
+      "permanent": true
+    },
+    {
+      "source": "/research/rwa-perps-sep-2026",
+      "destination": "/research/rwa-perps-sep-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/market-structure-aug-2026",
+      "destination": "/research/market-structure-aug-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/guide",
+      "destination": "/guide/",
+      "permanent": true
+    },
+    {
+      "source": "/foundation",
+      "destination": "/members/",
+      "permanent": true
+    },
+    {
+      "source": "/foundation/",
+      "destination": "/members/",
+      "permanent": true
+    },
+    {
+      "source": "/brand",
+      "destination": "/media-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/brand/",
+      "destination": "/media-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/brandkit",
+      "destination": "/media-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/brandkit/",
+      "destination": "/media-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/eco",
+      "destination": "/ecosystem/",
+      "permanent": true
+    },
+    {
+      "source": "/eco/",
+      "destination": "/ecosystem/",
+      "permanent": true
+    },
+    {
+      "source": "/careers",
+      "destination": "/jobs/",
+      "permanent": true
+    },
+    {
+      "source": "/careers/",
+      "destination": "/jobs/",
+      "permanent": true
+    },
+    {
+      "source": "/articles",
+      "destination": "/research/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/",
+      "destination": "/research/",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/brand/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    },
+    {
+      "source": "/assets/brand/rwa-foundation-logos.zip",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"RWA-Foundation-Logos.zip\""
+        }
+      ]
+    },
+    {
+      "source": "/assets/brand/rwa-foundation-brand-guidelines.pdf",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"RWA-Foundation-Brand-Guidelines.pdf\""
+        }
+      ]
+    }
+  ]
 }

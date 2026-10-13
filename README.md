@@ -1,10 +1,22 @@
 # RWA Foundation website
 
-Static HTML and Vercel Node functions. `npm ci` installs the server storage SDK; `npm test` runs logo persistence, concurrency, recovery and image-bound tests.
+Static HTML and Vercel Node functions. Run `npm ci`, `npm run build`, then `npm test`. The suite covers storage, admin, feeds, directory data, page routes, metadata, navigation and download assets.
+
+## Public pages and publishing
+
+The site uses separate static pages with one main content region per response: `/`, `/members/`, `/news/`, `/jobs/`, `/ecosystem/`, `/learn/`, `/wally-nft/`, `/meet/`, `/newsletter/`, `/media-kit/`, and the existing Research/Textbook pages. WALLY articles and Zeus’ Corner live at `/research/wally/` and `/research/zeus/`. The logo links home; the menu omits a redundant Home entry. Old `/#/...` links migrate in `assets/legacy-routes.js`; old pathname aliases redirect through `vercel.json`. Fragments remain valid for anchors within a page.
+
+`templates/site.html` is the authoring source for the main site. **Edit this template, not its generated HTML, `assets/site-layout-*.css`, `assets/site-runtime-*.js`, member defaults or page catalog.** `scripts/site-pages.mjs` defines titles, descriptions, canonical paths and sitemap inclusion. `npm run build` generates the standalone pages and shared assets, `sitemap.xml` and `robots.txt`. Commit the generated files with their sources. Vercel runs the same build before Git-triggered deployment. Backend functions and scheduled news collection stay in the existing `api/` configuration.
+
+`assets/site-chrome.css` provides consistent header/logo sizing across the site, Research reports and the Textbook. The site build applies shared navigation, metadata and favicon references to the generated Textbook HTML; it leaves the film, game and book content untouched. Run `npm run build` after regenerating `/guide/` from its external source. Preserve report partner credits in report content and charts; the navigation logo always represents the home link.
+
+Media-kit downloads are same-origin files in `assets/brand/`: eight original PNG assets in one ZIP, individual PNGs and the original PDF guidelines. The `download` links and attachment headers avoid timed multi-download and data-URL restrictions. The favicon, ICO and Apple touch icon are files at the site root. Admin is excluded from the sitemap and marked `noindex,nofollow`; this is indexing guidance, not authentication.
+
+For Google Search Console, use the site's owner Google account. Add the URL-prefix property `https://www.rwaf.xyz/` and save the exact HTML verification file or meta tag issued for that account (or verify a Domain property through an authorized DNS provider). Publish verification with the normal Git release, then verify ownership and submit `https://www.rwaf.xyz/sitemap.xml`. Never invent a verification token or mark this setup complete until Google confirms it. Sitemap submission does not guarantee indexing.
 
 ## Member logos
 
-`/api/logos` stores the logo images, deletions and ordering together in the private Vercel Blob object `member-logos.json`. This data survives Git deployments. Each project must have a **separate** private Blob store connected with `BLOB_READ_WRITE_TOKEN`. Production and staging must never share this token. Existing built-in logos remain in `index.html`.
+`/api/logos` stores the logo images, deletions and ordering together in the private Vercel Blob object `member-logos.json`. This data survives Git deployments. Each project must have a **separate** private Blob store connected with `BLOB_READ_WRITE_TOKEN`. Production and staging must never share this token. Built-in logos are authored in `templates/site.html` and generated into the shared `assets/member-defaults.js` roster for every page.
 
 Configure `JOBS_ADMIN_PW` with the current console password, or `JOBS_ADMIN_PW_SHA256` with its SHA-256 hex digest. The client console uses its existing password digest. The API validates the password server-side before writing. Never commit environment files or tokens.
 
@@ -54,7 +66,7 @@ Use **onchain** without a dash throughout website copy (capitalized **Onchain** 
 
 Vercel Web Analytics is enabled separately on the production and staging projects. Every HTML page loads `assets/analytics.js`; it loads Vercel's same-origin collector only on the canonical live domains and each project's main alias. Local development and branch previews are excluded. No additional analytics service or Analytics Plus add-on is required.
 
-Pageviews are explicit: the main router dispatches `rwaf:pageview` after navigation, and Research does the same after tab selection. This distinguishes `/news`, `/meet`, `/research/wally` and `/research/zeus` in the dashboard even though navigation uses hashes. Repeated selection of the same page and in-page anchors do not generate extra views. Research reports retain their actual paths. New routers must dispatch the event after updating their route state.
+Pageviews are explicit: each page dispatches `rwaf:pageview` after initialization. `/news/`, `/meet/`, `/research/wally/` and `/research/zeus/` have their own URLs and counts. Repeated events on the same page and in-page anchors do not generate extra views. Research reports retain their actual paths. New routers must dispatch the event after updating their route state.
 
 Admin views are excluded. Query strings and arbitrary hashes are removed from tracked page URLs, and the integration does not send form values, identify visitors, or enable cookies. Analytics begin at installation; this does not backfill past visits or create a permanent archive of analytics data. View traffic in the Vercel dashboard under Analytics for the relevant project.
 

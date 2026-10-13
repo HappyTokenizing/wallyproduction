@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /templates/
+Disallow: /scripts/
+Disallow: /tests/
+Disallow: /vendor/
+Disallow: /data/research/
+
+Sitemap: https://www.rwaf.xyz/sitemap.xml
