@@ -1,0 +1,612 @@
+{
+  "id": "2109614231729402066",
+  "slug": "rwa-dex-defi-oct-12-2026",
+  "series": "dex",
+  "title": "RWA DEX and DeFi Report With Token Terminal: Trading Volume and TVL, Past 30 Days",
+  "shortTitle": "DEX & DeFi Report",
+  "edition": "October 12, 2026",
+  "window": "Past 30 days",
+  "asOf": "2026-10-12",
+  "publishedAt": "2026-10-12T11:56:42.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2109614231729402066",
+  "partner": "Token Terminal",
+  "description": "Trading volume and value locked across stablecoins, tokenized funds, commodities and stocks.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "This is a 30-day edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. Instead of market cap and holders, it looks at where tokenized assets are being used: trading volume on decentralized exchanges and value locked in DeFi protocols. It covers stablecoins, tokenized funds, tokenized commodities and tokenized stocks, by venue or protocol and by chain.",
+      "parts": [
+        {
+          "text": "This is a 30-day edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. Instead of market cap and holders, it looks at where tokenized assets are being used: trading volume on decentralized exchanges and value locked in DeFi protocols. It covers stablecoins, tokenized funds, tokenized commodities and tokenized stocks, by venue or protocol and by chain."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are taken strictly from Token Terminal as of October 12, 2026, and cover the past 30 days. No third-party data has been added, and no figures have been adjusted or estimated.",
+      "parts": [
+        {
+          "text": "All figures are taken strictly from Token Terminal as of October 12, 2026, and cover the past 30 days. No third-party data has been added, and no figures have been adjusted or estimated."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "DEX figures show the change in trading volume over the past 30 days compared with the 30 days before. DeFi TVL figures show the change in value locked over the past 30 days. Where Token Terminal lists several versions or pools of the same protocol, such as Uniswap V2, V3 and V4 or Raydium's CLMM and CPMM pools, they are combined into one figure. Each chart is built from Token Terminal's top 10 list, and totals are sums of those entries only.",
+      "parts": [
+        {
+          "text": "DEX figures show the change in trading volume over the past 30 days compared with the 30 days before. DeFi TVL figures show the change in value locked over the past 30 days. Where Token Terminal lists several versions or pools of the same protocol, such as Uniswap V2, V3 and V4 or Raydium's CLMM and CPMM pools, they are combined into one figure. Each chart is built from Token Terminal's top 10 list, and totals are sums of those entries only.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Overview",
+      "parts": [
+        {
+          "text": "Overview"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins dominated both measures. Stablecoin DEX volume across the top venues rose $12.2 billion, led by Uniswap, and stablecoin DeFi TVL rose $2.2 billion, led by Morpho. Tokenized stock DEX volume rose about $3.2 billion across the top venues, but by chain it shifted sharply, away from BNB Chain and Robinhood Chain toward Solana and Base.",
+      "parts": [
+        {
+          "text": "Stablecoins dominated both measures. Stablecoin DEX volume across the top venues rose $12.2 billion, led by Uniswap, and stablecoin DeFi TVL rose $2.2 billion, led by Morpho. Tokenized stock DEX volume rose about $3.2 billion across the top venues, but by chain it shifted sharply, away from BNB Chain and Robinhood Chain toward Solana and Base."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized funds and commodities moved on a much smaller scale. Fund DEX volume rose about $60 million and fund DeFi TVL about $105 million. Commodity DEX volume rose about $172 million, almost all of it on Solana, while commodity DeFi TVL grew by about $516,000.",
+      "parts": [
+        {
+          "text": "Tokenized funds and commodities moved on a much smaller scale. Fund DEX volume rose about $60 million and fund DeFi TVL about $105 million. Commodity DEX volume rose about $172 million, almost all of it on Solana, while commodity DeFi TVL grew by about $516,000."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "DEX trading volume",
+      "parts": [
+        {
+          "text": "DEX trading volume"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins",
+      "parts": [
+        {
+          "text": "Stablecoins"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Uniswap's stablecoin DEX volume rose $5.5 billion, combining V4 (+$4.1 billion) and V3 (+$1.4 billion), about 45% of the $12.2 billion increase across the top venues. Raydium (+$1.6 billion), Aerodrome (+$1.5 billion) and GoonFi (+$1.1 billion) followed. Fluid (+$824.4 million), Orca (+$643.3 million), Metric (+$607.5 million) and Tessera (+$449.7 million) completed the list.",
+      "parts": [
+        {
+          "text": "Uniswap's stablecoin DEX volume rose $5.5 billion, combining V4 (+$4.1 billion) and V3 (+$1.4 billion), about 45% of the $12.2 billion increase across the top venues. Raydium (+$1.6 billion), Aerodrome (+$1.5 billion) and GoonFi (+$1.1 billion) followed. Fluid (+$824.4 million), Orca (+$643.3 million), Metric (+$607.5 million) and Tessera (+$449.7 million) completed the list."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin DEX volume growth by venue",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUav1VEXMAAMpLY.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUav1VEXMAAMpLY?format=jpg&name=medium",
+          "alt": "Stablecoin DEX volume growth by venue",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Base added $4.2 billion in stablecoin DEX volume and Ethereum $2.0 billion, about 70% of the $8.9 billion across the top 10 chains. Robinhood Chain (+$1.1 billion) and Arc (+$611.8 million) followed, then Solana (+$297.7 million), Monad (+$201.8 million), Polygon (+$195.0 million), Avalanche (+$155.2 million), Plasma (+$65.9 million) and Tempo (+$31.4 million).",
+      "parts": [
+        {
+          "text": "By chain, Base added $4.2 billion in stablecoin DEX volume and Ethereum $2.0 billion, about 70% of the $8.9 billion across the top 10 chains. Robinhood Chain (+$1.1 billion) and Arc (+$611.8 million) followed, then Solana (+$297.7 million), Monad (+$201.8 million), Polygon (+$195.0 million), Avalanche (+$155.2 million), Plasma (+$65.9 million) and Tempo (+$31.4 million)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin DEX volume growth by chain",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUawVYlXwAAoi5j.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUawVYlXwAAoi5j?format=jpg&name=medium",
+          "alt": "Stablecoin DEX volume growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized funds",
+      "parts": [
+        {
+          "text": "Tokenized funds"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Fluid's tokenized fund DEX volume rose $36.0 million and Aerodrome's $20.4 million, together about 94% of the top venues' net increase. AlphaQ (+$1.7 million) and PancakeSwap (+$1.6 million) followed. Uniswap (+$75,800), Raydium (+$41,200) and Hyperliquid (−$5,000) moved by less than $100,000. ",
+      "parts": [
+        {
+          "text": "Fluid's tokenized fund DEX volume rose $36.0 million and Aerodrome's $20.4 million, together about 94% of the top venues' net increase. AlphaQ (+$1.7 million) and PancakeSwap (+$1.6 million) followed. Uniswap (+$75,800), Raydium (+$41,200) and Hyperliquid (−$5,000) moved by less than $100,000. "
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized fund DEX volume growth by venue",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUaws4OWoAAi-YJ.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUaws4OWoAAi-YJ?format=jpg&name=medium",
+          "alt": "Tokenized fund DEX volume growth by venue",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Arbitrum One added $54.1 million, Base $20.3 million and Plasma $17.3 million. Robinhood Chain added $2.0 million. BNB Chain (+$21,200) and Monad (+$9,600) grew slightly, while Polygon (−$29,200), HyperCore (−$5,000) and Tempo (−$870) declined.",
+      "parts": [
+        {
+          "text": "By chain, Arbitrum One added $54.1 million, Base $20.3 million and Plasma $17.3 million. Robinhood Chain added $2.0 million. BNB Chain (+$21,200) and Monad (+$9,600) grew slightly, while Polygon (−$29,200), HyperCore (−$5,000) and Tempo (−$870) declined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized DEX volume growth by chain",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUaxRIJX0AABEwW.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUaxRIJX0AABEwW?format=jpg&name=medium",
+          "alt": "Tokenized DEX volume growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized commodities",
+      "parts": [
+        {
+          "text": "Tokenized commodities"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Raydium's commodity DEX volume rose $102.6 million across its CLMM (+$59.0 million) and CPMM (+$43.6 million) pools, about 60% of the top venues' total. Orca added $43.5 million and Uniswap $18.0 million, net of a $431,800 decline on V2. Meteora (+$6.2 million) and Fluid (+$2.1 million) followed. Aerodrome declined $11,900.",
+      "parts": [
+        {
+          "text": "Raydium's commodity DEX volume rose $102.6 million across its CLMM (+$59.0 million) and CPMM (+$43.6 million) pools, about 60% of the top venues' total. Orca added $43.5 million and Uniswap $18.0 million, net of a $431,800 decline on V2. Meteora (+$6.2 million) and Fluid (+$2.1 million) followed. Aerodrome declined $11,900."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Commodity DEX volume growth by venue",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUaxc4lWwAANpOi.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUaxc4lWwAANpOi?format=jpg&name=medium",
+          "alt": "Commodity DEX volume growth by venue",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Solana added $99.3 million, more than every other chain combined. Celo (+$212,000), Plasma (+$109,100) and XDC Network (+$1,700) grew slightly. HyperCore fell $3.6 million and HyperEVM $1.0 million, with smaller declines on Arbitrum One, Monad and Base.",
+      "parts": [
+        {
+          "text": "By chain, Solana added $99.3 million, more than every other chain combined. Celo (+$212,000), Plasma (+$109,100) and XDC Network (+$1,700) grew slightly. HyperCore fell $3.6 million and HyperEVM $1.0 million, with smaller declines on Arbitrum One, Monad and Base."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Commodity DEX volume growth by chain",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUaxoOEXQAAVVwJ.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUaxoOEXQAAVVwJ?format=jpg&name=medium",
+          "alt": "Commodity DEX volume growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized stocks",
+      "parts": [
+        {
+          "text": "Tokenized stocks"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Raydium's tokenized stock DEX volume rose $1.34 billion across its CLMM (+$802.8 million) and CPMM (+$534.5 million) pools, and Aerodrome's rose $1.3 billion. Orca added $362.9 million and Meteora $123.8 million. GoonFi (+$42.2 million), Hyperliquid (+$7.7 million) and ZeroFi (+$3.0 million) followed, while Byreal fell $1.2 million.",
+      "parts": [
+        {
+          "text": "Raydium's tokenized stock DEX volume rose $1.34 billion across its CLMM (+$802.8 million) and CPMM (+$534.5 million) pools, and Aerodrome's rose $1.3 billion. Orca added $362.9 million and Meteora $123.8 million. GoonFi (+$42.2 million), Hyperliquid (+$7.7 million) and ZeroFi (+$3.0 million) followed, while Byreal fell $1.2 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock DEX volume growth by venue",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUaxyYnXAAAaYR3.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUaxyYnXAAAaYR3?format=jpg&name=medium",
+          "alt": "Tokenized stock DEX volume growth by venue",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, the picture changed. Solana added $2.2 billion and Base $1.3 billion, while BNB Chain fell $2.3 billion and Robinhood Chain $2.0 billion. Ethereum (+$30.6 million) and HyperCore (+$7.7 million) grew, and X Layer fell $117,100. Across these chains, the net change was a decline of about $762 million.",
+      "parts": [
+        {
+          "text": "By chain, the picture changed. Solana added $2.2 billion and Base $1.3 billion, while BNB Chain fell $2.3 billion and Robinhood Chain $2.0 billion. Ethereum (+$30.6 million) and HyperCore (+$7.7 million) grew, and X Layer fell $117,100. Across these chains, the net change was a decline of about $762 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock DEX volume growth by chain",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUax-XjXQAAqN70.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUax-XjXQAAqN70?format=jpg&name=medium",
+          "alt": "Tokenized stock DEX volume growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "DeFi TVL",
+      "parts": [
+        {
+          "text": "DeFi TVL"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins",
+      "parts": [
+        {
+          "text": "Stablecoins"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Morpho added $1.5 billion in stablecoin DeFi TVL, about 68% of the $2.2 billion added across the top protocols. SparkLend (+$237.5 million) and Aave (+$219.1 million) followed, then Fluid (+$124.2 million) and Uniswap (+$75.1 million across V4 and V3). Orca (+$26.6 million), Aerodrome (+$15.8 million), Raydium (+$12.1 million) and PancakeSwap (+$9.3 million).",
+      "parts": [
+        {
+          "text": "Morpho added $1.5 billion in stablecoin DeFi TVL, about 68% of the $2.2 billion added across the top protocols. SparkLend (+$237.5 million) and Aave (+$219.1 million) followed, then Fluid (+$124.2 million) and Uniswap (+$75.1 million across V4 and V3). Orca (+$26.6 million), Aerodrome (+$15.8 million), Raydium (+$12.1 million) and PancakeSwap (+$9.3 million)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin DeFi TVL growth by protocol",
+      "number": 9,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUayNInW0AABstf.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUayNInW0AABstf?format=jpg&name=medium",
+          "alt": "Stablecoin DeFi TVL growth by protocol",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Ethereum added $520.5 million, about 30% of the $1.7 billion across the top 10 chains. Base (+$361.6 million), Arc (+$352.1 million) and Plasma (+$243.5 million) followed. Robinhood Chain (+$93.3 million), Arbitrum One (+$68.4 million), Tempo (+$48.7 million), Avalanche (+$22.8 million), OP Mainnet (+$4.9 million) and World Chain (+$2.1 million).",
+      "parts": [
+        {
+          "text": "By chain, Ethereum added $520.5 million, about 30% of the $1.7 billion across the top 10 chains. Base (+$361.6 million), Arc (+$352.1 million) and Plasma (+$243.5 million) followed. Robinhood Chain (+$93.3 million), Arbitrum One (+$68.4 million), Tempo (+$48.7 million), Avalanche (+$22.8 million), OP Mainnet (+$4.9 million) and World Chain (+$2.1 million)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin DeFi TVL growth by chain",
+      "number": 10,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUaycB7XEAARsLY.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUaycB7XEAARsLY?format=jpg&name=medium",
+          "alt": "Stablecoin DeFi TVL growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized funds",
+      "parts": [
+        {
+          "text": "Tokenized funds"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Morpho added $42.2 million in tokenized fund DeFi TVL, Aave $33.8 million and Pendle $24.9 million, about 96% of the $105.5 million across the top protocols. Orca added $3.6 million. Uniswap, Aerodrome, Fluid, Flux Finance, Raydium and Meteora each added under $500,000.",
+      "parts": [
+        {
+          "text": "Morpho added $42.2 million in tokenized fund DeFi TVL, Aave $33.8 million and Pendle $24.9 million, about 96% of the $105.5 million across the top protocols. Orca added $3.6 million. Uniswap, Aerodrome, Fluid, Flux Finance, Raydium and Meteora each added under $500,000."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized fund DeFi TVL growth by protocol",
+      "number": 11,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUayo3VXkAAdY6S.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUayo3VXkAAdY6S?format=jpg&name=medium",
+          "alt": "Tokenized fund DeFi TVL growth by protocol",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, OP Mainnet added $36.9 million, Monad $19.2 million and Robinhood Chain $8.4 million. Polygon added $14,400, and the remaining chains in the top 10 moved by less than $200.",
+      "parts": [
+        {
+          "text": "By chain, OP Mainnet added $36.9 million, Monad $19.2 million and Robinhood Chain $8.4 million. Polygon added $14,400, and the remaining chains in the top 10 moved by less than $200."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized fund DeFi TVL growth by chain",
+      "number": 12,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUazUYHWwAApgx-.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUazUYHWwAApgx-?format=jpg&name=medium",
+          "alt": "Tokenized fund DeFi TVL growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized commodities",
+      "parts": [
+        {
+          "text": "Tokenized commodities"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Commodity DeFi TVL grew by about $516,000 across the top protocols. Orca added $300,100, about 58% of the total. PancakeSwap (+$91,800), Raydium (+$60,200), Morpho (+$36,200) and Meteora (+$21,600) followed, with Aerodrome (+$4,400) and Venus (+$2,100) adding smaller amounts.",
+      "parts": [
+        {
+          "text": "Commodity DeFi TVL grew by about $516,000 across the top protocols. Orca added $300,100, about 58% of the total. PancakeSwap (+$91,800), Raydium (+$60,200), Morpho (+$36,200) and Meteora (+$21,600) followed, with Aerodrome (+$4,400) and Venus (+$2,100) adding smaller amounts."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Commodity DeFi TVL growth by venue",
+      "number": 13,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUazfnuWMAAjVr0.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUazfnuWMAAjVr0?format=jpg&name=medium",
+          "alt": "Commodity DeFi TVL growth by venue",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Arc added $208,500, Celo $139,100 and Solana $57,000. Base added $2,500, while Arbitrum One fell $36,300.",
+      "parts": [
+        {
+          "text": "By chain, Arc added $208,500, Celo $139,100 and Solana $57,000. Base added $2,500, while Arbitrum One fell $36,300."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Commodity DeFi TVL growth by chain",
+      "number": 14,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUaztFOXMAE3aT4.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUaztFOXMAE3aT4?format=jpg&name=medium",
+          "alt": "Commodity DeFi TVL growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized stocks",
+      "parts": [
+        {
+          "text": "Tokenized stocks"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Pendle added $22.4 million in tokenized stock DeFi TVL, about 40% of the $56.5 million across the top protocols. PancakeSwap (+$11.3 million across two pools), Kamino (+$7.8 million) and Aave (+$4.8 million) followed. Raydium (+$3.2 million), Aerodrome (+$2.9 million), Morpho (+$1.8 million), Meteora (+$1.6 million) and Orca (+$651,800) completed the list.",
+      "parts": [
+        {
+          "text": "Pendle added $22.4 million in tokenized stock DeFi TVL, about 40% of the $56.5 million across the top protocols. PancakeSwap (+$11.3 million across two pools), Kamino (+$7.8 million) and Aave (+$4.8 million) followed. Raydium (+$3.2 million), Aerodrome (+$2.9 million), Morpho (+$1.8 million), Meteora (+$1.6 million) and Orca (+$651,800) completed the list."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock DeFi TVL growth by protocol",
+      "number": 15,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUaz6bwXgAQKEeo.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUaz6bwXgAQKEeo?format=jpg&name=medium",
+          "alt": "Tokenized stock DeFi TVL growth by protocol",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Ethereum added $22.8 million, Solana $8.0 million, BNB Chain $7.1 million and Base $7.0 million. Robinhood Chain fell $25.2 million, the largest move on the chart and the only significant decline.",
+      "parts": [
+        {
+          "text": "By chain, Ethereum added $22.8 million, Solana $8.0 million, BNB Chain $7.1 million and Base $7.0 million. Robinhood Chain fell $25.2 million, the largest move on the chart and the only significant decline."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock DeFi TVL growth by chain",
+      "number": 16,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUa0OQAWUAIk45v.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUa0OQAWUAIk45v?format=jpg&name=medium",
+          "alt": "Tokenized stock DeFi TVL growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What stands out",
+      "parts": [
+        {
+          "text": "What stands out"
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Uniswap led stablecoin DEX volume growth, and Morpho led stablecoin DeFi TVL growth by a wide margin.",
+      "parts": [
+        {
+          "text": "Uniswap led stablecoin DEX volume growth, and Morpho led stablecoin DeFi TVL growth by a wide margin."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Raydium appears in every DEX venue chart, and led commodity and stock DEX volume growth.",
+      "parts": [
+        {
+          "text": "Raydium appears in every DEX venue chart, and led commodity and stock DEX volume growth."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Solana led commodity DEX volume and stock DEX volume by chain, while BNB Chain and Robinhood Chain saw the largest stock DEX declines.",
+      "parts": [
+        {
+          "text": "Solana led commodity DEX volume and stock DEX volume by chain, while BNB Chain and Robinhood Chain saw the largest stock DEX declines."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Robinhood Chain grew in stablecoin DEX volume and DeFi TVL but declined in tokenized stock DEX volume and stock DeFi TVL.",
+      "parts": [
+        {
+          "text": "Robinhood Chain grew in stablecoin DEX volume and DeFi TVL but declined in tokenized stock DEX volume and stock DeFi TVL."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Orca, an RWA Foundation member, appears in seven of the eight venue and protocol charts and led commodity DeFi TVL growth.",
+      "parts": [
+        {
+          "text": "Orca, an RWA Foundation member, appears in seven of the eight venue and protocol charts and led commodity DeFi TVL growth."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion",
+      "parts": [
+        {
+          "text": "Conclusion"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Over the past 30 days, stablecoins accounted for most of the growth in RWA DEX trading and DeFi deposits, with Uniswap and Morpho leading. Tokenized stock trading grew on Solana and Base while falling on BNB Chain and Robinhood Chain. Tokenized funds and commodities are still small in DeFi, with growth concentrated in a handful of protocols.",
+      "parts": [
+        {
+          "text": "Over the past 30 days, stablecoins accounted for most of the growth in RWA DEX trading and DeFi deposits, with Uniswap and Morpho leading. Tokenized stock trading grew on Solana and Base while falling on BNB Chain and Robinhood Chain. Tokenized funds and commodities are still small in DeFi, with growth concentrated in a handful of protocols."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are sourced strictly from Token Terminal as of October 12, 2026, and reflect the past 30 days. This report is for informational purposes only and is not investment advice.",
+      "parts": [
+        {
+          "text": "All figures are sourced strictly from Token Terminal as of October 12, 2026, and reflect the past 30 days. This report is for informational purposes only and is not investment advice.",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "figureCount": 16
+}

@@ -1,0 +1,632 @@
+{
+  "reviewedAt": "2026-10-15",
+  "source": "https://x.com/RWAFoundation_/articles",
+  "articlesReviewed": 64,
+  "reportEditions": 16,
+  "newReports": 14,
+  "method": "Read the official account’s Articles timeline through its oldest displayed article (December 15, 2025). Import the dated, data-led report series; exclude announcements, educational explainers and member spotlights. Preserve source prose and charts; normalize on-chain spelling to onchain.",
+  "reports": [
+    {
+      "id": "2109614231729402066",
+      "title": "RWA DEX and DeFi Report With Token Terminal: Trading Volume and TVL, Past 30 Days",
+      "path": "/research/rwa-dex-defi-oct-12-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2109614231729402066",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 41,
+        "importedTextBlocks": 41,
+        "figures": 16,
+        "textSha256": "149cf5a48aa036b47d9e9d38b7197b2fcea1cfe2984d733b3cd04161f0da1809",
+        "images": {
+          "/research/assets/x-reports/HUav1VEXMAAMpLY.jpg": "59c995fa6fb1f113b9b6719487512da6202d9d749c56040658af5808a8e2383f",
+          "/research/assets/x-reports/HUawVYlXwAAoi5j.jpg": "b36f39d32226da2a0f23ca8da82b7bbfb4df37bb05886f65d09cb82692db9733",
+          "/research/assets/x-reports/HUaws4OWoAAi-YJ.jpg": "0d5283e58389c1b6d9da468fe0cf1861daaf0f16d0ee488a905e117805c9e58b",
+          "/research/assets/x-reports/HUaxRIJX0AABEwW.jpg": "7cb542ac9f7bc13bfc6372f65b9ee0201f1ee0295639665355b589abd7fdedb1",
+          "/research/assets/x-reports/HUaxc4lWwAANpOi.jpg": "b6ac365653f4bfb832964de72122b3436df172ccab6678572fa3a033dd7a5e19",
+          "/research/assets/x-reports/HUaxoOEXQAAVVwJ.jpg": "c567fad6204bb96fb2d619ce4f5b5b5af33fa06826a0a5aec30769825db29f9f",
+          "/research/assets/x-reports/HUaxyYnXAAAaYR3.jpg": "1542a1677fb9662882c6334bac035ee401aeacf0ccad7a6bd53cd0c09eff7fd9",
+          "/research/assets/x-reports/HUax-XjXQAAqN70.jpg": "51230c2f9c7db4fb0bf2c92fec54e09188a4b488b2b25f25c967db2cedf11dc6",
+          "/research/assets/x-reports/HUayNInW0AABstf.jpg": "a03c957b3e1334578c92f743e574dc8116b8579952b40955dd72ddfbfc3fdfed",
+          "/research/assets/x-reports/HUaycB7XEAARsLY.jpg": "22eb01cd49d670f9e010f2a88bc901d888e27afc39c6ddd4ac0e9a588df8502d",
+          "/research/assets/x-reports/HUayo3VXkAAdY6S.jpg": "eccc9dda69ddbcfd57d7c39d71e0526b57f4c85958b4f71194bd4235e8881f2a",
+          "/research/assets/x-reports/HUazUYHWwAApgx-.jpg": "b69d3c99cd0d541f4d6e0a8ca65c0fbc8c62ac2fe8eb168aeb93809a783e5049",
+          "/research/assets/x-reports/HUazfnuWMAAjVr0.jpg": "4885dff14741ac51f59d039101b164a784d9214f5819f71623b8286b8d042d77",
+          "/research/assets/x-reports/HUaztFOXMAE3aT4.jpg": "c47c6fc694ca349796b7e451d57a53fea69dc22a0e1a4fb1ae4d276da0dcf795",
+          "/research/assets/x-reports/HUaz6bwXgAQKEeo.jpg": "d9f34e750598e82f2e459f023c72cd1bffb588298ac207fc8d3084e40860bdf6",
+          "/research/assets/x-reports/HUa0OQAWUAIk45v.jpg": "55fc3f998a22f1c6204ee90f89e714fa2cfaafd97f09fe131495fc28e0f725b2"
+        }
+      }
+    },
+    {
+      "id": "2109544459331346444",
+      "title": "RWA Weekly Report With Token Terminal: Stablecoins, Funds and Stocks",
+      "path": "/research/rwa-weekly-oct-12-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2109544459331346444",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 38,
+        "importedTextBlocks": 38,
+        "figures": 14,
+        "textSha256": "742ce94198df40caff71722f1fcb2ec37ad5748d391c87e969d3b9493e7be69d",
+        "images": {
+          "/research/assets/x-reports/HUaWaKtXAAA5sZp.jpg": "bf310864d85d083bc0766dad0af9bdcb94b7416ee6e2c092cba5a06d66cdcd70",
+          "/research/assets/x-reports/HUaWoAHXwAAN6WE.jpg": "3e5086bc54ccf465dc4f4382003f279586f2f8d49d434adb2677b8dbe878d361",
+          "/research/assets/x-reports/HUaXAynXkAAWIuJ.jpg": "a57fbdef5929a4f93e36e9a92d0ff92b854668f666c0c04eff7ea12442ae95b6",
+          "/research/assets/x-reports/HUaXQRuWQAIlQlT.jpg": "86226e7dcd1058b59000344f2194b5159f95eb7cb4c011f0c599bfefe2fbcede",
+          "/research/assets/x-reports/HUaXb_6XAAAqw0b.jpg": "4ddedd550da18b4493388a9f83dcefd4efd1932684dfbc97300817275d2e8c37",
+          "/research/assets/x-reports/HUaXlH6WsAAV6Oa.jpg": "5ef536cc48d8e147b5a95ff5f5f9a424b637b20a8b867749d2466a00f06c69c5",
+          "/research/assets/x-reports/HUaXyQxXgAAsrXy.jpg": "6116e04375b23c8b6d6a2d2eb79cf390b2c40a3363176926ae963a79e8c435ae",
+          "/research/assets/x-reports/HUaX9xxWMAAZl5L.jpg": "bbc0cbfab077a04d626eebd15272c6295756fe31cecb1bc050aa89633beda418",
+          "/research/assets/x-reports/HUaYYQYWUAE0ClF.jpg": "fd0d620cbc9826faca42292bb6dbeb5ca11cc0e488a3ecd47bff1d184ec477ef",
+          "/research/assets/x-reports/HUaYifGXQAAintL.jpg": "9dc6d75e60c8acb40b20a9db57ddbc54518a37263900b607250f516fe57ac9f0",
+          "/research/assets/x-reports/HUaY1-zXsAAiNYa.jpg": "cf424214a137192a38a6236d4dced39f5bb4eb9f0699a5b02f5731d4123b9e96",
+          "/research/assets/x-reports/HUaZBqdWAAAD4kO.jpg": "cd1785ca4f3f18cd40799a2965a3c453c1bfd8df800c697a32c35befc3c048d6",
+          "/research/assets/x-reports/HUaZXCSXMAAV8PH.jpg": "3b234e82c3dac376795d3997c8c4592c9f89d891a43f2671ab7f05e1fecdb62d",
+          "/research/assets/x-reports/HUaaBAxXsAAT7UT.jpg": "5ec879dcb2633c2cff60f8f953c4ea2d5d930ef7b09f4a6e977872639fcc1c3b"
+        }
+      }
+    },
+    {
+      "id": "2108149308889440419",
+      "title": "RWA Weekly Report With Token Terminal: Stablecoins, Funds and Stocks",
+      "path": "/research/rwa-weekly-oct-8-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2108149308889440419",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 35,
+        "importedTextBlocks": 35,
+        "figures": 13,
+        "textSha256": "7c756edf9bd916a63966f976588951f904b5b419de5782fe33d63955afc4561e",
+        "images": {
+          "/research/assets/x-reports/HUGgVwwWMAABOlF.jpg": "9b1dd7e516550efd01c24ccdc734c5530e4ba2913e45a07944d1e0f07437e12e",
+          "/research/assets/x-reports/HUGgo4LXoAAG1bn.jpg": "a7d7f809a0bc2b62ab2e75e98badfcb3f6bf05f8fbec11df875133f424794221",
+          "/research/assets/x-reports/HUGj_2qWsAAtYbi.jpg": "8ef550629365a984cb9dcebe7ea4881497eaa6cc478557d6291f360b9cdeb247",
+          "/research/assets/x-reports/HUGkYKgXUAA_oq4.jpg": "6b3769f6e9772525e7a114746c9de47b93f70fa5b24b3681b758c41e0489cbc8",
+          "/research/assets/x-reports/HUGhrkAXcAAxIJW.jpg": "7ce6a0f9944767154b0cc57e1e9824f4f06bf98ef56b63c34aa721470fe1e5c8",
+          "/research/assets/x-reports/HUGh5HgWgAArVgU.jpg": "6086c3dd117cd038ca85975b77b8bd01f5737d35b5d06dd30fb7c57cb1c4c6ae",
+          "/research/assets/x-reports/HUGiGNBXkAATQ9Y.jpg": "7dbf33d3344c4ca5ab709c72bbdcba6f76de81ca391565a7d1078fc299a01f5f",
+          "/research/assets/x-reports/HUGkl68XEAErTl-.jpg": "3738becf44dc7a754a19c0402ae4cba62c0a9e532b6cf81df5f25f5a67b9358f",
+          "/research/assets/x-reports/HUGidjdXMAApqtD.jpg": "3cbaef4a2ba67bfad667a82a988789c26efd529f82971745728d0418f2721a17",
+          "/research/assets/x-reports/HUGk0tAWcAAyW1W.jpg": "487f1846d92435719725fa80cf8d2306625a51e3edaa68c9c0ff6d087169a098",
+          "/research/assets/x-reports/HUGiszVX0AASPZh.jpg": "ca657a6a509afd8df61747e63106e809e0fbde3d78c8841e82527c067dd2ca17",
+          "/research/assets/x-reports/HUGld75XYAASvUV.jpg": "49803836fe43d3a1e95877f7781a8a1b95556487e763dcc745cc20390cccce19",
+          "/research/assets/x-reports/HUGi87BWQAA0TPq.jpg": "561b61f36e474c25e803ae91f2b0e82fd28092488be48ee598cae636985aa343"
+        }
+      }
+    },
+    {
+      "id": "2107456399433199716",
+      "title": "RWA Blockchains Report With Token Terminal: 2026 Year to Date",
+      "path": "/research/rwa-blockchains-ytd-oct-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2107456399433199716",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 39,
+        "importedTextBlocks": 39,
+        "figures": 11,
+        "textSha256": "75ba8641870a6d27259b78b65270383322749d2a3a4519da9d0e71f9048df53e",
+        "images": {
+          "/research/assets/x-reports/HT8rbWEWEAAGrhK.jpg": "1ce6bccac9733239ef71b9aae8d13a193a1b9abd906ab512ec0424ab1826ece4",
+          "/research/assets/x-reports/HT8rt3JWIAAkoft.jpg": "683fc6f4d9da84c9f20b767987677464c1f2d441e2986157cebfddb73ccb3493",
+          "/research/assets/x-reports/HT8sW1yXwAA5FP-.jpg": "61f574bfe4bac20078b8c3cc72fdc0a62287e71ce2a760a257bca8515726a58b",
+          "/research/assets/x-reports/HT8sfrtWkAALr9X.jpg": "2d5a697470bdebf458d0f85d7c7012a485a2ce6ad3ceee8471c3bf1e3c8665e3",
+          "/research/assets/x-reports/HT8tbbqXwAEY-sK.jpg": "2fbcac5b7fb86dcad11c50644eb85b621c274ca1b1d89e4ca02bee715662e2f2",
+          "/research/assets/x-reports/HT8tpxqWQAAshEk.jpg": "d7254cffb829f8676045f051b6a43e842e48e77935379cf2eb0cbe92179b9ae9",
+          "/research/assets/x-reports/HT8t0L9WQAASi9G.jpg": "2fac78ac0a61134ac0bd24f943d6a0deec559d743e019ee1300f97f1c19e9e8b",
+          "/research/assets/x-reports/HT8uAI0WcAEed2k.jpg": "b5b7a9852e376ba9c43b80004ae8609bf27cfe03ac85c85ed668a5be70ca4139",
+          "/research/assets/x-reports/HT8uM8MXAAAA_TT.jpg": "8b55d3b2b3c29c005c01d0e87853ac93b3b85522440ddb2ad2a3316272ae63bd",
+          "/research/assets/x-reports/HT8uc8UXEAAGXbN.jpg": "a8a051cba59ccae980c879ec920e5c35843a93b731af6b2bdc5afc37c573bfb9",
+          "/research/assets/x-reports/HT8unJzXcAAZKGu.jpg": "a85be97c8947d411de394c32d567a41da28ba3197a53810a5205418c225174f1"
+        }
+      }
+    },
+    {
+      "id": "2107123857517629862",
+      "title": "RWA Weekly Holders Report With Token Terminal",
+      "path": "/research/rwa-weekly-holders-oct-5-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2107123857517629862",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 25,
+        "importedTextBlocks": 25,
+        "figures": 10,
+        "textSha256": "f7cef16f6a46949601767a739f4a22b5b077a580cf2eadef5f02e2027faa5476",
+        "images": {
+          "/research/assets/x-reports/HT3V492XkAADeiV.jpg": "a921dd883e5e758473431cd6be715daf342c6b2bf2f0e79ff0d65d7057e1d138",
+          "/research/assets/x-reports/HT3WDgCXYAAVMwQ.jpg": "8c941e71813fe8d9f570ecf0af6ffb4a1e0dcc0f0438754f1209be36189076bf",
+          "/research/assets/x-reports/HT3WKadXIAEMDoV.jpg": "407e75de91aadc80ccc0319608d1eebc18e276f50306d681ec226828da6e977c",
+          "/research/assets/x-reports/HT3WUTwXAAAElMi.jpg": "88f5f40eabe0f8c4cff0f70296c0db6dfc9466bdbbb43abea71da8ca877dbe58",
+          "/research/assets/x-reports/HT3We8NWQAA5LA6.jpg": "c8077c92708c5b5ebc24d826bd9123b0f6672f3a4a8ba78a9e508a74851e9910",
+          "/research/assets/x-reports/HT3XqyyXEAA5vDu.jpg": "e815bb4eacd7bbac94929ccd955114cfaac775630f4c04e959a92f0fc91cc5d0",
+          "/research/assets/x-reports/HT3XCtxXEAAg-Vd.jpg": "75f3d48dd1ac988cdc93ef95391c83e56e9ad2453cda3b44529cac9b1794aa0d",
+          "/research/assets/x-reports/HT3XPuiW4AAGZKu.jpg": "1109c7d8dfe4e3a89a7ca9a3efce4cf13caa123ca6fa5629256a142d9e6c6d13",
+          "/research/assets/x-reports/HT3XWrWWgAAwwco.jpg": "a3d0cc57e62eeeda3be0a54746d5e7dd9944bcc8f505a10be926157b29a503a1",
+          "/research/assets/x-reports/HT3Xb9jWAAE8iEz.jpg": "5b367455ebd3e38f2d33b92378b346969ef05ac9a0369650cdf8e12a27c1fb55"
+        }
+      }
+    },
+    {
+      "id": "2107059255496880242",
+      "title": "RWA Weekly Market Cap Report With Token Terminal",
+      "path": "/research/rwa-weekly-market-cap-oct-5-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2107059255496880242",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 29,
+        "importedTextBlocks": 29,
+        "figures": 9,
+        "textSha256": "f83e98e47bfa270ed300b5998450547d87f7a874c7d834b0adc32f055112ee4f",
+        "images": {
+          "/research/assets/x-reports/HT3EaRvWsAEWDKQ.jpg": "4e1fe1069f03cd8df0720a5386c8ef5e9c97ebf859643ad9cb93f6f3df3fcf97",
+          "/research/assets/x-reports/HT3Eq8xXsAA84OC.jpg": "40218a1b303aa0b90173b14ae48bbacb24f13034986e9dbeab99dfbac95a424b",
+          "/research/assets/x-reports/HT3E0M_XIAAn3Jp.jpg": "9152ee732db694deacdc873de335d1e52c8a11fb42c9dd6acfaaa888469e8760",
+          "/research/assets/x-reports/HT3E8qQXwAAhDr6.jpg": "da87e2dee29aa79a5864a2dfcd70c7269ceb884b6eaff87de523108e5f802b4a",
+          "/research/assets/x-reports/HT3FFsrWEAAKX5j.jpg": "a94fc9641e80552c8f9758d3af492f343d057072fad20403e925b61f96675119",
+          "/research/assets/x-reports/HT3FO-QWAAAwZ85.jpg": "e081b5b0de0abe81dee019a20c91d855e05e5a94fe9a10a38f8885b0d59c3c95",
+          "/research/assets/x-reports/HT3FoQ3XcAAVw5Z.jpg": "e4bbd60f1822fd9cd9d7b859bc51a6236ac050265a566d855656adca9e9ad035",
+          "/research/assets/x-reports/HT3FxmpXgAACmQX.jpg": "872e30c7be0f17aeb3a95f2532c4019f0d2fc931ee36d6eef51693edd06daa47",
+          "/research/assets/x-reports/HT3F48ZWgAA7JnN.jpg": "ca4b0e3c453fd2621e7f68764f6367ed8ed07eaff7213492f37756422d896741"
+        }
+      }
+    },
+    {
+      "id": "2106777869049372881",
+      "title": "Tokenized Stocks Report With Token Terminal: Q3 2026",
+      "path": "/research/tokenized-stocks-q3-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2106777869049372881",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 42,
+        "importedTextBlocks": 42,
+        "figures": 10,
+        "textSha256": "e17eaf78b3b5d7d91363a4677992e66c0894c8629b284ebbdd779be1350837e2",
+        "images": {
+          "/research/assets/x-reports/HTyvy60W8AAaBty.jpg": "d0b50e297aa38256299579335afc2227a25195070999c4e1bec12ce0a4ad9918",
+          "/research/assets/x-reports/HTyv9r7XwAA6tM-.jpg": "af74cf19649a9f0746a43c14404d7ffa42fbb2f0b3783e7701641e0b4fdb11ff",
+          "/research/assets/x-reports/HTywG9FWwAApwO9.jpg": "4f8c9747fd83dc7c48c9f33e98f4fb318796edc1c1a35ebe453c8b5f00fdf6b0",
+          "/research/assets/x-reports/HTywQtSXoAEw-Zj.jpg": "2b28911f2a40c48dcaae6abf5fb435247d7f69f97a704046aa05b86388b986b6",
+          "/research/assets/x-reports/HTywY6DWkAA9H6C.jpg": "dad969447398f5137d75ba866923d1c2bd6d50ce57d697c7327a564a3a295b27",
+          "/research/assets/x-reports/HTywf_BWYAEi57t.jpg": "9735b17e4ca47ab10ebbfec1f61cac159e8350229fe7d14978e93661062d2c7e",
+          "/research/assets/x-reports/HTy01w6W4AAt2lP.jpg": "2dd11a3f34a44215373c4036bb70ec0780d73751b28af08984b8af1be98f24ed",
+          "/research/assets/x-reports/HTyxJ6LXkAEVONp.jpg": "6a53b9efe5dd2c1d85ab624c3d3c6cf2ecf2434a33cfa9caf8a9d3bacc3360e0",
+          "/research/assets/x-reports/HTy1GarXMAEGzeT.jpg": "3bb49e99ec2727af519dd5011d6d170fd5104fdea25b25139e880dedf9358e51",
+          "/research/assets/x-reports/HTyxTxKWoAASA3V.jpg": "5cd6cf4e40ae21cbecd6a548bb3575c59c719a52c1a5e0ebbf6d5e3c0aa37f47"
+        }
+      }
+    },
+    {
+      "id": "2106742210884440348",
+      "title": "Tokenized Credit Report With Token Terminal: Q3 2026",
+      "path": "/research/tokenized-credit-q3-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2106742210884440348",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 35,
+        "importedTextBlocks": 35,
+        "figures": 6,
+        "textSha256": "a8e5b099e08ee46c51f7ccb799836d9c67f58ac10e0a46f5d18030face29921e",
+        "images": {
+          "/research/assets/x-reports/HTyi_mHXMAA96cw.jpg": "a4a503d49c2128f13f53b8a44e6cb2ba782712c4c4bc310830ee8fcfc03cef78",
+          "/research/assets/x-reports/HTyjv1nXkAAXff4.jpg": "e79ada9537f557f8c5299dfe65562eacae0768ddc51a4ae504a2b66803016c40",
+          "/research/assets/x-reports/HTykcz-WkAAKn2q.jpg": "f92d413a725bbe046e6a04aaa68820d03a152db868600c14e2121faf63c4d3a3",
+          "/research/assets/x-reports/HTykpC-WQAAeY0C.jpg": "61ab56e8bd7939185a6fdff42fe52bd412b5dda0e1e67077099569d70c5ff384",
+          "/research/assets/x-reports/HTykyDCWkAAhOte.jpg": "132c2fdb0dfca18eaa53e2fbfdb6e1fcfc6010b9d083cb6849786393c6dbf6e2",
+          "/research/assets/x-reports/HTyk8ntWwAA5XKj.jpg": "5805ba8ff763fb4f2ac43737228df70a8013a16a5dcdd9216e94e3c90dd66b5b"
+        }
+      }
+    },
+    {
+      "id": "2105962586286026857",
+      "title": "Stablecoin Report With Token Terminal: Q3 2026",
+      "path": "/research/stablecoins-q3-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2105962586286026857",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 36,
+        "importedTextBlocks": 36,
+        "figures": 8,
+        "textSha256": "452ed20d3a32daa717598592ee47fce781d772ff51afc814e49b734f1cb1e0e1",
+        "images": {
+          "/research/assets/x-reports/HTjjOBKXAAAosVR.jpg": "89812f2c0feb78be7852e88c1c31cc668eb747b0ed04efb4f648351cbd76dc9f",
+          "/research/assets/x-reports/HTjjz8TXwAAyzD2.jpg": "44ea2c3012d9378930cdaae97234483d2e722a031917b4d9405e0e40ce0754a0",
+          "/research/assets/x-reports/HTjkOoCW0AAQUs1.jpg": "1c59a9b19ace029ee9c4bdeb45865bdc913d241a16991adbd1391d86759036da",
+          "/research/assets/x-reports/HTjkl5yWIAAH5HF.jpg": "e46e777c264007b0cf4cc8e3b1008aee493c6375566674a4aa61a388c44c690f",
+          "/research/assets/x-reports/HTjk7y3XcAAQElW.jpg": "7b6d66db75eef74ac50b8040388bcc7996b9a0a64af0265d2ebd5118d33e037a",
+          "/research/assets/x-reports/HTjlQGtX0AEZd6Z.jpg": "c04a591626e0a1bfd9fbb833a09b834fa69b370c81cb91cc323205c95f73a139",
+          "/research/assets/x-reports/HTjluYbWIAAaZ2n.jpg": "c1722bb6370efb5ad56cd6c4719155616a2ae4a63e779601ea08b3e833ec207e",
+          "/research/assets/x-reports/HTjmIknXAAAwYMk.jpg": "e195c32022158d704086b3e6dd9a0191d548cd5f42dbcc4e234abfd66c3de295"
+        }
+      }
+    },
+    {
+      "id": "2105629054896341427",
+      "title": "Tokenized Assets Report With Token Terminal",
+      "path": "/research/market-structure-sep-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2105629054896341427",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 57,
+        "importedTextBlocks": 57,
+        "figures": 18,
+        "textSha256": "8b6c95498c32c130f0e68c846841fc3df84dcfaf0f4e8e8795578d9495229e71",
+        "images": {
+          "/research/assets/x-reports/HTfK5B1W0AA141j.jpg": "417109bc55532b77babc37360b9e1067069c100c98bf492f959a165d3cb74dfd",
+          "/research/assets/x-reports/HTfL_NEXQAEhqi1.jpg": "0aaa549708dfa27786a16367ed6d4743ef33a56240cf98312c28e8aa69e3c361",
+          "/research/assets/x-reports/HTfNOehWgAAYGnt.jpg": "e899696852ff3d86947601918129c4e9241eb6ab0c50828b6270d3ba6702a0f8",
+          "/research/assets/x-reports/HTfN_mFWsAAdiNO.jpg": "63ff4d2abbcbca6d2103c3d352b7cf779e6b8689981a4185a609cc357ef9798c",
+          "/research/assets/x-reports/HTfOnuhXEAAkPmC.jpg": "2538865081e6a9ef8300b7116b724bd23523de4abf7255e9223439d897d15a41",
+          "/research/assets/x-reports/HTfPNX9W0AAlPVj.jpg": "4d9828acbcf877ad4edd4da7678b0fd50116ff5e9d896ff82b80608e67a88263",
+          "/research/assets/x-reports/HTfPt4SW8AAfQgf.jpg": "91935c942d99acc57ec466efbcc254dcea46f94aea99aacdc7291ce4c79777dd",
+          "/research/assets/x-reports/HTfQMZ1X0AAhv1w.jpg": "4956e960acb8347f2b3e880055c1803c834371dda14f47d85e92c8509799429b",
+          "/research/assets/x-reports/HTfQ03wWsAA4vwE.jpg": "8052c4962f8365ba0877dbd51e369289eab3358bd47693be765301eece46224e",
+          "/research/assets/x-reports/HTfRjYHXUAATlRa.jpg": "27ef741cd33640d88b66f5e05f4f562e262436625f1378ea9542db704f36245e",
+          "/research/assets/x-reports/HTfSP9eWAAA4W1o.jpg": "c3b3665a66c6212520701487bf3a75ff287cb7dfddfc59d77e3ba1703f106172",
+          "/research/assets/x-reports/HTfSszDXoAEHvpA.jpg": "ded3dab8d6e73e350992d0bc1ed3534a61b9ed1c4a88d15e49106321896e67fa",
+          "/research/assets/x-reports/HTfTOw-WUAAzlj_.jpg": "55ac23cbf1e7e2852cd2cb1ae4370c4ba7a9d8ad97b7557db8c246761449d8e2",
+          "/research/assets/x-reports/HTfTrgNXcAAL_0F.jpg": "33c0ec9dea7dee53b40fdae028651d37d96ee340f7028c97b6ca2dc282c63bfb",
+          "/research/assets/x-reports/HTfUJ2zWkAAstM6.jpg": "ab0001b47893157d37c716b30f08f7e707f5cd9e0273b16511183311cd9ffac4",
+          "/research/assets/x-reports/HTfUeobXUAAuYrD.jpg": "41e94b5de81794d259410da1705f4c87b378395fea303638e106909ed70e1d02",
+          "/research/assets/x-reports/HTfU9JtWIAAEDMn.jpg": "b0cd0847da5b303049161bb829b9dd32c6b11975a6242878d03875979cb7b3cc",
+          "/research/assets/x-reports/HTfVmIMWsAAcTZT.jpg": "5955425e1b6bb19a805f51d52cc5a30c645d1909f55b4ce388c8e2e3e2219f67"
+        }
+      }
+    },
+    {
+      "id": "2105257386164334790",
+      "title": "RWA Perps Report with DefiLlama: September 2026",
+      "path": "/research/rwa-perps-sep-28-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2105257386164334790",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 35,
+        "importedTextBlocks": 35,
+        "figures": 8,
+        "textSha256": "6c7662f6cf6de23e4938644796bfa10b6fa52937e19b38f769d2af54a0f59310",
+        "images": {
+          "/research/assets/x-reports/HTUVq3iWsAAbR-n.jpg": "2c7baf439c33e2f7ef7ed17e92d29c803f242c5a17d93bbc4c32d19cf3a95294",
+          "/research/assets/x-reports/HTVZk1_WQAAgUaS.jpg": "0ca3f90a326113b429797fd3c74cf795ca32b9857b432f2246df556f7d9885d0",
+          "/research/assets/x-reports/HTVaOtjW8AAy8AU.jpg": "15005f9ba9649cec682992b4941ae69e5ee96cb860a0570145350ad172f3690d",
+          "/research/assets/x-reports/HTVbKAaXQAEJ8d6.jpg": "ebb82ad11854facaedc5921492eec4b438aa03418f87a25dda7103a18e77ae7c",
+          "/research/assets/x-reports/HTVbwvtWwAAfeNC.jpg": "492c59c5a9de42f249b9d34daf28c05ac901dbea71f6caa55f9533f924166154",
+          "/research/assets/x-reports/HTVcHMYWkAA5bS_.jpg": "409067e01763d7c7163d7a41d6715b98daa636027dff260f0ed0e2b84fe6afb0",
+          "/research/assets/x-reports/HTVcwH0WYAEQfJa.jpg": "d675b8679ea10f94428d14538ff9788c3980f6ed273bae9cdc71b4b7cdbb6472",
+          "/research/assets/x-reports/HTVcQVZXcAAwvpV.jpg": "6b8ad069c071e282a7ae621858d7b06b3854928e686d96f2d940227cb503d3f4"
+        }
+      }
+    },
+    {
+      "id": "2104506897457897714",
+      "title": "Diving into Tokenized Stocks Over The Past 7 Days",
+      "path": "/research/tokenized-stocks-weekly-sep-28-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2104506897457897714",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 7,
+        "importedTextBlocks": 7,
+        "figures": 8,
+        "textSha256": "591701c06004625bbdae9f2ce53c638446b62be5f608266c5c55979d34e3f01a",
+        "images": {
+          "/research/assets/x-reports/HTSztpSWYAAX6Ua.jpg": "ef351609ca1a5496fcaf8d109b2ad067ec0a9b204df01f2c2fae562296696fb1",
+          "/research/assets/x-reports/HTSz3aAWYAAi3hc.jpg": "a2e762db3025b284c64cd4e6ed42c61d5b52c0696a861e2d8a07ed60e2e2a531",
+          "/research/assets/x-reports/HTS0DKCXIAAPyOu.jpg": "d786eee8182b6bb6c3306ae6f76082887fd83fa3de97393687d36774bb293fa0",
+          "/research/assets/x-reports/HTS0YgQWUAEaZrr.jpg": "3b281c5f184512a882536579fac193a6a61a10661b8bd3b301bfc82ca0a9ac26",
+          "/research/assets/x-reports/HTS0eGUXEAAEeh9.jpg": "2f2102a36775b56b39d4fd41eaeac16ea62e109867f11814af998a53d3bd92ad",
+          "/research/assets/x-reports/HTS0opKWQAAWZ46.jpg": "0cd942d3f2df744961d7da73215070c3b426ed083093d79aa43428a80077e0f3",
+          "/research/assets/x-reports/HTS00dEXAAA8xB4.jpg": "afd6688bc7f25ba206ccec5ef6eae7d178225afdeab9447f3c63fd976afaecab",
+          "/research/assets/x-reports/HTS07mrXIAA7YFV.jpg": "dc7ee7619ee69db4e76ef4871f5841fdc87bf7538239c90e39ee8a0ea2f3bb62"
+        }
+      }
+    },
+    {
+      "id": "2104493229253009826",
+      "title": "Stablecoin Weekly: Circle outpaces Tether, Latin America stirs, and banks move onchain",
+      "path": "/research/stablecoin-weekly-sep-28-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2104493229253009826",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 10,
+        "importedTextBlocks": 10,
+        "figures": 8,
+        "textSha256": "f890956808f88b35d02ed949d1a2431c89257457e18bbccf119f742bc398a728",
+        "images": {
+          "/research/assets/x-reports/HTQCi60X0AEMMM8.jpg": "2d19f88855a68ee90fe4e950a0a2355af372a4154a980233acdf0fc40c18639a",
+          "/research/assets/x-reports/HTQDCIpXYAM1C1Q.jpg": "1a1b0f0409da477a2362698ad3b083b58e51dd056b45e6f3104186e9cacd56a1",
+          "/research/assets/x-reports/HTQDJcbXcAAVwO1.jpg": "863120ad1afd5a8f62dd9c2a45649c5a6c9d75be94ac6978ffd2d8edc213bbe7",
+          "/research/assets/x-reports/HTQDUGDWcAAJ68G.jpg": "522b41177b52a2a9dd47bc57b39c9e8e288f9ea2ff7a142ed1ab3ba561d2ca3f",
+          "/research/assets/x-reports/HTQDmUXX0AE_oBy.jpg": "4e29592fc55c900fbb937d26a8132d9aaf6f86260b50e2e03cc9f84359b7a56e",
+          "/research/assets/x-reports/HTQDs4SWAAARQF3.jpg": "aba1ff4d7883edb7b98ee1fc4eeba414242368274d64d7b436d7128a2ec68879",
+          "/research/assets/x-reports/HTQDyiUXcAAMU0S.jpg": "828a36d65bb5d10c8c68dd9e792b632b2603ae6a4c5bfed997d2d0cfbc68ea6f",
+          "/research/assets/x-reports/HTQEMcAXUAAHAOX.jpg": "ff13ea3181d1e7f209929899e3ffbf255b5fa2289a1b7922c166b96498c63e58"
+        }
+      }
+    },
+    {
+      "id": "2101761886760910898",
+      "title": "RWA Foundation × Token Terminal: Where the Money Flowed This Week",
+      "path": "/research/rwa-weekly-sep-20-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2101761886760910898",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 73,
+        "importedTextBlocks": 73,
+        "figures": 15,
+        "textSha256": "a3d91d6c6ad231138f81779112fda0b8cc7445553f6d8eaf9a0fd21f8a1ac8ae",
+        "images": {
+          "/research/assets/x-reports/HSrf0z1W0AAiJRJ.jpg": "e0f512b66201c560bbcc685a9549debcd5c4d55245f3063523527ab3d65d9b18",
+          "/research/assets/x-reports/HSrhG7GXMAAFMSC.jpg": "6c593184a6112cf6e0f6353605a427c5dcda61aebb0f13db82d1124e7217208b",
+          "/research/assets/x-reports/HSrjczhWcAAS4wZ.jpg": "7447ed30568a60ee868265dfdb54dfc46beeb4776b62b21dc6f4cdd5c69dfa83",
+          "/research/assets/x-reports/HSrlqQ_XMAE86pj.jpg": "56831e67bee5d41509578b374ec572ffeca203f26815858b4225d1ab632633f5",
+          "/research/assets/x-reports/HSrm-jyXsAAgIK0.jpg": "41e884acb47ae781bbf7063d56dd4e322cf38c116dd5162d90f87d8fadcdc89c",
+          "/research/assets/x-reports/HSrneUoWgAAAm7S.jpg": "2078b6518bc29299405959fee081aba7d1b808441a264771eb0f3aaeb8ba9a34",
+          "/research/assets/x-reports/HSrpc_kX0AAEYEI.jpg": "f5c9fb570576d4ea0c1fc083a489fef07645b749f64da47348bf91d0fabd7b3d",
+          "/research/assets/x-reports/HSrqn4TXoAAKuP7.jpg": "4669e5dcd828232f06d0383d26cf4e355416ff889db8327ceba53e6e63957536",
+          "/research/assets/x-reports/HSrrXOTXsAA1i06.jpg": "95a5a728ead5f45a289e87c5be14ec2180c2ff32cb17480fd9fc8363e1870d9b",
+          "/research/assets/x-reports/HSrsOW9WoAMvMdm.jpg": "2753e6e11ab936566e3f3ce4e7431523ec71d1d8da2ac96e3b850a0f96eb0e5d",
+          "/research/assets/x-reports/HSrs6sVWwAA49j5.jpg": "74d84a66756d33c72a761605664b6abae6cebd114f9d0b875faea6ed44675a9b",
+          "/research/assets/x-reports/HSrtvwxXsAAA4pZ.jpg": "4ba838091479972b1689a945cfd5740b17e7bb079bdc0f02fb71074d997abd6c",
+          "/research/assets/x-reports/HSru-J8WwAArr2K.jpg": "64bf622089e803d475b793769b40b23719d0c13dab37ee477bf8e2576675f5de",
+          "/research/assets/x-reports/HSrwgYNWoAEGTKh.jpg": "073e622490cbae1b573237391b5d4c3e994b17954b8744f560a94aa971602d7e",
+          "/research/assets/x-reports/HSrxbFjXMAAjvut.jpg": "f30bf214d61fab596e33ebfae07ba39904a8cf76b3903dea7128a788e5724526"
+        }
+      }
+    },
+    {
+      "id": "2097302216029736992",
+      "title": "RWA Perpetuals Report with DefiLlama",
+      "path": "/research/rwa-perps-sep-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2097302216029736992",
+      "action": "already present",
+      "contentCheck": null
+    },
+    {
+      "id": "2094787823970763010",
+      "title": "Tokenized Assets Report with Token Terminal",
+      "path": "/research/market-structure-aug-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2094787823970763010",
+      "action": "already present",
+      "contentCheck": null
+    }
+  ],
+  "otherArticles": [
+    {
+      "id": "2110766877135749236",
+      "title": "Who Builds on Avalanche: The Companies Behind the Chain's RWA Growth",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2108574792777367771",
+      "title": "The RWA Ecosystem: 1,000+ projects, one directory",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2102383690890309935",
+      "title": "Introducing rwaf.xyz: A Home For Supporting All Things RWA",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2087120904203444400",
+      "title": "RWA & Tokenization Glossary 📚🐘",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2076628858892177896",
+      "title": "How To Actually Evaluate An RWA Before You Buy It",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2075150735482757524",
+      "title": "RWAs and Tokenization: Where to Start",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2064330813454320037",
+      "title": "The Deal That Started It All For Tokenization",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2062115677142503451",
+      "title": "Three Projects Reshaping the RWA Landscape:",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2054497812658684042",
+      "title": "Plume: A blockchain purpose-built for Real-World Assets",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2053825308583727351",
+      "title": "Securitize: The leading regulated tokenization platform",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2053777249405423793",
+      "title": "A Deep Dive into Plume, OnRe Finance, and IXS Finance",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2051922552864293126",
+      "title": "Understanding the Regulatory Landscape of Real World Assets",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2050151189820399857",
+      "title": "Real World Assets and the Return of Structured Finance",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2048700380544954753",
+      "title": "RWA Vaults Explained - How Real World Yield Comes Onchain",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2047631521981304943",
+      "title": "RWA & Tokenization Glossary",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2047250641295118827",
+      "title": "Tokenized Stocks: How They Actually Work",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2046154838451404837",
+      "title": "What does it actually mean to tokenize an asset?",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2044743663918391357",
+      "title": "RWAs Explained Simply",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2043629410612281781",
+      "title": "Meet the Members Building the RWA Ecosystem",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2042531865827971111",
+      "title": "RWAF Member Spotlight: Solana - The Chain Powering the Next Wave of Real-World Assets?",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2041788446197309645",
+      "title": "RWAF Member Write-Up",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2039659954823422226",
+      "title": "RWAF Member Spotlight: Tokenized Treasuries",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2038943208567160895",
+      "title": "From Reinsurance to Pre-IPO & collectible. ",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2038568906759995450",
+      "title": "RWAF Member Snapshot: Different layers of the RWA Stack.  ",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2037138899844145210",
+      "title": "RWAF Members Article.",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2036810683971498246",
+      "title": "RWAF <> Dinari: Member Spotlight",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2036763965225586726",
+      "title": "Securitize × NYSE - The Biggest Tokenization Announcement of 2026 So Far",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2036404603680395393",
+      "title": "RWAF Members Spotlight",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2036012671657476576",
+      "title": "RWAF Members -  Infrastructure, Issuance & Lending",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2034592298340581782",
+      "title": "RWAF Members Write-up - Private Credit / Yield Products",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2034414137879449767",
+      "title": "RWA Storytime",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2034209016184741940",
+      "title": "The Infrastructure Layer of Tokenization",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2033581184576266384",
+      "title": "RWAF <> MuDigital",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2032084258651558159",
+      "title": "RWAF <> OnRe",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2031788008781853076",
+      "title": "RWAF <> PLUME",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2031375197215887433",
+      "title": "RWAF <> IXS Finance",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2031336740615512360",
+      "title": "RWAF <> Maple Finance ",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2031033415252754501",
+      "title": "RWAF <> PreStocks",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2024177395977048194",
+      "title": "Member Spotlight - Real Finance",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2014350630450504170",
+      "title": "RWA Foundation Member Spotlight -  Mu Digital",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2013604681159790811",
+      "title": "Member Spotlight: StellarOrg",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2011480183937655158",
+      "title": "Member Spotlight | Chintai & CHEX",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2011471990205399511",
+      "title": "Member Spotlight: Plume",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2011116151678382229",
+      "title": "Member Spotlight: PreStocks",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2010747954127061212",
+      "title": "Maple Finance - The Onchain Bridge Between Institutional Credit & DeFi Yield ",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2009664546567307654",
+      "title": "RWA Foundation Member Spotlight - Securitize",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2006363307599376489",
+      "title": "2025 RWA Foundation Round-up",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    },
+    {
+      "id": "2000569657154027704",
+      "title": "Why Finance Is Moving OnChain and Why Coordination Matters",
+      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
+    }
+  ]
+}

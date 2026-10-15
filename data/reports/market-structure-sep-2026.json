@@ -1,0 +1,2108 @@
+{
+  "id": "2105629054896341427",
+  "slug": "market-structure-sep-2026",
+  "series": "monthly",
+  "title": "Tokenized Assets Report With Token Terminal",
+  "shortTitle": "Tokenized Assets Report",
+  "edition": "September 2026",
+  "window": "30-day window ending September 30, 2026",
+  "asOf": "2026-09-30",
+  "publishedAt": "2026-10-01T12:01:02.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2105629054896341427",
+  "partner": "Token Terminal",
+  "description": "September market structure across tokenized assets, issuers, chains and holders.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "This is the September 2026 edition of Monthly RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks how tokenized real-world assets moved over the month across five sectors: stablecoins, tokenized funds, tokenized credit, tokenized commodities and tokenized stocks.",
+      "parts": [
+        {
+          "text": "This is the September 2026 edition of Monthly RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks how tokenized real-world assets moved over the month across five sectors: stablecoins, tokenized funds, tokenized credit, tokenized commodities and tokenized stocks."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are taken strictly from Token Terminal, as of September 30, 2026. Growth figures cover the trailing 30-day window ending on that date. No third-party data has been added, and no figures have been adjusted or estimated.",
+      "parts": [
+        {
+          "text": "All figures are taken strictly from Token Terminal, as of September 30, 2026. Growth figures cover the trailing 30-day window ending on that date. No third-party data has been added, and no figures have been adjusted or estimated."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Market cap refers to circulating asset market cap as reported by Token Terminal. That means outstanding supply for stablecoins, assets under management for tokenized funds and credit, and tokenized supply for commodities and stocks.",
+      "parts": [
+        {
+          "text": "Market cap refers to circulating asset market cap as reported by Token Terminal. That means outstanding supply for stablecoins, assets under management for tokenized funds and credit, and tokenized supply for commodities and stocks."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Comparisons to the previous month refer to figures published in the August 2026 edition of this report.",
+      "parts": [
+        {
+          "text": "Comparisons to the previous month refer to figures published in the August 2026 edition of this report."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Stablecoins",
+      "parts": [
+        {
+          "text": "Stablecoins",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoin market cap reached $301.4 billion across 193 assets at the end of September, up from $298.8 billion across 189 assets in our August report. The biggest change was at the top of the growth table. USDe from Ethena added $823.1 million over 30 days, more than any other stablecoin, pushing USDC and USDT into second and third.",
+      "parts": [
+        {
+          "text": "Stablecoin market cap reached $301.4 billion across 193 assets at the end of September, up from $298.8 billion across 189 assets in our August report. The biggest change was at the top of the growth table. USDe from Ethena added $823.1 million over 30 days, more than any other stablecoin, pushing USDC and USDT into second and third."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Growth by asset - USDC added $592.7 million and USDT added $512.4 million, so the two largest stablecoins still took a large share of new supply. Behind them, USDS (+$276.2 million), USD1 (+$239.7 million) and U (+$189.3 million) each added close to or above $200 million. Ripple's RLUSD added $151.7 million, a slower pace than its $768.7 million in August.",
+      "parts": [
+        {
+          "text": "Growth by asset - USDC added $592.7 million and USDT added $512.4 million, so the two largest stablecoins still took a large share of new supply. Behind them, USDS (+$276.2 million), USD1 (+$239.7 million) and U (+$189.3 million) each added close to or above $200 million. Ripple's RLUSD added $151.7 million, a slower pace than its $768.7 million in August."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Two non-USD stablecoins made the top 10. Yen-denominated JPYC added $65.7 million and euro-denominated EURXT added $38.6 million, a small but visible sign of demand for local- currency stablecoins. The top 10 added about $2.9 billion combined.",
+      "parts": [
+        {
+          "text": "Two non-USD stablecoins made the top 10. Yen-denominated JPYC added $65.7 million and euro-denominated EURXT added $38.6 million, a small but visible sign of demand for local- currency stablecoins. The top 10 added about $2.9 billion combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin Market Cap Growth By Asset.",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfK5B1W0AA141j.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfK5B1W0AA141j?format=jpg&name=medium",
+          "alt": "Stablecoin Market Cap Growth By Asset.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by chain",
+      "parts": [
+        {
+          "text": "Growth by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tron added $744.4 million over 30 days, more than any other chain, with HyperEVM (+$615.7 million) and Arc (+$465.9 million) second and third. Together, those three took about 58% of the top 10's new supply.",
+      "parts": [
+        {
+          "text": "Tron",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "$744.4 million",
+          "bold": true
+        },
+        {
+          "text": " over 30 days, more than any other chain, with "
+        },
+        {
+          "text": "HyperEVM",
+          "bold": true
+        },
+        {
+          "text": " (+$615.7 million) and "
+        },
+        {
+          "text": "Arc",
+          "bold": true
+        },
+        {
+          "text": " (+$465.9 million) second and third. Together, those three took about 58% of the top 10's new supply."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Solana added $440.2 million, just behind Arc. Arbitrum One (+$271.3 million) and Robinhood Chain (+$243.6 million) each added more than $240 million. Some of the biggest September gains went to newer chains such as HyperEVM, Arc and Robinhood Chain, not only to established networks.",
+      "parts": [
+        {
+          "text": "Solana",
+          "bold": true
+        },
+        {
+          "text": " added $440.2 million, just behind Arc. "
+        },
+        {
+          "text": "Arbitrum One",
+          "bold": true
+        },
+        {
+          "text": " (+$271.3 million) and "
+        },
+        {
+          "text": "Robinhood Chain",
+          "bold": true
+        },
+        {
+          "text": " (+$243.6 million) each added more than $240 million. Some of the biggest September gains went to newer chains such as HyperEVM, Arc and Robinhood Chain, not only to established networks."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The bottom four were close together: XRP Ledger (+$96.5 million), Avalanche (+$91.9 million), Ethereum (+$83.6 million) and BNB Chain (+$83.1 million). Ethereum still hosts a large share of total stablecoin supply, but it added less in September than several smaller chains. The top 10 added about $3.1 billion combined, and stablecoins now sit across 47 chains.",
+      "parts": [
+        {
+          "text": "The bottom four were close together: "
+        },
+        {
+          "text": "XRP Ledger",
+          "bold": true
+        },
+        {
+          "text": " (+$96.5 million), "
+        },
+        {
+          "text": "Avalanche",
+          "bold": true
+        },
+        {
+          "text": " (+$91.9 million), "
+        },
+        {
+          "text": "Ethereum",
+          "bold": true
+        },
+        {
+          "text": " (+$83.6 million) and "
+        },
+        {
+          "text": "BNB Chain",
+          "bold": true
+        },
+        {
+          "text": " (+$83.1 million). Ethereum still hosts a large share of total stablecoin supply, but it added less in September than several smaller chains. The top 10 added about "
+        },
+        {
+          "text": "$3.1 billion",
+          "bold": true
+        },
+        {
+          "text": " combined, and stablecoins now sit across "
+        },
+        {
+          "text": "47 chains",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin Market Cap Growth By Chain.",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfL_NEXQAEhqi1.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfL_NEXQAEhqi1?format=jpg&name=medium",
+          "alt": "Stablecoin Market Cap Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Holders by issuer",
+      "parts": [
+        {
+          "text": "Holders by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tether added 4.8 million holders over 30 days and Circle added 3.0 million, about 94% of the top 10's new holders. Paxos (+259,700) and Phantom (+100,600) were the only others above 100 thousand. Wallet and app issuers like Phantom, Bridge and Polymarket made the top 10, so some of the new holders are coming from consumer apps. The top 10 added about 8.3 million holders combined.",
+      "parts": [
+        {
+          "text": "Tether",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "4.8 million",
+          "bold": true
+        },
+        {
+          "text": " holders over 30 days and "
+        },
+        {
+          "text": "Circle",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "3.0 million",
+          "bold": true
+        },
+        {
+          "text": ", about 94% of the top 10's new holders. "
+        },
+        {
+          "text": "Paxos",
+          "bold": true
+        },
+        {
+          "text": " (+259,700) and "
+        },
+        {
+          "text": "Phantom",
+          "bold": true
+        },
+        {
+          "text": " (+100,600) were the only others above 100 thousand. Wallet and app issuers like Phantom, Bridge and Polymarket made the top 10, so some of the new holders are coming from consumer apps. The top 10 added about "
+        },
+        {
+          "text": "8.3 million",
+          "bold": true
+        },
+        {
+          "text": " holders combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin Holder Growth By Issuer",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfNOehWgAAYGnt.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfNOehWgAAYGnt?format=jpg&name=medium",
+          "alt": "Stablecoin Holder Growth By Issuer",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Holders by chain",
+      "parts": [
+        {
+          "text": "Holders by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin Holder Growth By Chain.",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfN_mFWsAAdiNO.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfN_mFWsAAdiNO?format=jpg&name=medium",
+          "alt": "Stablecoin Holder Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "BNB Chain added 4.5 million stablecoin holders over 30 days, over five times the next chain and about half the top 10's total. Celo (+870,700), Tron (+813,300) and Solana (+800,500) were closely grouped behind it, with Base (+634,000) next. The top 10 added about 8.8 million holders combined.",
+      "parts": [
+        {
+          "text": "BNB Chain",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "4.5 million",
+          "bold": true
+        },
+        {
+          "text": " stablecoin holders over 30 days, over five times the next chain and about half the top 10's total. "
+        },
+        {
+          "text": "Celo",
+          "bold": true
+        },
+        {
+          "text": " (+870,700), "
+        },
+        {
+          "text": "Tron",
+          "bold": true
+        },
+        {
+          "text": " (+813,300) and "
+        },
+        {
+          "text": "Solana",
+          "bold": true
+        },
+        {
+          "text": " (+800,500) were closely grouped behind it, with "
+        },
+        {
+          "text": "Base",
+          "bold": true
+        },
+        {
+          "text": " (+634,000) next. The top 10 added about "
+        },
+        {
+          "text": "8.8 million",
+          "bold": true
+        },
+        {
+          "text": " holders combined."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized funds",
+      "parts": [
+        {
+          "text": "Tokenized funds",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by issuer",
+      "parts": [
+        {
+          "text": "Growth by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "WisdomTree added $206.1 million over 30 days, more than any other tokenized fund issuer, with Spiko second at $174.4 million. Those two traditional-style fund managers took over half of the top 10's growth. Behind them, USDai (+$91.3 million), Sky (+$63.7 million) and Re (+$57.2 million) each added more than $50 million. OpenEden (+$42.6 million), 3Jane (+$25.8 million), Figure (+$19.9 million), f(x) Protocol (+$14.2 million) and Plume Vaults (+$11.6 million) filled out the top 10. The top 10 added about $707 million combined.",
+      "parts": [
+        {
+          "text": "WisdomTree",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "$206.1 million",
+          "bold": true
+        },
+        {
+          "text": " over 30 days, more than any other tokenized fund issuer, with "
+        },
+        {
+          "text": "Spiko",
+          "bold": true
+        },
+        {
+          "text": " second at "
+        },
+        {
+          "text": "$174.4 million",
+          "bold": true
+        },
+        {
+          "text": ". Those two traditional-style fund managers took over half of the top 10's growth. Behind them, "
+        },
+        {
+          "text": "USDai",
+          "bold": true
+        },
+        {
+          "text": " (+$91.3 million), "
+        },
+        {
+          "text": "Sky",
+          "bold": true
+        },
+        {
+          "text": " (+$63.7 million) and "
+        },
+        {
+          "text": "Re",
+          "bold": true
+        },
+        {
+          "text": " (+$57.2 million) each added more than $50 million. "
+        },
+        {
+          "text": "OpenEden",
+          "bold": true
+        },
+        {
+          "text": " (+$42.6 million), "
+        },
+        {
+          "text": "3Jane",
+          "bold": true
+        },
+        {
+          "text": " (+$25.8 million), "
+        },
+        {
+          "text": "Figure",
+          "bold": true
+        },
+        {
+          "text": " (+$19.9 million), "
+        },
+        {
+          "text": "f(x) Protocol",
+          "bold": true
+        },
+        {
+          "text": " (+$14.2 million) and "
+        },
+        {
+          "text": "Plume Vaults",
+          "bold": true
+        },
+        {
+          "text": " (+$11.6 million) filled out the top 10. The top 10 added about "
+        },
+        {
+          "text": "$707 million",
+          "bold": true
+        },
+        {
+          "text": " combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Fund Market Cap Growth By Issuer.",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfOnuhXEAAkPmC.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfOnuhXEAAkPmC?format=jpg&name=medium",
+          "alt": "Tokenized Fund Market Cap Growth By Issuer.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Market share by issuer",
+      "parts": [
+        {
+          "text": "Market share by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized funds are much more spread out than stablecoins. Sky leads with 13.4%, followed by Securitize at 10.9%. Five more issuers each hold between 6.6% and 7.4%: Spiko (7.4%), Ondo Finance (7.3%), Franklin Templeton (7.2%), Circle (7.0%) and Tradable (6.6%). Maple Finance (4.2%), Ethena (3.7%) and WisdomTree (3.6%) complete the top 10. The top 10 hold 71.3% combined, and 28.7% sits with smaller issuers. No single issuer comes close to the dominance Tether has in stablecoins.",
+      "parts": [
+        {
+          "text": "Tokenized funds are much more spread out than stablecoins. "
+        },
+        {
+          "text": "Sky",
+          "bold": true
+        },
+        {
+          "text": " leads with "
+        },
+        {
+          "text": "13.4%",
+          "bold": true
+        },
+        {
+          "text": ", followed by "
+        },
+        {
+          "text": "Securitize",
+          "bold": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "10.9%",
+          "bold": true
+        },
+        {
+          "text": ". Five more issuers each hold between 6.6% and 7.4%: "
+        },
+        {
+          "text": "Spiko",
+          "bold": true
+        },
+        {
+          "text": " (7.4%), "
+        },
+        {
+          "text": "Ondo Finance",
+          "bold": true
+        },
+        {
+          "text": " (7.3%), "
+        },
+        {
+          "text": "Franklin Templeton",
+          "bold": true
+        },
+        {
+          "text": " (7.2%), "
+        },
+        {
+          "text": "Circle",
+          "bold": true
+        },
+        {
+          "text": " (7.0%) and "
+        },
+        {
+          "text": "Tradable",
+          "bold": true
+        },
+        {
+          "text": " (6.6%). "
+        },
+        {
+          "text": "Maple Finance",
+          "bold": true
+        },
+        {
+          "text": " (4.2%), "
+        },
+        {
+          "text": "Ethena",
+          "bold": true
+        },
+        {
+          "text": " (3.7%) and "
+        },
+        {
+          "text": "WisdomTree",
+          "bold": true
+        },
+        {
+          "text": " (3.6%) complete the top 10. The top 10 hold 71.3% combined, and 28.7% sits with smaller issuers. No single issuer comes close to the dominance Tether has in stablecoins."
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by chain",
+      "parts": [
+        {
+          "text": "Growth by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Arbitrum One added $167.2 million in tokenized fund market cap over 30 days, nearly double the $86.4 million added on Stellar. Onchain, those two took about 95% of the top 10's growth. After them, growth drops off sharply: Plume added $6.1 million, zkSync Era $2.6 million and Fraxtal $1.3 million.",
+      "parts": [
+        {
+          "text": "Arbitrum One",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "$167.2 million",
+          "bold": true
+        },
+        {
+          "text": " in tokenized fund market cap over 30 days, nearly double the "
+        },
+        {
+          "text": "$86.4 million",
+          "bold": true
+        },
+        {
+          "text": " added on "
+        },
+        {
+          "text": "Stellar",
+          "bold": true
+        },
+        {
+          "text": ". Onchain, those two took about 95% of the top 10's growth. After them, growth drops off sharply: "
+        },
+        {
+          "text": "Plume",
+          "bold": true
+        },
+        {
+          "text": " added $6.1 million, "
+        },
+        {
+          "text": "zkSync Era",
+          "bold": true
+        },
+        {
+          "text": " $2.6 million and "
+        },
+        {
+          "text": "Fraxtal",
+          "bold": true
+        },
+        {
+          "text": " $1.3 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Fund Market Cap Growth By Chain.",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfPNX9W0AAlPVj.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfPNX9W0AAlPVj?format=jpg&name=medium",
+          "alt": "Tokenized Fund Market Cap Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Holders by issuer",
+      "parts": [
+        {
+          "text": "Holders by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "OnRe added 833 holders over 30 days, more than any other tokenized fund issuer, with Ondo Finance (+753) and Maple Finance (+680) close behind. Gauntlet (+384), USDai (+346) and Plume Vaults (+301) formed the next group. Sky (+234), Ethena (+173), Falcon Finance (+140) and Dinari (+105) completed the top 10. These are much smaller numbers than for stablecoins, as you'd expect for a sector built around fewer, larger holders. The top 10 added about 3,950 holders combined.",
+      "parts": [
+        {
+          "text": "OnRe",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "833",
+          "bold": true
+        },
+        {
+          "text": " holders over 30 days, more than any other tokenized fund issuer, with "
+        },
+        {
+          "text": "Ondo Finance",
+          "bold": true
+        },
+        {
+          "text": " (+753) and "
+        },
+        {
+          "text": "Maple Finance",
+          "bold": true
+        },
+        {
+          "text": " (+680) close behind. "
+        },
+        {
+          "text": "Gauntlet",
+          "bold": true
+        },
+        {
+          "text": " (+384), "
+        },
+        {
+          "text": "USDai",
+          "bold": true
+        },
+        {
+          "text": " (+346) and "
+        },
+        {
+          "text": "Plume Vaults",
+          "bold": true
+        },
+        {
+          "text": " (+301) formed the next group. "
+        },
+        {
+          "text": "Sky",
+          "bold": true
+        },
+        {
+          "text": " (+234), "
+        },
+        {
+          "text": "Ethena",
+          "bold": true
+        },
+        {
+          "text": " (+173), "
+        },
+        {
+          "text": "Falcon Finance",
+          "bold": true
+        },
+        {
+          "text": " (+140) and "
+        },
+        {
+          "text": "Dinari",
+          "bold": true
+        },
+        {
+          "text": " (+105) completed the top 10. These are much smaller numbers than for stablecoins, as you'd expect for a sector built around fewer, larger holders. The top 10 added about "
+        },
+        {
+          "text": "3,950",
+          "bold": true
+        },
+        {
+          "text": " holders combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Fund Holder Growth By Issuer.",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfPt4SW8AAfQgf.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfPt4SW8AAfQgf?format=jpg&name=medium",
+          "alt": "Tokenized Fund Holder Growth By Issuer.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Holders by chain",
+      "parts": [
+        {
+          "text": "Holders by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized funds have 565,300 holders across 36 chains. Base added the most holders over 30 days (+881), about double Ethereum (+439) and Arbitrum One (+396). Sui (+251) was fourth, and OP Mainnet (+101) was the only other chain above 100. Sei EVM, Solana, Robinhood Chain, Plasma and Stellar each added between 68 and 82. The top 10 added about 2,430 holders, with Base taking over a third of them.",
+      "parts": [
+        {
+          "text": "Tokenized funds have "
+        },
+        {
+          "text": "565,300 ",
+          "bold": true
+        },
+        {
+          "text": "holders across "
+        },
+        {
+          "text": "36 chains",
+          "bold": true
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "Base",
+          "bold": true
+        },
+        {
+          "text": " added the most holders over 30 days (+881), about double "
+        },
+        {
+          "text": "Ethereum",
+          "bold": true
+        },
+        {
+          "text": " (+439) and "
+        },
+        {
+          "text": "Arbitrum One",
+          "bold": true
+        },
+        {
+          "text": " (+396). "
+        },
+        {
+          "text": "Sui",
+          "bold": true
+        },
+        {
+          "text": " (+251) was fourth, and "
+        },
+        {
+          "text": "OP Mainnet",
+          "bold": true
+        },
+        {
+          "text": " (+101) was the only other chain above 100. "
+        },
+        {
+          "text": "Sei EVM",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Solana",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Robinhood Chain",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Plasma",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Stellar",
+          "bold": true
+        },
+        {
+          "text": " each added between 68 and 82. The top 10 added about "
+        },
+        {
+          "text": "2,430",
+          "bold": true
+        },
+        {
+          "text": " holders, with Base taking over a third of them."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Fund Holder Growth By Chain.",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfQMZ1X0AAhv1w.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfQMZ1X0AAhv1w?format=jpg&name=medium",
+          "alt": "Tokenized Fund Holder Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized credit",
+      "parts": [
+        {
+          "text": "Tokenized credit",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by issuer",
+      "parts": [
+        {
+          "text": "Growth by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized credit had a mixed month. Only two of the nine issuers shown grew: USDai added $91.3 million and 3Jane added $25.8 million. The other seven shrank. Centrifuge fell the most, down $120.4 million, followed by Securitize (-$74.2 million) and Maple Finance (-$64.3 million). Smaller declines came from Hastra (-$12.1 million), Pareto (-$8.7 million), Accountable (-$1.5 million) and Plume Vaults (-$334.1 thousand). Across these nine issuers, credit market cap fell by about $164 million net.",
+      "parts": [
+        {
+          "text": "Tokenized credit had a mixed month. Only two of the nine issuers shown grew: "
+        },
+        {
+          "text": "USDai",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "$91.3 million",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "3Jane",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "$25.8 million",
+          "bold": true
+        },
+        {
+          "text": ". The other seven shrank. "
+        },
+        {
+          "text": "Centrifuge",
+          "bold": true
+        },
+        {
+          "text": " fell the most, down "
+        },
+        {
+          "text": "$120.4 million",
+          "bold": true
+        },
+        {
+          "text": ", followed by "
+        },
+        {
+          "text": "Securitize",
+          "bold": true
+        },
+        {
+          "text": " (-$74.2 million) and "
+        },
+        {
+          "text": "Maple Finance",
+          "bold": true
+        },
+        {
+          "text": " (-$64.3 million). Smaller declines came from "
+        },
+        {
+          "text": "Hastra",
+          "bold": true
+        },
+        {
+          "text": " (-$12.1 million), "
+        },
+        {
+          "text": "Pareto",
+          "bold": true
+        },
+        {
+          "text": " (-$8.7 million), "
+        },
+        {
+          "text": "Accountable",
+          "bold": true
+        },
+        {
+          "text": " (-$1.5 million) and "
+        },
+        {
+          "text": "Plume Vaults",
+          "bold": true
+        },
+        {
+          "text": " (-$334.1 thousand). Across these nine issuers, credit market cap fell by about "
+        },
+        {
+          "text": "$164 million",
+          "bold": true
+        },
+        {
+          "text": " net."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Credit Market Cap Growth By Issuer.",
+      "number": 9,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfQ03wWsAA4vwE.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfQ03wWsAA4vwE?format=jpg&name=medium",
+          "alt": "Tokenized Credit Market Cap Growth By Issuer.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by chain",
+      "parts": [
+        {
+          "text": "Growth by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Almost all of tokenized credit's onchain growth in September was on Arbitrum One, which added $90.0 million. No other chain added more than $2 million: Stellar (+$1.8 million), BNB Chain (+$1.0 million) and Avalanche (+$954.8 thousand) made small gains. Polygon, Ink, Sei EVM and Aptos each fell by less than $110 thousand. Monad (-$1.5 million) and Plasma (-$9.5 million) saw the largest declines. Outside Arbitrum, credit barely moved between chains this month.",
+      "parts": [
+        {
+          "text": "Almost all of tokenized credit's onchain growth in September was on "
+        },
+        {
+          "text": "Arbitrum One",
+          "bold": true
+        },
+        {
+          "text": ", which added "
+        },
+        {
+          "text": "$90.0 million",
+          "bold": true
+        },
+        {
+          "text": ". No other chain added more than $2 million: "
+        },
+        {
+          "text": "Stellar",
+          "bold": true
+        },
+        {
+          "text": " (+$1.8 million), "
+        },
+        {
+          "text": "BNB Chain",
+          "bold": true
+        },
+        {
+          "text": " (+$1.0 million) and "
+        },
+        {
+          "text": "Avalanche",
+          "bold": true
+        },
+        {
+          "text": " (+$954.8 thousand) made small gains. "
+        },
+        {
+          "text": "Polygon",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Ink",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Sei EVM",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Aptos",
+          "bold": true
+        },
+        {
+          "text": " each fell by less than $110 thousand. "
+        },
+        {
+          "text": "Monad",
+          "bold": true
+        },
+        {
+          "text": " (-$1.5 million) and "
+        },
+        {
+          "text": "Plasma",
+          "bold": true
+        },
+        {
+          "text": " (-$9.5 million) saw the largest declines. Outside Arbitrum, credit barely moved between chains this month."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Credit Market Cap Growth By Chain.",
+      "number": 10,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfRjYHXUAATlRa.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfRjYHXUAATlRa?format=jpg&name=medium",
+          "alt": "Tokenized Credit Market Cap Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized commodities",
+      "parts": [
+        {
+          "text": "Tokenized commodities",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by issuer",
+      "parts": [
+        {
+          "text": "Growth by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Growth in tokenized commodities was driven almost entirely by Tether, which added $237.0 million over 30 days through its gold-backed token. That is more than 20 times the next issuer. Robinhood (+$10.9 million), xStocks (+$1.8 million) and Bridgetower (+$680,000) were the only other issuers to grow. The other six shrank slightly. Reality (-$309,700), ComTech (-$210,200), Oro (-$136,000), VNX (-$96,900), StreamEx (-$24,900) and Kinka (-$332) all saw small declines. Apart from Tether, the sector was largely flat in September.",
+      "parts": [
+        {
+          "text": "Growth in tokenized commodities was driven almost entirely by "
+        },
+        {
+          "text": "Tether",
+          "bold": true
+        },
+        {
+          "text": ", which added "
+        },
+        {
+          "text": "$237.0 million",
+          "bold": true
+        },
+        {
+          "text": " over 30 days through its gold-backed token. That is more than 20 times the next issuer. "
+        },
+        {
+          "text": "Robinhood",
+          "bold": true
+        },
+        {
+          "text": " (+$10.9 million), "
+        },
+        {
+          "text": "xStocks",
+          "bold": true
+        },
+        {
+          "text": " (+$1.8 million) and "
+        },
+        {
+          "text": "Bridgetower",
+          "bold": true
+        },
+        {
+          "text": " (+$680,000) were the only other issuers to grow. The other six shrank slightly. "
+        },
+        {
+          "text": "Reality",
+          "bold": true
+        },
+        {
+          "text": " (-$309,700), "
+        },
+        {
+          "text": "ComTech",
+          "bold": true
+        },
+        {
+          "text": " (-$210,200), "
+        },
+        {
+          "text": "Oro",
+          "bold": true
+        },
+        {
+          "text": " (-$136,000), "
+        },
+        {
+          "text": "VNX",
+          "bold": true
+        },
+        {
+          "text": " (-$96,900), "
+        },
+        {
+          "text": "StreamEx",
+          "bold": true
+        },
+        {
+          "text": " (-$24,900) and "
+        },
+        {
+          "text": "Kinka",
+          "bold": true
+        },
+        {
+          "text": " (-$332) all saw small declines. Apart from Tether, the sector was largely flat in September."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Commodities Market Cap Growth By Issuer.",
+      "number": 11,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfSP9eWAAA4W1o.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfSP9eWAAA4W1o?format=jpg&name=medium",
+          "alt": "Tokenized Commodities Market Cap Growth By Issuer.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by chain",
+      "parts": [
+        {
+          "text": "Growth by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ethereum took almost all of the onchain growth in tokenized commodities, adding $128.2 million over 30 days. Robinhood Chain was a distant second at +$10.8 million, followed by HyperEVM (+$1.3 million) and Avalanche (+$680,100). The other six chains all fell slightly. Arbitrum One (-$4.3 million) and Plasma (-$3.9 million) had the largest declines. Sui, Solana, XDC Network and Base each fell by less than $1 million. As with issuers, one name drove the sector: Tether led by issuer and Ethereum led by chain.",
+      "parts": [
+        {
+          "text": "Ethereum",
+          "bold": true
+        },
+        {
+          "text": " took almost all of the onchain growth in tokenized commodities, adding "
+        },
+        {
+          "text": "$128.2 million",
+          "bold": true
+        },
+        {
+          "text": " over 30 days. "
+        },
+        {
+          "text": "Robinhood Chain",
+          "bold": true
+        },
+        {
+          "text": " was a distant second at +$10.8 million, followed by "
+        },
+        {
+          "text": "HyperEVM",
+          "bold": true
+        },
+        {
+          "text": " (+$1.3 million) and "
+        },
+        {
+          "text": "Avalanche",
+          "bold": true
+        },
+        {
+          "text": " (+$680,100). The other six chains all fell slightly. "
+        },
+        {
+          "text": "Arbitrum One",
+          "bold": true
+        },
+        {
+          "text": " (-$4.3 million) and "
+        },
+        {
+          "text": "Plasma",
+          "bold": true
+        },
+        {
+          "text": " (-$3.9 million) had the largest declines. "
+        },
+        {
+          "text": "Sui",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Solana",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "XDC Network",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Base",
+          "bold": true
+        },
+        {
+          "text": " each fell by less than $1 million. As with issuers, one name drove the sector: Tether led by issuer and Ethereum led by chain."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Commodities Market Cap Growth By Chain.",
+      "number": 12,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfSszDXoAEHvpA.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfSszDXoAEHvpA?format=jpg&name=medium",
+          "alt": "Tokenized Commodities Market Cap Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Holders by issuer",
+      "parts": [
+        {
+          "text": "Holders by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Holder growth in commodities was more evenly spread than market cap. Tether added the most holders at 60,800, but Robinhood (+44,300) and xStocks (+36,700) weren't far behind. Those three made up about 94% of the top 10's new holders. After them, numbers fall sharply: Ondo Finance (+4,200), st0x (+3,600), Paxos (+1,800) and Oro (+1,300). The top 10 added about 153 thousand holders.",
+      "parts": [
+        {
+          "text": "Holder growth in commodities was more evenly spread than market cap. "
+        },
+        {
+          "text": "Tether",
+          "bold": true
+        },
+        {
+          "text": " added the most holders at "
+        },
+        {
+          "text": "60,800",
+          "bold": true
+        },
+        {
+          "text": ", but "
+        },
+        {
+          "text": "Robinhood",
+          "bold": true
+        },
+        {
+          "text": " (+44,300) and "
+        },
+        {
+          "text": "xStocks",
+          "bold": true
+        },
+        {
+          "text": " (+36,700) weren't far behind. Those three made up about 94% of the top 10's new holders. After them, numbers fall sharply: "
+        },
+        {
+          "text": "Ondo Finance",
+          "bold": true
+        },
+        {
+          "text": " (+4,200), "
+        },
+        {
+          "text": "st0x",
+          "bold": true
+        },
+        {
+          "text": " (+3,600), "
+        },
+        {
+          "text": "Paxos",
+          "bold": true
+        },
+        {
+          "text": " (+1,800) and "
+        },
+        {
+          "text": "Oro",
+          "bold": true
+        },
+        {
+          "text": " (+1,300). The top 10 added about "
+        },
+        {
+          "text": "153 thousand",
+          "bold": true
+        },
+        {
+          "text": " holders."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Commodities Holder Growth By Issuers.",
+      "number": 13,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfTOw-WUAAzlj_.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfTOw-WUAAzlj_?format=jpg&name=medium",
+          "alt": "Tokenized Commodities Holder Growth By Issuers.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Holders by chain",
+      "parts": [
+        {
+          "text": "Holders by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Holder growth in commodities was concentrated on three chains. BNB Chain added 59,300 holders, Robinhood Chain added 44,300 and Solana added 38,300 , about 92% of the top 10's new holders between them. No other chain added more than 4 thousand: Base (+3,700), Ethereum (+3,500) and Celo (+3,000) were next, while Sui, HyperEVM, Plasma and XRP Ledger each added fewer than 700.",
+      "parts": [
+        {
+          "text": "Holder growth in commodities was concentrated on three chains. "
+        },
+        {
+          "text": "BNB Chain",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "59,300 ",
+          "bold": true
+        },
+        {
+          "text": "holders, "
+        },
+        {
+          "text": "Robinhood Chain",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "44,300 ",
+          "bold": true
+        },
+        {
+          "text": "and "
+        },
+        {
+          "text": "Solana",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "38,300 ",
+          "bold": true
+        },
+        {
+          "text": ", about 92% of the top 10's new holders between them. No other chain added more than 4 thousand: "
+        },
+        {
+          "text": "Base",
+          "bold": true
+        },
+        {
+          "text": " (+3,700), "
+        },
+        {
+          "text": "Ethereum",
+          "bold": true
+        },
+        {
+          "text": " (+3,500) and "
+        },
+        {
+          "text": "Celo",
+          "bold": true
+        },
+        {
+          "text": " (+3,000) were next, while "
+        },
+        {
+          "text": "Sui",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "HyperEVM",
+          "bold": true
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "Plasma",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "XRP Ledger",
+          "bold": true
+        },
+        {
+          "text": " each added fewer than 700."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Commodities Holder Growth By Chain.",
+      "number": 14,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfTrgNXcAAL_0F.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfTrgNXcAAL_0F?format=jpg&name=medium",
+          "alt": "Tokenized Commodities Holder Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized stocks",
+      "parts": [
+        {
+          "text": "Tokenized stocks",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by issuer",
+      "parts": [
+        {
+          "text": "Growth by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All top 10 issuers grew in September. Securitize added the most at $245.7 million, followed by Binance bStocks (+$138.5 million), xStocks (+$114.5 million) and Robinhood (+$100.3 million), each above $100 million. Ondo Finance added $64.0 million. Coinbase (+$15.6 million) and Superstate (+$15.4 million) formed a second tier, and Backpack (+$3.8 million), PreStocks (+$3.4 million) and Republic (+$3.0 million) completed the top 10. The top 10 added about $704 million combined. Unlike commodities, where one issuer drove almost everything, growth in tokenized stocks was spread across several large players.",
+      "parts": [
+        {
+          "text": "All top 10 issuers grew in September. "
+        },
+        {
+          "text": "Securitize",
+          "bold": true
+        },
+        {
+          "text": " added the most at "
+        },
+        {
+          "text": "$245.7 million",
+          "bold": true
+        },
+        {
+          "text": ", followed by "
+        },
+        {
+          "text": "Binance bStocks",
+          "bold": true
+        },
+        {
+          "text": " (+$138.5 million), "
+        },
+        {
+          "text": "xStocks",
+          "bold": true
+        },
+        {
+          "text": " (+$114.5 million) and "
+        },
+        {
+          "text": "Robinhood",
+          "bold": true
+        },
+        {
+          "text": " (+$100.3 million), each above $100 million. "
+        },
+        {
+          "text": "Ondo Finance",
+          "bold": true
+        },
+        {
+          "text": " added $64.0 million. "
+        },
+        {
+          "text": "Coinbase",
+          "bold": true
+        },
+        {
+          "text": " (+$15.6 million) and "
+        },
+        {
+          "text": "Superstate",
+          "bold": true
+        },
+        {
+          "text": " (+$15.4 million) formed a second tier, and "
+        },
+        {
+          "text": "Backpack",
+          "bold": true
+        },
+        {
+          "text": " (+$3.8 million), "
+        },
+        {
+          "text": "PreStocks",
+          "bold": true
+        },
+        {
+          "text": " (+$3.4 million) and "
+        },
+        {
+          "text": "Republic",
+          "bold": true
+        },
+        {
+          "text": " (+$3.0 million) completed the top 10. The top 10 added about "
+        },
+        {
+          "text": "$704 million",
+          "bold": true
+        },
+        {
+          "text": " combined. Unlike commodities, where one issuer drove almost everything, growth in tokenized stocks was spread across several large players."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Stocks Market Cap Growth By Issuer.",
+      "number": 15,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfUJ2zWkAAstM6.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfUJ2zWkAAstM6?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Market Cap Growth By Issuer.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Growth by chain",
+      "parts": [
+        {
+          "text": "Growth by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Avalanche added the most tokenized stock market cap in September at $245.5 million, roughly the same as Securitize's issuer growth. BNB Chain was second (+$144.1 million), followed by Robinhood Chain (+$98.7 million) and X Layer (+$97.7 million), each close to $100 million. Ethereum added $67.6 million, then Solana (+$26.3 million), Base (+$14.3 million) and Ink (+$6.3 million). Growth was spread across several chains, as it was across issuers.",
+      "parts": [
+        {
+          "text": "Avalanche",
+          "bold": true
+        },
+        {
+          "text": " added the most tokenized stock market cap in September at "
+        },
+        {
+          "text": "$245.5 million",
+          "bold": true
+        },
+        {
+          "text": ", roughly the same as Securitize's issuer growth. "
+        },
+        {
+          "text": "BNB Chain",
+          "bold": true
+        },
+        {
+          "text": " was second (+$144.1 million), followed by "
+        },
+        {
+          "text": "Robinhood Chain",
+          "bold": true
+        },
+        {
+          "text": " (+$98.7 million) and "
+        },
+        {
+          "text": "X Layer",
+          "bold": true
+        },
+        {
+          "text": " (+$97.7 million), each close to $100 million. "
+        },
+        {
+          "text": "Ethereum",
+          "bold": true
+        },
+        {
+          "text": " added $67.6 million, then "
+        },
+        {
+          "text": "Solana",
+          "bold": true
+        },
+        {
+          "text": " (+$26.3 million), "
+        },
+        {
+          "text": "Base",
+          "bold": true
+        },
+        {
+          "text": " (+$14.3 million) and "
+        },
+        {
+          "text": "Ink",
+          "bold": true
+        },
+        {
+          "text": " (+$6.3 million). Growth was spread across several chains, as it was across issuers."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Stocks Market Cap Growth By Chain.",
+      "number": 16,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfUeobXUAAuYrD.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfUeobXUAAuYrD?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Market Cap Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Holders by issuer",
+      "parts": [
+        {
+          "text": "Holders by issuer",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized stocks added the most holders of any sector covered here after stablecoins. Robinhood added 619,000 holders over 30 days, followed by Binance bStocks (+446,400) and xStocks (+431,000). Backpack added 251,600, then Ondo Finance (+87,900) and PreStocks (+77,800). The top six added over 1.9 million holders combined.",
+      "parts": [
+        {
+          "text": "Tokenized stocks added the most holders of any sector covered here after stablecoins. "
+        },
+        {
+          "text": "Robinhood",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "619,000 ",
+          "bold": true
+        },
+        {
+          "text": "holders over 30 days, followed by "
+        },
+        {
+          "text": "Binance bStocks",
+          "bold": true
+        },
+        {
+          "text": " (+446,400) and "
+        },
+        {
+          "text": "xStocks",
+          "bold": true
+        },
+        {
+          "text": " (+431,000). "
+        },
+        {
+          "text": "Backpack",
+          "bold": true
+        },
+        {
+          "text": " added 251,600, then "
+        },
+        {
+          "text": "Ondo Finance",
+          "bold": true
+        },
+        {
+          "text": " (+87,900) and "
+        },
+        {
+          "text": "PreStocks",
+          "bold": true
+        },
+        {
+          "text": " (+77,800). The top six added over "
+        },
+        {
+          "text": "1.9 million",
+          "bold": true
+        },
+        {
+          "text": " holders combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Stocks Holder Growth By Issuer.",
+      "number": 17,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfU9JtWIAAEDMn.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfU9JtWIAAEDMn?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Holder Growth By Issuer.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Holders by chain",
+      "parts": [
+        {
+          "text": "Holders by chain",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Holder growth in tokenized stocks was concentrated on three chains. Solana added the most at 758,900, followed by Robinhood Chain (+619,000) and BNB Chain (+529,600). There's a sharp drop after them: Base added 59,800, X Layer 20,300 and Ethereum 5,600.",
+      "parts": [
+        {
+          "text": "Holder growth in tokenized stocks was concentrated on three chains. "
+        },
+        {
+          "text": "Solana",
+          "bold": true
+        },
+        {
+          "text": " added the most at "
+        },
+        {
+          "text": "758,900",
+          "bold": true
+        },
+        {
+          "text": ", followed by "
+        },
+        {
+          "text": "Robinhood Chain",
+          "bold": true
+        },
+        {
+          "text": " (+619,000) and "
+        },
+        {
+          "text": "BNB Chain",
+          "bold": true
+        },
+        {
+          "text": " (+529,600). There's a sharp drop after them: "
+        },
+        {
+          "text": "Base",
+          "bold": true
+        },
+        {
+          "text": " added 59,800, "
+        },
+        {
+          "text": "X Layer",
+          "bold": true
+        },
+        {
+          "text": " 20,300 and "
+        },
+        {
+          "text": "Ethereum",
+          "bold": true
+        },
+        {
+          "text": " 5,600."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized Stocks Holder Holder Growth By Chain.",
+      "number": 18,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTfVmIMWsAAcTZT.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTfVmIMWsAAcTZT?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Holder Holder Growth By Chain.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion",
+      "parts": [
+        {
+          "text": "Conclusion",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "September was a month of steady growth for tokenized assets, but the data shows a clear split between where the money went and where new users came from.",
+      "parts": [
+        {
+          "text": "September was a month of steady growth for tokenized assets, but the data shows a clear split between where the money went and where new users came from."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Capital went to established issuers. WisdomTree and Spiko led growth in tokenized funds. Securitize added the most in tokenized stocks, and Tether drove nearly all of the growth in tokenized commodities. Stablecoin market cap rose to $301.4 billion, with Ethena's USDe adding more new supply than USDC or USDT.",
+      "parts": [
+        {
+          "text": "Capital went to established issuers.",
+          "bold": true
+        },
+        {
+          "text": " WisdomTree and Spiko led growth in tokenized funds. Securitize added the most in tokenized stocks, and Tether drove nearly all of the growth in tokenized commodities. Stablecoin market cap rose to $301.4 billion, with Ethena's USDe adding more new supply than USDC or USDT."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Robinhood, Binance bStocks and xStocks added the most tokenized stock holders. In commodities, Robinhood and xStocks together added more holders than Tether despite far smaller market cap growth. By chain, most new holders arrived on Solana, BNB Chain and Robinhood Chain, while the largest market cap gains often went to Ethereum, Avalanche and Arbitrum. The issuers and chains attracting the most capital are often not the ones attracting the most holders.",
+      "parts": [
+        {
+          "text": "Robinhood, Binance bStocks and xStocks added the most tokenized stock holders. In commodities, Robinhood and xStocks together added more holders than Tether despite far smaller market cap growth. By chain, most new holders arrived on Solana, BNB Chain and Robinhood Chain, while the largest market cap gains often went to Ethereum, Avalanche and Arbitrum. The issuers and chains attracting the most capital are often not the ones attracting the most holders."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Concentration varies widely by sector. Stablecoins are still dominated by Tether and Circle, which hold 85.8% of supply between them. Tokenized gold makes up most of the commodities market. Tokenized funds and stocks are more spread out, with no single issuer holding more than about 27% of either market.",
+      "parts": [
+        {
+          "text": "Concentration varies widely by sector.",
+          "bold": true
+        },
+        {
+          "text": " Stablecoins are still dominated by Tether and Circle, which hold 85.8% of supply between them. Tokenized gold makes up most of the commodities market. Tokenized funds and stocks are more spread out, with no single issuer holding more than about 27% of either market."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Credit was the exception. It was the only sector where more issuers shrank than grew. USDai and 3Jane grew, but the other issuers covered here fell, and outside Arbitrum there was little movement by chain or in holder numbers.",
+      "parts": [
+        {
+          "text": "Credit was the exception.",
+          "bold": true
+        },
+        {
+          "text": " It was the only sector where more issuers shrank than grew. USDai and 3Jane grew, but the other issuers covered here fell, and outside Arbitrum there was little movement by chain or in holder numbers."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are sourced strictly from Token Terminal as of September 30, 2026, and reflect the trailing 30-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+      "parts": [
+        {
+          "text": "All figures are sourced strictly from Token Terminal as of September 30, 2026, and reflect the trailing 30-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "figureCount": 18
+}

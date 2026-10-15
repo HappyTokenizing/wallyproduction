@@ -1,0 +1,417 @@
+{
+  "id": "2106742210884440348",
+  "slug": "tokenized-credit-q3-2026",
+  "series": "quarterly",
+  "title": "Tokenized Credit Report With Token Terminal: Q3 2026",
+  "shortTitle": "Tokenized Credit Report",
+  "edition": "Q3 2026",
+  "window": "July 3–October 1, 2026",
+  "asOf": "2026-10-01",
+  "publishedAt": "2026-10-04T13:44:19.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2106742210884440348",
+  "partner": "Token Terminal",
+  "description": "Q3 tokenized credit market cap and holders by asset, issuer and blockchain.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "This is the Q3 2026 tokenized credit edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks how tokenized credit funds moved over the third quarter by asset, issuer and chain, covering both market cap and holders.",
+      "parts": [
+        {
+          "text": "This is the Q3 2026 tokenized credit edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks how tokenized credit funds moved over the third quarter by asset, issuer and chain, covering both market cap and holders."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are taken strictly from Token Terminal as of October 1, 2026. Growth figures cover the 90-day window from July 3 to October 1. No third-party data has been added, and no figures have been adjusted or estimated.",
+      "parts": [
+        {
+          "text": "All figures are taken strictly from Token Terminal as of October 1, 2026. Growth figures cover the 90-day window from July 3 to October 1. No third-party data has been added, and no figures have been adjusted or estimated."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Market cap refers to circulating asset market cap as reported by Token Terminal, and covers native deployments only, excluding bridged supply. Holders refers to addresses holding a non-zero balance, including bridged deployments, summed across assets without removing duplicates.",
+      "parts": [
+        {
+          "text": "Market cap refers to circulating asset market cap as reported by Token Terminal, and covers native deployments only, excluding bridged supply. Holders refers to addresses holding a non-zero balance, including bridged deployments, summed across assets without removing duplicates."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Overview",
+      "parts": [
+        {
+          "text": "Overview"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized credit market cap stood at $6.17 billion on October 1, down $175.5 million (2.8%) from $6.35 billion on July 3. Market cap was spread across 64 assets, 13 issuers and 16 chains. Holder addresses rose 12.1% to 28,840, across 90 assets, 22 issuers and 18 chains.",
+      "parts": [
+        {
+          "text": "Tokenized credit market cap stood at $6.17 billion on October 1, down $175.5 million (2.8%) from $6.35 billion on July 3. Market cap was spread across 64 assets, 13 issuers and 16 chains. Holder addresses rose 12.1% to 28,840, across 90 assets, 22 issuers and 18 chains."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The sector shrank in value but grew in holders. Maple Finance lost $402.7 million in market cap while adding 2,160 holder addresses, about 69% of the sector's net growth. Hastra and USDai led market cap growth, adding $372.5 million between them.",
+      "parts": [
+        {
+          "text": "The sector shrank in value but grew in holders. Maple Finance lost $402.7 million in market cap while adding 2,160 holder addresses, about 69% of the sector's net growth. Hastra and USDai led market cap growth, adding $372.5 million between them."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Growth by asset",
+      "parts": [
+        {
+          "text": "Growth by asset"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Hastra's PRIME added $195.9 million over 90 days, more than any other credit asset. USDai's sUSDai (+$176.7 million) and Maple's syrupUSDG (+$135.6 million) followed, and 3Jane's USD3 added $30.7 million. The rest of the top 10 were Tradable's loan-level tokens: PC188814458 (+$38.5 million), PC0000053 (+$33.0 million), PC0016245 (+$25.6 million), PC3729409 (+$20.6 million), PC0000027 (+$16.1 million) and PC0000049 (+$16.0 million). The top 10 added about $689 million combined.",
+      "parts": [
+        {
+          "text": "Hastra's PRIME added $195.9 million over 90 days, more than any other credit asset. USDai's sUSDai (+$176.7 million) and Maple's syrupUSDG (+$135.6 million) followed, and 3Jane's USD3 added $30.7 million. The rest of the top 10 were Tradable's loan-level tokens: PC188814458 (+$38.5 million), PC0000053 (+$33.0 million), PC0016245 (+$25.6 million), PC3729409 (+$20.6 million), PC0000027 (+$16.1 million) and PC0000049 (+$16.0 million). The top 10 added about $689 million combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTyi_mHXMAA96cw.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTyi_mHXMAA96cw?format=jpg&name=medium",
+          "alt": "Tokenized Credit Report — figure 1",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Market share by issuer",
+      "parts": [
+        {
+          "text": "Market share by issuer"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tradable (36.9%) and Maple Finance (23.5%) hold 60.4% of tokenized credit market cap between them. Centrifuge (9.9%), Hastra (9.6%), USDai (7.6%) and Securitize (6.2%) follow. Pareto (2.0%), 3Jane (1.8%), Accountable (1.7%) and Rivool Finance (0.4%). ",
+      "parts": [
+        {
+          "text": "Tradable (36.9%) and Maple Finance (23.5%) hold 60.4% of tokenized credit market cap between them. Centrifuge (9.9%), Hastra (9.6%), USDai (7.6%) and Securitize (6.2%) follow. Pareto (2.0%), 3Jane (1.8%), Accountable (1.7%) and Rivool Finance (0.4%). "
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Growth by chain",
+      "parts": [
+        {
+          "text": "Growth by chain"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Arbitrum One added $170.0 million over 90 days, nearly doubling its credit market cap to $342.6 million. zkSync Era was second at $45.3 million, matching Tradable's growth exactly. Stellar added $6.0 million (+18.6%) and Avalanche $1.0 million.",
+      "parts": [
+        {
+          "text": "Arbitrum One added $170.0 million over 90 days, nearly doubling its credit market cap to $342.6 million. zkSync Era was second at $45.3 million, matching Tradable's growth exactly. Stellar added $6.0 million (+18.6%) and Avalanche $1.0 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTyjv1nXkAAXff4.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTyjv1nXkAAXff4?format=jpg&name=medium",
+          "alt": "Tokenized Credit Report — figure 2",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Holders by asset",
+      "parts": [
+        {
+          "text": "Holders by asset"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "syrupUSDT added 1,398 holder addresses over 90 days, a 16.5% rise, while its market cap fell 44.7%. syrupUSDC added 597 and sUSDai 518. syrupUSDG (+165), PRIME (+151), sUSD3 (+145) and USD3 (+107) came next. deJAAA (+30), ParetoFAL-USDC (+9) and nLCRD (+7) completed the top 10. Maple's three syrup tokens took 2,160 of the top 10's 3,127.",
+      "parts": [
+        {
+          "text": "syrupUSDT added 1,398 holder addresses over 90 days, a 16.5% rise, while its market cap fell 44.7%. syrupUSDC added 597 and sUSDai 518. syrupUSDG (+165), PRIME (+151), sUSD3 (+145) and USD3 (+107) came next. deJAAA (+30), ParetoFAL-USDC (+9) and nLCRD (+7) completed the top 10. Maple's three syrup tokens took 2,160 of the top 10's 3,127."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTykcz-WkAAKn2q.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTykcz-WkAAKn2q?format=jpg&name=medium",
+          "alt": "Tokenized Credit Report — figure 3",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Holders by issuer",
+      "parts": [
+        {
+          "text": "Holders by issuer"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Maple Finance added 2,160 holder addresses, more than four times the next issuer, and now accounts for 64.0% of all credit holder addresses. USDai (+518), 3Jane (+252) and Hastra (+151) followed. Centrifuge (+35), Pareto (+15), Plume Vaults (+14), Rivool Finance (+7) and OpenTrade (+2) were the only other issuers to grow. Tradable lost 24 holder addresses and Securitize lost 7.",
+      "parts": [
+        {
+          "text": "Maple Finance added 2,160 holder addresses, more than four times the next issuer, and now accounts for 64.0% of all credit holder addresses. USDai (+518), 3Jane (+252) and Hastra (+151) followed. Centrifuge (+35), Pareto (+15), Plume Vaults (+14), Rivool Finance (+7) and OpenTrade (+2) were the only other issuers to grow. Tradable lost 24 holder addresses and Securitize lost 7."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Holder growth and market cap growth split at the top. Maple lost more market cap than any other issuer and added the most holders. Tradable holds the most market cap but lost holders.",
+      "parts": [
+        {
+          "text": "Holder growth and market cap growth split at the top. Maple lost more market cap than any other issuer and added the most holders. Tradable holds the most market cap but lost holders."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTykpC-WQAAeY0C.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTykpC-WQAAeY0C?format=jpg&name=medium",
+          "alt": "Tokenized Credit Report — figure 4",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Holders by chain",
+      "parts": [
+        {
+          "text": "Holders by chain"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ethereum added 801 holder addresses, narrowly ahead of Base (+787) and Plasma (+703). Arbitrum One (+577), Solana (+160) and Robinhood Chain (+108) followed. Stellar added 7, Avalanche and BNB Chain added 1 each, and Polygon lost 6.",
+      "parts": [
+        {
+          "text": "Ethereum added 801 holder addresses, narrowly ahead of Base (+787) and Plasma (+703). Arbitrum One (+577), Solana (+160) and Robinhood Chain (+108) followed. Stellar added 7, Avalanche and BNB Chain added 1 each, and Polygon lost 6."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Base and Plasma both lost more than half their credit market cap over the quarter, yet added the second and third most holders.",
+      "parts": [
+        {
+          "text": "Base and Plasma both lost more than half their credit market cap over the quarter, yet added the second and third most holders."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTykyDCWkAAhOte.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTykyDCWkAAhOte?format=jpg&name=medium",
+          "alt": "Tokenized Credit Report — figure 5",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Where capital sits and where holders are",
+      "parts": [
+        {
+          "text": "Where capital sits and where holders are"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The chains holding the most credit are not the chains with the most holders.",
+      "parts": [
+        {
+          "text": "The chains holding the most credit are not the chains with the most holders."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Ethereum hosts 42.1% of credit market cap and 21.2% of holder addresses.",
+      "parts": [
+        {
+          "text": "Ethereum hosts 42.1% of credit market cap and 21.2% of holder addresses."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "zkSync Era hosts 36.9% of market cap but 0.8% of holders.",
+      "parts": [
+        {
+          "text": "zkSync Era hosts 36.9% of market cap but 0.8% of holders."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Base hosts 0.4% of market cap but 26.8% of holders, the most of any chain.",
+      "parts": [
+        {
+          "text": "Base hosts 0.4% of market cap but 26.8% of holders, the most of any chain."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Plasma hosts 0.5% of market cap but 11.8% of holders.",
+      "parts": [
+        {
+          "text": "Plasma hosts 0.5% of market cap but 11.8% of holders."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The same split shows by issuer. Tradable holds 36.9% of market cap and 0.8% of holder addresses. Maple holds 23.5% of market cap and 64.0% of holders.",
+      "parts": [
+        {
+          "text": "The same split shows by issuer. Tradable holds 36.9% of market cap and 0.8% of holder addresses. Maple holds 23.5% of market cap and 64.0% of holders."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTyk8ntWwAA5XKj.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTyk8ntWwAA5XKj?format=jpg&name=medium",
+          "alt": "Tokenized Credit Report — figure 6",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Two kinds of credit token",
+      "parts": [
+        {
+          "text": "Two kinds of credit token"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tradable issues individual loans and notes on zkSync Era, such as senior secured term notes and project tranches. These tokens carry the largest share of the sector's capital but few holders, and they move loan by loan. One, a LatAm residential senior secured term loan, went from $37.0 million to zero over the quarter.",
+      "parts": [
+        {
+          "text": "Tradable issues individual loans and notes on zkSync Era, such as senior secured term notes and project tranches. These tokens carry the largest share of the sector's capital but few holders, and they move loan by loan. One, a LatAm residential senior secured term loan, went from $37.0 million to zero over the quarter."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Maple, USDai, Hastra and 3Jane issue pooled yield tokens held by thousands of addresses across several chains. Together they accounted for 3,081 of the sector's 3,117 net new holder addresses.",
+      "parts": [
+        {
+          "text": "Maple, USDai, Hastra and 3Jane issue pooled yield tokens held by thousands of addresses across several chains. Together they accounted for 3,081 of the sector's 3,117 net new holder addresses."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion",
+      "parts": [
+        {
+          "text": "Conclusion"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized credit shrank 2.8% in market cap over the quarter but grew 12.1% in holder addresses. The decline was concentrated. Maple, Centrifuge and Securitize lost $586.2 million combined, while Hastra and USDai added $372.5 million.",
+      "parts": [
+        {
+          "text": "Tokenized credit shrank 2.8% in market cap over the quarter but grew 12.1% in holder addresses. The decline was concentrated. Maple, Centrifuge and Securitize lost $586.2 million combined, while Hastra and USDai added $372.5 million."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Holders moved the other way. Maple lost the most market cap and gained the most holders, taking about 69% of the sector's new holder addresses. By chain, Base and Plasma lost more than half their market cap while adding the second and third most holders.",
+      "parts": [
+        {
+          "text": "Holders moved the other way. Maple lost the most market cap and gained the most holders, taking about 69% of the sector's new holder addresses. By chain, Base and Plasma lost more than half their market cap while adding the second and third most holders."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "As with stablecoins, the issuers and chains holding the most capital are not the ones attracting the most holders. In credit the gap is wider: the largest issuer by market cap holds under 1% of holder addresses.",
+      "parts": [
+        {
+          "text": "As with stablecoins, the issuers and chains holding the most capital are not the ones attracting the most holders. In credit the gap is wider: the largest issuer by market cap holds under 1% of holder addresses."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are sourced strictly from Token Terminal as of October 1, 2026, and reflect the 90-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+      "parts": [
+        {
+          "text": "All figures are sourced strictly from Token Terminal as of October 1, 2026, and reflect the 90-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "figureCount": 6
+}

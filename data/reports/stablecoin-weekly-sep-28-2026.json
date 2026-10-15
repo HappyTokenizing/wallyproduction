@@ -1,0 +1,413 @@
+{
+  "id": "2104493229253009826",
+  "slug": "stablecoin-weekly-sep-28-2026",
+  "series": "weekly",
+  "title": "Stablecoin Weekly: Circle outpaces Tether, Latin America stirs, and banks move onchain",
+  "shortTitle": "Stablecoin Weekly",
+  "edition": "September 28, 2026",
+  "window": "Past 7 days; published September 28",
+  "asOf": "",
+  "publishedAt": "2026-09-28T08:47:40.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2104493229253009826",
+  "partner": "Token Terminal",
+  "description": "Stablecoin supply, holders, transfer activity and local-currency adoption.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "@circle had the strongest week of any stablecoin issuer. USDC added $1.1B in market cap over the past seven days, roughly 2.5x Tether's USDT at $446.3M. At issuer level Circle grew by $1.0B, more than double @Tether’s $445.2M, even though Tether holds around 61% of total supply to Circle's 25%. Behind the two leaders, @SkyEcosystem added $151.8M through USDS, and @Ripple's RLUSD (+$112.6M) and @ethena’s USDe (+$107.7M) also passed $100M in growth.",
+      "parts": [
+        {
+          "text": "@circle",
+          "href": "https://x.com/circle"
+        },
+        {
+          "text": " had the strongest week of any stablecoin issuer. USDC added $1.1B in market cap over the past seven days, roughly 2.5x Tether's USDT at $446.3M. At issuer level Circle grew by $1.0B, more than double "
+        },
+        {
+          "text": "@Tether",
+          "href": "https://x.com/Tether"
+        },
+        {
+          "text": "’s $445.2M, even though Tether holds around 61% of total supply to Circle's 25%. Behind the two leaders, "
+        },
+        {
+          "text": "@SkyEcosystem",
+          "href": "https://x.com/SkyEcosystem"
+        },
+        {
+          "text": " added $151.8M through USDS, and "
+        },
+        {
+          "text": "@Ripple",
+          "href": "https://x.com/Ripple"
+        },
+        {
+          "text": "'s RLUSD (+$112.6M) and "
+        },
+        {
+          "text": "@ethena",
+          "href": "https://x.com/ethena"
+        },
+        {
+          "text": "’s USDe (+$107.7M) also passed $100M in growth."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTQCi60X0AEMMM8.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTQCi60X0AEMMM8?format=jpg&name=medium",
+          "alt": "Stablecoin Weekly — figure 1",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Traditional banks are also starting to show up in the rankings. Crédit Agricole made the top 10 issuers, adding $39.0M through EURXT, the only euro stablecoin among the ten fastest-growing assets. Overall, though, dollar-pegged stablecoins still accounted for about 98% of all growth, adding $2.0B against $30.9M for euro stablecoins. Australian dollar, Japanese yen and Turkish lira stablecoins each added between $360K and $1.5M, while Canadian dollar and Mexican peso stablecoins dipped slightly. Total stablecoin supply now stands at $302.5B, up 1.4% over 30 days.",
+      "parts": [
+        {
+          "text": "Traditional banks are also starting to show up in the rankings. Crédit Agricole made the top 10 issuers, adding $39.0M through EURXT, the only euro stablecoin among the ten fastest-growing assets. Overall, though, dollar-pegged stablecoins still accounted for about 98% of all growth, adding $2.0B against $30.9M for euro stablecoins. Australian dollar, Japanese yen and Turkish lira stablecoins each added between $360K and $1.5M, while Canadian dollar and Mexican peso stablecoins dipped slightly. Total stablecoin supply now stands at $302.5B, up 1.4% over 30 days."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTQDCIpXYAM1C1Q.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTQDCIpXYAM1C1Q?format=jpg&name=medium",
+          "alt": "Stablecoin Weekly — figure 2",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Most of that new supply went to three chains. @solana led with $1.0B in stablecoin growth, followed by @ethereum at $737.0M and @HyperliquidX at $422.4M. Together they made up nearly 90% of the top 10's combined growth, with @BNBCHAIN and the XRP Ledger each under $80M.",
+      "parts": [
+        {
+          "text": "Most of that new supply went to three chains. "
+        },
+        {
+          "text": "@solana",
+          "href": "https://x.com/solana"
+        },
+        {
+          "text": " led with $1.0B in stablecoin growth, followed by "
+        },
+        {
+          "text": "@ethereum",
+          "href": "https://x.com/ethereum"
+        },
+        {
+          "text": " at $737.0M and "
+        },
+        {
+          "text": "@HyperliquidX",
+          "href": "https://x.com/HyperliquidX"
+        },
+        {
+          "text": " at $422.4M. Together they made up nearly 90% of the top 10's combined growth, with "
+        },
+        {
+          "text": "@BNBCHAIN",
+          "href": "https://x.com/BNBCHAIN"
+        },
+        {
+          "text": " and the XRP Ledger each under $80M."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTQDJcbXcAAVwO1.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTQDJcbXcAAVwO1?format=jpg&name=medium",
+          "alt": "Stablecoin Weekly — figure 3",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@BNBChain was far ahead on new wallets, adding 985K stablecoin holders, more than half of the top 10's total and almost 5x the next chain. @base came second with 202.5K, followed by @Celo at 168.9K and @trondao at 143.4K. Circle's new Arc chain added 109.1K holders in its early weeks, putting it ahead of both @solana and @arbitrum at around 100K each.",
+      "parts": [
+        {
+          "text": "@BNBChain",
+          "href": "https://x.com/BNBChain"
+        },
+        {
+          "text": " was far ahead on new wallets, adding 985K stablecoin holders, more than half of the top 10's total and almost 5x the next chain. "
+        },
+        {
+          "text": "@base",
+          "href": "https://x.com/base"
+        },
+        {
+          "text": " came second with 202.5K, followed by "
+        },
+        {
+          "text": "@Celo",
+          "href": "https://x.com/Celo"
+        },
+        {
+          "text": " at 168.9K and "
+        },
+        {
+          "text": "@trondao",
+          "href": "https://x.com/trondao"
+        },
+        {
+          "text": " at 143.4K. Circle's new Arc chain added 109.1K holders in its early weeks, putting it ahead of both "
+        },
+        {
+          "text": "@solana",
+          "href": "https://x.com/solana"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "@arbitrum",
+          "href": "https://x.com/arbitrum"
+        },
+        {
+          "text": " at around 100K each."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTQDUGDWcAAJ68G.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTQDUGDWcAAJ68G?format=jpg&name=medium",
+          "alt": "Stablecoin Weekly — figure 4",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By asset, USDT added 845.9K new holders, about 62% of the top 10's holder growth, with USDC second at 390.8K. Circle's euro stablecoin EURC added 69.8K, the strongest showing of any non-dollar stablecoin. At issuer level, Tether (+814.2K) and Circle (+452.5K) together accounted for roughly 95% of new holders. After them growth falls away quickly: @Paxos added 21.8K, @phantom 18.6K, and @Polymarket made the list with 3.3K new holders of its pUSD stablecoin. Ethena stood out for the opposite reason, adding just 800 holders despite growing by more than $100M in market cap, which points to a small number of large holders rather than broad retail uptake.",
+      "parts": [
+        {
+          "text": "By asset, USDT added 845.9K new holders, about 62% of the top 10's holder growth, with USDC second at 390.8K. Circle's euro stablecoin EURC added 69.8K, the strongest showing of any non-dollar stablecoin. At issuer level, Tether (+814.2K) and Circle (+452.5K) together accounted for roughly 95% of new holders. After them growth falls away quickly: "
+        },
+        {
+          "text": "@Paxos",
+          "href": "https://x.com/Paxos"
+        },
+        {
+          "text": " added 21.8K, "
+        },
+        {
+          "text": "@phantom",
+          "href": "https://x.com/phantom"
+        },
+        {
+          "text": " 18.6K, and "
+        },
+        {
+          "text": "@Polymarket",
+          "href": "https://x.com/Polymarket"
+        },
+        {
+          "text": " made the list with 3.3K new holders of its pUSD stablecoin. Ethena stood out for the opposite reason, adding just 800 holders despite growing by more than $100M in market cap, which points to a small number of large holders rather than broad retail uptake."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTQDmUXX0AE_oBy.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTQDmUXX0AE_oBy?format=jpg&name=medium",
+          "alt": "Stablecoin Weekly — figure 5",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The currency split for holders was just as lopsided. Dollar stablecoins added 1.3M holders and euro stablecoins 69.3K. Below those two, Latin America dominated: six of the top 10 currencies came from the region, led by the Argentine peso (+1.0K) and followed by the Chilean, Colombian and Mexican pesos, the Peruvian sol and the Brazilian real. The numbers are small, but they suggest local-currency stablecoins are starting to find users across LatAm.",
+      "parts": [
+        {
+          "text": "The currency split for holders was just as lopsided. Dollar stablecoins added 1.3M holders and euro stablecoins 69.3K. Below those two, Latin America dominated: six of the top 10 currencies came from the region, led by the Argentine peso (+1.0K) and followed by the Chilean, Colombian and Mexican pesos, the Peruvian sol and the Brazilian real. The numbers are small, but they suggest local-currency stablecoins are starting to find users across LatAm."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTQDs4SWAAARQF3.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTQDs4SWAAARQF3?format=jpg&name=medium",
+          "alt": "Stablecoin Weekly — figure 6",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Onchain activity was heavy all week, with $1.4T in stablecoins changing hands. DAI led transfer volume growth, up $2.4B, just ahead of RLUSD at $2.2B. That made Ripple the top issuer by transfer volume growth, more than 3x the next name. Euro stablecoins were again more active than their supply would suggest. EURXT added $610.2M in transfer volume, making Crédit Agricole the second-largest issuer by transfer growth. Fellow French bank Société Générale followed with $64.5M through EURCV, so two traditional banks made the top 10. @SoFi's SOFID and @LiquityProtocol's BOLD each added just over $100M, alongside newer names such as USDai, United Stables, Saturn and @lista_dao.",
+      "parts": [
+        {
+          "text": "Onchain activity was heavy all week, with $1.4T in stablecoins changing hands. DAI led transfer volume growth, up $2.4B, just ahead of RLUSD at $2.2B. That made Ripple the top issuer by transfer volume growth, more than 3x the next name. Euro stablecoins were again more active than their supply would suggest. EURXT added $610.2M in transfer volume, making Crédit Agricole the second-largest issuer by transfer growth. Fellow French bank Société Générale followed with $64.5M through EURCV, so two traditional banks made the top 10. "
+        },
+        {
+          "text": "@SoFi",
+          "href": "https://x.com/SoFi"
+        },
+        {
+          "text": "'s SOFID and "
+        },
+        {
+          "text": "@LiquityProtocol",
+          "href": "https://x.com/LiquityProtocol"
+        },
+        {
+          "text": "'s BOLD each added just over $100M, alongside newer names such as USDai, United Stables, Saturn and "
+        },
+        {
+          "text": "@lista_dao",
+          "href": "https://x.com/lista_dao"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTQDyiUXcAAMU0S.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTQDyiUXcAAMU0S?format=jpg&name=medium",
+          "alt": "Stablecoin Weekly — figure 7",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Across chains, @Optimism led transfer volume growth with $7.1B, well ahead of HyperEVM at $4.0B and Arbitrum at $3.6B. The XRP Ledger added $1.2B, while newer networks @monad (+$707.6M) and @XLayerOfficial (+$549.5M) both came in ahead of @avax. @StellarOrg, @injective and @SeiNetwork completed the top 10.",
+      "parts": [
+        {
+          "text": "Across chains, "
+        },
+        {
+          "text": "@Optimism",
+          "href": "https://x.com/Optimism"
+        },
+        {
+          "text": " led transfer volume growth with $7.1B, well ahead of HyperEVM at $4.0B and Arbitrum at $3.6B. The XRP Ledger added $1.2B, while newer networks "
+        },
+        {
+          "text": "@monad",
+          "href": "https://x.com/monad"
+        },
+        {
+          "text": " (+$707.6M) and "
+        },
+        {
+          "text": "@XLayerOfficial",
+          "href": "https://x.com/XLayerOfficial"
+        },
+        {
+          "text": " (+$549.5M) both came in ahead of "
+        },
+        {
+          "text": "@avax",
+          "href": "https://x.com/avax"
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "@StellarOrg",
+          "href": "https://x.com/StellarOrg"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "@injective",
+          "href": "https://x.com/injective"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "@SeiNetwork",
+          "href": "https://x.com/SeiNetwork"
+        },
+        {
+          "text": " completed the top 10."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTQEMcAXUAAHAOX.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTQEMcAXUAAHAOX?format=jpg&name=medium",
+          "alt": "Stablecoin Weekly — figure 8",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Taken together, dollar stablecoins are still growing and Circle is gaining share week on week. At the same time, euro stablecoins, banks and local-currency tokens in emerging markets are becoming more active.",
+      "parts": [
+        {
+          "text": "Taken together, dollar stablecoins are still growing and Circle is gaining share week on week. At the same time, euro stablecoins, banks and local-currency tokens in emerging markets are becoming more active."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Via @tokenterminal",
+      "parts": [
+        {
+          "text": "Via "
+        },
+        {
+          "text": "@tokenterminal",
+          "href": "https://x.com/tokenterminal"
+        }
+      ]
+    }
+  ],
+  "figureCount": 8
+}

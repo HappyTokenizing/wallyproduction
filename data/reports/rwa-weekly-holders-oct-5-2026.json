@@ -1,0 +1,383 @@
+{
+  "id": "2107123857517629862",
+  "slug": "rwa-weekly-holders-oct-5-2026",
+  "series": "weekly",
+  "title": "RWA Weekly Holders Report With Token Terminal",
+  "shortTitle": "RWA Weekly Holders Report",
+  "edition": "October 5, 2026",
+  "window": "September 28–October 5, 2026",
+  "asOf": "2026-10-05",
+  "publishedAt": "2026-10-05T15:00:50.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2107123857517629862",
+  "partner": "Token Terminal",
+  "description": "Weekly holder growth across stablecoins, funds, U.S. T-bills, credit and stocks.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "This is the weekly holders edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks asset holder growth over the past 7 days across five categories: stablecoins, tokenized funds, tokenized U.S. T-bills, tokenized credit funds and tokenized stocks. Each category is broken down by issuer and by chain.",
+      "parts": [
+        {
+          "text": "This is the weekly holders edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks asset holder growth over the past 7 days across five categories: stablecoins, tokenized funds, tokenized U.S. T-bills, tokenized credit funds and tokenized stocks. Each category is broken down by issuer and by chain."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are taken strictly from Token Terminal as of October 5, 2026. Growth figures cover the 7-day window from September 28 to October 5. No third-party data has been added, and no figures have been adjusted or estimated.",
+      "parts": [
+        {
+          "text": "All figures are taken strictly from Token Terminal as of October 5, 2026. Growth figures cover the 7-day window from September 28 to October 5. No third-party data has been added, and no figures have been adjusted or estimated."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Holders refers to addresses holding a non-zero balance, summed across assets without removing duplicates. Each chart shows the issuers or chains listed by Token Terminal for that category. Tokenized U.S. T-bills and tokenized credit funds are subsets of tokenized funds, so some issuers and chains appear in more than one category with the same figure.",
+      "parts": [
+        {
+          "text": "Holders refers to addresses holding a non-zero balance, summed across assets without removing duplicates. Each chart shows the issuers or chains listed by Token Terminal for that category. Tokenized U.S. T-bills and tokenized credit funds are subsets of tokenized funds, so some issuers and chains appear in more than one category with the same figure."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Overview",
+      "parts": [
+        {
+          "text": "Overview"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins added far more holder addresses than any other category. Tether added about 1.6 million and Circle 636,000, and BNB Chain added about 1.6 million by chain. Tokenized stocks were next, with xStocks adding 144,700 holder addresses and Solana 228,100.",
+      "parts": [
+        {
+          "text": "Stablecoins added far more holder addresses than any other category. Tether added about 1.6 million and Circle 636,000, and BNB Chain added about 1.6 million by chain. Tokenized stocks were next, with xStocks adding 144,700 holder addresses and Solana 228,100."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized funds moved in the hundreds. USDai added 576 holder addresses, the most of any fund issuer, and Arbitrum One added 629 by chain. Tokenized T-bill holder growth was concentrated in Ondo Finance (+167) and Sei EVM (+158).",
+      "parts": [
+        {
+          "text": "Tokenized funds moved in the hundreds. USDai added 576 holder addresses, the most of any fund issuer, and Arbitrum One added 629 by chain. Tokenized T-bill holder growth was concentrated in Ondo Finance (+167) and Sei EVM (+158)."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Stablecoins",
+      "parts": [
+        {
+          "text": "Stablecoins"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tether added about 1.6 million stablecoin holder addresses over 7 days and Circle 636,000. The next issuer, Paxos, added 26,400. Phantom (+18,700) and World Liberty (+10,200) followed, then Sky (+8,800), United Stables (+2,700), Polymarket (+2,700), Ripio (+2,000) and Ethena (+1,000).",
+      "parts": [
+        {
+          "text": "Tether added about 1.6 million stablecoin holder addresses over 7 days and Circle 636,000. The next issuer, Paxos, added 26,400. Phantom (+18,700) and World Liberty (+10,200) followed, then Sky (+8,800), United Stables (+2,700), Polymarket (+2,700), Ripio (+2,000) and Ethena (+1,000)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3V492XkAADeiV.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3V492XkAADeiV?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 1",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, BNB Chain added about 1.6 million holder addresses, roughly eight times the next chain. Solana (+198,500) and Celo (+195,900) were close for second, followed by Tron (+151,000), Base (+130,500) and Arbitrum One (+93,300). Arc (+27,400), Robinhood Chain (+22,700), Algorand (+15,800) and Plasma (+8,700) completed the top 10.",
+      "parts": [
+        {
+          "text": "By chain, BNB Chain added about 1.6 million holder addresses, roughly eight times the next chain. Solana (+198,500) and Celo (+195,900) were close for second, followed by Tron (+151,000), Base (+130,500) and Arbitrum One (+93,300). Arc (+27,400), Robinhood Chain (+22,700), Algorand (+15,800) and Plasma (+8,700) completed the top 10."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3WDgCXYAAVMwQ.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3WDgCXYAAVMwQ?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 2",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized funds",
+      "parts": [
+        {
+          "text": "Tokenized funds"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "USDai added 576 tokenized fund holder addresses, more than twice the next issuer. OnRe added 260, Maple Finance 184, Ondo Finance 167, Sky 127 and Dinari 107. Usual (+84), Plume Vaults (+57), RealFi (+53) and 3Jane (+36) completed the top 10. The top 10 added 1,651 holder addresses combined.",
+      "parts": [
+        {
+          "text": "USDai added 576 tokenized fund holder addresses, more than twice the next issuer. OnRe added 260, Maple Finance 184, Ondo Finance 167, Sky 127 and Dinari 107. Usual (+84), Plume Vaults (+57), RealFi (+53) and 3Jane (+36) completed the top 10. The top 10 added 1,651 holder addresses combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3WKadXIAEMDoV.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3WKadXIAEMDoV?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 3",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Arbitrum One added 629 holder addresses, followed by Solana (+267), Base (+162) and Sei EVM (+158). Ethereum added 98 and Cardano 53. OP Mainnet (+36), Robinhood Chain (+31), Stellar (+20) and BNB Chain (+13).",
+      "parts": [
+        {
+          "text": "By chain, Arbitrum One added 629 holder addresses, followed by Solana (+267), Base (+162) and Sei EVM (+158). Ethereum added 98 and Cardano 53. OP Mainnet (+36), Robinhood Chain (+31), Stellar (+20) and BNB Chain (+13)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3WUTwXAAAElMi.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3WUTwXAAAElMi?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 4",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized U.S. T-bills",
+      "parts": [
+        {
+          "text": "Tokenized U.S. T-bills"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ondo Finance added 167 tokenized T-bill holder addresses, and WisdomTree 23. Franklin Templeton, Superstate and Plume Vaults added 2 each and DigiFT 1. J.P. Morgan, KAIO, Libeara and Centrifuge each lost 1.",
+      "parts": [
+        {
+          "text": "Ondo Finance added 167 tokenized T-bill holder addresses, and WisdomTree 23. Franklin Templeton, Superstate and Plume Vaults added 2 each and DigiFT 1. J.P. Morgan, KAIO, Libeara and Centrifuge each lost 1."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3We8NWQAA5LA6.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3We8NWQAA5LA6?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 5",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Sei EVM added 158 holder addresses, the same figure it recorded across all tokenized funds. Ethereum (+15), Stellar (+14), Sui (+6) and BNB Chain (+5) followed. Five chains declined: Base (-39), HyperEVM (-16), Solana (-13), Arbitrum One (-7) and Polygon (-4).",
+      "parts": [
+        {
+          "text": "By chain, Sei EVM added 158 holder addresses, the same figure it recorded across all tokenized funds. Ethereum (+15), Stellar (+14), Sui (+6) and BNB Chain (+5) followed. Five chains declined: Base (-39), HyperEVM (-16), Solana (-13), Arbitrum One (-7) and Polygon (-4)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3XqyyXEAA5vDu.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3XqyyXEAA5vDu?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 6",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized credit funds",
+      "parts": [
+        {
+          "text": "Tokenized credit funds"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "USDai added 576 tokenized credit holder addresses and Maple Finance 184. 3Jane added 36, Hastra 28 and Centrifuge 3, with WisdomTree and Plume Vaults adding 1 each. Securitize lost 8.",
+      "parts": [
+        {
+          "text": "USDai added 576 tokenized credit holder addresses and Maple Finance 184. 3Jane added 36, Hastra 28 and Centrifuge 3, with WisdomTree and Plume Vaults adding 1 each. Securitize lost 8."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3XCtxXEAAg-Vd.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3XCtxXEAAg-Vd?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 7",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Arbitrum One added 556 holder addresses, about five times Ethereum (+109). Base (+78), Solana (+41), Robinhood Chain (+20) and Plasma (+17) followed. Stellar added 1 and Polygon lost 1.",
+      "parts": [
+        {
+          "text": "By chain, Arbitrum One added 556 holder addresses, about five times Ethereum (+109). Base (+78), Solana (+41), Robinhood Chain (+20) and Plasma (+17) followed. Stellar added 1 and Polygon lost 1."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3XPuiW4AAGZKu.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3XPuiW4AAGZKu?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 8",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized stocks",
+      "parts": [
+        {
+          "text": "Tokenized stocks"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "xStocks added 144,700 tokenized stock holder addresses, more than the next four issuers combined. Backpack added 41,100, PreStocks 37,200, Binance bStocks 31,500 and Robinhood 22,700. Ondo Finance (+17,000), Coinbase (+7,500) and Tessera (+6,400) followed, with Reserve (+1,100) and st0x (+436) completing the top 10.",
+      "parts": [
+        {
+          "text": "xStocks added 144,700 tokenized stock holder addresses, more than the next four issuers combined. Backpack added 41,100, PreStocks 37,200, Binance bStocks 31,500 and Robinhood 22,700. Ondo Finance (+17,000), Coinbase (+7,500) and Tessera (+6,400) followed, with Reserve (+1,100) and st0x (+436) completing the top 10."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 9,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3XWrWWgAAwwco.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3XWrWWgAAwwco?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 9",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Solana added 228,100 holder addresses, about 74% of the growth across the top 10. BNB Chain added 46,500 and Robinhood Chain 22,700, the same figure as Robinhood as an issuer. Base (+8,200), Ethereum (+3,100) and X Layer (+1,200) followed. Ink (+65), Monad (+11), HyperEVM (+10) and OP Mainnet (+1) completed the top 10.",
+      "parts": [
+        {
+          "text": "By chain, Solana added 228,100 holder addresses, about 74% of the growth across the top 10. BNB Chain added 46,500 and Robinhood Chain 22,700, the same figure as Robinhood as an issuer. Base (+8,200), Ethereum (+3,100) and X Layer (+1,200) followed. Ink (+65), Monad (+11), HyperEVM (+10) and OP Mainnet (+1) completed the top 10."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 10,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3Xb9jWAAE8iEz.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3Xb9jWAAE8iEz?format=jpg&name=medium",
+          "alt": "RWA Weekly Holders Report — figure 10",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion",
+      "parts": [
+        {
+          "text": "Conclusion"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins accounted for most of the week's new holder addresses, led by Tether and Circle by issuer and by BNB Chain by chain. Tokenized stocks followed, led by xStocks and Solana.",
+      "parts": [
+        {
+          "text": "Stablecoins accounted for most of the week's new holder addresses, led by Tether and Circle by issuer and by BNB Chain by chain. Tokenized stocks followed, led by xStocks and Solana."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized fund holder growth was smaller in absolute terms and concentrated in a few names. USDai led by issuer and Arbitrum One by chain, in both tokenized funds overall and tokenized credit. In T-bills, Ondo Finance and Sei EVM accounted for nearly all of the growth.",
+      "parts": [
+        {
+          "text": "Tokenized fund holder growth was smaller in absolute terms and concentrated in a few names. USDai led by issuer and Arbitrum One by chain, in both tokenized funds overall and tokenized credit. In T-bills, Ondo Finance and Sei EVM accounted for nearly all of the growth."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are sourced strictly from Token Terminal as of October 5, 2026, and reflect the 7-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+      "parts": [
+        {
+          "text": "All figures are sourced strictly from Token Terminal as of October 5, 2026, and reflect the 7-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "figureCount": 10
+}

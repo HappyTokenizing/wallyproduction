@@ -106,6 +106,76 @@
       "permanent": true
     },
     {
+      "source": "/research/rwa-dex-defi-oct-12-2026",
+      "destination": "/research/rwa-dex-defi-oct-12-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/rwa-weekly-oct-12-2026",
+      "destination": "/research/rwa-weekly-oct-12-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/rwa-weekly-oct-8-2026",
+      "destination": "/research/rwa-weekly-oct-8-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/rwa-blockchains-ytd-oct-2026",
+      "destination": "/research/rwa-blockchains-ytd-oct-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/rwa-weekly-holders-oct-5-2026",
+      "destination": "/research/rwa-weekly-holders-oct-5-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/rwa-weekly-market-cap-oct-5-2026",
+      "destination": "/research/rwa-weekly-market-cap-oct-5-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/tokenized-stocks-q3-2026",
+      "destination": "/research/tokenized-stocks-q3-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/tokenized-credit-q3-2026",
+      "destination": "/research/tokenized-credit-q3-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/stablecoins-q3-2026",
+      "destination": "/research/stablecoins-q3-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/market-structure-sep-2026",
+      "destination": "/research/market-structure-sep-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/rwa-perps-sep-28-2026",
+      "destination": "/research/rwa-perps-sep-28-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/tokenized-stocks-weekly-sep-28-2026",
+      "destination": "/research/tokenized-stocks-weekly-sep-28-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/stablecoin-weekly-sep-28-2026",
+      "destination": "/research/stablecoin-weekly-sep-28-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/research/rwa-weekly-sep-20-2026",
+      "destination": "/research/rwa-weekly-sep-20-2026/",
+      "permanent": true
+    },
+    {
       "source": "/guide",
       "destination": "/guide/",
       "permanent": true

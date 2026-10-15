@@ -1,0 +1,407 @@
+{
+  "id": "2107059255496880242",
+  "slug": "rwa-weekly-market-cap-oct-5-2026",
+  "series": "weekly",
+  "title": "RWA Weekly Market Cap Report With Token Terminal",
+  "shortTitle": "RWA Weekly Market Cap Report",
+  "edition": "October 5, 2026",
+  "window": "September 28–October 5, 2026",
+  "asOf": "2026-10-05",
+  "publishedAt": "2026-10-05T10:44:08.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2107059255496880242",
+  "partner": "Token Terminal",
+  "description": "Weekly market cap growth across stablecoins, funds, U.S. T-bills, credit and stocks.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "This is the weekly edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks market cap growth over the past 7 days across five categories: stablecoins, tokenized funds, tokenized U.S. T-bills, tokenized credit funds and tokenized stocks. Each category is broken down by issuer and by chain.",
+      "parts": [
+        {
+          "text": "This is the weekly edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks market cap growth over the past 7 days across five categories: stablecoins, tokenized funds, tokenized U.S. T-bills, tokenized credit funds and tokenized stocks. Each category is broken down by issuer and by chain."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are taken strictly from Token Terminal as of October 5,2026. Growth figures cover the 7-day window from September 28 to October 5. No third-party data has been added, and no figures have been adjusted or estimated.",
+      "parts": [
+        {
+          "text": "All figures are taken strictly from Token Terminal as of October 5,2026. Growth figures cover the 7-day window from September 28 to October 5. No third-party data has been added, and no figures have been adjusted or estimated."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Market cap refers to circulating asset market cap as reported by Token Terminal. Each chart shows the issuers or chains listed by Token Terminal for that category. Tokenized U.S. T-bills and tokenized credit funds are subsets of tokenized funds, so some issuers appear in more than one category with the same figure.",
+      "parts": [
+        {
+          "text": "Market cap refers to circulating asset market cap as reported by Token Terminal. Each chart shows the issuers or chains listed by Token Terminal for that category. Tokenized U.S. T-bills and tokenized credit funds are subsets of tokenized funds, so some issuers appear in more than one category with the same figure."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Overview",
+      "parts": [
+        {
+          "text": "Overview",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins recorded the largest moves of the week. Open Standard added $626.3 million, Falcon Finance $447.4 million and Tether $329.3 million, and Tempo led all chains with $463.8 million.",
+      "parts": [
+        {
+          "text": "Stablecoins recorded the largest moves of the week. Open Standard added $626.3 million, Falcon Finance $447.4 million and Tether $329.3 million, and Tempo led all chains with $463.8 million."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In tokenized funds, Sky added $139.6 million, followed by J.P. Morgan (+$81.4 million) and Franklin Templeton (+$72.6 million). Ethereum and Stellar took almost all of the growth by chain. In tokenized stocks, bStocks added $94.9 million and BNB Chain $96.8 million. Tokenized credit grew on Ethereum and Monad only, and Pareto fell $31.2 million.",
+      "parts": [
+        {
+          "text": "In tokenized funds, Sky added $139.6 million, followed by J.P. Morgan (+$81.4 million) and Franklin Templeton (+$72.6 million). Ethereum and Stellar took almost all of the growth by chain. In tokenized stocks, bStocks added $94.9 million and BNB Chain $96.8 million. Tokenized credit grew on Ethereum and Monad only, and Pareto fell $31.2 million."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Stablecoins",
+      "parts": [
+        {
+          "text": "Stablecoins",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Open Standard added $626.3 million in stablecoin market cap over 7 days, more than any other issuer. Falcon Finance (+$447.4 million) and Tether (+$329.3 million) followed. The three added about $1.4 billion between them, roughly 77% of the growth across the top 10.",
+      "parts": [
+        {
+          "text": "Open Standard added $626.3 million in stablecoin market cap over 7 days, more than any other issuer. Falcon Finance (+$447.4 million) and Tether (+$329.3 million) followed. The three added about $1.4 billion between them, roughly 77% of the growth across the top 10."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Sky (+$125.0 million) and USDai (+$117.3 million) each added more than $100 million. United Stables (+$75.5 million) and Paxos (+$73.6 million) came next, with Arcus (+$13.3 million), Ripple (+$12.3 million) and Saturn (+$10.1 million) completing the top 10. ",
+      "parts": [
+        {
+          "text": "Sky (+$125.0 million) and USDai (+$117.3 million) each added more than $100 million. United Stables (+$75.5 million) and Paxos (+$73.6 million) came next, with Arcus (+$13.3 million), Ripple (+$12.3 million) and Saturn (+$10.1 million) completing the top 10. "
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3EaRvWsAEWDKQ.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3EaRvWsAEWDKQ?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 1",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Tempo added $463.8 million, more than Tron (+$213.0 million) and Solana (+$151.5 million) combined. Arbitrum One (+$132.1 million) and Base (+$124.6 million) also added more than $100 million each. XRP Ledger added $98.4 million, Arc $54.1 million and BNB Chain $45.4 million. Robinhood Chain (+$26.6 million) and Monad (+$21.7 million).",
+      "parts": [
+        {
+          "text": "By chain, Tempo added $463.8 million, more than Tron (+$213.0 million) and Solana (+$151.5 million) combined. Arbitrum One (+$132.1 million) and Base (+$124.6 million) also added more than $100 million each. XRP Ledger added $98.4 million, Arc $54.1 million and BNB Chain $45.4 million. Robinhood Chain (+$26.6 million) and Monad (+$21.7 million)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3Eq8xXsAA84OC.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3Eq8xXsAA84OC?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 2",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized funds",
+      "parts": [
+        {
+          "text": "Tokenized funds"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Sky led tokenized funds with $139.6 million in growth. J.P. Morgan added $81.4 million and Franklin Templeton $72.6 million. Maple Finance (+$34.8 million) and Figure (+$29.7 million) followed, then 3Jane (+$20.3 million), Hastra (+$19.7 million) and Ondo Finance (+$13.9 million). Re (+$7.4 million) and f(x) Protocol (+$3.3 million). The top 10 added about $423 million combined.",
+      "parts": [
+        {
+          "text": "Sky led tokenized funds with $139.6 million in growth. J.P. Morgan added $81.4 million and Franklin Templeton $72.6 million. Maple Finance (+$34.8 million) and Figure (+$29.7 million) followed, then 3Jane (+$20.3 million), Hastra (+$19.7 million) and Ondo Finance (+$13.9 million). Re (+$7.4 million) and f(x) Protocol (+$3.3 million). The top 10 added about $423 million combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3E0M_XIAAn3Jp.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3E0M_XIAAn3Jp?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 3",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Ethereum added $166.8 million and Stellar $90.9 million. The two account for about 95% of the growth across the top 10. Monad (+$6.7 million), zkSync Era (+$3.1 million) and BNB Chain (+$1.9 million) followed. Plume Network (+$454,700), Solana (+$339,800), Robinhood Chain (+$238,300), OP Mainnet (+$178,000) and Plasma (+$106,900) each added under $1 million.",
+      "parts": [
+        {
+          "text": "By chain, Ethereum added $166.8 million and Stellar $90.9 million. The two account for about 95% of the growth across the top 10. Monad (+$6.7 million), zkSync Era (+$3.1 million) and BNB Chain (+$1.9 million) followed. Plume Network (+$454,700), Solana (+$339,800), Robinhood Chain (+$238,300), OP Mainnet (+$178,000) and Plasma (+$106,900) each added under $1 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3E8qQXwAAhDr6.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3E8qQXwAAhDr6?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 4",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized U.S. T-bills",
+      "parts": [
+        {
+          "text": "Tokenized U.S. T-bills"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "J.P. Morgan added $81.4 million in tokenized T-bill market cap and Franklin Templeton $72.6 million. The two account for about 89% of the growth across the top 10. Ondo Finance added $13.9 million and BNY Mellon $2.2 million. WisdomTree (+$983,900), Circle (+$973,900), Matrixdock (+$164,400), Fidelity (+$159,500), OpenEden (+$94,300) and Libeara (+$73,000) each added under $1 million.",
+      "parts": [
+        {
+          "text": "J.P. Morgan added $81.4 million in tokenized T-bill market cap and Franklin Templeton $72.6 million. The two account for about 89% of the growth across the top 10. Ondo Finance added $13.9 million and BNY Mellon $2.2 million. WisdomTree (+$983,900), Circle (+$973,900), Matrixdock (+$164,400), Fidelity (+$159,500), OpenEden (+$94,300) and Libeara (+$73,000) each added under $1 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3FFsrWEAAKX5j.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3FFsrWEAAKX5j?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 5",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Ethereum added $93.2 million and Stellar $81.2 million. BNB Chain was third at $2.9 million. Arbitrum One (+$689,200), Plume Network (+$451,000), Polygon (+$353,400) and Aptos (+$125,600) followed, with Base (+$51,200), OP Mainnet (+$17,300) and Tempo (+$12,200) completing the top 10.",
+      "parts": [
+        {
+          "text": "By chain, Ethereum added $93.2 million and Stellar $81.2 million. BNB Chain was third at $2.9 million. Arbitrum One (+$689,200), Plume Network (+$451,000), Polygon (+$353,400) and Aptos (+$125,600) followed, with Base (+$51,200), OP Mainnet (+$17,300) and Tempo (+$12,200) completing the top 10."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "T-bills made up most of Stellar's fund growth this week: $81.2 million of the $90.9 million Stellar added across all tokenized funds.",
+      "parts": [
+        {
+          "text": "T-bills made up most of Stellar's fund growth this week: $81.2 million of the $90.9 million Stellar added across all tokenized funds."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3FO-QWAAAwZ85.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3FO-QWAAAwZ85?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 6",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized credit funds",
+      "parts": [
+        {
+          "text": "Tokenized credit funds"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Maple Finance added $34.8 million in tokenized credit market cap, followed by 3Jane (+$20.3 million) and Hastra (+$19.7 million). Centrifuge added $3.2 million, USDai $706,700, Accountable $134,200 and Plume Vaults $4,600. Pareto fell $31.2 million, the largest decline of any issuer in this report. ",
+      "parts": [
+        {
+          "text": "Maple Finance added $34.8 million in tokenized credit market cap, followed by 3Jane (+$20.3 million) and Hastra (+$19.7 million). Centrifuge added $3.2 million, USDai $706,700, Accountable $134,200 and Plume Vaults $4,600. Pareto fell $31.2 million, the largest decline of any issuer in this report. "
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Ethereum added $55.0 million. Monad was the only other chain to grow, adding $134,200, the same figure as Accountable. The other eight chains declined. ",
+      "parts": [
+        {
+          "text": "By chain, Ethereum added $55.0 million. Monad was the only other chain to grow, adding $134,200, the same figure as Accountable. The other eight chains declined. "
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3FoQ3XcAAVw5Z.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3FoQ3XcAAVw5Z?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 7",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized stocks",
+      "parts": [
+        {
+          "text": "Tokenized stocks"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Binance bStocks added $94.9 million in tokenized stock market cap, about 46% of the growth across the issuers that grew. xStocks added $51.9 million and Ondo Finance $50.0 million. Coinbase (+$5.6 million) and Backpack (+$1.3 million) followed. Republic (+$923,500), PreStocks (+$642,100), Tessera (+$395,200) and Reserve (+$203,000) each added under $1 million. Centrifuge fell $5,400.",
+      "parts": [
+        {
+          "text": "Binance bStocks added $94.9 million in tokenized stock market cap, about 46% of the growth across the issuers that grew. xStocks added $51.9 million and Ondo Finance $50.0 million. Coinbase (+$5.6 million) and Backpack (+$1.3 million) followed. Republic (+$923,500), PreStocks (+$642,100), Tessera (+$395,200) and Reserve (+$203,000) each added under $1 million. Centrifuge fell $5,400."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3FxmpXgAACmQX.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3FxmpXgAACmQX?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 8",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, BNB Chain added $96.8 million, in line with the $94.9 million added by Binance bStocks. Ethereum added $60.7 million, X Layer $26.6 million, Solana $13.9 million and Base $5.2 million. HyperEVM added $317,700.",
+      "parts": [
+        {
+          "text": "By chain, BNB Chain added $96.8 million, in line with the $94.9 million added by Binance bStocks. Ethereum added $60.7 million, X Layer $26.6 million, Solana $13.9 million and Base $5.2 million. HyperEVM added $317,700."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Four chains declined. Arbitrum One fell $20.4 million and Robinhood Chain $6.1 million. Ink (-$37,300) and Polygon (-$11,700) recorded smaller declines.",
+      "parts": [
+        {
+          "text": "Four chains declined. Arbitrum One fell $20.4 million and Robinhood Chain $6.1 million. Ink (-$37,300) and Polygon (-$11,700) recorded smaller declines."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 9,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HT3F48ZWgAA7JnN.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HT3F48ZWgAA7JnN?format=jpg&name=medium",
+          "alt": "RWA Weekly Market Cap Report — figure 9",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion",
+      "parts": [
+        {
+          "text": "Conclusion"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins saw the largest growth of the week, led by Open Standard, Falcon Finance and Tether by issuer and by Tempo by chain. Tempo added more than twice as much as Tron, the next chain.",
+      "parts": [
+        {
+          "text": "Stablecoins saw the largest growth of the week, led by Open Standard, Falcon Finance and Tether by issuer and by Tempo by chain. Tempo added more than twice as much as Tron, the next chain."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized funds grew mainly on Ethereum and Stellar. Sky led by issuer, while J.P. Morgan and Franklin Templeton accounted for most of the growth in tokenized T-bills.",
+      "parts": [
+        {
+          "text": "Tokenized funds grew mainly on Ethereum and Stellar. Sky led by issuer, while J.P. Morgan and Franklin Templeton accounted for most of the growth in tokenized T-bills."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized credit was split. Maple Finance, 3Jane and Hastra added $74.8 million between them, while Pareto fell $31.2 million, and only two chains grew. In tokenized stocks, Binance bStocks and BNB Chain led, while Arbitrum One and Robinhood Chain declined.",
+      "parts": [
+        {
+          "text": "Tokenized credit was split. Maple Finance, 3Jane and Hastra added $74.8 million between them, while Pareto fell $31.2 million, and only two chains grew. In tokenized stocks, Binance bStocks and BNB Chain led, while Arbitrum One and Robinhood Chain declined."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are sourced strictly from Token Terminal as of October 5, 2026, and reflect the 7-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+      "parts": [
+        {
+          "text": "All figures are sourced strictly from Token Terminal as of October 5, 2026, and reflect the 7-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "figureCount": 9
+}

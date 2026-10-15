@@ -3,6 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {pages,origin,aliases} from './site-pages.mjs';
+import {catalog, importedReports, reportPages, renderCatalog, renderReport} from './research-reports.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const write=(p,text)=>{fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.writeFileSync(path.join(root,p),typeof text==='string'&&p.endsWith('.html')?text.replace(/[ \t]+$/gm,'').replace(/\n{3,}/g,'\n\n'):text);};
@@ -61,15 +62,22 @@ for(const page of pages.filter(p=>mains.has(p.id))){
 }
 // Research and the generated textbook retain their engines; this layer supplies site-wide navigation and metadata.
 for(const page of pages.filter(p=>['research','perpsReport','marketReport','guide'].includes(p.id))){
- const file=page.path.slice(1)+'index.html';let html=siteChrome(read(file));
+ const file=page.path.slice(1)+'index.html';
+ let source=page.id==='research'?externalize(read('templates/research.html')).replace('{{REPORT_COUNT}}',`${catalog.series.length} SERIES · ${catalog.reports.length} REPORTS`).replace('{{REPORT_CATALOG}}',renderCatalog()):read(file);
+ let html=siteChrome(source);
  html=metadata(html,page);write(file,html);
+}
+for(const [index, report] of importedReports.entries()){
+ const data=JSON.parse(read(`data/reports/${report.slug}.json`));
+ const html=renderReport(read('templates/research-report.html'),data);
+ write(`research/${report.slug}/index.html`,metadata(siteChrome(html),reportPages[index]));
 }
 const research=read('research/index.html');
 for(const page of pages.filter(p=>['wallyArticles','zeusArticles'].includes(p.id))){
  const tab=page.id==='wallyArticles'?'wally':'zeus';
  let html=metadata(research,page).replace('id="panel-reports" role=', 'id="panel-reports" hidden role=').replace('aria-labelledby="tab-wally" hidden','aria-labelledby="tab-'+tab+'"');
  html=html.replace('DATA THE HERD<br>CAN <span class="o">TRUST.</span>',tab==='wally'?'WALLY ARTICLES':'ZEUS’ CORNER');
- html=html.replace('<b>Research Reports from RWA Foundation</b> — recurring, data-driven views of the tokenization market, each series produced with a data partner and superseded by its next edition.',escape(page.description));
+ html=html.replace('<b>Research Reports from RWA Foundation</b> — recurring, data-driven views of the tokenization market, produced with our data partners, with every edition kept in the archive.',escape(page.description));
  write(page.path.slice(1)+'index.html',html);
 }
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+pages.filter(p=>!p.noindex).map(p=>`  <url><loc>${origin+p.path}</loc></url>`).join('\n')+'\n</urlset>\n');

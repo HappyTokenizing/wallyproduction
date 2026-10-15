@@ -1,0 +1,536 @@
+{
+  "id": "2106777869049372881",
+  "slug": "tokenized-stocks-q3-2026",
+  "series": "quarterly",
+  "title": "Tokenized Stocks Report With Token Terminal: Q3 2026",
+  "shortTitle": "Tokenized Stocks Report",
+  "edition": "Q3 2026",
+  "window": "90-day window; DeFi and DEX as of October 4",
+  "asOf": "2026-10-01",
+  "publishedAt": "2026-10-04T16:06:00.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2106777869049372881",
+  "partner": "Token Terminal",
+  "description": "Q3 tokenized stock market cap, holders, DeFi TVL and DEX trading volume.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "This is the Q3 2026 tokenized stocks edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks how tokenized stocks moved over the third quarter by asset, issuer and chain, covering market cap, holders, Defi TVL and DEX trading volume.",
+      "parts": [
+        {
+          "text": "This is the Q3 2026 tokenized stocks edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It tracks how tokenized stocks moved over the third quarter by asset, issuer and chain, covering market cap, holders, Defi TVL and DEX trading volume."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures (apart from Defi TVL & DEX trading, they are both taken as of October 4th) are taken from Token Terminal as of October 1, 2026. Growth figures cover the 90-day window from July 3 to October 1. No third-party data has been added, and no figures have been adjusted or estimated.",
+      "parts": [
+        {
+          "text": "All figures (apart from Defi TVL & DEX trading, they are both taken as of October 4th) are taken from Token Terminal as of October 1, 2026. Growth figures cover the 90-day window from July 3 to October 1. No third-party data has been added, and no figures have been adjusted or estimated."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Market cap refers to circulating asset market cap as reported by Token Terminal. Holders refers to addresses holding a non-zero balance, summed across assets without removing duplicates. DEX trading volume refers to volume traded on decentralized exchanges over the 90-day window.",
+      "parts": [
+        {
+          "text": "Market cap refers to circulating asset market cap as reported by Token Terminal. Holders refers to addresses holding a non-zero balance, summed across assets without removing duplicates. DEX trading volume refers to volume traded on decentralized exchanges over the 90-day window."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Overview",
+      "parts": [
+        {
+          "text": "Overview"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized stock market cap stood at $3.6 billion on October 1, spread across 17 chains. Holder addresses totalled 4.7 million, across 5,251 assets and 25 issuers. DEX trading volume over the 90 days was around $40 billion.",
+      "parts": [
+        {
+          "text": "Tokenized stock market cap stood at $3.6 billion on October 1, spread across 17 chains. Holder addresses totalled 4.7 million, across 5,251 assets and 25 issuers. DEX trading volume over the 90 days was around $40 billion."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Growth was concentrated in a few issuers and chains. Binance bStocks and xStocks added $949.5 million in market cap between them. Robinhood and Binance bStocks added about 2.7 million holder addresses between them. BNB Chain led all three measures by chain: market cap, holders and DEX trading volume.",
+      "parts": [
+        {
+          "text": "Growth was concentrated in a few issuers and chains. Binance bStocks and xStocks added $949.5 million in market cap between them. Robinhood and Binance bStocks added about 2.7 million holder addresses between them. BNB Chain led all three measures by chain: market cap, holders and DEX trading volume."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Growth by asset",
+      "parts": [
+        {
+          "text": "Growth by asset"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Securitize's SECZ added $106.9 million over 90 days, narrowly ahead of CRCLb at $106.8 million. MSTRb (+$79.9 million), MSTRx (+$74.4 million) and STRCon (+$66.8 million) followed. QQQb (+$55.9 million), CRCLx (+$38.0 million), NVDAb (+$28.9 million), GOOGLb (+$25.9 million) and SPY (+$23.6 million) completed the top 10. The top 10 added about $607 million combined.",
+      "parts": [
+        {
+          "text": "Securitize's SECZ added $106.9 million over 90 days, narrowly ahead of CRCLb at $106.8 million. MSTRb (+$79.9 million), MSTRx (+$74.4 million) and STRCon (+$66.8 million) followed. QQQb (+$55.9 million), CRCLx (+$38.0 million), NVDAb (+$28.9 million), GOOGLb (+$25.9 million) and SPY (+$23.6 million) completed the top 10. The top 10 added about $607 million combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTyvy60W8AAaBty.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTyvy60W8AAaBty?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 1",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Growth by issuer",
+      "parts": [
+        {
+          "text": "Growth by issuer"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Binance bStocks added the most at $582.1 million, followed by xStocks at $367.4 million. Robinhood (+$125.2 million), Securitize (+$109.2 million) and Reality (+$90.0 million) came next. Coinbase (+$24.8 million), Superstate (+$21.7 million), Ondo Finance (+$14.4 million), Reserve (+$11.6 million) and Backpack (+$7.9 million).",
+      "parts": [
+        {
+          "text": "Binance bStocks added the most at $582.1 million, followed by xStocks at $367.4 million. Robinhood (+$125.2 million), Securitize (+$109.2 million) and Reality (+$90.0 million) came next. Coinbase (+$24.8 million), Superstate (+$21.7 million), Ondo Finance (+$14.4 million), Reserve (+$11.6 million) and Backpack (+$7.9 million)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The top 10 issuers added about $1.35 billion combined. Binance bStocks alone accounted for 43% of that, and Binance bStocks and xStocks together for 70%. Binance bStocks now holds 21.3% of tokenized stock market cap, Securitize 10.8%, Robinhood 4.7% and Reality 4.3%.",
+      "parts": [
+        {
+          "text": "The top 10 issuers added about $1.35 billion combined. Binance bStocks alone accounted for 43% of that, and Binance bStocks and xStocks together for 70%. Binance bStocks now holds 21.3% of tokenized stock market cap, Securitize 10.8%, Robinhood 4.7% and Reality 4.3%."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTyv9r7XwAA6tM-.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTyv9r7XwAA6tM-?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 2",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Growth by chain",
+      "parts": [
+        {
+          "text": "Growth by chain"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "BNB Chain added $552.9 million over 90 days, more than the next three chains combined. Solana added $198.4 million and X Layer $180.9 million. Robinhood Chain added $129.8 million, in line with the $125.2 million added by Robinhood as an issuer. Avalanche added $106.6 million, close to the $106.9 million added by SECZ.",
+      "parts": [
+        {
+          "text": "BNB Chain added $552.9 million over 90 days, more than the next three chains combined. Solana added $198.4 million and X Layer $180.9 million. Robinhood Chain added $129.8 million, in line with the $125.2 million added by Robinhood as an issuer. Avalanche added $106.6 million, close to the $106.9 million added by SECZ."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Arbitrum One (+$81.6 million), Ethereum (+$68.0 million) and Base (+$27.5 million) followed. Ink (+$8.0 million) and HyperEVM (+$5.2 million) completed the top 10. The top 10 chains added about $1.36 billion combined.",
+      "parts": [
+        {
+          "text": "Arbitrum One (+$81.6 million), Ethereum (+$68.0 million) and Base (+$27.5 million) followed. Ink (+$8.0 million) and HyperEVM (+$5.2 million) completed the top 10. The top 10 chains added about $1.36 billion combined."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTywG9FWwAApwO9.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTywG9FWwAApwO9?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 3",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Holders by asset",
+      "parts": [
+        {
+          "text": "Holders by asset"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "QQQb added 304,400 holder addresses over 90 days, more than any other tokenized stock. SPCXb (+235,700) and Robinhood's NVDA (+183,100) followed. NVDAb (+130,400), NVDAx (+121,800), SPYb (+121,000), SPCX (+112,400) and FXIon (+108,500) each added more than 100,000. AAPL (+82,900) and SPY (+71,400).",
+      "parts": [
+        {
+          "text": "QQQb added 304,400 holder addresses over 90 days, more than any other tokenized stock. SPCXb (+235,700) and Robinhood's NVDA (+183,100) followed. NVDAb (+130,400), NVDAx (+121,800), SPYb (+121,000), SPCX (+112,400) and FXIon (+108,500) each added more than 100,000. AAPL (+82,900) and SPY (+71,400)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Three NVDA tokens from three issuers appear in the top 10, adding 435,300 holder addresses between them. Four ETF tokens, QQQb, SPYb, FXIon and SPY, added 605,300. By underlying stock, ETFs account for 20.5% of holder addresses, followed by NVDA (12.3%), SPCX (10.5%), AAPL (5.0%) and TSLA (5.0%).",
+      "parts": [
+        {
+          "text": "Three NVDA tokens from three issuers appear in the top 10, adding 435,300 holder addresses between them. Four ETF tokens, QQQb, SPYb, FXIon and SPY, added 605,300. By underlying stock, ETFs account for 20.5% of holder addresses, followed by NVDA (12.3%), SPCX (10.5%), AAPL (5.0%) and TSLA (5.0%)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTywQtSXoAEw-Zj.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTywQtSXoAEw-Zj?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 4",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Holders by issuer",
+      "parts": [
+        {
+          "text": "Holders by issuer"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Robinhood added about 1.4 million holder addresses and Binance bStocks about 1.3 million. xStocks added 575,300, Ondo Finance 321,200 and Backpack 284,300. PreStocks (+118,500), Coinbase (+62,700), Tessera (+24,000), st0x (+21,100) and Reserve (+11,700).",
+      "parts": [
+        {
+          "text": "Robinhood added about 1.4 million holder addresses and Binance bStocks about 1.3 million. xStocks added 575,300, Ondo Finance 321,200 and Backpack 284,300. PreStocks (+118,500), Coinbase (+62,700), Tessera (+24,000), st0x (+21,100) and Reserve (+11,700)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Robinhood (29.8%), Binance bStocks (28.4%) and xStocks (17.6%) hold 75.8% of all tokenized stock holder addresses between them. The top 10 issuers added roughly 4.1 million holder addresses over the quarter, against a total of 4.7 million.",
+      "parts": [
+        {
+          "text": "Robinhood (29.8%), Binance bStocks (28.4%) and xStocks (17.6%) hold 75.8% of all tokenized stock holder addresses between them. The top 10 issuers added roughly 4.1 million holder addresses over the quarter, against a total of 4.7 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTywY6DWkAA9H6C.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTywY6DWkAA9H6C?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 5",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Holders by chain",
+      "parts": [
+        {
+          "text": "Holders by chain"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "BNB Chain added about 1.6 million holder addresses, Robinhood Chain about 1.4 million and Solana 958,500. Those three chains account for roughly 96% of the growth across the top 10. Base (+89,100), X Layer (+40,500) and Ethereum (+17,500) followed. Arbitrum One (+4,000), Ink (+2,400), HyperEVM (+1,200) and OP Mainnet (+1,000).",
+      "parts": [
+        {
+          "text": "BNB Chain added about 1.6 million holder addresses, Robinhood Chain about 1.4 million and Solana 958,500. Those three chains account for roughly 96% of the growth across the top 10. Base (+89,100), X Layer (+40,500) and Ethereum (+17,500) followed. Arbitrum One (+4,000), Ink (+2,400), HyperEVM (+1,200) and OP Mainnet (+1,000)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "X Layer added the third most market cap of any chain at $180.9 million, but 40,500 holder addresses. Avalanche added $106.6 million in market cap and does not appear in the top 10 chains by holder growth.",
+      "parts": [
+        {
+          "text": "X Layer added the third most market cap of any chain at $180.9 million, but 40,500 holder addresses. Avalanche added $106.6 million in market cap and does not appear in the top 10 chains by holder growth."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTywf_BWYAEi57t.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTywf_BWYAEi57t?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 6",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The following figures were taken on October 4 and cover the 90 days to that date, over which tokenized stock DEX volume was $42.3 billion. BNB Chain accounted for 49.6% of that volume and Robinhood Chain for 30.0%, giving the two chains 79.6% between them. Solana (15.1%) and Base (5.1%) followed, with Ethereum, HyperCore and Arbitrum One at 0.1% each.",
+      "parts": [
+        {
+          "text": "The following figures were taken on October 4 and cover the 90 days to that date, over which tokenized stock DEX volume was $42.3 billion. BNB Chain accounted for 49.6% of that volume and Robinhood Chain for 30.0%, giving the two chains 79.6% between them. Solana (15.1%) and Base (5.1%) followed, with Ethereum, HyperCore and Arbitrum One at 0.1% each."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By venue, Uniswap V4 added the most at $11.7 billion, followed by a PancakeSwap venue at $6.1 billion and Uniswap V3 at $5.3 billion. Tessera V added $3.3 billion, a second PancakeSwap venue $3.0 billion, Aerodrome Slipstream $1.8 billion and Raydium CLMM $1.0 billion. Byreal CLMM (+$138.3 million), Uniswap V2 (+$25.8 million) and Aerodrome (+$36,900) completed the top 10. The three Uniswap versions added about $17.0 billion combined and the two PancakeSwap venues $9.1 billion.",
+      "parts": [
+        {
+          "text": "By venue, Uniswap V4 added the most at $11.7 billion, followed by a PancakeSwap venue at $6.1 billion and Uniswap V3 at $5.3 billion. Tessera V added $3.3 billion, a second PancakeSwap venue $3.0 billion, Aerodrome Slipstream $1.8 billion and Raydium CLMM $1.0 billion. Byreal CLMM (+$138.3 million), Uniswap V2 (+$25.8 million) and Aerodrome (+$36,900) completed the top 10. The three Uniswap versions added about $17.0 billion combined and the two PancakeSwap venues $9.1 billion."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTy01w6W4AAt2lP.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTy01w6W4AAt2lP?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 7",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By asset, NVDAon added $450.7 million in DEX volume and NVDAx $246.6 million, putting two NVDA tokens at the top. ANTHROPIC was third at $117.4 million. METAx (+$97.1 million), GMEx (+$94.5 million), MSFTx (+$91.3 million), AAPLx (+$76.1 million) and MCDx (+$68.8 million) followed, with wtCOIN (+$53.6 million) and SPYon (+$39.6 million) completing the top 10. Six of the top 10 are xStocks tokens.",
+      "parts": [
+        {
+          "text": "By asset, NVDAon added $450.7 million in DEX volume and NVDAx $246.6 million, putting two NVDA tokens at the top. ANTHROPIC was third at $117.4 million. METAx (+$97.1 million), GMEx (+$94.5 million), MSFTx (+$91.3 million), AAPLx (+$76.1 million) and MCDx (+$68.8 million) followed, with wtCOIN (+$53.6 million) and SPYon (+$39.6 million) completing the top 10. Six of the top 10 are xStocks tokens."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTyxJ6LXkAEVONp.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTyxJ6LXkAEVONp?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 8",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "DeFi TVL",
+      "parts": [
+        {
+          "text": "DeFi TVL"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized stock DeFi TVL stood at $257.5 million on October 4, across 17 venues. Solana hosted 36.3% of it and Robinhood Chain 28.5%, giving the two chains 64.8% between them. BNB Chain (14.6%), Ethereum (13.9%) and Base (6.5%) followed, with Arbitrum One at 0.2% and Avalanche at 0.1%.",
+      "parts": [
+        {
+          "text": "Tokenized stock DeFi TVL stood at $257.5 million on October 4, across 17 venues. Solana hosted 36.3% of it and Robinhood Chain 28.5%, giving the two chains 64.8% between them. BNB Chain (14.6%), Ethereum (13.9%) and Base (6.5%) followed, with Arbitrum One at 0.2% and Avalanche at 0.1%."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By venue, Uniswap V4 added $51.6 million over the 90 days to October 4, about twice the next venue. Pendle (+$26.5 million) and Kamino Lend (+$25.9 million) followed, then Uniswap V3 (+$20.1 million) and two PancakeSwap venues (+$16.6 million and +$15.5 million). Aerodrome Slipstream (+$8.9 million), Raydium CLMM (+$4.2 million), Aave V4 (+$4.0 million) and Morpho Blue (+$3.7 million) completed the top 10. The top 10 added about $177 million combined.",
+      "parts": [
+        {
+          "text": "By venue, Uniswap V4 added $51.6 million over the 90 days to October 4, about twice the next venue. Pendle (+$26.5 million) and Kamino Lend (+$25.9 million) followed, then Uniswap V3 (+$20.1 million) and two PancakeSwap venues (+$16.6 million and +$15.5 million). Aerodrome Slipstream (+$8.9 million), Raydium CLMM (+$4.2 million), Aave V4 (+$4.0 million) and Morpho Blue (+$3.7 million) completed the top 10. The top 10 added about $177 million combined."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "BNB Chain accounted for 49.6% of DEX trading volume but 14.6% of DeFi TVL. Solana accounted for 15.1% of DEX volume and 36.3% of DeFi TVL, the most of any chain.",
+      "parts": [
+        {
+          "text": "BNB Chain accounted for 49.6% of DEX trading volume but 14.6% of DeFi TVL. Solana accounted for 15.1% of DEX volume and 36.3% of DeFi TVL, the most of any chain."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 9,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTy1GarXMAEGzeT.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTy1GarXMAEGzeT?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 9",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Where capital sits and where holders are",
+      "parts": [
+        {
+          "text": "Where capital sits and where holders are"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The issuers holding the most tokenized stock value are not the issuers with the most holders.",
+      "parts": [
+        {
+          "text": "The issuers holding the most tokenized stock value are not the issuers with the most holders."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Robinhood holds 4.7% of market cap and 29.8% of holder addresses, the most of any issuer.",
+      "parts": [
+        {
+          "text": "Robinhood holds 4.7% of market cap and 29.8% of holder addresses, the most of any issuer."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Binance bStocks holds 21.3% of market cap and 28.4% of holders.",
+      "parts": [
+        {
+          "text": "Binance bStocks holds 21.3% of market cap and 28.4% of holders."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Securitize holds 10.8% of market cap but sits outside the top 10 issuers by holders. Every issuer outside the top 10 holds 0.6% combined.",
+      "parts": [
+        {
+          "text": "Securitize holds 10.8% of market cap but sits outside the top 10 issuers by holders. Every issuer outside the top 10 holds 0.6% combined."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Backpack holds 0.7% of market cap and 6.3% of holders.",
+      "parts": [
+        {
+          "text": "Backpack holds 0.7% of market cap and 6.3% of holders."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The same split shows by underlying stock. SECZ, CRCL, MSTR and STRC are four of the five largest by market cap, at 32.2% combined, and none appears in the top 10 by holders. NVDA is 3.9% of market cap and 12.3% of holder addresses. SPCX is 4.6% of market cap and 10.5% of holders.",
+      "parts": [
+        {
+          "text": "The same split shows by underlying stock. SECZ, CRCL, MSTR and STRC are four of the five largest by market cap, at 32.2% combined, and none appears in the top 10 by holders. NVDA is 3.9% of market cap and 12.3% of holder addresses. SPCX is 4.6% of market cap and 10.5% of holders."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "",
+      "number": 10,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HTyxTxKWoAASA3V.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HTyxTxKWoAASA3V?format=jpg&name=medium",
+          "alt": "Tokenized Stocks Report — figure 10",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion",
+      "parts": [
+        {
+          "text": "Conclusion"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized stocks reached $3.6 billion in market cap and 4.7 million holder addresses. Market cap growth was led by Binance bStocks and xStocks, which added $949.5 million between them, and by BNB Chain, which added $552.9 million.",
+      "parts": [
+        {
+          "text": "Tokenized stocks reached $3.6 billion in market cap and 4.7 million holder addresses. Market cap growth was led by Binance bStocks and xStocks, which added $949.5 million between them, and by BNB Chain, which added $552.9 million."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Holder growth was led by Robinhood and Binance bStocks, and by BNB Chain, Robinhood Chain and Solana. Most of the sector's holder addresses were added during the quarter.",
+      "parts": [
+        {
+          "text": "Holder growth was led by Robinhood and Binance bStocks, and by BNB Chain, Robinhood Chain and Solana. Most of the sector's holder addresses were added during the quarter."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "As with stablecoins and credit, the issuers holding the most capital are not the ones attracting the most holders. Robinhood holds under 5% of market cap and nearly 30% of holder addresses, while Securitize holds over 10% of market cap and sits outside the top 10 by holders.",
+      "parts": [
+        {
+          "text": "As with stablecoins and credit, the issuers holding the most capital are not the ones attracting the most holders. Robinhood holds under 5% of market cap and nearly 30% of holder addresses, while Securitize holds over 10% of market cap and sits outside the top 10 by holders."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are sourced strictly from Token Terminal and reflect the 90-day window ending on that date Unless state otherwise. This report is for informational purposes only and is not investment advice.",
+      "parts": [
+        {
+          "text": "All figures are sourced strictly from Token Terminal and reflect the 90-day window ending on that date Unless state otherwise. This report is for informational purposes only and is not investment advice.",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "figureCount": 10
+}

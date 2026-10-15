@@ -1,0 +1,521 @@
+{
+  "id": "2108149308889440419",
+  "slug": "rwa-weekly-oct-8-2026",
+  "series": "weekly",
+  "title": "RWA Weekly Report With Token Terminal: Stablecoins, Funds and Stocks",
+  "shortTitle": "RWA Weekly Report",
+  "edition": "October 8, 2026",
+  "window": "October 1–8, 2026",
+  "asOf": "2026-10-08",
+  "publishedAt": "2026-10-08T10:55:37.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2108149308889440419",
+  "partner": "Token Terminal",
+  "description": "Weekly market cap and holder growth by issuer and chain across stablecoins, funds and stocks.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "This is the weekly edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It covers stablecoins, tokenized funds and tokenized stocks over the past 7 days, by issuer and by chain, for both market cap and holders.",
+      "parts": [
+        {
+          "text": "This is the weekly edition of RWA Activity on the Terminal, a joint report from RWA Foundation and Token Terminal. It covers stablecoins, tokenized funds and tokenized stocks over the past 7 days, by issuer and by chain, for both market cap and holders."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are taken strictly from Token Terminal as of October 8, 2026. Growth figures cover the 7-day window from October 1 to October 8. No third-party data has been added, and no figures have been adjusted or estimated.",
+      "parts": [
+        {
+          "text": "All figures are taken strictly from Token Terminal as of October 8, 2026. Growth figures cover the 7-day window from October 1 to October 8. No third-party data has been added, and no figures have been adjusted or estimated."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Market cap refers to circulating asset market cap as reported by Token Terminal. Holders refers to addresses holding a non-zero balance, summed across assets without removing duplicates. Each chart shows the top 10 issuers or chains listed by Token Terminal, and totals in this report are sums of those top 10 only.",
+      "parts": [
+        {
+          "text": "Market cap refers to circulating asset market cap as reported by Token Terminal. Holders refers to addresses holding a non-zero balance, summed across assets without removing duplicates. Each chart shows the top 10 issuers or chains listed by Token Terminal, and totals in this report are sums of those top 10 only."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Overview",
+      "parts": [
+        {
+          "text": "Overview"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Across the top 10 issuers, stablecoins added $1.77 billion in market cap over the week, tokenized funds $636.5 million and tokenized stocks $209.6 million. Falcon Finance led stablecoins, Sky led tokenized funds and Binance bStocks led tokenized stocks.",
+      "parts": [
+        {
+          "text": "Across the top 10 issuers, stablecoins added $1.77 billion in market cap over the week, tokenized funds $636.5 million and tokenized stocks $209.6 million. Falcon Finance led stablecoins, Sky led tokenized funds and Binance bStocks led tokenized stocks."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Holder growth followed a different path. The top 10 stablecoin issuers added 2.31 million holder addresses, tokenized stock issuers 254,600 and tokenized fund issuers 1,443.",
+      "parts": [
+        {
+          "text": "Holder growth followed a different path. The top 10 stablecoin issuers added 2.31 million holder addresses, tokenized stock issuers 254,600 and tokenized fund issuers 1,443."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "The week in RWA's.",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGgVwwWMAABOlF.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGgVwwWMAABOlF?format=jpg&name=medium",
+          "alt": "The week in RWA's.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Stablecoins",
+      "parts": [
+        {
+          "text": "Stablecoins"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Falcon Finance added $447.0 million in stablecoin market cap, more than any other issuer. Tether (+$325.7 million) and Open Standard (+$267.2 million) followed. The three added about $1.04 billion between them, roughly 59% of the growth across the top 10.",
+      "parts": [
+        {
+          "text": "Falcon Finance added $447.0 million in stablecoin market cap, more than any other issuer. Tether (+$325.7 million) and Open Standard (+$267.2 million) followed. The three added about $1.04 billion between them, roughly 59% of the growth across the top 10."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Paxos (+$188.4 million), Sky (+$168.1 million), Anchorage Digital (+$120.7 million) and USDai (+$100.5 million) each added more than $100 million. Ethena (+$70.2 million), Tron USDD (+$42.5 million) and United Stables (+$36.5 million).",
+      "parts": [
+        {
+          "text": "Paxos (+$188.4 million), Sky (+$168.1 million), Anchorage Digital (+$120.7 million) and USDai (+$100.5 million) each added more than $100 million. Ethena (+$70.2 million), Tron USDD (+$42.5 million) and United Stables (+$36.5 million)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin market cap growth by issuer",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGgo4LXoAAG1bn.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGgo4LXoAAG1bn?format=jpg&name=medium",
+          "alt": "Stablecoin market cap growth by issuer",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Ethereum added $492.4 million and Solana $429.0 million, about 54% of the $1.70 billion added across the top 10 chains. Arbitrum One (+$196.2 million), Base (+$141.9 million) and Tron (+$139.8 million) followed. XRP Ledger (+$94.4 million), Tempo (+$74.1 million), Robinhood Chain (+$47.0 million), Arc (+$42.6 million) and NEAR Protocol (+$38.6 million).",
+      "parts": [
+        {
+          "text": "By chain, Ethereum added $492.4 million and Solana $429.0 million, about 54% of the $1.70 billion added across the top 10 chains. Arbitrum One (+$196.2 million), Base (+$141.9 million) and Tron (+$139.8 million) followed. XRP Ledger (+$94.4 million), Tempo (+$74.1 million), Robinhood Chain (+$47.0 million), Arc (+$42.6 million) and NEAR Protocol (+$38.6 million)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin market cap growth by chain",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGj_2qWsAAtYbi.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGj_2qWsAAtYbi?format=jpg&name=medium",
+          "alt": "Stablecoin market cap growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tether added 1.8 million stablecoin holder addresses, about 78% of the growth across the top 10 issuers. Circle added 441,100. The two account for about 97% of the total. Paxos (+28,200), Phantom (+18,900) and World Liberty (+10,500) followed, then Sky (+7,300), Polymarket (+2,500), United Stables (+2,400), Ripio (+2,100) and MetaMask (+921).",
+      "parts": [
+        {
+          "text": "Tether added 1.8 million stablecoin holder addresses, about 78% of the growth across the top 10 issuers. Circle added 441,100. The two account for about 97% of the total. Paxos (+28,200), Phantom (+18,900) and World Liberty (+10,500) followed, then Sky (+7,300), Polymarket (+2,500), United Stables (+2,400), Ripio (+2,100) and MetaMask (+921)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin holder growth by issuer",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGkYKgXUAA_oq4.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGkYKgXUAA_oq4?format=jpg&name=medium",
+          "alt": "Stablecoin holder growth by issuer",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, BNB Chain added 1.3 million holder addresses, about 59% of the top 10 total. Solana (+222,500), Celo (+199,100) and Tron (+169,600) followed. Arbitrum One (+101,300) and Base (+98,700) added close to 100,000 each, with Ethereum (+47,100), Robinhood Chain (+24,400), Arc (+20,800) and Algorand (+14,600).",
+      "parts": [
+        {
+          "text": "By chain, BNB Chain added 1.3 million holder addresses, about 59% of the top 10 total. Solana (+222,500), Celo (+199,100) and Tron (+169,600) followed. Arbitrum One (+101,300) and Base (+98,700) added close to 100,000 each, with Ethereum (+47,100), Robinhood Chain (+24,400), Arc (+20,800) and Algorand (+14,600)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Market cap and holders split again. Ethereum added the most stablecoin market cap and the seventh most holders. BNB Chain added the most holders and does not appear in the top 10 by market cap growth. Falcon Finance led issuers by market cap and does not appear in the top 10 by holders. ",
+      "parts": [
+        {
+          "text": "Market cap and holders split again. Ethereum added the most stablecoin market cap and the seventh most holders. BNB Chain added the most holders and does not appear in the top 10 by market cap growth. Falcon Finance led issuers by market cap and does not appear in the top 10 by holders. "
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoin holder growth by chain",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGhrkAXcAAxIJW.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGhrkAXcAAxIJW?format=jpg&name=medium",
+          "alt": "Stablecoin holder growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized funds",
+      "parts": [
+        {
+          "text": "Tokenized funds"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Sky added $171.7 million in tokenized fund market cap and J.P. Morgan $159.5 million, about 52% of the $636.5 million added across the top 10. Franklin Templeton added $87.2 million. Maple Finance (+$55.3 million), Spiko (+$50.8 million), Ondo Finance (+$41.0 million) and Superstate (+$33.1 million) followed, with Figure (+$26.0 million), Securitize (+$7.4 million) and Re (+$4.5 million).",
+      "parts": [
+        {
+          "text": "Sky added $171.7 million in tokenized fund market cap and J.P. Morgan $159.5 million, about 52% of the $636.5 million added across the top 10. Franklin Templeton added $87.2 million. Maple Finance (+$55.3 million), Spiko (+$50.8 million), Ondo Finance (+$41.0 million) and Superstate (+$33.1 million) followed, with Figure (+$26.0 million), Securitize (+$7.4 million) and Re (+$4.5 million)."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized fund market cap growth by issuer",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGh5HgWgAArVgU.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGh5HgWgAArVgU?format=jpg&name=medium",
+          "alt": "Tokenized fund market cap growth by issuer",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Ethereum added $350.0 million and Stellar $175.1 million, about 92% of the growth across the top 10 chains. BNB Chain (+$22.5 million), Solana (+$16.9 million) and zkSync Era (+$3.1 million) followed. Robinhood Chain (+$857,200), Base (+$684,800), Sei EVM (+$333,400), Monad (+$259,400) and Sonic (+$147,400) each added under $1 million.",
+      "parts": [
+        {
+          "text": "By chain, Ethereum added $350.0 million and Stellar $175.1 million, about 92% of the growth across the top 10 chains. BNB Chain (+$22.5 million), Solana (+$16.9 million) and zkSync Era (+$3.1 million) followed. Robinhood Chain (+$857,200), Base (+$684,800), Sei EVM (+$333,400), Monad (+$259,400) and Sonic (+$147,400) each added under $1 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized fund market cap  growth by chain",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGiGNBXkAATQ9Y.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGiGNBXkAATQ9Y?format=jpg&name=medium",
+          "alt": "Tokenized fund market cap  growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Fund holder growth is measured in hundreds. USDai added 377 holder addresses and OnRe 235. Ondo Finance (+173), Maple Finance (+164) and Sky (+142) followed, then Apyx (+109), Dinari (+101), RealFi (+57), Plume Vaults (+54) and Ether.fi (+31). RWA Foundation members OnRe, Maple Finance, Dinari, RealFi and Plume Vaults added 611 of the top 10's 1,443 between them.",
+      "parts": [
+        {
+          "text": "Fund holder growth is measured in hundreds. USDai added 377 holder addresses and OnRe 235. Ondo Finance (+173), Maple Finance (+164) and Sky (+142) followed, then Apyx (+109), Dinari (+101), RealFi (+57), Plume Vaults (+54) and "
+        },
+        {
+          "text": "Ether.fi"
+        },
+        {
+          "text": " (+31). RWA Foundation members OnRe, Maple Finance, Dinari, RealFi and Plume Vaults added 611 of the top 10's 1,443 between them."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized fund holder growth by issuer",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGkl68XEAErTl-.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGkl68XEAErTl-?format=jpg&name=medium",
+          "alt": "Tokenized fund holder growth by issuer",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Arbitrum One added 347 holder addresses and Base 300. Solana (+174), Sei EVM (+153) and Ethereum (+121) followed, with Cardano (+57), OP Mainnet (+31), Robinhood Chain (+20), Stellar (+18) and Sonic (+12) completing the top 10.",
+      "parts": [
+        {
+          "text": "By chain, Arbitrum One added 347 holder addresses and Base 300. Solana (+174), Sei EVM (+153) and Ethereum (+121) followed, with Cardano (+57), OP Mainnet (+31), Robinhood Chain (+20), Stellar (+18) and Sonic (+12) completing the top 10."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ethereum and Stellar added the most fund market cap, yet ranked fifth and ninth by holders. Arbitrum One led holder growth and does not appear in the top 10 by fund market cap growth.",
+      "parts": [
+        {
+          "text": "Ethereum and Stellar added the most fund market cap, yet ranked fifth and ninth by holders. Arbitrum One led holder growth and does not appear in the top 10 by fund market cap growth."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized fund holder growth by chain",
+      "number": 9,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGidjdXMAApqtD.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGidjdXMAApqtD?format=jpg&name=medium",
+          "alt": "Tokenized fund holder growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized stocks",
+      "parts": [
+        {
+          "text": "Tokenized stocks"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Binance bStocks added $96.6 million in tokenized stock market cap and xStocks $88.4 million. The two account for about 88% of the $209.6 million added across the top 10. Ondo Finance added $15.1 million, Coinbase $3.9 million, Backpack $2.0 million and Republic $1.5 million. PreStocks (+$965,700), Superstate (+$934,200), Tessera (+$89,800) and Remora Markets (+$86,100) each added under $1 million.",
+      "parts": [
+        {
+          "text": "Binance bStocks added $96.6 million in tokenized stock market cap and xStocks $88.4 million. The two account for about 88% of the $209.6 million added across the top 10. Ondo Finance added $15.1 million, Coinbase $3.9 million, Backpack $2.0 million and Republic $1.5 million. PreStocks (+$965,700), Superstate (+$934,200), Tessera (+$89,800) and Remora Markets (+$86,100) each added under $1 million."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock market cap growth by issuer",
+      "number": 10,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGk0tAWcAAyW1W.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGk0tAWcAAyW1W?format=jpg&name=medium",
+          "alt": "Tokenized stock market cap growth by issuer",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, BNB Chain added $106.2 million, X Layer $63.4 million and Solana $29.1 million. Ethereum (+$4.6 million), Base (+$3.6 million), Ink (+$1.0 million) and Polygon (+$17,500) followed. Three chains declined. Arbitrum One fell $14.0 million, Robinhood Chain $10.3 million and HyperEVM $639,500.",
+      "parts": [
+        {
+          "text": "By chain, BNB Chain added $106.2 million, X Layer $63.4 million and Solana $29.1 million. Ethereum (+$4.6 million), Base (+$3.6 million), Ink (+$1.0 million) and Polygon (+$17,500) followed. Three chains declined. Arbitrum One fell $14.0 million, Robinhood Chain $10.3 million and HyperEVM $639,500."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock market cap growth by chain",
+      "number": 11,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGiszVX0AASPZh.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGiszVX0AASPZh?format=jpg&name=medium",
+          "alt": "Tokenized stock market cap growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "xStocks added 94,600 stock holder addresses, about 37% of the growth across the top 10 issuers. Binance bStocks (+60,700), Backpack (+35,100) and PreStocks (+23,900) followed. Robinhood (+18,800), Ondo Finance (+16,600) and Coinbase (+4,100) came next, with Dinari (+323), st0x (+242) and Reserve (+185). ",
+      "parts": [
+        {
+          "text": "xStocks added 94,600 stock holder addresses, about 37% of the growth across the top 10 issuers. Binance bStocks (+60,700), Backpack (+35,100) and PreStocks (+23,900) followed. Robinhood (+18,800), Ondo Finance (+16,600) and Coinbase (+4,100) came next, with Dinari (+323), st0x (+242) and Reserve (+185). "
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock holder growth by issuer",
+      "number": 12,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGld75XYAASvUV.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGld75XYAASvUV?format=jpg&name=medium",
+          "alt": "Tokenized stock holder growth by issuer",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By chain, Solana added 150,600 holder addresses, about 59% of the top 10 total. BNB Chain (+73,800) and Robinhood Chain (+18,800) followed. Base and Ethereum added 4,600 each, X Layer 997, Ink 561, HyperEVM 13 and Monad 12. Arbitrum One lost 160.",
+      "parts": [
+        {
+          "text": "By chain, Solana added 150,600 holder addresses, about 59% of the top 10 total. BNB Chain (+73,800) and Robinhood Chain (+18,800) followed. Base and Ethereum added 4,600 each, X Layer 997, Ink 561, HyperEVM 13 and Monad 12. Arbitrum One lost 160."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Robinhood Chain lost $10.3 million in stock market cap over the week while adding the third most holders. Backpack added $2.0 million in market cap and the third most holders by issuer. Arbitrum One declined on both measures.",
+      "parts": [
+        {
+          "text": "Robinhood Chain lost $10.3 million in stock market cap over the week while adding the third most holders. Backpack added $2.0 million in market cap and the third most holders by issuer. Arbitrum One declined on both measures."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock holder growth by chain",
+      "number": 13,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUGi87BWQAA0TPq.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUGi87BWQAA0TPq?format=jpg&name=medium",
+          "alt": "Tokenized stock holder growth by chain",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Where chains appear",
+      "parts": [
+        {
+          "text": "Where chains appear"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ethereum, Solana, Base and Robinhood Chain appear in the top 10 of all six chain charts in this report, covering market cap and holders across stablecoins, funds and stocks.",
+      "parts": [
+        {
+          "text": "Ethereum, Solana, Base and Robinhood Chain appear in the top 10 of all six chain charts in this report, covering market cap and holders across stablecoins, funds and stocks."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Ethereum led stablecoin and fund market cap growth.",
+      "parts": [
+        {
+          "text": "Ethereum led stablecoin and fund market cap growth."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Solana was second in stablecoin market cap growth and led stock holder growth.",
+      "parts": [
+        {
+          "text": "Solana was second in stablecoin market cap growth and led stock holder growth."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "BNB Chain led stablecoin holder growth and stock market cap growth.",
+      "parts": [
+        {
+          "text": "BNB Chain led stablecoin holder growth and stock market cap growth."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Arbitrum One led fund holder growth but declined in tokenized stocks.",
+      "parts": [
+        {
+          "text": "Arbitrum One led fund holder growth but declined in tokenized stocks."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion",
+      "parts": [
+        {
+          "text": "Conclusion"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins accounted for most of the week's growth, led by Falcon Finance, Tether and Open Standard by issuer and by Ethereum and Solana by chain. Tokenized funds grew mainly through Sky and J.P. Morgan, on Ethereum and Stellar. Tokenized stocks were led by Binance bStocks and xStocks, on BNB Chain and X Layer.",
+      "parts": [
+        {
+          "text": "Stablecoins accounted for most of the week's growth, led by Falcon Finance, Tether and Open Standard by issuer and by Ethereum and Solana by chain. Tokenized funds grew mainly through Sky and J.P. Morgan, on Ethereum and Stellar. Tokenized stocks were led by Binance bStocks and xStocks, on BNB Chain and X Layer."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "As in earlier editions, the chains and issuers adding the most market cap were often not the ones adding the most holders. Ethereum led stablecoin and fund market cap growth but ranked lower by holders, while BNB Chain, Arbitrum One and Solana led holder growth in their sectors.",
+      "parts": [
+        {
+          "text": "As in earlier editions, the chains and issuers adding the most market cap were often not the ones adding the most holders. Ethereum led stablecoin and fund market cap growth but ranked lower by holders, while BNB Chain, Arbitrum One and Solana led holder growth in their sectors."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All figures are sourced strictly from Token Terminal as of October 8, 2026, and reflect the 7-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+      "parts": [
+        {
+          "text": "All figures are sourced strictly from Token Terminal as of October 8, 2026, and reflect the 7-day window ending on that date. This report is for informational purposes only and is not investment advice.",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "figureCount": 13
+}

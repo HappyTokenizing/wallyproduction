@@ -1,3 +1,4 @@
+import {reportPages} from './research-reports.mjs';
 export const origin='https://www.rwaf.xyz';
 export const pages=[
  {id:'home',path:'/',title:'RWA Foundation · Open access to onchain finance',description:'Explore real-world asset tokenization with RWA Foundation: industry news, research, companies, jobs and plain-English education for the onchain economy.'},
@@ -17,6 +18,7 @@ export const pages=[
  {id:'zeusArticles',path:'/research/zeus/',title:'Zeus’ Corner · RWA Foundation Research',description:'Explore Zeus’ Corner: long-form articles and perspectives on real-world asset tokenization and the onchain economy from ZeusRWA on X.'},
  {id:'perpsReport',path:'/research/rwa-perps-sep-2026/',title:'RWA Perpetuals Report — September 2026 · RWA Foundation',description:'Explore the September 2026 RWA Perpetuals Report with DefiLlama: trading venues, asset classes and reference-asset groups in onchain perpetual futures.'},
  {id:'marketReport',path:'/research/market-structure-aug-2026/',title:'Market Structure Report — August 2026 · RWA Foundation',description:'Read the August 2026 Market Structure Report with Token Terminal, covering stablecoins, tokenized funds, private credit, commodities and equities.'},
+ ...reportPages,
  {id:'guide',path:'/guide/',title:"Wally's RWA Textbook · RWA Foundation",description:'Learn about tokenized real-world assets with Wally’s RWA Textbook: watch the film, play Tokens, Please, or read the illustrated lessons.'}
 ];
 export const aliases={'/foundation/':'/members/','/brand/':'/media-kit/','/brandkit/':'/media-kit/','/eco/':'/ecosystem/','/careers/':'/jobs/','/articles/':'/research/','/home/':'/'};

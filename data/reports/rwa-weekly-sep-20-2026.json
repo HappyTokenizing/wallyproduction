@@ -1,0 +1,1643 @@
+{
+  "id": "2101761886760910898",
+  "slug": "rwa-weekly-sep-20-2026",
+  "series": "weekly",
+  "title": "RWA Foundation × Token Terminal: Where the Money Flowed This Week",
+  "shortTitle": "Where the Money Flowed This Week",
+  "edition": "September 20, 2026",
+  "window": "Past 7 days; published September 20",
+  "asOf": "",
+  "publishedAt": "2026-09-20T19:54:17.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2101761886760910898",
+  "partner": "Token Terminal",
+  "description": "Weekly capital flows across stablecoins, funds, credit, commodities and stocks.",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Every week, we’re going to take a look back at the RWA market and see who had the best performing week.",
+      "parts": [
+        {
+          "text": "Every week, we’re going to take a look back at the RWA market and see "
+        },
+        {
+          "text": "who had the best performing week.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Which assets saw the biggest inflows?",
+      "parts": [
+        {
+          "text": "Which assets saw the biggest inflows?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Which issuers attracted the most capital?",
+      "parts": [
+        {
+          "text": "Which issuers attracted the most capital?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Which chains saw money flow into their RWA ecosystem?",
+      "parts": [
+        {
+          "text": "Which chains saw money flow into their RWA ecosystem?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "We’ll be looking across stablecoins, funds, credit, commodities, stocks, ETFs and more, putting together a simple weekly snapshot of where capital moved with some nice graphics to go along with it. ",
+      "parts": [
+        {
+          "text": "We’ll be looking across "
+        },
+        {
+          "text": "stablecoins, funds, credit, commodities, stocks, ETFs and more",
+          "bold": true
+        },
+        {
+          "text": ", putting together a simple weekly snapshot of where capital moved with some nice graphics to go along with it. "
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The data will come strictly from Token Terminal. It will just be the top 5/10, the numbers behind them and where the money flowed that week.",
+      "parts": [
+        {
+          "text": "The data will come strictly from "
+        },
+        {
+          "text": "Token Terminal. ",
+          "bold": true
+        },
+        {
+          "text": "It will just be "
+        },
+        {
+          "text": "the top 5/10, the numbers behind them and where the money flowed that week.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Starting off with Stablecoins: Market cap growth by Asset over the past 7 days",
+      "parts": [
+        {
+          "text": "Starting off with"
+        },
+        {
+          "text": " Stablecoins: ",
+          "bold": true
+        },
+        {
+          "text": "Market cap growth by"
+        },
+        {
+          "text": " Asset ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "USDe led the way with +$237.6M, more than double USDT at +$107.5M, and accounting for around 44% of the total growth across the top 10.",
+      "parts": [
+        {
+          "text": "USDe",
+          "bold": true
+        },
+        {
+          "text": " led the way with "
+        },
+        {
+          "text": "+$237.6M",
+          "bold": true
+        },
+        {
+          "text": ", more than double "
+        },
+        {
+          "text": "USDT at +$107.5M",
+          "bold": true
+        },
+        {
+          "text": ", and accounting for around "
+        },
+        {
+          "text": "44% of the total growth across the top 10",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JPYC at +$63.7M is the one worth pausing on. A yen-denominated stablecoin sitting third on the list, in a market where around 99.5% of stablecoin market cap is dollar-denominated.",
+      "parts": [
+        {
+          "text": "JPYC at +$63.7M",
+          "bold": true
+        },
+        {
+          "text": " is the one worth pausing on. A yen-denominated stablecoin sitting third on the list, in a market where around "
+        },
+        {
+          "text": "99.5% of stablecoin market cap is dollar-denominated",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 10 stablecoins added $555.0M in market cap over the past week.",
+      "parts": [
+        {
+          "text": "Combined, the "
+        },
+        {
+          "text": "top 10 stablecoins added $555.0M in market cap over the past week.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Asset For Stablecoins.",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrf0z1W0AAiJRJ.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrf0z1W0AAiJRJ?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Asset For Stablecoins.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Market cap growth by Issuer over the past 7 days for Stablecoins",
+      "parts": [
+        {
+          "text": "Market cap growth by"
+        },
+        {
+          "text": " Issuer ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days for"
+        },
+        {
+          "text": " Stablecoins",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Ethena led with +$236.7M, more than double United Stables at +$107.5M, accounting for around 44% of the total growth across the top 10.",
+      "parts": [
+        {
+          "text": "@Ethena",
+          "bold": true,
+          "href": "https://x.com/Ethena"
+        },
+        {
+          "text": " ",
+          "bold": true
+        },
+        {
+          "text": "led with "
+        },
+        {
+          "text": "+$236.7M",
+          "bold": true
+        },
+        {
+          "text": ", more than double "
+        },
+        {
+          "text": "United Stables at +$107.5M",
+          "bold": true
+        },
+        {
+          "text": ", accounting for around "
+        },
+        {
+          "text": "44% of the total growth across the top 10",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JPYC EX added +$63.7M, followed by World Liberty at +$46.9M.",
+      "parts": [
+        {
+          "text": "JPYC EX",
+          "bold": true
+        },
+        {
+          "text": " added "
+        },
+        {
+          "text": "+$63.7M",
+          "bold": true
+        },
+        {
+          "text": ", followed by "
+        },
+        {
+          "text": "World Liberty at +$46.9M",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Below them, the rest is fairly tight, with six issuers adding between $9M and $31M each.",
+      "parts": [
+        {
+          "text": "Below them, the rest is fairly tight, with "
+        },
+        {
+          "text": "six issuers adding between $9M and $31M",
+          "bold": true
+        },
+        {
+          "text": " each."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 10 issuers grew by $551.1M over the past week.",
+      "parts": [
+        {
+          "text": "Combined, the "
+        },
+        {
+          "text": "top 10 issuers grew by $551.1M over the past week.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Issuer For Stablecoins.",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrhG7GXMAAFMSC.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrhG7GXMAAFMSC?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Issuer For Stablecoins.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Market cap growth by Chain over the past 7 days:",
+      "parts": [
+        {
+          "text": "Market cap growth by"
+        },
+        {
+          "text": " Chain ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Arc led with +$622.8M, roughly 3.7x HyperEVM in second, accounting for around half of the total growth across the top 10.",
+      "parts": [
+        {
+          "text": "@Arc",
+          "bold": true,
+          "href": "https://x.com/Arc"
+        },
+        {
+          "text": " led with "
+        },
+        {
+          "text": "+$622.8M",
+          "bold": true
+        },
+        {
+          "text": ", roughly "
+        },
+        {
+          "text": "3.7x HyperEVM in second",
+          "bold": true
+        },
+        {
+          "text": ", accounting for around "
+        },
+        {
+          "text": "half of the total growth across the top 10",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@HyperliquidX added +$168.4M, followed by @Arbitrum One at +$152.8M.",
+      "parts": [
+        {
+          "text": "@HyperliquidX",
+          "bold": true,
+          "href": "https://x.com/HyperliquidX"
+        },
+        {
+          "text": " ",
+          "bold": true
+        },
+        {
+          "text": "added "
+        },
+        {
+          "text": "+$168.4M",
+          "bold": true
+        },
+        {
+          "text": ", followed by "
+        },
+        {
+          "text": "@",
+          "href": "https://x.com/Arbitrum"
+        },
+        {
+          "text": "Arbitrum",
+          "bold": true,
+          "href": "https://x.com/Arbitrum"
+        },
+        {
+          "text": " One at +$152.8M",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Behind them @Avax, @BNBChain, @Aptos, @Base, @Ton_blockchain @0xPolygon and @Tempo all made it into  the top 10 for the week. ",
+      "parts": [
+        {
+          "text": "Behind them "
+        },
+        {
+          "text": "@",
+          "href": "https://x.com/Avax"
+        },
+        {
+          "text": "Avax",
+          "bold": true,
+          "href": "https://x.com/Avax"
+        },
+        {
+          "text": ", ",
+          "bold": true
+        },
+        {
+          "text": "@BNBChain",
+          "bold": true,
+          "href": "https://x.com/BNBChain"
+        },
+        {
+          "text": ", ",
+          "bold": true
+        },
+        {
+          "text": "@Aptos",
+          "bold": true,
+          "href": "https://x.com/Aptos"
+        },
+        {
+          "text": ", ",
+          "bold": true
+        },
+        {
+          "text": "@Base",
+          "bold": true,
+          "href": "https://x.com/Base"
+        },
+        {
+          "text": ", ",
+          "bold": true
+        },
+        {
+          "text": "@Ton_blockchain",
+          "bold": true,
+          "href": "https://x.com/Ton_blockchain"
+        },
+        {
+          "text": " ",
+          "bold": true
+        },
+        {
+          "text": "@0xPolygon",
+          "bold": true,
+          "href": "https://x.com/0xPolygon"
+        },
+        {
+          "text": " and ",
+          "bold": true
+        },
+        {
+          "text": "@Tempo",
+          "bold": true,
+          "href": "https://x.com/Tempo"
+        },
+        {
+          "text": " all made it into  the top 10 for the week. "
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 10 chains grew by $1.23B over the past week.",
+      "parts": [
+        {
+          "text": "Combined, the "
+        },
+        {
+          "text": "top 10 chains grew by $1.23B over the past week.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Chain For Stablecoins.",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrjczhWcAAS4wZ.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrjczhWcAAS4wZ?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Chain For Stablecoins.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Now, moving on to Tokenized funds - market cap growth by Asset over the past 7 days",
+      "parts": [
+        {
+          "text": "Now, moving on to"
+        },
+        {
+          "text": " Tokenized funds - ",
+          "bold": true
+        },
+        {
+          "text": "market cap growth by"
+        },
+        {
+          "text": " Asset ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "eurSAFO led with +$73.6M, followed by JAAA at +$62.8M and syrupUSDC at +$58.4M. TBILL added another +$50.2M.",
+      "parts": [
+        {
+          "text": "eurSAFO",
+          "bold": true
+        },
+        {
+          "text": " led with "
+        },
+        {
+          "text": "+$73.6M",
+          "bold": true
+        },
+        {
+          "text": ", followed by "
+        },
+        {
+          "text": "JAAA at +$62.8M",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "syrupUSDC at +$58.4M",
+          "bold": true
+        },
+        {
+          "text": ". "
+        },
+        {
+          "text": "TBILL",
+          "bold": true
+        },
+        {
+          "text": " added another "
+        },
+        {
+          "text": "+$50.2M",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The spread is probably the most interesting part. A euro T-bill fund, AAA CLO fund, private credit pool and US T-bill fund all sit in the top four.",
+      "parts": [
+        {
+          "text": "The spread is probably the most interesting part. A "
+        },
+        {
+          "text": "euro T-bill fund, AAA CLO fund, private credit pool and US T-bill fund",
+          "bold": true
+        },
+        {
+          "text": " all sit in the top four."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "It’s a good snapshot of how much broader tokenized funds are becoming, rather than the market simply being one product in ten different wrappers.",
+      "parts": [
+        {
+          "text": "It’s a good snapshot of how much broader tokenized funds are becoming, rather than the market simply being one product in ten different wrappers."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 10 grew by $365.7M over the past week.",
+      "parts": [
+        {
+          "text": "Combined, the "
+        },
+        {
+          "text": "top 10 grew by $365.7M over the past week.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Asset For Tokenized Funds.",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrlqQ_XMAE86pj.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrlqQ_XMAE86pj?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Asset For Tokenized Funds.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized funds: market cap growth by issuer over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized funds:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "issuer ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@OpenEden_x led with +$47.2M, nearly twice @USDai_official at +$26.3M and @Ethena at +$24.7M. @Re followed with +$19.5M.",
+      "parts": [
+        {
+          "text": "@OpenEden_x",
+          "href": "https://x.com/OpenEden_x"
+        },
+        {
+          "text": " led with +$47.2M, nearly twice "
+        },
+        {
+          "text": "@USDai_official",
+          "href": "https://x.com/USDai_official"
+        },
+        {
+          "text": " at +$26.3M and "
+        },
+        {
+          "text": "@Ethena",
+          "href": "https://x.com/Ethena"
+        },
+        {
+          "text": " at +$24.7M. "
+        },
+        {
+          "text": "@Re",
+          "href": "https://x.com/Re"
+        },
+        {
+          "text": " followed with +$19.5M."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@WisdomTreeFunds sitting mid-table alongside @MapleFinance and @Onrefinance is the detail worth noting. Traditional asset managers and onchain-native issuers growing side by side.",
+      "parts": [
+        {
+          "text": "@WisdomTreeFunds",
+          "href": "https://x.com/WisdomTreeFunds"
+        },
+        {
+          "text": " sitting mid-table alongside "
+        },
+        {
+          "text": "@MapleFinance",
+          "href": "https://x.com/MapleFinance"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "@Onrefinance",
+          "href": "https://x.com/Onrefinance"
+        },
+        {
+          "text": " is the detail worth noting. Traditional asset managers and onchain-native issuers growing side by side."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 10 added +$165.5M on the week.",
+      "parts": [
+        {
+          "text": "Combined, the top 10 added +$165.5M on the week."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Issuer For Tokenized Funds.",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrm-jyXsAAgIK0.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrm-jyXsAAgIK0?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Issuer For Tokenized Funds.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized funds: market cap growth by chain over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized funds:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "chain ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Arbitrum One led with +$69.5M and @Solana followed at +$54.8M. Between them, 94% of the top 10's growth.",
+      "parts": [
+        {
+          "text": "@Arbitrum",
+          "href": "https://x.com/Arbitrum"
+        },
+        {
+          "text": " One led with +$69.5M and "
+        },
+        {
+          "text": "@Solana",
+          "href": "https://x.com/Solana"
+        },
+        {
+          "text": " followed at +$54.8M. Between them, 94% of the top 10's growth."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Base added +$8.1M. Everything below that came in under $1.2M, with the tail from Polygon down to Sonic measured in hundreds of thousands.",
+      "parts": [
+        {
+          "text": "@Base",
+          "href": "https://x.com/Base"
+        },
+        {
+          "text": " added +$8.1M. Everything below that came in under $1.2M, with the tail from Polygon down to Sonic measured in hundreds of thousands."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Chain For Tokenized Funds.",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrneUoWgAAAm7S.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrneUoWgAAAm7S?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Chain For Tokenized Funds.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized credit funds: market cap growth by asset over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized credit funds:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "asset ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JAAA led with +$62.8M, just ahead of syrupUSDC at +$58.4M. Maple's two pools, syrupUSDC and syrupUSDG, combined for +$87.4M.",
+      "parts": [
+        {
+          "text": "JAAA led with +$62.8M, just ahead of syrupUSDC at +$58.4M. Maple's two pools, syrupUSDC and syrupUSDG, combined for +$87.4M."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "sUSDai added +$26.3M and ParetoFAL +$6.0M. Everything below that came in under $325K.",
+      "parts": [
+        {
+          "text": "sUSDai added +$26.3M and ParetoFAL +$6.0M. Everything below that came in under $325K."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Five assets account for essentially all of the +$182.6M the top 10 added this week.",
+      "parts": [
+        {
+          "text": "Five assets account for essentially all of the +$182.6M the top 10 added this week."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Asset For Tokenized Credit Funds.",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrpc_kX0AAEYEI.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrpc_kX0AAEYEI?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Asset For Tokenized Credit Funds.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized credit funds: market cap growth by issuer over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized credit funds:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "issuer ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Centrifuge led with +$62.8M, more than double @USDai_official at +$26.3M and about 57% of the top 5's total.",
+      "parts": [
+        {
+          "text": "@Centrifuge",
+          "href": "https://x.com/Centrifuge"
+        },
+        {
+          "text": " led with +$62.8M, more than double "
+        },
+        {
+          "text": "@USDai_official",
+          "href": "https://x.com/USDai_official"
+        },
+        {
+          "text": " at +$26.3M and about 57% of the top 5's total."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@MapleFinance added +$12.7M and @Paretocredit +$6.0M. @Securitize rounded out the five at +$417.6K.",
+      "parts": [
+        {
+          "text": "@MapleFinance",
+          "href": "https://x.com/MapleFinance"
+        },
+        {
+          "text": " added +$12.7M and "
+        },
+        {
+          "text": "@Paretocredit",
+          "href": "https://x.com/Paretocredit"
+        },
+        {
+          "text": " +$6.0M. "
+        },
+        {
+          "text": "@Securitize",
+          "href": "https://x.com/Securitize"
+        },
+        {
+          "text": " rounded out the five at +$417.6K."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 5 grew +$108.2M on the week.",
+      "parts": [
+        {
+          "text": "Combined, the top 5 grew +$108.2M on the week."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Issuer For Tokenized Credit Funds.",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrqn4TXoAAKuP7.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrqn4TXoAAKuP7?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Issuer For Tokenized Credit Funds.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized credit funds: market cap growth by chain over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized credit funds:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "chain ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Solana led with +$41.6M, ahead of @Ethereum at +$30.9M and @Arbitrum One at +$24.1M. @Base added +$12.0M.",
+      "parts": [
+        {
+          "text": "@Solana",
+          "href": "https://x.com/Solana"
+        },
+        {
+          "text": " led with +$41.6M, ahead of "
+        },
+        {
+          "text": "@Ethereum",
+          "href": "https://x.com/Ethereum"
+        },
+        {
+          "text": " at +$30.9M and "
+        },
+        {
+          "text": "@Arbitrum",
+          "href": "https://x.com/Arbitrum"
+        },
+        {
+          "text": " One at +$24.1M. "
+        },
+        {
+          "text": "@Base",
+          "href": "https://x.com/Base"
+        },
+        {
+          "text": " added +$12.0M."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Avax having a fairly flat week at +$193.4K, roughly 215x smaller than @Solana. Combined, the top 5 grew +$108.8M on the week.",
+      "parts": [
+        {
+          "text": "@Avax",
+          "href": "https://x.com/Avax"
+        },
+        {
+          "text": " having a fairly flat week at +$193.4K, roughly 215x smaller than "
+        },
+        {
+          "text": "@Solana",
+          "href": "https://x.com/Solana"
+        },
+        {
+          "text": ". Combined, the top 5 grew +$108.8M on the week."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Chain For Tokenized Credit Funds.",
+      "number": 9,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrrXOTXsAA1i06.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrrXOTXsAA1i06?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Chain For Tokenized Credit Funds.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized commodities: market cap growth by asset over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized commodities:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "asset ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "XAUT led with +$59.1M, more than five times PAXG at +$11.0M and about 78% of the top 5's total.",
+      "parts": [
+        {
+          "text": "XAUT led with +$59.1M, more than five times PAXG at +$11.0M and about 78% of the top 5's total."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "KAU added +$3.4M, GGBR +$2.2M and XAUTO +$721.9K. Every asset on the list is gold.",
+      "parts": [
+        {
+          "text": "KAU added +$3.4M, GGBR +$2.2M and XAUTO +$721.9K. Every asset on the list is gold."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 5 grew +$76.4M on the week.",
+      "parts": [
+        {
+          "text": "Combined, the top 5 grew +$76.4M on the week."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Asset For Tokenized Commodities.",
+      "number": 10,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrsOW9WoAMvMdm.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrsOW9WoAMvMdm?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Asset For Tokenized Commodities.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized commodities: market cap growth by issuer over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized commodities:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "issuer ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Tether led with +$59.9M, roughly 5.5x @Paxos at +$11.0M and about 78% of the top 5's total.",
+      "parts": [
+        {
+          "text": "@Tether",
+          "href": "https://x.com/Tether"
+        },
+        {
+          "text": " led with +$59.9M, roughly 5.5x "
+        },
+        {
+          "text": "@Paxos",
+          "href": "https://x.com/Paxos"
+        },
+        {
+          "text": " at +$11.0M and about 78% of the top 5's total."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Kinesis_Monetary added +$3.4M, @Goldfishggbr +$2.2M and @xStocksFi +$822.5K.",
+      "parts": [
+        {
+          "text": "@Kinesis_Monetary",
+          "href": "https://x.com/Kinesis_Monetary"
+        },
+        {
+          "text": " added +$3.4M, "
+        },
+        {
+          "text": "@Goldfishggbr",
+          "href": "https://x.com/Goldfishggbr"
+        },
+        {
+          "text": " +$2.2M and "
+        },
+        {
+          "text": "@xStocksFi",
+          "href": "https://x.com/xStocksFi"
+        },
+        {
+          "text": " +$822.5K."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 5 grew +$77.3M on the week. Gold remains the only commodity with real onchain flows.",
+      "parts": [
+        {
+          "text": "Combined, the top 5 grew +$77.3M on the week. Gold remains the only commodity with real onchain flows."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Issuer For Tokenized Commodities.",
+      "number": 11,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrs6sVWwAA49j5.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrs6sVWwAA49j5?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Issuer For Tokenized Commodities.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized commodities: market cap growth by chain over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized commodities:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "chain ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Ethereum took +$76.0M, roughly 97% of the top 5's total.",
+      "parts": [
+        {
+          "text": "@Ethereum",
+          "href": "https://x.com/Ethereum"
+        },
+        {
+          "text": " took +$76.0M, roughly 97% of the top 5's total."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Everything else came in under a million: HyperEVM +$764.4K, @Solana +$750.5K, @Avax +$400.0K and @Base +$215.6K.",
+      "parts": [
+        {
+          "text": "Everything else came in under a million: HyperEVM +$764.4K, "
+        },
+        {
+          "text": "@Solana",
+          "href": "https://x.com/Solana"
+        },
+        {
+          "text": " +$750.5K, "
+        },
+        {
+          "text": "@Avax",
+          "href": "https://x.com/Avax"
+        },
+        {
+          "text": " +$400.0K and "
+        },
+        {
+          "text": "@Base",
+          "href": "https://x.com/Base"
+        },
+        {
+          "text": " +$215.6K."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized gold has barely left Ethereum. Stablecoins spread across chains years ago, commodities have not.",
+      "parts": [
+        {
+          "text": "Tokenized gold has barely left Ethereum. Stablecoins spread across chains years ago, commodities have not."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Chain For Tokened Commodities.",
+      "number": 12,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrtvwxXsAAA4pZ.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrtvwxXsAAA4pZ?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Chain For Tokened Commodities.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Last but not least, we are onto Tokenized Stocks.",
+      "parts": [
+        {
+          "text": "Last but not least, we are onto "
+        },
+        {
+          "text": "Tokenized Stocks.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized stocks: market cap growth by asset over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized stocks:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "asset ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "SECZ led with +$67.0M, more than 2.5x CRCLb at +$24.8M and about 42% of the top 10's total.",
+      "parts": [
+        {
+          "text": "SECZ led with +$67.0M, more than 2.5x CRCLb at +$24.8M and about 42% of the top 10's total."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Strategy shows up twice through MSTRx and MSTRb, combining for +$31.4M. NVDAb added +$12.5M and MUb +$9.9M.",
+      "parts": [
+        {
+          "text": "Strategy shows up twice through MSTRx and MSTRb, combining for +$31.4M. NVDAb added +$12.5M and MUb +$9.9M."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Index wrappers are on the board too: SOXLb, QQQb and SPYx all between $6M and $7M.",
+      "parts": [
+        {
+          "text": "Index wrappers are on the board too: SOXLb, QQQb and SPYx all between $6M and $7M."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined, the top 10 grew +$172.9M on the week. ",
+      "parts": [
+        {
+          "text": "Combined, the top 10 grew +$172.9M on the week. "
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Asset For Tokenized Stocks.",
+      "number": 13,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSru-J8WwAArr2K.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSru-J8WwAArr2K?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Asset For Tokenized Stocks.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized stocks: market cap growth by issuer over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized stocks:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "issuer ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Binance @bStocksfinance led with +$78.5M, ahead of @Securitize at +$66.1M and @xStocksFi at +$46.5M. Those three took 85% of the top 10's growth.",
+      "parts": [
+        {
+          "text": "Binance "
+        },
+        {
+          "text": "@bStocksfinance",
+          "href": "https://x.com/bStocksfinance"
+        },
+        {
+          "text": " led with +$78.5M, ahead of "
+        },
+        {
+          "text": "@Securitize",
+          "href": "https://x.com/Securitize"
+        },
+        {
+          "text": " at +$66.1M and "
+        },
+        {
+          "text": "@xStocksFi",
+          "href": "https://x.com/xStocksFi"
+        },
+        {
+          "text": " at +$46.5M. Those three took 85% of the top 10's growth."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Ondo Finance added +$16.3M and @SuperstateInc +$8.4M. @Backpack, @RealityFi_xyz, @Coinbase, @DinariGlobal and @RobinhoodApp all came in between $1.1M and $2.5M.",
+      "parts": [
+        {
+          "text": "@Ondo",
+          "href": "https://x.com/Ondo"
+        },
+        {
+          "text": " Finance added +$16.3M and "
+        },
+        {
+          "text": "@SuperstateInc",
+          "href": "https://x.com/SuperstateInc"
+        },
+        {
+          "text": " +$8.4M. "
+        },
+        {
+          "text": "@Backpack",
+          "href": "https://x.com/Backpack"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "@RealityFi_xyz",
+          "href": "https://x.com/RealityFi_xyz"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "@Coinbase",
+          "href": "https://x.com/Coinbase"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "@DinariGlobal",
+          "href": "https://x.com/DinariGlobal"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "@RobinhoodApp",
+          "href": "https://x.com/RobinhoodApp"
+        },
+        {
+          "text": " all came in between $1.1M and $2.5M."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ten issuers on the board, three doing most of the work.",
+      "parts": [
+        {
+          "text": "Ten issuers on the board, three doing most of the work."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Issuer For Tokenized Stocks.",
+      "number": 14,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrwgYNWoAEGTKh.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrwgYNWoAEGTKh?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Issuer For Tokenized Stocks.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tokenized stocks: market cap growth by chain over the past 7 days.",
+      "parts": [
+        {
+          "text": "Tokenized stocks:",
+          "bold": true
+        },
+        {
+          "text": " market cap growth by "
+        },
+        {
+          "text": "chain ",
+          "bold": true
+        },
+        {
+          "text": "over the past 7 days."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@BNBChain led with +$89.9M, followed by @XLayerOfficial at +$72.5M and @Avax at +$66.6M. Those three took 95% of the top 5's growth.",
+      "parts": [
+        {
+          "text": "@BNBChain",
+          "href": "https://x.com/BNBChain"
+        },
+        {
+          "text": " led with +$89.9M, followed by "
+        },
+        {
+          "text": "@XLayerOfficial",
+          "href": "https://x.com/XLayerOfficial"
+        },
+        {
+          "text": " at +$72.5M and "
+        },
+        {
+          "text": "@Avax",
+          "href": "https://x.com/Avax"
+        },
+        {
+          "text": " at +$66.6M. Those three took 95% of the top 5's growth."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Arbitrum One and @Ethereum added +$6.4M and +$5.6M. In total the top 5 grew +$241.0M on the week. ",
+      "parts": [
+        {
+          "text": "@Arbitrum",
+          "href": "https://x.com/Arbitrum"
+        },
+        {
+          "text": " One and "
+        },
+        {
+          "text": "@Ethereum",
+          "href": "https://x.com/Ethereum"
+        },
+        {
+          "text": " added +$6.4M and +$5.6M. In total the top 5 grew +$241.0M on the week. "
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Market Cap Growth By Chain For Tokenized Stocks.",
+      "number": 15,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HSrxbFjXMAAjvut.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HSrxbFjXMAAjvut?format=jpg&name=medium",
+          "alt": "Market Cap Growth By Chain For Tokenized Stocks.",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "That’s the week",
+      "parts": [
+        {
+          "text": "That’s the week",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "That’s the first look at where the money flowed across the RWA market this week.",
+      "parts": [
+        {
+          "text": "That’s the first look at where the money flowed across the RWA market this week."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Across stablecoins and tokenized funds, there were some pretty clear movers, but also a growing mix of assets, issuers and chains picking up capital.",
+      "parts": [
+        {
+          "text": "Across stablecoins and tokenized funds, there were some pretty clear movers, but also a growing mix of assets, issuers and chains picking up capital."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "We’ll be back next week with another look at who grew, who attracted the most capital and where the money went.",
+      "parts": [
+        {
+          "text": "We’ll be back next week with another look at "
+        },
+        {
+          "text": "who grew, who attracted the most capital and where the money went.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "@RWAFoundation_ × @TokenTerminal",
+      "parts": [
+        {
+          "text": "@RWAFoundation_",
+          "bold": true,
+          "href": "https://x.com/RWAFoundation_"
+        },
+        {
+          "text": " × ",
+          "bold": true
+        },
+        {
+          "text": "@TokenTerminal",
+          "bold": true,
+          "href": "https://x.com/TokenTerminal"
+        }
+      ]
+    }
+  ],
+  "figureCount": 15
+}
