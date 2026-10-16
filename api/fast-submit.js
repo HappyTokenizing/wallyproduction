@@ -1,9 +1,10 @@
-import {randomBytes,randomUUID} from 'node:crypto';
+import {randomBytes,randomUUID,randomInt} from 'node:crypto';
 import {createStore,defaultStorage,digest,secret,fail,adminPassword,cookieToken,sessionCookie,DAY} from '../lib/fast-submit-store.js';
 import {fetchSource,extractSource,sourceURL} from '../lib/fast-submit-source.js';
 import {createPublisher,validateFields} from '../lib/fast-submit-publish.js';
+import {allowedEmail,normalizeEmail,sendAccessCode} from '../lib/fast-submit-access.js';
 
-export function createFastSubmitHandler({storage=defaultStorage,env=process.env,now=Date.now,source=fetchSource,fetchImpl=fetch,baseData}={}) {
+export function createFastSubmitHandler({storage=defaultStorage,env=process.env,now=Date.now,source=fetchSource,fetchImpl=fetch,baseData,sendCode=sendAccessCode}={}) {
   const store=createStore(storage,env),publisher=createPublisher({store,storage,env,now,fetchImpl,baseData});
   const draftPath=id=>{if(typeof id!=='string'||!/^[-\da-f]{36}$/.test(id))throw fail('Invalid submission reference.');return 'fast-submit/v1/drafts/'+id+'.json';};
   const publicDraft=d=>({id:d.id,kind:d.kind,url:d.url,fields:d.fields,warnings:d.warnings,matches:d.matches,status:d.status,receipt:d.receipt});
@@ -25,24 +26,48 @@ export function createFastSubmitHandler({storage=defaultStorage,env=process.env,
       if(req.method==='POST'&&['create_code','revoke_sessions'].includes(body.action)) {
         if(!adminPassword(body.pw,env))throw fail('Open the admin console and sign in again.',401);
         if(body.action==='revoke_sessions') {await store.accessUpdate(s=>{s.codes=[];s.sessions=[];});return res.status(200).json({ok:true});}
+        const email=normalizeEmail(body.email);
+        if(!allowedEmail(email))throw fail('Choose an approved team email address.',403);
         const code=randomBytes(10).toString('hex').toUpperCase(),expires=now()+DAY;
-        await store.accessUpdate(s=>{s.codes=s.codes.filter(x=>x.expires>now());if(s.codes.length>=200)throw fail('Too many unused codes. Revoke existing access first.',429);s.codes.push({hash:digest(code),expires,label:typeof body.label==='string'?body.label.trim().slice(0,80):'Teammate'});});
+        await store.accessUpdate(s=>{s.codes=s.codes.filter(x=>x.expires>now());if(s.codes.length>=200)throw fail('Too many unused codes. Revoke existing access first.',429);s.codes.push({hash:digest(code),expires,email,label:email});});
         return res.status(200).json({code:code.match(/.{1,5}/g).join('-'),expires:new Date(expires).toISOString()});
       }
-      if(req.method==='POST'&&body.action==='redeem') {
-        const code=typeof body.code==='string'?body.code.replace(/[\s-]/g,'').toUpperCase():'';
-        if(!/^[A-F\d]{20}$/.test(code))throw fail('Enter the one-time code from your admin.',401);
-        const token=secret(),id=digest(token),expires=now()+30*DAY;
+      if(req.method==='POST'&&body.action==='request_code') {
+        const email=normalizeEmail(body.email);
+        if(!allowedEmail(email))throw fail('This email is not enabled for team submissions.',403);
+        if(!env.RESEND_API_KEY||!env.EMAIL_FROM)throw fail('Email codes are temporarily unavailable. Ask an admin for an access code.',503);
+        const id=randomUUID(),code=String(randomInt(0,100000000)).padStart(8,'0'),expires=now()+10*60000;
         await store.accessUpdate(s=>{
-          const grant=s.codes.find(x=>x.hash===digest(code)&&x.expires>now());
-          if(!grant)throw fail('This code has expired or was already used. Ask your admin for a new one.',401);
+          s.emailRequests=(s.emailRequests||[]).filter(x=>x.at>now()-DAY);
+          const prior=s.emailRequests.filter(x=>x.email===email);
+          if(prior.length>=10||prior.filter(x=>x.at>now()-15*60000).length>=3||prior.some(x=>x.at>now()-60000))throw fail('Please wait before requesting another code. Check your inbox and spam folder.',429);
+          s.emailRequests.push({email,at:now()});s.codes=s.codes.filter(x=>x.expires>now());
+          s.codes.push({id,email,hash:digest(id+':'+code),expires,attempts:0,delivered:false,label:email});
+        });
+        try {await sendCode({email,code,id},{env,fetchImpl});}
+        catch {await store.accessUpdate(s=>{s.codes=s.codes.filter(x=>x.id!==id);});throw fail('The code could not be sent. Please try later or ask your admin for a code.',502);}
+        await store.accessUpdate(s=>{const grant=s.codes.find(x=>x.id===id);if(!grant)throw fail('Access was revoked. Request a new code.',409);grant.delivered=true;});
+        return res.status(200).json({challenge:id,expires:new Date(expires).toISOString(),message:'Code sent. Check your inbox.'});
+      }
+      if(req.method==='POST'&&body.action==='redeem') {
+        const email=normalizeEmail(body.email);
+        if(!allowedEmail(email))throw fail('This email is not enabled for team submissions.',403);
+        const code=typeof body.code==='string'?body.code.replace(/[\s-]/g,'').toUpperCase():'';
+        const emailed=typeof body.challenge==='string'&&/^[-\da-f]{36}$/.test(body.challenge);
+        if(!(emailed?/^\d{8}$/:/^[A-F\d]{20}$/).test(code))throw fail('Enter the one-time code from your email or admin.',401);
+        const token=secret(),id=digest(token),expires=now()+30*DAY;
+        const accepted=await store.accessUpdate(s=>{
+          const grant=emailed?s.codes.find(x=>x.id===body.challenge&&x.email===email&&x.delivered&&x.expires>now()):s.codes.find(x=>!x.id&&x.hash===digest(code)&&x.email===email&&x.expires>now());
+          if(!grant)return false;
+          if(emailed){if(grant.attempts>=5)return false;grant.attempts++;if(grant.hash!==digest(body.challenge+':'+code))return false;}
           s.codes=s.codes.filter(x=>x!==grant&&x.expires>now());s.sessions=s.sessions.filter(x=>x.expires>now());
           if(s.sessions.length>=1000)throw fail('Too many remembered browsers. Ask an admin to revoke old access.',429);
-          s.sessions.push({id,expires,label:grant.label,requests:[]});
+          s.sessions.push({id,expires,email,label:grant.label,requests:[]});return true;
         });
+        if(!accepted)throw fail('This code is incorrect, expired or already used. Request a new code if needed.',401);
         res.setHeader('Set-Cookie',sessionCookie(token));return res.status(200).json({authenticated:true,expires:new Date(expires).toISOString()});
       }
-      const token=cookieToken(req),state=await store.state(),session=token&&state.sessions.find(x=>x.id===digest(token)&&x.expires>now());
+      const token=cookieToken(req),state=await store.state(),session=token&&state.sessions.find(x=>x.id===digest(token)&&x.expires>now()&&allowedEmail(x.email));
       if(!session) {if(req.method==='GET')return res.status(200).json({authenticated:false});throw fail('Unlock this browser with a one-time code.',401);}
       if(req.method==='GET')return res.status(200).json({authenticated:true,expires:new Date(session.expires).toISOString(),categories:await publisher.categories()});
       if(body.action==='logout') {await store.accessUpdate(s=>{s.sessions=s.sessions.filter(x=>x.id!==session.id);});res.setHeader('Set-Cookie',sessionCookie('',0));return res.status(200).json({ok:true});}

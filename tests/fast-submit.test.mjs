@@ -20,7 +20,7 @@ function setup(options={}) {
   };
   const h=createFastSubmitHandler({storage,env,baseData:base,source:async url=>({url,html:newsHTML}),fetchImpl:async()=>new Response(JSON.stringify({jobs:[]})),...options});
   async function call(body,cookie='',extra={}) {const result={headers:{}};await h({method:body?'POST':'GET',body,headers:{host:'www.rwaf.xyz',origin:'https://www.rwaf.xyz','content-type':'application/json',cookie,...extra}},{setHeader(k,v){result.headers[k]=v;},status(code){result.status=code;return this;},json(value){result.body=value;}});return result;}
-  async function unlock(){const made=await call({action:'create_code',pw:env.JOBS_ADMIN_PW,label:'Editor'});assert.equal(made.status,200);const used=await call({action:'redeem',code:made.body.code});assert.equal(used.status,200);return used.headers['Set-Cookie'].split(';')[0];}
+  async function unlock(){const made=await call({action:'create_code',email:'happy@rwaf.xyz',pw:env.JOBS_ADMIN_PW,label:'Editor'});assert.equal(made.status,200);const used=await call({action:'redeem',email:'happy@rwaf.xyz',code:made.body.code});assert.equal(used.status,200);return used.headers['Set-Cookie'].split(';')[0];}
   return {storage,files,call,unlock,fail:fn=>{failWrite=fn;}};
 }
 async function inspect(s,cookie,kind='news',url='https://example.com/story'){const r=await s.call({action:'inspect',url,kind},cookie);assert.equal(r.status,200,JSON.stringify(r.body));return r.body.draft;}
@@ -28,9 +28,9 @@ const publish=(s,c,d,extra={})=>s.call({action:'publish',id:d.id,fields:d.fields
 
 test('single-use codes, secure cookies, authorization, cross-site requests and revocation',async()=>{
   const s=setup();assert.equal((await s.call()).body.authenticated,false);
-  assert.equal((await s.call({action:'create_code',pw:'wrong'})).status,401);
-  const made=await s.call({action:'create_code',pw:env.JOBS_ADMIN_PW});
-  const used=await Promise.all([s.call({action:'redeem',code:made.body.code}),s.call({action:'redeem',code:made.body.code})]);
+  assert.equal((await s.call({action:'create_code',email:'happy@rwaf.xyz',pw:'wrong'})).status,401);
+  const made=await s.call({action:'create_code',email:'happy@rwaf.xyz',pw:env.JOBS_ADMIN_PW});
+  const used=await Promise.all([s.call({action:'redeem',email:'happy@rwaf.xyz',code:made.body.code}),s.call({action:'redeem',email:'happy@rwaf.xyz',code:made.body.code})]);
   assert.deepEqual(used.map(x=>x.status).sort(),[200,401]);
   const header=used.find(x=>x.status===200).headers['Set-Cookie'];assert.match(header,/HttpOnly; Secure; SameSite=Strict/);const cookie=header.split(';')[0];
   assert.equal((await s.call(null,cookie)).body.authenticated,true);
@@ -40,7 +40,7 @@ test('single-use codes, secure cookies, authorization, cross-site requests and r
   await s.call({action:'revoke_sessions',pw:env.JOBS_ADMIN_PW});assert.equal((await s.call(null,cookie)).body.authenticated,false);
 });
 test('codes and browser sessions expire; logging out invalidates the server session',async()=>{
-  let clock=Date.now();const s=setup({now:()=>clock});const code=await s.call({action:'create_code',pw:env.JOBS_ADMIN_PW});clock+=86400001;assert.equal((await s.call({action:'redeem',code:code.body.code})).status,401);
+  let clock=Date.now();const s=setup({now:()=>clock});const code=await s.call({action:'create_code',email:'happy@rwaf.xyz',pw:env.JOBS_ADMIN_PW});clock+=86400001;assert.equal((await s.call({action:'redeem',email:'happy@rwaf.xyz',code:code.body.code})).status,401);
   const cookie=await s.unlock();clock+=30*86400000;assert.equal((await s.call(null,cookie)).body.authenticated,false);
   const fresh=await s.unlock();await s.call({action:'logout'},fresh);assert.equal((await s.call(null,fresh)).body.authenticated,false);
 });
@@ -116,4 +116,40 @@ test('a teammate can confirm related coverage without publishing another article
  const s=setup({source:async url=>({url,html:newsHTML.replace('Acme launches new tokenized treasury fund',headline)})}),c=await s.unlock(),first=await inspect(s,c);const saved=await publish(s,c,first);
  headline='Acme launches new tokenized treasury fund for institutions';const next=await inspect(s,c,'news','https://different.example/report');assert.equal(next.matches[0].match,'possible');
  const confirmed=await s.call({action:'use_existing',id:next.id,existingId:saved.body.receipt.details.id},c);assert.equal(confirmed.status,200);assert.equal(confirmed.body.receipt.status,'existing');assert.equal((await readArchive({env,storage:s.storage})).items.length,1);
+});
+
+test('only the six approved emails can obtain and redeem email codes; codes are bound to the recipient',async()=>{
+ const sent=[],mailEnv={...env,RESEND_API_KEY:'test',EMAIL_FROM:'RWAF <test@example.com>'};
+ const s=setup({env:mailEnv,sendCode:async message=>{sent.push(message);}});
+ assert.equal((await s.call({action:'request_code',email:'stranger@rwaf.xyz'})).status,403);
+ assert.equal((await s.call({action:'create_code',pw:env.JOBS_ADMIN_PW,email:'stranger@rwaf.xyz'})).status,403);
+ for(const email of ['dev@rwaf.xyz','happy@rwaf.xyz','zeus@rwaf.xyz','flynn@rwaf.xyz','ray@wallydao.xyz','ray@rwaf.xyz']) {
+  const requested=await s.call({action:'request_code',email:email.toUpperCase()});assert.equal(requested.status,200);assert.equal(requested.body.code,undefined);
+  const message=sent.at(-1);assert.equal(message.email,email);assert.match(message.code,/^\d{8}$/);assert.ok(!JSON.stringify(s.files.get(STATE_PATH).value).includes(message.code));
+  const wrong=await s.call({action:'redeem',email:email==='happy@rwaf.xyz'?'dev@rwaf.xyz':'happy@rwaf.xyz',code:message.code,challenge:requested.body.challenge});assert.equal(wrong.status,401);
+  const redeemed=await s.call({action:'redeem',email,code:message.code,challenge:requested.body.challenge});assert.equal(redeemed.status,200);
+  assert.equal((await s.call({action:'redeem',email,code:message.code,challenge:requested.body.challenge})).status,401);
+ }
+ assert.equal(sent.length,6);
+});
+test('emailed codes expire after ten minutes and lock after five guesses; repeated sends are throttled',async()=>{
+ let clock=Date.now(),sent=[];const s=setup({env:{...env,RESEND_API_KEY:'test',EMAIL_FROM:'test@example.com'},now:()=>clock,sendCode:async m=>{sent.push(m);}}),email='ray@rwaf.xyz';
+ let r=await s.call({action:'request_code',email});const first=sent.at(-1);assert.equal((await s.call({action:'request_code',email})).status,429);assert.equal(sent.length,1);
+ const wrong=first.code==='00000000'?'11111111':'00000000';for(let i=0;i<5;i++)assert.equal((await s.call({action:'redeem',email,code:wrong,challenge:r.body.challenge})).status,401);
+ assert.equal((await s.call({action:'redeem',email,code:first.code,challenge:r.body.challenge})).status,401);
+ clock+=61000;r=await s.call({action:'request_code',email});const second=sent.at(-1);clock+=10*60000;
+ assert.equal((await s.call({action:'redeem',email,code:second.code,challenge:r.body.challenge})).status,401);
+});
+test('failed email delivery does not acknowledge success or leave a redeemable grant',async()=>{
+ const s=setup({env:{...env,RESEND_API_KEY:'test',EMAIL_FROM:'test@example.com'},sendCode:async()=>{throw Error('Offline');}});
+ const r=await s.call({action:'request_code',email:'ray@wallydao.xyz'});assert.equal(r.status,502);assert.equal(s.files.get(STATE_PATH).value.codes.length,0);
+});
+test('legacy sessions without an approved email cannot bypass the whitelist',async()=>{
+ const s=setup(),cookie=await s.unlock();delete s.files.get(STATE_PATH).value.sessions[0].email;assert.equal((await s.call(null,cookie)).body.authenticated,false);
+});
+test('email provider uses the exact approved recipient and never returns a code through the API',async()=>{
+ const {sendAccessCode}=await import('../lib/fast-submit-access.js');let captured;
+ await sendAccessCode({email:'ray@wallydao.xyz',code:'12345678',id:'test-id'},{env:{RESEND_API_KEY:'key',EMAIL_FROM:'RWAF <codes@rwaf.xyz>'},fetchImpl:async(url,options)=>{captured={url,...options};return new Response('{"id":"sent"}');}});
+ assert.deepEqual(JSON.parse(captured.body).to,['ray@wallydao.xyz']);assert.match(JSON.parse(captured.body).text,/12345678/);assert.equal(captured.headers['Idempotency-Key'],'rwaf-fast-access/test-id');
+ await assert.rejects(sendAccessCode({email:'not-allowed@example.com',code:'12345678',id:'test-id'},{env:{RESEND_API_KEY:'key',EMAIL_FROM:'RWAF <codes@rwaf.xyz>'},fetchImpl:()=>assert.fail('Must not send')}));
 });

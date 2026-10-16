@@ -1,6 +1,7 @@
 const $=selector=>document.querySelector(selector);
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let draft,categories=[],busy=false;
+let draft,categories=[],busy=false,challenge=null;
+try{challenge=JSON.parse(sessionStorage.getItem('rwaf-fast-challenge')||'null');if(challenge){$('#email').value=challenge.email;$('#unlock').hidden=false;}}catch{}
 function remember(id){try{if(id)localStorage.setItem('rwaf-fast-draft',id);else localStorage.removeItem('rwaf-fast-draft');}catch{}}
 function remembered(){try{return localStorage.getItem('rwaf-fast-draft');}catch{return null;}}
 function error(message){$('#error').textContent=message;$('#error').hidden=!message;}
@@ -34,7 +35,10 @@ function renderReceipt(receipt){
 }
 function reset(){if(busy)return;draft=null;remember(null);$('#result').replaceChildren();$('#url').value='';error('');$('#url').focus();}
 async function start(){const data=await api();categories=data.categories||[];$('#access').hidden=data.authenticated;$('#desk').hidden=!data.authenticated;if(data.authenticated&&remembered()){try{const saved=await api({action:'status',id:remembered()});draft=saved.draft;categories=saved.categories;draft.receipt?renderReceipt(draft.receipt):renderReview();}catch{remember(null);}}}
-$('#unlock').onsubmit=async e=>{e.preventDefault();error('');progress('Unlocking this browser…');try{await api({action:'redeem',code:$('#code').value});$('#code').value='';await start();}catch(e){error(e.message);}finally{progress('');}};
+$('#request-code').onsubmit=async e=>{e.preventDefault();if(busy)return;error('');progress('Sending your one-time code…');try{const email=$('#email').value.trim();const data=await api({action:'request_code',email});challenge={id:data.challenge,email};try{sessionStorage.setItem('rwaf-fast-challenge',JSON.stringify(challenge));}catch{}$('#unlock').hidden=false;$('#code-notice').hidden=false;$('#code-notice').textContent='Code sent. Check your inbox and spam folder. It expires in 10 minutes.';$('#code').value='';$('#code').focus();}catch(e){error(e.message);}finally{progress('');}};
+$('#admin-code').onclick=()=>{challenge=null;try{sessionStorage.removeItem('rwaf-fast-challenge');}catch{}$('#unlock').hidden=false;$('#code-notice').hidden=false;$('#code-notice').textContent='Enter the email your admin selected, then their one-time code.';$('#code').focus();};
+$('#email').addEventListener('input',()=>{if(challenge&&challenge.email.toLowerCase()!==$('#email').value.trim().toLowerCase()){$('#unlock').hidden=true;$('#code-notice').hidden=true;challenge=null;try{sessionStorage.removeItem('rwaf-fast-challenge');}catch{}}});
+$('#unlock').onsubmit=async e=>{e.preventDefault();error('');progress('Unlocking this browser…');try{await api({action:'redeem',email:$('#email').value.trim(),code:$('#code').value,...(challenge?{challenge:challenge.id}:{})});$('#code').value='';challenge=null;try{sessionStorage.removeItem('rwaf-fast-challenge');}catch{}await start();}catch(e){error(e.message);}finally{progress('');}};
 $('#logout').onclick=async()=>{error('');progress('Forgetting this browser…');try{await api({action:'logout'});remember(null);$('#result').replaceChildren();await start();}catch(e){error(e.message);}finally{progress('');}};
 $('#submit-link').onsubmit=async e=>{e.preventDefault();if(busy)return;error('');$('#result').replaceChildren();progress('Reading the source and checking existing listings…');try{const data=await api({action:'inspect',url:$('#url').value.trim(),kind:$('#kind').value});draft=data.draft;categories=data.categories;remember(draft.id);renderReview();progress('');if($('#review')?.checkValidity()&&!draft.warnings.length&&!draft.matches.length)await publish();}catch(e){error(e.message);}finally{progress('');}};
 start().catch(e=>error(e.message));
