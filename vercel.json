@@ -21,6 +21,9 @@
     },
     "api/submission-emails.js": {
       "maxDuration": 60
+    },
+    "api/fast-submit.js": {
+      "maxDuration": 60
     }
   },
   "buildCommand": "npm run build",
@@ -73,6 +76,11 @@
     {
       "source": "/media-kit",
       "destination": "/media-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/fast-submit",
+      "destination": "/fast-submit/",
       "permanent": true
     },
     {
@@ -257,6 +265,19 @@
     }
   ],
   "headers": [
+    {
+      "source": "/fast-submit/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
+    },
     {
       "source": "/assets/brand/(.*)",
       "headers": [

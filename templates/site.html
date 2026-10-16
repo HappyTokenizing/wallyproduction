@@ -2551,6 +2551,7 @@ html{ scrollbar-color:var(--line2) transparent }
     "use strict";
     var NW_URL="https://qrmbiestcjbedavsorrj.supabase.co";
     var NW_KEY="sb_publishable_CVXI0w69QnHwJSJYtbiJdg_dtXg6ot_"; /* publishable key — read-only */
+    var NW_STORY=new URLSearchParams(location.search).get("story");
     var NW={archiveQ:"",nextCursor:null,total:0,moreBusy:false,archive:null,items:[],hidden:[],cat:"All",q:"",loadedAt:0,err:null};
     var NW_MEMBERS=[];
     // The logo manager supplies the roster. Feed hints can identify a member,
@@ -2593,7 +2594,7 @@ html{ scrollbar-color:var(--line2) transparent }
          persisted by scheduled collection and paginated from permanent storage. The console's deleted
          ids come from the uncached ?hidden=1 variant, so a deletion vanishes
          for every visitor immediately instead of waiting out the cache. */
-      var feed=fetch("/api/news"+(NW.archiveQ?"?q="+encodeURIComponent(NW.archiveQ):"")).then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); });
+      var feed=fetch("/api/news"+(NW_STORY?"?story="+encodeURIComponent(NW_STORY):NW.archiveQ?"?q="+encodeURIComponent(NW.archiveQ):""),{cache:NW_STORY?"no-store":"default"}).then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); });
       var hid=fetch("/api/news?hidden=1")
         .then(function(r){ return r.ok?r.json():{ids:[]}; })
         .then(function(d){ return d.ids||[]; })
@@ -2607,7 +2608,7 @@ html{ scrollbar-color:var(--line2) transparent }
       }).catch(function(e){ NW.err=e.message||"network error"; });
     }
     function nwItem(x){
-      var item={id:x.id||x.url,t:RwafCopy.text(x.headline),u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:RwafCopy.newsSection(x.section||"News"),memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:RwafCopy.text(x.summary||"")};
+      var item={id:x.id||x.url,t:RwafCopy.text(x.headline),u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.flags&&x.flags.date_unconfirmed?"Source date unconfirmed":x.published_at?nfmt(x.published_at):"",c:RwafCopy.newsSection(x.section||"News"),memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:RwafCopy.text(x.summary||"")};
       item.m=nwMatchMembers(item);return item;
     }
     window.nwLoadOlder=async function(){
@@ -2667,7 +2668,7 @@ html{ scrollbar-color:var(--line2) transparent }
       if(NW.nextCursor)list.innerHTML+='<div class="nw-archive-more"><button class="btn btn-ghost" onclick="nwLoadOlder()" '+(NW.moreBusy?'disabled':'')+'>'+(NW.moreBusy?'Loading…':NW.moreError?'Retry loading older stories':'Load older stories')+'</button></div>';
     }
     window.nwSetCat=function(c){NW.cat=c;nwDraw()};
-    window.nwSetQ=function(v){NW.q=v||"";nwDraw()};
+    window.nwSetQ=function(v){NW_STORY=null;NW.q=v||"";nwDraw()};
     window.nwReload=function(){NW.err=null;NW.loadedAt=0;nwDraw();nwFetch().then(nwDraw)};
     window.renderNewsPage=function(){
       // Recheck the roster when returning to news, including edits from other sessions.
@@ -4305,7 +4306,7 @@ function jbSync(force){
   if(!force && Date.now()-JB_SYNCED<5*60*1000) return;
   JB_SYNCED=Date.now();
   jbSyncFeed();
-  fetch('/api/jobs')
+  fetch('/api/jobs'+(new URLSearchParams(location.search).has('listing')?'?fresh=1':''),{cache:new URLSearchParams(location.search).has('listing')?'no-store':'default'})
     .then(r=>r.ok?r.json():[])
     .then(data=>{
       JB_REMOTE=(data.jobs||[]).map(r=>({id:r.id,company:r.company,role:r.role,type:r.type||'Full time',
@@ -4397,6 +4398,7 @@ function jbRenderCoverage(){
 /* ---------- job board rendering ---------- */
 const JB_TYPES=['All','Full time','Part time','Contract','Internship'];
 const jbState={q:'', type:'All', remote:false, member:false, limit:30, days:30};
+let jbLinkedOpened=false;
 const jbRot={i:0, timer:null, items:[]};
 function jbSetQ(v){ jbState.q=v.trim().toLowerCase(); jbState.limit=30; renderJobs(true); }
 function jbSetType(t){ jbState.type=t; jbState.limit=30; renderJobs(true); }
@@ -4459,6 +4461,8 @@ function renderJobs(keepRot){
   $('#jbCount').textContent=hits.length+(hits.length===1?' open role':' open roles')+' · Posted within '+jbState.days+' days · Newest first';
   $('#jbList').innerHTML=hits.length?jbRows(hits):'<div class="jb-empty"><b>No recent roles match.</b><p>Try a wider posting window or clear the filters. Jobs without a verified posting date are excluded.</p><button class="btn btn-ghost btn-sm" onclick="jbReset()">Clear filters</button></div>';
   jbStartRotation();
+  const linked=new URLSearchParams(location.search).get('listing');
+  if(linked&&!jbLinkedOpened&&jbLive().some(j=>j.id===linked)){jbLinkedOpened=true;jbOpenJob(encodeURIComponent(linked));}
 }
 function jbStartRotation(){
   jbPause();
@@ -4567,7 +4571,7 @@ function jbShowErrs(mid,msg){
 
 /* ---------- admin console ---------- */
 const ADM_HASH='c544ce7c40eab55c481233a301356ecd1f7a7c5adce93d1aa4906f7886482ce9';
-const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions'],['ecosystem','Ecosystem'],['membership','Membership applications']];
+const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions'],['ecosystem','Ecosystem'],['membership','Membership applications'],['fastSubmit','Fast submit']];
 let admTabNow='logos';
 
 /* ---------- member logo manager: the console's only job ---------- */
@@ -4726,9 +4730,9 @@ function renderAdmin(){
     +'<div class="adm-tools">'+(admTabNow==='logos'?'<button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button>':'')+'<button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
     +'<p class="adm-note">'+(admTabNow==='logos'
       ?'Member logos: reorder, upload or delete below. The foundation logo wall, homepage banner and RWAF Members news tags update together. Use the organization’s name for each logo so its stories can be matched. Check the save status below to confirm your changes are published for all visitors.'
-      :admTabNow==='membership'?'Review membership applications privately. Confirmations are queued when applications are received.':admTabNow==='ecosystem'?'Review directory submissions and edit sourced company dates. Approved changes update the directory and charts together. Earlier Google Form responses remain in the original form.':admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
+      :admTabNow==='fastSubmit'?'Create one-time team access codes and manage remembered browsers.':admTabNow==='membership'?'Review membership applications privately. Confirmations are queued when applications are received.':admTabNow==='ecosystem'?'Review directory submissions and edit sourced company dates. Approved changes update the directory and charts together. Earlier Google Form responses remain in the original form.':admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
     +'</p><div id="admBody"></div>';
-  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else if(admTabNow==='ecosystem') admPaintEcosystem(); else if(admTabNow==='membership') admPaintMembership(); else admPaintNews();
+  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else if(admTabNow==='ecosystem') admPaintEcosystem(); else if(admTabNow==='membership') admPaintMembership(); else if(admTabNow==='fastSubmit') admPaintFastSubmit(); else admPaintNews();
 }
 let admEcoCleanup=null,admEcoRequest=0;
 async function admPaintEcosystem(){
@@ -4742,6 +4746,11 @@ async function admPaintEcosystem(){
     if(admTabNow!=='ecosystem'||!body.isConnected||request!==admEcoRequest){if(typeof cleanup==='function')cleanup();return;}
     admEcoCleanup=typeof cleanup==='function'?cleanup:null;
   }catch(e){if(body.isConnected&&admTabNow==='ecosystem')body.textContent='The ecosystem manager could not load. Select Ecosystem to retry.';}
+}
+async function admPaintFastSubmit(){
+ const body=$('#admBody');body.textContent='Loading fast submit…';
+ try{const {mountFastSubmitAdmin}=await import('/assets/fast-submit-admin.js');if(admTabNow==='fastSubmit'&&body.isConnected)mountFastSubmitAdmin(body,{getPassword:admPw});}
+ catch(e){body.textContent='Could not load fast submit. Select this tab to retry.';}
 }
 async function admPaintMembership(){
  const body=$('#admBody');body.textContent='Loading membership applications…';

@@ -40,6 +40,18 @@ Keep original colors and proportions, fit the artwork cleanly into the existing 
 
 Staging uses the same tracked source tree as production and a separate Blob store. `SITE_PUBLIC_API_ORIGIN=https://www.rwaf.xyz` mirrors production's public news/stat GET responses without copying hidden API credentials. It never proxies logo writes. Newsletter environment settings remain independently configured in each Vercel project. The older job/news moderation APIs still use their existing Supabase configuration; the member logo manager no longer depends on it.
 
+## Team fast submissions
+
+`/fast-submit/` accepts links for news, jobs and ecosystem profiles. It is omitted from navigation and the sitemap and marked `noindex,nofollow`. In **Admin → Fast submit**, generate a single-use code for a teammate. Codes expire after 24 hours. Redeeming a code creates a 30-day browser session in a Secure, HttpOnly, SameSite=Strict cookie; there are no team accounts or email delivery requirements. Codes and session tokens are stored only as hashes in the project's private Blob store. Admin can revoke all codes and remembered browsers, and each teammate can forget their current browser. The existing server-verified admin password and Blob credentials are reused; no new environment secrets or services are required.
+
+The server reads bounded public HTTPS pages with vetted, pinned DNS and redirect checks. It extracts JSON-LD job/article data and page metadata. Complete entries can publish immediately; missing fields, unreadable pages, unknown source dates and expired-job clues are shown for review. Ecosystem submissions require a valid existing directory category. Unknown start dates are explicit and excluded from dated statistics; logos and sourced dates can be added later in the directory manager. No membership is inferred from submissions.
+
+News checks the permanent archive, including hidden stories: matching URLs and identical normalized headlines return the existing item, while similar headlines prompt a same-story review. This is conservative text matching, not a guarantee of semantic equivalence across differently worded coverage. Removed news and closed/pending jobs require admin review rather than automatic republication. Job checks include the current ATS feed; ecosystem checks use the same approved overlay as the public directory.
+
+Publication writes to the existing archive, job store or ecosystem overlay. One global publishing lease and conditional writes prevent conflicting team submissions; durable per-browser drafts and receipts make retries recoverable. Receipt details come from rereading published records. Direct `?story=`, `?listing=` and `?profile=` links open the confirmed public entry; targeted news and job reads bypass caches. No outbound emails are queued for internal fast submissions. The normal public forms retain their existing moderation and email behavior.
+
+Private access state lives at `fast-submit/v1/access.json`; drafts live at `fast-submit/v1/drafts/<uuid>.json`. Link inspection is limited to 40 per session per hour. Preview projects using `SITE_PUBLIC_API_ORIGIN` disable fast submission to avoid writing local records while displaying mirrored production news. Test with isolated storage (as in `tests/fast-submit.test.mjs`) or a dedicated project with mirroring disabled. Never use test content in production.
+
 ## RWAF Members news
 
 The news roster is derived directly from `logoAll()`, the same current collection used by the foundation logo wall and homepage banner. There is no separate member list to maintain. Use the organization's name as the logo name when uploading.

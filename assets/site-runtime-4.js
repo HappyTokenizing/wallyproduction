@@ -37,7 +37,7 @@ function jbSync(force){
   if(!force && Date.now()-JB_SYNCED<5*60*1000) return;
   JB_SYNCED=Date.now();
   jbSyncFeed();
-  fetch('/api/jobs')
+  fetch('/api/jobs'+(new URLSearchParams(location.search).has('listing')?'?fresh=1':''),{cache:new URLSearchParams(location.search).has('listing')?'no-store':'default'})
     .then(r=>r.ok?r.json():[])
     .then(data=>{
       JB_REMOTE=(data.jobs||[]).map(r=>({id:r.id,company:r.company,role:r.role,type:r.type||'Full time',
@@ -129,6 +129,7 @@ function jbRenderCoverage(){
 /* ---------- job board rendering ---------- */
 const JB_TYPES=['All','Full time','Part time','Contract','Internship'];
 const jbState={q:'', type:'All', remote:false, member:false, limit:30, days:30};
+let jbLinkedOpened=false;
 const jbRot={i:0, timer:null, items:[]};
 function jbSetQ(v){ jbState.q=v.trim().toLowerCase(); jbState.limit=30; renderJobs(true); }
 function jbSetType(t){ jbState.type=t; jbState.limit=30; renderJobs(true); }
@@ -191,6 +192,8 @@ function renderJobs(keepRot){
   $('#jbCount').textContent=hits.length+(hits.length===1?' open role':' open roles')+' · Posted within '+jbState.days+' days · Newest first';
   $('#jbList').innerHTML=hits.length?jbRows(hits):'<div class="jb-empty"><b>No recent roles match.</b><p>Try a wider posting window or clear the filters. Jobs without a verified posting date are excluded.</p><button class="btn btn-ghost btn-sm" onclick="jbReset()">Clear filters</button></div>';
   jbStartRotation();
+  const linked=new URLSearchParams(location.search).get('listing');
+  if(linked&&!jbLinkedOpened&&jbLive().some(j=>j.id===linked)){jbLinkedOpened=true;jbOpenJob(encodeURIComponent(linked));}
 }
 function jbStartRotation(){
   jbPause();
@@ -299,7 +302,7 @@ function jbShowErrs(mid,msg){
 
 /* ---------- admin console ---------- */
 const ADM_HASH='c544ce7c40eab55c481233a301356ecd1f7a7c5adce93d1aa4906f7886482ce9';
-const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions'],['ecosystem','Ecosystem'],['membership','Membership applications']];
+const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions'],['ecosystem','Ecosystem'],['membership','Membership applications'],['fastSubmit','Fast submit']];
 let admTabNow='logos';
 
 /* ---------- member logo manager: the console's only job ---------- */
@@ -458,9 +461,9 @@ function renderAdmin(){
     +'<div class="adm-tools">'+(admTabNow==='logos'?'<button class="adm-btn" onclick="admLogoReset()">Reset to defaults</button>':'')+'<button class="adm-btn" onclick="admLogout()">Sign out</button></div></div>'
     +'<p class="adm-note">'+(admTabNow==='logos'
       ?'Member logos: reorder, upload or delete below. The foundation logo wall, homepage banner and RWAF Members news tags update together. Use the organization’s name for each logo so its stories can be matched. Check the save status below to confirm your changes are published for all visitors.'
-      :admTabNow==='membership'?'Review membership applications privately. Confirmations are queued when applications are received.':admTabNow==='ecosystem'?'Review directory submissions and edit sourced company dates. Approved changes update the directory and charts together. Earlier Google Form responses remain in the original form.':admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
+      :admTabNow==='fastSubmit'?'Create one-time team access codes and manage remembered browsers.':admTabNow==='membership'?'Review membership applications privately. Confirmations are queued when applications are received.':admTabNow==='ecosystem'?'Review directory submissions and edit sourced company dates. Approved changes update the directory and charts together. Earlier Google Form responses remain in the original form.':admTabNow==='jobs'?'Review employer submissions before approving them. Contact emails are private. Closing a role removes it from the public board.': 'The site pulls rwanews.today hourly. Delete a story to remove it from the feed for every visitor; you can restore it any time.')
     +'</p><div id="admBody"></div>';
-  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else if(admTabNow==='ecosystem') admPaintEcosystem(); else if(admTabNow==='membership') admPaintMembership(); else admPaintNews();
+  if(admTabNow==='logos') admPaintLogos(); else if(admTabNow==='jobs') admPaintJobs(); else if(admTabNow==='ecosystem') admPaintEcosystem(); else if(admTabNow==='membership') admPaintMembership(); else if(admTabNow==='fastSubmit') admPaintFastSubmit(); else admPaintNews();
 }
 let admEcoCleanup=null,admEcoRequest=0;
 async function admPaintEcosystem(){
@@ -474,6 +477,11 @@ async function admPaintEcosystem(){
     if(admTabNow!=='ecosystem'||!body.isConnected||request!==admEcoRequest){if(typeof cleanup==='function')cleanup();return;}
     admEcoCleanup=typeof cleanup==='function'?cleanup:null;
   }catch(e){if(body.isConnected&&admTabNow==='ecosystem')body.textContent='The ecosystem manager could not load. Select Ecosystem to retry.';}
+}
+async function admPaintFastSubmit(){
+ const body=$('#admBody');body.textContent='Loading fast submit…';
+ try{const {mountFastSubmitAdmin}=await import('/assets/fast-submit-admin.js');if(admTabNow==='fastSubmit'&&body.isConnected)mountFastSubmitAdmin(body,{getPassword:admPw});}
+ catch(e){body.textContent='Could not load fast submit. Select this tab to retry.';}
 }
 async function admPaintMembership(){
  const body=$('#admBody');body.textContent='Loading membership applications…';

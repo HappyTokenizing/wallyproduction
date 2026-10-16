@@ -161,4 +161,6 @@ export async function mountEcosystem(mount, options, force=false) {
   root.querySelector('select[aria-label="Ecosystem sector"]').value=state.section;
   root.querySelector('input[type=checkbox]').checked=state.members;
   paint();
+  const linked=new URLSearchParams(location.search).get('profile');
+  if(!previous&&linked&&byId.has(linked))open(linked);
 }

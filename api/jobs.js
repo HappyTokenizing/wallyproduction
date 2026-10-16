@@ -50,7 +50,7 @@ export function createJobsHandler(storage={get,put}){
     assignSubmissionReferences(rows,'jobs');let reference;
     const revision=result?.blob.etag||null;
     if(req.method==='GET'){
-     res.setHeader('Cache-Control','public, s-maxage=60');
+     res.setHeader('Cache-Control',req.query?.fresh?'no-store':'public, s-maxage=60');
      return res.status(200).json({jobs:rows.filter(j=>j.status==='live').map(({id,company,role,type,work,location,comp,tags,description,apply_to,ts})=>({id,company,role,type,work,location,comp,tags,description,apply_to,ts}))});
     }
     if(b.action==='list_all')return res.status(200).json({jobs:rows,revision});

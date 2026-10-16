@@ -2,6 +2,7 @@
     "use strict";
     var NW_URL="https://qrmbiestcjbedavsorrj.supabase.co";
     var NW_KEY="sb_publishable_CVXI0w69QnHwJSJYtbiJdg_dtXg6ot_"; /* publishable key — read-only */
+    var NW_STORY=new URLSearchParams(location.search).get("story");
     var NW={archiveQ:"",nextCursor:null,total:0,moreBusy:false,archive:null,items:[],hidden:[],cat:"All",q:"",loadedAt:0,err:null};
     var NW_MEMBERS=[];
     // The logo manager supplies the roster. Feed hints can identify a member,
@@ -44,7 +45,7 @@
          persisted by scheduled collection and paginated from permanent storage. The console's deleted
          ids come from the uncached ?hidden=1 variant, so a deletion vanishes
          for every visitor immediately instead of waiting out the cache. */
-      var feed=fetch("/api/news"+(NW.archiveQ?"?q="+encodeURIComponent(NW.archiveQ):"")).then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); });
+      var feed=fetch("/api/news"+(NW_STORY?"?story="+encodeURIComponent(NW_STORY):NW.archiveQ?"?q="+encodeURIComponent(NW.archiveQ):""),{cache:NW_STORY?"no-store":"default"}).then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); });
       var hid=fetch("/api/news?hidden=1")
         .then(function(r){ return r.ok?r.json():{ids:[]}; })
         .then(function(d){ return d.ids||[]; })
@@ -58,7 +59,7 @@
       }).catch(function(e){ NW.err=e.message||"network error"; });
     }
     function nwItem(x){
-      var item={id:x.id||x.url,t:RwafCopy.text(x.headline),u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.published_at?nfmt(x.published_at):"",c:RwafCopy.newsSection(x.section||"News"),memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:RwafCopy.text(x.summary||"")};
+      var item={id:x.id||x.url,t:RwafCopy.text(x.headline),u:x.url,s:(x.source&&(x.source.name||x.source.domain))||"",d:x.flags&&x.flags.date_unconfirmed?"Source date unconfirmed":x.published_at?nfmt(x.published_at):"",c:RwafCopy.newsSection(x.section||"News"),memberHints:Array.isArray(x.members)?x.members.filter(function(m){return typeof m==="string";}):[],m:null,b:RwafCopy.text(x.summary||"")};
       item.m=nwMatchMembers(item);return item;
     }
     window.nwLoadOlder=async function(){
@@ -118,7 +119,7 @@
       if(NW.nextCursor)list.innerHTML+='<div class="nw-archive-more"><button class="btn btn-ghost" onclick="nwLoadOlder()" '+(NW.moreBusy?'disabled':'')+'>'+(NW.moreBusy?'Loading…':NW.moreError?'Retry loading older stories':'Load older stories')+'</button></div>';
     }
     window.nwSetCat=function(c){NW.cat=c;nwDraw()};
-    window.nwSetQ=function(v){NW.q=v||"";nwDraw()};
+    window.nwSetQ=function(v){NW_STORY=null;NW.q=v||"";nwDraw()};
     window.nwReload=function(){NW.err=null;NW.loadedAt=0;nwDraw();nwFetch().then(nwDraw)};
     window.renderNewsPage=function(){
       // Recheck the roster when returning to news, including edits from other sessions.

@@ -12,6 +12,7 @@ export const pages=[
  {id:'meet',path:'/meet/',title:'Meet WALLY · RWA Foundation',description:'Meet WALLY, the face of open finance. Watch the trailer and explore the mission, mind and community behind RWA Foundation and WALLY NFT.'},
  {id:'newsletter',path:'/newsletter/',title:'Join the Herd Newsletter · RWA Foundation',description:'Subscribe to the RWA Foundation newsletter for updates from the real-world asset economy, research and the Herd community.'},
  {id:'brandkit',path:'/media-kit/',title:'Media Kit, Logos & Brand Guidelines · RWA Foundation',description:'Download official RWA Foundation and WALLY logos, PNG artwork and PDF brand guidelines. Find the brand colors and typography for your next feature.'},
+ {id:'fastSubmit',path:'/fast-submit/',title:'Fast Submit · RWA Foundation',description:'Team link submissions for RWAF news, jobs and ecosystem listings.',noindex:true},
  {id:'admin',path:'/admin/',title:'Admin Console · RWA Foundation',description:'RWA Foundation administration for members, news, jobs and ecosystem submissions.',noindex:true},
  {id:'research',path:'/research/',title:'RWA Research Reports · RWA Foundation',description:'Read RWA Foundation research reports on tokenized assets, market structure and RWA perpetual futures, produced with our data partners.'},
  {id:'wallyArticles',path:'/research/wally/',title:'WALLY Articles · RWA Foundation Research',description:'Read WALLY’s latest long-form articles on real-world assets, open finance and the onchain economy, published through the official WALLY account on X.'},

@@ -8,7 +8,7 @@ const script=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].find(m=>
 const story=(id,headline,extra={})=>({id,headline,url:'https://example.com/'+id,section:'Markets',summary:'',...extra});
 function client(items,hidden=[]){
   const elements=Object.fromEntries(['#nwList','#nwChips','#nwStatus'].map(id=>[id,{innerHTML:''}]));
-  const c=vm.createContext({document:{querySelector:id=>elements[id]},fetch:async url=>({ok:true,json:async()=>url.includes('hidden')?{ids:hidden}:{items}})});
+  const c=vm.createContext({URLSearchParams,location:{search:''},document:{querySelector:id=>elements[id]},fetch:async url=>({ok:true,json:async()=>url.includes('hidden')?{ids:hidden}:{items}})});
   c.window=c;
   vm.runInContext(readFileSync(new URL('../assets/terminology.js',import.meta.url),'utf8'),c);
   vm.runInContext(script,c);

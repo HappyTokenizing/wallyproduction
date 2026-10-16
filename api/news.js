@@ -38,14 +38,14 @@ export default async function handler(req, res) {
     try {
       let collectionWarning = null;
       // Cron is primary; first-page reads also recover promptly after an outage.
-      if (!req.query?.cursor) {
+      if (!req.query?.cursor && !req.query?.story) {
         try { await collectNews(); } catch { collectionWarning = 'Latest collection failed; showing saved news.'; }
       }
       const [{ items }, status] = await Promise.all([readArchive(), archiveStatus()]);
       if (!items.length && collectionWarning) return res.status(503).json({ error: 'News archive unavailable. Check storage and feed configuration.' });
       const hidden = new Set(sk ? await readHidden(sk) : []);
       const page = newsPage(items.filter(x => !hidden.has(x.id)), req.query);
-      res.setHeader('Cache-Control', collectionWarning ? 'no-store' : 's-maxage=300, stale-while-revalidate=60');
+      res.setHeader('Cache-Control', collectionWarning || req.query?.story ? 'no-store' : 's-maxage=300, stale-while-revalidate=60');
       res.status(200).json({ ...page, archive: { retention: 'indefinite', stored: items.length, lastSuccessfulCollection: status?.lastSuccessfulCollection || null, warning: collectionWarning } });
     } catch (e) {
       res.setHeader('Cache-Control', 'no-store');
