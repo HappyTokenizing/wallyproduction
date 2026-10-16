@@ -33,3 +33,4 @@
 .ec-map-members{display:block;column-span:all}.ec-map-members .ec-map-tiles{grid-template-columns:repeat(auto-fill,minmax(76px,1fr))}
 
 .ec-update-warning{padding:12px 16px;border:1px solid #d9b97a;border-radius:10px;background:#fff8e8;color:var(--ec-ink);font-size:13px;line-height:1.5}.ec-update-warning button{border:0;background:none;text-decoration:underline;color:inherit}
+.ec-filter-help{font-size:12px;line-height:1.6;color:var(--ec-muted);margin:12px 0 14px}.ec-asset-label{display:block;font-size:11px;line-height:1.5;color:var(--ec-accent);margin-top:6px}.ec-search-expand{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;padding:12px 16px;margin-bottom:16px;border:1px solid var(--ec-line);border-radius:12px;font-size:13px;background:#fff}.ec-filters select{max-width:100%}.ec-profile .ec-profile-assets{font-size:13px;line-height:1.8}

@@ -1,3 +1,5 @@
+import {assetsFor} from './ecosystem-assets.js';
+import {searchWords,matchesTerms} from './ecosystem-search.js';
 export const key = value => String(value || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 const memberAliases = {maplefinance:'maple',solanafoundation:'solana',stellardevelopmentfoundation:'stellar',avalabs:'avalanche',ixswap:'ixs',drvnlabo:'drvnlab',landinvestio:'landinvestcorp'};
 const memberKey = value => memberAliases[key(value)] || key(value);
@@ -19,7 +21,7 @@ export function prepareDirectory(data) {
 export function directorySections(data, members) {
   return [{name:RWAF_DIRECTORY,categories:[{name:'RWAF Members',ids:data.profiles.filter(p=>memberFor(p,members)).map(p=>p.id)}]},...data.sections];
 }
-const words = value => String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+const words=searchWords;
 export function relevance(profile, query) {
   const q=words(query), compact=q.replace(/ /g,''), terms=q.split(' ');
   if(!q)return 0;
@@ -29,9 +31,13 @@ export function relevance(profile, query) {
   if(names.some(n=>terms.every(t=>n.split(' ').includes(t))))return 2;
   if(names.some(n=>terms.every(t=>n.split(' ').some(w=>w.startsWith(t)))))return 3;
   if(names.some(n=>n.replace(/ /g,'').includes(compact)))return 4;
-  const text=words([profile.description,profile.kind,...profile.categories.flatMap(c=>[c.section,c.name])].join(' '));
+  const identity=[profile.name,...(profile.aliases||[]),profile.domain,profile.website,...(profile.newsRules||[]).flatMap(rule=>rule.aliases||[]),...(profile.newsTags||[])].join(' ');
+  if(matchesTerms(identity,q))return 4;
+  const text=words([profile.description,profile.kind,...(profile.categories||[]).flatMap(c=>[c.section,c.name])].join(' '));
   if(terms.every(t=>text.split(' ').includes(t)))return 5;
   if(text.includes(q)||terms.every(t=>text.includes(t)))return 6;
+  const metadata=[identity,text,profile.region,profile.sourceCategory,...assetsFor(profile).flatMap(a=>[a.label,...a.terms])].join(' ');
+  if(matchesTerms(metadata,q))return 7;
   return Infinity;
 }
 export const memberCount = members => new Set(members.filter(m=>m.name).map(m=>memberKey(m.name))).size;
@@ -42,7 +48,8 @@ export const exitCount = profiles => new Set(profiles.flatMap(p=>exitsFor(p).map
 export function filterProfiles(profiles, state, members) {
   const matched=profiles.filter(p => (state.status==='all'||(state.status==='exits'?exitsFor(p).length>0:p.directoryStatus===state.status))
     && (state.section==='all'||(state.section===RWAF_DIRECTORY?memberFor(p,members):p.categories.some(c=>c.section===state.section)))
-    && (!state.members||memberFor(p,members)))
+    && (!state.members||memberFor(p,members))
+    && (!state.asset||state.asset==='all'||(state.asset==='unclassified'?assetsFor(p).length===0:assetsFor(p).some(a=>a.id===state.asset))))
     .map(p=>({p,rank:relevance(p,state.q),member:!!memberFor(p,members)}))
     .filter(x=>Number.isFinite(x.rank));
   return matched.sort((a,b)=>a.rank-b.rank||Number(b.member)-Number(a.member)||a.p.name.localeCompare(b.p.name)).map(x=>x.p);
