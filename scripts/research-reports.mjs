@@ -27,10 +27,10 @@ export function renderCatalog() {
     const index = catalog.series.findIndex(s => s.id === series.id);
     const editions = catalog.reports.filter(report => report.series === series.id).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
     const credits = [...new Set(editions.flatMap(creditNames))];
-    const creditLabel = editions.some(r => r.creditLabel) ? 'DATA & REPORTING SOURCES' : (credits.length > 1 ? 'DATA PARTNERS' : 'DATA PARTNER');
+    const creditLabel = editions.find(r => r.creditLabel)?.creditLabel || (credits.length > 1 ? 'DATA PARTNERS' : 'DATA PARTNER');
     return `<article class="series" id="series-${series.id}"><div class="series-in">
       <div class="series-top"><div><div class="kicker">SERIES ${String(index + 1).padStart(2, '0')} · ${escape(series.kicker)}</div><h2>${escape(series.name)}</h2><p class="desc">${escape(series.description)}</p></div>
-      <div class="partner"><span class="k">${creditLabel}</span>${renderCredits(credits)}</div></div>
+      <div class="partner"><span class="k">${escape(creditLabel)}</span>${renderCredits(credits)}</div></div>
       <div class="editions">${editions.map((report, i) => `<a class="ed" href="/research/${report.slug}/"><span class="date">${escape(report.edition)}</span><span class="name">${escape(report.shortTitle)}<small>${report.existing ? '' : `${report.figureCount} figures · `}${escape(report.asOf ? 'Data as of ' + date(report.asOf) : 'Published ' + date(report.publishedAt))}</small></span>${i === 0 ? '<span class="tag">LATEST</span>' : '<span></span>'}<span class="arr" aria-hidden="true">→</span></a>`).join('\n')}</div>
     </div></article>`;
   }).join('\n');
@@ -77,7 +77,7 @@ export function renderReport(template, report) {
   const fields = {
     TITLE: escape(report.shortTitle), EDITION: escape(report.edition),
     DESCRIPTION: escape(report.description), PARTNER: renderCredits(creditNames(report)),
-    PARTNER_NAME: escape(creditList(report)), BYLINE: creditNames(report).length > 1 ? 'Data & reporting sources' : 'RWA Foundation ×', BAND_CREDIT: creditNames(report).length > 1 ? 'RWA FOUNDATION' : escape(creditList(report)), SOURCE: escape(report.sourceUrl),
+    PARTNER_NAME: escape(creditList(report)), BYLINE: escape(report.creditLabel || (creditNames(report).length > 1 ? 'Data providers' : 'RWA Foundation ×')), BAND_CREDIT: creditNames(report).length > 1 ? 'RWA FOUNDATION' : escape(creditList(report)), SOURCE: escape(report.sourceUrl),
     PUBLISHED: date(report.publishedAt), PUBLISHED_ISO: report.publishedAt,
     DATA_DATE: report.asOf ? `<span>DATA AS OF</span><strong>${date(report.asOf)}</strong>` : '<span>DATA WINDOW</span><strong>See the original report below</strong>',
     WINDOW: escape(report.window), FIGURES: report.figureCount,

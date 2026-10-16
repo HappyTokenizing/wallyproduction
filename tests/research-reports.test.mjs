@@ -82,7 +82,7 @@ test('series credits include every distinct source across their reports and reje
     for (const name of names) assert.equal(card.split('alt="' + name + '"').length - 1, 1);
   }
   const avalanche = catalog.reports.find(r => r.slug === 'avalanche-rwa-growth-oct-2026');
-  assert.deepEqual(avalanche.partners, ['RWA.xyz','Token Terminal','DefiLlama','Bitquery','Crypto Briefing','Avalanche']);
+  assert.deepEqual(avalanche.partners, ['RWA.xyz','Token Terminal','DefiLlama','Avalanche']);
   assert.equal(html.indexOf('id="series-blockchains"'), html.indexOf('id="series-'));
   assert.throws(() => renderCredits(['Unregistered Source']), /Missing research logo credit/);
 });

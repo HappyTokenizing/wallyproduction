@@ -55,11 +55,9 @@
         "RWA.xyz",
         "Token Terminal",
         "DefiLlama",
-        "Bitquery",
-        "Crypto Briefing",
         "Avalanche"
       ],
-      "creditLabel": "DATA & REPORTING SOURCES",
+      "creditLabel": "CHAIN & DATA PROVIDERS",
       "description": "The companies behind Avalanche’s RWA growth: tokenized assets, institutional credit, stablecoins, payments and dedicated chains.",
       "figureCount": 17
     },
@@ -359,24 +357,6 @@
       "background": "light",
       "url": "https://app.rwa.xyz/",
       "provenance": "Existing official directory artwork reused without modification."
-    },
-    "Bitquery": {
-      "src": "/research/assets/bitquery-x-20261015.jpg",
-      "variant": "symbol",
-      "background": "light",
-      "url": "https://bitquery.io/",
-      "sourcePage": "https://x.com/Bitquery_io",
-      "sourceUrl": "https://pbs.twimg.com/profile_images/1252156938399481856/66aAbW5i_400x400.jpg",
-      "reviewedAt": "2026-10-15"
-    },
-    "Crypto Briefing": {
-      "src": "/research/assets/crypto-briefing-x-20261015.jpg",
-      "variant": "symbol",
-      "background": "light",
-      "url": "https://cryptobriefing.com/",
-      "sourcePage": "https://x.com/Crypto_Briefing",
-      "sourceUrl": "https://pbs.twimg.com/profile_images/1346106979605995520/BcuRRkze_400x400.jpg",
-      "reviewedAt": "2026-10-15"
     },
     "Avalanche": {
       "src": "/ecosystem/avalanche-logo-v2.svg",

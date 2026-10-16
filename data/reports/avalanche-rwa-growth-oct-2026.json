@@ -13,11 +13,9 @@
     "RWA.xyz",
     "Token Terminal",
     "DefiLlama",
-    "Bitquery",
-    "Crypto Briefing",
     "Avalanche"
   ],
-  "creditLabel": "DATA & REPORTING SOURCES",
+  "creditLabel": "CHAIN & DATA PROVIDERS",
   "description": "The companies behind Avalanche’s RWA growth: tokenized assets, institutional credit, stablecoins, payments and dedicated chains.",
   "blocks": [
     {
