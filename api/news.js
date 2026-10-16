@@ -1,3 +1,4 @@
+import {requireTeamSession} from '../lib/team-auth.js';
 import { mirrorPublicData } from '../lib/public-data.js';
 import { readArchive, archiveStatus } from '../lib/news-archive.js';
 import { collectNews } from '../lib/news-collection.js';
@@ -7,9 +8,9 @@ import { newsPage } from '../lib/news-page.js';
 //                              (scheduled collection runs independently of visitors).
 //   GET  /api/news?hidden=1  → ids the console has deleted (uncached, so a
 //                              deletion disappears for everyone immediately).
-//   POST /api/news           → {pw, action:'hide'|'unhide', id} console moderation.
+//   POST /api/news           → {action:'hide'|'unhide', id} console moderation.
 // Every feed pull is also saved to the private news archive that powers each company's "Company news".
-// Env vars (Vercel): RWANEWS_KEY, BLOB_READ_WRITE_TOKEN, CRON_SECRET, SUPABASE_JOBS_SECRET, JOBS_ADMIN_PW.
+// Env vars (Vercel): RWANEWS_KEY, BLOB_READ_WRITE_TOKEN, CRON_SECRET, SUPABASE_JOBS_SECRET.
 const SB = 'https://qrmbiestcjbedavsorrj.supabase.co/rest/v1/wally_site';
 const MAX_HIDDEN = 500;
 
@@ -25,9 +26,10 @@ export async function readHidden(key) {
   } catch (e) { return []; }
 }
 
-export default async function handler(req, res) {
+export function createNewsHandler({storage,env=process.env}={}) {
+ return async function handler(req, res) {
   if (await mirrorPublicData(req, res, '/api/news')) return;
-  const sk = process.env.SUPABASE_JOBS_SECRET;
+  const sk = env.SUPABASE_JOBS_SECRET;
 
   if (req.method === 'GET') {
     if (req.query && req.query.hidden) {
@@ -55,10 +57,9 @@ export default async function handler(req, res) {
   }
 
   if (req.method !== 'POST') { res.status(405).json({ error: 'GET or POST only' }); return; }
-  const pw = process.env.JOBS_ADMIN_PW;
-  if (!sk || !pw) { res.status(500).json({ error: 'server not configured' }); return; }
-  const b = req.body || {};
-  if (b.pw !== pw) { res.status(401).json({ error: 'bad password' }); return; }
+  if(!await requireTeamSession(req,res,{storage,env}))return;
+  if(!sk)return res.status(503).json({error:'News moderation storage is not configured.'});
+  const b=req.body||{};
   const id = String(b.id || '').slice(0, 200);
   if (!id || (b.action !== 'hide' && b.action !== 'unhide')) {
     res.status(400).json({ error: 'action hide/unhide and id required' }); return;
@@ -76,3 +77,6 @@ export default async function handler(req, res) {
     res.status(r.ok ? 200 : 502).json(r.ok ? { ok: true, ids } : { error: 'db write failed — is the wally_site table created?' });
   } catch (e) { res.status(500).json({ error: 'server error' }); }
 }
+
+}
+export default createNewsHandler();

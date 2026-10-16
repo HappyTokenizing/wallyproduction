@@ -1,4 +1,5 @@
-import {createHash,createHmac,timingSafeEqual,randomUUID} from 'node:crypto';
+import {requireTeamSession} from '../lib/team-auth.js';
+import {createHmac,randomUUID} from 'node:crypto';
 import {isIP} from 'node:net';
 import {get,put,BlobError,BlobPreconditionFailedError} from '@vercel/blob';
 import {validateMembership} from '../assets/membership-model.js';
@@ -16,10 +17,7 @@ export function createMembershipHandler(storage={get,put},{env=process.env,now=(
   if(!b||typeof b!=='object'||Array.isArray(b))return res.status(400).json({error:'Invalid request.'});
   if(Buffer.byteLength(JSON.stringify(b))>40000)return res.status(413).json({error:'Application too large.'});
   const submitting=b.action==='submit';
-  if(!submitting){
-   const hash=env.JOBS_ADMIN_PW?createHash('sha256').update(env.JOBS_ADMIN_PW).digest('hex'):env.JOBS_ADMIN_PW_SHA256;
-   if(!hash||!/^[a-f0-9]{64}$/.test(hash)||!timingSafeEqual(createHash('sha256').update(typeof b.pw==='string'?b.pw:'').digest(),Buffer.from(hash,'hex')))return res.status(401).json({error:'Session expired. Sign in again.'});
-  }
+  if(!submitting&&!await requireTeamSession(req,res,{storage,env}))return;
   if(submitting&&b.application?.websiteConfirm)return res.status(200).json({ok:true});
   const input=submitting?validateMembership(b.application):null;
   if(input?.error)return res.status(400).json(input);

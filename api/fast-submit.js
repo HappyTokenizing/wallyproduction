@@ -1,5 +1,6 @@
+import {teamSession} from '../lib/team-auth.js';
 import {randomBytes,randomUUID,randomInt} from 'node:crypto';
-import {createStore,defaultStorage,digest,secret,fail,adminPassword,cookieToken,sessionCookie,DAY} from '../lib/fast-submit-store.js';
+import {createStore,defaultStorage,digest,secret,fail,sessionCookie,DAY} from '../lib/fast-submit-store.js';
 import {fetchSource,extractSource,sourceURL} from '../lib/fast-submit-source.js';
 import {createPublisher,validateFields} from '../lib/fast-submit-publish.js';
 import {allowedEmail,normalizeEmail,sendAccessCode} from '../lib/fast-submit-access.js';
@@ -24,7 +25,7 @@ export function createFastSubmitHandler({storage=defaultStorage,env=process.env,
         if(!body||typeof body!=='object'||Array.isArray(body)||Buffer.byteLength(JSON.stringify(body))>16000)throw fail('Submission too large or invalid.',413);
       }
       if(req.method==='POST'&&['create_code','revoke_sessions'].includes(body.action)) {
-        if(!adminPassword(body.pw,env))throw fail('Open the admin console and sign in again.',401);
+        if(!await teamSession(req,{storage,env,now}))throw fail('Open the admin console and sign in again.',401);
         if(body.action==='revoke_sessions') {await store.accessUpdate(s=>{s.codes=[];s.sessions=[];});return res.status(200).json({ok:true});}
         const email=normalizeEmail(body.email);
         if(!allowedEmail(email))throw fail('Choose an approved team email address.',403);
@@ -34,7 +35,7 @@ export function createFastSubmitHandler({storage=defaultStorage,env=process.env,
       }
       if(req.method==='POST'&&body.action==='request_code') {
         const email=normalizeEmail(body.email);
-        if(!allowedEmail(email))throw fail('This email is not enabled for team submissions.',403);
+        if(!allowedEmail(email))throw fail('This email is not enabled for team access.',403);
         if(!env.RESEND_API_KEY||!env.EMAIL_FROM)throw fail('Email codes are temporarily unavailable. Ask an admin for an access code.',503);
         const id=randomUUID(),code=String(randomInt(0,100000000)).padStart(8,'0'),expires=now()+10*60000;
         await store.accessUpdate(s=>{
@@ -51,7 +52,7 @@ export function createFastSubmitHandler({storage=defaultStorage,env=process.env,
       }
       if(req.method==='POST'&&body.action==='redeem') {
         const email=normalizeEmail(body.email);
-        if(!allowedEmail(email))throw fail('This email is not enabled for team submissions.',403);
+        if(!allowedEmail(email))throw fail('This email is not enabled for team access.',403);
         const code=typeof body.code==='string'?body.code.replace(/[\s-]/g,'').toUpperCase():'';
         const emailed=typeof body.challenge==='string'&&/^[-\da-f]{36}$/.test(body.challenge);
         if(!(emailed?/^\d{8}$/:/^[A-F\d]{20}$/).test(code))throw fail('Enter the one-time code from your email or admin.',401);
@@ -67,10 +68,10 @@ export function createFastSubmitHandler({storage=defaultStorage,env=process.env,
         if(!accepted)throw fail('This code is incorrect, expired or already used. Request a new code if needed.',401);
         res.setHeader('Set-Cookie',sessionCookie(token));return res.status(200).json({authenticated:true,expires:new Date(expires).toISOString()});
       }
-      const token=cookieToken(req),state=await store.state(),session=token&&state.sessions.find(x=>x.id===digest(token)&&x.expires>now()&&allowedEmail(x.email));
+      const session=await teamSession(req,{storage,env,now});
+      if(req.method==='POST'&&body.action==='logout') {if(session)await store.accessUpdate(s=>{s.sessions=s.sessions.filter(x=>x.id!==session.id);});res.setHeader('Set-Cookie',sessionCookie('',0));return res.status(200).json({ok:true});}
       if(!session) {if(req.method==='GET')return res.status(200).json({authenticated:false});throw fail('Unlock this browser with a one-time code.',401);}
-      if(req.method==='GET')return res.status(200).json({authenticated:true,expires:new Date(session.expires).toISOString(),categories:await publisher.categories()});
-      if(body.action==='logout') {await store.accessUpdate(s=>{s.sessions=s.sessions.filter(x=>x.id!==session.id);});res.setHeader('Set-Cookie',sessionCookie('',0));return res.status(200).json({ok:true});}
+      if(req.method==='GET')return res.status(200).json({authenticated:true,expires:new Date(session.expires).toISOString(),email:session.email,...(req.query?.session==='1'?{}:{categories:await publisher.categories()})});
       if(body.action==='inspect') {
         const url=sourceURL(body.url);
         if(!['auto','news','jobs','ecosystem'].includes(body.kind))throw fail('Choose a submission type.');

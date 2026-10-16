@@ -1,3 +1,4 @@
+import {withTeamSession,testCookie} from './team-auth-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -58,7 +59,7 @@ function setup(options = {}) {
       return {etag: `v${++revision}`};
     }
   };
-  const handler = createEcosystemHandler(options.storage || storage, {env: options.env || env, now: options.now || now, baseData: options.baseData || base});
+  const handler = createEcosystemHandler(withTeamSession(options.storage || storage), {env: options.env || env, now: options.now || now, baseData: options.baseData || base});
   return {handler, storage, data: () => data, writes: () => writes};
 }
 async function call(handler, body, method = 'POST', headers = {}, socket = {remoteAddress: '203.0.113.2'}) {
@@ -70,7 +71,7 @@ async function call(handler, body, method = 'POST', headers = {}, socket = {remo
   });
   return response;
 }
-const admin = (handler, body = {}) => call(handler, {action: 'list_all', pw: 'secret', ...body});
+const admin = (handler, body = {}) => call(handler, {action: 'list_all', ...body},'POST',{cookie:body.pw==='wrong'?'':testCookie});
 async function submitted(handler, fields = {}) {
   assert.equal((await call(handler, {action: 'submit', submission: {...submit, ...fields}})).status, 200);
   return (await admin(handler)).body;
@@ -242,13 +243,14 @@ test('new approved companies have stable IDs and map placements without granting
   assert.equal(yearly.shownEvents.some(event => event.profileId === profile.id), true);
 });
 
-test('storage errors and bounded conflicts never claim success, and SHA256 admin authentication works', async () => {
+test('storage errors and bounded conflicts never claim success, and team sessions work without a password', async () => {
   const broken = setup({storage: {async get() { throw Error('Unavailable'); }}});
   assert.equal((await call(broken.handler, {action: 'submit', submission: submit})).status, 502);
   assert.equal((await call(broken.handler, null, 'GET')).status, 502);
   const disabled = setup({env: {...env, BLOB_READ_WRITE_TOKEN: ''}});
   assert.equal((await call(disabled.handler, {action: 'submit', submission: submit})).status, 503);
   const hashed = setup({env: {...env, JOBS_ADMIN_PW: '', JOBS_ADMIN_PW_SHA256: createHash('sha256').update('secret').digest('hex')}});
+  assert.equal((await call(hashed.handler,{action:'list_all',pw:'secret'})).status,401);
   assert.equal((await admin(hashed.handler)).status, 200);
   let conflicts = 0;
   const racing = setup({storage: {async get() { return null; }, async put() { conflicts++; throw new BlobError('already exists'); }}});

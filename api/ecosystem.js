@@ -1,5 +1,6 @@
+import {requireTeamSession} from '../lib/team-auth.js';
 // Private, project-specific storage. Contact details never enter the public overlay.
-import {createHash, createHmac, timingSafeEqual, randomUUID} from 'node:crypto';
+import {createHmac, randomUUID} from 'node:crypto';
 import {readFile} from 'node:fs/promises';
 import {isIP} from 'node:net';
 import {get, put, BlobError, BlobPreconditionFailedError} from '@vercel/blob';
@@ -86,12 +87,6 @@ export function validateEcosystemReview(value, base, today, {draft = false, prio
   return {review};
 }
 
-function passwordState(value, env) {
-  const hash = env.JOBS_ADMIN_PW ? createHash('sha256').update(env.JOBS_ADMIN_PW).digest('hex') : env.JOBS_ADMIN_PW_SHA256;
-  if (!hash || !/^[a-f0-9]{64}$/i.test(hash)) return 'unconfigured';
-  if (typeof value !== 'string' || value.length > 1000) return 'invalid';
-  return timingSafeEqual(createHash('sha256').update(value).digest(), Buffer.from(hash, 'hex')) ? 'valid' : 'invalid';
-}
 function clientHash(req, env, token) {
   // Vercel supplies this trusted header. User-controlled forwarded-for is ignored.
   const forwarded = env.VERCEL === '1' ? req.headers?.['x-vercel-forwarded-for'] : '';
@@ -150,10 +145,7 @@ export function createEcosystemHandler(storage = {get, put}, {env = process.env,
       if (!host || !origin || (origin !== `https://${host}` && !(env.NODE_ENV !== 'production' && origin === `http://${host}`))) return res.status(403).json({error: 'Submit from this website.'});
       if (!object(body)) return res.status(400).json({error: 'Invalid request.'});
       if (Buffer.byteLength(JSON.stringify(body)) > 30000) return res.status(413).json({error: 'Submission too large.'});
-      if (body.action !== 'submit') {
-        const authenticated = passwordState(body.pw, env);
-        if (authenticated !== 'valid') return res.status(authenticated === 'unconfigured' ? 503 : 401).json({error: authenticated === 'unconfigured' ? 'Admin saving is not configured.' : 'Session expired. Sign in again.'});
-      }
+      if(body.action!=='submit'&&!await requireTeamSession(req,res,{storage,env}))return;
       if (body.action === 'submit' && body.submission?.websiteConfirm) return res.status(200).json({ok: true});
     }
     const submitting = req.method === 'POST' && body.action === 'submit';

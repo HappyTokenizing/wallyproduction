@@ -1,3 +1,4 @@
+import {accessState,testCookie} from './team-auth-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {BlobError,BlobPreconditionFailedError} from '@vercel/blob';
@@ -12,7 +13,7 @@ const env={BLOB_READ_WRITE_TOKEN:'test',JOBS_ADMIN_PW:'admin-password',NODE_ENV:
 const base={snapshotDate:'2026-10-16',profiles:[],sections:[{name:'Tokenization',categories:[{name:'Infrastructure',ids:[]}]}],statsEvents:[]};
 const newsHTML='<title>Acme launches new tokenized treasury fund</title><meta property="og:type" content="article"><meta name="description" content="Acme announced a new treasury fund available on its official platform."><meta property="article:published_time" content="2026-10-15"><meta property="og:site_name" content="Acme News">';
 function setup(options={}) {
-  const files=new Map();let revision=0,failWrite=null;
+  const files=new Map([[STATE_PATH,{value:accessState(),etag:"auth-1"}]]);let revision=0,failWrite=null;
   const storage={
     async get(path){const f=files.get(path);return f?{stream:new Response(JSON.stringify(f.value)).body,blob:{etag:f.etag}}:null;},
     async put(path,body,o){if(failWrite?.(path,JSON.parse(body)))throw Error('Storage offline');const old=files.get(path);if(old&&!o.allowOverwrite)throw new BlobError('already exists');if(o.ifMatch&&old?.etag!==o.ifMatch)throw new BlobPreconditionFailedError();const etag='r'+(++revision);files.set(path,{value:JSON.parse(body),etag});return {etag};},
@@ -20,7 +21,7 @@ function setup(options={}) {
   };
   const h=createFastSubmitHandler({storage,env,baseData:base,source:async url=>({url,html:newsHTML}),fetchImpl:async()=>new Response(JSON.stringify({jobs:[]})),...options});
   async function call(body,cookie='',extra={}) {const result={headers:{}};await h({method:body?'POST':'GET',body,headers:{host:'www.rwaf.xyz',origin:'https://www.rwaf.xyz','content-type':'application/json',cookie,...extra}},{setHeader(k,v){result.headers[k]=v;},status(code){result.status=code;return this;},json(value){result.body=value;}});return result;}
-  async function unlock(){const made=await call({action:'create_code',email:'happy@rwaf.xyz',pw:env.JOBS_ADMIN_PW,label:'Editor'});assert.equal(made.status,200);const used=await call({action:'redeem',email:'happy@rwaf.xyz',code:made.body.code});assert.equal(used.status,200);return used.headers['Set-Cookie'].split(';')[0];}
+  async function unlock(){const made=await call({action:'create_code',email:'happy@rwaf.xyz',label:'Editor'},testCookie);assert.equal(made.status,200);const used=await call({action:'redeem',email:'happy@rwaf.xyz',code:made.body.code});assert.equal(used.status,200);return used.headers['Set-Cookie'].split(';')[0];}
   return {storage,files,call,unlock,fail:fn=>{failWrite=fn;}};
 }
 async function inspect(s,cookie,kind='news',url='https://example.com/story'){const r=await s.call({action:'inspect',url,kind},cookie);assert.equal(r.status,200,JSON.stringify(r.body));return r.body.draft;}
@@ -29,7 +30,7 @@ const publish=(s,c,d,extra={})=>s.call({action:'publish',id:d.id,fields:d.fields
 test('single-use codes, secure cookies, authorization, cross-site requests and revocation',async()=>{
   const s=setup();assert.equal((await s.call()).body.authenticated,false);
   assert.equal((await s.call({action:'create_code',email:'happy@rwaf.xyz',pw:'wrong'})).status,401);
-  const made=await s.call({action:'create_code',email:'happy@rwaf.xyz',pw:env.JOBS_ADMIN_PW});
+  const made=await s.call({action:'create_code',email:'happy@rwaf.xyz'},testCookie);
   const used=await Promise.all([s.call({action:'redeem',email:'happy@rwaf.xyz',code:made.body.code}),s.call({action:'redeem',email:'happy@rwaf.xyz',code:made.body.code})]);
   assert.deepEqual(used.map(x=>x.status).sort(),[200,401]);
   const header=used.find(x=>x.status===200).headers['Set-Cookie'];assert.match(header,/HttpOnly; Secure; SameSite=Strict/);const cookie=header.split(';')[0];
@@ -37,10 +38,10 @@ test('single-use codes, secure cookies, authorization, cross-site requests and r
   assert.equal((await s.call({action:'inspect',kind:'news',url:'https://example.com'},cookie,{origin:'https://evil.example'})).status,403);
   assert.equal((await s.call({action:'inspect',kind:'news',url:'https://example.com'})).status,401);
   assert.ok(!JSON.stringify(s.files.get(STATE_PATH)).includes(made.body.code.replaceAll('-','')));
-  await s.call({action:'revoke_sessions',pw:env.JOBS_ADMIN_PW});assert.equal((await s.call(null,cookie)).body.authenticated,false);
+  await s.call({action:'revoke_sessions'},cookie);assert.equal((await s.call(null,cookie)).body.authenticated,false);
 });
 test('codes and browser sessions expire; logging out invalidates the server session',async()=>{
-  let clock=Date.now();const s=setup({now:()=>clock});const code=await s.call({action:'create_code',email:'happy@rwaf.xyz',pw:env.JOBS_ADMIN_PW});clock+=86400001;assert.equal((await s.call({action:'redeem',email:'happy@rwaf.xyz',code:code.body.code})).status,401);
+  let clock=Date.now();const s=setup({now:()=>clock});const code=await s.call({action:'create_code',email:'happy@rwaf.xyz'},testCookie);clock+=86400001;assert.equal((await s.call({action:'redeem',email:'happy@rwaf.xyz',code:code.body.code})).status,401);
   const cookie=await s.unlock();clock+=30*86400000;assert.equal((await s.call(null,cookie)).body.authenticated,false);
   const fresh=await s.unlock();await s.call({action:'logout'},fresh);assert.equal((await s.call(null,fresh)).body.authenticated,false);
 });
@@ -107,8 +108,8 @@ test('same wording with different word order is only a possible match, and old u
  assert.equal(newsMatches(candidate,[{id:'a',url:'https://old.example',headline:candidate.headline,published_at:'2025-10-16'}]).length,0);
 });
 test('mirrored previews cannot publish and per-browser submission limits persist',async()=>{
- const mirror=setup({env:{...env,SITE_PUBLIC_API_ORIGIN:'https://www.rwaf.xyz'}});assert.equal((await mirror.call()).status,503);assert.equal(mirror.files.size,0);
- const s=setup(),c=await s.unlock();const state=s.files.get(STATE_PATH).value;state.sessions[0].requests=Array(40).fill(Date.now());assert.equal((await s.call({action:'inspect',kind:'news',url:'https://example.com'},c)).status,429);
+ const mirror=setup({env:{...env,SITE_PUBLIC_API_ORIGIN:'https://www.rwaf.xyz'}});assert.equal((await mirror.call()).status,503);assert.equal(mirror.files.size,1);
+ const s=setup(),c=await s.unlock();const state=s.files.get(STATE_PATH).value;state.sessions.at(-1).requests=Array(40).fill(Date.now());assert.equal((await s.call({action:'inspect',kind:'news',url:'https://example.com'},c)).status,429);
 });
 
 test('a teammate can confirm related coverage without publishing another article',async()=>{
@@ -122,7 +123,7 @@ test('only the six approved emails can obtain and redeem email codes; codes are 
  const sent=[],mailEnv={...env,RESEND_API_KEY:'test',EMAIL_FROM:'RWAF <test@example.com>'};
  const s=setup({env:mailEnv,sendCode:async message=>{sent.push(message);}});
  assert.equal((await s.call({action:'request_code',email:'stranger@rwaf.xyz'})).status,403);
- assert.equal((await s.call({action:'create_code',pw:env.JOBS_ADMIN_PW,email:'stranger@rwaf.xyz'})).status,403);
+ assert.equal((await s.call({action:'create_code',email:'stranger@rwaf.xyz'},testCookie)).status,403);
  for(const email of ['dev@rwaf.xyz','happy@rwaf.xyz','zeus@rwaf.xyz','flynn@rwaf.xyz','ray@wallydao.xyz','ray@rwaf.xyz']) {
   const requested=await s.call({action:'request_code',email:email.toUpperCase()});assert.equal(requested.status,200);assert.equal(requested.body.code,undefined);
   const message=sent.at(-1);assert.equal(message.email,email);assert.match(message.code,/^\d{8}$/);assert.ok(!JSON.stringify(s.files.get(STATE_PATH).value).includes(message.code));
@@ -145,7 +146,7 @@ test('failed email delivery does not acknowledge success or leave a redeemable g
  const r=await s.call({action:'request_code',email:'ray@wallydao.xyz'});assert.equal(r.status,502);assert.equal(s.files.get(STATE_PATH).value.codes.length,0);
 });
 test('legacy sessions without an approved email cannot bypass the whitelist',async()=>{
- const s=setup(),cookie=await s.unlock();delete s.files.get(STATE_PATH).value.sessions[0].email;assert.equal((await s.call(null,cookie)).body.authenticated,false);
+ const s=setup(),cookie=await s.unlock();delete s.files.get(STATE_PATH).value.sessions.at(-1).email;assert.equal((await s.call(null,cookie)).body.authenticated,false);
 });
 test('email provider uses the exact approved recipient and never returns a code through the API',async()=>{
  const {sendAccessCode}=await import('../lib/fast-submit-access.js');let captured;

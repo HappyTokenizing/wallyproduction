@@ -4570,7 +4570,6 @@ function jbShowErrs(mid,msg){
 })();
 
 /* ---------- admin console ---------- */
-const ADM_HASH='c544ce7c40eab55c481233a301356ecd1f7a7c5adce93d1aa4906f7886482ce9';
 const ADM_TABS=[['logos','Member logos'],['news','News feed'],['jobs','Job submissions'],['ecosystem','Ecosystem'],['membership','Membership applications'],['fastSubmit','Fast submit']];
 let admTabNow='logos';
 
@@ -4654,7 +4653,6 @@ window.refreshMembers=lgFetchRemote;
 // Refresh after another tab saves or the visitor returns to an already-open page.
 window.addEventListener('storage',function(e){if(e.key===LOGO_LS)lgFetchRemote();});
 window.addEventListener('focus',function(){if(['home','foundation','jobs','news','admin'].includes(window.__page))lgFetchRemote();});
-function admPw(){ try{ return sessionStorage.getItem('wally_adm_pw')||''; }catch(e){ return ''; } }
 async function lgPush(){
   if(!lgReady||lgSaving||lgConflict) return;
   lgSaving=true; lgStatus();
@@ -4662,7 +4660,7 @@ async function lgPush(){
     // One request at a time. Rapid reorders are coalesced behind the current save.
     while(lgSaved<lgEdit){
       const edit=lgEdit, store=lgStore();
-      const r=await fetch('/api/logos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pw:admPw(),store:store,revision:lgRevision})});
+      const r=await fetch('/api/logos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({store:store,revision:lgRevision})});
       let d; try{ d=await r.json(); }catch(e){ throw new Error('Server did not confirm the save. Keep this page open and retry.'); }
       if(!r.ok||!d.ok){ lgConflict=r.status===409; throw new Error(d.error||'Save failed. Please retry.'); }
       lgRevision=d.revision; lgSaved=edit; lgError='';
@@ -4690,39 +4688,28 @@ function lgRestoreDraft(){
   renderLogoWall(); admPaintLogos();
 }
 window.addEventListener('beforeunload',function(e){ if(lgSaving||lgEdit>lgSaved){ e.preventDefault(); e.returnValue=''; } });
-function admOk(){ try{ return sessionStorage.getItem('wally_adm_ok')==='1'; }catch(e){ return false; } }
-async function admSha(s){
-  const b=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
-  return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('');
+function admOk(){ return admAuthenticated; }
+let admAuthenticated=false,admRenderRequest=0;
+async function admLogout(){
+  try{const {teamRequest}=await import('/assets/team-login.js');await teamRequest({action:'logout'});admAuthenticated=false;renderAdmin();}
+  catch(e){toast(e.message);}
 }
-function admLock(){ return lsGet('wally_adm_lock',{n:0,until:0}); }
-async function admLogin(){
-  const lock=admLock();
-  if(Date.now()<lock.until){ $('#admErr').textContent='Locked. Try again in '+Math.ceil((lock.until-Date.now())/1000)+'s.'; return; }
-  const v=$('#admPw').value||'';
-  let h=''; try{ h=await admSha(v); }catch(e){ $('#admErr').textContent='This browser blocks crypto here. Open the site over https.'; return; }
-  if(h===ADM_HASH){
-    lsSet('wally_adm_lock',{n:0,until:0});
-    try{ sessionStorage.setItem('wally_adm_ok','1'); sessionStorage.setItem('wally_adm_pw', v); }catch(e){}
-    renderAdmin();
-  } else {
-    lock.n=(lock.n||0)+1;
-    if(lock.n>=3){ lock.until=Date.now()+30000; lock.n=0; }
-    lsSet('wally_adm_lock',lock);
-    $('#admErr').textContent=lock.until>Date.now()?'Three misses. Locked for 30 seconds.':'Wrong password.';
-    $('#admPw').value='';
-  }
-}
-function admLogout(){ try{ sessionStorage.removeItem('wally_adm_ok'); sessionStorage.removeItem('wally_adm_pw'); }catch(e){} renderAdmin(); }
-function renderAdmin(){
+async function renderAdmin(){
   const M=$('#admMount'); if(!M) return;
+  const request=++admRenderRequest;
   $('#admBody')?.__ecosystemAdminCleanup?.();admEcoCleanup?.();admEcoCleanup=null;
-  if(!admOk()){
-    M.innerHTML='<div class="adm-gate"><div class="adm-lock"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>'
-      +'<h3>RWA Foundation console</h3><p>For the team. Enter the console password.</p>'
-      +'<div class="field" style="margin-bottom:8px"><input id="admPw" type="password" placeholder="Password" onkeydown="if(event.key===\'Enter\')admLogin()"></div>'
-      +'<button class="btn btn-orange" style="width:100%" onclick="admLogin()">Unlock</button><div class="adm-err" id="admErr"></div></div>';
-    setTimeout(()=>{ const p=$('#admPw'); p&&p.focus(); },60);
+  try{sessionStorage.removeItem('wally_adm_ok');sessionStorage.removeItem('wally_adm_pw');}catch{}
+  M.innerHTML='<div class="adm-gate" role="status">Checking team access…</div>';
+  try{
+    const {teamRequest,mountTeamLogin}=await import('/assets/team-login.js');
+    const session=await teamRequest();
+    if(request!==admRenderRequest||!M.isConnected)return;
+    admAuthenticated=session.authenticated;
+    if(!admOk()){mountTeamLogin(M,()=>renderAdmin());return;}
+  }catch(e){
+    if(request!==admRenderRequest)return;
+    admAuthenticated=false;
+    M.innerHTML='<div class="adm-gate"><p role="alert">'+escHtml(e.message)+'</p><button class="btn btn-orange" onclick="renderAdmin()">Retry sign-in</button></div>';
     return;
   }
   const tabs=ADM_TABS.map(t=>'<button class="adm-tab'+(admTabNow===t[0]?' on':'')+'" onclick="admGoTab(\''+t[0]+'\')">'+t[1]+'</button>').join('');
@@ -4740,7 +4727,7 @@ async function admPaintEcosystem(){
   try{
     const {mountEcosystemAdmin}=await import('/assets/ecosystem-admin.js');
     if(admTabNow!=='ecosystem'||!body.isConnected||request!==admEcoRequest)return;
-    const cleanup=await mountEcosystemAdmin(body,{getPassword:admPw,onPublished:async()=>{
+    const cleanup=await mountEcosystemAdmin(body,{onPublished:async()=>{
       await document.querySelector('#ecoMount')?.__ecosystem?.reload(true);
     }});
     if(admTabNow!=='ecosystem'||!body.isConnected||request!==admEcoRequest){if(typeof cleanup==='function')cleanup();return;}
@@ -4749,12 +4736,12 @@ async function admPaintEcosystem(){
 }
 async function admPaintFastSubmit(){
  const body=$('#admBody');body.textContent='Loading fast submit…';
- try{const {mountFastSubmitAdmin}=await import('/assets/fast-submit-admin.js');if(admTabNow==='fastSubmit'&&body.isConnected)mountFastSubmitAdmin(body,{getPassword:admPw});}
+ try{const {mountFastSubmitAdmin}=await import('/assets/fast-submit-admin.js');if(admTabNow==='fastSubmit'&&body.isConnected)mountFastSubmitAdmin(body);}
  catch(e){body.textContent='Could not load fast submit. Select this tab to retry.';}
 }
 async function admPaintMembership(){
  const body=$('#admBody');body.textContent='Loading membership applications…';
- try{const {mountMembershipAdmin}=await import('/assets/membership-admin.js');if(admTabNow==='membership'&&body.isConnected)await mountMembershipAdmin(body,{getPassword:admPw});}
+ try{const {mountMembershipAdmin}=await import('/assets/membership-admin.js');if(admTabNow==='membership'&&body.isConnected)await mountMembershipAdmin(body);}
  catch(e){if(body.isConnected)body.textContent='Could not load membership applications. Select the tab to retry.';}
 }
 function submissionEmailStatus(row){return Object.entries(row.notifications||{}).map(([name,email])=>name+': '+(email.status==='sent'?'sent':email.status==='review'?'delivery needs review':email.error?'queued — '+email.error:'queued')).join(' · ')||'No confirmation email recorded';}
@@ -4762,7 +4749,7 @@ let admJobsRevision=null;
 async function admPaintJobs(){
   const B=$('#admBody');B.textContent='Loading submissions…';
   try{
-    const r=await fetch('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'list_all',pw:admPw()})});
+    const r=await fetch('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'list_all'})});
     const data=await r.json();if(!r.ok)throw Error(data.error||'Could not load submissions.');
     if(admTabNow!=='jobs')return;admJobsRevision=data.revision;
     B.innerHTML='<button class="adm-btn" onclick="admPaintJobs()">Refresh submissions</button>'+data.jobs.slice().reverse().map(j=>
@@ -4772,7 +4759,7 @@ async function admPaintJobs(){
 }
 async function admModerateJob(id,status){
   try{
-    const r=await fetch('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'moderate',id,status,revision:admJobsRevision,pw:admPw()})});
+    const r=await fetch('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'moderate',id,status,revision:admJobsRevision})});
     const data=await r.json();if(!r.ok)throw Error(data.error||'Could not save.');
     toast('Listing updated',status==='live'?'Approved for publication.':'Removed from the public board.');await admPaintJobs();jbSync(true);
   }catch(e){toast('Not saved',e.message);}
@@ -4946,7 +4933,7 @@ function admPaintNews(){
 }
 function admNewsAct(i,act){
   const x=ADM_NEWS[i]; if(!x) return;
-  fetch('/api/news',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pw:admPw(),action:act,id:x.id})})
+  fetch('/api/news',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:act,id:x.id})})
     .then(function(r){ return r.json().then(function(d){ return {ok:r.ok&&d&&d.ok,msg:d&&d.error}; }); })
     .catch(function(){ return {ok:false,msg:'network error'}; })
     .then(function(res){

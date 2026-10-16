@@ -1,6 +1,6 @@
+import {requireTeamSession} from '../lib/team-auth.js';
 // Logo uploads and order live in a private Vercel Blob, independent of deployments.
 // Each Vercel project has its own BLOB_READ_WRITE_TOKEN; credentials never reach clients.
-import { createHash, timingSafeEqual } from 'node:crypto';
 import { get, put, BlobPreconditionFailedError, BlobError } from '@vercel/blob';
 const EMPTY = { order: [], del: [], add: [] };
 const PATH = 'member-logos.json';
@@ -39,12 +39,8 @@ export function createLogoHandler(storage = { get, put }) {
         const store = result ? await new Response(result.stream).json() : EMPTY;
         return res.status(200).json({ store, revision: result?.blob.etag || null });
       }
-      const pw = process.env.JOBS_ADMIN_PW;
-      const passwordHash = pw ? createHash('sha256').update(pw).digest('hex') : process.env.JOBS_ADMIN_PW_SHA256;
-      if (!passwordHash || !/^[a-f0-9]{64}$/.test(passwordHash)) return res.status(503).json({ error: 'Admin saving is not configured.' });
+      if(!await requireTeamSession(req,res,{storage}))return;
       const b = req.body || {};
-      const providedHash = createHash('sha256').update(typeof b.pw === 'string' ? b.pw : '').digest();
-      if (!timingSafeEqual(providedHash, Buffer.from(passwordHash, 'hex'))) return res.status(401).json({ error: 'Session expired. Sign in again.' });
       if (!validateStore(b.store)) return res.status(400).json({ error: 'Invalid logo data or logo limit exceeded. No changes were saved.' });
       if (JSON.stringify(b.store).length > 3500000) return res.status(413).json({ error: 'The logo collection is too large. Use smaller images. No changes were saved.' });
       if (b.revision !== null && (typeof b.revision !== 'string' || !b.revision || b.revision.length > 200)) {

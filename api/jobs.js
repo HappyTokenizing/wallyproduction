@@ -1,5 +1,6 @@
+import {requireTeamSession} from '../lib/team-auth.js';
 // Private, project-specific Vercel Blob storage. Public readers receive approved fields only.
-import { createHash, timingSafeEqual, randomUUID } from 'node:crypto';
+import { randomUUID } from 'node:crypto';
 import { get, put, BlobError, BlobPreconditionFailedError } from '@vercel/blob';
 import {assignSubmissionReferences,queueSubmissionEmail,queueTeamSubmissionEmails} from '../lib/submission-emails.js';
 const PATH='job-submissions.json';
@@ -18,11 +19,6 @@ export function validateJob(j){
   if(!Array.isArray(j.tags)||j.tags.length>4||!j.tags.every(t=>typeof t==='string'&&t.length<=40))return null;
   return {...row,type:j.type,work:j.work,tags:j.tags.map(t=>t.trim()).filter(Boolean),member:j.member===1?1:0};
 }
-function authenticated(pw){
-  const secret=process.env.JOBS_ADMIN_PW;
-  const hash=secret?createHash('sha256').update(secret).digest('hex'):process.env.JOBS_ADMIN_PW_SHA256;
-  return !!hash&&/^[a-f0-9]{64}$/.test(hash)&&timingSafeEqual(createHash('sha256').update(typeof pw==='string'?pw:'').digest(),Buffer.from(hash,'hex'));
-}
 function conflict(e){return e instanceof BlobPreconditionFailedError||(e instanceof BlobError&&/already exists/i.test(e.message));}
 export function createJobsHandler(storage={get,put}){
  return async(req,res)=>{
@@ -38,7 +34,7 @@ export function createJobsHandler(storage={get,put}){
    if(Buffer.byteLength(JSON.stringify(req.body||{}))>12000)return res.status(413).json({error:'Submission too large.'});
   }
   const b=req.body||{},token=process.env.BLOB_READ_WRITE_TOKEN;
-  if(req.method==='POST'&&b.action!=='submit'&&!authenticated(b.pw))return res.status(401).json({error:'Session expired. Sign in again.'});
+  if(req.method==='POST'&&b.action!=='submit'&&!await requireTeamSession(req,res,{storage}))return;
   if(b.action==='submit'&&b.job?.website)return res.status(200).json({ok:true});
   const input=b.action==='submit'?validateJob(b.job):null;
   if(b.action==='submit'&&!input)return res.status(400).json({error:'Check all fields. Use an HTTPS application link or email and a description of at least 40 characters.'});

@@ -57,7 +57,7 @@ export function adminSnapshot(base, inbox) {
 const displayDate = value => value ? new Date(value).toLocaleString() : 'Not recorded';
 const safeAnchor = (url,label) => {const safe = safeURL(url,{});return safe?`<a href="${escapeAdmin(safe)}" target="_blank" rel="noopener noreferrer">${escapeAdmin(label || url)} ↗</a>`:escapeAdmin(label || url);};
 
-export async function mountEcosystemAdmin(mount, {getPassword,onPublished} = {}) {
+export async function mountEcosystemAdmin(mount, {onPublished} = {}) {
   mount.__ecosystemAdminCleanup?.();
   const token = {}, controller = new AbortController();
   mount.__ecosystemAdminToken = token;
@@ -75,7 +75,7 @@ export async function mountEcosystemAdmin(mount, {getPassword,onPublished} = {})
     finally{clearTimeout(timer);controller.signal.removeEventListener('abort',abort);}
   }
   async function request(body) {
-    const response = await boundedFetch('/api/ecosystem',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',signal:controller.signal,body:JSON.stringify({...body,pw:getPassword?.() || ''})});
+    const response = await boundedFetch('/api/ecosystem',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',signal:controller.signal,body:JSON.stringify(body)});
     let result;try {result=await response.json();}catch {throw Error('The server did not confirm this request. Your edits are still in the form.');}
     if(!response.ok) {const error=Error(result.error || 'Could not save the directory changes.');error.status=response.status;throw error;}
     if(body.action!=='list_all'&&result.ok!==true)throw Error('The server did not confirm the save. Your edits remain here; refresh to check the saved version.');

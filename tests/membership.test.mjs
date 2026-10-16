@@ -1,3 +1,4 @@
+import {withTeamSession,testCookie} from './team-auth-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {BlobError,BlobPreconditionFailedError} from '@vercel/blob';
@@ -5,9 +6,9 @@ import {createMembershipHandler} from '../api/membership.js';
 import {membershipFields,validateMembership} from '../assets/membership-model.js';
 const application={firstName:'Test',lastName:'Applicant',email:'test@example.com',company:'Example Company',website:'https://example.com',roles:['Infrastructure for RWAs'],referral:['X/ Twitter'],hasTokenized:'No',hasInvested:'No',motivation:['To support the RWA industry and collaborate with other members'],description:'Build useful RWA infrastructure.',hasToken:'No',community:'Developers and builders.',hasFunding:'No',workingGroups:['Seeding Liquidity for RWA Markets'],participation:['Research'],mission:'Open access to real-world assets.',notes:''};
 const env={BLOB_READ_WRITE_TOKEN:'test',JOBS_ADMIN_PW:'test-pw',NODE_ENV:'production',VERCEL:'1'};
-function setup(){let data=null,revision=0;const storage={async get(){return data?{stream:new Response(JSON.stringify(data)).body,blob:{etag:'v'+revision}}:null;},async put(p,b,o){if(data&&!o.allowOverwrite)throw new BlobError('already exists');if(o.ifMatch&&o.ifMatch!=='v'+revision)throw new BlobPreconditionFailedError();data=JSON.parse(b);return {etag:'v'+(++revision)};}};return {h:createMembershipHandler(storage,{env}),data:()=>data};}
+function setup(){let data=null,revision=0;const storage={async get(){return data?{stream:new Response(JSON.stringify(data)).body,blob:{etag:'v'+revision}}:null;},async put(p,b,o){if(data&&!o.allowOverwrite)throw new BlobError('already exists');if(o.ifMatch&&o.ifMatch!=='v'+revision)throw new BlobPreconditionFailedError();data=JSON.parse(b);return {etag:'v'+(++revision)};}};return {h:createMembershipHandler(withTeamSession(storage),{env}),data:()=>data};}
 async function call(h,body,headers={},method='POST'){const r={};await h({method,body,headers:{host:'www.rwaf.xyz',origin:'https://www.rwaf.xyz','content-type':'application/json','x-vercel-forwarded-for':'203.0.113.8',...headers}},{setHeader(){},status(s){r.status=s;return this;},json(body){r.body=body;}});return r;}
-const admin=(h,body={})=>call(h,{action:'list_all',pw:'test-pw',...body});
+const admin=(h,body={})=>call(h,{action:'list_all',...body},{cookie:testCookie});
 test('membership preserves non-fee questions and validates conditional answers server-side',()=>{
  assert.equal(membershipFields.length,32);assert.ok(!membershipFields.some(f=>/fee|\$15,000|\$5,500/i.test(f.label)));
  assert.ok(validateMembership(application).answers);

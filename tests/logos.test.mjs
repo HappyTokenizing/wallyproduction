@@ -1,3 +1,4 @@
+import {withTeamSession,testCookie} from './team-auth-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -18,14 +19,14 @@ function backend(){
       state=JSON.parse(body);return {etag:'v'+(++rev)};
     }
   };
-  return createLogoHandler(storage);
+  return createLogoHandler(withTeamSession(storage));
 }
-async function call(handler,method,body){
+async function call(handler,method,body,cookie=""){
   const result={headers:{},code:0,body:null};
-  await handler({method,body},{setHeader(k,v){result.headers[k]=v;},status(code){result.code=code;return this;},json(body){result.body=body;return this;}});
+  await handler({method,body,headers:{host:'www.rwaf.xyz',origin:'https://www.rwaf.xyz','content-type':'application/json',cookie}},{setHeader(k,v){result.headers[k]=v;},status(code){result.code=code;return this;},json(body){result.body=body;return this;}});
   return result;
 }
-const post=(handler,store,revision)=>call(handler,'POST',{pw:'test-password',store,revision});
+const post=(handler,store,revision)=>call(handler,'POST',{store,revision},testCookie);
 test('upload, reorder, fresh-reader persistence, reset',async()=>{
   const h=backend();let r=await call(h,'GET');assert.equal(r.body.revision,null);assert.equal(r.headers['Cache-Control'],'no-store');
   const s={order:['utest','d1','d0'],del:['d2'],add:[logo]};r=await post(h,s,null);assert.equal(r.code,200);
@@ -141,7 +142,7 @@ test('deleting built-in and uploaded members persists and removes member job pri
   const h=backend(),wall={innerHTML:''};
   const document={querySelectorAll:()=>['Maple','Solana'].map(name=>({querySelector:()=>({getAttribute:k=>k==='alt'?name:logo.src})})),querySelector:()=>wall};
   const fetch=async(url,opts)=>{
-    const r=await call(h,opts.method||'GET',opts.body?JSON.parse(opts.body):undefined);
+    const r=await call(h,opts.method||'GET',opts.body?JSON.parse(opts.body):undefined,testCookie);
     return json(r.body,r.code);
   };
   const c=client(fetch,{document});await tick();
