@@ -9,7 +9,6 @@
   "asOf": "2026-09-28",
   "publishedAt": "2026-09-30T11:24:09.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2105257386164334790",
-  "partner": "DefiLlama",
   "description": "September RWA perpetual futures: 19 venues, market rankings and month-over-month changes.",
   "blocks": [
     {
@@ -538,5 +537,8 @@
       ]
     }
   ],
-  "figureCount": 8
+  "figureCount": 8,
+  "partners": [
+    "DefiLlama"
+  ]
 }

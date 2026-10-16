@@ -2,10 +2,42 @@
   "reviewedAt": "2026-10-15",
   "source": "https://x.com/RWAFoundation_/articles",
   "articlesReviewed": 64,
-  "reportEditions": 16,
-  "newReports": 14,
-  "method": "Read the official account’s Articles timeline through its oldest displayed article (December 15, 2025). Import the dated, data-led report series; exclude announcements, educational explainers and member spotlights. Preserve source prose and charts; normalize on-chain spelling to onchain.",
+  "reportEditions": 17,
+  "newReports": 15,
+  "method": "Read the official account’s Articles timeline through its oldest displayed article (December 15, 2025). Import dated data-led reports, including network and company ecosystem research such as Avalanche. Exclude announcements, educational explainers and standalone member announcements. Preserve source prose and charts; normalize on-chain spelling to onchain.",
   "reports": [
+    {
+      "id": "2110766877135749236",
+      "title": "Who Builds on Avalanche: The Companies Behind the Chain's RWA Growth",
+      "path": "/research/avalanche-rwa-growth-oct-2026/",
+      "source": "https://x.com/RWAFoundation_/status/2110766877135749236",
+      "action": "added",
+      "contentCheck": {
+        "sourceTextBlocks": 86,
+        "importedTextBlocks": 86,
+        "figures": 17,
+        "textSha256": "4496b009d84ef8f575aa0aa9e430ebff1b92adc02a079ff525a37df7e265498b",
+        "images": {
+          "/research/assets/x-reports/HUrLAOJXAAAXWxo.jpg": "3a657fae97496bdb6231d60313a5c909e90a34bc0bc2d4c8b5a0f750c47361b4",
+          "/research/assets/x-reports/HUrLJz2WoAARRle.jpg": "4bf8bb20543232ec41a01750995fe9424187d187b41c1392c849ae4e04d2779f",
+          "/research/assets/x-reports/HUrLUNpWYAAPYoQ.jpg": "a27dc365222ac6032be1abcdb24cfe66930891268f589acfaf2f490108aa70f2",
+          "/research/assets/x-reports/HUrLmsfXQAADOxC.jpg": "7b6de0580bf5fb2551d4ce01ebba2eea0e5ffc6207d7582ef0470cbdb098364b",
+          "/research/assets/x-reports/HUrL0kmW4AAwEHM.jpg": "79af36f42155919d8dd5c17d3f94c5816ec34598dcff2f75e7ca21ba5a1e4584",
+          "/research/assets/x-reports/HUrMBv4W8AAKrKs.jpg": "759de5e7a546c108af5e4f14011672823c6b4df8622d75366e0153074970daae",
+          "/research/assets/x-reports/HUrMtm-WQAAG7YE.jpg": "606a33b8ceac285670ac7ab50a855bc9797d5bfa29969e2140115d1628ba2e09",
+          "/research/assets/x-reports/HUrM481WkAAbxqf.jpg": "86e795cca7445ea58c446573eadfd0750abaf3a17f5684d8a7e7652e8ca2a299",
+          "/research/assets/x-reports/HUrNBODWMAAFAXn.jpg": "900b1ba5183aa1f833992bd046423f0e7133e3eb374148116bbf45f94e52751d",
+          "/research/assets/x-reports/HUrNNsyWgAACYOb.jpg": "e606c3561d5174a8a6a60cf0e2d05995fb6ffa79e0141cafbcdf7db0df5225d2",
+          "/research/assets/x-reports/HUrNf5fWgAAvpr2.jpg": "a2e6b40fbc927e5b47aeb6be54631c90884235d0fb468b564e138f9b124ad90e",
+          "/research/assets/x-reports/HUrNyYcWcAA6bv-.jpg": "eb037afe645d5d23fa42a5fe47a83f89c74db0be6ca770391dfa5bad9d8988fe",
+          "/research/assets/x-reports/HUrOCnlWcAAOMQ8.jpg": "841bc81502a5d9f3bdb37a1cb3d49d3a5061c8857fff32b4083279ca2679a396",
+          "/research/assets/x-reports/HUrOn5EWEAALLfi.jpg": "836775e8418a54c9b5afca110af83d9777cef800b78f8df3bddb06d8c36f210b",
+          "/research/assets/x-reports/HUrPC3-WYAAepwY.jpg": "6ba34de6a29a109af19a74001c8ba18d07dde0a81797b82fdbe00740f5c845d4",
+          "/research/assets/x-reports/HUrQQKAWEAAnT8t.jpg": "3045a614137cfc1fdc3517e7e826fead1da737450d5d9339031a6abc9cf1acb8",
+          "/research/assets/x-reports/HUrQWXrWYAAwAbR.jpg": "922186b462a3022f98c9bd4b3a1f25327df797872123e02dacb4f00b1f729e47"
+        }
+      }
+    },
     {
       "id": "2109614231729402066",
       "title": "RWA DEX and DeFi Report With Token Terminal: Trading Volume and TVL, Past 30 Days",
@@ -389,11 +421,6 @@
   ],
   "otherArticles": [
     {
-      "id": "2110766877135749236",
-      "title": "Who Builds on Avalanche: The Companies Behind the Chain's RWA Growth",
-      "reason": "Editorial, education, announcement or member spotlight; outside the report series."
-    },
-    {
       "id": "2108574792777367771",
       "title": "The RWA Ecosystem: 1,000+ projects, one directory",
       "reason": "Editorial, education, announcement or member spotlight; outside the report series."
@@ -628,5 +655,6 @@
       "title": "Why Finance Is Moving OnChain and Why Coordination Matters",
       "reason": "Editorial, education, announcement or member spotlight; outside the report series."
     }
-  ]
+  ],
+  "correction": "The October 15 Avalanche report was initially misclassified as a spotlight. Included after review; all six data and reporting sources are now credited, and series logos are derived from their reports."
 }

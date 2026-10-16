@@ -9,7 +9,6 @@
   "asOf": "2026-10-08",
   "publishedAt": "2026-10-08T10:55:37.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2108149308889440419",
-  "partner": "Token Terminal",
   "description": "Weekly market cap and holder growth by issuer and chain across stablecoins, funds and stocks.",
   "blocks": [
     {
@@ -517,5 +516,8 @@
       ]
     }
   ],
-  "figureCount": 13
+  "figureCount": 13,
+  "partners": [
+    "Token Terminal"
+  ]
 }

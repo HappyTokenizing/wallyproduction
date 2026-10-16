@@ -6,46 +6,63 @@
       "id": "dex",
       "name": "DEX & DeFi Activity",
       "kicker": "30-DAY ACTIVITY REPORT",
-      "partner": "Token Terminal",
       "description": "Where tokenized assets are used: decentralized-exchange trading volume and value locked in DeFi, by venue, protocol and blockchain."
     },
     {
       "id": "weekly",
       "name": "Weekly RWA Activity",
       "kicker": "WEEKLY MARKET REPORTS",
-      "partner": "Token Terminal",
       "description": "Weekly changes in market cap, holders and trading activity, covering the assets, issuers and chains behind the latest movements."
     },
     {
       "id": "blockchains",
       "name": "RWA Blockchains",
-      "kicker": "YEAR-TO-DATE RESEARCH",
-      "partner": "Token Terminal",
-      "description": "The blockchains supporting tokenized assets, measured by market cap growth and holder activity across sectors."
+      "kicker": "CHAIN RESEARCH & NETWORK REPORTS",
+      "description": "Research on the networks supporting tokenized assets: the companies building on each chain, market growth, institutional adoption and onchain activity."
     },
     {
       "id": "quarterly",
       "name": "Quarterly Sector Reports",
       "kicker": "QUARTERLY RESEARCH",
-      "partner": "Token Terminal",
       "description": "Focused quarterly reports on stablecoins, tokenized credit and stocks, with each edition’s data window and methodology preserved."
     },
     {
       "id": "monthly",
       "name": "Market Structure Report",
       "kicker": "MONTHLY MARKET REPORT",
-      "partner": "Token Terminal",
       "description": "The state of real-world asset tokenization: stablecoins, tokenized funds, credit, commodities, stocks and ETFs."
     },
     {
       "id": "perps",
       "name": "RWA Perps Report",
       "kicker": "30-DAY MARKET REPORT",
-      "partner": "DefiLlama",
       "description": "The onchain market for perpetual futures referencing real-world assets: venues, asset classes, reference-asset groups and individual markets."
     }
   ],
   "reports": [
+    {
+      "id": "2110766877135749236",
+      "slug": "avalanche-rwa-growth-oct-2026",
+      "series": "blockchains",
+      "title": "Who Builds on Avalanche: The Companies Behind the Chain's RWA Growth",
+      "shortTitle": "Who Builds on Avalanche",
+      "edition": "October 15, 2026",
+      "window": "October 2026 snapshot; periods vary by source",
+      "asOf": "",
+      "publishedAt": "2026-10-15T16:16:54.000Z",
+      "sourceUrl": "https://x.com/RWAFoundation_/status/2110766877135749236",
+      "partners": [
+        "RWA.xyz",
+        "Token Terminal",
+        "DefiLlama",
+        "Bitquery",
+        "Crypto Briefing",
+        "Avalanche"
+      ],
+      "creditLabel": "DATA & REPORTING SOURCES",
+      "description": "The companies behind Avalanche’s RWA growth: tokenized assets, institutional credit, stablecoins, payments and dedicated chains.",
+      "figureCount": 17
+    },
     {
       "id": "2109614231729402066",
       "slug": "rwa-dex-defi-oct-12-2026",
@@ -57,9 +74,11 @@
       "asOf": "2026-10-12",
       "publishedAt": "2026-10-12T11:56:42.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2109614231729402066",
-      "partner": "Token Terminal",
       "description": "Trading volume and value locked across stablecoins, tokenized funds, commodities and stocks.",
-      "figureCount": 16
+      "figureCount": 16,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2109544459331346444",
@@ -72,9 +91,11 @@
       "asOf": "2026-10-12",
       "publishedAt": "2026-10-12T07:19:27.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2109544459331346444",
-      "partner": "Token Terminal",
       "description": "Weekly market cap, holders and DEX activity for stablecoins, funds and stocks.",
-      "figureCount": 14
+      "figureCount": 14,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2108149308889440419",
@@ -87,9 +108,11 @@
       "asOf": "2026-10-08",
       "publishedAt": "2026-10-08T10:55:37.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2108149308889440419",
-      "partner": "Token Terminal",
       "description": "Weekly market cap and holder growth by issuer and chain across stablecoins, funds and stocks.",
-      "figureCount": 13
+      "figureCount": 13,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2107456399433199716",
@@ -102,9 +125,11 @@
       "asOf": "2026-10-06",
       "publishedAt": "2026-10-06T13:02:14.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2107456399433199716",
-      "partner": "Token Terminal",
       "description": "Year-to-date blockchain growth by market cap and holders across five tokenized asset sectors.",
-      "figureCount": 11
+      "figureCount": 11,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2107123857517629862",
@@ -117,9 +142,11 @@
       "asOf": "2026-10-05",
       "publishedAt": "2026-10-05T15:00:50.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2107123857517629862",
-      "partner": "Token Terminal",
       "description": "Weekly holder growth across stablecoins, funds, U.S. T-bills, credit and stocks.",
-      "figureCount": 10
+      "figureCount": 10,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2107059255496880242",
@@ -132,9 +159,11 @@
       "asOf": "2026-10-05",
       "publishedAt": "2026-10-05T10:44:08.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2107059255496880242",
-      "partner": "Token Terminal",
       "description": "Weekly market cap growth across stablecoins, funds, U.S. T-bills, credit and stocks.",
-      "figureCount": 9
+      "figureCount": 9,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2106777869049372881",
@@ -147,9 +176,11 @@
       "asOf": "2026-10-01",
       "publishedAt": "2026-10-04T16:06:00.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2106777869049372881",
-      "partner": "Token Terminal",
       "description": "Q3 tokenized stock market cap, holders, DeFi TVL and DEX trading volume.",
-      "figureCount": 10
+      "figureCount": 10,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2106742210884440348",
@@ -162,9 +193,11 @@
       "asOf": "2026-10-01",
       "publishedAt": "2026-10-04T13:44:19.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2106742210884440348",
-      "partner": "Token Terminal",
       "description": "Q3 tokenized credit market cap and holders by asset, issuer and blockchain.",
-      "figureCount": 6
+      "figureCount": 6,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2105962586286026857",
@@ -177,9 +210,11 @@
       "asOf": "2026-10-01",
       "publishedAt": "2026-10-02T10:06:22.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2105962586286026857",
-      "partner": "Token Terminal",
       "description": "Q3 stablecoin growth, issuer market share, holders and currency trends.",
-      "figureCount": 8
+      "figureCount": 8,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2105629054896341427",
@@ -192,9 +227,11 @@
       "asOf": "2026-09-30",
       "publishedAt": "2026-10-01T12:01:02.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2105629054896341427",
-      "partner": "Token Terminal",
       "description": "September market structure across tokenized assets, issuers, chains and holders.",
-      "figureCount": 18
+      "figureCount": 18,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2105257386164334790",
@@ -207,9 +244,11 @@
       "asOf": "2026-09-28",
       "publishedAt": "2026-09-30T11:24:09.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2105257386164334790",
-      "partner": "DefiLlama",
       "description": "September RWA perpetual futures: 19 venues, market rankings and month-over-month changes.",
-      "figureCount": 8
+      "figureCount": 8,
+      "partners": [
+        "DefiLlama"
+      ]
     },
     {
       "id": "2104506897457897714",
@@ -222,9 +261,11 @@
       "asOf": "",
       "publishedAt": "2026-09-28T09:41:58.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2104506897457897714",
-      "partner": "Token Terminal",
       "description": "Weekly tokenized stock market cap, holders and transfer activity.",
-      "figureCount": 8
+      "figureCount": 8,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2104493229253009826",
@@ -237,9 +278,11 @@
       "asOf": "",
       "publishedAt": "2026-09-28T08:47:40.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2104493229253009826",
-      "partner": "Token Terminal",
       "description": "Stablecoin supply, holders, transfer activity and local-currency adoption.",
-      "figureCount": 8
+      "figureCount": 8,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2101761886760910898",
@@ -252,9 +295,11 @@
       "asOf": "",
       "publishedAt": "2026-09-20T19:54:17.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2101761886760910898",
-      "partner": "Token Terminal",
       "description": "Weekly capital flows across stablecoins, funds, credit, commodities and stocks.",
-      "figureCount": 15
+      "figureCount": 15,
+      "partners": [
+        "Token Terminal"
+      ]
     },
     {
       "id": "2097302216029736992",
@@ -267,10 +312,12 @@
       "asOf": "2026-09-03",
       "publishedAt": "2026-09-08T12:33:08.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2097302216029736992",
-      "partner": "DefiLlama",
       "description": "Early September edition, with data as of September 3, 2026.",
       "figureCount": 2,
-      "existing": true
+      "existing": true,
+      "partners": [
+        "DefiLlama"
+      ]
     },
     {
       "id": "2094787823970763010",
@@ -283,10 +330,60 @@
       "asOf": "2026-08-30",
       "publishedAt": "2026-09-01T14:01:51.000Z",
       "sourceUrl": "https://x.com/RWAFoundation_/status/2094787823970763010",
-      "partner": "Token Terminal",
       "description": "August market structure across six tokenized asset categories.",
       "figureCount": 17,
-      "existing": true
+      "existing": true,
+      "partners": [
+        "Token Terminal"
+      ]
     }
-  ]
+  ],
+  "partners": {
+    "Token Terminal": {
+      "src": "/research/assets/token-terminal.png",
+      "variant": "wordmark",
+      "background": "dark",
+      "url": "https://tokenterminal.com/",
+      "provenance": "Existing research partner wordmark, preserved from the original report library."
+    },
+    "DefiLlama": {
+      "src": "/research/assets/defillama.svg",
+      "variant": "wordmark",
+      "background": "light",
+      "url": "https://defillama.com/",
+      "provenance": "Existing research partner SVG, preserved byte-for-byte; corrected the erroneous .png extension."
+    },
+    "RWA.xyz": {
+      "src": "/ecosystem/rwa-xyz-batch004.svg",
+      "variant": "symbol",
+      "background": "light",
+      "url": "https://app.rwa.xyz/",
+      "provenance": "Existing official directory artwork reused without modification."
+    },
+    "Bitquery": {
+      "src": "/research/assets/bitquery-x-20261015.jpg",
+      "variant": "symbol",
+      "background": "light",
+      "url": "https://bitquery.io/",
+      "sourcePage": "https://x.com/Bitquery_io",
+      "sourceUrl": "https://pbs.twimg.com/profile_images/1252156938399481856/66aAbW5i_400x400.jpg",
+      "reviewedAt": "2026-10-15"
+    },
+    "Crypto Briefing": {
+      "src": "/research/assets/crypto-briefing-x-20261015.jpg",
+      "variant": "symbol",
+      "background": "light",
+      "url": "https://cryptobriefing.com/",
+      "sourcePage": "https://x.com/Crypto_Briefing",
+      "sourceUrl": "https://pbs.twimg.com/profile_images/1346106979605995520/BcuRRkze_400x400.jpg",
+      "reviewedAt": "2026-10-15"
+    },
+    "Avalanche": {
+      "src": "/ecosystem/avalanche-logo-v2.svg",
+      "variant": "symbol",
+      "background": "dark",
+      "url": "https://www.avalanche.com/",
+      "provenance": "Existing official directory artwork reused without modification."
+    }
+  }
 }

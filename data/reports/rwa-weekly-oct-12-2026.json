@@ -9,7 +9,6 @@
   "asOf": "2026-10-12",
   "publishedAt": "2026-10-12T07:19:27.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2109544459331346444",
-  "partner": "Token Terminal",
   "description": "Weekly market cap, holders and DEX activity for stablecoins, funds and stocks.",
   "blocks": [
     {
@@ -554,5 +553,8 @@
       ]
     }
   ],
-  "figureCount": 14
+  "figureCount": 14,
+  "partners": [
+    "Token Terminal"
+  ]
 }

@@ -9,7 +9,6 @@
   "asOf": "2026-09-30",
   "publishedAt": "2026-10-01T12:01:02.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2105629054896341427",
-  "partner": "Token Terminal",
   "description": "September market structure across tokenized assets, issuers, chains and holders.",
   "blocks": [
     {
@@ -2104,5 +2103,8 @@
       ]
     }
   ],
-  "figureCount": 18
+  "figureCount": 18,
+  "partners": [
+    "Token Terminal"
+  ]
 }

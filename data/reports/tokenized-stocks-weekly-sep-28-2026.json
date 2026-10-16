@@ -9,7 +9,6 @@
   "asOf": "",
   "publishedAt": "2026-09-28T09:41:58.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2104506897457897714",
-  "partner": "Token Terminal",
   "description": "Weekly tokenized stock market cap, holders and transfer activity.",
   "blocks": [
     {
@@ -435,5 +434,8 @@
       ]
     }
   ],
-  "figureCount": 8
+  "figureCount": 8,
+  "partners": [
+    "Token Terminal"
+  ]
 }

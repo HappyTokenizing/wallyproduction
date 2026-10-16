@@ -77,7 +77,7 @@ for(const page of pages.filter(p=>['wallyArticles','zeusArticles'].includes(p.id
  const tab=page.id==='wallyArticles'?'wally':'zeus';
  let html=metadata(research,page).replace('id="panel-reports" role=', 'id="panel-reports" hidden role=').replace('aria-labelledby="tab-wally" hidden','aria-labelledby="tab-'+tab+'"');
  html=html.replace('DATA THE HERD<br>CAN <span class="o">TRUST.</span>',tab==='wally'?'WALLY ARTICLES':'ZEUS’ CORNER');
- html=html.replace('<b>Research Reports from RWA Foundation</b> — recurring, data-driven views of the tokenization market, produced with our data partners, with every edition kept in the archive.',escape(page.description));
+ html=html.replace('<b>Research Reports from RWA Foundation</b> — recurring, data-driven views of the tokenization market, using credited data sources, with every edition kept in the archive.',escape(page.description));
  write(page.path.slice(1)+'index.html',html);
 }
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+pages.filter(p=>!p.noindex).map(p=>`  <url><loc>${origin+p.path}</loc></url>`).join('\n')+'\n</urlset>\n');

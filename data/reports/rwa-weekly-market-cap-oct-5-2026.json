@@ -9,7 +9,6 @@
   "asOf": "2026-10-05",
   "publishedAt": "2026-10-05T10:44:08.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2107059255496880242",
-  "partner": "Token Terminal",
   "description": "Weekly market cap growth across stablecoins, funds, U.S. T-bills, credit and stocks.",
   "blocks": [
     {
@@ -403,5 +402,8 @@
       ]
     }
   ],
-  "figureCount": 9
+  "figureCount": 9,
+  "partners": [
+    "Token Terminal"
+  ]
 }

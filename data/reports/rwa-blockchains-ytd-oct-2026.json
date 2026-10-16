@@ -9,7 +9,6 @@
   "asOf": "2026-10-06",
   "publishedAt": "2026-10-06T13:02:14.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2107456399433199716",
-  "partner": "Token Terminal",
   "description": "Year-to-date blockchain growth by market cap and holders across five tokenized asset sectors.",
   "blocks": [
     {
@@ -519,5 +518,8 @@
       ]
     }
   ],
-  "figureCount": 11
+  "figureCount": 11,
+  "partners": [
+    "Token Terminal"
+  ]
 }

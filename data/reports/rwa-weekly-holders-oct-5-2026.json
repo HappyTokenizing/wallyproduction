@@ -9,7 +9,6 @@
   "asOf": "2026-10-05",
   "publishedAt": "2026-10-05T15:00:50.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2107123857517629862",
-  "partner": "Token Terminal",
   "description": "Weekly holder growth across stablecoins, funds, U.S. T-bills, credit and stocks.",
   "blocks": [
     {
@@ -379,5 +378,8 @@
       ]
     }
   ],
-  "figureCount": 10
+  "figureCount": 10,
+  "partners": [
+    "Token Terminal"
+  ]
 }

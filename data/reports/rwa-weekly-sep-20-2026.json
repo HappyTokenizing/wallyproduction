@@ -9,7 +9,6 @@
   "asOf": "",
   "publishedAt": "2026-09-20T19:54:17.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2101761886760910898",
-  "partner": "Token Terminal",
   "description": "Weekly capital flows across stablecoins, funds, credit, commodities and stocks.",
   "blocks": [
     {
@@ -1639,5 +1638,8 @@
       ]
     }
   ],
-  "figureCount": 15
+  "figureCount": 15,
+  "partners": [
+    "Token Terminal"
+  ]
 }

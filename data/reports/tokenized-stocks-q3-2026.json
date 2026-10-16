@@ -9,7 +9,6 @@
   "asOf": "2026-10-01",
   "publishedAt": "2026-10-04T16:06:00.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2106777869049372881",
-  "partner": "Token Terminal",
   "description": "Q3 tokenized stock market cap, holders, DeFi TVL and DEX trading volume.",
   "blocks": [
     {
@@ -532,5 +531,8 @@
       ]
     }
   ],
-  "figureCount": 10
+  "figureCount": 10,
+  "partners": [
+    "Token Terminal"
+  ]
 }

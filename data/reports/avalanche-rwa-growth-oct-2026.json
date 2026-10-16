@@ -1,0 +1,1351 @@
+{
+  "id": "2110766877135749236",
+  "slug": "avalanche-rwa-growth-oct-2026",
+  "series": "blockchains",
+  "title": "Who Builds on Avalanche: The Companies Behind the Chain's RWA Growth",
+  "shortTitle": "Who Builds on Avalanche",
+  "edition": "October 15, 2026",
+  "window": "October 2026 snapshot; periods vary by source",
+  "asOf": "",
+  "publishedAt": "2026-10-15T16:16:54.000Z",
+  "sourceUrl": "https://x.com/RWAFoundation_/status/2110766877135749236",
+  "partners": [
+    "RWA.xyz",
+    "Token Terminal",
+    "DefiLlama",
+    "Bitquery",
+    "Crypto Briefing",
+    "Avalanche"
+  ],
+  "creditLabel": "DATA & REPORTING SOURCES",
+  "description": "The companies behind Avalanche’s RWA growth: tokenized assets, institutional credit, stablecoins, payments and dedicated chains.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Avalanche is a network of chains",
+      "parts": [
+        {
+          "text": "Avalanche is a network of chains"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Avalanche is a smart contract network built around one idea: any organization can launch its own chain, called an L1, and set its own rules for who validates, who can access it and how fees work. The public C-Chain sits alongside hundreds of these L1s, and assets can move between them.",
+      "parts": [
+        {
+          "text": "Avalanche is a smart contract network built around one idea: any organization can launch its own chain, called an L1, and set its own rules for who validates, who can access it and how fees work. The public C-Chain sits alongside hundreds of these L1s, and assets can move between them."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "That design is why so many institutions use it. A bank, an exchange or a government agency can run a permissioned chain it controls and still connect to the public network's liquidity.",
+      "parts": [
+        {
+          "text": "That design is why so many institutions use it. A bank, an exchange or a government agency can run a permissioned chain it controls and still connect to the public network's liquidity."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "As the Tokenization Lead at Ava Labs Olivia Vande Woude puts it:",
+      "parts": [
+        {
+          "text": "As the Tokenization Lead at Ava Labs Olivia Vande Woude puts it:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "“Tokenization puts an asset onchain, but utility is what gives it a market. Assets need to function as collateral, flow into lending markets and move through payment systems. Avalanche already supports 1,255 tokenized RWAs representing more than $13 billion in distributed and represented value, including approximately $484 million in BlackRock’s BUIDL.\n\nThe bigger opportunity is putting those assets to work. Avalanche gives institutions customization without isolation. They can build environments around their regulatory and operational requirements while remaining connected to stablecoins, credit markets, applications and buyers across the broader network. Aave’s planned V4 RWA Hub, multi-currency stablecoins and allocators like Grove, with more than $250 million deployed, are building those distribution channels.\n\nThis is what invisible adoption looks like. Businesses and consumers gain access to faster payments, productive collateral and deeper credit without needing to think about the blockchain infrastructure underneath.”",
+      "parts": [
+        {
+          "text": "“Tokenization puts an asset onchain, but utility is what gives it a market. Assets need to function as collateral, flow into lending markets and move through payment systems. Avalanche already supports 1,255 tokenized RWAs representing more than $13 billion in distributed and represented value, including approximately $484 million in BlackRock’s BUIDL.\n\nThe bigger opportunity is putting those assets to work. Avalanche gives institutions customization without isolation. They can build environments around their regulatory and operational requirements while remaining connected to stablecoins, credit markets, applications and buyers across the broader network. Aave’s planned V4 RWA Hub, multi-currency stablecoins and allocators like Grove, with more than $250 million deployed, are building those distribution channels.\n\nThis is what invisible adoption looks like. Businesses and consumers gain access to faster payments, productive collateral and deeper credit without needing to think about the blockchain infrastructure underneath.”"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Avalanche holds $1.73 billion in distributed RWAs, held in very few wallets",
+      "parts": [
+        {
+          "text": "Avalanche holds $1.73 billion in distributed RWAs, held in very few wallets"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Distributed RWAs on Avalanche stood at $1.73 billion as of October 12, up 2.17% over 30 days, according to rwa.xyz. They are spread across 1,255 assets and 10,058 holder addresses. Represented assets reach $11.40 billion, but one copper-gold token, AZX1, accounts for $10.7 billion of that from a single wallet, as Bitquery has documented.",
+      "parts": [
+        {
+          "text": "Distributed RWAs on Avalanche stood at $1.73 billion as of October 12, up 2.17% over 30 days, according to "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": ". They are spread across 1,255 assets and 10,058 holder addresses. Represented assets reach $11.40 billion, but one copper-gold token, AZX1, accounts for $10.7 billion of that from a single wallet, as Bitquery has documented."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The four largest distributed products, BUIDL (BlackRock) at $483.5 million, SECZ at $355.6 million, the tradable part of DOM X's AZX1 copper-gold token at $334.4 million and JAAA at $263.0 million, hold $1.44 billion between them, 83% of the total, across 64 wallets, according to rwa.xyz.",
+      "parts": [
+        {
+          "text": "The four largest distributed products, BUIDL (BlackRock) at $483.5 million, SECZ at $355.6 million, the tradable part of DOM X's AZX1 copper-gold token at $334.4 million and JAAA at $263.0 million, hold $1.44 billion between them, 83% of the total, across 64 wallets, according to "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Four assets, 83% of value",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 1,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrLAOJXAAAXWxo.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrLAOJXAAAXWxo?format=jpg&name=medium",
+          "alt": "Four assets, 83% of value",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Distributed vs Represented",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 2,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrLJz2WoAARRle.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrLJz2WoAARRle?format=jpg&name=medium",
+          "alt": "Distributed vs Represented",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "12x since January 2025",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 3,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrLUNpWYAAPYoQ.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrLUNpWYAAPYoQ?format=jpg&name=medium",
+          "alt": "12x since January 2025",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Treasuries quadrupled this year, and stocks led every chain",
+      "parts": [
+        {
+          "text": "Treasuries quadrupled this year, and stocks led every chain"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized U.S. Treasuries on Avalanche reached $545 million, \"up 4x this year\" and up 14% in Q3, according to Avalanche. rwa.xyz counts $518 million across BUIDL and BENJI alone.",
+      "parts": [
+        {
+          "text": "Tokenized U.S. Treasuries on Avalanche reached $545 million, \"up 4x this year\" and up 14% in Q3, according to Avalanche. "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": " counts $518 million across BUIDL and BENJI alone."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tokenized stocks grew faster on Avalanche than on any other chain in September, adding $245.5 million, according to the RWA Foundation and Token Terminal. Stocks on the chain stand at $355.6 million (+67.1%) on Token Terminal.",
+      "parts": [
+        {
+          "text": "Tokenized stocks grew faster on Avalanche than on any other chain in September, adding $245.5 million, according to the RWA Foundation and Token Terminal. Stocks on the chain stand at $355.6 million (+67.1%) on Token Terminal."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "RWA's by asset class",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 4,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrLmsfXQAADOxC.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrLmsfXQAADOxC?format=jpg&name=medium",
+          "alt": "RWA's by asset class",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Tokenized stock growth by chain (In September)",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 5,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrL0kmW4AAwEHM.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrL0kmW4AAwEHM?format=jpg&name=medium",
+          "alt": "Tokenized stock growth by chain (In September)",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Credit is the fastest-growing use",
+      "parts": [
+        {
+          "text": "Credit is the fastest-growing use"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Onchain loan volume on Avalanche reached a record $37.4 million in Q3, up 34% over the prior quarter, per Crypto Briefing. Token Terminal puts app TVL at $3.5 billion across 31 apps, with RWA issuers at 37.3%, stablecoin issuers at 25.8% and lending at 19.0%. DefiLlama, which leaves RWA issuers out, counts $644.7 million in DeFi TVL.",
+      "parts": [
+        {
+          "text": "Onchain loan volume on Avalanche reached a record $37.4 million in Q3, up 34% over the prior quarter, per Crypto Briefing. Token Terminal puts app TVL at $3.5 billion across 31 apps, with RWA issuers at 37.3%, stablecoin issuers at 25.8% and lending at 19.0%. DefiLlama, which leaves RWA issuers out, counts $644.7 million in DeFi TVL."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "App TVL by sector",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 6,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrMBv4W8AAKrKs.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrMBv4W8AAKrKs?format=jpg&name=medium",
+          "alt": "App TVL by sector",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "NEW - record onchain loan volume",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 7,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrMtm-WQAAG7YE.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrMtm-WQAAG7YE?format=jpg&name=medium",
+          "alt": "NEW - record onchain loan volume",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Dollars move on Avalanche at scale",
+      "parts": [
+        {
+          "text": "Dollars move on Avalanche at scale"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Stablecoins on Avalanche stand at $1.39 billion on DefiLlama, $919.5 million on Token Terminal and $886.9 million on rwa.xyz. The sources define stablecoins differently, but all three agree on the order of magnitude. USDC alone has 1.42 million holder addresses, and USDT has 1.19 million.",
+      "parts": [
+        {
+          "text": "Stablecoins on Avalanche stand at $1.39 billion on DefiLlama, $919.5 million on Token Terminal and $886.9 million on "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": ". The sources define stablecoins differently, but all three agree on the order of magnitude. USDC alone has 1.42 million holder addresses, and USDT has 1.19 million."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Liquidity reaches the chain through the largest exchanges, including @binance, @Bybit_Official, @okx, @bitget, @kucoincom and @krakenfx, which together hold hundreds of millions of dollars in Avalanche reserves on DefiLlama. In September, Avalanche formed the Payments Collective, 28 founding members serving payment flows across more than 150 countries and 96 currencies.",
+      "parts": [
+        {
+          "text": "Liquidity reaches the chain through the largest exchanges, including "
+        },
+        {
+          "text": "@binance",
+          "href": "https://x.com/binance"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "@Bybit_Official",
+          "href": "https://x.com/Bybit_Official"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "@okx",
+          "href": "https://x.com/okx"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "@bitget",
+          "href": "https://x.com/bitget"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "@kucoincom",
+          "href": "https://x.com/kucoincom"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "@krakenfx",
+          "href": "https://x.com/krakenfx"
+        },
+        {
+          "text": ", which together hold hundreds of millions of dollars in Avalanche reserves on DefiLlama. In September, Avalanche formed the Payments Collective, 28 founding members serving payment flows across more than 150 countries and 96 currencies."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Stablecoins on Avalanche",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 8,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrM481WkAAbxqf.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrM481WkAAbxqf?format=jpg&name=medium",
+          "alt": "Stablecoins on Avalanche",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "28 founding members of the avalanche payments collective",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 9,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrNBODWMAAFAXn.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrNBODWMAAFAXn?format=jpg&name=medium",
+          "alt": "28 founding members of the avalanche payments collective",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Governments use Avalanche for records, not securities",
+      "parts": [
+        {
+          "text": "Governments use Avalanche for records, not securities"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Some of the largest deployments on Avalanche never show up in RWA data. California's DMV put 42 million car titles on its own Avalanche chain. The UAE is moving the UAEPASS Digital Vault, used by 12.5 million people, to a dedicated L1. Wyoming launched FRNT, the first U.S. state-issued stablecoin, which can be spent on Avalanche through a Visa card. These are public records and public money rather than investable assets, which is why they sit outside the market cap figures.",
+      "parts": [
+        {
+          "text": "Some of the largest deployments on Avalanche never show up in RWA data. California's DMV put 42 million car titles on its own Avalanche chain. The UAE is moving the UAEPASS Digital Vault, used by 12.5 million people, to a dedicated L1. Wyoming launched FRNT, the first U.S. state-issued stablecoin, which can be spent on Avalanche through a Visa card. These are public records and public money rather than investable assets, which is why they sit outside the market cap figures."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Some of the builders",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 10,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrNNsyWgAACYOb.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrNNsyWgAACYOb?format=jpg&name=medium",
+          "alt": "Some of the builders",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@Securitize is the largest RWA platform on Avalanche, with $879.0 million in assets according to rwa.xyz. That is about half of all distributed RWAs on the chain. Its Avalanche assets rose 628% to $770 million by mid-September.",
+      "parts": [
+        {
+          "text": "@Securitize",
+          "href": "https://x.com/Securitize"
+        },
+        {
+          "text": " is the largest RWA platform on Avalanche, with $879.0 million in assets according to "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": ". That is about half of all distributed RWAs on the chain. Its Avalanche assets rose 628% to $770 million by mid-September."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Securitize issues BlackRock's BUIDL on Avalanche, and in July it put its own stock onchain. SECZ now stands at $355.6 million across 22 wallets, matching Avalanche's entire tokenized stock market cap on Token Terminal. In March 2026, Securitize also signed an MOU to be the first digital transfer agent on NYSE's upcoming Digital Trading Platform.",
+      "parts": [
+        {
+          "text": "Securitize issues BlackRock's BUIDL on Avalanche, and in July it put its own stock onchain. SECZ now stands at $355.6 million across 22 wallets, matching Avalanche's entire tokenized stock market cap on Token Terminal. In March 2026, Securitize also signed an MOU to be the first digital transfer agent on NYSE's upcoming Digital Trading Platform."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Founder and CEO Carlos Domingo explained the choice when Securitize launched the Neuberger Securitize High Income Tokenized Fund on Avalanche. It shows \"public blockchain infrastructure supporting regulated investment products at the speed, reliability, and scale institutional markets require,\" he said. \"We expect the fund to help open the door to a much broader range of assets moving onchain.\"",
+      "parts": [
+        {
+          "text": "Founder and CEO Carlos Domingo explained the choice when Securitize launched the Neuberger Securitize High Income Tokenized Fund on Avalanche. It shows \"public blockchain infrastructure supporting regulated investment products at the speed, reliability, and scale institutional markets require,\" he said. \"We expect the fund to help open the door to a much broader range of assets moving onchain.\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Carlos says the relationship goes beyond a single fund:",
+      "parts": [
+        {
+          "text": "Carlos says the relationship goes beyond a single fund:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Carlos Domingo, Co-Founder & CEO, Securitize“We’re proud of what we’ve built with Avalanche and grateful for a partnership that has helped bring real investments onchain. Institutions need the controls to meet their obligations and the connectivity to make those assets useful. Avalanche brings those priorities together, and we’re excited to keep building on that foundation.”",
+      "parts": [
+        {
+          "text": "Carlos Domingo, Co-Founder & CEO, Securitize“We’re proud of what we’ve built with Avalanche and grateful for a partnership that has helped bring real investments onchain. Institutions need the controls to meet their obligations and the connectivity to make those assets useful. Avalanche brings those priorities together, and we’re excited to keep building on that foundation.”"
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Securitize by network",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 11,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrNf5fWgAAvpr2.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrNf5fWgAAvpr2?format=jpg&name=medium",
+          "alt": "Securitize by network",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Dinari",
+      "parts": [
+        {
+          "text": "Dinari"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@DinariGlobal issues dShares, tokenized U.S. stocks backed 1:1 by shares held with licensed custodians, and Avalanche sits at the center of its setup. In August 2025, it launched the Dinari Financial Network, its own Avalanche L1 for issuing, settling and moving tokenized equities across chains.",
+      "parts": [
+        {
+          "text": "@DinariGlobal",
+          "href": "https://x.com/DinariGlobal"
+        },
+        {
+          "text": " issues dShares, tokenized U.S. stocks backed 1:1 by shares held with licensed custodians, and Avalanche sits at the center of its setup. In August 2025, it launched the Dinari Financial Network, its own Avalanche L1 for issuing, settling and moving tokenized equities across chains."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In June 2026, Dinari brought its full catalog of more than 350 dShares, including stocks, ETFs and REITs, to the C-Chain for eligible investors outside the U.S. rwa.xyz now tracks 722 dShares on Avalanche.",
+      "parts": [
+        {
+          "text": "In June 2026, Dinari brought its full catalog of more than 350 dShares, including stocks, ETFs and REITs, to the C-Chain for eligible investors outside the U.S. "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": " now tracks 722 dShares on Avalanche."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Avalanche has been an important partner in that effort, from powering DFN to now supporting direct access to dShares on C-Chain,\" said CEO and co-founder @GabeOtte in Dinari's announcement.",
+      "parts": [
+        {
+          "text": "\"Avalanche has been an important partner in that effort, from powering DFN to now supporting direct access to dShares on C-Chain,\" said CEO and co-founder "
+        },
+        {
+          "text": "@GabeOtte",
+          "href": "https://x.com/GabeOtte"
+        },
+        {
+          "text": " in Dinari's announcement."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Dinari is a member of the RWA Foundation.",
+      "parts": [
+        {
+          "text": "Dinari is a member of the RWA Foundation."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "722 dShares live on Avalanche",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 12,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrNyYcWcAA6bv-.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrNyYcWcAA6bv-?format=jpg&name=medium",
+          "alt": "722 dShares live on Avalanche",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Aave and Tether",
+      "parts": [
+        {
+          "text": "Aave and Tether"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@aave is the largest app on Avalanche, at $572.3 million in TVL on Token Terminal. On DefiLlama, Aave V3 holds $348.3 million on the chain and V4, live since July, holds $32.9 million.",
+      "parts": [
+        {
+          "text": "@aave",
+          "href": "https://x.com/aave"
+        },
+        {
+          "text": " is the largest app on Avalanche, at $572.3 million in TVL on Token Terminal. On DefiLlama, Aave V3 holds $348.3 million on the chain and V4, live since July, holds $32.9 million."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Its next step on Avalanche is a forthcoming RWA Hub, the first in Aave V4. \"Aave V4's first RWA Hub is coming to @avax, a dedicated credit market where institutions can borrow against RWAs,\" Aave posted on September 16. Institutions would post tokenized assets as collateral and borrow dollars.",
+      "parts": [
+        {
+          "text": "Its next step on Avalanche is a forthcoming RWA Hub, the first in Aave V4. \"Aave V4's first RWA Hub is coming to "
+        },
+        {
+          "text": "@avax",
+          "href": "https://x.com/avax"
+        },
+        {
+          "text": ", a dedicated credit market where institutions can borrow against RWAs,\" Aave posted on September 16. Institutions would post tokenized assets as collateral and borrow dollars."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Those dollars would come from @tether's federally regulated stablecoin, USA₮, issued by Anchorage Digital Bank. Tether already has $304.3 million in USDT on Avalanche across 1.19 million holder addresses, per rwa.xyz. The hub and the USA₮ listing still require Aave DAO votes, and the launch date and collateral list have not been announced.",
+      "parts": [
+        {
+          "text": "Those dollars would come from "
+        },
+        {
+          "text": "@tether",
+          "href": "https://x.com/tether"
+        },
+        {
+          "text": "'s federally regulated stablecoin, USA₮, issued by Anchorage Digital Bank. Tether already has $304.3 million in USDT on Avalanche across 1.19 million holder addresses, per "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": ". The hub and the USA₮ listing still require Aave DAO votes, and the launch date and collateral list have not been announced."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Aave V4 RWA Hub",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 13,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrOCnlWcAAOMQ8.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrOCnlWcAAOMQ8?format=jpg&name=medium",
+          "alt": "Aave V4 RWA Hub",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "BlackRock",
+      "parts": [
+        {
+          "text": "BlackRock"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@BlackRock's BUIDL is the largest tokenized Treasury fund on Avalanche, at $483.5 million according to rwa.xyz. That is about 89% of the $545 million in tokenized Treasuries Avalanche reports, held in six wallets.",
+      "parts": [
+        {
+          "text": "@BlackRock",
+          "href": "https://x.com/BlackRock"
+        },
+        {
+          "text": "'s BUIDL is the largest tokenized Treasury fund on Avalanche, at $483.5 million according to "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": ". That is about 89% of the $545 million in tokenized Treasuries Avalanche reports, held in six wallets."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "BUIDL's Avalanche balance more than doubled in July on a single mint, then fell 47% on redemptions, per Bitquery. Movements of that size from a handful of holders show how much of Avalanche's Treasury growth comes from a few institutional allocators.",
+      "parts": [
+        {
+          "text": "BUIDL's Avalanche balance more than doubled in July on a single mint, then fell 47% on redemptions, per Bitquery. Movements of that size from a handful of holders show how much of Avalanche's Treasury growth comes from a few institutional allocators."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Circle",
+      "parts": [
+        {
+          "text": "Circle"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@circle's USDC is the most widely held asset on Avalanche, with $435.1 million across 1.42 million holder addresses on rwa.xyz. That one asset has more holders than every tokenized fund and stock on the chain combined, about 141 times the 10,058 RWA holders.",
+      "parts": [
+        {
+          "text": "@circle",
+          "href": "https://x.com/circle"
+        },
+        {
+          "text": "'s USDC is the most widely held asset on Avalanche, with $435.1 million across 1.42 million holder addresses on "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": ". That one asset has more holders than every tokenized fund and stock on the chain combined, about 141 times the 10,058 RWA holders."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "USDC is the base dollar for most Avalanche apps and for the Payments Collective, so much of the activity described in this report settles in it.",
+      "parts": [
+        {
+          "text": "USDC is the base dollar for most Avalanche apps and for the Payments Collective, so much of the activity described in this report settles in it."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "VanEck",
+      "parts": [
+        {
+          "text": "VanEck"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@vaneck_us brought VBILL, its tokenized Treasury fund, to Avalanche and is a founding member of the Payments Collective. Avalanche presents VBILL and Franklin Templeton's BENJI as regulated Treasury funds that payment companies can hold until a settlement is due.",
+      "parts": [
+        {
+          "text": "@vaneck_us",
+          "href": "https://x.com/vaneck_us"
+        },
+        {
+          "text": " brought VBILL, its tokenized Treasury fund, to Avalanche and is a founding member of the Payments Collective. Avalanche presents VBILL and Franklin Templeton's BENJI as regulated Treasury funds that payment companies can hold until a settlement is due."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The fit is treasury management. Payment firms holding idle balances on Avalanche can keep them in a regulated fund rather than in cash.",
+      "parts": [
+        {
+          "text": "The fit is treasury management. Payment firms holding idle balances on Avalanche can keep them in a regulated fund rather than in cash."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Hashfire",
+      "parts": [
+        {
+          "text": "Hashfire"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@hashfirexyz finances receivables owed by the U.S. government, and every part of it runs on Avalanche. On September 3, it \"cleared $1,304,081 in US Treasury-backed collections, our largest single day yet,\" Hashfire posted. Federal contractors get paid on day one, and allocators earn yield on government-backed credit.",
+      "parts": [
+        {
+          "text": "@hashfirexyz",
+          "href": "https://x.com/hashfirexyz"
+        },
+        {
+          "text": " finances receivables owed by the U.S. government, and every part of it runs on Avalanche. On September 3, it \"cleared $1,304,081 in US Treasury-backed collections, our largest single day yet,\" Hashfire posted. Federal contractors get paid on day one, and allocators earn yield on government-backed credit."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Founder and CEO @JohnBelitsky says the whole program is onchain, not just the yield: \"Every document, dollar, transaction, approval, counterparty and the real-time asset condition is fully onchain,\" he wrote. Hashfire put it more briefly: \"This is the canonical asset… On @avax.\"",
+      "parts": [
+        {
+          "text": "Founder and CEO "
+        },
+        {
+          "text": "@JohnBelitsky",
+          "href": "https://x.com/JohnBelitsky"
+        },
+        {
+          "text": " says the whole program is onchain, not just the yield: \"Every document, dollar, transaction, approval, counterparty and the real-time asset condition is fully onchain,\" he wrote. Hashfire put it more briefly: \"This is the canonical asset… On "
+        },
+        {
+          "text": "@avax",
+          "href": "https://x.com/avax"
+        },
+        {
+          "text": ".\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Hashfire's first public pilot was with Wyoming in July 2025, when the state paid a contractor in seconds instead of 45 days using its stablecoin. Belitsky is now pitching governments on real-time auditable budgets and instant vendor settlement. ",
+      "parts": [
+        {
+          "text": "Hashfire's first public pilot was with Wyoming in July 2025, when the state paid a contractor in seconds instead of 45 days using its stablecoin. Belitsky is now pitching governments on real-time auditable budgets and instant vendor settlement. "
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Hashfire",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 14,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrOn5EWEAALLfi.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrOn5EWEAALLfi?format=jpg&name=medium",
+          "alt": "Hashfire",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Centrifuge",
+      "parts": [
+        {
+          "text": "Centrifuge"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@centrifuge brought two of the largest asset managers to Avalanche. Janus Henderson's AAA CLO fund, JAAA, stands at $263.0 million on rwa.xyz, making it the fourth-largest distributed product on the chain. It is held in three wallets.",
+      "parts": [
+        {
+          "text": "@centrifuge",
+          "href": "https://x.com/centrifuge"
+        },
+        {
+          "text": " brought two of the largest asset managers to Avalanche. Janus Henderson's AAA CLO fund, JAAA, stands at $263.0 million on "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": ", making it the fourth-largest distributed product on the chain. It is held in three wallets."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In September, New York Life Investment Management launched its first tokenized fund, a high-yield bond strategy, on Avalanche through Centrifuge. Credit partnerships like these helped drive Avalanche's record Q3 loan volume.",
+      "parts": [
+        {
+          "text": "In September, New York Life Investment Management launched its first tokenized fund, a high-yield bond strategy, on Avalanche through Centrifuge. Credit partnerships like these helped drive Avalanche's record Q3 loan volume."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Midas",
+      "parts": [
+        {
+          "text": "Midas"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@MidasRWA brought two institutional strategies to Avalanche in September. mWIN tracks a Wellington Management multi-sector fixed-income portfolio, and mGLOBAL tracks Fasanara Capital's alternative debt strategy. Wellington manages more than $1.3 trillion, though that money has not moved onto Avalanche.",
+      "parts": [
+        {
+          "text": "@MidasRWA",
+          "href": "https://x.com/MidasRWA"
+        },
+        {
+          "text": " brought two institutional strategies to Avalanche in September. mWIN tracks a Wellington Management multi-sector fixed-income portfolio, and mGLOBAL tracks Fasanara Capital's alternative debt strategy. Wellington manages more than $1.3 trillion, though that money has not moved onto Avalanche."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "At launch, Midas noted that Avalanche held more than $2 billion in tokenized assets. The two products are not yet listed on rwa.xyz.",
+      "parts": [
+        {
+          "text": "At launch, Midas noted that Avalanche held more than $2 billion in tokenized assets. The two products are not yet listed on "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Plume",
+      "parts": [
+        {
+          "text": "Plume"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@plumenetwork brought nOPAL to Avalanche in July. The vault, issued by BlackOpal, holds Brazilian credit card receivables hedged against currency risk, with yields in the 8% to 12% range. Plume Vaults hold $5.3 million on Avalanche on DefiLlama, next to about $42.7 million in nOPAL on Plume's own chain.",
+      "parts": [
+        {
+          "text": "@plumenetwork",
+          "href": "https://x.com/plumenetwork"
+        },
+        {
+          "text": " brought nOPAL to Avalanche in July. The vault, issued by BlackOpal, holds Brazilian credit card receivables hedged against currency risk, with yields in the 8% to 12% range. Plume Vaults hold $5.3 million on Avalanche on DefiLlama, next to about $42.7 million in nOPAL on Plume's own chain."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Plume cited Avalanche's \"deterministic finality, high throughput, predictable fees, and EVM compatibility,\" and a \"rapidly expanding pipeline across Latin America,\" in its announcement. nOPAL is one of the first emerging-market credit products on the chain.",
+      "parts": [
+        {
+          "text": "Plume cited Avalanche's \"deterministic finality, high throughput, predictable fees, and EVM compatibility,\" and a \"rapidly expanding pipeline across Latin America,\" in its announcement. nOPAL is one of the first emerging-market credit products on the chain."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Plume says the point is who gets access:",
+      "parts": [
+        {
+          "text": "Plume says the point is who gets access:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Teddy Pornprinya, CBO & Co-Founder, Plume“Brazilian credit card receivables have traditionally been a trade only institutions could make. nOPAL changes who gets to make it. Avalanche has built one of the strongest ecosystems for tokenized private credit, so bringing nOPAL there puts real-world credit in front of institutional capital and everyday onchain allocators alike. That’s exactly what Open Finance should do.”",
+      "parts": [
+        {
+          "text": "Teddy Pornprinya, CBO & Co-Founder, Plume“Brazilian credit card receivables have traditionally been a trade only institutions could make. nOPAL changes who gets to make it. Avalanche has built one of the strongest ecosystems for tokenized private credit, so bringing nOPAL there puts real-world credit in front of institutional capital and everyday onchain allocators alike. That’s exactly what Open Finance should do.”"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Ethena Pay",
+      "parts": [
+        {
+          "text": "Ethena Pay"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@EthenaPay is a global neobank from @ethena, built exclusively on Avalanche. It combines digital dollars, payments, savings and settlement in a single app.",
+      "parts": [
+        {
+          "text": "@EthenaPay",
+          "href": "https://x.com/EthenaPay"
+        },
+        {
+          "text": " is a global neobank from "
+        },
+        {
+          "text": "@ethena",
+          "href": "https://x.com/ethena"
+        },
+        {
+          "text": ", built exclusively on Avalanche. It combines digital dollars, payments, savings and settlement in a single app."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Ethena is also a founding member of the Payments Collective. Ethena Pay is the clearest consumer-facing product among the builders in this report.",
+      "parts": [
+        {
+          "text": "Ethena is also a founding member of the Payments Collective. Ethena Pay is the clearest consumer-facing product among the builders in this report."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Balcony",
+      "parts": [
+        {
+          "text": "Balcony"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@balconytech is digitizing Bergen County, New Jersey's land records on its own Avalanche L1. The program covers 370,000 parcels worth about $240 billion across 70 municipalities, under a five-year contract.",
+      "parts": [
+        {
+          "text": "@balconytech",
+          "href": "https://x.com/balconytech"
+        },
+        {
+          "text": " is digitizing Bergen County, New Jersey's land records on its own Avalanche L1. The program covers 370,000 parcels worth about $240 billion across 70 municipalities, under a five-year contract."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "None of it appears in RWA market data, because deeds are records rather than securities. By value, it is still the largest real estate program on the chain.",
+      "parts": [
+        {
+          "text": "None of it appears in RWA market data, because deeds are records rather than securities. By value, it is still the largest real estate program on the chain."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Grove",
+      "parts": [
+        {
+          "text": "Grove"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "@grovedotfinance is the largest credit allocator on Avalanche, with $263.0 million in TVL on DefiLlama. It has deployed about $250 million into RWAs on the chain and anchored Galaxy's first tokenized CLO with a $50 million allocation.",
+      "parts": [
+        {
+          "text": "@grovedotfinance",
+          "href": "https://x.com/grovedotfinance"
+        },
+        {
+          "text": " is the largest credit allocator on Avalanche, with $263.0 million in TVL on DefiLlama. It has deployed about $250 million into RWAs on the chain and anchored Galaxy's first tokenized CLO with a $50 million allocation."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Grove sits on both sides of the market. It supplies capital to tokenized credit and is a member of the Payments Collective's asset management layer.",
+      "parts": [
+        {
+          "text": "Grove sits on both sides of the market. It supplies capital to tokenized credit and is a member of the Payments Collective's asset management layer."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "Where DeFi sits",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 15,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrPC3-WYAAepwY.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrPC3-WYAAepwY?format=jpg&name=medium",
+          "alt": "Where DeFi sits",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "More builders on Avalanche",
+      "parts": [
+        {
+          "text": "More builders on Avalanche"
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@Lynq_Network moved its settlement network for more than 30 institutions to an Avalanche L1 in April, carrying over $2.5 trillion in transaction history from @tassatgroup, and Goldman Sachs' FTIXX is now accessible there through @tZERO.",
+      "parts": [
+        {
+          "text": "@Lynq_Network",
+          "href": "https://x.com/Lynq_Network"
+        },
+        {
+          "text": " moved its settlement network for more than 30 institutions to an Avalanche L1 in April, carrying over $2.5 trillion in transaction history from "
+        },
+        {
+          "text": "@tassatgroup",
+          "href": "https://x.com/tassatgroup"
+        },
+        {
+          "text": ", and Goldman Sachs' FTIXX is now accessible there through "
+        },
+        {
+          "text": "@tZERO",
+          "href": "https://x.com/tZERO"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@FTDA_US runs BENJI, Franklin Templeton's tokenized money market fund, at $34.4 million on Avalanche.",
+      "parts": [
+        {
+          "text": "@FTDA_US",
+          "href": "https://x.com/FTDA_US"
+        },
+        {
+          "text": " runs BENJI, Franklin Templeton's tokenized money market fund, at $34.4 million on Avalanche."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@galaxyhq issued its first tokenized CLO on Avalanche, with $17.9 million in the B tranche on rwa.xyz.",
+      "parts": [
+        {
+          "text": "@galaxyhq",
+          "href": "https://x.com/galaxyhq"
+        },
+        {
+          "text": " issued its first tokenized CLO on Avalanche, with $17.9 million in the B tranche on "
+        },
+        {
+          "text": "rwa.xyz"
+        },
+        {
+          "text": "."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@chainlink's CCIP carries $82.0 million on Avalanche on DefiLlama and is now Wyoming's exclusive cross-chain provider for FRNT.",
+      "parts": [
+        {
+          "text": "@chainlink",
+          "href": "https://x.com/chainlink"
+        },
+        {
+          "text": "'s CCIP carries $82.0 million on Avalanche on DefiLlama and is now Wyoming's exclusive cross-chain provider for FRNT."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@Paxos integrated Avalanche into infrastructure that serves more than 650 institutions.",
+      "parts": [
+        {
+          "text": "@Paxos",
+          "href": "https://x.com/Paxos"
+        },
+        {
+          "text": " integrated Avalanche into infrastructure that serves more than 650 institutions."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@JHIAdvisors became an Avalanche validator and committed anchor capital to @TranchedFi's onchain credit platform.",
+      "parts": [
+        {
+          "text": "@JHIAdvisors",
+          "href": "https://x.com/JHIAdvisors"
+        },
+        {
+          "text": " became an Avalanche validator and committed anchor capital to "
+        },
+        {
+          "text": "@TranchedFi",
+          "href": "https://x.com/TranchedFi"
+        },
+        {
+          "text": "'s onchain credit platform."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@BenqiFinance holds $255.1 million in liquid staking and $129.1 million in lending on Avalanche.",
+      "parts": [
+        {
+          "text": "@BenqiFinance",
+          "href": "https://x.com/BenqiFinance"
+        },
+        {
+          "text": " holds $255.1 million in liquid staking and $129.1 million in lending on Avalanche."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@opentrade_io provides stablecoin yield for businesses and holds $172.4 million on the chain.",
+      "parts": [
+        {
+          "text": "@opentrade_io",
+          "href": "https://x.com/opentrade_io"
+        },
+        {
+          "text": " provides stablecoin yield for businesses and holds $172.4 million on the chain."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@avantprotocol issues avUSD, at $124.4 million across 1,408 holders.",
+      "parts": [
+        {
+          "text": "@avantprotocol",
+          "href": "https://x.com/avantprotocol"
+        },
+        {
+          "text": " issues avUSD, at $124.4 million across 1,408 holders."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@raincards issues stablecoin Visa cards on Avalanche and added @BDACSKorea's KRW1 won stablecoin.",
+      "parts": [
+        {
+          "text": "@raincards",
+          "href": "https://x.com/raincards"
+        },
+        {
+          "text": " issues stablecoin Visa cards on Avalanche and added "
+        },
+        {
+          "text": "@BDACSKorea",
+          "href": "https://x.com/BDACSKorea"
+        },
+        {
+          "text": "'s KRW1 won stablecoin."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@AxiymFinance has processed more than $1.4 billion in cross-border volume on Avalanche.",
+      "parts": [
+        {
+          "text": "@AxiymFinance",
+          "href": "https://x.com/AxiymFinance"
+        },
+        {
+          "text": " has processed more than $1.4 billion in cross-border volume on Avalanche."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@intainft runs an ABS chain for FIS with $339.0 million in represented assets.",
+      "parts": [
+        {
+          "text": "@intainft",
+          "href": "https://x.com/intainft"
+        },
+        {
+          "text": " runs an ABS chain for FIS with $339.0 million in represented assets."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@tare_io raised $13.25 million to build a regulated onchain financial institution on Avalanche.",
+      "parts": [
+        {
+          "text": "@tare_io",
+          "href": "https://x.com/tare_io"
+        },
+        {
+          "text": " raised $13.25 million to build a regulated onchain financial institution on Avalanche."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@BuildOnIris raised more than $40 million for mobile financial services on its own Avalanche L1.",
+      "parts": [
+        {
+          "text": "@BuildOnIris",
+          "href": "https://x.com/BuildOnIris"
+        },
+        {
+          "text": " raised more than $40 million for mobile financial services on its own Avalanche L1."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "@republicnote has 7,586 holders, the widest holder base of any RWA product on the chain.",
+      "parts": [
+        {
+          "text": "@republicnote",
+          "href": "https://x.com/republicnote"
+        },
+        {
+          "text": " has 7,586 holders, the widest holder base of any RWA product on the chain."
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "text": "Cashlink expanded its securities tokenization infrastructure to Avalanche.",
+      "parts": [
+        {
+          "text": "Cashlink expanded its securities tokenization infrastructure to Avalanche."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "More builders",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 16,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrQQKAWEAAnT8t.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrQQKAWEAAnT8t?format=jpg&name=medium",
+          "alt": "More builders",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "caption": "$2.5 trillion in settlement history moved to avalanche",
+      "credit": "RWA Foundation · sources cited in report",
+      "number": 17,
+      "images": [
+        {
+          "src": "/research/assets/x-reports/HUrQWXrWYAAwAbR.jpg",
+          "sourceUrl": "https://pbs.twimg.com/media/HUrQWXrWYAAwAbR?format=jpg&name=medium",
+          "alt": "$2.5 trillion in settlement history moved to avalanche",
+          "width": 1080,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Conclusion",
+      "parts": [
+        {
+          "text": "Conclusion"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Avalanche's RWA growth is concentrated. A few issuers, led by Securitize, BlackRock, Circle and Tether, account for most of the value, and their products sit in a small number of wallets.",
+      "parts": [
+        {
+          "text": "Avalanche's RWA growth is concentrated. A few issuers, led by Securitize, BlackRock, Circle and Tether, account for most of the value, and their products sit in a small number of wallets."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The builders differ more than the numbers suggest. Some issue funds, some lend against them, some move dollars and some run their own chains. What they share is the ability to set their own rules while staying connected to the public network.",
+      "parts": [
+        {
+          "text": "The builders differ more than the numbers suggest. Some issue funds, some lend against them, some move dollars and some run their own chains. What they share is the ability to set their own rules while staying connected to the public network."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Avalanche, Token Terminal and Securitize are proud members of RWA Foundation but have no influence on the opinions of this report. This report is for informational purposes only and is not investment advice.",
+      "parts": [
+        {
+          "text": "Avalanche, Token Terminal and Securitize are proud members of RWA Foundation but have no influence on the opinions of this report. This report is for informational purposes only and is not investment advice.",
+          "italic": true
+        }
+      ]
+    }
+  ],
+  "figureCount": 17
+}

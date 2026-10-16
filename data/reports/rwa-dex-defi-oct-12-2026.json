@@ -9,7 +9,6 @@
   "asOf": "2026-10-12",
   "publishedAt": "2026-10-12T11:56:42.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2109614231729402066",
-  "partner": "Token Terminal",
   "description": "Trading volume and value locked across stablecoins, tokenized funds, commodities and stocks.",
   "blocks": [
     {
@@ -608,5 +607,8 @@
       ]
     }
   ],
-  "figureCount": 16
+  "figureCount": 16,
+  "partners": [
+    "Token Terminal"
+  ]
 }

@@ -9,7 +9,6 @@
   "asOf": "2026-10-01",
   "publishedAt": "2026-10-04T13:44:19.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2106742210884440348",
-  "partner": "Token Terminal",
   "description": "Q3 tokenized credit market cap and holders by asset, issuer and blockchain.",
   "blocks": [
     {
@@ -413,5 +412,8 @@
       ]
     }
   ],
-  "figureCount": 6
+  "figureCount": 6,
+  "partners": [
+    "Token Terminal"
+  ]
 }

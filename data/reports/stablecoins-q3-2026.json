@@ -9,7 +9,6 @@
   "asOf": "2026-10-01",
   "publishedAt": "2026-10-02T10:06:22.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2105962586286026857",
-  "partner": "Token Terminal",
   "description": "Q3 stablecoin growth, issuer market share, holders and currency trends.",
   "blocks": [
     {
@@ -461,5 +460,8 @@
       ]
     }
   ],
-  "figureCount": 8
+  "figureCount": 8,
+  "partners": [
+    "Token Terminal"
+  ]
 }

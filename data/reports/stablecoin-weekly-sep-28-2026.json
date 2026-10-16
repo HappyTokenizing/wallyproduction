@@ -9,7 +9,6 @@
   "asOf": "",
   "publishedAt": "2026-09-28T08:47:40.000Z",
   "sourceUrl": "https://x.com/RWAFoundation_/status/2104493229253009826",
-  "partner": "Token Terminal",
   "description": "Stablecoin supply, holders, transfer activity and local-currency adoption.",
   "blocks": [
     {
@@ -409,5 +408,8 @@
       ]
     }
   ],
-  "figureCount": 8
+  "figureCount": 8,
+  "partners": [
+    "Token Terminal"
+  ]
 }

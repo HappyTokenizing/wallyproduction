@@ -10,16 +10,27 @@ export const reportPages = importedReports.map(report => ({
 }));
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const date = value => new Intl.DateTimeFormat('en-US', {month:'long', day:'numeric', year:'numeric', timeZone:'UTC'}).format(new Date(value));
-const partner = report => report.partner === 'DefiLlama'
-  ? '<span class="dl"><img src="/research/assets/defillama.png" alt="DefiLlama"></span>'
-  : '<span class="tt"><img src="/research/assets/token-terminal.png" alt="Token Terminal"></span>';
+export const creditNames = report => [...new Set(report.partners || [])];
+export function renderCredits(names) {
+  return '<div class="credit-group">' + [...new Set(names)].map(name => {
+    const credit = catalog.partners[name];
+    if (!credit) throw new Error('Missing research logo credit: ' + name);
+    if (!credit.src.startsWith('/') || credit.src.startsWith('//')) throw new Error('Research logos must be local');
+    return `<a class="credit ${credit.variant} ${credit.background}" href="${escape(credit.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(name)}"><img src="${escape(credit.src)}" alt="${escape(name)}">${credit.variant === 'symbol' ? `<span aria-hidden="true">${escape(name)}</span>` : ''}</a>`;
+  }).join('') + '</div>';
+}
+const creditList = report => creditNames(report).join(', ');
 
 export function renderCatalog() {
-  return catalog.series.map((series, index) => {
+  const newest = series => catalog.reports.filter(r => r.series === series.id).map(r => r.publishedAt).sort().at(-1) || '';
+  return [...catalog.series].sort((a,b) => newest(b).localeCompare(newest(a))).map(series => {
+    const index = catalog.series.findIndex(s => s.id === series.id);
     const editions = catalog.reports.filter(report => report.series === series.id).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+    const credits = [...new Set(editions.flatMap(creditNames))];
+    const creditLabel = editions.some(r => r.creditLabel) ? 'DATA & REPORTING SOURCES' : (credits.length > 1 ? 'DATA PARTNERS' : 'DATA PARTNER');
     return `<article class="series" id="series-${series.id}"><div class="series-in">
       <div class="series-top"><div><div class="kicker">SERIES ${String(index + 1).padStart(2, '0')} · ${escape(series.kicker)}</div><h2>${escape(series.name)}</h2><p class="desc">${escape(series.description)}</p></div>
-      <div class="partner"><span class="k">DATA PARTNER</span>${partner(series)}</div></div>
+      <div class="partner"><span class="k">${creditLabel}</span>${renderCredits(credits)}</div></div>
       <div class="editions">${editions.map((report, i) => `<a class="ed" href="/research/${report.slug}/"><span class="date">${escape(report.edition)}</span><span class="name">${escape(report.shortTitle)}<small>${report.existing ? '' : `${report.figureCount} figures · `}${escape(report.asOf ? 'Data as of ' + date(report.asOf) : 'Published ' + date(report.publishedAt))}</small></span>${i === 0 ? '<span class="tag">LATEST</span>' : '<span></span>'}<span class="arr" aria-hidden="true">→</span></a>`).join('\n')}</div>
     </div></article>`;
   }).join('\n');
@@ -56,7 +67,7 @@ export function renderReport(template, report) {
       section = block.text;
       output.push(`<h3>${renderInline(block.parts)}</h3>`);
     } else if (block.type === 'figure') {
-      output.push(`<figure id="figure-${block.number}">${block.images.map(image => `<a href="${escape(image.src)}" target="_blank" rel="noopener" aria-label="Open figure ${block.number} at full size"><img src="${escape(image.src)}" alt="${escape(block.caption || `${report.shortTitle}: ${section || 'source data'}, figure ${block.number}. Analysis is provided in the surrounding text.`)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async"></a>`).join('')}<figcaption><span>FIGURE ${String(block.number).padStart(2, '0')} · ${escape(report.partner)}${block.caption ? ' — ' + escape(block.caption) : ''}</span><a href="${escape(block.images[0].src)}" download>Download chart ↓</a></figcaption></figure>`);
+      output.push(`<figure id="figure-${block.number}">${block.images.map(image => `<a href="${escape(image.src)}" target="_blank" rel="noopener" aria-label="Open figure ${block.number} at full size"><img src="${escape(image.src)}" alt="${escape(block.caption || `${report.shortTitle}: ${section || 'source data'}, figure ${block.number}. Analysis is provided in the surrounding text.`)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async"></a>`).join('')}<figcaption><span>FIGURE ${String(block.number).padStart(2, '0')} · ${escape(block.credit || creditList(report))}${block.caption ? ' — ' + escape(block.caption) : ''}</span><a href="${escape(block.images[0].src)}" download>Download chart ↓</a></figcaption></figure>`);
     } else {
       output.push(`<p>${renderInline(block.parts)}</p>`);
     }
@@ -65,8 +76,8 @@ export function renderReport(template, report) {
   const related = catalog.reports.filter(item => item.series === report.series && item.id !== report.id).slice(0, 3);
   const fields = {
     TITLE: escape(report.shortTitle), EDITION: escape(report.edition),
-    DESCRIPTION: escape(report.description), PARTNER: partner(report),
-    PARTNER_NAME: escape(report.partner), SOURCE: escape(report.sourceUrl),
+    DESCRIPTION: escape(report.description), PARTNER: renderCredits(creditNames(report)),
+    PARTNER_NAME: escape(creditList(report)), BYLINE: creditNames(report).length > 1 ? 'Data & reporting sources' : 'RWA Foundation ×', BAND_CREDIT: creditNames(report).length > 1 ? 'RWA FOUNDATION' : escape(creditList(report)), SOURCE: escape(report.sourceUrl),
     PUBLISHED: date(report.publishedAt), PUBLISHED_ISO: report.publishedAt,
     DATA_DATE: report.asOf ? `<span>DATA AS OF</span><strong>${date(report.asOf)}</strong>` : '<span>DATA WINDOW</span><strong>See the original report below</strong>',
     WINDOW: escape(report.window), FIGURES: report.figureCount,
