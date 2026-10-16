@@ -12,10 +12,9 @@
   "partners": [
     "RWA.xyz",
     "Token Terminal",
-    "DefiLlama",
-    "Avalanche"
+    "DefiLlama"
   ],
-  "creditLabel": "CHAIN & DATA PROVIDERS",
+  "creditLabel": "DATA PROVIDERS",
   "description": "The companies behind Avalanche’s RWA growth: tokenized assets, institutional credit, stablecoins, payments and dedicated chains.",
   "blocks": [
     {
@@ -1345,5 +1344,8 @@
       ]
     }
   ],
-  "figureCount": 17
+  "figureCount": 17,
+  "chains": [
+    "Avalanche"
+  ]
 }

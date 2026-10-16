@@ -82,7 +82,12 @@ test('series credits include every distinct source across their reports and reje
     for (const name of names) assert.equal(card.split('alt="' + name + '"').length - 1, 1);
   }
   const avalanche = catalog.reports.find(r => r.slug === 'avalanche-rwa-growth-oct-2026');
-  assert.deepEqual(avalanche.partners, ['RWA.xyz','Token Terminal','DefiLlama','Avalanche']);
+  assert.deepEqual(avalanche.partners, ['RWA.xyz','Token Terminal','DefiLlama']);
+  assert.deepEqual(avalanche.chains, ['Avalanche']);
+  const chainSeries = html.match(/id="series-blockchains">([\s\S]*?)<div class="editions">/)[1];
+  assert.doesNotMatch(chainSeries, /alt="Avalanche"/);
+  assert.match(html, /class="edition-chain dark"><img[^>]+alt="Avalanche"/);
+  assert.match(read('research/avalanche-rwa-growth-oct-2026/index.html'), /class="byline featured-chains">[\s\S]*?FEATURED CHAIN[\s\S]*?alt="Avalanche"/);
   assert.equal(html.indexOf('id="series-blockchains"'), html.indexOf('id="series-'));
   assert.throws(() => renderCredits(['Unregistered Source']), /Missing research logo credit/);
 });

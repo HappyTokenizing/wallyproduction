@@ -11,11 +11,25 @@ export const reportPages = importedReports.map(report => ({
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const date = value => new Intl.DateTimeFormat('en-US', {month:'long', day:'numeric', year:'numeric', timeZone:'UTC'}).format(new Date(value));
 export const creditNames = report => [...new Set(report.partners || [])];
+const logoCredit = name => {
+  const credit = catalog.partners[name];
+  if (!credit) throw new Error('Missing research logo credit: ' + name);
+  if (!credit.src.startsWith('/') || credit.src.startsWith('//')) throw new Error('Research logos must be local');
+  return credit;
+};
+const chainNames = report => [...new Set(report.chains || [])];
+function editionTitle(report) {
+  const chains = chainNames(report);
+  if (!chains.length) return escape(report.shortTitle);
+  const logos = chains.map(name => {
+    const credit = logoCredit(name);
+    return `<span class="edition-chain ${credit.background}"><img src="${escape(credit.src)}" alt="${escape(name)}" width="24" height="24"></span>`;
+  }).join('');
+  return `<span class="edition-heading">${logos}<span>${escape(report.shortTitle)}</span></span>`;
+}
 export function renderCredits(names) {
   return '<div class="credit-group">' + [...new Set(names)].map(name => {
-    const credit = catalog.partners[name];
-    if (!credit) throw new Error('Missing research logo credit: ' + name);
-    if (!credit.src.startsWith('/') || credit.src.startsWith('//')) throw new Error('Research logos must be local');
+    const credit = logoCredit(name);
     return `<a class="credit ${credit.variant} ${credit.background}" href="${escape(credit.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(name)}"><img src="${escape(credit.src)}" alt="${escape(name)}">${credit.variant === 'symbol' ? `<span aria-hidden="true">${escape(name)}</span>` : ''}</a>`;
   }).join('') + '</div>';
 }
@@ -31,7 +45,7 @@ export function renderCatalog() {
     return `<article class="series" id="series-${series.id}"><div class="series-in">
       <div class="series-top"><div><div class="kicker">SERIES ${String(index + 1).padStart(2, '0')} · ${escape(series.kicker)}</div><h2>${escape(series.name)}</h2><p class="desc">${escape(series.description)}</p></div>
       <div class="partner"><span class="k">${escape(creditLabel)}</span>${renderCredits(credits)}</div></div>
-      <div class="editions">${editions.map((report, i) => `<a class="ed" href="/research/${report.slug}/"><span class="date">${escape(report.edition)}</span><span class="name">${escape(report.shortTitle)}<small>${report.existing ? '' : `${report.figureCount} figures · `}${escape(report.asOf ? 'Data as of ' + date(report.asOf) : 'Published ' + date(report.publishedAt))}</small></span>${i === 0 ? '<span class="tag">LATEST</span>' : '<span></span>'}<span class="arr" aria-hidden="true">→</span></a>`).join('\n')}</div>
+      <div class="editions">${editions.map((report, i) => `<a class="ed" href="/research/${report.slug}/"><span class="date">${escape(report.edition)}</span><span class="name">${editionTitle(report)}<small>${report.existing ? '' : `${report.figureCount} figures · `}${escape(report.asOf ? 'Data as of ' + date(report.asOf) : 'Published ' + date(report.publishedAt))}</small></span>${i === 0 ? '<span class="tag">LATEST</span>' : '<span></span>'}<span class="arr" aria-hidden="true">→</span></a>`).join('\n')}</div>
     </div></article>`;
   }).join('\n');
 }
@@ -76,6 +90,7 @@ export function renderReport(template, report) {
   const related = catalog.reports.filter(item => item.series === report.series && item.id !== report.id).slice(0, 3);
   const fields = {
     TITLE: escape(report.shortTitle), EDITION: escape(report.edition),
+    FEATURED_CHAINS: chainNames(report).length ? `<div class="byline featured-chains"><span>FEATURED ${chainNames(report).length > 1 ? 'CHAINS' : 'CHAIN'}</span>${renderCredits(chainNames(report))}</div>\n` : '',
     DESCRIPTION: escape(report.description), PARTNER: renderCredits(creditNames(report)),
     PARTNER_NAME: escape(creditList(report)), BYLINE: escape(report.creditLabel || (creditNames(report).length > 1 ? 'Data providers' : 'RWA Foundation ×')), BAND_CREDIT: creditNames(report).length > 1 ? 'RWA FOUNDATION' : escape(creditList(report)), SOURCE: escape(report.sourceUrl),
     PUBLISHED: date(report.publishedAt), PUBLISHED_ISO: report.publishedAt,
